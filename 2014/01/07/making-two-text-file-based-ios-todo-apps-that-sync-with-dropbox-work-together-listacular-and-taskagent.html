@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>This Fargo Blog Now Has "Search" </title>
+		<title>Making Two Text-File-Based iOS Todo Apps That Sync With Dropbox Work Together: Listacular and TaskAgent</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -16,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 26 Jun 2014 20:24:23 GMT",
-    "opmlExpansionState": "2,6,20,22",
+    "opmlDateModified": "Thu, 26 Jun 2014 19:48:06 GMT",
+    "opmlExpansionState": "",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -41,8 +41,8 @@
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "Ask not what the Internet can do for you.",
+    "type": "outline",
+    "slogan": "All baking done on premises.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -65,10 +65,10 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
-    "text": "This Fargo Blog Now Has \"Search\" ",
-    "created": "Fri, 05 Jul 2013 18:58:08 GMT",
+    "text": "Making Two Text-File-Based iOS Todo Apps That Sync With Dropbox Work Together: Listacular and TaskAgent",
+    "created": "Tue, 07 Jan 2014 15:07:22 GMT",
     "description": "",
-    "path": "2013/07/05/thisFargoBlogNowHasSearch",
+    "path": "2014/01/07/making-two-text-file-based-ios-todo-apps-that-sync-with-dropbox-work-together-listacular-and-taskagent",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -82,15 +82,15 @@
     "streamTextFrameColor": "whitesmoke",
     "streamVersion": "2",
     "flEmojify": "true",
-    "name": "thisFargoBlogNowHasSearch",
+    "name": "making-two-text-file-based-ios-todo-apps-that-sync-with-dropbox-work-together-listacular-and-taskagent",
     "icon": "calendar",
     "isFeedItem": "true",
-    "flCommentsVisible": "true",
+    "isComment": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Jun 26 2014 16:24:23 GMT-0400 (EDT)",
+    "now": "Thu Jun 26 2014 15:48:17 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/2013/07/05/thisFargoBlogNowHasSearch.html"
+    "url": "http://blog.jeffreykishner.com/2014/01/07/making-two-text-file-based-ios-todo-apps-that-sync-with-dropbox-work-together-listacular-and-taskagent.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -120,7 +120,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					float: none;
+					font-size: 1.2em;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -133,6 +133,33 @@
 				.spSlogan {
 					display: none;
 					}
+				}
+			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
 				}
 			</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -167,6 +194,18 @@
 	ga('send', 'pageview');
 	</script>
 		
+		<script>
+			function startupOutlineTemplate () {
+				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks">&nbsp;</div>
@@ -236,25 +275,81 @@
 		</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013">2013</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013/07">July 2013</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013/07/05">July 5</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">This Fargo Blog Now Has "Search" </h2>
-					</div>
-				<div class="divFargoBlogHome">
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><a href="http://blog.jeffreykishner.com/2014/01/08/some-more-taskpaper-news.html" title="Some More TaskPaper News" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2014/01/06/taskpaper-for-ios-will-no-longer-be-developed.html" title="TaskPaper for iOS Will No Longer Be Developed" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/01">January 2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/01/07">January 7</a></li></ul>
+								</div>
+							<h2>Making Two Text-File-Based iOS Todo Apps That Sync With Dropbox Work Together: Listacular and TaskAgent</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p><a href="https://twitter.com/share?text=Making%20Two%20Text-File-Based%20iOS%20Todo%20Apps%20That%20Sync%20With%20Dropbox%20Work%20Together%3A%20Listacular%20and%20TaskAgent&amp;url=http://blog.jeffreykishner.com/2014/01/07/making-two-text-file-based-ios-todo-apps-that-sync-with-dropbox-work-together-listacular-and-taskagent.html" target="_blank">Tweet This Post</a></p>
 
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Thu, Jun 26, 2014 at  3:24 PM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlFri, 05 Jul 2013 18:58:08 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, July  5, 2013 at  1:58 PM</span>.</div>
-					</div>
+<p>After the <a href="http://blog.hogbaysoftware.com/post/72442052582/winter-2014-newsletter">announcement</a> that development of <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> for iOS is being halted, I've been looking for alternative todo apps that are based on the reading and manipulation of text files and that sync with Dropbox. I've found three so far: <a href="http://www.bloomingsoft.com/listacular/">Listacular</a>, <a href="http://macrecon.com/taskagent/index.html">TaskAgent</a>, and <a href="http://todotxt.com/">Todo.txt</a>. </p>
+
+<p>Todo.txt is a little too command-line Terminal-y for me, but the other two are pretty user-friendly. Both support dragging of tasks and swiping or tapping to denote completion. Also, both share a similar "grammar" such that one can have both apps read text files from the same location in Dropbox.</p>
+
+<h3>What Listacular and TaskAgent Have in Common</h3>
+
+<p>In both apps, <em>in the actual text files</em> a <code>-</code> is used to denote an open task, and an <code>x</code> is used to denote a completed task. However, TaskAgent requires that the very first character in a line contains <code>-</code> or <code>x</code>. Listacular is built to support the reading of TaskPaper files, which means that it will read a line that starts with a tab as an open task that is subordinate to either a project or a higher-order task. For both apps to successfully read tasks out of the same text file, one must avoid the use of tabs, which essentially means you cannot format the text file as an outline.</p>
+
+<p>Listacular has many other functions that are not supported by TaskAgent. </p>
+
+<ul>
+<li><p><i class="icon-caret-right"></i> Listacular lets you start a line with a <code>*</code> to denote a bullet point -- TaskAgent will add a <code>-</code> before it, thus de-rendering that formatting in Listacular. </p></li>
+<li><p><i class="icon-caret-right"></i> Listacular supports TaskPaper-like due dates formatted as follows: <code>@due(2014-01-07 14:00)</code> (which can be interpreted as, "This task is due January 7, 2014 at 2pm.") TaskAgent will insert a space after the tag and before the parens, because anything included between parens is read as a note. If I create a task in Listacular like <code>pay mortgage @due(2014-02-01 10:00)</code> TaskAgent will make the task <code>pay mortgage @due</code> and the note accompanying the task <code>2014-02-01 10:00</code>. Because of the inconsistency between these two apps, TaskPaper-like due dates cannot be supported if both apps read the same text file.</p>
+
+<ul><li><i class="icon-caret-right"></i> As an aside, Listacular also uses @remind to schedule an alert notification. When the alert is acknowledged, it turns @remind into @reminded.</li></ul></li>
+</ul>
+
+<h3>Strengths of TaskAgent</h3>
+
+<p>As of this writing, <a href="http://macrecon.com/guides/index.html#taurl">TaskAgent is the only of these two apps that supports URL schemes and x-callback-url support</a>. However, the developer of Listacular has <a href="https://twitter.com/drewmck/status/420592024052449280">mentioned on Twitter</a> that his app will soon support URL schemes. With TaskAgent, you can open or create a list, and add a task with an optional note and/or done status using an app like <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> or <a href="http://agiletortoise.com/drafts/">Drafts</a>. </p>
+
+<p>TaskAgent has an Action menu for individual tasks. If you know the URL scheme of an app that you would like to send the task to, you can include the following blocks: <code>[task-title][task-note][task-done]</code>.  After reading a <a href="https://twitter.com/benwhiting/status/416615732336951296">tweet by @benwhiting</a>, I developed the following Action, which will open an URL in the note field in Safari (requires <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>): </p>
+
+<pre><code>launchpro://?url=[task-note]
+</code></pre>
+
+<p>TaskAgent also has a search function (requires In-App Purchase) that supports #tags. </p>
+
+<h3>Strengths of Listacular</h3>
+
+<p>Listacular has a "home page" that shows all due dates in priority order, combining all lists. And as I wrote above, it supports reminders and alerts, and is compatible with TaskPaper files. (Its only drawback with regard to TaskPaper due dates is that if the value does not include a time as well as a date, Listacular will remove the @due tag entirely -- so <code>@due(2014-01-07)</code> is unsupported.)</p>
+
+<h3>How to Make Them Work Together</h3>
+
+<p>TaskAgent creates a Dropbox folder at /Apps/TaskAgent. You can read any Dropbox folder with Listacular. I am currently having Listacular point at /Apps/TaskAgent. TaskAgent only reads text files appended with .txt, whereas Listacular will read files created in TaskPaper, such as those that are appended with .taskpaper. TaskAgent does not recognize these files, which means that it won't touch them. If there are functions of Listacular that are important to me, I can create a text file ending in .taskpaper, so that I can do things like schedule reminders and have indented tasks. </p>
+
+<p>Listacular does not do anything special with parens that are <em>not</em> associated with a tag (like @due and other TaskPaper-like tags that support values). However, it doesn't change them. So if I create a task with a note in TaskAgent (like task="Buy veggies" and note="kale, cauliflower"), in Listacular it will just read as <code>Buy veggies (kale, cauliflower)</code>.</p>
+
+<p>In my experience so far, Listacular will remove the # if I start a task with a tag, but if I put the tag anywhere else in the task, it will leave it alone. As I wrote above, you can use TaskAgent search to pull up all tasks associated with a tag.</p>
+
+<p>Here is one line in a text file which can easily be read by both apps:</p>
+
+<pre><code>- buy vinyl floor protection that comes on a roll #homeDepot (shop supplies or garage stuff)
+</code></pre>
+
+<h3>Which One Is Better?</h3>
+
+<p>I don't know yet, which is why I'm using both on (mostly) the same to-do lists. I love that TaskAgent has URL scheme and Action support. Also, TaskAgent just looks nicer and is more iOS7y (for example, swipe left to right to go to the home page). I love that Listacular supports due dates and alerts and that it works (mostly) well with TaskPaper. Please comment below or hit me up on Twitter with your assessment.</p></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Thu, Jun 26, 2014 at  2:48 PM</p>
+							<script>var disqus_identifier = "Tue, 07 Jan 2014 15:07:22 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, January  7, 2014 at 10:07 AM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
+							</div>
+						</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
