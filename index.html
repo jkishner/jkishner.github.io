@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Mon, 30 Jun 2014 13:52:55 GMT",
-    "opmlExpansionState": "1,2,3,4,8,9",
+    "opmlDateModified": "Mon, 30 Jun 2014 14:35:06 GMT",
+    "opmlExpansionState": "1,2,3,4,22,23,27,28",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "Pay no attention to the man behind the curtain.",
+    "slogan": "Only steal from the best.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -67,7 +67,7 @@
     "flFixedMenu": "false",
     "maxStreamDays": "14",
     "text": "Jeffrey Kishner's Fargo Blog",
-    "created": "Mon, 30 Jun 2014 13:52:55 GMT",
+    "created": "Mon, 30 Jun 2014 14:35:06 GMT",
     "description": "",
     "path": "",
     "subheadColor": "white",
@@ -86,7 +86,7 @@
     "authorGithubAccount": "jkishner",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Mon Jun 30 2014 09:52:55 GMT-0400 (EDT)",
+    "now": "Mon Jun 30 2014 10:35:06 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/.html"
 }; //12/12/13 by DW
@@ -194,6 +194,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
@@ -218,7 +219,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html" target="_blank">How to Mark a Paperless Item as Complete Without Touching Your iOS Device</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/02/06/using-the-launch-center-pro-url-parameter-to-launch-an-action-from-another-app.html" target="_blank">Using the Launch Center Pro URL Parameter to Launch an Action from Another App</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/02/03/chaining-three-texttool-transformations-together-with-x-callback-url.html" target="_blank">Chaining Three TextTool Transformations Together with X-Callback-URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/02/03/extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html" target="_blank">Extract Text from an XML File Using Launch Center Pro, Drafts, and TextTool</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -237,6 +237,51 @@
 					<h2 id="idBlogHomePageTitle">Jeffrey Kishner's Fargo Blog</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></div>
+		<p><a href="https://twitter.com/share?text=Automate%20a%20YouTube%20Embed%20Code%20on%20Your%20iOS%20Device%20With%20Drafts%2C%20TextTool%2C%20and%20Launch%20Center%20Pro&amp;url=http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Tweet This Post</a></p>
+
+<p>Over the weekend I wanted to embed a video on my blog while on my iPad. The mobile YouTube site did not appear to offer an embed code, so I created a few actions to automate the process.</p>
+
+<p>As an example, here is the starting URL <code>https://m.youtube.com/watch?v=38lY-3g6mn8</code>.</p>
+
+<p>This browser bookmarklet -- I call it "TextTool Split" -- imports the URL into <a href="http://agiletortoise.com/drafts/">Drafts</a> and triggers the "split" action:</p>
+
+<pre><code>javascript:window.location='drafts://x-callback-url/create?action=split&amp;text='+encodeURIComponent(location.href)
+</code></pre>
+
+<p>The "split" URL action sends the URL to <a href="http://blackfoggames.com/TextTool/">TextTool</a> and splits the URL at the <code>=</code>. </p>
+
+<pre><code>texttool://x-callback-url/transform?method=split&amp;delimiter=%3D&amp;text=[[draft]]&amp;x-success={{drafts://x-callback-url/create?text=[[output]]&amp;action=line2-youtube}}
+</code></pre>
+
+<p>Import it <a href="drafts://x-callback-url/import_action?type=URL&amp;name=split&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Fmethod%3Dsplit%26delimiter%3D%253D%26text%3D%5B%5Bdraft%5D%5D%26x-success%3D%7B%7Bdrafts%3A%2F%2Fx-callback-url%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dline2-youtube%7D%7D">here</a> into Drafts.</p>
+
+<p>The above action takes the original URL and creates a new draft:</p>
+
+<pre><code>https://m.youtube.com/watch?v
+
+38lY-3g6mn8
+</code></pre>
+
+<p>It then triggers the <code>line2-youtube</code> action, which takes <code>line 2</code>, sticks it in the YouTube embed code, and saves all of that to the clipboard with the help of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>:</p>
+
+<pre><code>launch://clipboard?text={{&lt;iframe width="560" height="315" src="//www.youtube.com/embed/[[line|2]]" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;}}
+</code></pre>
+
+<p>Import it <a href="drafts://x-callback-url/import_action?type=URL&amp;name=line2-youtube&amp;url=launch%3A%2F%2Fclipboard%3Ftext%3D%7B%7B%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22%2F%2Fwww.youtube.com%2Fembed%2F%5B%5Bline%7C2%5D%5D%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%7D%7D">here</a> into Drafts.</p>
+
+<p>The result will be that the following is added to your clipboard, and you can paste it into your blog CMS:</p>
+
+<pre><code>&lt;iframe width="560" height="315" src="//www.youtube.com/embed/38lY-3g6mn8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</code></pre>
+
+<p>This action presumes that there are no additional paramaters in the URL. If your URL has something like <code>&amp;list=</code> after the video ID, you will either have to manually remove that string or create an extra Drafts/TextTool action to split the results of <code>line 2</code> at the <code>&amp;</code> and to take <code>line 1</code> of <em>that</em> output.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">06/30/14; 09:03:42 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="2014/06/29/youreMyGayBestFriendVideo.html">You're My Gay Best Friend (Video)</a></div>
 		<p><a href="https://twitter.com/share?text=You're%20My%20Gay%20Best%20Friend%20(Video)&amp;url=http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">Tweet This Post</a></p>
@@ -1139,73 +1184,12 @@ pushover
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/02/03/chaining-three-texttool-transformations-together-with-x-callback-url.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="2014/02/03/extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html">Extract Text from an XML File Using Launch Center Pro, Drafts, and TextTool</a></div>
-		<p><a href="https://twitter.com/share?text=Extract%20Text%20from%20an%20XML%20File%20Using%20Launch%20Center%20Pro%2C%20Drafts%2C%20and%20TextTool&amp;url=http://blog.jeffreykishner.com/2014/02/03/extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html" target="_blank">Tweet This Post</a></p>
-
-<p><a href="http://www.crushapps.com/paperless/">Paperless</a> is an iOS lists app that stores its data in XML files in Dropbox (if you choose to sync). What follows is an attempt to procure the first item in a list and send it to <a href="http://www.dueapp.com/">Due</a> without having to copy and paste.</p>
-
-<p>The first list item in any Paperless list appears to occur on line 12 of the list's XML file. It looks like this:</p>
-
-<pre><code>&lt;itemName&gt;LIST ITEM&lt;/itemName&gt;
-</code></pre>
-
-<p><a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>'s <a href="https://contrasthelp.zendesk.com/hc/en-us/articles/200436178-The-dropbox-Tag">dropbox tag</a> lets you get the contents of a text file, so I figured I could grab the entire contents of an XML file and push it to <a href="http://agiletortoise.com/drafts/">Drafts</a>. Tap on <a href="http://launchcenterpro.com/f080nd">this link</a> to import into LCP, or copy the action below and adapt for your purposes:</p>
-
-<pre><code>drafts://x-callback-url/create?text=[dropbox-text:Paperless/Errands.xml]&amp;action=line12
-</code></pre>
-
-<p>What this does is grab the full text from the Errands list in Paperless, send it to Drafts, and then activate the <em>line12</em> custom URL action.</p>
-
-<p><em>line12</em> uses a Drafts tag <code>[[line|12]]</code> to send line 12 of the XML file to <a href="http://blackfoggames.com/TextTool/">TextTool</a> and then use the <em>regex</em> method to replace <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code> with blank spaces. I know next to nothing about regex, but I found <a href="http://c2.com/cgi/wiki?RegularExpressionExamples">here</a> that I could easily create a regex expression to match both <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code>: </p>
-
-<pre><code>&lt;(/|)itemName&gt;
-</code></pre>
-
-<p>So the <em>search</em> parameter in TextTool is the above URL-encoded, and the <em>replace</em> parameter is a single space, URL-encoded:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|12]]&amp;method=regex&amp;search=%3C(%2F%7C)itemName%3E&amp;replace=%20&amp;x-success=due%3A%2F%2Fx-callback-url%2Fadd%3Ftitle%3D%5B%5Boutput%5D%5D
-</code></pre>
-
-<p>(Tap on <a href="drafts://x-callback-url/import_action?type=URL&amp;name=line12&amp;url=texttool://x-callback-url/transform?text=%5b%5bline|12%5d%5d&amp;method=regex&amp;search=%3C%28%2F%7C%29itemName%3E&amp;replace=%20&amp;x-success=due%3A%2F%2Fx-callback-url%2Fadd%3Ftitle%3D%5B%5Boutput%5D%5D">this link</a> to import into Drafts.)</p>
-
-<p>The <em>x-success</em> parameter above tells TextTool to take the [[output]] of that transformation and send it to Due. Here is that action URL-decoded:</p>
-
-<pre><code>due://x-callback-url/add?title=[[output]]
-</code></pre>
-
-<p>The final result... I tap on the LCP action, and it adds the first list item from my Errands list and sends it to Due. There are spaces preceding the text, but the XML is extracted.</p>
-
-<p>Although the automation required to perform the above is a bit excessive (in contrast to just copying an item from Paperless and then pasting it into Due) it demonstrates the ability of the included iOS apps to accomplish pretty remarkable tasks.</p>
-
-<p><a name="addendum">&nbsp;</a></p>
-
-<h3>Addendum (2014-02-04)</h3>
-
-<p><a href="drafts://x-callback-url/import_action?type=URL&amp;name=line12&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C12%5D%5D%26method%3Dregex%26search%3D%253C%28%252F%257C%29itemName%253E%26replace%3D%2520%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%255B%255Boutput%255D%255D%2526method%253Dtrim%2526x-success%253Ddue%25253A%25252F%25252Fx-callback-url%25252Fadd%25253Ftitle%25253D%2525255B%2525255Boutput%2525255D%2525255D">Here is an importable <em>line12</em> Drafts action</a> that trims the TextTool regex output before it sends the list item to Due. And here is the URL action itself:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|12]]&amp;method=regex&amp;search=%3C(%2F%7C)itemName%3E&amp;replace=%20&amp;x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dtrim%26x-success%3Ddue%253A%252F%252Fx-callback-url%252Fadd%253Ftitle%253D%25255B%25255Boutput%25255D%25255D
-</code></pre>
-
-<p><a name="addendum2">&nbsp;</a></p>
-
-<h3>Addendum 2 (2014-02-04)</h3>
-
-<p><a href="drafts://x-callback-url/import_action?type=URL&amp;name=line12&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C12%5D%5D%26method%3Dregex%26search%3D%253C%28%252F%257C%29itemName%253E%26replace%3D%2520%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%255B%255Boutput%255D%255D%2526method%253Dtrim%2526x-success%253Ddue%25253A%25252F%25252Fx-callback-url%25252Fadd%25253Ftitle%25253D%2525255B%2525255Boutput%2525255D%2525255D%2525250Apaperless%2525253A%2525252F%2525252FviewList%2525253FlistName%2525253DErrands">Here is an importable <em>line12</em> Drafts action</a> that will include a link to the Errands list in Paperless within the Due text, so that when you complete the task, you can visit the list and check off the item there. (Thanks to <a href="https://twitter.com/epramono">@epramono</a> for inspiring this.) And here is the URL action itself:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|12]]&amp;method=regex&amp;search=%3C(%2F%7C)itemName%3E&amp;replace=%20&amp;x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dtrim%26x-success%3Ddue%253A%252F%252Fx-callback-url%252Fadd%253Ftitle%253D%25255B%25255Boutput%25255D%25255D%25250Apaperless%25253A%25252F%25252FviewList%25253FlistName%25253DErrands
-</code></pre>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">02/03/14; 12:47:01 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="2014/02/03/extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Mon, Jun 30, 2014 at  8:52 AM</p>
+					<p style="float: right;">Last built: Mon, Jun 30, 2014 at  9:35 AM</p>
 					
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, June 30, 2014 at  8:52 AM</span>.</div>
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, June 30, 2014 at  9:35 AM</span>.</div>
 					</div>
 				</div>
 			</div>
