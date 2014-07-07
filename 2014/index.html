@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 03 Jul 2014 17:05:36 GMT",
-    "opmlExpansionState": "1,2,3,4,29",
+    "opmlDateModified": "Mon, 07 Jul 2014 16:53:04 GMT",
+    "opmlExpansionState": "1,2,3,4,17,18,43",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "This aggression will not stand.",
+    "slogan": "So, it has come to this.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -88,7 +88,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Jul 03 2014 13:05:37 GMT-0400 (EDT)",
+    "now": "Mon Jul 07 2014 12:53:05 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014.html"
 }; //12/12/13 by DW
@@ -196,6 +196,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
@@ -220,7 +221,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/03/25/search-queries-in-timers-and-logbook-in-due-app-using-nested-lists-in-launch-center-pro.html" target="_blank">Search Queries in Timers and Logbook in Due App Using Nested Lists in Launch Center Pro</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/03/10/bookmarklet-to-open-a-tumblr-from-ios-browser-into-the-tumblr-app.html" target="_blank">Bookmarklet to Open a Tumblr from iOS Browser into the Tumblr App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/02/11/add-running-expenses-to-a-wiki-or-markdown-table-with-these-launch-center-pro-and-drafts-actions.html" target="_blank">Add Running Expenses to a Wiki- or Markdown-Table with These Launch Center Pro and Drafts Actions</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -239,6 +239,38 @@
 					<h2 id="idBlogHomePageTitle">2014</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="07/07/commandLineScriptForPaperlessListsChecklists.html">Command Line Script for "Paperless: Lists + Checklists"</a></div>
+		<p>I use <a href="http://www.crushapps.com/paperless/">Paperless</a> for the majority of my list-making on my iOS devices. I've already written <a href="http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html">how to mark an item as complete without using the app</a> and <a href="http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html">how to view your lists on the web</a>. Today, I am going to share a unix command line bash script to "print" incomplete items from a list. </p>
+
+<p>I created a text file called "prl" and put it in /usr/local/bin/:</p>
+
+<pre><code>#! /bin/bash
+
+list=$1
+
+grep -A 1 \&lt;dateCompleted\&gt;\&lt;\/dateCompleted\&gt; ~/Dropbox/Paperless/$list.xml | sed -n 's:.*&lt;itemName&gt;\(.*\)&lt;/itemName&gt;.*:\1:p'
+</code></pre>
+
+<p>I made it executable while in that directory: <code>chmod +x prl</code></p>
+
+<p>Now, to view the incomplete items in any list, I just type <code>prl</code> followed by the list name. If I have a list named Bills, I just type <code>prl Bills</code> and the script will output all bills that are due. (This script does not output the notes field.)</p>
+
+<h3>How It Works</h3>
+
+<p>All your Paperless lists are stored as XML files. I use <em>grep</em> to look for all items for which there is no completion date: <code>&lt;dateCompleted&gt;&lt;/dateCompleted&gt;</code> with <em>-A 1</em> to also print out the lines immediately after each match (which are the list items themselves). Those results are piped into a <em>sed</em> which extracts any string sandwiched between <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code>.</p>
+
+<p>If I need to see a note, I can do a quick <em>grep</em>: <code>grep -A 1 verizon ~/Dropbox/Paperless/Bills.xml</code>. This will output all lines matching <em>verizon</em> plus the lines immediately following, including the XML tags. It's not pretty but it will get me the info I need (e.g., the due date).</p>
+
+<pre><code>&lt;itemName&gt;Verizon $100.00&lt;/itemName&gt;
+
+&lt;itemNote&gt;7/7&lt;/itemNote&gt;
+</code></pre>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">07/07/14; 11:30:32 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="07/07/commandLineScriptForPaperlessListsChecklists.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html">Cloud Services and Social Networking on the Linux Command Line</a></div>
 		<p>I'm amazed at all the stuff that's available:</p>
@@ -1098,47 +1130,10 @@ pushover
 			<div class="divFargoStoryLink" style="float: left;"><a href="03/10/bookmarklet-to-open-a-tumblr-from-ios-browser-into-the-tumblr-app.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="02/11/add-running-expenses-to-a-wiki-or-markdown-table-with-these-launch-center-pro-and-drafts-actions.html">Add Running Expenses to a Wiki- or Markdown-Table with These Launch Center Pro and Drafts Actions</a></div>
-		<p><a href="https://twitter.com/share?text=Add%20Running%20Expenses%20to%20a%20Wiki-%20or%20Markdown-Table%20with%20These%20Launch%20Center%20Pro%20and%20Drafts%20Actions&amp;url=http://blog.jeffreykishner.com/2014/02/11/add-running-expenses-to-a-wiki-or-markdown-table-with-these-launch-center-pro-and-drafts-actions.html" target="_blank">Tweet This Post</a></p>
-
-<p><em>The following is inspired by <a href="http://thepoch.com/2013/using-launch-center-pro-2-drafts-and-dropbox-to-list-down-my-expenses.html">Using Launch Center Pro 2, Drafts, and Dropbox to List Down My Expenses</a> by Dexter Ang.</em> </p>
-
-<p>I am currently using a <a href="http://tiddlywiki.com/">TiddlyWiki</a> to keep track of spending. I have written actions for both <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> and <a href="http://agiletortoise.com/drafts/">Drafts</a> to enter expenses and then have the data prepended to a text file in wiki table format. At my convenience, I can then copy a row from the table and paste it into the appropriate financial category tiddler. (Note that all of the following can be used to simply add a running list of expenses into a Markdown table in a text file -- you don't need to use a wiki with these actions.)</p>
-
-<p>A row in a wiki- or markdown-table looks like this:</p>
-
-<pre><code>|2014-02-12|Groceries|$14|
-</code></pre>
-
-<p>The LCP action uses the <a href="http://smilesoftware.com/apps/">TextExpander</a> snippet <ddate> to enter the date, and uses prompts to enter the type of spending and the amount spent. These three fields are separated by an URL-encoded pipe (|), and then the entire string is sent to Drafts to launch the moneyWiki action. Upon success, I am sent back to LCP.</p>
-
-<pre><code>drafts://x-callback-url/create?text=&lt;ddate&gt;%7C[prompt:Where and What]%7C%24[prompt-num:Amount]&amp;action=moneyWiki&amp;x-success={{launch:}}
-</code></pre>
-
-<p>(%7C is an URL-encoded |. %24 is an URL-encoded $.)</p>
-
-<p>In Drafts, moneyWiki is a Dropbox action in which I prepend the following to the money.txt file in my /Apps/TWSync/Text/ folder in Dropbox:</p>
-
-<pre><code>|[[draft]]|
-</code></pre>
-
-<p>(The folder can be of your choosing. I use TWSync because that's where <a href="https://itunes.apple.com/us/app/twedit/id409607956?mt=8">TWEdit</a> syncs TiddlyWiki files.)</p>
-
-<p>When the [[draft]] is surrounded by pipes, the result is a valid table row. The advantage of this action is that I can enter something like <code>2014-02-12|Groceries|$14</code> into Drafts, trigger the same moneyWiki action, and once again have a valid table row prepended into my money.txt file. (In other words, I can enter expenses into LCP on-the-go, or enter into Drafts so that I can act upon the draft later -- for instance, if I do not have internet access.)</p>
-
-<h3>Addendum: A Note About Markdown Tables</h3>
-
-<p>After reading more about tables in Markdown, I've learned that Markdown proper doesn't include special formatting for tables, but extensions like <a href="https://help.github.com/articles/github-flavored-markdown">Github Flavored Markdown</a> do. In this case, a table must have a header to render properly. If you're going to use a header, then obviously you cannot prepend new expenses to your text file, you will have to append instead.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">02/11/14; 10:51:54 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="02/11/add-running-expenses-to-a-wiki-or-markdown-table-with-these-launch-center-pro-and-drafts-actions.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Thu, Jul  3, 2014 at 12:05 PM</p>
+					<p style="float: right;">Last built: Mon, Jul  7, 2014 at 11:53 AM</p>
 					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlThu, 02 Jan 2014 21:14:29 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, January  2, 2014 at  4:14 PM</span>.</div>
 					</div>

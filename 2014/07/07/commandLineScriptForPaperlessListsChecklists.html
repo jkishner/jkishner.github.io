@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>January 31</title>
+		<title>Command Line Script for "Paperless: Lists + Checklists"</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -16,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 03 Jul 2014 17:24:59 GMT",
-    "opmlExpansionState": "1,2,3,4,29",
+    "opmlDateModified": "Mon, 07 Jul 2014 16:53:04 GMT",
+    "opmlExpansionState": "1,2,3,4,17,18,43",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -42,8 +42,8 @@
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "All baking done on premises.",
+    "type": "outline",
+    "slogan": "Yeah well, that's just, you know, like, your opinion, man.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,10 +66,10 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
-    "text": "January 31",
-    "created": "Fri, 31 Jan 2014 18:10:03 GMT",
+    "text": "Command Line Script for \"Paperless: Lists + Checklists\"",
+    "created": "Mon, 07 Jul 2014 16:30:32 GMT",
     "description": "",
-    "path": "2014/01/31",
+    "path": "2014/07/07/commandLineScriptForPaperlessListsChecklists",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -84,13 +84,15 @@
     "streamVersion": "2",
     "flEmojify": "true",
     "authorGithubAccount": "jkishner",
-    "name": "31",
+    "name": "commandLineScriptForPaperlessListsChecklists",
     "icon": "calendar",
+    "isFeedItem": "true",
+    "isComment": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Jul 03 2014 13:25:04 GMT-0400 (EDT)",
+    "now": "Mon Jul 07 2014 12:53:05 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/2014/01/31.html"
+    "url": "http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -120,7 +122,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					float: none;
+					font-size: 1.2em;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -133,6 +135,33 @@
 				.spSlogan {
 					display: none;
 					}
+				}
+			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
 				}
 			</style>
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
@@ -165,6 +194,18 @@
 	ga('send', 'pageview');
 	</script>
 		
+		<script>
+			function startupOutlineTemplate () {
+				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -196,6 +237,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
@@ -220,7 +262,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/03/25/search-queries-in-timers-and-logbook-in-due-app-using-nested-lists-in-launch-center-pro.html" target="_blank">Search Queries in Timers and Logbook in Due App Using Nested Lists in Launch Center Pro</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/03/10/bookmarklet-to-open-a-tumblr-from-ios-browser-into-the-tumblr-app.html" target="_blank">Bookmarklet to Open a Tumblr from iOS Browser into the Tumblr App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/02/11/add-running-expenses-to-a-wiki-or-markdown-table-with-these-launch-center-pro-and-drafts-actions.html" target="_blank">Add Running Expenses to a Wiki- or Markdown-Table with These Launch Center Pro and Drafts Actions</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -231,54 +272,56 @@
 		</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/01">January 2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">January 31</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="view-your-paperless-lists-on-the-web.html">View Your Paperless Lists on the Web</a></div>
-		<p><a href="https://twitter.com/share?text=View%20Your%20Paperless%20Lists%20on%20the%20Web&amp;url=http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html" target="_blank">Tweet This Post</a></p>
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" title="Cloud Services and Social Networking on the Linux Command Line" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07">July 2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07/07">July 7</a></li></ul>
+								</div>
+							<h2>Command Line Script for "Paperless: Lists + Checklists"</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>I use <a href="http://www.crushapps.com/paperless/">Paperless</a> for the majority of my list-making on my iOS devices. I've already written <a href="http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html">how to mark an item as complete without using the app</a> and <a href="http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html">how to view your lists on the web</a>. Today, I am going to share a unix command line bash script to "print" incomplete items from a list. </p>
 
-<p>I've been using a list-making app called <a href="http://www.crushapps.com/paperless/">Paperless</a>. Although I'm a big supporter of apps that use plain text files, Paperless stores its lists on Dropbox in XML. No biggie. I've already written scripts to <a href="http://jeffreykishner.com/javascript/ImportNewListToPaperless.html">import a list into Paperless</a> and <a href="http://jeffreykishner.com/javascript/paperless-export-tool.html">export a list from Paperless</a>.</p>
+<p>I created a text file called "prl" and put it in /usr/local/bin/:</p>
 
-<p>The developer includes a stylesheet in the XML files, so that if you open one up in the browser, <a href="http://jeffreykishner.com/javascript/PaperlessXMLFiles/Story%20Outline.xml">it looks readable</a>. All you have to do is open an XML file in your /Paperless Dropbox folder in a web browser. Unfortunately for me, I am at an office computer all day, and I do not have my Dropbox files sitting in my hard drive. So to view those XML files I would have to download them from Dropbox to my work computer hard drive and <em>then</em> open them in the browser.</p>
+<pre><code>#! /bin/bash
 
-<p>To overcome this handicap, I have written a tool that will allow you to view any number of your Paperless lists online. All you have to do is make the lists you want to view shareable, and enter these URLs into a form. Shared Dropbox URLs are not easily discoverable, and if you <em>really</em> don't want someone to accidentally come upon one of your XML files, then don't make the URL public. </p>
+list=$1
 
-<p>The script I developed generates each of your lists in an HTML table. The URLs are not uploaded to any server. The script just reads your XML files locally, so you can feel secure that the view of your lists that you see in the browser is not viewable by anyone else online. You can even just download the html file to your hard drive and use it locally (that is, open it from the hard drive into your browser).</p>
-
-<p>To see how it works, <a href="http://jeffreykishner.com/javascript/Paperless/">visit the page</a>, enter the following four Dropbox URLs into the input field, and then hit Publish. These are the four lists that come pre-installed when you download Paperless to your iOS device.</p>
-
-<pre><code>https://www.dropbox.com/s/1c3j4u1y7ajcwss/Today.xml,https://www.dropbox.com/s/9l46i1iojr6nc3t/Story%20Outline.xml,https://www.dropbox.com/s/ptj4f95md4fkkpd/Someday.xml,https://www.dropbox.com/s/fbp9iv7shwy5t0f/Groceries.xml
+grep -A 1 \&lt;dateCompleted\&gt;\&lt;\/dateCompleted\&gt; ~/Dropbox/Paperless/$list.xml | sed -n 's:.*&lt;itemName&gt;\(.*\)&lt;/itemName&gt;.*:\1:p'
 </code></pre>
 
-<p>You should see four lists generated below the input form.</p>
+<p>I made it executable while in that directory: <code>chmod +x prl</code></p>
 
-<p><img src="https://dl.dropbox.com/s/o914ydefedf6e6j/Screen%20shot%202014-01-31%20at%201.24.14%20PM.png" alt="" title="" /></p>
+<p>Now, to view the incomplete items in any list, I just type <code>prl</code> followed by the list name. If I have a list named Bills, I just type <code>prl Bills</code> and the script will output all bills that are due. (This script does not output the notes field.)</p>
 
-<p>If you want to view your own lists, just get the shared Dropbox URL for each, and enter them as a comma-separated list.</p>
+<h3>How It Works</h3>
 
-<p>This is version 1.0, and I will likely work on styling and generating more of a grid than having the lists stacked on top of each other.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">01/31/14; 01:10:03 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="view-your-paperless-lists-on-the-web.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
+<p>All your Paperless lists are stored as XML files. I use <em>grep</em> to look for all items for which there is no completion date: <code>&lt;dateCompleted&gt;&lt;/dateCompleted&gt;</code> with <em>-A 1</em> to also print out the lines immediately after each match (which are the list items themselves). Those results are piped into a <em>sed</em> which extracts any string sandwiched between <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code>.</p>
 
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Thu, Jul  3, 2014 at 12:25 PM</p>
-					<script>var disqus_identifier = "Fri, 31 Jan 2014 18:10:03 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, January 31, 2014 at  1:10 PM</span>.</div>
-					</div>
+<p>If I need to see a note, I can do a quick <em>grep</em>: <code>grep -A 1 verizon ~/Dropbox/Paperless/Bills.xml</code>. This will output all lines matching <em>verizon</em> plus the lines immediately following, including the XML tags. It's not pretty but it will get me the info I need (e.g., the due date).</p>
+
+<pre><code>&lt;itemName&gt;Verizon $100.00&lt;/itemName&gt;
+
+&lt;itemNote&gt;7/7&lt;/itemNote&gt;
+</code></pre></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Mon, Jul  7, 2014 at 11:53 AM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlMon, 07 Jul 2014 16:30:32 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, July  7, 2014 at 11:30 AM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
+							</div>
+						</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
