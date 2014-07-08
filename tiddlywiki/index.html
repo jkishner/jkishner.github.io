@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My TiddlyWiki Posts</title>
+		<title>TiddlyWiki</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -16,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Mon, 07 Jul 2014 17:58:48 GMT",
-    "opmlExpansionState": "5,6,12",
+    "opmlDateModified": "Mon, 07 Jul 2014 21:44:59 GMT",
+    "opmlExpansionState": "1,2,3,23",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -42,8 +42,8 @@
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "outline",
-    "slogan": "So, it has come to this.",
+    "type": "bloghome",
+    "slogan": "When in doubt, blog.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,10 +66,10 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
-    "text": "My TiddlyWiki Posts",
-    "created": "Fri, 24 Jan 2014 22:28:46 GMT",
+    "text": "TiddlyWiki",
+    "created": "Fri, 24 Jan 2014 22:28:41 GMT",
     "description": "",
-    "path": "tiddlywiki/index",
+    "path": "tiddlywiki",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -84,12 +84,12 @@
     "streamVersion": "2",
     "flEmojify": "true",
     "authorGithubAccount": "jkishner",
-    "name": "index",
+    "name": "tiddlywiki",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Mon Jul 07 2014 13:59:09 GMT-0400 (EDT)",
+    "now": "Mon Jul 07 2014 17:45:44 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/tiddlywiki/index.html"
+    "url": "http://blog.jeffreykishner.com/tiddlywiki.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -119,7 +119,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					font-size: 1.2em;
+					float: none;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -132,33 +132,6 @@
 				.spSlogan {
 					display: none;
 					}
-				}
-			</style>
-		<style>
-			.divOutlineImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divTextInFrontOfImage {
-				background-color: white; 
-				opacity: .90;
-				padding: 1.5em;
-				border:2px solid whitesmoke;
-				}
-			.spSlogan {
-				display: none;
 				}
 			</style>
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
@@ -191,18 +164,6 @@
 	ga('send', 'pageview');
 	</script>
 		
-		<script>
-			function startupOutlineTemplate () {
-				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
-					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
-					textInFront.className = "divTextInFrontOfImage";
-					
-					var outlineImage = document.getElementById ("idOutlineImage"); 
-					outlineImage.className = "divOutlineImage";
-					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
-					}
-				}
-			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -234,6 +195,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
@@ -258,7 +220,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/03/25/search-queries-in-timers-and-logbook-in-due-app-using-nested-lists-in-launch-center-pro.html" target="_blank">Search Queries in Timers and Logbook in Due App Using Nested Lists in Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/10/bookmarklet-to-open-a-tumblr-from-ios-browser-into-the-tumblr-app.html" target="_blank">Bookmarklet to Open a Tumblr from iOS Browser into the Tumblr App</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -269,19 +230,17 @@
 		</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineImage">
-				<div id="idOutlineContainer" class="container">
-					<div id="idTextInFrontOfImage">
-						<div class="divHeadlineUnit" id="idHeadlineUnit">
-							<div class="divPrevNext">
-								<div class="divPrevNextLinks"><a href="http://blog.jeffreykishner.com/scripts.html" title="Scripts" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/tv.html" title="TV" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
-								</div>
-							<div class="divBreadcrumbs" id="idBreadcrumbs">
-								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/tiddlywiki">TiddlyWiki</a></li></ul>
-								</div>
-							<h2>My TiddlyWiki Posts</h2>
-							</div>
-						<div class="divFargoMarkdown" id="idFargoMarkdown"><p><a href="http://blog.jeffreykishner.com/2014/01/29/how-to-put-a-google-calendar-into-the-tiddlywiki5-sidebar.html" target="_blank">How to Put a Google Calendar into the TiddlyWiki5 Sidebar</a></p>
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a></li></ul>
+						</div>
+					<h2 id="idBlogHomePageTitle">TiddlyWiki</h2>
+					</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="index.html">My TiddlyWiki Posts</a></div>
+		<p><a href="http://blog.jeffreykishner.com/2014/01/29/how-to-put-a-google-calendar-into-the-tiddlywiki5-sidebar.html" target="_blank">How to Put a Google Calendar into the TiddlyWiki5 Sidebar</a></p>
 
 <p><a href="http://blog.jeffreykishner.com/2014/01/24/note-taking-bookmarklets-for-fargoio-and-tiddlywiki-.html" target="_blank">Note-Taking Bookmarklets for Fargo.io and TiddlyWiki </a></p>
 
@@ -289,20 +248,23 @@
 
 <p><a href="http://blog.jeffreykishner.com/2014/01/17/a-tiddlywiki-filter-to-list-due-dates.html" target="_blank">A TiddlyWiki Filter to List Due Dates</a></p>
 
-<p><a href="http://blog.jeffreykishner.com/2014/01/16/tracking-dependencies-in-tiddlywiki.html" target="_blank">Tracking Dependencies in TiddlyWiki</a></p></div>
-						<div class="divFooterText">
-							<hr>
-							<p style="float: right;">Last built: Mon, Jul  7, 2014 at 12:59 PM</p>
-							
-							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, January 24, 2014 at  5:28 PM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
-							</div>
-						</div>
-						</div>
+<p><a href="http://blog.jeffreykishner.com/2014/01/16/tracking-dependencies-in-tiddlywiki.html" target="_blank">Tracking Dependencies in TiddlyWiki</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">01/24/14; 05:28:46 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="index.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Mon, Jul  7, 2014 at  4:45 PM</p>
+					
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, January 24, 2014 at  5:28 PM</span>.</div>
+					</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
-			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>

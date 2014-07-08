@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Mon, 07 Jul 2014 20:12:44 GMT",
-    "opmlExpansionState": "1,2,3,4,109,110,119,121,122,152,153,159",
+    "opmlDateModified": "Tue, 08 Jul 2014 15:33:18 GMT",
+    "opmlExpansionState": "1,2,3,4,16,17,122,123,148",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "Pay no attention to the man behind the curtain.",
+    "slogan": "Only steal from the best.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -88,7 +88,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Mon Jul 07 2014 16:12:44 GMT-0400 (EDT)",
+    "now": "Tue Jul 08 2014 11:33:19 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014.html"
 }; //12/12/13 by DW
@@ -196,6 +196,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
@@ -220,7 +221,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/04/25/whiteGuysAndAlterBridge.html" target="_blank">White Guys and Alter Bridge </a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/25/search-queries-in-timers-and-logbook-in-due-app-using-nested-lists-in-launch-center-pro.html" target="_blank">Search Queries in Timers and Logbook in Due App Using Nested Lists in Launch Center Pro</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -239,6 +239,36 @@
 					<h2 id="idBlogHomePageTitle">2014</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html">How to Get the SoundCloud URL Schemes for Users and Tracks</a></div>
+		<p>SoundCloud has url schemes to jump to a user or a specific track in the iOS app. I have cobbled the following together after reading a few threads on Stack Overflow.</p>
+
+<h3>How to Create a User URL Scheme</h3>
+
+<p>Let's get the url scheme for <a href="https://soundcloud.com/tashablank">Tasha Blank</a>. Click on the share icon <i class="fa fa-external-link"></i> then choose the Embed tab and then copy the embed code into a text editor. </p>
+
+<pre><code>&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/325143&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
+</code></pre>
+
+<p>Look for <code>api.soundcloud.com/users/</code>. Copy the numerical string immediately after that, up until the <code>&amp;</code>. Put that string after <code>soundcloud://users/</code> and you'll get <a href="soundcloud://users/325143">soundcloud://users/325143</a>. If you click on this link on your iOS device, it will bring you to her page. And you can add it to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> in an action or list.</p>
+
+<h3>How to Create a Track URL Scheme</h3>
+
+<p>Let's get the url scheme for <a href="https://soundcloud.com/tashablank/live-the-get-down-62614">one of Tasha's recent tracks</a>. Click on the share icon <i class="fa fa-external-link"></i> then choose the Embed tab and then copy the embed code into a text editor.</p>
+
+<pre><code>&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/156299506&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
+</code></pre>
+
+<p>Look for <code>api.soundcloud.com/tracks/</code>. Copy the numerical string immediately after that, up until the <code>&amp;</code>. Put that string after <code>soundcloud://tracks/</code> and you'll get <a href="soundcloud://tracks:156299506">soundcloud://tracks:156299506</a>. If you click on this link on your iOS device, it will bring you to that track and start to auto-play. And you can add it to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> in an action or list.</p>
+
+<p>&nbsp;</p>
+
+<p>I don't know how else to get track and user IDs without signing up for a developer account, but if you find a solution, please let me know in the comments or on <a href="https://twitter.com/kishner">Twitter</a>.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">07/08/14; 10:05:06 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></div>
 		<p>If you're browsing the Tumblr or Instagram apps on your iOS device and want to get the share URL, they are formatted as follows:</p>
@@ -1291,64 +1321,10 @@ pushover
 			<div class="divFargoStoryLink" style="float: left;"><a href="03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="03/25/search-queries-in-timers-and-logbook-in-due-app-using-nested-lists-in-launch-center-pro.html">Search Queries in Timers and Logbook in Due App Using Nested Lists in Launch Center Pro</a></div>
-		<p><a href="https://twitter.com/share?text=Search%20Queries%20in%20Timers%20and%20Logbook%20in%20Due%20App%20Using%20Nested%20Lists%20in%20Launch%20Center%20Pro&amp;url=http://blog.jeffreykishner.com/2014/03/25/search-queries-in-timers-and-logbook-in-due-app-using-nested-lists-in-launch-center-pro.html" target="_blank">Tweet This Post</a></p>
-
-<p>Inspired by <a href="http://launchcenterpro.com/p9zl3j">this LCP action</a> by <a href="http://unapologetic.io/">Alex Guyot</a>, I have written a <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> action to search queries in either the Timers or Logbook section of <a href="http://www.dueapp.com/">Due</a>: you can install it <a href="http://launchcenterpro.com/dcs1xx">here</a>.</p>
-
-<p>When you launch the action, you're presented with a choice between Timers or Logbook:</p>
-
-<p>&nbsp;</p>
-
-<p><img src="https://dl.dropbox.com/s/wv84z6lesoqmuhs/Photo%20Mar%2025%2C%202%2053%2014%20PM.png" alt="" title="" /></p>
-
-<p>&nbsp;</p>
-
-<p>Then, depending on your choice, you're presented with a list of queries:</p>
-
-<p>&nbsp;</p>
-
-<p><img src="https://dl.dropbox.com/s/igrvmtqchoh330v/Photo%20Mar%2025%2C%202%2053%2017%20PM.png" alt="" title="" /></p>
-
-<p><img src="https://dl.dropbox.com/s/sdnlg2v0a93ybwm/Photo%20Mar%2025%2C%202%2053%2021%20PM.png" alt="" title="" /></p>
-
-<p>&nbsp;</p>
-
-<p>(Obviously, you will have to adapt for your own use. Yolanda cuts my hair.)</p>
-
-<p>After you choose the query, Due opens with the search already completed. You can then start a timer or recycle an old reminder.</p>
-
-<h2>A Breakdown of the Action</h2>
-
-<p>&nbsp;</p>
-
-<p>Here is the full string:</p>
-
-<p>&nbsp;</p>
-
-<script src="http://pastebin.com/embed_js.php?i=DytKBPmk"></script>
-
-<p>&nbsp;</p>
-
-<p>Here I will URL-decode the first list item (between <code>Timers=</code> and the <code>|</code>):</p>
-
-<pre><code>launchpro://?url=due%3A%2F%2Fx-callback-url%2Fsearch%3Fsection%3DTimers%26query%3D[list:Timers|Coffee|White rice|Collards|Freebird|Cauliflower|Chicken]   
-</code></pre>
-
-<p>The second list (the queries) is written as you would ordinarily compose a list in LCP. The important thing to note is that, since the Due URL scheme is not included in <em>those</em> brackets, it has to be URL-encoded after the <code>launchpro://?url=</code>:</p>
-
-<pre><code>due://x-callback-url/search?section=Timers&amp;query=
-</code></pre>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">03/25/14; 01:49:58 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="03/25/search-queries-in-timers-and-logbook-in-due-app-using-nested-lists-in-launch-center-pro.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Mon, Jul  7, 2014 at  3:12 PM</p>
+					<p style="float: right;">Last built: Tue, Jul  8, 2014 at 10:33 AM</p>
 					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlThu, 02 Jan 2014 21:14:29 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, January  2, 2014 at  4:14 PM</span>.</div>
 					</div>
