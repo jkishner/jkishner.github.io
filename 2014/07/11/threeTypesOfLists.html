@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>A Launch Center Pro Action for Todo.txt</title>
+		<title>Three Types of Lists</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Fri, 11 Jul 2014 15:00:41 GMT",
-    "opmlExpansionState": "1,2,3,4,6,9,10,12,20,21,27,28,76,77,199",
+    "opmlDateModified": "Wed, 16 Jul 2014 17:17:35 GMT",
+    "opmlExpansionState": "1,2,3,4,8,9,22,34,37,38,40,48,49,55,56,104,105,227",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "outline",
-    "slogan": "You should never argue with a crazy man.",
+    "slogan": "Yeah well, that's just, you know, like, your opinion, man.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,10 +66,12 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
-    "text": "A Launch Center Pro Action for Todo.txt",
-    "created": "Tue, 08 Jul 2014 16:51:00 GMT",
+    "flMarkdown": true,
+    "leftIndent": 0,
+    "text": "Three Types of Lists",
+    "created": "Fri, 11 Jul 2014 14:59:17 GMT",
     "description": "",
-    "path": "2014/07/08/aLaunchCenterProActionForTodotxt",
+    "path": "2014/07/11/threeTypesOfLists",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -84,15 +86,15 @@
     "streamVersion": "2",
     "flEmojify": "true",
     "authorGithubAccount": "jkishner",
-    "name": "aLaunchCenterProActionForTodotxt",
+    "name": "threeTypesOfLists",
     "icon": "calendar",
     "isFeedItem": "true",
     "isComment": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Fri Jul 11 2014 11:00:41 GMT-0400 (EDT)",
+    "now": "Wed Jul 16 2014 13:17:35 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html"
+    "url": "http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -164,6 +166,68 @@
 				display: none;
 				}
 			</style>
+		<style>
+			.divOutlineNoMarkdown {
+				font-size: 20px;
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				}
+			.divOutlineNoMarkdown .ulOutlineList {
+				padding: 0;
+				margin: 0;
+				}
+			.divOutlineNoMarkdown .liOutline {
+				list-style-type: none;
+				margin-bottom: .5em;
+				}
+			.divOutlineNoMarkdown .divOutlineHead {
+				font-weight: bold;
+				margin-top: 13px;
+				margin-bottom: 13px;
+				}
+			.divOutlineNoMarkdown .liHasSubs ul {
+				}
+			.divOutlineNoMarkdown .liNoSubs {
+				}
+			.divOutlineNoMarkdown .spOutlineIcon {
+				margin-right: -11px;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink {
+				color: black;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink i {
+				color: black;
+				cursor: pointer;
+				position: relative;
+				width: .5em;
+				left: -1em;
+				}
+			.divOutlineNoMarkdown .aOutlineTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divOutlineNoMarkdown .spPermalink {
+				}
+			.divOutlineNoMarkdown .spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 10px;
+				font-weight: normal;
+				vertical-align: top;
+				margin-left: 3px;
+				}
+			.divOutlineNoMarkdown code {
+				display: inline;
+				border: none;
+				color: black;
+				font-size: .85em;
+				}
+			</style>
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
 <style>
 	.divFargoIndex .aDocTitleOnIndexPage {
@@ -195,6 +259,19 @@
 	</script>
 		
 		<script>
+			function ecOutline (idnum) { //7/12/14 by DW
+				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					c.style.color = "black";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					c.style.color = "silver";
+					$(idUL).slideDown (75);
+					}
+				}
 			function startupOutlineTemplate () {
 				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
 					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
@@ -237,6 +314,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/10/theMeaningOfFavoritingATweet.html" target="_blank">The Meaning of Favoriting a Tweet</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/10/2ndUpdateToMyLcpTodotxtActionNowWithPriorities.html" target="_blank">2nd Update to My LCP Todo.txt Action: Now With Priorities</a></li>
@@ -261,7 +339,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -277,121 +354,39 @@
 					<div id="idTextInFrontOfImage">
 						<div class="divHeadlineUnit" id="idHeadlineUnit">
 							<div class="divPrevNext">
-								<div class="divPrevNextLinks"><a href="http://blog.jeffreykishner.com/2014/07/09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html" title="Update to Launch Center Pro Action to Todo.txt: Multiple Contexts and Projects" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" title="How to Get the SoundCloud URL Schemes for Users and Tracks" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" title="Podcast About URL Schemes" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
 								</div>
 							<div class="divBreadcrumbs" id="idBreadcrumbs">
-								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07">July 2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07/08">July 8</a></li></ul>
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07">July 2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07/11">July 11</a></li></ul>
 								</div>
-							<h2>A Launch Center Pro Action for Todo.txt</h2>
+							<h2>Three Types of Lists</h2>
 							</div>
-						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>A blog reader emailed the following question:</p>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>I am constantly fidgeting with my productivity apps and system. I was engaged to <a href="http://www.crushapps.com/paperless/">Paperless</a> for many months, but now I am playing with <a href="http://todotxt.com/">Todo.txt</a> on the command line and on iOS. As a result, I've been thinking about types of lists and the most appropriate apps for each type of list. </p>
 
-<blockquote>
-  <p>I have texttool, draft and LCP apps on my iphone.</p>
-  
-  <p>Please help me this issue. </p>
-  
-  <p>I have todo.txt file in directory dropbox/todo/todo.txt </p>
-  
-  <p>I write in draft app one note with multiline line:</p>
+<h3>1. Actionable Tasks</h3>
 
-<pre><code>Task1
+<p>These lists include only tasks that require a physical (measurable/observable) action to mark as complete. This is what the GTD system is all about. Over the years I have used Omnifocus, TaskPaper, Paperless, and now Todo.txt. I have found that -- for me -- text-file-based apps are the best (TaskPaper, Todo.txt). They both support tags/contexts (the @ sign) and projects (the + sign in Todo.txt; a string followed by a : for TaskPaper). I can open them in any text editor, or I can manipulate the text in supported apps. (Jesse Grosjean removed his <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> app from the iOS App Store, but fortunately Ole Zorn created an excellent TaskPaper module for <a href="http://omz-software.com/editorial/">Editorial</a>.)</p>
 
-Task2 
+<h4>1a. Actionable Tasks With "Hard" Due Dates</h4>
 
-Task3 
-</code></pre>
-  
-  <p>I want to add this list to shown todo.txt (each line separate) in this format: </p>
+<p>Some actionable tasks need to be done at a very specific time, or <em>by</em> a very specific time. "Mail the DVD at 8:30am" or "Go to Trader Joe's at 6pm." These I put in <a href="http://www.dueapp.com/">Due</a> or Fantastical/iOS Reminders. </p>
 
-<pre><code>[current date] task1 @grocery 
+<h3>2. "Consumption" Lists</h3>
 
-[current date] task2 @grocery 
+<p>These are items that I want to consume: books, movies, music tracks, groceries. None of this is urgent (well, except for food). These items do require checkboxes, because once I've rented/downloaded/borrowed/purchased the item, I don't need to do it again (... except for food).  I am still using Paperless for this, because the app provides a note field where I can include all the meta info I need (URLs, for example, or who suggested a particular book). And in Paperless, I can uncheck a grocery item to re-add it to my shopping list.</p>
 
-[current date] task3 @grocery 
-</code></pre>
-  
-  <p>@grocery tag optional and may be replaced with other tag.</p>
-  
-  <p>How to do this?</p>
-</blockquote>
+<h3>3. Ideas Lists</h3>
 
-<p>Here is a solution that adds the current date before each list item and the single tag of your choice after each list item.</p>
+<p>I have a list that is more-or-less called, "Things I Need to Remember to Do at Home to Avoid the Wrath of My Wife." Another is "Lunch Ideas." These items should not have checkboxes, because they are reference materials, not one-time (or even recurring) tasks. Right now I have these lists in <a href="http://listaryapp.com/">Listary</a> which pulls notes with a specific tag from <a href="http://simplenote.com/">Simplenote</a>. You can toggle a setting for a list in Paperless to remove checkboxes and just use the list as a reference. I have also used <a href="http://carbonfin.com/">Carbonfin Outliner</a> with the checkboxes toggled off for these types of lists.</p>
 
-<p><a href="https://launchcenterpro.com/zlv5l6">Import the LCP action</a> or enter the following in the action composer:</p>
+<hr />
 
-<pre><code>texttool://x-callback-url/transform?text=[prompt-return:tasks]&amp;method=affix&amp;prefix=[textexpander:ddate]%20&amp;suffix=%20%40[prompt:tag]&amp;scope=lines
-</code></pre>
-
-<p>When I tap on this action, I enter each list item on a new line (hitting Return after each item except the last) and when I'm done I hit "Next".</p>
-
-<pre><code>apple
-
-orange
-
-banana
-</code></pre>
-
-<p>Then the next prompt asks me to enter a tag:</p>
-
-<pre><code>groceries
-</code></pre>
-
-<p>The action outputs the following in <a href="http://blackfoggames.com/TextTool/">TextTool</a>:</p>
-
-<pre><code>2014-07-08 apple @groceries
-
-2014-07-08 orange @groceries
-
-2014-07-08 banana @groceries
-</code></pre>
-
-<p>The above action requires that I have a <a href="http://smilesoftware.com/apps/">TextExpander</a> snippet called <em>ddate</em> in the following format: %Y-%m-%d, and that I have imported snippets into <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. </p>
-
-<h3>Prepending the Output to the todo.txt File</h3>
-
-<p><a href="https://launchcenterpro.com/99t4yt">Import this action</a> to prepend the output from TextTool to your <em>todo.txt</em> file, or enter the following into the LCP action composer:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[prompt-return:tasks]&amp;method=affix&amp;prefix=[textexpander:ddate]%20&amp;suffix=%20%40[prompt:tag]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>The above action requires that you <a href="drafts://x-callback-url/import_action?type=dropbox&amp;name=todotxt&amp;path=%2Ftodo%2F&amp;filenametype=2&amp;filename=todo&amp;ext=txt&amp;writetype=1&amp;template=%5B%5Bdraft%5D%5D">import this Dropbox action</a> into <a href="http://agiletortoise.com/drafts/">Drafts</a>. Or enter the following as a Dropbox action:</p>
-
-<pre><code>Name: todotxt
-
-Path: /todo/
-
-File (predefined): todo
-
-Ext: txt
-
-Write: Prepend
-
-Template: [[draft]]
-</code></pre>
-
-<p>It is possible to accomplish the above without LCP. <a href="drafts://x-callback-url/import_action?type=URL&amp;name=date-list-tag&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bbody%5D%5D%26method%3Daffix%26prefix%3Dddate%2520%26suffix%3D%2520%2540%5B%5Btitle%5D%5D%26scope%3Dlines%26x-success%3D%7B%7Bdrafts%3A%2F%2F%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dtodotxt%7D%7D">Import this URL action</a> into Drafts, or enter the following as an URL action:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[body]]&amp;method=affix&amp;prefix=ddate%20&amp;suffix=%20%40[[title]]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>The only difference is that you need to enter the tag name on the first line:</p>
-
-<pre><code>groceries
-
-apple
-
-orange
-
-banana
-</code></pre>
-
-<p>Everything else works exactly the same. (You still need to install the Dropbox action and to import TextExpander snippets.)</p></div>
+<p>Of course, one can store <em>all</em> these lists in simple text files and store them in a single directory. <a href="http://brettterpstra.com/projects/nvalt/">nvAlt</a> fans do this. But am I either in front of my phone or a work computer, and I cannot sync Dropbox at work. (One can sync an nvAlt folder with Dropbox.) Although I feel too spread out with my various list apps, I do believe that the ultimate test is whether my system supports both "brain dump" and "information access." Can I quickly note down an idea or todo? And can I easily find it later? Part of my problem is that I don't always recall where I put a todo. With this three-part categorical division, I hope I can better recall a todo's location. If it's actionable, it's in Todo.txt or iOS Reminders; if it's about something I want to buy, it's in Paperless; if it's an evergreen list, it's in Listary. We'll see how it goes.</p></div>
 						<div class="divFooterText">
 							<hr>
-							<p style="float: right;">Last built: Fri, Jul 11, 2014 at 10:00 AM</p>
-							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlTue, 08 Jul 2014 16:51:00 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, July  8, 2014 at 11:51 AM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
+							<p style="float: right;">Last built: Wed, Jul 16, 2014 at 12:17 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlFri, 11 Jul 2014 14:59:17 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, July 11, 2014 at  9:59 AM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
 							</div>
 						</div>
 						</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>A Launch Center Pro Action for Todo.txt</title>
+		<title>Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Fri, 11 Jul 2014 15:00:41 GMT",
-    "opmlExpansionState": "1,2,3,4,6,9,10,12,20,21,27,28,76,77,199",
+    "opmlDateModified": "Wed, 16 Jul 2014 17:19:13 GMT",
+    "opmlExpansionState": "1,2,3,4,17,29,32,33,35,43,44,50,51,99,100,222",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "outline",
-    "slogan": "You should never argue with a crazy man.",
+    "slogan": "Welcome back my friends to the show that never ends.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,10 +66,12 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
-    "text": "A Launch Center Pro Action for Todo.txt",
-    "created": "Tue, 08 Jul 2014 16:51:00 GMT",
+    "flMarkdown": true,
+    "leftIndent": 0,
+    "text": "Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)",
+    "created": "Fri, 11 Jul 2014 17:21:20 GMT",
     "description": "",
-    "path": "2014/07/08/aLaunchCenterProActionForTodotxt",
+    "path": "2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -84,15 +86,15 @@
     "streamVersion": "2",
     "flEmojify": "true",
     "authorGithubAccount": "jkishner",
-    "name": "aLaunchCenterProActionForTodotxt",
+    "name": "pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland",
     "icon": "calendar",
     "isFeedItem": "true",
     "isComment": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Fri Jul 11 2014 11:00:41 GMT-0400 (EDT)",
+    "now": "Wed Jul 16 2014 13:19:13 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html"
+    "url": "http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -164,6 +166,68 @@
 				display: none;
 				}
 			</style>
+		<style>
+			.divOutlineNoMarkdown {
+				font-size: 20px;
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				}
+			.divOutlineNoMarkdown .ulOutlineList {
+				padding: 0;
+				margin: 0;
+				}
+			.divOutlineNoMarkdown .liOutline {
+				list-style-type: none;
+				margin-bottom: .5em;
+				}
+			.divOutlineNoMarkdown .divOutlineHead {
+				font-weight: bold;
+				margin-top: 13px;
+				margin-bottom: 13px;
+				}
+			.divOutlineNoMarkdown .liHasSubs ul {
+				}
+			.divOutlineNoMarkdown .liNoSubs {
+				}
+			.divOutlineNoMarkdown .spOutlineIcon {
+				margin-right: -11px;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink {
+				color: black;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink i {
+				color: black;
+				cursor: pointer;
+				position: relative;
+				width: .5em;
+				left: -1em;
+				}
+			.divOutlineNoMarkdown .aOutlineTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divOutlineNoMarkdown .spPermalink {
+				}
+			.divOutlineNoMarkdown .spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 10px;
+				font-weight: normal;
+				vertical-align: top;
+				margin-left: 3px;
+				}
+			.divOutlineNoMarkdown code {
+				display: inline;
+				border: none;
+				color: black;
+				font-size: .85em;
+				}
+			</style>
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
 <style>
 	.divFargoIndex .aDocTitleOnIndexPage {
@@ -195,6 +259,19 @@
 	</script>
 		
 		<script>
+			function ecOutline (idnum) { //7/12/14 by DW
+				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					c.style.color = "black";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					c.style.color = "silver";
+					$(idUL).slideDown (75);
+					}
+				}
 			function startupOutlineTemplate () {
 				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
 					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
@@ -237,6 +314,8 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/10/theMeaningOfFavoritingATweet.html" target="_blank">The Meaning of Favoriting a Tweet</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/10/2ndUpdateToMyLcpTodotxtActionNowWithPriorities.html" target="_blank">2nd Update to My LCP Todo.txt Action: Now With Priorities</a></li>
@@ -260,8 +339,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -277,121 +354,42 @@
 					<div id="idTextInFrontOfImage">
 						<div class="divHeadlineUnit" id="idHeadlineUnit">
 							<div class="divPrevNext">
-								<div class="divPrevNextLinks"><a href="http://blog.jeffreykishner.com/2014/07/09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html" title="Update to Launch Center Pro Action to Todo.txt: Multiple Contexts and Projects" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" title="How to Get the SoundCloud URL Schemes for Users and Tracks" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" title="Three Types of Lists" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
 								</div>
 							<div class="divBreadcrumbs" id="idBreadcrumbs">
-								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07">July 2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07/08">July 8</a></li></ul>
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07">July 2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07/11">July 11</a></li></ul>
 								</div>
-							<h2>A Launch Center Pro Action for Todo.txt</h2>
+							<h2>Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</h2>
 							</div>
-						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>A blog reader emailed the following question:</p>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p><a href="https://www.pushbullet.com/#">Pushbullet</a> is the best service I've seen so far that will allow me to push info from my phone to my work computer and vice versa. (I cannot install <a href="http://danilo.to/command-c">Command-C</a> at the office.) I installed the Chrome extension and the iPhone app. From the Chrome extension, I can push a note or a list to the iOS app. This in itself is unremarkable -- I use <a href="https://pushover.net/">Pushover</a> all the time for that. But the killer feature is that I can send a link to my phone, and the moment I swipe the notification, that URL will open in the Chrome browser. And if I send an address to my iPhone, after I swipe the notification Google Maps will open to that location.  </p>
 
-<blockquote>
-  <p>I have texttool, draft and LCP apps on my iphone.</p>
-  
-  <p>Please help me this issue. </p>
-  
-  <p>I have todo.txt file in directory dropbox/todo/todo.txt </p>
-  
-  <p>I write in draft app one note with multiline line:</p>
+<p>Also, I can quickly send the clipboard contents on my iPhone to the desktop extension. This is a lot faster than emailing text to myself or uploading it to Dropbox via <a href="http://agiletortoise.com/drafts/">Drafts</a> or <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.</p>
 
-<pre><code>Task1
+<h4>IFTTT</h4>
 
-Task2 
+<p>There's an <a href="https://ifttt.com/pushbullet">IFTTT channel</a> that allows you to push a note, link, file or address to your iPhone. I haven't played around with this, but there are many shared recipes for the channel, and I imagine you can create a recipe to automatically send images from a feed to your device.</p>
 
-Task3 
-</code></pre>
-  
-  <p>I want to add this list to shown todo.txt (each line separate) in this format: </p>
+<h4>URL Schemes</h4>
 
-<pre><code>[current date] task1 @grocery 
+<p>Pushbullet has <a href="http://docs.pushbullet.com/iphone/">URL schemes</a>. <a href="http://www.bachyaproductions.com/ios-url-actions-the-up-to-date-guide/">Bachya</a> wrote this bookmarklet to send the current page in your iOS web browser to the Pushbullet app:</p>
 
-[current date] task2 @grocery 
-
-[current date] task3 @grocery 
-</code></pre>
-  
-  <p>@grocery tag optional and may be replaced with other tag.</p>
-  
-  <p>How to do this?</p>
-</blockquote>
-
-<p>Here is a solution that adds the current date before each list item and the single tag of your choice after each list item.</p>
-
-<p><a href="https://launchcenterpro.com/zlv5l6">Import the LCP action</a> or enter the following in the action composer:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[prompt-return:tasks]&amp;method=affix&amp;prefix=[textexpander:ddate]%20&amp;suffix=%20%40[prompt:tag]&amp;scope=lines
+<pre><code>javascript:window.location='pushbullet://compose?type=link&amp;title=' + encodeURIComponent(document.title) + '&amp;url=' + encodeURIComponent(window.location)
 </code></pre>
 
-<p>When I tap on this action, I enter each list item on a new line (hitting Return after each item except the last) and when I'm done I hit "Next".</p>
+<h3>The Only Downside: Google</h3>
 
-<pre><code>apple
+<p>I've been working to become less reliant on Google -- for example, <a href="http://blog.jeffreykishner.com/2013/08/22/anotherPersonMovingToFastmailfm.html">moving to Fastmail.fm</a>. With Pushbullet, you can only sign in with Google, and you have no choice but to open links and addresses in Google Chrome and Google Maps. Granted, their iOS maps app is my default, and I use Chrome for Mac at work, but I still would prefer to have a <em>choice</em>.</p>
 
-orange
+<h3>Pushbullet vs. Pushover</h3>
 
-banana
-</code></pre>
+<p>I have been using my <a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html">Pushover command line script</a> to send text to my phone, and after a recent release, now a swipe of a <a href="https://pushover.net/">Pushover</a> notification will open a supplementary URL (if available). This is great, because I can execute Drafts actions with a swipe of a notification. For example I can make my message an URL and the Drafts action "launch url" (which is just <code>launch://?url=[[draft]]</code>). This will open a link in Safari for iOS with a single swipe. However, it is definitely less work for me to just open the Pushbullet extension and send a link to my phone that way.  </p>
 
-<p>Then the next prompt asks me to enter a tag:</p>
-
-<pre><code>groceries
-</code></pre>
-
-<p>The action outputs the following in <a href="http://blackfoggames.com/TextTool/">TextTool</a>:</p>
-
-<pre><code>2014-07-08 apple @groceries
-
-2014-07-08 orange @groceries
-
-2014-07-08 banana @groceries
-</code></pre>
-
-<p>The above action requires that I have a <a href="http://smilesoftware.com/apps/">TextExpander</a> snippet called <em>ddate</em> in the following format: %Y-%m-%d, and that I have imported snippets into <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. </p>
-
-<h3>Prepending the Output to the todo.txt File</h3>
-
-<p><a href="https://launchcenterpro.com/99t4yt">Import this action</a> to prepend the output from TextTool to your <em>todo.txt</em> file, or enter the following into the LCP action composer:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[prompt-return:tasks]&amp;method=affix&amp;prefix=[textexpander:ddate]%20&amp;suffix=%20%40[prompt:tag]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>The above action requires that you <a href="drafts://x-callback-url/import_action?type=dropbox&amp;name=todotxt&amp;path=%2Ftodo%2F&amp;filenametype=2&amp;filename=todo&amp;ext=txt&amp;writetype=1&amp;template=%5B%5Bdraft%5D%5D">import this Dropbox action</a> into <a href="http://agiletortoise.com/drafts/">Drafts</a>. Or enter the following as a Dropbox action:</p>
-
-<pre><code>Name: todotxt
-
-Path: /todo/
-
-File (predefined): todo
-
-Ext: txt
-
-Write: Prepend
-
-Template: [[draft]]
-</code></pre>
-
-<p>It is possible to accomplish the above without LCP. <a href="drafts://x-callback-url/import_action?type=URL&amp;name=date-list-tag&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bbody%5D%5D%26method%3Daffix%26prefix%3Dddate%2520%26suffix%3D%2520%2540%5B%5Btitle%5D%5D%26scope%3Dlines%26x-success%3D%7B%7Bdrafts%3A%2F%2F%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dtodotxt%7D%7D">Import this URL action</a> into Drafts, or enter the following as an URL action:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[body]]&amp;method=affix&amp;prefix=ddate%20&amp;suffix=%20%40[[title]]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>The only difference is that you need to enter the tag name on the first line:</p>
-
-<pre><code>groceries
-
-apple
-
-orange
-
-banana
-</code></pre>
-
-<p>Everything else works exactly the same. (You still need to install the Dropbox action and to import TextExpander snippets.)</p></div>
+<p>I will continue to use my Pushover script to execute actions in Drafts, but Pushbullet is more convenient if I just want to quickly send text or a link to my phone.</p></div>
 						<div class="divFooterText">
 							<hr>
-							<p style="float: right;">Last built: Fri, Jul 11, 2014 at 10:00 AM</p>
-							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlTue, 08 Jul 2014 16:51:00 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, July  8, 2014 at 11:51 AM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
+							<p style="float: right;">Last built: Wed, Jul 16, 2014 at 12:19 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlFri, 11 Jul 2014 17:21:20 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, July 11, 2014 at 12:21 PM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
 							</div>
 						</div>
 						</div>
