@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Wed, 23 Jul 2014 20:00:40 GMT",
-    "opmlExpansionState": "1,2,3,4,6,7,10,11,24,36,39,40,42,50,51,57,58,106,107,229",
+    "opmlDateModified": "Thu, 24 Jul 2014 18:49:51 GMT",
+    "opmlExpansionState": "1,2,3,4,23,24,26,27,30,31,44,56,59,60,62,70,71,77,78,126,127,249",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "Welcome back my friends to the show that never ends.",
+    "slogan": "You should never argue with a crazy man.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -69,7 +69,7 @@
     "flMarkdown": true,
     "leftIndent": 0,
     "text": "Jeffrey Kishner's Fargo Blog",
-    "created": "Wed, 23 Jul 2014 20:00:40 GMT",
+    "created": "Thu, 24 Jul 2014 18:49:51 GMT",
     "description": "",
     "path": "",
     "subheadColor": "white",
@@ -88,7 +88,7 @@
     "authorGithubAccount": "jkishner",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Wed Jul 23 2014 16:00:42 GMT-0400 (EDT)",
+    "now": "Thu Jul 24 2014 14:49:52 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/.html"
 }; //12/12/13 by DW
@@ -196,6 +196,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
@@ -220,7 +221,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -239,6 +239,49 @@
 					<h2 id="idBlogHomePageTitle">Jeffrey Kishner's Fargo Blog</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html">Command Line Script to Make Your iPhone Dial a Number</a></div>
+		<p>This is a bash script that only requires a single command in Terminal and a single swipe on your iPhone to make a phone call. It is an adaptation of my <a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html">command line Pushover script</a>, so please review that before proceeding below.</p>
+
+<p>Create a file called <code>callhome</code> at /usr/local/bin with the following contents:</p>
+
+<pre><code>#! /bin/bash
+
+message="tel:8005551212"
+
+action="launch url"
+
+url_title="Make the Call"
+
+curl -s \
+
+  -F "token=$APP_TOKEN" \
+
+  -F "user=$USER_KEY" \
+
+  -F "title=$action" \
+
+  -F "message=$message" \
+
+  -F "url_title=$url_title" \
+
+  -F "url=drafts:///create?text=tel%3A8005551212&amp;action=launch%20url" \
+
+  https://api.pushover.net/1/messages.json
+</code></pre>
+
+<p>Replace the two instances of <code>8005551212</code> with a phone number, and $APP_TOKEN and $USER_KEY with your app token and user key.</p>
+
+<p>Make the script executable: <code>chmod +x callhome</code>.</p>
+
+<p>In <a href="http://agiletortoise.com/drafts/">Drafts</a>, create an action called <code>launch url</code> with the following URL action: <code>launch://?url=[[draft]]</code>. (<a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> must also be installed for this to work.)</p>
+
+<p>Now all you have to do is type <code>callhome</code> from the command line. When you get a notification on your iPhone, swipe it. Pushover will open the supplementary URL to Drafts, which will open Launch Center Pro, which will dial the number.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">07/24/14; 01:32:12 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="2014/07/23/opmlwordpressPluginNowSupportsEmoji.html">OPML-WordPress Plugin Now Supports Emoji</a></div>
 		<p>If you include emoji in your Fargo blog (using the <a href="http://www.emoji-cheat-sheet.com/">Emoji Cheat Sheet</a> format), they will render on your WordPress page in the latest update to my <a href="http://jeffreykishner.com/wordpress-plugins/post-opml-to-wordpress/">plugin</a>.</p>
@@ -1093,48 +1136,12 @@ webbrowser.open('drafts://x-callback-url/create?text=' + evernoteurl + '&amp;act
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html">How to Quickly Jump to Lists in Tweetbot for iOS</a></div>
-		<p><a href="https://twitter.com/share?text=How%20to%20Quickly%20Jump%20to%20Lists%20in%20Tweetbot%20for%20iOS&amp;url=http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">Tweet This Post</a></p>
-
-<p>Tweetbot has a list of <a href="http://tapbots.com/blog/development/tweetbot-url-scheme">URL schemes</a>, the most recent of which is one to jump immediately to a Twitter list. I have never used it until now because I never knew how to find a list's ID. But now that I've figured it out, I'd like to share it with you.</p>
-
-<p>The full scheme is </p>
-
-<pre><code>tweetbot://&lt;screenname&gt;/list/&lt;list_id&gt;?callback_url=&lt;url&gt; 
-</code></pre>
-
-<p>but you don't need to include the <code>?</code> parameter unless you want to go somewhere other than your most recent timeline view in the app.</p>
-
-<p>Let's say I want to view my <a href="https://twitter.com/kishner/lists/ios">ios Twitter list</a>. To get the list ID, I view the source of the web page and search for <code>data-list-id</code>. In this example, the source code includes <code>data-list-id="79393622"</code>. I take that value and put it in the URL scheme:</p>
-
-<pre><code>tweetbot://kishner/list/79393622
-</code></pre>
-
-<p>If I include this as an action in <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>, then clicking on it will bring me right to that list. </p>
-
-<p>If I have a preferred app I want to go to after I click the Cancel button, I can include the <code>callback_url</code> parameter, which is an encoded URL. If I want to go to Launch Center Pro:</p>
-
-<pre><code>tweetbot://kishner/list/79393622?callback_url=launch://
-</code></pre>
-
-<p>If I want to go to an actual website like google.com instead:</p>
-
-<pre><code>tweetbot://kishner/list/79393622?callback_url=http%3A%2F%2Fgoogle.com
-</code></pre>
-
-<p>Enjoy!</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/16/14; 09:21:52 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Wed, Jul 23, 2014 at  3:00 PM</p>
+					<p style="float: right;">Last built: Thu, Jul 24, 2014 at  1:49 PM</p>
 					
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Wednesday, July 23, 2014 at  3:00 PM</span>.</div>
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, July 24, 2014 at  1:49 PM</span>.</div>
 					</div>
 				</div>
 			</div>
