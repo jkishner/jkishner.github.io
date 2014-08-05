@@ -10,7 +10,7 @@
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Fri, 25 Jul 2014 17:19:28 GMT",
-    "opmlExpansionState": "1,2,3,4,22,23,25,26,29,30,43,55,58,59,61,69,70,76,77,125,126,248",
+    "opmlDateModified": "Tue, 05 Aug 2014 21:01:11 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,13,31,32,34,35,38,39,52,64,67,68,70,78,79,85,86,134,135,257",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "Pay no attention to the man behind the curtain.",
+    "slogan": "Still diggin!",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -69,7 +69,7 @@
     "flMarkdown": true,
     "leftIndent": 0,
     "text": "Jeffrey Kishner's Fargo Blog",
-    "created": "Fri, 25 Jul 2014 17:19:28 GMT",
+    "created": "Tue, 05 Aug 2014 21:01:11 GMT",
     "description": "",
     "path": "",
     "subheadColor": "white",
@@ -88,7 +88,7 @@
     "authorGithubAccount": "jkishner",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Fri Jul 25 2014 13:19:29 GMT-0400 (EDT)",
+    "now": "Tue Aug 05 2014 17:01:12 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/.html"
 }; //12/12/13 by DW
@@ -196,6 +196,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
@@ -220,7 +221,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -239,6 +239,24 @@
 					<h2 id="idBlogHomePageTitle">Jeffrey Kishner's Fargo Blog</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/08/05/river4.html">River 4</a></div>
+		<p>I got Dave Winer's <a href="https://github.com/scripting/river4">River 4</a> to work on my Linux VPS. You can see it <a href="http://river.jeffreykishner.com">here</a>. </p>
+
+<p>I know next to nothing about node.js; I managed to install it, as well as <em>npm</em> and an app called <em>forever</em> that will run river.js in the background. (Thanks to <a href="http://scriven.chrisdadswell.co.uk/articles/howToSetupAFargoRiverOfNews.html">Chris Dadswell</a> and <a href="http://blog.andrewshell.org/running-river4-with-forever/">Andrew Shell</a> for their blog posts about this.)</p>
+
+<p>If you know enough to install apps in Linux, grab the above, clone river 4 via git, and run <code>node river.js</code> from within the river4 folder. If everything works, you can run <code>forever start river.js</code> in the background.</p>
+
+<p>Honestly, the hardest part was getting my Amazon S3 bucket to work. I learned via Stack Overflow that in order to map river.jeffreykishner.com via CNAME to my bucket, I had to name the <em>bucket</em> river.jeffreykishner.com. That was the only major hurdle.</p>
+
+<p>I also learned that I needed to store the three environmental variables in .bashrc so that they would stay permanent.</p>
+
+<p>The cool think about River 4 is that one can <a href="http://river4.smallpict.com/2014/06/17/river4V088.html">use <em>include</em> to reference an OPML file that is not stored in your S3 bucket</a>. As an experiment, I uploaded an OPML file that includes a link to an OPML file hosted in <a href="http://fargo.io">Fargo</a>. Sure enough, the feeds in the OPML file in Fargo appear in my river, so in the future, all I have to do is add a new feed to my list in Fargo instead of having to re-upload an OPML file to Amazon everytime I want to add a new feed to a tab. </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/05/14; 03:47:10 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/08/05/river4.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html">Command Line Script to Make Your iPhone Dial a Number</a></div>
 		<p>This is a bash script that only requires a single command in Terminal and a single swipe on your iPhone to make a phone call. It is an adaptation of my <a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html">command line Pushover script</a>, so please review that before proceeding below.</p>
@@ -1094,52 +1112,12 @@ webbrowser.open('drafts://x-callback-url/create?text=' + evernoteurl + '&amp;act
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></div>
-		<p><a href="https://twitter.com/share?text=Use%20Nested%20Lists%20in%20Launch%20Center%20Pro%202.3%20to%20Open%20Albums%20by%20Artist%20in%20Spotify%20and%20Ecoute%20for%20iOS%0A&amp;url=http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Tweet This Post</a></p>
-
-<p>The latest update to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> has made it easier to create nested lists. Previously one had to use <code>launch://?url=</code> but now that is no longer necessary. Here is an abridged version of my LCP action to open albums in Ecoute:</p>
-
-<pre><code>ecoute://play?terms=[[list:Artist|Eminem=[list:Album|Marshall Mathers|Recovery]|Foo Fighters=[list:Albums|The Colour and the Shape|There Is Nothing Left to Lose]|Pharrell Williams={{Pharrell Williams}}|Search=[prompt:Search]]]
-</code></pre>
-
-<p>When I tap on this action, it presents a list of artists (Eminem, Foo Fighters, Pharrell Williams, and "Search"). If I tap on either of the first two, I am presented with a list of albums, and when I tap on the album name, that album auto-plays in Ecoute. If I tap on Pharrell Williams, <em>G I R L</em> automatically plays because I only have one album by him in my library. And if I tap on Search I am presented with a prompt, and if my query matches something in my music library, then it starts playing. (Thanks to Eric Pramono @epramono for help encoding this last part.)</p>
-
-<p>The key to this nested list is that the first list is surrounded by double brackets and the embedded lists are only surrounded by single brackets. Two brackets means <em>don't encode this</em>. Because the first list is not encoded, I have to encode Pharrell Williams in double curly brackets since his name does not included an embedded list. And the search prompt only needs single brackets because they encode the prompt text.</p>
-
-<p>The Spotify URL scheme is a bit more complicated. Here is an abridged version of my Spotify action:</p>
-
-<pre><code>spotify:[[list:Pick a List|Ali Farka Touré={{http://open.spotify.com/artist/3mNygoyrEKLgo6sx0MzwOL}}|King's X=[list:|Xv=http://open.spotify.com/album/792TsZibmmEiOCL2rEoJvm|Please Come Home....Mr. Bulbous=http://open.spotify.com/album/2ZyMISUxP7MLzxZCZLHEHJ]|Yes=[list:|Fragile=http://open.spotify.com/album/4X6gq5bgpGXcHINlFWzriM|Relayer=http://open.spotify.com/album/6MK9yp7hFeOLeR7F1hsBp6]]]
-</code></pre>
-
-<p>When I click on this action I would be presented with Ali Farka Touré, King's X, and Yes. Following the pattern above, if I don't have an embedded list for an artist, I just encode that value with double curly brackets. Otherwise I just use single brackets around the embedded list.</p>
-
-<p>The URL scheme for Spotify is spotify:SPOTIFY_URL. You can get the Spotify URL from the app (in the share settings) or via a google search. I've even written a search tool using their API <a href="http://javascript.jeffreykishner.com/spotify.html">here</a>.</p>
-
-<h2>How to Manage These Actions</h2>
-
-<p>One of the major downsides of LCP is that it's difficult to edit very long actions in the app's editor. However, there is a way around this. Import <a href="https://launchcenterpro.com/py6vdl">this action</a> or just create a new action called Import and enter this string:</p>
-
-<pre><code>launch://import?url=[dropbox-text:ACTION.txt]
-</code></pre>
-
-<p>Then keep your music actions in their own text files in Dropbox. For example, I currently have my unabridged Spotify action as a text file called <code>spotify.txt</code> in the root of my Dropbox folder. I then just use the following action to import it:</p>
-
-<pre><code> launch://import?url=[dropbox-text:spotify.txt]
-</code></pre>
-
-<p>LCP will import that text file, and ask you if you want to add it, just like if you were to use one of the importable actions at launchcenterpro.com. This way, you can make your edits in any Dropbox text editor instead of within the app itself. </p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/16/14; 11:57:07 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Fri, Jul 25, 2014 at 12:19 PM</p>
+					<p style="float: right;">Last built: Tue, Aug  5, 2014 at  4:01 PM</p>
 					
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, July 25, 2014 at 12:19 PM</span>.</div>
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, August  5, 2014 at  4:01 PM</span>.</div>
 					</div>
 				</div>
 			</div>
