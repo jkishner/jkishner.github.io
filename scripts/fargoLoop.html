@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>August 2014</title>
+		<title>Fargo Loop: Perform an Action on All Headlines in an Outline</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -43,13 +43,13 @@
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "It's even worse than it appears.",
+    "type": "outline",
+    "slogan": "Greetings, citizen of Planet Earth. We are your overlords. :-)",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
     "flIndexPage": false,
-    "flDisqusComments": "true",
+    "flDisqusComments": "false",
     "flStoryTextOnIndexPage": false,
     "flNonDocHeadsOnIndexPage": true,
     "flStoryDateOnIndexPage": false,
@@ -69,10 +69,10 @@
     "maxStreamDays": "14",
     "flMarkdown": true,
     "leftIndent": 0,
-    "text": "August 2014",
-    "created": "Tue, 05 Aug 2014 20:47:09 GMT",
+    "text": "Fargo Loop: Perform an Action on All Headlines in an Outline",
+    "created": "Mon, 12 Aug 2013 19:49:55 GMT",
     "description": "",
-    "path": "2014/08",
+    "path": "scripts/fargoLoop",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -87,13 +87,14 @@
     "streamVersion": "2",
     "flEmojify": "true",
     "authorGithubAccount": "jkishner",
-    "name": "08",
-    "icon": "calendar",
+    "name": "fargoLoop",
+    "icon": "code",
+    "encTitle": "Fargo%20Loop",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Mon Aug 18 2014 16:34:40 GMT-0400 (EDT)",
+    "now": "Mon Aug 18 2014 16:34:41 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/2014/08.html"
+    "url": "http://blog.jeffreykishner.com/scripts/fargoLoop.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -123,7 +124,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					float: none;
+					font-size: 1.2em;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -136,6 +137,95 @@
 				.spSlogan {
 					display: none;
 					}
+				}
+			</style>
+		<style>
+			.divOutlineImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divTextInFrontOfImage {
+				background-color: white; 
+				opacity: .90;
+				padding: 1.5em;
+				border:2px solid whitesmoke;
+				}
+			.spSlogan {
+				display: none;
+				}
+			</style>
+		<style>
+			.divOutlineNoMarkdown {
+				font-size: 20px;
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				}
+			.divOutlineNoMarkdown .ulOutlineList {
+				padding: 0;
+				margin: 0;
+				}
+			.divOutlineNoMarkdown .liOutline {
+				list-style-type: none;
+				margin-bottom: .5em;
+				}
+			.divOutlineNoMarkdown .divOutlineHead {
+				font-weight: bold;
+				margin-top: 13px;
+				margin-bottom: 13px;
+				}
+			.divOutlineNoMarkdown .liHasSubs ul {
+				}
+			.divOutlineNoMarkdown .liNoSubs {
+				}
+			.divOutlineNoMarkdown .spOutlineIcon {
+				margin-right: -11px;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink {
+				color: black;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink i {
+				color: black;
+				cursor: pointer;
+				position: relative;
+				width: .5em;
+				left: -1em;
+				}
+			.divOutlineNoMarkdown .aOutlineTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divOutlineNoMarkdown .spPermalink {
+				}
+			.divOutlineNoMarkdown .spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 10px;
+				font-weight: normal;
+				vertical-align: top;
+				margin-left: 3px;
+				}
+			.divOutlineNoMarkdown code {
+				display: inline;
+				border: none;
+				color: black;
+				font-size: .85em;
 				}
 			</style>
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
@@ -168,6 +258,31 @@
 	ga('send', 'pageview');
 	</script>
 		
+		<script>
+			function ecOutline (idnum) { //7/12/14 by DW
+				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					c.style.color = "black";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					c.style.color = "silver";
+					$(idUL).slideDown (75);
+					}
+				}
+			function startupOutlineTemplate () {
+				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
+					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
+					textInFront.className = "divTextInFrontOfImage";
+					
+					var outlineImage = document.getElementById ("idOutlineImage"); 
+					outlineImage.className = "divOutlineImage";
+					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
+					}
+				}
+			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -236,108 +351,168 @@
 		</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a></li></ul>
+			<div id="idOutlineImage">
+				<div id="idOutlineContainer" class="container">
+					<div id="idTextInFrontOfImage">
+						<div class="divHeadlineUnit" id="idHeadlineUnit">
+							<div class="divPrevNext">
+								<div class="divPrevNextLinks"><a href="http://blog.jeffreykishner.com/search.html" title="Search This Blog" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<i class="fa fa-arrow-right" style="color: silver"></i></div>
+								</div>
+							<div class="divBreadcrumbs" id="idBreadcrumbs">
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/scripts">Scripts</a></li></ul>
+								</div>
+							<h2>Fargo Loop: Perform an Action on All Headlines in an Outline</h2>
+							</div>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p><a href="https://twitter.com/share?text=Fargo%20Loop&amp;url=http://jeffrey.smallpict.com/scripts/fargoLoop" target="_blank">Tweet This Post</a></p>
+
+<p>This script will let you take an action on each and every node in an outline. For this example I am bolding every headline, but you can use if-else statements or what-have-you where I have defined the <code>actionHere ()</code> function.</p>
+
+<p>I use Dave Winer's "count headlines" script at the beginning to determine how many headlines there are. Then I use a <i>for loop</i> to (a) perform an action; and (b) move to the next headline in the outline.</p>
+
+<p>The last time the <i>for loop</i> runs is at the penultimate headline, which brings us to the last headline. If the loop ran any longer, the script would freeze. So I repeat the action on the final headline, and I'm done.</p>
+
+<p><!-- outlineEmbedCode -- this version gets you a reader -->
+    <script src="http://fargo.io/code/concord.js" /></script>
+    <script src="http://fargo.io/code/utils.js"></script>
+    <style>
+        .divTrexEmbeddedOutlineContainer {
+            margin-bottom: 20px;
+            }
+        .divTrexEmbeddedOutlineContainer .divTrexEmbeddedOutliner {
+            min-height: 10em;
+            max-height: 30em;
+            border:1px solid gainsboro;
+            border-top-width: 0;
+            border-bottom-width: 0;
+            overflow-y: auto;
+            background-color: white;
+            padding: 6px;
+            }
+        .divTrexEmbeddedOutlineContainer .divAboveOutlineInfo {
+            min-height: 1.5em;
+            border:1px solid gainsboro;
+            background-color: whitesmoke;
+            padding: 4px;
+            font-family: "Arial";
+            font-size: .9em;
+            }
+        .divTrexEmbeddedOutlineContainer .divInfoRight {
+            float: right;
+            }
+        .divTrexEmbeddedOutlineContainer .divBelowOutlineInfo {
+            min-height: 1.5em;
+            border:1px solid gainsboro;
+            background-color: whitesmoke;
+            padding: 4px;
+            font-family: "Arial";
+            font-size: .9em;
+            }
+        .divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a {
+            font-family: "Arial";
+            font-size: .9em;
+            color: #0088cc;
+            }
+        .divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a:visited {
+            font-family: "Arial";
+            font-size: .9em;
+            color: #0088cc;
+            }
+        .divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a {
+            font-family: "Arial";
+            font-size: .9em;
+            color: #0088cc;
+            }
+        .divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a:visited {
+            font-family: "Arial";
+            font-size: .9em;
+            color: #0088cc;
+            }
+        .divTrexEmbeddedOutlineContainer .divOutlineTitle {
+            font-weight: bold;
+            }
+        </style>
+    <div class="divTrexEmbeddedOutlineContainer">
+        <div id="idAboveOutlineInfo" class="divAboveOutlineInfo">
+            <div id="idViewSource" class="divInfoRight"></div>
+            <div id="idOutlineTitle" class="divInfoLeft divOutlineTitle"></div>
+            </div>
+        <div id="idTrexEmbeddedOutliner" class="divTrexEmbeddedOutliner"></div>
+        <div id="idBelowOutlineInfo" class="divBelowOutlineInfo">
+            <div class="divInfoRight">
+                <i class="fa fa-heart" style="color: red; opacity: 0.6; font-size: 0.9em;"></i> 
+                <a href="http://fargo.io/" target="_blank">Fargo</a>
+                </div>
+            <div class="divInfoLeft"></div>
+            </div>
+        </div>
+    <script>
+        var font = "Arial", fontSize = 16, lineHeight = 24;
+        var opmlUrl = "https://dl.dropboxusercontent.com/s/a4cledfiirkk9sw/405fe6c1d6b1acbf65c8bd5c8a9149ad.opml";
+        function opKeystrokeCallback () {
+            }
+        function setPrefs () {
+            $("#idTrexEmbeddedOutliner").concord ({
+                "prefs": {
+                    "outlineFont": font, 
+                    "outlineFontSize": fontSize, 
+                    "outlineLineHeight": lineHeight,
+                    "renderMode": true,
+                    "readonly": true,
+                    "typeIcons": appTypeIcons
+                    },
+                "callbacks": {
+                    "opExpand": opExpandCallback,
+                    "opKeystroke": opKeystrokeCallback
+                    }
+                });
+            }
+        function getOutline (opmlUrl) {
+            var jxhr = $.ajax ({
+                url: opmlUrl,
+                dataType: "text",
+                timeout: 30000
+                })
+            .success (function (data, status, xhr) {
+                if (xhr.status==200) {
+                    var title;
+                    $("#idTrexEmbeddedOutliner").concord ().op.xmlToOutline (data, false);
+                    title = $("#idTrexEmbeddedOutliner").concord ().op.getTitle ();
+                    $("#idOutlineTitle").html (title);
+                    $("#idViewSource").html ("<a href='" + opmlUrl + "'>view  source</a>");
+                    }
+                })
+            .error (function (status, textStatus, errorThrown) {
+                console.log ("checkOutline: error == " + errorThrown + ", status == " + textStatus);
+                });
+            }
+        $(document).ready (function () {
+            setPrefs ();
+            getOutline (opmlUrl);
+            });
+        </script></p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p>Changelog</p>
+
+<ul>
+<li><p>2103-08-12</p>
+
+<ul><li>Script introduced.</li></ul></li>
+</ul></div>
+						<div class="divFooterText">
+							<hr>
+							<p style="float: right;">Last built: Mon, Aug 18, 2014 at  3:34 PM</p>
+							
+							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, August 12, 2013 at  2:49 PM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
+							</div>
 						</div>
-					<h2 id="idBlogHomePageTitle">August 2014</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="18/workflowyVsFargo.html">Workflowy vs. Fargo</a></div>
-		<p>This is not an exhaustive comparison blog post between two outliners. I've been occasionally using <a href="http://workflowy.com">Workflowy</a> simply because <a href="http://fargo.io">Fargo</a> does not have a native iOS app, and its web app is barely serviceable: I need to close most tabs to increase responsiveness, and even with the arrow pad, writing and editing on the iPad or iPhone in Fargo is frustrating. Only Workflowy has an iOS app, and it works well.</p>
-
-<p>Fargo is far-and-away a superior product on the desktop. Just a few of the things I can do in Fargo that I can't in Workflowy:</p>
-
-<ul>
-<li><p>Publish a blog.</p></li>
-<li><p>Add attributes other than <i>_note</i>.</p></li>
-<li><p>Run scripts.</p></li>
-</ul>
-
-<p>Sharing an outline is possible from both apps.</p>
-
-<ul>
-<li><p>In Fargo, I can share the public Dropbox URL of an outline, and a reader can import that into Fargo or view it in something like <a href="http://reader.smallpicture.com/">Small Picture Reader</a>.</p></li>
-<li><p>In Workflowy, I can share any outline via a secret link, and even make it editable.</p></li>
-</ul>
-
-<p>Both have pretty good keyboard shortcuts.</p>
-
-<p>Importing and Exporting OPML</p>
-
-<ul>
-<li><p>I can copy the full text from an OPML file in my Dropbox account (where Fargo stores outlines) and paste it into Workflowy, and Workflowy will respect the hierarchy (although not import unsupported attributes). I can also export any outline in Workflow as OPML.</p></li>
-<li><p>This Fargo script allows me to import OPML into an outline:</p>
-
-<ul><li><p>add opml in dialog box (workflowy)</p></li>
-<li><p>dialog.ask ("paste raw opml here", "", "", function (data) {</p></li>
-<li><p>op.insertOpml (data, down);</p></li>
-<li><p>});</p></li>
-<li><p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p></li>
-<li><p>Just paste the OPML from Workflowy into the dialog box, hit Enter, and the outline will import into your current tab in Fargo.</p></li></ul></li>
-<li><p>You can also just import plain text into Fargo, because the app recognizes hard tabs as child nodes.</p></li>
-</ul>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/18/14; 03:01:19 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="18/workflowyVsFargo.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="14/customizeYourRiver4HomePageToSendLinksToInstapaper.html">Customize Your River4 Home Page to Send Links to Instapaper</a></div>
-		<p>I've added two lines of code to <a href="http://river.jeffreykishner.com">my River4 homepage</a> to let me send a link in the river to Instapaper, or to read the post on a clean page using the Instapaper parsing engine.</p>
-
-<p>&nbsp;</p>
-
-<p><img src="https://dl.dropbox.com/s/xz7r7cly19nemun/Screen%20Shot%202014-08-14%20at%2010.26.23%20AM.png" alt="" title="" /></p>
-
-<p>&nbsp;</p>
-
-<h3>How to Add This to Your River</h3>
-
-<p>After you've installed River4 (available on <a href="https://github.com/scripting/river4">GitHub</a>), you will need to grab the HTML of the <em>index.html</em> file in your Amazon S3 bucket. Open it in a text file, and add these two lines of code immediately after <code>&lt;class="actions"&gt;</code>:</p>
-
-<pre><code>&lt;li&gt;&lt;a href="{{if item.permaLink}}${'http://instapaper.com/edit?url='+item.permaLink}{{else}}${'http://instapaper.com/edit?url='+item.link}{{/if}}" rel="external" target="_blank"&gt;Send to Instapaper&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href="{{if item.permaLink}}${'http://www.instapaper.com/text?u='+item.permaLink}{{else}}${'http://www.instapaper.com/text?u='+item.link}{{/if}}" rel="external" target="_blank"&gt;Instapaper Text&lt;/a&gt;&lt;/li&gt;
-</code></pre>
-
-<p>Then save as <em>index.html</em>, upload to the root of your bucket, and make sure to grant "Everyone" permission to open/download (in Properties).</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/14/14; 09:24:23 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="14/customizeYourRiver4HomePageToSendLinksToInstapaper.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="05/river4.html">River 4</a></div>
-		<p>I got Dave Winer's <a href="https://github.com/scripting/river4">River 4</a> to work on my Linux VPS. You can see it <a href="http://river.jeffreykishner.com">here</a>. </p>
-
-<p>I know next to nothing about node.js; I managed to install it, as well as <em>npm</em> and an app called <em>forever</em> that will run river.js in the background. (Thanks to <a href="http://scriven.chrisdadswell.co.uk/articles/howToSetupAFargoRiverOfNews.html">Chris Dadswell</a> and <a href="http://blog.andrewshell.org/running-river4-with-forever/">Andrew Shell</a> for their blog posts about this.)</p>
-
-<p>If you know enough to install apps in Linux, grab the above, clone river 4 via git, and run <code>node river.js</code> from within the river4 folder. If everything works, you can run <code>forever start river.js</code> in the background.</p>
-
-<p>Honestly, the hardest part was getting my Amazon S3 bucket to work. I learned via Stack Overflow that in order to map river.jeffreykishner.com via CNAME to my bucket, I had to name the <em>bucket</em> river.jeffreykishner.com. That was the only major hurdle.</p>
-
-<p>I also learned that I needed to store the three environmental variables in .bashrc so that they would stay permanent.</p>
-
-<p>The cool thing about River 4 is that one can <a href="http://river4.smallpict.com/2014/06/17/river4V088.html">use <em>include</em> to reference an OPML file that is not stored in your S3 bucket</a>. As an experiment, I uploaded an OPML file that includes a link to an OPML file hosted in <a href="http://fargo.io">Fargo</a>. Sure enough, the feeds in the OPML file in Fargo appear in my river, so in the future, all I have to do is add a new feed to my list in Fargo instead of having to re-upload an OPML file to Amazon everytime I want to add a new feed to a tab. </p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/05/14; 03:47:10 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="05/river4.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Mon, Aug 18, 2014 at  3:34 PM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlTue, 05 Aug 2014 20:47:09 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, August  5, 2014 at  3:47 PM</span>.</div>
-					</div>
+						</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
+			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>
