@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Add Twitter Social Sharing to Your Fargo Blog Posts</title>
+		<title>Posting Multiple Sites with fargoPublisher on Heroku</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -16,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Mon, 18 Aug 2014 20:38:21 GMT",
-    "opmlExpansionState": "1,2,3,4,6,10,14,16,17,18,40,42,48,54,64",
+    "opmlDateModified": "Tue, 02 Sep 2014 19:15:50 GMT",
+    "opmlExpansionState": "1,2,3,4,28,30,36,42,52",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -44,12 +44,12 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "outline",
-    "slogan": "Good for the environment.",
+    "slogan": "When in doubt, blog.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
     "flIndexPage": false,
-    "flDisqusComments": "false",
+    "flDisqusComments": "true",
     "flStoryTextOnIndexPage": false,
     "flNonDocHeadsOnIndexPage": true,
     "flStoryDateOnIndexPage": false,
@@ -69,10 +69,10 @@
     "maxStreamDays": "14",
     "flMarkdown": true,
     "leftIndent": 0,
-    "text": "Add Twitter Social Sharing to Your Fargo Blog Posts",
-    "created": "Tue, 13 Aug 2013 17:38:43 GMT",
+    "text": "Posting Multiple Sites with fargoPublisher on Heroku",
+    "created": "Tue, 02 Sep 2014 18:08:58 GMT",
     "description": "",
-    "path": "scripts/addTwitterSocialSharingToYourFargoBlogPosts",
+    "path": "2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -87,14 +87,15 @@
     "streamVersion": "2",
     "flEmojify": "true",
     "authorGithubAccount": "jkishner",
-    "name": "addTwitterSocialSharingToYourFargoBlogPosts",
-    "icon": "code",
+    "name": "02",
+    "icon": "calendar",
     "isFeedItem": "true",
+    "isComment": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Mon Aug 18 2014 16:38:22 GMT-0400 (EDT)",
+    "now": "Tue Sep 02 2014 15:15:51 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/scripts/addTwitterSocialSharingToYourFargoBlogPosts.html"
+    "url": "http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -316,6 +317,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
@@ -340,7 +342,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -356,145 +357,29 @@
 					<div id="idTextInFrontOfImage">
 						<div class="divHeadlineUnit" id="idHeadlineUnit">
 							<div class="divPrevNext">
-								<div class="divPrevNextLinks"><a href="http://blog.jeffreykishner.com/search.html" title="Search This Blog" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<i class="fa fa-arrow-right" style="color: silver"></i></div>
+								<div class="divPrevNextLinks"><i class="fa fa-arrow-left" style="color: silver"></i>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" title="Workflowy vs. Fargo" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
 								</div>
 							<div class="divBreadcrumbs" id="idBreadcrumbs">
-								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/scripts">Scripts</a></li></ul>
+								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/09">September 2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/09/02">September 2</a></li></ul>
 								</div>
-							<h2>Add Twitter Social Sharing to Your Fargo Blog Posts</h2>
+							<h2>Posting Multiple Sites with fargoPublisher on Heroku</h2>
 							</div>
-						<div class="divFargoMarkdown" id="idFargoMarkdown"><p><a href="https://twitter.com/share?text=Add%20Twitter%20Social%20Sharing%20to%20Your%20Fargo%20Blog%20Posts&amp;url=http://jeffrey.smallpict.com/scripts/addTwitterSocialSharingToYourFargoBlogPosts" target="_blank">Tweet This Post</a></p>
+						<div class="divFargoMarkdown" id="idFargoMarkdown"><p>I have managed to successfully deploy <a href="https://github.com/scripting/fargoPublisher">fargoPublisher</a> on <a href="http://heroku.com">Heroku</a> using <a href="http://scripting.com/2014/02/06/herokuForPoetsBeta.html">Dave Winer's instructions</a>. It was surprisingly easy. (The only snag was that I had to put <em>*</em>*.herokuapp.com in the CMS settings globally, not per individual outline.) The difficult part has been figuring out how to actually publish the sites. </p>
 
-<p>While your cursor is on the title of your blog post, choose this script from your menu. It will insert the above "<i class="fa fa-twitter-sign"></i>Tweet This Post" link as the first line of your post.</p>
+<p>fargoPublisher seems to essentially be the same software used to create subdomains on smallpict.com. If you want to publish one of your outlines on your own Amazon S3 bucket, you need to "name" it. As of this writing, my Heroku app is publishing to a bucket called myoutlineblog.com (same as a domain name I registered). Theoretically, if I name an outline "blog," it will publish at blog.myoutlineblog.com. However, there are two separate DNS components necessary to make this work. First I need to point myoutlineblog.com.s3-website-us-east-1.amazonaws.com (the "endpoint") to myoutlineblog.com via CNAME. And to the best of my knowledge, I need to point a wildcard A record to the IP address of the node where I am hosting fargoPublisher. This is where the users are redirected to their subdomains. Unfortunately, Heroku apps only have dynamic IP addresses, and I don't currently see a solution to this, so I can only access my example named site at myoutlineblog.com/users/blog/, not blog.myoutlineblog.com.</p>
 
-<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+<p>This is problematic because links in Fargo sites are relative, e.g, <code>"href=2014/09/01/blogpost.html"</code>, and named outlines have the blog.domain.com structure. One workaround is adding a few directives in the outline:</p>
 
-<p><!-- outlineEmbedCode -- this version gets you a reader -->
-    <script src="http://fargo.io/code/concord.js" /></script>
-    <script src="http://fargo.io/code/utils.js"></script>
-    <style>
-        .divTrexEmbeddedOutlineContainer {
-            margin-bottom: 20px;
-            }
-        .divTrexEmbeddedOutlineContainer .divTrexEmbeddedOutliner {
-            min-height: 10em;
-            max-height: 30em;
-            border:1px solid gainsboro;
-            border-top-width: 0;
-            border-bottom-width: 0;
-            overflow-y: auto;
-            background-color: white;
-            padding: 6px;
-            }
-        .divTrexEmbeddedOutlineContainer .divAboveOutlineInfo {
-            min-height: 1.5em;
-            border:1px solid gainsboro;
-            background-color: whitesmoke;
-            padding: 4px;
-            font-family: "Arial";
-            font-size: .9em;
-            }
-        .divTrexEmbeddedOutlineContainer .divInfoRight {
-            float: right;
-            }
-        .divTrexEmbeddedOutlineContainer .divBelowOutlineInfo {
-            min-height: 1.5em;
-            border:1px solid gainsboro;
-            background-color: whitesmoke;
-            padding: 4px;
-            font-family: "Arial";
-            font-size: .9em;
-            }
-        .divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a {
-            font-family: "Arial";
-            font-size: .9em;
-            color: #0088cc;
-            }
-        .divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a:visited {
-            font-family: "Arial";
-            font-size: .9em;
-            color: #0088cc;
-            }
-        .divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a {
-            font-family: "Arial";
-            font-size: .9em;
-            color: #0088cc;
-            }
-        .divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a:visited {
-            font-family: "Arial";
-            font-size: .9em;
-            color: #0088cc;
-            }
-        .divTrexEmbeddedOutlineContainer .divOutlineTitle {
-            font-weight: bold;
-            }
-        </style>
-    <div class="divTrexEmbeddedOutlineContainer">
-        <div id="idAboveOutlineInfo" class="divAboveOutlineInfo">
-            <div id="idViewSource" class="divInfoRight"></div>
-            <div id="idOutlineTitle" class="divInfoLeft divOutlineTitle"></div>
-            </div>
-        <div id="idTrexEmbeddedOutliner" class="divTrexEmbeddedOutliner"></div>
-        <div id="idBelowOutlineInfo" class="divBelowOutlineInfo">
-            <div class="divInfoRight">
-                <i class="fa fa-heart" style="color: red; opacity: 0.6; font-size: 0.9em;"></i> 
-                <a href="http://fargo.io/" target="_blank">Fargo</a>
-                </div>
-            <div class="divInfoLeft"></div>
-            </div>
-        </div>
-    <script>
-        var font = "Arial", fontSize = 16, lineHeight = 24;
-        var opmlUrl = "https://dl.dropboxusercontent.com/s/pp77vspbshxnubf/b3d854b9d9f81a4c66e6c6532dbb3fef.opml";
-        function opKeystrokeCallback () {
-            }
-        function setPrefs () {
-            $("#idTrexEmbeddedOutliner").concord ({
-                "prefs": {
-                    "outlineFont": font, 
-                    "outlineFontSize": fontSize, 
-                    "outlineLineHeight": lineHeight,
-                    "renderMode": true,
-                    "readonly": true,
-                    "typeIcons": appTypeIcons
-                    },
-                "callbacks": {
-                    "opExpand": opExpandCallback,
-                    "opKeystroke": opKeystrokeCallback
-                    }
-                });
-            }
-        function getOutline (opmlUrl) {
-            var jxhr = $.ajax ({
-                url: opmlUrl,
-                dataType: "text",
-                timeout: 30000
-                })
-            .success (function (data, status, xhr) {
-                if (xhr.status==200) {
-                    var title;
-                    $("#idTrexEmbeddedOutliner").concord ().op.xmlToOutline (data, false);
-                    title = $("#idTrexEmbeddedOutliner").concord ().op.getTitle ();
-                    $("#idOutlineTitle").html (title);
-                    $("#idViewSource").html ("<a href='" + opmlUrl + "'>view  source</a>");
-                    }
-                })
-            .error (function (status, textStatus, errorThrown) {
-                console.log ("checkOutline: error == " + errorThrown + ", status == " + textStatus);
-                });
-            }
-        $(document).ready (function () {
-            setPrefs ();
-            getOutline (opmlUrl);
-            });
-        </script></p>
+<p>This appears to successfully replace blog.myoutlineblog.com with myoutlineblog.com/users/blog/ in the rendered HTML, so that if I click on a link to a post from an index.html page, I will be directed to the correct path. Unfortunately, this solution is not working for #type "stream" blogs (i.e., link or note blogs like scripting.com). I believe that since you can only click on a date, Fargo is expecting the base domain, no additional directories. </p>
 
-<p><b>Bonus</b>: If you insert <code>op.attributes.deleteOne ("isComment");</code> in the very beginning of this script, the script will also publish your post. </p></div>
+<p>Another problem is that the RSS feed points to the blog.domain.com address, so unless I can figure out how to fix that, any feed subscribers clicking on a feed item will be directed to a 404 page.</p>
+
+<p>As currently implemented, this solution is definitely better than not having fargoPublisher deployed at all. I can publish all the outlines I want to my own AWS account. I just have to tweak every outline a bit to make relative links work, and I guess stream blogs are out of the question until I can find a workaround.</p></div>
 						<div class="divFooterText">
 							<hr>
-							<p style="float: right;">Last built: Mon, Aug 18, 2014 at  3:38 PM</p>
-							
-							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, August 13, 2013 at 12:38 PM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
+							<p style="float: right;">Last built: Tue, Sep  2, 2014 at  2:15 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Tue, 02 Sep 2014 18:08:58 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, September  2, 2014 at  1:08 PM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
 							</div>
 						</div>
 						</div>
