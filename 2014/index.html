@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Tue, 09 Sep 2014 21:42:00 GMT",
-    "opmlExpansionState": "1,2,3,4,8,9,12,25,26,49,51,57,63,73",
+    "opmlDateModified": "Wed, 10 Sep 2014 14:12:27 GMT",
+    "opmlExpansionState": "1,2,3,4,21,22,26,27,30,43,44,67,69,75,81,91",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -44,7 +44,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "Ask not what the Internet can do for you...",
+    "slogan": "Ask not what the Internet can do for you.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -91,7 +91,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Sep 09 2014 17:42:00 GMT-0400 (EDT)",
+    "now": "Wed Sep 10 2014 10:12:27 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014.html"
 }; //12/12/13 by DW
@@ -201,6 +201,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
@@ -225,7 +226,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -244,6 +244,44 @@
 					<h2 id="idBlogHomePageTitle">2014</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/10/whoNeedsAPodcastingApp.html">Who Needs a Podcasting App?</a></div>
+		<p>The problem I have with most podcasting apps is that they assume I want to always download the most recent episodes of podcasts to which I am subscribed. I would prefer to only download episodes to which I actually want to listen. After getting frustrated tweaking settings in apps like Instacast and Overcast, I've resorted to the following routine:</p>
+
+<h3>Review the Podcasts Tab in River4</h3>
+
+<p><a href="https://github.com/scripting/river4">River4</a> shows podcast enclosures. I can quickly scan the podcasts in <a href="http://river.jeffreykishner.com/?panel=podcasts">my river</a> and decide what I want to listen to.</p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://dl.dropbox.com/s/ugbukvz0g59t2j2/Screen%20Shot%202014-09-10%20at%2010.03.10%20AM.png?dl=0" alt="" title="" /></p>
+
+<p>&nbsp;</p>
+
+<p>I then right click on the mp3 link and copy the link location to my clipboard.</p>
+
+<h3>Send the Link to My iPhone</h3>
+
+<p>Using the <a href="http://pushbullet.com">Pushbullet</a> <a href="https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd?hl=en">Chrome extension</a>, I send the link to my iPhone. I just make sure to precede the link with a <code>g</code> (explanation below).</p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://dl.dropbox.com/s/i66est3qfzosbf7/Screen%20Shot%202014-09-10%20at%2010.06.11%20AM.png?dl=0" alt="" title="" /></p>
+
+<p>&nbsp;</p>
+
+<p>When I receive the push notification (the Pushbullet app on the iPhone is of course required), I swipe on it, and the link immediately opens to...</p>
+
+<h3>Download in GoodReader</h3>
+
+<p><a href="http://www.goodiware.com/">GoodReader</a> is an excellent app for downloading just about any media: mp3s, movie files, images, html files, PDFs. When an URL is preceded by a <code>g</code>, it tells Safari to go to GoodReader, and then GoodReader downloads the file.</p>
+
+<p>This app remembers where I leave off in the middle of listening to a podcast -- although I have to hit the "Stop" button after pausing the recording -- so I can easily resume the podcast just by tapping on the filename. When I'm done, I just swipe to delete.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/10/14; 08:58:03 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/10/whoNeedsAPodcastingApp.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="09/09/timeToUpgrade.html">Time to Upgrade</a></div>
 		<p>I have a 16 gb iPhone 4s. I am constantly hitting my memory limits, and I fear that the phone will run sluggishly if I install iOS 8. After following today's Apple event, I am thinking of just getting a 32 gb 5s for $149. As much as I'd love a 6, knowing that 16 gb is not enough I'd have to get a 64 gb model, which costs $299. (And that's with a renewed 2-year contract!) </p>
@@ -1074,55 +1112,10 @@ webbrowser.open('drafts://x-callback-url/create?text=' + evernoteurl + '&amp;act
 			<div class="divFargoStoryLink" style="float: left;"><a href="06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></div>
-		<p><a href="https://twitter.com/share?text=Automate%20a%20YouTube%20Embed%20Code%20on%20Your%20iOS%20Device%20With%20Drafts%2C%20TextTool%2C%20and%20Launch%20Center%20Pro&amp;url=http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Tweet This Post</a></p>
-
-<p>Over the weekend I wanted to embed a video on my blog while on my iPad. The mobile YouTube site did not appear to offer an embed code, so I created a few actions to automate the process.</p>
-
-<p>As an example, here is the starting URL <code>https://m.youtube.com/watch?v=38lY-3g6mn8</code>.</p>
-
-<p>This browser bookmarklet -- I call it "TextTool Split" -- imports the URL into <a href="http://agiletortoise.com/drafts/">Drafts</a> and triggers the "split" action:</p>
-
-<pre><code>javascript:window.location='drafts://x-callback-url/create?action=split&amp;text='+encodeURIComponent(location.href)
-</code></pre>
-
-<p>The "split" URL action sends the URL to <a href="http://blackfoggames.com/TextTool/">TextTool</a> and splits the URL at the <code>=</code>. </p>
-
-<pre><code>texttool://x-callback-url/transform?method=split&amp;delimiter=%3D&amp;text=[[draft]]&amp;x-success={{drafts://x-callback-url/create?text=[[output]]&amp;action=line2-youtube}}
-</code></pre>
-
-<p>Import it <a href="drafts://x-callback-url/import_action?type=URL&amp;name=split&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Fmethod%3Dsplit%26delimiter%3D%253D%26text%3D%5B%5Bdraft%5D%5D%26x-success%3D%7B%7Bdrafts%3A%2F%2Fx-callback-url%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dline2-youtube%7D%7D">here</a> into Drafts.</p>
-
-<p>The above action takes the original URL and creates a new draft:</p>
-
-<pre><code>https://m.youtube.com/watch?v
-
-38lY-3g6mn8
-</code></pre>
-
-<p>It then triggers the <code>line2-youtube</code> action, which takes <code>line 2</code>, sticks it in the YouTube embed code, and saves all of that to the clipboard with the help of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>:</p>
-
-<pre><code>launch://clipboard?text={{&lt;iframe width="560" height="315" src="//www.youtube.com/embed/[[line|2]]" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;}}
-</code></pre>
-
-<p>Import it <a href="drafts://x-callback-url/import_action?type=URL&amp;name=line2-youtube&amp;url=launch%3A%2F%2Fclipboard%3Ftext%3D%7B%7B%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22%2F%2Fwww.youtube.com%2Fembed%2F%5B%5Bline%7C2%5D%5D%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%7D%7D">here</a> into Drafts.</p>
-
-<p>The result will be that the following is added to your clipboard, and you can paste it into your blog CMS:</p>
-
-<pre><code>&lt;iframe width="560" height="315" src="//www.youtube.com/embed/38lY-3g6mn8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-</code></pre>
-
-<p>This action presumes that there are no additional paramaters in the URL. If your URL has something like <code>&amp;list=</code> after the video ID, you will either have to manually remove that string or create an extra Drafts/TextTool action to split the results of <code>line 2</code> at the <code>&amp;</code> and to take <code>line 1</code> of <em>that</em> output.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/30/14; 09:03:42 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Tue, Sep  9, 2014 at  4:42 PM</p>
+					<p style="float: right;">Last built: Wed, Sep 10, 2014 at  9:12 AM</p>
 					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Thu, 02 Jan 2014 21:14:29 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, January  2, 2014 at  4:14 PM</span>.</div>
 					</div>
