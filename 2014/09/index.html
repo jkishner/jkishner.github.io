@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Wed, 10 Sep 2014 15:20:01 GMT",
-    "opmlExpansionState": "1,2,3,4,14,31,32,36,37,40,53,54,77,79,85,91,101",
+    "opmlDateModified": "Thu, 11 Sep 2014 15:08:18 GMT",
+    "opmlExpansionState": "1,2,3,4,15,16,26,43,44,48,49,52,65,66,74,76,77,88,93,94,116,118,124,130,140",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,7 +36,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "4",
+    "opmlLastCursor": "7",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -44,7 +44,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "Ask not what the Internet can do for you.",
+    "slogan": "What a long strange trip it's been.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -91,7 +91,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Wed Sep 10 2014 11:20:02 GMT-0400 (EDT)",
+    "now": "Thu Sep 11 2014 11:08:19 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/09.html"
 }; //12/12/13 by DW
@@ -201,6 +201,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
@@ -225,7 +226,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -244,6 +244,32 @@
 					<h2 id="idBlogHomePageTitle">September 2014</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></div>
+		<p><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">Tiny Tiny RSS</a> is a open-source RSS reader that you can install on any LAMP server (Linux/Apache/MySQL/PHP). I installed this yesterday and it wasn't too complicated. <a href="http://lifehacker.com/5992404/how-to-build-your-own-syncing-rss-reader-with-tiny-tiny-rss-and-kick-google-reader-to-the-curb">Lifehacker</a> has a tutorial, but one doesn't need any Linux or command line experience to install this application. You <em>do</em> need to be comfortable with cPanel and FTP software. </p>
+
+<p>&nbsp;</p>
+
+<p><i class="fa fa-chevron-right"></i> Download the <a href="https://github.com/gothfox/Tiny-Tiny-RSS/archive/1.13.tar.gz">tar</a> to your hard drive and extract.</p>
+
+<p><i class="fa fa-chevron-right"></i> Open the Web Host Manager for your server, and go to the cPanel for the domain onto which you are installing the application. Then go to the MySQL Database Wizard. You will need to create a new database, a new user for that database, and create a password. Then give the user all privileges. Make sure you note these all down, and then you can sign out of your Web Host Manager.</p>
+
+<p><i class="fa fa-chevron-right"></i> Next, open FTP software (like <a href="https://filezilla-project.org/">Filezilla</a>). Rename the folder that you extracted from the tar to <em>tt-rss</em>, and upload the folder (and all of its contents) to the public_html directory of your domain. </p>
+
+<p><i class="fa fa-chevron-right"></i> After upload is complete, visit the install page at <em>http://YOUR-DOMAIN.com/tt-rss/install/</em>. Enter the database settings you created in the MySQL wizard, and hit the test button. If it was a success, initialize the database. The app will provide you the contents of a custom config.php file. Copy this text and paste it into a new file in a text editor. Search for SIMPLE_UPDATE_MODE in the file and change its value to <em>true</em> so that the feeds will update every 1/2 hour while you're using the app. Save the file as config.php and upload into the <em>tt-rss</em> directory.</p>
+
+<p><i class="fa fa-chevron-right"></i> Now you can go visit /tt-rss/ and log in initially with <code>admin</code> and <code>password</code>. You can go into preferences to change the admin password, create users, and so on.</p>
+
+<p><b>Resources</b></p>
+
+<p><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki/InstallationNotes" target="_blank">Installation Notes</a></p>
+
+<p><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki/UpdatingFeeds" target="_blank">Updating Feeds</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/11/14; 09:25:41 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="10/butDoINeedIt.html">But Do I <i>Need</i> It?</a></div>
 		<p>Had a talk with my wife last night about the Apple event. She does not follow Apple news. She uses one of my old iPhones as an iPod Touch to play Letterpress. </p>
@@ -382,7 +408,7 @@ fpServerPort = 80
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Wed, Sep 10, 2014 at 10:20 AM</p>
+					<p style="float: right;">Last built: Thu, Sep 11, 2014 at 10:08 AM</p>
 					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Tue, 02 Sep 2014 18:08:58 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, September  2, 2014 at  1:08 PM</span>.</div>
 					</div>
