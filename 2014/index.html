@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Fri, 12 Sep 2014 19:20:43 GMT",
-    "opmlExpansionState": "1,2,3,5,6,7,8,21,38,39,43,44,47,60,61,69,71,72,83,88,89,111,113,119,125,135",
+    "opmlDateModified": "Fri, 12 Sep 2014 19:33:34 GMT",
+    "opmlExpansionState": "1,2,3,4,12,14,15,16,17,30,47,48,52,53,56,69,70,78,80,81,92,97,98,120,122,128,134,144",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,7 +36,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "5",
+    "opmlLastCursor": "4",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -44,7 +44,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "All baking done on premises.",
+    "slogan": "Pay no attention to the man behind the curtain.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -91,7 +91,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Fri Sep 12 2014 15:20:43 GMT-0400 (EDT)",
+    "now": "Fri Sep 12 2014 15:33:35 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014.html"
 }; //12/12/13 by DW
@@ -201,6 +201,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
@@ -225,7 +226,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -244,6 +244,144 @@
 					<h2 id="idBlogHomePageTitle">2014</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></div>
+		<p>The following Fargo.io script will insert a &num;glossary directive followed by a customStylesScripts macro that includes open graph meta tags for title, url, and description. I have tested this in Google's <a href="http://www.google.com/webmasters/tools/richsnippets">Structured Data Testing Tool</a> and Facebook's <a href="https://developers.facebook.com/tools/debug/og/object/">Open Graph Object Debugger</a> and it works. With these tags in place, you should be able to post a Fargo blog post to Facebook and have the open graph meta tags properly parsed.</p>
+
+<p>To make this work, you need to add the script below to your menubar.opml file. Write your blog post, then put the cursor on the title of the post, and choose the <em>add meta og</em> script. Everything you need will be automatically written. By default, the description tag pulls the first line of your blog post. You can edit it afterwards if you want.</p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://dl.dropbox.com/s/o97r8euba97i24g/Screen%20Shot%202014-09-12%20at%203.28.38%20PM.png?dl=0" alt="" title="" /></p>
+
+<p>&nbsp;</p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p><!-- outlineEmbedCode -- this version gets you a reader -->
+	<script src="http://fargo.io/code/concord.js" /></script>
+	<script src="http://fargo.io/code/utils.js"></script>
+	<style>
+		.divTrexEmbeddedOutlineContainer {
+			margin-bottom: 20px;
+			}
+		.divTrexEmbeddedOutlineContainer .divTrexEmbeddedOutliner {
+			min-height: 10em;
+			max-height: 30em;
+			border:1px solid gainsboro;
+			border-top-width: 0;
+			border-bottom-width: 0;
+			overflow-y: auto;
+			background-color: white;
+			padding: 6px;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo {
+			min-height: 1.5em;
+			border:1px solid gainsboro;
+			background-color: whitesmoke;
+			padding: 4px;
+			font-family: "Arial";
+			font-size: .9em;
+			}
+		.divTrexEmbeddedOutlineContainer .divInfoRight {
+			float: right;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo {
+			min-height: 1.5em;
+			border:1px solid gainsboro;
+			background-color: whitesmoke;
+			padding: 4px;
+			font-family: "Arial";
+			font-size: .9em;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a:visited {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a:visited {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divOutlineTitle {
+			font-weight: bold;
+			}
+		</style>
+	<div class="divTrexEmbeddedOutlineContainer">
+		<div id="idAboveOutlineInfo" class="divAboveOutlineInfo">
+			<div id="idViewSource" class="divInfoRight"></div>
+			<div id="idOutlineTitle" class="divInfoLeft divOutlineTitle"></div>
+			</div>
+		<div id="idTrexEmbeddedOutliner" class="divTrexEmbeddedOutliner"></div>
+		<div id="idBelowOutlineInfo" class="divBelowOutlineInfo">
+			<div class="divInfoRight">
+				<i class="fa fa-heart" style="color: red; opacity: 0.6; font-size: 0.9em;"></i> 
+				<a href="http://fargo.io/" target="_blank">Fargo</a>
+				</div>
+			<div class="divInfoLeft"></div>
+			</div>
+		</div>
+	<script>
+		var font = "Arial", fontSize = 16, lineHeight = 24;
+		var opmlUrl = "https://dl.dropboxusercontent.com/s/9l8qirxcvlm9119/6dd697a11b9e6ae32acc11b1b847505b.opml?dl=0";
+		function opKeystrokeCallback () {
+			}
+		function setPrefs () {
+			$("#idTrexEmbeddedOutliner").concord ({
+				"prefs": {
+					"outlineFont": font, 
+					"outlineFontSize": fontSize, 
+					"outlineLineHeight": lineHeight,
+					"renderMode": true,
+					"readonly": true,
+					"typeIcons": appTypeIcons
+					},
+				"callbacks": {
+					"opExpand": opExpandCallback,
+					"opKeystroke": opKeystrokeCallback
+					}
+				});
+			}
+		function getOutline (opmlUrl) {
+			var jxhr = $.ajax ({
+				url: opmlUrl,
+				dataType: "text",
+				timeout: 30000
+				})
+			.success (function (data, status, xhr) {
+				if (xhr.status==200) {
+					var title;
+					$("#idTrexEmbeddedOutliner").concord ().op.xmlToOutline (data, false);
+					title = $("#idTrexEmbeddedOutliner").concord ().op.getTitle ();
+					$("#idOutlineTitle").html (title);
+					$("#idViewSource").html ("<a href='" + opmlUrl + "'>view  source</a>");
+					}
+				})
+			.error (function (status, textStatus, errorThrown) {
+				console.log ("checkOutline: error == " + errorThrown + ", status == " + textStatus);
+				});
+			}
+		$(document).ready (function () {
+			setPrefs ();
+			getOutline (opmlUrl);
+			});
+		</script></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/12/14; 02:23:37 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></div>
 		<p><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">Tiny Tiny RSS</a> is a open-source RSS reader that you can install on any LAMP server (Linux/Apache/MySQL/PHP). I installed this yesterday and it wasn't too complicated. <a href="http://lifehacker.com/5992404/how-to-build-your-own-syncing-rss-reader-with-tiny-tiny-rss-and-kick-google-reader-to-the-curb">Lifehacker</a> has a tutorial, but one doesn't need any Linux or command line experience to install this application. You <em>do</em> need to be comfortable with cPanel and FTP software. </p>
@@ -1089,20 +1227,10 @@ grep -A 1 \&lt;dateCompleted\&gt;\&lt;\/dateCompleted\&gt; ~/Dropbox/Paperless/$
 			<div class="divFargoStoryLink" style="float: left;"><a href="07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="07/02/updateToMyOpmltowordpressPlugin.html">Update to My OPML-to-WordPress Plugin</a></div>
-		<p>Today I have released v 2.0 of my plugin, which renders a Fargo OPML file on a WordPress page or blog post using a simple shortcode. The updated version supports the link-blog format (type="idea"). </p>
-
-<p>View the update and download the zip file <a href="http://jeffreykishner.com/wordpress-plugins/post-opml-to-wordpress/">here</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/02/14; 10:42:41 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="07/02/updateToMyOpmltowordpressPlugin.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Fri, Sep 12, 2014 at  2:20 PM</p>
+					<p style="float: right;">Last built: Fri, Sep 12, 2014 at  2:33 PM</p>
 					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Thu, 02 Jan 2014 21:14:29 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, January  2, 2014 at  4:14 PM</span>.</div>
 					</div>
