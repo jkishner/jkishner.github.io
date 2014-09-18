@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 18 Sep 2014 18:00:39 GMT",
-    "opmlExpansionState": "1,2,3,4,5,6,17,18,19,20,31,33,34,35,36,49,66,67,71,72,75,88,89,97,99,100,111,116,117,139,141,147,153,163",
+    "opmlDateModified": "Thu, 18 Sep 2014 19:04:45 GMT",
+    "opmlExpansionState": "1,2,3,4,5,6,21,22,23,34,35,36,37,48,50,51,52,53,66,83,84,88,89,92,105,106,114,116,117,128,133,134,156,158,164,170,180",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,7 +36,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "13",
+    "opmlLastCursor": "15",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -44,7 +44,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "Don't slam the door on the way out.",
+    "slogan": "Pay no attention to the man behind the curtain.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -70,7 +70,7 @@
     "flMarkdown": true,
     "leftIndent": 0,
     "text": "Jeffrey Kishner's Fargo Blog",
-    "created": "Thu, 18 Sep 2014 18:00:39 GMT",
+    "created": "Thu, 18 Sep 2014 19:04:45 GMT",
     "description": "",
     "path": "",
     "subheadColor": "white",
@@ -89,7 +89,7 @@
     "authorGithubAccount": "jkishner",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Sep 18 2014 14:00:40 GMT-0400 (EDT)",
+    "now": "Thu Sep 18 2014 15:04:46 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/.html"
 }; //12/12/13 by DW
@@ -199,6 +199,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
@@ -223,7 +224,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html" target="_blank">A Launch Center Pro Action for Todo.txt</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -242,6 +242,149 @@
 					<h2 id="idBlogHomePageTitle">Jeffrey Kishner's Fargo Blog</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html">How to Add Twitter Card Support to Farg.io Blogs</a></div>
+		<p><img src="https://dl.dropbox.com/s/wdqtukqaz5fhzyn/Screen%20Shot%202014-09-18%20at%202.48.42%20PM.png?dl=0" alt="" title="" /></p>
+
+<p><a href="https://dev.twitter.com/cards/getting-started">Twitter cards</a> show additional information associated with a link. Twitter draws this information from meta tags on your page. Twitter cards support the open graph protocol, so there are only two additional lines of code you would need to add to your site via my <a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html">meta open graph script</a> to support a basic summary card:</p>
+
+<pre><code>&lt;meta "twitter:card" type="summary" /&gt;
+
+&lt;meta "twitter:site" type="@kishner" /&gt; 
+</code></pre>
+
+<p>If you want to incorporate the above meta tags, use the following updated <code>add meta og</code> script. </p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p><!-- outlineEmbedCode -- this version gets you a reader -->
+	<script src="http://fargo.io/code/concord.js" /></script>
+	<script src="http://fargo.io/code/utils.js"></script>
+	<style>
+		.divTrexEmbeddedOutlineContainer {
+			margin-bottom: 20px;
+			}
+		.divTrexEmbeddedOutlineContainer .divTrexEmbeddedOutliner {
+			min-height: 10em;
+			max-height: 30em;
+			border:1px solid gainsboro;
+			border-top-width: 0;
+			border-bottom-width: 0;
+			overflow-y: auto;
+			background-color: white;
+			padding: 6px;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo {
+			min-height: 1.5em;
+			border:1px solid gainsboro;
+			background-color: whitesmoke;
+			padding: 4px;
+			font-family: "Arial";
+			font-size: .9em;
+			}
+		.divTrexEmbeddedOutlineContainer .divInfoRight {
+			float: right;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo {
+			min-height: 1.5em;
+			border:1px solid gainsboro;
+			background-color: whitesmoke;
+			padding: 4px;
+			font-family: "Arial";
+			font-size: .9em;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a:visited {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a:visited {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divOutlineTitle {
+			font-weight: bold;
+			}
+		</style>
+	<div class="divTrexEmbeddedOutlineContainer">
+		<div id="idAboveOutlineInfo" class="divAboveOutlineInfo">
+			<div id="idViewSource" class="divInfoRight"></div>
+			<div id="idOutlineTitle" class="divInfoLeft divOutlineTitle"></div>
+			</div>
+		<div id="idTrexEmbeddedOutliner" class="divTrexEmbeddedOutliner"></div>
+		<div id="idBelowOutlineInfo" class="divBelowOutlineInfo">
+			<div class="divInfoRight">
+				<i class="fa fa-heart" style="color: red; opacity: 0.6; font-size: 0.9em;"></i> 
+				<a href="http://fargo.io/" target="_blank">Fargo</a>
+				</div>
+			<div class="divInfoLeft"></div>
+			</div>
+		</div>
+	<script>
+		var font = "Arial", fontSize = 16, lineHeight = 24;
+		var opmlUrl = "https://dl.dropboxusercontent.com/s/bad9q1si3jwftfl/78c0df1667494ee3d824a4b83800cb70.opml?dl=0";
+		function opKeystrokeCallback () {
+			}
+		function setPrefs () {
+			$("#idTrexEmbeddedOutliner").concord ({
+				"prefs": {
+					"outlineFont": font, 
+					"outlineFontSize": fontSize, 
+					"outlineLineHeight": lineHeight,
+					"renderMode": true,
+					"readonly": true,
+					"typeIcons": appTypeIcons
+					},
+				"callbacks": {
+					"opExpand": opExpandCallback,
+					"opKeystroke": opKeystrokeCallback
+					}
+				});
+			}
+		function getOutline (opmlUrl) {
+			var jxhr = $.ajax ({
+				url: opmlUrl,
+				dataType: "text",
+				timeout: 30000
+				})
+			.success (function (data, status, xhr) {
+				if (xhr.status==200) {
+					var title;
+					$("#idTrexEmbeddedOutliner").concord ().op.xmlToOutline (data, false);
+					title = $("#idTrexEmbeddedOutliner").concord ().op.getTitle ();
+					$("#idOutlineTitle").html (title);
+					$("#idViewSource").html ("<a href='" + opmlUrl + "'>view  source</a>");
+					}
+				})
+			.error (function (status, textStatus, errorThrown) {
+				console.log ("checkOutline: error == " + errorThrown + ", status == " + textStatus);
+				});
+			}
+		$(document).ready (function () {
+			setPrefs ();
+			getOutline (opmlUrl);
+			});
+		</script></p>
+
+<p>Make sure you replace @kishner with your own Twitter handle.</p>
+
+<p>In addition to having the meta tags on your page, you need to get your site whitelisted by Twitter. After you've published a post with the meta tags, enter your URL in the <a href="https://cards-dev.twitter.com/validator">Card Validator</a>. If the card is valid but your site has not been approved, then submit for review. After your site has been approved, your Twitter cards will show up.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/18/14; 01:45:10 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html">Test-Driving iOS 8 Before I Upgrade My iPhone</a></div>
 		<p>I've been debating whether I <em>absolutely have to</em> get a new iPhone. If I do, I'd get the year-old 5s. But for a 32gb model, that's $150 plus a $40 activation fee to renew my 2-yr contract on AT&amp;T, unless I go with their Next plan. I haven't done the math, but it appears that <a href="http://www.theverge.com/2013/7/16/4528404/att-next-phone-upgrade-plans-a-huge-ripoff">the Next plan is a ripoff</a>, so I'd be paying close to $200 for a subsidized iPhone 5s. </p>
@@ -1186,44 +1329,12 @@ Instagram
 			<div class="divFargoStoryLink" style="float: left;"><a href="2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="2014/07/07/commandLineScriptForPaperlessListsChecklists.html">Command Line Script for "Paperless: Lists + Checklists"</a></div>
-		<p>I use <a href="http://www.crushapps.com/paperless/">Paperless</a> for the majority of my list-making on my iOS devices. I've already written <a href="http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html">how to mark an item as complete without using the app</a> and <a href="http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html">how to view your lists on the web</a>. Today, I am going to share a unix command line bash script to "print" incomplete items from a list. </p>
-
-<p>I created a text file called "prl" and put it in /usr/local/bin/:</p>
-
-<pre><code>#! /bin/bash
-
-list=$1
-
-grep -A 1 \&lt;dateCompleted\&gt;\&lt;\/dateCompleted\&gt; ~/Dropbox/Paperless/$list.xml | sed -n 's:.*&lt;itemName&gt;\(.*\)&lt;/itemName&gt;.*:\1:p'
-</code></pre>
-
-<p>I made it executable while in that directory: <code>chmod +x prl</code></p>
-
-<p>Now, to view the incomplete items in any list, I just type <code>prl</code> followed by the list name. If I have a list named Bills, I just type <code>prl Bills</code> and the script will output all bills that are due. (This script does not output the notes field.)</p>
-
-<h3>How It Works</h3>
-
-<p>All your Paperless lists are stored as XML files. I use <em>grep</em> to look for all items for which there is no completion date: <code>&lt;dateCompleted&gt;&lt;/dateCompleted&gt;</code> with <em>-A 1</em> to also print out the lines immediately after each match (which are the list items themselves). Those results are piped into a <em>sed</em> which extracts any string sandwiched between <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code>.</p>
-
-<p>If I need to see a note, I can do a quick <em>grep</em>: <code>grep -A 1 verizon ~/Dropbox/Paperless/Bills.xml</code>. This will output all lines matching <em>verizon</em> plus the lines immediately following, including the XML tags. It's not pretty but it will get me the info I need (e.g., the due date).</p>
-
-<pre><code>&lt;itemName&gt;Verizon $100.00&lt;/itemName&gt;
-
-&lt;itemNote&gt;7/7&lt;/itemNote&gt;
-</code></pre>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/07/14; 11:30:32 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="2014/07/07/commandLineScriptForPaperlessListsChecklists.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Thu, Sep 18, 2014 at  1:00 PM</p>
+					<p style="float: right;">Last built: Thu, Sep 18, 2014 at  2:04 PM</p>
 					
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, September 18, 2014 at  1:00 PM</span>.</div>
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, September 18, 2014 at  2:04 PM</span>.</div>
 					</div>
 				</div>
 			</div>

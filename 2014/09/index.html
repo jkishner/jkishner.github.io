@@ -20,8 +20,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 18 Sep 2014 18:00:39 GMT",
-    "opmlExpansionState": "1,2,3,4,5,6,17,18,19,20,31,33,34,35,36,49,66,67,71,72,75,88,89,97,99,100,111,116,117,139,141,147,153,163",
+    "opmlDateModified": "Thu, 18 Sep 2014 19:04:45 GMT",
+    "opmlExpansionState": "1,2,3,4,5,6,21,22,23,34,35,36,37,48,50,51,52,53,66,83,84,88,89,92,105,106,114,116,117,128,133,134,156,158,164,170,180",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,7 +36,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "13",
+    "opmlLastCursor": "15",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -44,7 +44,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "bloghome",
-    "slogan": "It's even worse than it appears.",
+    "slogan": "Pay no attention to the man behind the curtain.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -91,7 +91,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Sep 18 2014 14:00:40 GMT-0400 (EDT)",
+    "now": "Thu Sep 18 2014 15:04:45 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/09.html"
 }; //12/12/13 by DW
@@ -201,6 +201,7 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
@@ -225,7 +226,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html" target="_blank">A Launch Center Pro Action for Todo.txt</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -244,6 +244,149 @@
 					<h2 id="idBlogHomePageTitle">September 2014</h2>
 					</div>
 				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="18/howToAddTwitterCardSupportToFargioBlogs.html">How to Add Twitter Card Support to Farg.io Blogs</a></div>
+		<p><img src="https://dl.dropbox.com/s/wdqtukqaz5fhzyn/Screen%20Shot%202014-09-18%20at%202.48.42%20PM.png?dl=0" alt="" title="" /></p>
+
+<p><a href="https://dev.twitter.com/cards/getting-started">Twitter cards</a> show additional information associated with a link. Twitter draws this information from meta tags on your page. Twitter cards support the open graph protocol, so there are only two additional lines of code you would need to add to your site via my <a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html">meta open graph script</a> to support a basic summary card:</p>
+
+<pre><code>&lt;meta "twitter:card" type="summary" /&gt;
+
+&lt;meta "twitter:site" type="@kishner" /&gt; 
+</code></pre>
+
+<p>If you want to incorporate the above meta tags, use the following updated <code>add meta og</code> script. </p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p><!-- outlineEmbedCode -- this version gets you a reader -->
+	<script src="http://fargo.io/code/concord.js" /></script>
+	<script src="http://fargo.io/code/utils.js"></script>
+	<style>
+		.divTrexEmbeddedOutlineContainer {
+			margin-bottom: 20px;
+			}
+		.divTrexEmbeddedOutlineContainer .divTrexEmbeddedOutliner {
+			min-height: 10em;
+			max-height: 30em;
+			border:1px solid gainsboro;
+			border-top-width: 0;
+			border-bottom-width: 0;
+			overflow-y: auto;
+			background-color: white;
+			padding: 6px;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo {
+			min-height: 1.5em;
+			border:1px solid gainsboro;
+			background-color: whitesmoke;
+			padding: 4px;
+			font-family: "Arial";
+			font-size: .9em;
+			}
+		.divTrexEmbeddedOutlineContainer .divInfoRight {
+			float: right;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo {
+			min-height: 1.5em;
+			border:1px solid gainsboro;
+			background-color: whitesmoke;
+			padding: 4px;
+			font-family: "Arial";
+			font-size: .9em;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a:visited {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a:visited {
+			font-family: "Arial";
+			font-size: .9em;
+			color: #0088cc;
+			}
+		.divTrexEmbeddedOutlineContainer .divOutlineTitle {
+			font-weight: bold;
+			}
+		</style>
+	<div class="divTrexEmbeddedOutlineContainer">
+		<div id="idAboveOutlineInfo" class="divAboveOutlineInfo">
+			<div id="idViewSource" class="divInfoRight"></div>
+			<div id="idOutlineTitle" class="divInfoLeft divOutlineTitle"></div>
+			</div>
+		<div id="idTrexEmbeddedOutliner" class="divTrexEmbeddedOutliner"></div>
+		<div id="idBelowOutlineInfo" class="divBelowOutlineInfo">
+			<div class="divInfoRight">
+				<i class="fa fa-heart" style="color: red; opacity: 0.6; font-size: 0.9em;"></i> 
+				<a href="http://fargo.io/" target="_blank">Fargo</a>
+				</div>
+			<div class="divInfoLeft"></div>
+			</div>
+		</div>
+	<script>
+		var font = "Arial", fontSize = 16, lineHeight = 24;
+		var opmlUrl = "https://dl.dropboxusercontent.com/s/bad9q1si3jwftfl/78c0df1667494ee3d824a4b83800cb70.opml?dl=0";
+		function opKeystrokeCallback () {
+			}
+		function setPrefs () {
+			$("#idTrexEmbeddedOutliner").concord ({
+				"prefs": {
+					"outlineFont": font, 
+					"outlineFontSize": fontSize, 
+					"outlineLineHeight": lineHeight,
+					"renderMode": true,
+					"readonly": true,
+					"typeIcons": appTypeIcons
+					},
+				"callbacks": {
+					"opExpand": opExpandCallback,
+					"opKeystroke": opKeystrokeCallback
+					}
+				});
+			}
+		function getOutline (opmlUrl) {
+			var jxhr = $.ajax ({
+				url: opmlUrl,
+				dataType: "text",
+				timeout: 30000
+				})
+			.success (function (data, status, xhr) {
+				if (xhr.status==200) {
+					var title;
+					$("#idTrexEmbeddedOutliner").concord ().op.xmlToOutline (data, false);
+					title = $("#idTrexEmbeddedOutliner").concord ().op.getTitle ();
+					$("#idOutlineTitle").html (title);
+					$("#idViewSource").html ("<a href='" + opmlUrl + "'>view  source</a>");
+					}
+				})
+			.error (function (status, textStatus, errorThrown) {
+				console.log ("checkOutline: error == " + errorThrown + ", status == " + textStatus);
+				});
+			}
+		$(document).ready (function () {
+			setPrefs ();
+			getOutline (opmlUrl);
+			});
+		</script></p>
+
+<p>Make sure you replace @kishner with your own Twitter handle.</p>
+
+<p>In addition to having the meta tags on your page, you need to get your site whitelisted by Twitter. After you've published a post with the meta tags, enter your URL in the <a href="https://cards-dev.twitter.com/validator">Card Validator</a>. If the card is valid but your site has not been approved, then submit for review. After your site has been approved, your Twitter cards will show up.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/18/14; 01:45:10 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="18/howToAddTwitterCardSupportToFargioBlogs.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
 	<div class="divBlogHomeItem">
 		<div class="divBlogHomeItemTitle"><a href="18/testdrivingIos8BeforeIUpgradeMyIphone.html">Test-Driving iOS 8 Before I Upgrade My iPhone</a></div>
 		<p>I've been debating whether I <em>absolutely have to</em> get a new iPhone. If I do, I'd get the year-old 5s. But for a 32gb model, that's $150 plus a $40 activation fee to renew my 2-yr contract on AT&amp;T, unless I go with their Next plan. I haven't done the math, but it appears that <a href="http://www.theverge.com/2013/7/16/4528404/att-next-phone-upgrade-plans-a-huge-ripoff">the Next plan is a ripoff</a>, so I'd be paying close to $200 for a subsidized iPhone 5s. </p>
@@ -562,7 +705,7 @@ fpServerPort = 80
 
 				<div class="divFooterText">
 					<hr>
-					<p style="float: right;">Last built: Thu, Sep 18, 2014 at  1:00 PM</p>
+					<p style="float: right;">Last built: Thu, Sep 18, 2014 at  2:04 PM</p>
 					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Tue, 02 Sep 2014 18:08:58 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, September  2, 2014 at  1:08 PM</span>.</div>
 					</div>
