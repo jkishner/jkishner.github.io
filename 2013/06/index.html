@@ -2,26 +2,25 @@
 <html>
 	<head>
 		<title>June 2013</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Tue, 08 Jul 2014 16:17:01 GMT",
-    "opmlExpansionState": "1,2,3,23",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:40:26 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,18,30,31,32,52,53,54,66",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,14 +35,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "When in doubt, blog.",
+    "type": "stream",
+    "slogan": "Greetings, citizen of Planet Earth. We are your overlords. :-)",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,8 +66,10 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "June 2013",
-    "created": "Tue, 08 Jul 2014 16:17:01 GMT",
+    "created": "Thu, 25 Sep 2014 19:40:26 GMT",
     "description": "",
     "path": "2013/06",
     "subheadColor": "white",
@@ -88,75 +90,612 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Jul 08 2014 12:17:34 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:41:35 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2013/06.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
+		
+		
+		<meta property="og:url" content="http://blog.jeffreykishner.com/2013/06.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="June 2013" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="Jeffrey Kishner" />
+		
+		<meta name="twitter:card" value="summary">
+		<meta name="twitter:title" content="June 2013" />
+		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2013/06.html" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content=""/>
+		<meta name="twitter:site" value="kishner">
+		
 		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageContainer {
+				}
+			.navbar {
+				font-size: 17px;
+				line-height: 140%;
+				}
+			.navbar-inner {
+				min-height: 60px;
+				}
+			.navbar .nav > li > a {
+				padding-top: 17px;
+				}
+			.navbar .brand {
+				padding-top: 13px;
+				padding-left: 25px;
+				}
+			.navbar-container {
+				width: 1000px !important;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divStreamDayText {
+				font-family: 'Vollkorn', serif;
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divMapCanvas {
+				height: 100%; 
+				width: 100%; 
+				position: absolute; 
+				right: 0; 
+				z-index: -10;
+				}
+			.divTextInFrontOfImage {
+				background-color: whitesmoke; 
+				opacity: .98;
+				padding: 1.5em;
+				border:2px solid gainsboro;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				font-family: Ubuntu;
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: 'Ubuntu', sans-serif;
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divFargoStreamComments {
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				margin-top: 10px;
+				}
+			.divDisqusComments { 
+				margin-top: 5px !important;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.divPageContainer {
+					}
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divTextContainer {
+					margin-top: -40px;
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
+					}
+				.divPictureViewer .modal {
+					left: auto;
+					width: auto;
+					margin-left: auto;
+					margin-right: auto;
+					}
+				.divLevel {
+					margin-left: 0;
 					}
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<style>
-	.divFargoIndex .aDocTitleOnIndexPage {
-		font-size: 33.75px !important;
-		line-height: 42px !important;
-		color: #0088cc !important;
-		}
-	.divTitleDescription { display: none; }
-	.icon-star:before { content: "\f0c1"; }
-	.greenText {
-		color: green !important;
-		font-weight: bold !important;
-		}
-	ul {
-		list-style-type: none;
-		}
-	.divByline {
-		visibility: hidden;
-		height: 0px;
-		}
-	</style>
-<script>
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				.divPageContainer {
+					}
+				.navbar .nav > li > a {
+					padding-right: 7px;
+					}
+				}
+			</style>
+		
+		<script>
+			var flSetupDisqusThread = false;
+			
+			var colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function closeDisqusThread () {
+				$("#idDisqusDialog").modal ("hide");
+				}
+			function openDisqusThread () {
+				function getCommentHtml () {
+					var id = "", hidingCode  = "", visibleStyle = "";
+					if (pagetable.opmlUrl != undefined) {
+						id += pagetable.opmlUrl;
+						}
+					if (pagetable.created != undefined) {
+						id += pagetable.created;
+						}
+					if (id.length > 0) {
+						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
+						}
+					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
+					return (code.replace (/&lt;/g,'<'));
+					}
+				if (!flSetupDisqusThread) {
+					var s = 
+						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
+					$("body").prepend (s)
+					flSetupDisqusThread = true;
+					}
+				$("#idDisqusCode").html (getCommentHtml ());
+				$("#idDisqusDialog").modal ("show");
+				}
+			
+			
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
+				var mapCanvas = document.getElementById (idmap);
+				if (mapCanvas != null) {
+					var mapOptions = {
+						center: new google.maps.LatLng (maplat, maplong),
+						zoom: Number (mapzoom),
+						panControl: false,
+						zoomControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl :false,
+						overviewMapControl: false,
+						rotateControl: false,
+						mapTypeId: maptype
+						};
+					var map = new google.maps.Map (mapCanvas, mapOptions);
+					}
+				}
+			
+			function turnOffImages () { //5/18/14 by DW
+				$(".divStreamDayImage").css ("background-image", "");
+				localStorage.flTurnImagesOff = "true";
+				}
+			function turnOffImagesCommand () {
+				confirmDialog ("Turn off images?", function () {
+					localStorage.flTurnImagesOff = "true";
+					location.reload (true);
+					});
+				}
+			function turnOnImagesCommand () {
+				confirmDialog ("Turn images on?", function () {
+					localStorage.flTurnImagesOff = "false"; 
+					location.reload (true);
+					});
+				}
+			
+			function startup () {
+				var streamVersion = 1; //5/20/14 by DW
+				var flPlainOutline; //5/20/14 by DW
+				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
+				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
+				
+				//set streamVersion -- 5/20/14 by DW
+					if (pagetable.streamVersion != undefined) {
+						var x = parseInt (pagetable.streamVersion);
+						if (!isNaN (x)) {
+							streamVersion = x;
+							}
+						}
+				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
+					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
+						localStorage.removeItem ("flImagesOff")
+						}
+					if (localStorage.flTurnImagesOff == undefined) {
+						if (streamVersion > 1) {
+							localStorage.flTurnImagesOff = "false";
+							}
+						}
+					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
+				//every day gets a background color, image, map or -- ??
+					if (!flPlainOutline) {
+						var ixcolorarray = 0, ctmaps = 0;
+						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
+							var flSetColor = true;
+							
+							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
+								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
+								flSetColor = false;
+								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
+								
+								//set up map parameters
+									maplat = $(this).data ("maplatitude");
+									if (maplat == undefined) {
+										maplat = pagetable.mapLatitude;
+										}
+									maplong = $(this).data ("maplongitude");
+									if (maplong == undefined) {
+										maplong = pagetable.mapLongitude;
+										}
+									maptype = $(this).data ("maptype");
+									if (maptype == undefined) {
+										maptype = pagetable.mapType;
+										}
+									mapzoom = $(this).data ("mapzoom");
+									if (mapzoom == undefined) {
+										mapzoom = pagetable.mapZoom;
+										}
+								
+								initMap (idmap, maplat, maplong, maptype, mapzoom);
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayImage") {
+										flSetColor = false;
+										}
+									});
+								}
+							
+							if (flSetColor) {
+								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayText") {
+										var flset = false;
+										$(this).children ("div").each (function () {
+											if (!flset) {
+												this.className = "divTextInFrontOfImage"; //set classname of first child element
+												}
+											flset = true;
+											});
+										}
+									});
+								}
+							});
+						}
+				//highlight and expand the #hashed element, if present
+					var hash = window.location.hash;
+					if (hash.length > 0) {
+						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
+							$(this).children ("a").each (function () { //look at first-level children that are anchors
+								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
+									$(this).parents ("div").css ("display", "block"); //make all parents visible
+									$(this).parents ("p").css ("background-color", hightlightcolor);
+									
+									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
+									
+									
+									var flexpand = true;
+									$(this).parents ("div").each (function () {
+										if (flexpand) {
+											$(this).children ("a").each (function () {
+												$(this).css ("background-color", hightlightcolor);
+												
+												$(this).prev ().find ("i").each (function () {
+													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
+														$(this).attr ("class", "fa fa-caret-down");
+														}
+													});
+												
+												});
+											$(this).next ("div").css ("display", "block"); //the divLevel item
+											flexpand = false;
+											}
+										});
+									}
+								});
+							});
+						}
+				//handle fixed menu
+					if (getBoolean (pagetable.flFixedMenu)) {
+						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
+						if (flhavenav) {
+							document.body.style.paddingTop = "60px";
+							if (hash.length > 0) {
+								$(document).one ("scroll", function () {
+									var $el = $(this), top = $el.scrollTop ();
+									$el.scrollTop (top - 125);
+									});
+								}
+							}
+						}
+				//set the site title -- 3/23/14 by DW
+					if (pagetable.menuTitle != undefined) {
+						var pagename;
+						
+						if (highlightedtitle != undefined) { //5/11/14 by DW
+							pagename = highlightedtitle;
+							}
+						else {
+							if (pagetable.path.length == 0) {
+								pagename = "Home";
+								}
+							else {
+								pagename = pagetable.text;
+								}
+							}
+						
+						document.title = pagetable.menuTitle + ": [" + pagename + "]";
+						}
+				//set the color of each text frame -- 5/11/14 by DW
+					$(".divTextInFrontOfImage").each (function () {
+						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
+						});
+				
+				//turn on images for v2 or greater -- 5/20/14 by DW
+					if (streamVersion > 1) { 
+						if (flPlainOutline) {
+							$(".aStreamDayLink").each (function () {
+								$(this).css ("font-size", "28px");
+								});
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								$(this).css ("margin-top", "70px");
+								});
+							$(".divStreamDayText").each (function () {
+								$(this).css ("padding", "0");
+								});
+							$(".divTextContainer").each (function () {
+								$(this).css ("margin-bottom", "125px");
+								});
+							}
+						else {
+							$(".divStreamDay").each (function () {
+								var url = $(this).data ("backgroundimage");
+								if (url != undefined) {
+									$(this).css ("background-image", "url('" + url + "')");
+									}
+								
+								$(this).children (".divStreamDayText").children ().each (function () {
+									this.className = "divTextInFrontOfImage"; 
+									});
+								
+								});
+							}
+						}
+				
+				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
+					if (streamVersion == 1) { 
+						if (flPlainOutline) {
+							turnOffImages ();
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								});
+							}
+						}
+				}
+			</script>
+		
+		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -167,20 +706,20 @@
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-		
+		<div class="divPageContainer">
+			
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
+						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
+						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
 						<li><a href="/2014/05/" target="_blank">May 2014</a></li>
 						<li><a href="/2014/04/" target="_blank">Apr 2014</a></li>
@@ -196,31 +735,31 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/14/homelessnessAndTheNycSubway.html" target="_blank">Homelessness and the NYC Subway</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/09/morningGloryNyc.html" target="_blank">Morning Gloryville NYC</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/25/whiteGuysAndAlterBridge.html" target="_blank">White Guys and Alter Bridge </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -230,364 +769,333 @@
 			</div>
 		</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013">2013</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">June 2013</h2>
+			<div class="divTextContainer" id="idTextContainer">
+				<div class="divStreamDay" >
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/30/">Sunday, June 30<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1372632612"></a><a class="aStreamTextLink" onclick="ecStream (0)">Monsters University Exceeded My Expectations</a><span class="spPermalink"><a href="/2013/06/30/#a1372632612">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel0">
+				<p><a name="a1372633636"></a><img src="http://www.pixar.com/sites/default/files/mu_BILLBOARD3.jpg"><span class="spPermalink"><a href="/2013/06/30/#a1372633636">#</a></span></p>
+				<p><a name="a1372632622"></a><i>Monsters Inc</i>. has been one of my favorite Pixar movies. Being that <i>MU</i> is a sequel, I didn't expect to be wowed -- just entertained. (Better to come in with low expectations so that I am not disappointed when a sequel is not as good as the original.) However, I was profoundly moved by this film. <span class="spPermalink"><a href="/2013/06/30/#a1372632622">#</a></span></p>
+				<p><a name="a1372632705"></a>Technically, <i>MU</i> is a prequel. It chronicles how Sully and Mike W. met at university, where they majored in Scaring. They both failed out of the major and became antagonists: Sully was cocky about his scaring abilities -- his father was a famous scarer, and frightening was easy for Sully -- and Mike was more of a scholar, hoping that knowledge would give him an edge. <span class="spPermalink"><a href="/2013/06/30/#a1372632705">#</a></span></p>
+				<p><a name="a1372632849"></a>Unfortunately, Sully could not get by with coasting on his natural talents, and Mike had absolutely no "scare" in him, so they banded together with a fraternity of "losers" in a scare competition, and Mike made a deal with the dean -- who had failed them both out of the Scare major -- that if they won the competition, she would let them back into the major.<span class="spPermalink"><a href="/2013/06/30/#a1372632849">#</a></span></p>
+				<p><a name="a1372632932"></a>Two-thirds of the film is about how Mike trains the "rag-tag groups of misfits" into a top scaring team, and this is all fairly enjoyable, but it is not really until true crisis hits that this movie takes a turn towards intensity and a deep exploration of how a friendship is forged. I won't spoil anything, but I will say that the finale was gripping and emotional, and I left shaken up and convinced that Pixar is the only animation studio that truly knows how to create a story in which <i>character </i>trumps animation and silly jokes.<span class="spPermalink"><a href="/2013/06/30/#a1372632932">#</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/29/">Saturday, June 29<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1372559729"></a><a class="aStreamTextLink" onclick="ecStream (1)">Don't Put Animated GIFs in Your Named Fargo Outline</a><span class="spPermalink"><a href="/2013/06/29/#a1372559729">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel1">
+				<p><a name="a1372559764"></a>Just like a tumblog that loads slow because it has so many gifs, so will your outline. Rather, put the gif in a separate outline, make it public, and include the opml file in a blog post. That's what I did <a href="http://blog.jeffreykishner.com/2013/06/28/theBlingRing.html">here</a>.  <span class="spPermalink"><a href="/2013/06/29/#a1372559764">#</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/28/">Friday, June 28<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1372455803"></a><a class="aStreamTextLink" onclick="ecStream (2)">The Bling Ring</a><span class="spPermalink"><a href="/2013/06/28/#a1372455803">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel2">
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1372455819"></a><a class="aStreamTextLink" onclick="ecStream (3)">Emma Watson totally makes this watchable. </a><span class="spPermalink"><a href="/2013/06/28/#a1372455819">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel3">
+					<p><a name="a1372456298"></a><img src="http://i.imgur.com/ZkzPvsl.gif"><span class="spPermalink"><a href="/2013/06/28/#a1372456298">#</a></span></p>
 					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="30/monstersUniversityExceededMyExpectations.html">Monsters University Exceeded My Expectations</a></div>
-		<p><img src="http://www.pixar.com/sites/default/files/mu_BILLBOARD3.jpg"></p>
-
-<p><i>Monsters Inc</i>. has been one of my favorite Pixar movies. Being that <i>MU</i> is a sequel, I didn't expect to be wowed -- just entertained. (Better to come in with low expectations so that I am not disappointed when a sequel is not as good as the original.) However, I was profoundly moved by this film. </p>
-
-<p>Technically, <i>MU</i> is a prequel. It chronicles how Sully and Mike W. met at university, where they majored in Scaring. They both failed out of the major and became antagonists: Sully was cocky about his scaring abilities -- his father was a famous scarer, and frightening was easy for Sully -- and Mike was more of a scholar, hoping that knowledge would give him an edge. </p>
-
-<p>Unfortunately, Sully could not get by with coasting on his natural talents, and Mike had absolutely no "scare" in him, so they banded together with a fraternity of "losers" in a scare competition, and Mike made a deal with the dean -- who had failed them both out of the Scare major -- that if they won the competition, she would let them back into the major.</p>
-
-<p>Two-thirds of the film is about how Mike trains the "rag-tag groups of misfits" into a top scaring team, and this is all fairly enjoyable, but it is not really until true crisis hits that this movie takes a turn towards intensity and a deep exploration of how a friendship is forged. I won't spoil anything, but I will say that the finale was gripping and emotional, and I left shaken up and convinced that Pixar is the only animation studio that truly knows how to create a story in which <i>character </i>trumps animation and silly jokes.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/30/13; 05:50:12 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="30/monstersUniversityExceededMyExpectations.html"><i class="fa fa-star"></i></a></div>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1372432335"></a><a class="aStreamTextLink" onclick="ecStream (4)">Use Drafts for iOS to Add a YouTube Video to Your Fargo Blog</a><span class="spPermalink"><a href="/2013/06/28/#a1372432335">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel4">
+				<p><a name="a1372432360"></a><a href="http://fargo.io">Fargo.io</a> is still somewhat difficult to use on iOS devices. This morning I saw a YouTube video I wanted to add to this blog, and I couldn't even paste text into a new node, so I had to wait until I was at a desktop computer to do so.<span class="spPermalink"><a href="/2013/06/28/#a1372432360">#</a></span></p>
+				<p><a name="a1372432480"></a>Which got me thinking: Since I've already written <a href="http://agiletortoise.com/drafts">Drafts</a> Dropbox actions on my <a href="http://imissmymac.com">I Miss My Mac</a> blog, why can't I find an easy way to add a YouTube embed to my Fargo blog?<span class="spPermalink"><a href="/2013/06/28/#a1372432480">#</a></span></p>
+				<p><a name="a1372432750"></a><h3>Install the Dropbox Action</h3><span class="spPermalink"><a href="/2013/06/28/#a1372432750">#</a></span></p>
+				<p><a name="a1372432545"></a>If you're on your iOS device, tap on <a href="drafts://x-callback-url/import_action?type=dropbox&name=youtube2fargo&path=%2FApps%2FFargo%2F&filenametype=0&filename=&ext=opml&writetype=0&template=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Copml%20version%3D%222.0%22%3E%0A%09%3Chead%3E%0A%09%09%3Ctitle%3EVideo%3C%2Ftitle%3E%0A%09%09%3C%2Fhead%3E%0A%09%3Cbody%3E%0A%09%09%3Coutline%20text%3D%22%5B%5Btitle%5D%5D%22%20type%3D%22outline%22%20created%3D%22%5B%5Bdate%7C%25a%2C%20%25d%20%25b%20%25Y%20%25T%20EDT%5D%5D%22%20isFeedItem%3D%22true%22%3E%0A%3Coutline%20text%3D%22%26lt%3Biframe%20width%3D%26quot%3B560%26quot%3B%20height%3D%26quot%3B315%26quot%3B%20src%3D%26quot%3B%2F%2Fwww.youtube.com%2Fembed%2F%5B%5Bbody%5D%5D%26quot%3B%20frameborder%3D%26quot%3B0%26quot%3B%20allowfullscreen%26gt%3B%26lt%3B%2Fiframe%26gt%3B%22%2F%3E%0A%3C%2Foutline%3E%0A%09%09%3C%2Fbody%3E%0A%09%3C%2Fopml%3E">this link</a> to import this Dropbox action into your version of Drafts. Here is the template code if you're curious:<span class="spPermalink"><a href="/2013/06/28/#a1372432545">#</a></span></p>
+				<p><a name="a1372432717"></a><script src="http://pastebin.com/embed_js.php?i=avFQapbD"></script><span class="spPermalink"><a href="/2013/06/28/#a1372432717">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1372432720"></a><a class="aStreamTextLink" onclick="ecStream (5)">Here are the other settings if you want to set up a Dropbox action by yourself:</a><span class="spPermalink"><a href="/2013/06/28/#a1372432720">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel5">
+					<p><a name="a1372432784"></a>Name: youtube2fargo<span class="spPermalink"><a href="/2013/06/28/#a1372432784">#</a></span></p>
+					<p><a name="a1372432793"></a>Path: /Apps/Fargo/<span class="spPermalink"><a href="/2013/06/28/#a1372432793">#</a></span></p>
+					<p><a name="a1372432802"></a>File: Timestamp<span class="spPermalink"><a href="/2013/06/28/#a1372432802">#</a></span></p>
+					<p><a name="a1372432806"></a>Ext: opml<span class="spPermalink"><a href="/2013/06/28/#a1372432806">#</a></span></p>
+					<p><a name="a1372432809"></a>Write: Create<span class="spPermalink"><a href="/2013/06/28/#a1372432809">#</a></span></p>
+					</div>
+				<p><a name="a1372432822"></a><h3>How to Make It Work</h3><span class="spPermalink"><a href="/2013/06/28/#a1372432822">#</a></span></p>
+				<p><a name="a1372432830"></a>In the first line of a draft, enter the video title. In the second line of the draft, enter <i>just the string after the = sign</i> when you copy the URL of the video.<span class="spPermalink"><a href="/2013/06/28/#a1372432830">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1372432917"></a><a class="aStreamTextLink" onclick="ecStream (6)">If I want to feature "Add a feed item to Fargo," I see the URL in the address bar: http://www.youtube.com/watch?v=2obEqxjKCYQ</a><span class="spPermalink"><a href="/2013/06/28/#a1372432917">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel6">
+					<p><a name="a1372432953"></a>In the second line of the draft, I just enter 2obEqxjKCYQ<span class="spPermalink"><a href="/2013/06/28/#a1372432953">#</a></span></p>
+					</div>
+				<p><a name="a1372432968"></a>Then I go to actions and tap on "youtube2fargo"<span class="spPermalink"><a href="/2013/06/28/#a1372432968">#</a></span></p>
+				<p><a name="a1372432842"></a>A new OPML file will be added to the /Apps/Fargo folder in Dropbox. <span class="spPermalink"><a href="/2013/06/28/#a1372432842">#</a></span></p>
+				<p><a name="a1372433012"></a>In the Fargo menu, go to File > Open. You will find the new file by the timestamp. Click on it, and the file will open in a new tab. You will see just the headline (the video title).<span class="spPermalink"><a href="/2013/06/28/#a1372433012">#</a></span></p>
+				<p><a name="a1372433074"></a>Go to File > Get Public Link. Copy that link to your clipboard.<span class="spPermalink"><a href="/2013/06/28/#a1372433074">#</a></span></p>
+				<p><a name="a1372433092"></a>Go to the outline that contains your Fargo blog. <span class="spPermalink"><a href="/2013/06/28/#a1372433092">#</a></span></p>
+				<p><a name="a1372433101"></a>Click the + sign to create a new date, unless you've already blogged today. Highlight the date (e.g., "June 28") and then go to File > Import OPML. Paste the clipboard contents into that field and click OK.<span class="spPermalink"><a href="/2013/06/28/#a1372433101">#</a></span></p>
+				<p><a name="a1372433180"></a>Your new headline will be in your outline. You may have to move it (up/down/left/right) to position it so that it is the child node for today's date.<span class="spPermalink"><a href="/2013/06/28/#a1372433180">#</a></span></p>
+				<p><a name="a1372433212"></a>Your headline will already have all of the necessary attributes to make it an outline type; with a creation date; that is added to your RSS feed. <span class="spPermalink"><a href="/2013/06/28/#a1372433212">#</a></span></p>
+				<p><a name="a1372433253"></a><h3>Customizing the Dropbox Action</h3><span class="spPermalink"><a href="/2013/06/28/#a1372433253">#</a></span></p>
+				<p><a name="a1372433263"></a>I have mine set up such that the created attribute is for EDT. I've done testing and Fargo will correctly show the correct time stamp. If you live in a different time zone, you can go into the template for the Dropbox action and change it.<span class="spPermalink"><a href="/2013/06/28/#a1372433263">#</a></span></p>
+				<p><a name="a1372433322"></a>If you want to post the video using a different template (thread, blogpost, whatever), just change type="outline" to type="thread" or whatever.<span class="spPermalink"><a href="/2013/06/28/#a1372433322">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1372419108"></a><a class="aStreamTextLink" onclick="ecStream (7)">Dubstep Played On Children's Toy</a><span class="spPermalink"><a href="/2013/06/28/#a1372419108">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel7">
+				<p><a name="a1411674096.262"></a><iframe width="560" height="315" src="//www.youtube.com/embed/S1l5UFVPkgg" frameborder="0" allowfullscreen></iframe><span class="spPermalink"><a href="/2013/06/28/#a1411674096.262">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="29/dontPutAnimatedGifsInYourNamedFargoOutline.html">Don't Put Animated GIFs in Your Named Fargo Outline</a></div>
-		<p>Just like a tumblog that loads slow because it has so many gifs, so will your outline. Rather, put the gif in a separate outline, make it public, and include the opml file in a blog post. That's what I did <a href="http://blog.jeffreykishner.com/2013/06/28/theBlingRing.html">here</a>.  </p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/29/13; 09:35:29 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="29/dontPutAnimatedGifsInYourNamedFargoOutline.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/27/">Thursday, June 27<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1372361020"></a><a class="aStreamTextLink" onclick="ecStream (8)"><a href="http://mog.com/m/album/84662859">Queens Of The Stone Age</a> <i class="fa fa-arrow-right"></i></a><span class="spPermalink"><a href="/2013/06/27/#a1372361020">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel8">
+				<p><a name="a1372361052"></a><i>...Like Clockwork</i> is an enjoyable listen. <span class="spPermalink"><a href="/2013/06/27/#a1372361052">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1372362763"></a><a class="aStreamTextLink" onclick="ecStream (9)">A bit Bowie-esque.</a><span class="spPermalink"><a href="/2013/06/27/#a1372362763">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel9">
+					<p><a name="a1372361202"></a><i class="fa fa-music"></i> Create a free account on MOG to hear it.<span class="spPermalink"><a href="/2013/06/27/#a1372361202">#</a></span></p>
+					</div>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1372341758"></a><a class="aStreamTextLink" onclick="ecStream (10)">Fargo Enables You to Create a Good-Looking Blog</a><span class="spPermalink"><a href="/2013/06/27/#a1372341758">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel10">
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1372341785"></a><a class="aStreamTextLink" onclick="ecStream (11)"><a href="http://fargo.io">Fargo</a> is a Dropbox-based outliner built by <a href="http://smallpicture.com">Small Picture</a>. I've been beta testing it since it started. The team recently enabled anybody to publish on a smallpict.com subdomain. All you literally have to do is the following:</a><span class="spPermalink"><a href="/2013/06/27/#a1372341785">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel11">
+					<p><a name="a1372341921"></a>Create an outline and go to "Name outline" in the File menu.<span class="spPermalink"><a href="/2013/06/27/#a1372341921">#</a></span></p>
+					<p><a name="a1372341948"></a>Hit the + sign.<span class="spPermalink"><a href="/2013/06/27/#a1372341948">#</a></span></p>
+					<p><a name="a1372341959"></a>Start typing.<span class="spPermalink"><a href="/2013/06/27/#a1372341959">#</a></span></p>
+					</div>
+				<p><a name="a1372341964"></a>If you hit the <i class="fa fa-eye-open"></i> icon, you'll get to the page that just published. That's right, you don't have to hit "Publish" or anything, it just happens.<span class="spPermalink"><a href="/2013/06/27/#a1372341964">#</a></span></p>
+				<p><a name="a1372342035"></a>By default, the "content type" that you create is an outline template, but you don't have to worry about the HTML/CSS unless you want to. If you're savvy, you can create your own templates or copy from someone else's public outline. But to have a good-looking blog, you just need a menu (and optionally, some CSS that you can easily import).<span class="spPermalink"><a href="/2013/06/27/#a1372342035">#</a></span></p>
+				<p><a name="a1372342163"></a>This blog currently uses the default "outline" template, which I'm sure the team is still tinkering with. <span class="spPermalink"><a href="/2013/06/27/#a1372342163">#</a></span></p>
+				<p><a name="a1372346292"></a><h3>Creating the Navigation Menu</h3><span class="spPermalink"><a href="/2013/06/27/#a1372346292">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1372342210"></a><a class="aStreamTextLink" onclick="ecStream (12)">In my outline, I have a menu "directive" which looks like the following:</a><span class="spPermalink"><a href="/2013/06/27/#a1372342210">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel12">
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (13)" ><i class="fa fa-caret-right" id="idStreamWedge13"></i></a></span><a name="a1370728610"></a><a class="aStreamTextLink" onclick="ecStream (13)">&#35;menus</a><span class="spPermalink"><a href="/2013/06/27/#a1370728610">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel13">
+						<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (14)" ><i class="fa fa-caret-right" id="idStreamWedge14"></i></a></span><a name="a1370728619"></a><a class="aStreamTextLink" onclick="ecStream (14)">jeffmenu</a><span class="spPermalink"><a href="/2013/06/27/#a1370728619">#</a></span></p>
+						<div class="divLevel" id="idStreamLevel14">
+							<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (15)" ><i class="fa fa-caret-right" id="idStreamWedge15"></i></a></span><a name="a1370728625"></a><a class="aStreamTextLink" onclick="ecStream (15)">Jeffrey Kishner</a><span class="spPermalink"><a href="/2013/06/27/#a1370728625">#</a></span></p>
+							<div class="divLevel" id="idStreamLevel15">
+								<p><a name="a1370728633"></a>About Me<span class="spPermalink"><a href="/2013/06/27/#a1370728633">#</a></span></p>
+								<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (16)" ><i class="fa fa-caret-right" id="idStreamWedge16"></i></a></span><a name="a1372272928"></a><a class="aStreamTextLink" onclick="ecStream (16)">Archive</a><span class="spPermalink"><a href="/2013/06/27/#a1372272928">#</a></span></p>
+								<div class="divLevel" id="idStreamLevel16">
+									<p><a name="a1372272931"></a>June 2013<span class="spPermalink"><a href="/2013/06/27/#a1372272931">#</a></span></p>
+									</div>
+								<p><a name="a1371247599"></a>&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;<span class="spPermalink"><a href="/2013/06/27/#a1371247599">#</a></span></p>
+								<p><a name="a1371583879"></a>&lt;i class=&quot;icon-envelope-alt&quot;>&lt;/i&gt;<span class="spPermalink"><a href="/2013/06/27/#a1371583879">#</a></span></p>
+								<p><a name="a1371752312"></a>&lt;i class=&quot;icon-rss-sign&quot;&gt;&lt;/i&gt;<span class="spPermalink"><a href="/2013/06/27/#a1371752312">#</a></span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (17)" ><i class="fa fa-caret-right" id="idStreamWedge17"></i></a></span><a name="a1372342853"></a><a class="aStreamTextLink" onclick="ecStream (17)">That's how I created the menu you see at the top of this page. You just have to create links by adding attributes using the Edit Attributes menu. Here are the attributes I use to link to my Twitter page:</a><span class="spPermalink"><a href="/2013/06/27/#a1372342853">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel17">
+					<p><a name="a1372342897"></a>type = link<span class="spPermalink"><a href="/2013/06/27/#a1372342897">#</a></span></p>
+					<p><a name="a1372342904"></a>url = http://twitter.com/kishner<span class="spPermalink"><a href="/2013/06/27/#a1372342904">#</a></span></p>
+					</div>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (18)" ><i class="fa fa-caret-right" id="idStreamWedge18"></i></a></span><a name="a1372343000"></a><a class="aStreamTextLink" onclick="ecStream (18)">You can use any icon that's included in the <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Font Awesome set</a>. So if you want to link to your LinkedIn profile (<i class="fa fa-linkedin"></i>), you enter the following into your menu:</a><span class="spPermalink"><a href="/2013/06/27/#a1372343000">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel18">
+					<p><a name="a1371752312"></a>&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;<span class="spPermalink"><a href="/2013/06/27/#a1371752312">#</a></span></p>
+					</div>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (19)" ><i class="fa fa-caret-right" id="idStreamWedge19"></i></a></span><a name="a1372347004"></a><a class="aStreamTextLink" onclick="ecStream (19)">I then add the following headline to my outline to "call" the menu:</a><span class="spPermalink"><a href="/2013/06/27/#a1372347004">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel19">
+					<p><a name="a1411674096.295"></a>&#35;menuName "jeffmenu"<span class="spPermalink"><a href="/2013/06/27/#a1411674096.295">#</a></span></p>
+					</div>
+				<p><a name="a1372346343"></a><h3>Easily Import a Blog Theme</h3><span class="spPermalink"><a href="/2013/06/27/#a1372346343">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (20)" ><i class="fa fa-caret-right" id="idStreamWedge20"></i></a></span><a name="a1372342292"></a><a class="aStreamTextLink" onclick="ecStream (20)">I use the following "directive" to use a particular CSS theme from <a href="http://bootswatch.com/">Bootswatch</a>.</a><span class="spPermalink"><a href="/2013/06/27/#a1372342292">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel20">
+					<p><a name="a1372263175"></a>&#35;bootstrapTheme "readable"<span class="spPermalink"><a href="/2013/06/27/#a1372263175">#</a></span></p>
+					</div>
+				<p><a name="a1372342373"></a>You can substitute "readable" with the names of any of the free themes on that page to change the look of your blog.<span class="spPermalink"><a href="/2013/06/27/#a1372342373">#</a></span></p>
+				<p><a name="a1372365468"></a><h3>Create a Chronological Blog Home Page</h3><span class="spPermalink"><a href="/2013/06/27/#a1372365468">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (21)" ><i class="fa fa-caret-right" id="idStreamWedge21"></i></a></span><a name="a1372365491"></a><a class="aStreamTextLink" onclick="ecStream (21)">By default, your home page will be an outline of everything in your named outline. An index, essentially. If you want a home page with your most recent posts in descending chronological order, include the following two headlines:</a><span class="spPermalink"><a href="/2013/06/27/#a1372365491">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel21">
+					<p><a name="a1372273337"></a>&#35;type "bloghome"<span class="spPermalink"><a href="/2013/06/27/#a1372273337">#</a></span></p>
+					<p><a name="a1371578696"></a>&#35;bloghomeItemCount "10"<span class="spPermalink"><a href="/2013/06/27/#a1371578696">#</a></span></p>
+					</div>
+				<p><a name="a1372365602"></a>The number in the second item determines how many posts you want on the home page. <span class="spPermalink"><a href="/2013/06/27/#a1372365602">#</a></span></p>
+				<p><a name="a1372365622"></a>Unfortunately, there's no "page 2" and so on. I'm working around that limitation by linking to the month in the navigation.<span class="spPermalink"><a href="/2013/06/27/#a1372365622">#</a></span></p>
+				<p><a name="a1372346373"></a><h3>Need Direction?</h3><span class="spPermalink"><a href="/2013/06/27/#a1372346373">#</a></span></p>
+				<p><a name="a1372342639"></a>If you want to see everything involved in building this blog, just view this opml file: <a href="https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml">https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml</a>. Or if you are already a Fargo user, open the "jeffrey" outline by name.<span class="spPermalink"><a href="/2013/06/27/#a1372342639">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="28/theBlingRing.html">The Bling Ring</a></div>
-		<p>Emma Watson totally makes this watchable. </p>
-
-<ul>
-<li><img src="http://i.imgur.com/ZkzPvsl.gif"></li>
-</ul>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/28/13; 04:43:23 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="28/theBlingRing.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/26/">Wednesday, June 26<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (22)" ><i class="fa fa-caret-right" id="idStreamWedge22"></i></a></span><a name="a1372280050"></a><a class="aStreamTextLink" onclick="ecStream (22)">Listening to Natalie Maines' new album, all I feel is nostalgia for the Dixie Chicks.</a><span class="spPermalink"><a href="/2013/06/26/#a1372280050">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel22">
+				<p><a name="a1372280072"></a>A part of me thinks that if Right America didn't react so strongly to her political assertions that the Chicks weren't barred from terrestrial radio, they might still be together.<span class="spPermalink"><a href="/2013/06/26/#a1372280072">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (23)" ><i class="fa fa-caret-right" id="idStreamWedge23"></i></a></span><a name="a1372256880"></a><a class="aStreamTextLink" onclick="ecStream (23)">The Feed Reader</a><span class="spPermalink"><a href="/2013/06/26/#a1372256880">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel23">
+				<p><a name="a1372256917"></a>Long before Google Reader announced they were shutting down, I chose <a href="http://feedafever.com">Fever</a>, a self-hosted solution. You pay once for a license, install it on your own LAMP server, and upload your OPML file or just add feeds as you need to. The developer, Shaun Inman, pushes updates as needed, although Fever is not really his priority now, as he's working on game development.<span class="spPermalink"><a href="/2013/06/26/#a1372256917">#</a></span></p>
+				<p><a name="a1372257027"></a>The stand-out feature of Fever is that it algorithmically combs your feeds for "hot" stories, presumably by looking at hyperlinks that are included in many feed items over the same period of time. This allows me to quickly see what's hot among the blogs that I visit. In addition to being able to click on the story that many blogs link to, I can also peruse all the posts that write about the story.<span class="spPermalink"><a href="/2013/06/26/#a1372257027">#</a></span></p>
+				<p><a name="a1372257215"></a>Fever works in the browser, and although it is optimized for the iPhone, there are also two iOS apps that use the Fever API to improve the reading experience as well as allow you to download posts for reading when you're, say, on the subway: <a href="http://ashesapp.com/">Ashes</a> and <a href="https://goneeast.com/sunstroke/">Sunstroke</a>. I'm not going to provide a review here of both apps. I'm partial to Sunstroke, but I haven't been following recent updates to the Ashes app.<span class="spPermalink"><a href="/2013/06/26/#a1372257215">#</a></span></p>
+				<p><a name="a1372257402"></a>Although I am intrigued by Dave Winer's River of News, I do value the ability to download feeds to my iOS device - having a browser-only reader doesn't suffice for me. (Recently, instead of using a Fever app for the subway, I've just been combing Twitter during breakfast, saving lots of links to Instapaper, and reading the articles in the Instapaper app on the subway. Sometimes I just feel that syncing all my Fever "kindling" posts to my iPad takes too long, or the app "times out.")<span class="spPermalink"><a href="/2013/06/26/#a1372257402">#</a></span></p>
+				<p><a name="a1372257575"></a>I also have FOMO ("fear of missing out") with regards to certain feeds. Like, I want to read everything from certain blogs, and if the authors of these blogs don't post frequently, I may miss their posts in a big River of News. (Of course, I could just <i>visit the blog</i>.) But at least with Fever, I can have a group of favorite blogs, and Fever doesn't "mark all as read" unless I want it to.<span class="spPermalink"><a href="/2013/06/26/#a1372257575">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="28/useDraftsForIosToAddAYoutubeVideoToYourFargoBlog.html">Use Drafts for iOS to Add a YouTube Video to Your Fargo Blog</a></div>
-		<p><a href="http://fargo.io">Fargo.io</a> is still somewhat difficult to use on iOS devices. This morning I saw a YouTube video I wanted to add to this blog, and I couldn't even paste text into a new node, so I had to wait until I was at a desktop computer to do so.</p>
-
-<p>Which got me thinking: Since I've already written <a href="http://agiletortoise.com/drafts">Drafts</a> Dropbox actions on my <a href="http://imissmymac.com">I Miss My Mac</a> blog, why can't I find an easy way to add a YouTube embed to my Fargo blog?</p>
-
-<h3>Install the Dropbox Action</h3>
-
-<p>If you're on your iOS device, tap on <a href="drafts://x-callback-url/import_action?type=dropbox&amp;name=youtube2fargo&amp;path=%2FApps%2FFargo%2F&amp;filenametype=0&amp;filename=&amp;ext=opml&amp;writetype=0&amp;template=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Copml%20version%3D%222.0%22%3E%0A%09%3Chead%3E%0A%09%09%3Ctitle%3EVideo%3C%2Ftitle%3E%0A%09%09%3C%2Fhead%3E%0A%09%3Cbody%3E%0A%09%09%3Coutline%20text%3D%22%5B%5Btitle%5D%5D%22%20type%3D%22outline%22%20created%3D%22%5B%5Bdate%7C%25a%2C%20%25d%20%25b%20%25Y%20%25T%20EDT%5D%5D%22%20isFeedItem%3D%22true%22%3E%0A%3Coutline%20text%3D%22%26lt%3Biframe%20width%3D%26quot%3B560%26quot%3B%20height%3D%26quot%3B315%26quot%3B%20src%3D%26quot%3B%2F%2Fwww.youtube.com%2Fembed%2F%5B%5Bbody%5D%5D%26quot%3B%20frameborder%3D%26quot%3B0%26quot%3B%20allowfullscreen%26gt%3B%26lt%3B%2Fiframe%26gt%3B%22%2F%3E%0A%3C%2Foutline%3E%0A%09%09%3C%2Fbody%3E%0A%09%3C%2Fopml%3E">this link</a> to import this Dropbox action into your version of Drafts. Here is the template code if you're curious:</p>
-
-<script src="http://pastebin.com/embed_js.php?i=avFQapbD"></script>
-
-<p>Here are the other settings if you want to set up a Dropbox action by yourself:</p>
-
-<ul>
-<li><p>Name: youtube2fargo</p></li>
-<li><p>Path: /Apps/Fargo/</p></li>
-<li><p>File: Timestamp</p></li>
-<li><p>Ext: opml</p></li>
-<li><p>Write: Create</p></li>
-</ul>
-
-<h3>How to Make It Work</h3>
-
-<p>In the first line of a draft, enter the video title. In the second line of the draft, enter <i>just the string after the = sign</i> when you copy the URL of the video.</p>
-
-<p>If I want to feature "Add a feed item to Fargo," I see the URL in the address bar: http://www.youtube.com/watch?v=2obEqxjKCYQ</p>
-
-<ul>
-<li>In the second line of the draft, I just enter 2obEqxjKCYQ</li>
-</ul>
-
-<p>Then I go to actions and tap on "youtube2fargo"</p>
-
-<p>A new OPML file will be added to the /Apps/Fargo folder in Dropbox. </p>
-
-<p>In the Fargo menu, go to File > Open. You will find the new file by the timestamp. Click on it, and the file will open in a new tab. You will see just the headline (the video title).</p>
-
-<p>Go to File > Get Public Link. Copy that link to your clipboard.</p>
-
-<p>Go to the outline that contains your Fargo blog. </p>
-
-<p>Click the + sign to create a new date, unless you've already blogged today. Highlight the date (e.g., "June 28") and then go to File > Import OPML. Paste the clipboard contents into that field and click OK.</p>
-
-<p>Your new headline will be in your outline. You may have to move it (up/down/left/right) to position it so that it is the child node for today's date.</p>
-
-<p>Your headline will already have all of the necessary attributes to make it an outline type; with a creation date; that is added to your RSS feed. </p>
-
-<h3>Customizing the Dropbox Action</h3>
-
-<p>I have mine set up such that the created attribute is for EDT. I've done testing and Fargo will correctly show the correct time stamp. If you live in a different time zone, you can go into the template for the Dropbox action and change it.</p>
-
-<p>If you want to post the video using a different template (thread, blogpost, whatever), just change type="outline" to type="thread" or whatever.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/28/13; 10:12:15 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="28/useDraftsForIosToAddAYoutubeVideoToYourFargoBlog.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/25/">Tuesday, June 25<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (24)" ><i class="fa fa-caret-right" id="idStreamWedge24"></i></a></span><a name="a1372196337"></a><a class="aStreamTextLink" onclick="ecStream (24)">amelia</a><span class="spPermalink"><a href="/2013/06/25/#a1372196337">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel24">
+				<p><a name="a1372196340"></a>this is a blogpost using the <a href="http://bootswatch.com/amelia/">amelia theme</a> from bootswatch<span class="spPermalink"><a href="/2013/06/25/#a1372196340">#</a></span></p>
+				<p><a name="a1372196974"></a>i copied the blogpost template from <a href="http://fargo.xangelo.ca/2013/06/24/themingFargoUseBootstrap">xangelo</a> and just put in a different stylesheet<span class="spPermalink"><a href="/2013/06/25/#a1372196974">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="28/dubstepPlayedOnChildrensToy.html">Dubstep Played On Children's Toy</a></div>
-		<iframe width="560" height="315" src="//www.youtube.com/embed/S1l5UFVPkgg" frameborder="0" allowfullscreen></iframe>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/28/13; 06:31:48 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="28/dubstepPlayedOnChildrensToy.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/22/">Saturday, June 22<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (25)" ><i class="fa fa-caret-right" id="idStreamWedge25"></i></a></span><a name="a1371927781"></a><a class="aStreamTextLink" onclick="ecStream (25)"><a href="http://boingboing.net/2013/06/22/kickstop-how-a-sleazebag-slip.html">Kickstop: how a sleazebag slipped through Kickstarter's cracks</a> <i class="fa fa-arrow-right"></i></a></a><span class="spPermalink"><a href="/2013/06/22/#a1371927781">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel25">
+				<p><a name="a1411674096.32"></a>GlennF on sexual assault in the PUA community<span class="spPermalink"><a href="/2013/06/22/#a1411674096.32">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="27/aHrefhttpmogcommalbum84662859queensOfTheStoneAgeaLink.html"><a href="http://mog.com/m/album/84662859">Queens Of The Stone Age</a> <i class="fa fa-arrow-right"></i></a></div>
-		<p><i>...Like Clockwork</i> is an enjoyable listen. </p>
-
-<p>A bit Bowie-esque.</p>
-
-<ul>
-<li><i class="fa fa-music"></i> Create a free account on MOG to hear it.</li>
-</ul>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/27/13; 02:23:40 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="27/aHrefhttpmogcommalbum84662859queensOfTheStoneAgeaLink.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (26)" ><i class="fa fa-caret-right" id="idStreamWedge26"></i></a></span><a name="a1371729600"></a><a class="aStreamTextLink" onclick="ecStream (26)"><a href="http://instaca.st/b/92r">Generational 038 - Building Sustainable Businesses with Maciej Cegłowski</a> <i class="fa fa-arrow-right"></i></a><span class="spPermalink"><a href="/2013/06/NaN/#a1371729600">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel26">
+				<p><a name="a1371735570"></a>Interesting podcast interview with found of Pinboard.in, a one-person operation. Makes me want to learn software development.<span class="spPermalink"><a href="/2013/06/NaN/#a1371735570">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="27/fargoFinallyEnablesYouToCreateAGoodlookingBlog.html">Fargo Enables You to Create a Good-Looking Blog</a></div>
-		<p><a href="http://fargo.io">Fargo</a> is a Dropbox-based outliner built by <a href="http://smallpicture.com">Small Picture</a>. I've been beta testing it since it started. The team recently enabled anybody to publish on a smallpict.com subdomain. All you literally have to do is the following:</p>
-
-<ul>
-<li><p>Create an outline and go to "Name outline" in the File menu.</p></li>
-<li><p>Hit the + sign.</p></li>
-<li><p>Start typing.</p></li>
-</ul>
-
-<p>If you hit the <i class="fa fa-eye-open"></i> icon, you'll get to the page that just published. That's right, you don't have to hit "Publish" or anything, it just happens.</p>
-
-<p>By default, the "content type" that you create is an outline template, but you don't have to worry about the HTML/CSS unless you want to. If you're savvy, you can create your own templates or copy from someone else's public outline. But to have a good-looking blog, you just need a menu (and optionally, some CSS that you can easily import).</p>
-
-<p>This blog currently uses the default "outline" template, which I'm sure the team is still tinkering with. </p>
-
-<h3>Creating the Navigation Menu</h3>
-
-<p>In my outline, I have a menu "directive" which looks like the following:</p>
-
-<ul>
-<li><p>&#35;menus</p>
-
-<ul><li><p>jeffmenu</p></li>
-<li><p>Jeffrey Kishner</p></li>
-<li><p>About Me</p></li>
-<li><p>Archive</p>
-
-<ul><li>June 2013</li></ul></li>
-<li><p>&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;</p></li>
-<li><p>&lt;i class=&quot;icon-envelope-alt&quot;>&lt;/i&gt;</p></li>
-<li><p>&lt;i class=&quot;icon-rss-sign&quot;&gt;&lt;/i&gt;</p></li></ul></li>
-</ul>
-
-<p>That's how I created the menu you see at the top of this page. You just have to create links by adding attributes using the Edit Attributes menu. Here are the attributes I use to link to my Twitter page:</p>
-
-<ul>
-<li><p>type = link</p></li>
-<li><p>url = http://twitter.com/kishner</p></li>
-</ul>
-
-<p>You can use any icon that's included in the <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Font Awesome set</a>. So if you want to link to your LinkedIn profile (<i class="fa fa-linkedin"></i>), you enter the following into your menu:</p>
-
-<ul>
-<li>&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;</li>
-</ul>
-
-<p>I then add the following headline to my outline to "call" the menu:</p>
-
-<ul>
-<li>&#35;menuName "jeffmenu"</li>
-</ul>
-
-<h3>Easily Import a Blog Theme</h3>
-
-<p>I use the following "directive" to use a particular CSS theme from <a href="http://bootswatch.com/">Bootswatch</a>.</p>
-
-<ul>
-<li>&#35;bootstrapTheme "readable"</li>
-</ul>
-
-<p>You can substitute "readable" with the names of any of the free themes on that page to change the look of your blog.</p>
-
-<h3>Create a Chronological Blog Home Page</h3>
-
-<p>By default, your home page will be an outline of everything in your named outline. An index, essentially. If you want a home page with your most recent posts in descending chronological order, include the following two headlines:</p>
-
-<ul>
-<li><p>&#35;type "bloghome"</p></li>
-<li><p>&#35;bloghomeItemCount "10"</p></li>
-</ul>
-
-<p>The number in the second item determines how many posts you want on the home page. </p>
-
-<p>Unfortunately, there's no "page 2" and so on. I'm working around that limitation by linking to the month in the navigation.</p>
-
-<h3>Need Direction?</h3>
-
-<p>If you want to see everything involved in building this blog, just view this opml file: <a href="https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml">https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml</a>. Or if you are already a Fargo user, open the "jeffrey" outline by name.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/27/13; 09:02:38 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="27/fargoFinallyEnablesYouToCreateAGoodlookingBlog.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="26/listeningToNatalieMainesNewAlbumAllIFeelIsNostalgiaForTheDixieChicks.html">Listening to Natalie Maines' new album, all I feel is nostalgia for the Dixie Chicks.</a></div>
-		<p>A part of me thinks that if Right America didn't react so strongly to her political assertions that the Chicks weren't barred from terrestrial radio, they might still be together.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/26/13; 03:54:10 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="26/listeningToNatalieMainesNewAlbumAllIFeelIsNostalgiaForTheDixieChicks.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="26/theFeedReader.html">The Feed Reader</a></div>
-		<p>Long before Google Reader announced they were shutting down, I chose <a href="http://feedafever.com">Fever</a>, a self-hosted solution. You pay once for a license, install it on your own LAMP server, and upload your OPML file or just add feeds as you need to. The developer, Shaun Inman, pushes updates as needed, although Fever is not really his priority now, as he's working on game development.</p>
-
-<p>The stand-out feature of Fever is that it algorithmically combs your feeds for "hot" stories, presumably by looking at hyperlinks that are included in many feed items over the same period of time. This allows me to quickly see what's hot among the blogs that I visit. In addition to being able to click on the story that many blogs link to, I can also peruse all the posts that write about the story.</p>
-
-<p>Fever works in the browser, and although it is optimized for the iPhone, there are also two iOS apps that use the Fever API to improve the reading experience as well as allow you to download posts for reading when you're, say, on the subway: <a href="http://ashesapp.com/">Ashes</a> and <a href="https://goneeast.com/sunstroke/">Sunstroke</a>. I'm not going to provide a review here of both apps. I'm partial to Sunstroke, but I haven't been following recent updates to the Ashes app.</p>
-
-<p>Although I am intrigued by Dave Winer's River of News, I do value the ability to download feeds to my iOS device - having a browser-only reader doesn't suffice for me. (Recently, instead of using a Fever app for the subway, I've just been combing Twitter during breakfast, saving lots of links to Instapaper, and reading the articles in the Instapaper app on the subway. Sometimes I just feel that syncing all my Fever "kindling" posts to my iPad takes too long, or the app "times out.")</p>
-
-<p>I also have FOMO ("fear of missing out") with regards to certain feeds. Like, I want to read everything from certain blogs, and if the authors of these blogs don't post frequently, I may miss their posts in a big River of News. (Of course, I could just <i>visit the blog</i>.) But at least with Fever, I can have a group of favorite blogs, and Fever doesn't "mark all as read" unless I want it to.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/26/13; 09:28:00 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="26/theFeedReader.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="25/amelia.html">amelia</a></div>
-		<p>this is a blogpost using the <a href="http://bootswatch.com/amelia/">amelia theme</a> from bootswatch</p>
-
-<p>i copied the blogpost template from <a href="http://fargo.xangelo.ca/2013/06/24/themingFargoUseBootstrap">xangelo</a> and just put in a different stylesheet</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/25/13; 04:38:57 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="25/amelia.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="22/PUA-kickstarter.html"><a href="http://boingboing.net/2013/06/22/kickstop-how-a-sleazebag-slip.html">Kickstop: how a sleazebag slipped through Kickstarter's cracks</a> <i class="fa fa-arrow-right"></i></a></a></div>
-		<p>GlennF on sexual assault in the PUA community</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/22/13; 02:03:01 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="22/PUA-kickstarter.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="june20/aHrefhttpinstacastb92rgenerational038BuildingSustainableBusinessesWithMaciejCegowskiaLink.html"><a href="http://instaca.st/b/92r">Generational 038 - Building Sustainable Businesses with Maciej Cegłowski</a> <i class="fa fa-arrow-right"></i></a></div>
-		<p>Interesting podcast interview with found of Pinboard.in, a one-person operation. Makes me want to learn software development.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/20/13; 07:00:00 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="june20/aHrefhttpinstacastb92rgenerational038BuildingSustainableBusinessesWithMaciejCegowskiaLink.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="june19/david-simon-wakeup-call.html"><a href="http://davidsimon.com/the-nigger-wake-up-call">The "N***** Wake-Up Call"</a> <i class="fa fa-arrow-right"></i></a></div>
-		<p>David Simon responds to Pinboard founder re: NSA collection of phone call metadata.</p>
-
-<p>Basically, privacy of phone metadata is not protected by 4th Amendment -- this recent scoop is not new news.</p>
-
-<p>(I censored the title because I just feel really uncomfortable with the word.)</p>
-
-<p>If Mr. Maciej wants to address not merely the programs that intrude in ways that he finds unnerving or untenable, but instead focus on process and system, then I can be enlisted.  If this is about oversight and accountability and reshaping the shadow government of the FISA court, I’m in.  If it’s about establishing clear, definitive laws for how the inevitable waves of new technology are to be employed, and having a real discussion about what law enforcement goals and security concerns justify what level of intrusion, I’m committed.  And if it’s about all of us kicking in, and admitting that, at points, citizenship requires shared risk and shared sacrifice — if it promises a compact between all of us, and rules that equate for the country as a whole –then I understand and agree with the fight.</p>
-
-<p>But drawing the line here, with this datapile and this program — given all the legal precedent and credible law enforcement logic that we have accepted elsewhere — feels hollow to the premise of any American collective or society, and to any ideal of a common future, a shared future that we might claim for ourselves. Fight where you wanna, but  if it’s here, over this?  You might as well light that now-legal joint and walk away.  Mr. Mooney had your number a long time ago.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/19/13; 09:32:04 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="june19/david-simon-wakeup-call.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="june19/howToPublishAQuizWithFargo.html">How to Publish a Quiz with Fargo</a></div>
-		<p><rules></p>
-
-<ul>
-<li><p><rule level="1" to="1"></p>
-
-<ul><li><p><outline-space>25px</outline-space></p></li>
-<li><p></rule></p></li></ul></li>
-<li><p><rule level="2" to="infinity"></p>
-
-<ul><li><p><no-icons>false</no-icons></p></li>
-<li><p></rule></p></li></ul></li>
-<li><p></rules></p></li>
-</ul>
-
-<p>Follow the directions in the <a href="http://worknotes.smallpicture.com/june2013/fargo080">worknotes</a> to publish an outline.</p>
-
-<p>To publish a quiz so that the answers are hidden (like <a href="http://jeff.smallpict.com/xmlQuiz">here</a>), copy the following, paste it into your named outline, and change anything but the rules. Make sure to give the headline the type=outline attribute.</p>
-
-<ul>
-<li><p>Quiz</p>
-
-<ul><li><p>&lt;rules&gt;</p></li>
-<li><p>&lt;rule  level=&quot;1&quot; to=&quot;infinity&quot;&gt;</p></li>
-<li><p>&lt;expanded&gt;false&lt;/expanded&gt;</p></li>
-<li><p>&lt;/rule&gt;</p></li>
-<li><p>&lt;/rules&gt;</p></li>
-<li><p>question 1</p></li>
-<li><p>answer 1</p></li>
-<li><p>question 2</p></li>
-<li><p>answer 2</p></li></ul></li>
-</ul>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/18/13; 10:02:04 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="june19/howToPublishAQuizWithFargo.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="june19/howToUseRedirectInFargo.html">How to Use Redirect in Fargo</a></div>
-		<p><rules></p>
-
-<ul>
-<li><p><rule level="1" to="1"></p>
-
-<ul><li><p><outline-space>25px</outline-space></p></li>
-<li><p></rule></p></li></ul></li>
-<li><p></rules></p></li>
-</ul>
-
-<p>I am using the outline named "jeffrey" to publish to this blog on www.jeffreykishner.com.</p>
-
-<p>I don't want visitors to land on jeffrey.smallpict.com, so I set up a redirect to this blog.</p>
-
-<p>In my <i>jeffrey</i> outline, I created a headline called "index" and added the following attributes:</p>
-
-<ul>
-<li><p>type=redirect</p></li>
-<li><p>url=http://www.jeffreykishner.com</p></li>
-</ul>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/19/13; 10:18:47 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="june19/howToUseRedirectInFargo.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="15/nothingToHide.html"><a href="http://www.wired.com/opinion/2013/06/why-i-have-nothing-to-hide-is-the-wrong-way-to-think-about-surveillance/">Why 'I Have Nothing to Hide' Is the Wrong Way to Think About Surveillance</a> <i class="fa fa-arrow-right"></i></a></a></div>
-		<p>Imagine if there were an alternate dystopian reality where law enforcement was 100% effective, such that any potential law offenders knew they would be immediately identified, apprehended, and jailed. If perfect law enforcement had been a reality in Minnesota, Colorado, and Washington since their founding in the 1850s, it seems quite unlikely that these recent changes would have ever come to pass. How could people have decided that marijuana should be legal, if nobody had ever used it? How could states decide that same sex marriage should be permitted, if nobody had ever seen or participated in a same sex relationship?</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/15/13; 11:46:33 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="15/nothingToHide.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Tue, Jul  8, 2014 at 11:17 AM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlTue, 08 Jul 2014 16:17:01 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, July  8, 2014 at 11:17 AM</span>.</div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (27)" ><i class="fa fa-caret-right" id="idStreamWedge27"></i></a></span><a name="a1371652324"></a><a class="aStreamTextLink" onclick="ecStream (27)"><a href="http://davidsimon.com/the-nigger-wake-up-call">The "N***** Wake-Up Call"</a> <i class="fa fa-arrow-right"></i></a><span class="spPermalink"><a href="/2013/06/NaN/#a1371652324">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel27">
+				<p><a name="a1371652362"></a>David Simon responds to Pinboard founder re: NSA collection of phone call metadata.<span class="spPermalink"><a href="/2013/06/NaN/#a1371652362">#</a></span></p>
+				<p><a name="a1371652645"></a>Basically, privacy of phone metadata is not protected by 4th Amendment -- this recent scoop is not new news.<span class="spPermalink"><a href="/2013/06/NaN/#a1371652645">#</a></span></p>
+				<p><a name="a1372281488"></a>(I censored the title because I just feel really uncomfortable with the word.)<span class="spPermalink"><a href="/2013/06/NaN/#a1372281488">#</a></span></p>
+				<p><a name="a1411674096.328"></a>If Mr. Maciej wants to address not merely the programs that intrude in ways that he finds unnerving or untenable, but instead focus on process and system, then I can be enlisted.  If this is about oversight and accountability and reshaping the shadow government of the FISA court, I’m in.  If it’s about establishing clear, definitive laws for how the inevitable waves of new technology are to be employed, and having a real discussion about what law enforcement goals and security concerns justify what level of intrusion, I’m committed.  And if it’s about all of us kicking in, and admitting that, at points, citizenship requires shared risk and shared sacrifice — if it promises a compact between all of us, and rules that equate for the country as a whole –then I understand and agree with the fight.<span class="spPermalink"><a href="/2013/06/NaN/#a1411674096.328">#</a></span></p>
+				<p><a name="a1411674096.328"></a>But drawing the line here, with this datapile and this program — given all the legal precedent and credible law enforcement logic that we have accepted elsewhere — feels hollow to the premise of any American collective or society, and to any ideal of a common future, a shared future that we might claim for ourselves. Fight where you wanna, but  if it’s here, over this?  You might as well light that now-legal joint and walk away.  Mr. Mooney had your number a long time ago.<span class="spPermalink"><a href="/2013/06/NaN/#a1411674096.328">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (28)" ><i class="fa fa-caret-right" id="idStreamWedge28"></i></a></span><a name="a1371567724"></a><a class="aStreamTextLink" onclick="ecStream (28)">How to Publish a Quiz with Fargo</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371567724">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel28">
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (29)" ><i class="fa fa-caret-right" id="idStreamWedge29"></i></a></span><a name="a1371655619"></a><a class="aStreamTextLink" onclick="ecStream (29)"><rules></a><span class="spPermalink"><a href="/2013/06/NaN/#a1371655619">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel29">
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (30)" ><i class="fa fa-caret-right" id="idStreamWedge30"></i></a></span><a name="a1371655623"></a><a class="aStreamTextLink" onclick="ecStream (30)"><rule level="1" to="1"></a><span class="spPermalink"><a href="/2013/06/NaN/#a1371655623">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel30">
+						<p><a name="a1371655638"></a><outline-space>25px</outline-space><span class="spPermalink"><a href="/2013/06/NaN/#a1371655638">#</a></span></p>
+						<p><a name="a1371655640"></a></rule><span class="spPermalink"><a href="/2013/06/NaN/#a1371655640">#</a></span></p>
+						</div>
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (31)" ><i class="fa fa-caret-right" id="idStreamWedge31"></i></a></span><a name="a1371657038"></a><a class="aStreamTextLink" onclick="ecStream (31)"><rule level="2" to="infinity"></a><span class="spPermalink"><a href="/2013/06/NaN/#a1371657038">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel31">
+						<p><a name="a1371657050"></a><no-icons>false</no-icons><span class="spPermalink"><a href="/2013/06/NaN/#a1371657050">#</a></span></p>
+						<p><a name="a1371657060"></a></rule><span class="spPermalink"><a href="/2013/06/NaN/#a1371657060">#</a></span></p>
+						</div>
+					<p><a name="a1371655643"></a></rules><span class="spPermalink"><a href="/2013/06/NaN/#a1371655643">#</a></span></p>
+					</div>
+				<p><a name="a1371567742"></a>Follow the directions in the <a href="http://worknotes.smallpicture.com/june2013/fargo080">worknotes</a> to publish an outline.<span class="spPermalink"><a href="/2013/06/NaN/#a1371567742">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (32)" ><i class="fa fa-caret-right" id="idStreamWedge32"></i></a></span><a name="a1371567781"></a><a class="aStreamTextLink" onclick="ecStream (32)">To publish a quiz so that the answers are hidden (like <a href="http://jeff.smallpict.com/xmlQuiz">here</a>), copy the following, paste it into your named outline, and change anything but the rules. Make sure to give the headline the type=outline attribute.</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371567781">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel32">
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (33)" ><i class="fa fa-caret-right" id="idStreamWedge33"></i></a></span><a name="a1411674096.329"></a><a class="aStreamTextLink" onclick="ecStream (33)">Quiz</a><span class="spPermalink"><a href="/2013/06/NaN/#a1411674096.329">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel33">
+						<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (34)" ><i class="fa fa-caret-right" id="idStreamWedge34"></i></a></span><a name="a1371564697"></a><a class="aStreamTextLink" onclick="ecStream (34)">&lt;rules&gt;</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371564697">#</a></span></p>
+						<div class="divLevel" id="idStreamLevel34">
+							<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (35)" ><i class="fa fa-caret-right" id="idStreamWedge35"></i></a></span><a name="a1371564702"></a><a class="aStreamTextLink" onclick="ecStream (35)">&lt;rule  level=&quot;1&quot; to=&quot;infinity&quot;&gt;</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371564702">#</a></span></p>
+							<div class="divLevel" id="idStreamLevel35">
+								<p><a name="a1371564719"></a>&lt;expanded&gt;false&lt;/expanded&gt;<span class="spPermalink"><a href="/2013/06/NaN/#a1371564719">#</a></span></p>
+								<p><a name="a1371564727"></a>&lt;/rule&gt;<span class="spPermalink"><a href="/2013/06/NaN/#a1371564727">#</a></span></p>
+								</div>
+							<p><a name="a1371564728"></a>&lt;/rules&gt;<span class="spPermalink"><a href="/2013/06/NaN/#a1371564728">#</a></span></p>
+							</div>
+						<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (36)" ><i class="fa fa-caret-right" id="idStreamWedge36"></i></a></span><a name="a1371564732"></a><a class="aStreamTextLink" onclick="ecStream (36)">question 1</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371564732">#</a></span></p>
+						<div class="divLevel" id="idStreamLevel36">
+							<p><a name="a1371564772"></a>answer 1<span class="spPermalink"><a href="/2013/06/NaN/#a1371564772">#</a></span></p>
+							</div>
+						<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (37)" ><i class="fa fa-caret-right" id="idStreamWedge37"></i></a></span><a name="a1371564773"></a><a class="aStreamTextLink" onclick="ecStream (37)">question 2</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371564773">#</a></span></p>
+						<div class="divLevel" id="idStreamLevel37">
+							<p><a name="a1371564801"></a>answer 2<span class="spPermalink"><a href="/2013/06/NaN/#a1371564801">#</a></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (38)" ><i class="fa fa-caret-right" id="idStreamWedge38"></i></a></span><a name="a1371655127"></a><a class="aStreamTextLink" onclick="ecStream (38)">How to Use Redirect in Fargo</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371655127">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel38">
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (39)" ><i class="fa fa-caret-right" id="idStreamWedge39"></i></a></span><a name="a1371655619"></a><a class="aStreamTextLink" onclick="ecStream (39)"><rules></a><span class="spPermalink"><a href="/2013/06/NaN/#a1371655619">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel39">
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (40)" ><i class="fa fa-caret-right" id="idStreamWedge40"></i></a></span><a name="a1371655623"></a><a class="aStreamTextLink" onclick="ecStream (40)"><rule level="1" to="1"></a><span class="spPermalink"><a href="/2013/06/NaN/#a1371655623">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel40">
+						<p><a name="a1371655638"></a><outline-space>25px</outline-space><span class="spPermalink"><a href="/2013/06/NaN/#a1371655638">#</a></span></p>
+						<p><a name="a1371655640"></a></rule><span class="spPermalink"><a href="/2013/06/NaN/#a1371655640">#</a></span></p>
+						</div>
+					<p><a name="a1371655643"></a></rules><span class="spPermalink"><a href="/2013/06/NaN/#a1371655643">#</a></span></p>
+					</div>
+				<p><a name="a1371655135"></a>I am using the outline named "jeffrey" to publish to this blog on www.jeffreykishner.com.<span class="spPermalink"><a href="/2013/06/NaN/#a1371655135">#</a></span></p>
+				<p><a name="a1371655163"></a>I don't want visitors to land on jeffrey.smallpict.com, so I set up a redirect to this blog.<span class="spPermalink"><a href="/2013/06/NaN/#a1371655163">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (41)" ><i class="fa fa-caret-right" id="idStreamWedge41"></i></a></span><a name="a1371655203"></a><a class="aStreamTextLink" onclick="ecStream (41)">In my <i>jeffrey</i> outline, I created a headline called "index" and added the following attributes:</a><span class="spPermalink"><a href="/2013/06/NaN/#a1371655203">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel41">
+					<p><a name="a1371655226"></a>type=redirect<span class="spPermalink"><a href="/2013/06/NaN/#a1371655226">#</a></span></p>
+					<p><a name="a1371655233"></a>url=http://www.jeffreykishner.com<span class="spPermalink"><a href="/2013/06/NaN/#a1371655233">#</a></span></p>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/06/15/">Saturday, June 15<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (42)" ><i class="fa fa-caret-right" id="idStreamWedge42"></i></a></span><a name="a1371314793"></a><a class="aStreamTextLink" onclick="ecStream (42)"><a href="http://www.wired.com/opinion/2013/06/why-i-have-nothing-to-hide-is-the-wrong-way-to-think-about-surveillance/">Why 'I Have Nothing to Hide' Is the Wrong Way to Think About Surveillance</a> <i class="fa fa-arrow-right"></i></a></a><span class="spPermalink"><a href="/2013/06/15/#a1371314793">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel42">
+				<p><a name="a1411674096.349"></a>Imagine if there were an alternate dystopian reality where law enforcement was 100% effective, such that any potential law offenders knew they would be immediately identified, apprehended, and jailed. If perfect law enforcement had been a reality in Minnesota, Colorado, and Washington since their founding in the 1850s, it seems quite unlikely that these recent changes would have ever come to pass. How could people have decided that marijuana should be legal, if nobody had ever used it? How could states decide that same sex marriage should be permitted, if nobody had ever seen or participated in a same sex relationship?<span class="spPermalink"><a href="/2013/06/15/#a1411674096.349">#</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+				</div>
+			<div class="divFargoStreamFooter">
+				<div>&copy; 2014 Jeffrey Kishner.</div>
+				<div>Last update: Thu, Sep 25, 2014 at  2:41 PM.</div>
+				<div><i></i></div>
+				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
+				</div>
+			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

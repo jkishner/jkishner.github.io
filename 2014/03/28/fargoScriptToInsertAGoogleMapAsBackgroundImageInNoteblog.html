@@ -10,18 +10,18 @@
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Tue, 08 Jul 2014 16:17:01 GMT",
-    "opmlExpansionState": "1,2,3,23",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:40:26 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,18,30,31,32,52,53,54,66",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,6 +36,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -43,7 +44,7 @@
     "domain": "",
     "bootstrapTheme": "spacelab",
     "type": "outline",
-    "slogan": "Reallll soooon now...",
+    "slogan": "It's even worse than it appears.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,6 +67,8 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "Fargo Script to Insert a Google Map as Background Image in Noteblog",
     "created": "Fri, 28 Mar 2014 16:20:56 GMT",
     "description": "",
@@ -89,7 +92,7 @@
     "isFeedItem": "true",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Jul 08 2014 12:17:07 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:40:47 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html"
 }; //12/12/13 by DW
@@ -163,28 +166,69 @@
 				display: none;
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<style>
-	.divFargoIndex .aDocTitleOnIndexPage {
-		font-size: 33.75px !important;
-		line-height: 42px !important;
-		color: #0088cc !important;
-		}
-	.divTitleDescription { display: none; }
-	.icon-star:before { content: "\f0c1"; }
-	.greenText {
-		color: green !important;
-		font-weight: bold !important;
-		}
-	ul {
-		list-style-type: none;
-		}
-	.divByline {
-		visibility: hidden;
-		height: 0px;
-		}
-	</style>
-<script>
+		<style>
+			.divOutlineNoMarkdown {
+				font-size: 20px;
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				line-height: 150%;
+				}
+			.divOutlineNoMarkdown li {
+				}
+			.divOutlineNoMarkdown .ulOutlineList {
+				padding: 0;
+				margin: 0;
+				}
+			.divOutlineNoMarkdown .liOutline {
+				list-style-type: none;
+				margin-bottom: .5em;
+				}
+			.divOutlineNoMarkdown .divOutlineHead {
+				font-weight: bold;
+				margin-top: 13px;
+				margin-bottom: 13px;
+				}
+			.divOutlineNoMarkdown .liHasSubs ul {
+				}
+			.divOutlineNoMarkdown .liNoSubs {
+				}
+			.divOutlineNoMarkdown .spOutlineIcon {
+				margin-right: -11px;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink {
+				color: black;
+				}
+			.divOutlineNoMarkdown .aOutlineWedgeLink i {
+				color: black;
+				cursor: pointer;
+				position: relative;
+				width: .5em;
+				left: -1em;
+				}
+			.divOutlineNoMarkdown .aOutlineTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divOutlineNoMarkdown .spPermalink {
+				}
+			.divOutlineNoMarkdown .spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 10px;
+				font-weight: normal;
+				vertical-align: top;
+				margin-left: 3px;
+				}
+			.divOutlineNoMarkdown code {
+				display: inline;
+				border: none;
+				color: black;
+				font-size: .85em;
+				}
+			</style>
+		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -194,6 +238,19 @@
 	</script>
 		
 		<script>
+			function ecOutline (idnum) { //7/12/14 by DW
+				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					c.style.color = "black";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					c.style.color = "silver";
+					$(idUL).slideDown (75);
+					}
+				}
 			function startupOutlineTemplate () {
 				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
 					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
@@ -219,8 +276,12 @@
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
+						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
+						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
 						<li><a href="/2014/05/" target="_blank">May 2014</a></li>
 						<li><a href="/2014/04/" target="_blank">Apr 2014</a></li>
@@ -236,31 +297,31 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/14/homelessnessAndTheNycSubway.html" target="_blank">Homelessness and the NYC Subway</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/09/morningGloryNyc.html" target="_blank">Morning Gloryville NYC</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/25/whiteGuysAndAlterBridge.html" target="_blank">White Guys and Alter Bridge </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -420,8 +481,8 @@
 <p><a href="https://dl.dropboxusercontent.com/s/yjcx19ng8pp60b6/3fab39ea8bc0b2c60b2835c1c1c9083f.opml">Here</a> is the OPML for the script.</p></div>
 						<div class="divFooterText">
 							<hr>
-							<p style="float: right;">Last built: Tue, Jul  8, 2014 at 11:17 AM</p>
-							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlFri, 28 Mar 2014 16:20:56 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+							<p style="float: right;">Last built: Thu, Sep 25, 2014 at  2:40 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Fri, 28 Mar 2014 16:20:56 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Friday, March 28, 2014 at 11:20 AM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
 							</div>
 						</div>

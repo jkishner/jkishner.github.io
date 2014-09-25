@@ -2,26 +2,25 @@
 <html>
 	<head>
 		<title>July 7</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Fri, 11 Jul 2014 14:28:07 GMT",
-    "opmlExpansionState": "1,2,3,4,7,8,10,18,19,25,26,74,75,197",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:40:26 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,18,30,31,32,52,53,54,66",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,14 +35,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "Ask not what the Internet can do for you...",
+    "type": "stream",
+    "slogan": "Don't slam the door on the way out.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,6 +66,8 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "July 7",
     "created": "Mon, 07 Jul 2014 16:30:32 GMT",
     "description": "",
@@ -88,75 +90,612 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Fri Jul 11 2014 10:28:07 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:40:36 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/07/07.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
+		
+		
+		<meta property="og:url" content="http://blog.jeffreykishner.com/2014/07/07.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="July 7" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="Jeffrey Kishner" />
+		
+		<meta name="twitter:card" value="summary">
+		<meta name="twitter:title" content="July 7" />
+		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2014/07/07.html" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content=""/>
+		<meta name="twitter:site" value="kishner">
+		
 		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageContainer {
+				}
+			.navbar {
+				font-size: 17px;
+				line-height: 140%;
+				}
+			.navbar-inner {
+				min-height: 60px;
+				}
+			.navbar .nav > li > a {
+				padding-top: 17px;
+				}
+			.navbar .brand {
+				padding-top: 13px;
+				padding-left: 25px;
+				}
+			.navbar-container {
+				width: 1000px !important;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divStreamDayText {
+				font-family: 'Vollkorn', serif;
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divMapCanvas {
+				height: 100%; 
+				width: 100%; 
+				position: absolute; 
+				right: 0; 
+				z-index: -10;
+				}
+			.divTextInFrontOfImage {
+				background-color: whitesmoke; 
+				opacity: .98;
+				padding: 1.5em;
+				border:2px solid gainsboro;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				font-family: Ubuntu;
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: 'Ubuntu', sans-serif;
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divFargoStreamComments {
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				margin-top: 10px;
+				}
+			.divDisqusComments { 
+				margin-top: 5px !important;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.divPageContainer {
+					}
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divTextContainer {
+					margin-top: -40px;
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
+					}
+				.divPictureViewer .modal {
+					left: auto;
+					width: auto;
+					margin-left: auto;
+					margin-right: auto;
+					}
+				.divLevel {
+					margin-left: 0;
 					}
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<style>
-	.divFargoIndex .aDocTitleOnIndexPage {
-		font-size: 33.75px !important;
-		line-height: 42px !important;
-		color: #0088cc !important;
-		}
-	.divTitleDescription { display: none; }
-	.icon-star:before { content: "\f0c1"; }
-	.greenText {
-		color: green !important;
-		font-weight: bold !important;
-		}
-	ul {
-		list-style-type: none;
-		}
-	.divByline {
-		visibility: hidden;
-		height: 0px;
-		}
-	</style>
-<script>
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				.divPageContainer {
+					}
+				.navbar .nav > li > a {
+					padding-right: 7px;
+					}
+				}
+			</style>
+		
+		<script>
+			var flSetupDisqusThread = false;
+			
+			var colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function closeDisqusThread () {
+				$("#idDisqusDialog").modal ("hide");
+				}
+			function openDisqusThread () {
+				function getCommentHtml () {
+					var id = "", hidingCode  = "", visibleStyle = "";
+					if (pagetable.opmlUrl != undefined) {
+						id += pagetable.opmlUrl;
+						}
+					if (pagetable.created != undefined) {
+						id += pagetable.created;
+						}
+					if (id.length > 0) {
+						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
+						}
+					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
+					return (code.replace (/&lt;/g,'<'));
+					}
+				if (!flSetupDisqusThread) {
+					var s = 
+						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
+					$("body").prepend (s)
+					flSetupDisqusThread = true;
+					}
+				$("#idDisqusCode").html (getCommentHtml ());
+				$("#idDisqusDialog").modal ("show");
+				}
+			
+			
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
+				var mapCanvas = document.getElementById (idmap);
+				if (mapCanvas != null) {
+					var mapOptions = {
+						center: new google.maps.LatLng (maplat, maplong),
+						zoom: Number (mapzoom),
+						panControl: false,
+						zoomControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl :false,
+						overviewMapControl: false,
+						rotateControl: false,
+						mapTypeId: maptype
+						};
+					var map = new google.maps.Map (mapCanvas, mapOptions);
+					}
+				}
+			
+			function turnOffImages () { //5/18/14 by DW
+				$(".divStreamDayImage").css ("background-image", "");
+				localStorage.flTurnImagesOff = "true";
+				}
+			function turnOffImagesCommand () {
+				confirmDialog ("Turn off images?", function () {
+					localStorage.flTurnImagesOff = "true";
+					location.reload (true);
+					});
+				}
+			function turnOnImagesCommand () {
+				confirmDialog ("Turn images on?", function () {
+					localStorage.flTurnImagesOff = "false"; 
+					location.reload (true);
+					});
+				}
+			
+			function startup () {
+				var streamVersion = 1; //5/20/14 by DW
+				var flPlainOutline; //5/20/14 by DW
+				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
+				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
+				
+				//set streamVersion -- 5/20/14 by DW
+					if (pagetable.streamVersion != undefined) {
+						var x = parseInt (pagetable.streamVersion);
+						if (!isNaN (x)) {
+							streamVersion = x;
+							}
+						}
+				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
+					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
+						localStorage.removeItem ("flImagesOff")
+						}
+					if (localStorage.flTurnImagesOff == undefined) {
+						if (streamVersion > 1) {
+							localStorage.flTurnImagesOff = "false";
+							}
+						}
+					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
+				//every day gets a background color, image, map or -- ??
+					if (!flPlainOutline) {
+						var ixcolorarray = 0, ctmaps = 0;
+						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
+							var flSetColor = true;
+							
+							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
+								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
+								flSetColor = false;
+								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
+								
+								//set up map parameters
+									maplat = $(this).data ("maplatitude");
+									if (maplat == undefined) {
+										maplat = pagetable.mapLatitude;
+										}
+									maplong = $(this).data ("maplongitude");
+									if (maplong == undefined) {
+										maplong = pagetable.mapLongitude;
+										}
+									maptype = $(this).data ("maptype");
+									if (maptype == undefined) {
+										maptype = pagetable.mapType;
+										}
+									mapzoom = $(this).data ("mapzoom");
+									if (mapzoom == undefined) {
+										mapzoom = pagetable.mapZoom;
+										}
+								
+								initMap (idmap, maplat, maplong, maptype, mapzoom);
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayImage") {
+										flSetColor = false;
+										}
+									});
+								}
+							
+							if (flSetColor) {
+								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayText") {
+										var flset = false;
+										$(this).children ("div").each (function () {
+											if (!flset) {
+												this.className = "divTextInFrontOfImage"; //set classname of first child element
+												}
+											flset = true;
+											});
+										}
+									});
+								}
+							});
+						}
+				//highlight and expand the #hashed element, if present
+					var hash = window.location.hash;
+					if (hash.length > 0) {
+						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
+							$(this).children ("a").each (function () { //look at first-level children that are anchors
+								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
+									$(this).parents ("div").css ("display", "block"); //make all parents visible
+									$(this).parents ("p").css ("background-color", hightlightcolor);
+									
+									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
+									
+									
+									var flexpand = true;
+									$(this).parents ("div").each (function () {
+										if (flexpand) {
+											$(this).children ("a").each (function () {
+												$(this).css ("background-color", hightlightcolor);
+												
+												$(this).prev ().find ("i").each (function () {
+													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
+														$(this).attr ("class", "fa fa-caret-down");
+														}
+													});
+												
+												});
+											$(this).next ("div").css ("display", "block"); //the divLevel item
+											flexpand = false;
+											}
+										});
+									}
+								});
+							});
+						}
+				//handle fixed menu
+					if (getBoolean (pagetable.flFixedMenu)) {
+						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
+						if (flhavenav) {
+							document.body.style.paddingTop = "60px";
+							if (hash.length > 0) {
+								$(document).one ("scroll", function () {
+									var $el = $(this), top = $el.scrollTop ();
+									$el.scrollTop (top - 125);
+									});
+								}
+							}
+						}
+				//set the site title -- 3/23/14 by DW
+					if (pagetable.menuTitle != undefined) {
+						var pagename;
+						
+						if (highlightedtitle != undefined) { //5/11/14 by DW
+							pagename = highlightedtitle;
+							}
+						else {
+							if (pagetable.path.length == 0) {
+								pagename = "Home";
+								}
+							else {
+								pagename = pagetable.text;
+								}
+							}
+						
+						document.title = pagetable.menuTitle + ": [" + pagename + "]";
+						}
+				//set the color of each text frame -- 5/11/14 by DW
+					$(".divTextInFrontOfImage").each (function () {
+						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
+						});
+				
+				//turn on images for v2 or greater -- 5/20/14 by DW
+					if (streamVersion > 1) { 
+						if (flPlainOutline) {
+							$(".aStreamDayLink").each (function () {
+								$(this).css ("font-size", "28px");
+								});
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								$(this).css ("margin-top", "70px");
+								});
+							$(".divStreamDayText").each (function () {
+								$(this).css ("padding", "0");
+								});
+							$(".divTextContainer").each (function () {
+								$(this).css ("margin-bottom", "125px");
+								});
+							}
+						else {
+							$(".divStreamDay").each (function () {
+								var url = $(this).data ("backgroundimage");
+								if (url != undefined) {
+									$(this).css ("background-image", "url('" + url + "')");
+									}
+								
+								$(this).children (".divStreamDayText").children ().each (function () {
+									this.className = "divTextInFrontOfImage"; 
+									});
+								
+								});
+							}
+						}
+				
+				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
+					if (streamVersion == 1) { 
+						if (flPlainOutline) {
+							turnOffImages ();
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								});
+							}
+						}
+				}
+			</script>
+		
+		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -167,20 +706,20 @@
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-		
+		<div class="divPageContainer">
+			
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
+						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
+						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
 						<li><a href="/2014/05/" target="_blank">May 2014</a></li>
 						<li><a href="/2014/04/" target="_blank">Apr 2014</a></li>
@@ -196,31 +735,31 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/10/theMeaningOfFavoritingATweet.html" target="_blank">The Meaning of Favoriting a Tweet</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/10/2ndUpdateToMyLcpTodotxtActionNowWithPriorities.html" target="_blank">2nd Update to My LCP Todo.txt Action: Now With Priorities</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html" target="_blank">Update to Launch Center Pro Action to Todo.txt: Multiple Contexts and Projects</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html" target="_blank">A Launch Center Pro Action for Todo.txt</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -230,286 +769,150 @@
 			</div>
 		</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/07">July 2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">July 7</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></div>
-		<p>If you're browsing the Tumblr or Instagram apps on your iOS device and want to get the share URL, they are formatted as follows:</p>
-
-<pre><code>http://NAME.tumblr.com/post/POST_ID/SLUG
-
-http://instagram.com/p/POST_ID
-</code></pre>
-
-<p>Unfortunately, these are web links. What if you want a link that will bring you right to that post ID in the <em>app</em>? I have written a couple of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> actions to automate these processes.</p>
-
-<h3>Tumblr</h3>
-
-<p>The URL scheme for a Tumblr post (as per <a href="https://github.com/tumblr/TMTumblrSDK#url-schemes">GitHub</a>) is as follows:</p>
-
-<pre><code>tumblr://x-callback-url/blog?blogName=NAME&amp;postID=POST_ID
-</code></pre>
-
-<p>All the information you need is in the web link, but you need to rearrange it all to make it work.</p>
-
-<p><a href="https://launchcenterpro.com/759n6q">Import the Tumblr action</a> or enter the following into LCP:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=%2F&amp;lc-icon=tumblr&amp;x-success={{texttool://x-callback-url/transform?text=[[output]]&amp;method=split&amp;delimiter=.&amp;x-success={{drafts:///create?text=[[output]]&amp;action=tumblr-id}}}}
-</code></pre>
-
-<p>To make this action work, you will also need <a href="http://blackfoggames.com/TextTool/">TextTool</a> and <a href="http://agiletortoise.com/drafts/">Drafts</a>. And you will need to <a href="drafts://x-callback-url/import_action?type=URL&amp;name=tumblr-id&amp;url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Btumblr%3A%2F%2Fx-callback-url%2Fblog%3FblogName%3D%5B%5Bline%7C3%5D%5D%26postID%3D%5B%5Bline%7C7%5D%5D%7D%7D">import this URL action into Drafts</a>.</p>
-
-<p>Let's work with a random Tumblr post to see how this works:</p>
-
-<pre><code>http://yahoo.tumblr.com/post/90564142294/furthering-our-focus
-</code></pre>
-
-<p>Copy this URL to your iOS clipboard, and then tap on the Tumblr action in LCP. LCP sends this string to TextTool, which splits the string at the <code>/</code>:</p>
-
-<pre><code>http:
-
-
-
-yahoo.tumblr.com
-
-post
-
-90564142294
-
-furthering-our-focus
-</code></pre>
-
-<p>It then takes that output and sends it back to TextTool to split at the <code>.</code>:</p>
-
-<pre><code>http:
-
-
-
-yahoo
-
-tumblr
-
-com
-
-post
-
-90564142294
-
-furthering-our-focus
-</code></pre>
-
-<p>It then sends that output to Drafts and triggers the <em>tumblr-id</em> URL action:</p>
-
-<pre><code>drafts:///create?text={{tumblr://x-callback-url/blog?blogName=[[line|3]]&amp;postID=[[line|7]]}}
-</code></pre>
-
-<p>This action inputs lines 3 and 7 of the draft into the relevant points of the url scheme, and creates a new draft with the final result:</p>
-
-<pre><code>tumblr://x-callback-url/blog?blogName=yahoo&amp;postID=90564142294
-</code></pre>
-
-<p>And just to make the action icon look nice, I added <code>lc-icon=tumblr</code>.</p>
-
-<h3>Instagram</h3>
-
-<p>The Instagram action is more complicated. It requires <a href="http://blackfoggames.com/TextTool/">TextTool</a>, <a href="http://agiletortoise.com/drafts/">Drafts</a>, and <a href="http://www.textasticapp.com/">Textastic</a>. <a href="https://launchcenterpro.com/w4z9z9">Import the LCP action</a> or enter this into a new action:</p>
-
-<pre><code>textastic://api.instagram.com/oembed?url=[clipboard]&amp;lc-icon=instagram&amp;lc-callback=[list|url=texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=%22&amp;x-success={{drafts:///create?text=[[output]]&amp;action=insta-api}}|image=texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=%22&amp;x-success={{drafts:///create?text=[[output]]&amp;action=insta-api-url}}]
-</code></pre>
-
-<p>Instagram's url scheme for a post is as follows (as per its <a href="http://instagram.com/developer/iphone-hooks/">iPhone Hooks page</a>):</p>
-
-<pre><code>instagram://media?id=MEDIA_ID
-</code></pre>
-
-<p>The media ID is not part of the web URL. But we can get that info from Instagrams's <a href="http://instagram.com/developer/embedding/">Embed API</a>. Let's use an example post (<code>http://instagram.com/p/qJu0a-OHMC</code>) and add it after the <code>url=</code>: </p>
-
-<pre><code>http://api.instagram.com/oembed?url=http://instagram.com/p/qJu0a-OHMC
-</code></pre>
-
-<p>This API returns JSON:</p>
-
-<pre><code> {"provider_url":"http:\/\/instagram.com\/","media_id":"759343924702114562_1483611","title":"Another beautiful day in the city! \ud83d\ude0d","url":"http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg","author_name":"newyorkcity","height":640,"width":640,"version":"1.0","author_url":"http:\/\/instagram.com\/newyorkcity","author_id":1483611,"type":"photo","provider_name":"Instagram"} 
-</code></pre>
-
-<p>We can see that the media_id is 759343924702114562_1483611. <code>instagram://media?id=759343924702114562_1483611</code> would bring us right to that post in the app, but we need the LCP action to automate the process.</p>
-
-<p>We first need an easy way to grab the HTML of the API results. Textastic has an <a href="http://www.textasticapp.com/v4/manual/x-callback-url.html">url scheme</a> that lets you download a file and open the HTML in the editor by replacing <code>http://</code> with <code>textastic://</code>. The first part of the LCP action does just that. However, even though Textastic supports x-callback-url, it doesn't for this particular action. So we need to tap on the share <i class="fa fa-external-link"></i> button at top right of the screen after the HTML has downloaded, and choose "Copy All." Then we take advantage of a new feature introduced in LCP: lc-callback. For apps that do not support x-callback-url, this is the next best thing. We define the callback action, but instead of it triggering automatically after the first action, we double-tap on the home button (to get the app launcher) and choose LCP. Once we tap on LCP, the next action gets triggered. </p>
-
-<p>Because the embed API also provides the raw image URL for the Instagram post, the lc-callback starts with a list. We can get the iOS url scheme ("url") or the raw image URL ("image"). Let's see what happens when you choose "url":</p>
-
-<p>The entire HTML is sent to TextTool, which splits the string at <code>"</code>:</p>
-
-<pre><code>{
-
-provider_url
-
-:
-
-http:\/\/instagram.com\/
-
-,
-
-media_id
-
-:
-
-759343924702114562_1483611
-
-,
-
-title
-
-:
-
-Another beautiful day in the city! \ud83d\ude0d
-
-,
-
-url
-
-:
-
-http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg
-
-,
-
-author_name
-
-:
-
-newyorkcity
-
-,
-
-height
-
-:640,
-
-width
-
-:640,
-
-version
-
-:
-
-1.0
-
-,
-
-author_url
-
-:
-
-http:\/\/instagram.com\/newyorkcity
-
-,
-
-author_id
-
-:1483611,
-
-type
-
-:
-
-photo
-
-,
-
-provider_name
-
-:
-
-Instagram
-
-}
-</code></pre>
-
-<p>This entire string is then sent to Drafts, and the <em>insta-api</em> action is triggered. <a href="drafts://x-callback-url/import_action?type=URL&amp;name=insta-api&amp;url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Binstagram%3A%2F%2Fmedia%3Fid%3D%5B%5Bline%7C8%5D%5D%7D%7D">Import it into Drafts</a> or enter the following as an URL action:</p>
-
-<pre><code>drafts:///create?text={{instagram://media?id=[[line|8]]}}
-</code></pre>
-
-<p>It simply takes line 8 -- which contains the media_ID -- and inserts into into the URL scheme.</p>
-
-<p>Now, if we would rather get the raw image URL, we choose "image" after the lc-callback. It also performs a <code>"</code> split and sends that output to Drafts, but it instead triggers the <em>insta-api-url</em> action. <a href="drafts://x-callback-url/import_action?type=URL&amp;name=insta-api-url&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C16%5D%5D%26method%3Dunescape">Import it into Drafts</a> or enter the following URL action:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|16]]&amp;method=unescape
-</code></pre>
-
-<p>Line 16 -- the raw image URL -- is sent to TextTool. Why? All the forward slashes in the URL are "escaped" </p>
-
-<pre><code>   http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg
-</code></pre>
-
-<p>so we have to unescape them:</p>
-
-<pre><code>   http://photos-d.ak.instagram.com/hphotos-ak-xfp1/10537269_595401073912091_331298792_n.jpg
-</code></pre>
-
-<p>This action stops at TextTool. It has sharing features, so you can do what you like with URL: e.g., download the image.</p>
-
-<p>To make the action icon look nice, I added <code>lc-icon=instagram</code>.</p>
-
-<p>Granted, this LCP action is not fluid. I think it would possible to perform the conversion without the "Copy All" and lc-callback using the JSON parser in Pythonista, but I'm not proficient enough to accomplish that as of this writing. If you write an action that accomplishes the conversion with fewer steps, I would love to hear from you in the comments section or on Twitter.</p>
-
-<p><strong>Thanks</strong> to @epramono and @youens on Twitter for helping me to understand LCP 2.3.x at a deeper level.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/07/14; 01:38:49 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html"><i class="fa fa-star"></i></a></div>
+			<div class="divTextContainer" id="idTextContainer">
+				<div class="divStreamDay" >
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/07/">Monday, July  7<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1404758329"></a><a class="aStreamTextLink" onclick="ecStream (0)">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a><span class="spPermalink"><a href="/2014/07/07/#a1404758329">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel0">
+				<p><a name="a1404758351"></a>If you're browsing the Tumblr or Instagram apps on your iOS device and want to get the share URL, they are formatted as follows:<span class="spPermalink"><a href="/2014/07/07/#a1404758351">#</a></span></p>
+				<p><a name="a1404758387"></a>    http://NAME.tumblr.com/post/POST_ID/SLUG<span class="spPermalink"><a href="/2014/07/07/#a1404758387">#</a></span></p>
+				<p><a name="a1404758475"></a>    http://instagram.com/p/POST_ID<span class="spPermalink"><a href="/2014/07/07/#a1404758475">#</a></span></p>
+				<p><a name="a1404758855"></a>Unfortunately, these are web links. What if you want a link that will bring you right to that post ID in the _app_? I have written a couple of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> actions to automate these processes.<span class="spPermalink"><a href="/2014/07/07/#a1404758855">#</a></span></p>
+				<p><a name="a1404758906"></a>###Tumblr<span class="spPermalink"><a href="/2014/07/07/#a1404758906">#</a></span></p>
+				<p><a name="a1404758928"></a>The URL scheme for a Tumblr post (as per [GitHub](https://github.com/tumblr/TMTumblrSDK#url-schemes)) is as follows:<span class="spPermalink"><a href="/2014/07/07/#a1404758928">#</a></span></p>
+				<p><a name="a1404758441"></a>    tumblr://x-callback-url/blog?blogName=NAME&postID=POST_ID<span class="spPermalink"><a href="/2014/07/07/#a1404758441">#</a></span></p>
+				<p><a name="a1404758960"></a>All the information you need is in the web link, but you need to rearrange it all to make it work.<span class="spPermalink"><a href="/2014/07/07/#a1404758960">#</a></span></p>
+				<p><a name="a1404758960"></a>[Import the Tumblr action](https://launchcenterpro.com/759n6q) or enter the following into LCP:<span class="spPermalink"><a href="/2014/07/07/#a1404758960">#</a></span></p>
+				<p><a name="a1404759399"></a>    texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=%2F&lc-icon=tumblr&x-success={{texttool://x-callback-url/transform?text=[[output]]&method=split&delimiter=.&x-success={{drafts:///create?text=[[output]]&action=tumblr-id}}}}<span class="spPermalink"><a href="/2014/07/07/#a1404759399">#</a></span></p>
+				<p><a name="a1404759404"></a>To make this action work, you will also need <a href="http://blackfoggames.com/TextTool/">TextTool</a> and <a href="http://agiletortoise.com/drafts/">Drafts</a>. And you will need to [import this URL action into Drafts](drafts://x-callback-url/import_action?type=URL&name=tumblr-id&url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Btumblr%3A%2F%2Fx-callback-url%2Fblog%3FblogName%3D%5B%5Bline%7C3%5D%5D%26postID%3D%5B%5Bline%7C7%5D%5D%7D%7D).<span class="spPermalink"><a href="/2014/07/07/#a1404759404">#</a></span></p>
+				<p><a name="a1404759464"></a>Let's work with a random Tumblr post to see how this works:<span class="spPermalink"><a href="/2014/07/07/#a1404759464">#</a></span></p>
+				<p><a name="a1404759546"></a>    http://yahoo.tumblr.com/post/90564142294/furthering-our-focus<span class="spPermalink"><a href="/2014/07/07/#a1404759546">#</a></span></p>
+				<p><a name="a1404759549"></a>Copy this URL to your iOS clipboard, and then tap on the Tumblr action in LCP. LCP sends this string to TextTool, which splits the string at the `/`:<span class="spPermalink"><a href="/2014/07/07/#a1404759549">#</a></span></p>
+				<p><a name="a1404759655"></a>    http:<span class="spPermalink"><a href="/2014/07/07/#a1404759655">#</a></span></p>
+				<p><a name="a1404760089"></a><span class="spPermalink"><a href="/2014/07/07/#a1404760089">#</a></span></p>
+				<p><a name="a1404759825"></a>    yahoo.tumblr.com<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    post<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    90564142294<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    furthering-our-focus<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759596"></a>It then takes that output and sends it back to TextTool to split at the `.`:<span class="spPermalink"><a href="/2014/07/07/#a1404759596">#</a></span></p>
+				<p><a name="a1404759655"></a>    http:<span class="spPermalink"><a href="/2014/07/07/#a1404759655">#</a></span></p>
+				<p><a name="a1404760091"></a><span class="spPermalink"><a href="/2014/07/07/#a1404760091">#</a></span></p>
+				<p><a name="a1404759825"></a>    yahoo<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759971"></a>    tumblr<span class="spPermalink"><a href="/2014/07/07/#a1404759971">#</a></span></p>
+				<p><a name="a1404759971"></a>    com<span class="spPermalink"><a href="/2014/07/07/#a1404759971">#</a></span></p>
+				<p><a name="a1404759825"></a>    post<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    90564142294<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    furthering-our-focus<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759978"></a>It then sends that output to Drafts and triggers the _tumblr-id_ URL action:<span class="spPermalink"><a href="/2014/07/07/#a1404759978">#</a></span></p>
+				<p><a name="a1404760053"></a>    drafts:///create?text={{tumblr://x-callback-url/blog?blogName=[[line|3]]&postID=[[line|7]]}}<span class="spPermalink"><a href="/2014/07/07/#a1404760053">#</a></span></p>
+				<p><a name="a1404760276"></a>This action inputs lines 3 and 7 of the draft into the relevant points of the url scheme, and creates a new draft with the final result:<span class="spPermalink"><a href="/2014/07/07/#a1404760276">#</a></span></p>
+				<p><a name="a1404760376"></a>    tumblr://x-callback-url/blog?blogName=yahoo&postID=90564142294<span class="spPermalink"><a href="/2014/07/07/#a1404760376">#</a></span></p>
+				<p><a name="a1404760378"></a>And just to make the action icon look nice, I added `lc-icon=tumblr`.<span class="spPermalink"><a href="/2014/07/07/#a1404760378">#</a></span></p>
+				<p><a name="a1404760409"></a>###Instagram<span class="spPermalink"><a href="/2014/07/07/#a1404760409">#</a></span></p>
+				<p><a name="a1404760415"></a>The Instagram action is more complicated. It requires <a href="http://blackfoggames.com/TextTool/">TextTool</a>, <a href="http://agiletortoise.com/drafts/">Drafts</a>, and <a href="http://www.textasticapp.com/">Textastic</a>. [Import the LCP action](https://launchcenterpro.com/w4z9z9) or enter this into a new action:<span class="spPermalink"><a href="/2014/07/07/#a1404760415">#</a></span></p>
+				<p><a name="a1404760678"></a>    textastic://api.instagram.com/oembed?url=[clipboard]&lc-icon=instagram&lc-callback=[list|url=texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=%22&x-success={{drafts:///create?text=[[output]]&action=insta-api}}|image=texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=%22&x-success={{drafts:///create?text=[[output]]&action=insta-api-url}}]<span class="spPermalink"><a href="/2014/07/07/#a1404760678">#</a></span></p>
+				<p><a name="a1404761169"></a>Instagram's url scheme for a post is as follows (as per its [iPhone Hooks page](http://instagram.com/developer/iphone-hooks/)):<span class="spPermalink"><a href="/2014/07/07/#a1404761169">#</a></span></p>
+				<p><a name="a1404758591"></a>    instagram://media?id=MEDIA_ID<span class="spPermalink"><a href="/2014/07/07/#a1404758591">#</a></span></p>
+				<p><a name="a1404761227"></a>The media ID is not part of the web URL. But we can get that info from Instagrams's [Embed API](http://instagram.com/developer/embedding/). Let's use an example post (`http://instagram.com/p/qJu0a-OHMC`) and add it after the `url=`: <span class="spPermalink"><a href="/2014/07/07/#a1404761227">#</a></span></p>
+				<p><a name="a1404758678"></a>    http://api.instagram.com/oembed?url=http://instagram.com/p/qJu0a-OHMC<span class="spPermalink"><a href="/2014/07/07/#a1404758678">#</a></span></p>
+				<p><a name="a1404761488"></a>This API returns JSON:<span class="spPermalink"><a href="/2014/07/07/#a1404761488">#</a></span></p>
+				<p><a name="a1404758728"></a>     {"provider_url":"http:\/\/instagram.com\/","media_id":"759343924702114562_1483611","title":"Another beautiful day in the city! \ud83d\ude0d","url":"http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg","author_name":"newyorkcity","height":640,"width":640,"version":"1.0","author_url":"http:\/\/instagram.com\/newyorkcity","author_id":1483611,"type":"photo","provider_name":"Instagram"} <span class="spPermalink"><a href="/2014/07/07/#a1404758728">#</a></span></p>
+				<p><a name="a1404758742"></a>We can see that the media_id is 759343924702114562_1483611. `instagram://media?id=759343924702114562_1483611` would bring us right to that post in the app, but we need the LCP action to automate the process.<span class="spPermalink"><a href="/2014/07/07/#a1404758742">#</a></span></p>
+				<p><a name="a1404761675"></a>We first need an easy way to grab the HTML of the API results. Textastic has an [url scheme](http://www.textasticapp.com/v4/manual/x-callback-url.html) that lets you download a file and open the HTML in the editor by replacing `http://` with `textastic://`. The first part of the LCP action does just that. However, even though Textastic supports x-callback-url, it doesn't for this particular action. So we need to tap on the share <i class="fa fa-external-link"></i> button at top right of the screen after the HTML has downloaded, and choose "Copy All." Then we take advantage of a new feature introduced in LCP: lc-callback. For apps that do not support x-callback-url, this is the next best thing. We define the callback action, but instead of it triggering automatically after the first action, we double-tap on the home button (to get the app launcher) and choose LCP. Once we tap on LCP, the next action gets triggered. <span class="spPermalink"><a href="/2014/07/07/#a1404761675">#</a></span></p>
+				<p><a name="a1404761767"></a>Because the embed API also provides the raw image URL for the Instagram post, the lc-callback starts with a list. We can get the iOS url scheme ("url") or the raw image URL ("image"). Let's see what happens when you choose "url":<span class="spPermalink"><a href="/2014/07/07/#a1404761767">#</a></span></p>
+				<p><a name="a1404762160"></a>The entire HTML is sent to TextTool, which splits the string at `"`:<span class="spPermalink"><a href="/2014/07/07/#a1404762160">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    {<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    provider_url<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    http:\/\/instagram.com\/<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    media_id<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    759343924702114562_1483611<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    title<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    Another beautiful day in the city! \ud83d\ude0d<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    url<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    author_name<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    newyorkcity<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    height<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :640,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    width<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :640,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    version<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.845"></a>    1.0<span class="spPermalink"><a href="/2014/07/07/#a1411674036.845">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    author_url<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    http:\/\/instagram.com\/newyorkcity<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    author_id<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    :1483611,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    type<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    photo<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    provider_name<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    Instagram<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    }<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1404762563"></a>This entire string is then sent to Drafts, and the _insta-api_ action is triggered. [Import it into Drafts](drafts://x-callback-url/import_action?type=URL&name=insta-api&url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Binstagram%3A%2F%2Fmedia%3Fid%3D%5B%5Bline%7C8%5D%5D%7D%7D) or enter the following as an URL action:<span class="spPermalink"><a href="/2014/07/07/#a1404762563">#</a></span></p>
+				<p><a name="a1404762617"></a>    drafts:///create?text={{instagram://media?id=[[line|8]]}}<span class="spPermalink"><a href="/2014/07/07/#a1404762617">#</a></span></p>
+				<p><a name="a1404762669"></a>It simply takes line 8 -- which contains the media_ID -- and inserts into into the URL scheme.<span class="spPermalink"><a href="/2014/07/07/#a1404762669">#</a></span></p>
+				<p><a name="a1404762693"></a>Now, if we would rather get the raw image URL, we choose "image" after the lc-callback. It also performs a `"` split and sends that output to Drafts, but it instead triggers the _insta-api-url_ action. [Import it into Drafts](drafts://x-callback-url/import_action?type=URL&name=insta-api-url&url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C16%5D%5D%26method%3Dunescape) or enter the following URL action:<span class="spPermalink"><a href="/2014/07/07/#a1404762693">#</a></span></p>
+				<p><a name="a1404762894"></a>    texttool://x-callback-url/transform?text=[[line|16]]&method=unescape<span class="spPermalink"><a href="/2014/07/07/#a1404762894">#</a></span></p>
+				<p><a name="a1404762896"></a>Line 16 -- the raw image URL -- is sent to TextTool. Why? All the forward slashes in the URL are "escaped" <span class="spPermalink"><a href="/2014/07/07/#a1404762896">#</a></span></p>
+				<p><a name="a1404762955"></a>       http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg<span class="spPermalink"><a href="/2014/07/07/#a1404762955">#</a></span></p>
+				<p><a name="a1404762975"></a>so we have to unescape them:<span class="spPermalink"><a href="/2014/07/07/#a1404762975">#</a></span></p>
+				<p><a name="a1404762980"></a>       http://photos-d.ak.instagram.com/hphotos-ak-xfp1/10537269_595401073912091_331298792_n.jpg<span class="spPermalink"><a href="/2014/07/07/#a1404762980">#</a></span></p>
+				<p><a name="a1404762999"></a>This action stops at TextTool. It has sharing features, so you can do what you like with URL: e.g., download the image.<span class="spPermalink"><a href="/2014/07/07/#a1404762999">#</a></span></p>
+				<p><a name="a1404763688"></a>To make the action icon look nice, I added `lc-icon=instagram`.<span class="spPermalink"><a href="/2014/07/07/#a1404763688">#</a></span></p>
+				<p><a name="a1404763049"></a>Granted, this LCP action is not fluid. I think it would possible to perform the conversion without the "Copy All" and lc-callback using the JSON parser in Pythonista, but I'm not proficient enough to accomplish that as of this writing. If you write an action that accomplishes the conversion with fewer steps, I would love to hear from you in the comments section or on Twitter.<span class="spPermalink"><a href="/2014/07/07/#a1404763049">#</a></span></p>
+				<p><a name="a1404763711"></a>**Thanks** to @epramono and @youens on Twitter for helping me to understand LCP 2.3.x at a deeper level.<span class="spPermalink"><a href="/2014/07/07/#a1404763711">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1404750632"></a><a class="aStreamTextLink" onclick="ecStream (1)">Command Line Script for "Paperless: Lists + Checklists"</a><span class="spPermalink"><a href="/2014/07/07/#a1404750632">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel1">
+				<p><a name="a1404750672"></a>I use <a href="http://www.crushapps.com/paperless/">Paperless</a> for the majority of my list-making on my iOS devices. I've already written [how to mark an item as complete without using the app](http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html) and [how to view your lists on the web](http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html). Today, I am going to share a unix command line bash script to "print" incomplete items from a list. <span class="spPermalink"><a href="/2014/07/07/#a1404750672">#</a></span></p>
+				<p><a name="a1404750837"></a>I created a text file called "prl" and put it in /usr/local/bin/:<span class="spPermalink"><a href="/2014/07/07/#a1404750837">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    #! /bin/bash<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1404749674"></a>    list=$1<span class="spPermalink"><a href="/2014/07/07/#a1404749674">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    grep -A 1 \<dateCompleted\>\<\/dateCompleted\> ~/Dropbox/Paperless/$list.xml | sed -n 's:.*<itemName>\(.*\)</itemName>.*:\1:p'<span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1404750994"></a>I made it executable while in that directory: `chmod +x prl`<span class="spPermalink"><a href="/2014/07/07/#a1404750994">#</a></span></p>
+				<p><a name="a1404751017"></a>Now, to view the incomplete items in any list, I just type `prl` followed by the list name. If I have a list named Bills, I just type `prl Bills` and the script will output all bills that are due. (This script does not output the notes field.)<span class="spPermalink"><a href="/2014/07/07/#a1404751017">#</a></span></p>
+				<p><a name="a1404751089"></a>###How It Works<span class="spPermalink"><a href="/2014/07/07/#a1404751089">#</a></span></p>
+				<p><a name="a1404751093"></a>All your Paperless lists are stored as XML files. I use _grep_ to look for all items for which there is no completion date: `<dateCompleted></dateCompleted>` with _-A 1_ to also print out the lines immediately after each match (which are the list items themselves). Those results are piped into a _sed_ which extracts any string sandwiched between `<itemName>` and `</itemName>`.<span class="spPermalink"><a href="/2014/07/07/#a1404751093">#</a></span></p>
+				<p><a name="a1404751462"></a>If I need to see a note, I can do a quick _grep_: `grep -A 1 verizon ~/Dropbox/Paperless/Bills.xml`. This will output all lines matching _verizon_ plus the lines immediately following, including the XML tags. It's not pretty but it will get me the info I need (e.g., the due date).<span class="spPermalink"><a href="/2014/07/07/#a1404751462">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    <itemName>Verizon $100.00</itemName><span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				<p><a name="a1411674036.846"></a>    <itemNote>7/7</itemNote><span class="spPermalink"><a href="/2014/07/07/#a1411674036.846">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="commandLineScriptForPaperlessListsChecklists.html">Command Line Script for "Paperless: Lists + Checklists"</a></div>
-		<p>I use <a href="http://www.crushapps.com/paperless/">Paperless</a> for the majority of my list-making on my iOS devices. I've already written <a href="http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html">how to mark an item as complete without using the app</a> and <a href="http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html">how to view your lists on the web</a>. Today, I am going to share a unix command line bash script to "print" incomplete items from a list. </p>
+	</div>
 
-<p>I created a text file called "prl" and put it in /usr/local/bin/:</p>
-
-<pre><code>#! /bin/bash
-
-list=$1
-
-grep -A 1 \&lt;dateCompleted\&gt;\&lt;\/dateCompleted\&gt; ~/Dropbox/Paperless/$list.xml | sed -n 's:.*&lt;itemName&gt;\(.*\)&lt;/itemName&gt;.*:\1:p'
-</code></pre>
-
-<p>I made it executable while in that directory: <code>chmod +x prl</code></p>
-
-<p>Now, to view the incomplete items in any list, I just type <code>prl</code> followed by the list name. If I have a list named Bills, I just type <code>prl Bills</code> and the script will output all bills that are due. (This script does not output the notes field.)</p>
-
-<h3>How It Works</h3>
-
-<p>All your Paperless lists are stored as XML files. I use <em>grep</em> to look for all items for which there is no completion date: <code>&lt;dateCompleted&gt;&lt;/dateCompleted&gt;</code> with <em>-A 1</em> to also print out the lines immediately after each match (which are the list items themselves). Those results are piped into a <em>sed</em> which extracts any string sandwiched between <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code>.</p>
-
-<p>If I need to see a note, I can do a quick <em>grep</em>: <code>grep -A 1 verizon ~/Dropbox/Paperless/Bills.xml</code>. This will output all lines matching <em>verizon</em> plus the lines immediately following, including the XML tags. It's not pretty but it will get me the info I need (e.g., the due date).</p>
-
-<pre><code>&lt;itemName&gt;Verizon $100.00&lt;/itemName&gt;
-
-&lt;itemNote&gt;7/7&lt;/itemNote&gt;
-</code></pre>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/07/14; 11:30:32 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="commandLineScriptForPaperlessListsChecklists.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Fri, Jul 11, 2014 at  9:28 AM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlMon, 07 Jul 2014 16:30:32 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, July  7, 2014 at 11:30 AM</span>.</div>
-					</div>
+				</div>
+			<div class="divFargoStreamFooter">
+				<div>&copy; 2014 Jeffrey Kishner.</div>
+				<div>Last update: Thu, Sep 25, 2014 at  2:40 PM.</div>
+				<div><i></i></div>
+				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 				</div>
 			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

@@ -2,26 +2,25 @@
 <html>
 	<head>
 		<title>May 2014</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Tue, 08 Jul 2014 16:17:01 GMT",
-    "opmlExpansionState": "1,2,3,23",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:40:26 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,18,30,31,32,52,53,54,66",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,14 +35,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "Still diggin!",
+    "type": "stream",
+    "slogan": "Don't slam the door on the way out.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,6 +66,8 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "May 2014",
     "created": "Wed, 07 May 2014 19:49:42 GMT",
     "description": "",
@@ -88,75 +90,612 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Jul 08 2014 12:17:05 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:40:42 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/05.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
+		
+		
+		<meta property="og:url" content="http://blog.jeffreykishner.com/2014/05.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="May 2014" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="Jeffrey Kishner" />
+		
+		<meta name="twitter:card" value="summary">
+		<meta name="twitter:title" content="May 2014" />
+		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2014/05.html" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content=""/>
+		<meta name="twitter:site" value="kishner">
+		
 		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageContainer {
+				}
+			.navbar {
+				font-size: 17px;
+				line-height: 140%;
+				}
+			.navbar-inner {
+				min-height: 60px;
+				}
+			.navbar .nav > li > a {
+				padding-top: 17px;
+				}
+			.navbar .brand {
+				padding-top: 13px;
+				padding-left: 25px;
+				}
+			.navbar-container {
+				width: 1000px !important;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divStreamDayText {
+				font-family: 'Vollkorn', serif;
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divMapCanvas {
+				height: 100%; 
+				width: 100%; 
+				position: absolute; 
+				right: 0; 
+				z-index: -10;
+				}
+			.divTextInFrontOfImage {
+				background-color: whitesmoke; 
+				opacity: .98;
+				padding: 1.5em;
+				border:2px solid gainsboro;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				font-family: Ubuntu;
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: 'Ubuntu', sans-serif;
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divFargoStreamComments {
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				margin-top: 10px;
+				}
+			.divDisqusComments { 
+				margin-top: 5px !important;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.divPageContainer {
+					}
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divTextContainer {
+					margin-top: -40px;
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
+					}
+				.divPictureViewer .modal {
+					left: auto;
+					width: auto;
+					margin-left: auto;
+					margin-right: auto;
+					}
+				.divLevel {
+					margin-left: 0;
 					}
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<style>
-	.divFargoIndex .aDocTitleOnIndexPage {
-		font-size: 33.75px !important;
-		line-height: 42px !important;
-		color: #0088cc !important;
-		}
-	.divTitleDescription { display: none; }
-	.icon-star:before { content: "\f0c1"; }
-	.greenText {
-		color: green !important;
-		font-weight: bold !important;
-		}
-	ul {
-		list-style-type: none;
-		}
-	.divByline {
-		visibility: hidden;
-		height: 0px;
-		}
-	</style>
-<script>
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				.divPageContainer {
+					}
+				.navbar .nav > li > a {
+					padding-right: 7px;
+					}
+				}
+			</style>
+		
+		<script>
+			var flSetupDisqusThread = false;
+			
+			var colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function closeDisqusThread () {
+				$("#idDisqusDialog").modal ("hide");
+				}
+			function openDisqusThread () {
+				function getCommentHtml () {
+					var id = "", hidingCode  = "", visibleStyle = "";
+					if (pagetable.opmlUrl != undefined) {
+						id += pagetable.opmlUrl;
+						}
+					if (pagetable.created != undefined) {
+						id += pagetable.created;
+						}
+					if (id.length > 0) {
+						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
+						}
+					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
+					return (code.replace (/&lt;/g,'<'));
+					}
+				if (!flSetupDisqusThread) {
+					var s = 
+						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
+					$("body").prepend (s)
+					flSetupDisqusThread = true;
+					}
+				$("#idDisqusCode").html (getCommentHtml ());
+				$("#idDisqusDialog").modal ("show");
+				}
+			
+			
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
+				var mapCanvas = document.getElementById (idmap);
+				if (mapCanvas != null) {
+					var mapOptions = {
+						center: new google.maps.LatLng (maplat, maplong),
+						zoom: Number (mapzoom),
+						panControl: false,
+						zoomControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl :false,
+						overviewMapControl: false,
+						rotateControl: false,
+						mapTypeId: maptype
+						};
+					var map = new google.maps.Map (mapCanvas, mapOptions);
+					}
+				}
+			
+			function turnOffImages () { //5/18/14 by DW
+				$(".divStreamDayImage").css ("background-image", "");
+				localStorage.flTurnImagesOff = "true";
+				}
+			function turnOffImagesCommand () {
+				confirmDialog ("Turn off images?", function () {
+					localStorage.flTurnImagesOff = "true";
+					location.reload (true);
+					});
+				}
+			function turnOnImagesCommand () {
+				confirmDialog ("Turn images on?", function () {
+					localStorage.flTurnImagesOff = "false"; 
+					location.reload (true);
+					});
+				}
+			
+			function startup () {
+				var streamVersion = 1; //5/20/14 by DW
+				var flPlainOutline; //5/20/14 by DW
+				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
+				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
+				
+				//set streamVersion -- 5/20/14 by DW
+					if (pagetable.streamVersion != undefined) {
+						var x = parseInt (pagetable.streamVersion);
+						if (!isNaN (x)) {
+							streamVersion = x;
+							}
+						}
+				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
+					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
+						localStorage.removeItem ("flImagesOff")
+						}
+					if (localStorage.flTurnImagesOff == undefined) {
+						if (streamVersion > 1) {
+							localStorage.flTurnImagesOff = "false";
+							}
+						}
+					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
+				//every day gets a background color, image, map or -- ??
+					if (!flPlainOutline) {
+						var ixcolorarray = 0, ctmaps = 0;
+						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
+							var flSetColor = true;
+							
+							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
+								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
+								flSetColor = false;
+								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
+								
+								//set up map parameters
+									maplat = $(this).data ("maplatitude");
+									if (maplat == undefined) {
+										maplat = pagetable.mapLatitude;
+										}
+									maplong = $(this).data ("maplongitude");
+									if (maplong == undefined) {
+										maplong = pagetable.mapLongitude;
+										}
+									maptype = $(this).data ("maptype");
+									if (maptype == undefined) {
+										maptype = pagetable.mapType;
+										}
+									mapzoom = $(this).data ("mapzoom");
+									if (mapzoom == undefined) {
+										mapzoom = pagetable.mapZoom;
+										}
+								
+								initMap (idmap, maplat, maplong, maptype, mapzoom);
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayImage") {
+										flSetColor = false;
+										}
+									});
+								}
+							
+							if (flSetColor) {
+								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayText") {
+										var flset = false;
+										$(this).children ("div").each (function () {
+											if (!flset) {
+												this.className = "divTextInFrontOfImage"; //set classname of first child element
+												}
+											flset = true;
+											});
+										}
+									});
+								}
+							});
+						}
+				//highlight and expand the #hashed element, if present
+					var hash = window.location.hash;
+					if (hash.length > 0) {
+						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
+							$(this).children ("a").each (function () { //look at first-level children that are anchors
+								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
+									$(this).parents ("div").css ("display", "block"); //make all parents visible
+									$(this).parents ("p").css ("background-color", hightlightcolor);
+									
+									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
+									
+									
+									var flexpand = true;
+									$(this).parents ("div").each (function () {
+										if (flexpand) {
+											$(this).children ("a").each (function () {
+												$(this).css ("background-color", hightlightcolor);
+												
+												$(this).prev ().find ("i").each (function () {
+													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
+														$(this).attr ("class", "fa fa-caret-down");
+														}
+													});
+												
+												});
+											$(this).next ("div").css ("display", "block"); //the divLevel item
+											flexpand = false;
+											}
+										});
+									}
+								});
+							});
+						}
+				//handle fixed menu
+					if (getBoolean (pagetable.flFixedMenu)) {
+						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
+						if (flhavenav) {
+							document.body.style.paddingTop = "60px";
+							if (hash.length > 0) {
+								$(document).one ("scroll", function () {
+									var $el = $(this), top = $el.scrollTop ();
+									$el.scrollTop (top - 125);
+									});
+								}
+							}
+						}
+				//set the site title -- 3/23/14 by DW
+					if (pagetable.menuTitle != undefined) {
+						var pagename;
+						
+						if (highlightedtitle != undefined) { //5/11/14 by DW
+							pagename = highlightedtitle;
+							}
+						else {
+							if (pagetable.path.length == 0) {
+								pagename = "Home";
+								}
+							else {
+								pagename = pagetable.text;
+								}
+							}
+						
+						document.title = pagetable.menuTitle + ": [" + pagename + "]";
+						}
+				//set the color of each text frame -- 5/11/14 by DW
+					$(".divTextInFrontOfImage").each (function () {
+						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
+						});
+				
+				//turn on images for v2 or greater -- 5/20/14 by DW
+					if (streamVersion > 1) { 
+						if (flPlainOutline) {
+							$(".aStreamDayLink").each (function () {
+								$(this).css ("font-size", "28px");
+								});
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								$(this).css ("margin-top", "70px");
+								});
+							$(".divStreamDayText").each (function () {
+								$(this).css ("padding", "0");
+								});
+							$(".divTextContainer").each (function () {
+								$(this).css ("margin-bottom", "125px");
+								});
+							}
+						else {
+							$(".divStreamDay").each (function () {
+								var url = $(this).data ("backgroundimage");
+								if (url != undefined) {
+									$(this).css ("background-image", "url('" + url + "')");
+									}
+								
+								$(this).children (".divStreamDayText").children ().each (function () {
+									this.className = "divTextInFrontOfImage"; 
+									});
+								
+								});
+							}
+						}
+				
+				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
+					if (streamVersion == 1) { 
+						if (flPlainOutline) {
+							turnOffImages ();
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								});
+							}
+						}
+				}
+			</script>
+		
+		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -167,20 +706,20 @@
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-		
+		<div class="divPageContainer">
+			
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
+						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
+						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
 						<li><a href="/2014/05/" target="_blank">May 2014</a></li>
 						<li><a href="/2014/04/" target="_blank">Apr 2014</a></li>
@@ -196,31 +735,31 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/14/homelessnessAndTheNycSubway.html" target="_blank">Homelessness and the NYC Subway</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/09/morningGloryNyc.html" target="_blank">Morning Gloryville NYC</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/25/whiteGuysAndAlterBridge.html" target="_blank">White Guys and Alter Bridge </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -230,262 +769,207 @@
 			</div>
 		</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">May 2014</h2>
+			<div class="divTextContainer" id="idTextContainer">
+				<div class="divStreamDay" >
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/05/23/">Friday, May 23<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1400852850"></a><a class="aStreamTextLink" onclick="ecStream (0)">Send Text and an Action to Drafts for iOS From the Command Line</a><span class="spPermalink"><a href="/2014/05/23/#a1400852850">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel0">
+				<p><a name="a1400854768"></a><a href="https://twitter.com/share?text=Send%20Text%20and%20an%20Action%20to%20Drafts%20for%20iOS%20From%20the%20Command%20Line'&url=http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/05/23/#a1400854768">#</a></span></p>
+				<p><a name="a1400853035"></a>I am very much a newbie at bash scripting in Terminal, but I felt tempted to replicate the tool I built at [TaskPusher](http://taskpusher.net) for the command line: namely to send text and an optional action to <a href="http://agiletortoise.com/drafts/">Drafts</a> from a Mac OS computer.<span class="spPermalink"><a href="/2014/05/23/#a1400853035">#</a></span></p>
+				<p><a name="a1400853208"></a>TaskPusher is a PHP web application that sends an url-encoded string to [Pushover](http://pushover.net), a notifications app for iOS. Pushover already provided the [code to send notifications from the Unix command line](https://pushover.net/faq#library-shell) so I only had to make a few modifications to send a message to Drafts.<span class="spPermalink"><a href="/2014/05/23/#a1400853208">#</a></span></p>
+				<p><a name="a1400853479"></a>Before we begin, I need to qualify that I literally have only started bash scripting this week, so please bear with me if there are any inefficiencies or errors. The script _works_, but if you have any suggestions please comment below in the Disqus widget or send me a [tweet](https://twitter.com/kishner).<span class="spPermalink"><a href="/2014/05/23/#a1400853479">#</a></span></p>
+				<p><a name="a1400853571"></a>The first challenge is that all the text after the Drafts URL scheme `drafts:///create?text=` needs to be url-encoded. I found a basic sed find/replace script [here](http://gimi.name/snippets/urlencode-and-urldecode-for-bash-scripting-using-sed/) and I copied the [code snippet](http://gimi.name/snippets/uploads/urlencode.sed) into this gist:<span class="spPermalink"><a href="/2014/05/23/#a1400853571">#</a></span></p>
+				<p><a name="a1400853654"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/23/#a1400853654">#</a></span></p>
+				<p><a name="a1400853682"></a><script src="https://gist.github.com/jkishner/2fccb24640a27c2d7ac9.js"></script><span class="spPermalink"><a href="/2014/05/23/#a1400853682">#</a></span></p>
+				<p><a name="a1400853682"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/23/#a1400853682">#</a></span></p>
+				<p><a name="a1400853685"></a>Just add this in a text file somewhere in your directory and call it `urlencode.sed`. I haven't gotten to move new scripts into /usr/local/bin (or what-have-you) so in the pushover script below you will have to precede `urlencode.sed` with the directory path. In my working script I replace it with `~/j/scripts/urlencode.sed`.<span class="spPermalink"><a href="/2014/05/23/#a1400853685">#</a></span></p>
+				<p><a name="a1400853919"></a>I named the following script `pushover` but you can call it whatever you want:<span class="spPermalink"><a href="/2014/05/23/#a1400853919">#</a></span></p>
+				<p><a name="a1400853933"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/23/#a1400853933">#</a></span></p>
+				<p><a name="a1400852909"></a><script src="https://gist.github.com/jkishner/3eac98227693bff57f9f.js"></script><span class="spPermalink"><a href="/2014/05/23/#a1400852909">#</a></span></p>
+				<p><a name="a1400853936"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/23/#a1400853936">#</a></span></p>
+				<p><a name="a1400853938"></a>###How to Run the Script<span class="spPermalink"><a href="/2014/05/23/#a1400853938">#</a></span></p>
+				<p><a name="a1400853952"></a>If you haven't already, [purchase Pushover in the app store](https://itunes.apple.com/us/app/pushover-notifications/id506088175?mt=8), create an account and get your user key. Then [create an app in Pushover](https://pushover.net/apps/build) and save the API token. Where it says $APP_TOKEN and $USER_KEY enter yours in the script.<span class="spPermalink"><a href="/2014/05/23/#a1400853952">#</a></span></p>
+				<p><a name="a1400854067"></a>Now go to Terminal. You need to set one or two variables to send to Drafts: the message and the action. The message is the actual text of your draft. The action is the _exact wording_ of any of the actions in the [Action Directory](https://agiletortoise.zendesk.com/hc/en-us/articles/200689654-Action-Management). For example, I may want to send text to <a href="http://www.dueapp.com/">Due</a>: _6pm pick up prescription_. In Drafts, the action is called Send to Due. So on the command line, I type the following:<span class="spPermalink"><a href="/2014/05/23/#a1400854067">#</a></span></p>
+				<p><a name="a1400854420"></a>    export message="6pm pick up prescription"<span class="spPermalink"><a href="/2014/05/23/#a1400854420">#</a></span></p>
+				<p><a name="a1400854435"></a>    export action="Send to Due"<span class="spPermalink"><a href="/2014/05/23/#a1400854435">#</a></span></p>
+				<p><a name="a1400854443"></a>    pushover<span class="spPermalink"><a href="/2014/05/23/#a1400854443">#</a></span></p>
+				<p><a name="a1400854449"></a>(In my case, I type `~/j/scripts/pushover`. If Terminal says you don't have permission to run the script, type `chmod 700 pushover`.)<span class="spPermalink"><a href="/2014/05/23/#a1400854449">#</a></span></p>
+				<p><a name="a1400854496"></a>Your notification will be sent to Pushover, and you'll get a status response on the command line. When you get your notification, just swipe to open it, and tap on the URL string. In the example above, it would look like<span class="spPermalink"><a href="/2014/05/23/#a1400854496">#</a></span></p>
+				<p><a name="a1400853452"></a>    drafts:///create?text=6pm%20pick%20up%20prescription&action=Send%20to%Due<span class="spPermalink"><a href="/2014/05/23/#a1400853452">#</a></span></p>
+				<p><a name="a1400852919"></a>When you tap on the URL, it will send the text to Drafts and tell Drafts to send that text to Due.<span class="spPermalink"><a href="/2014/05/23/#a1400852919">#</a></span></p>
+				<p><a name="a1400854642"></a>If you just want to send text to Drafts and not immediately act on it, just leave the action variable null. To clear the action variable from a previous notification, type `unset action`.<span class="spPermalink"><a href="/2014/05/23/#a1400854642">#</a></span></p>
+				<p><a name="a1400855094"></a>There are additional variables you can add to the script (as defined in [Pushover's API](https://pushover.net/api)) if you want to send your notification to a specific device or customize the sound. Just add an additional line in the script, like `-F "sound=cashregister" \`.<span class="spPermalink"><a href="/2014/05/23/#a1400855094">#</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/05/22/">Thursday, May 22<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1400769161"></a><a class="aStreamTextLink" onclick="ecStream (1)">"Subscribe" to OPML Lists in Fargo</a><span class="spPermalink"><a href="/2014/05/22/#a1400769161">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel1">
+				<p><a name="a1400769822"></a><a href="https://twitter.com/share?text=%22Subscribe%22%20to%20OPML%20Lists%20in%20Fargo&url=http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/05/22/#a1400769822">#</a></span></p>
+				<p><a name="a1400769211"></a>I recently showed how you can [read RSS feeds in Fargo](http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html). Did you know that you can "subscribe" to complete OPML lists in Fargo as well? [Feedshare.net](http://feedshare.net/) is a place where people share their feed reading lists. If you want to see what [Brent Simmons](http://inessential.com/) reads, go to [his share page](http://feedshare.net/inessential/) and grab his [OPML link](http://ranchero.com/downloads/BrentSubscriptions.opml). Then go into Fargo and add this link as an _include_. <span class="spPermalink"><a href="/2014/05/22/#a1400769211">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1400769453"></a><a class="aStreamTextLink" onclick="ecStream (2)">I just typed "Brent Simmons - Inessential" on a new headline and added the following attributes to the headline:</a><span class="spPermalink"><a href="/2014/05/22/#a1400769453">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel2">
+					<p><a name="a1400769488"></a>type="include"<span class="spPermalink"><a href="/2014/05/22/#a1400769488">#</a></span></p>
+					<p><a name="a1400769495"></a>url="http://ranchero.com/downloads/BrentSubscriptions.opml"<span class="spPermalink"><a href="/2014/05/22/#a1400769495">#</a></span></p>
 					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html">Send Text and an Action to Drafts for iOS From the Command Line</a></div>
-		<p><a href="https://twitter.com/share?text=Send%20Text%20and%20an%20Action%20to%20Drafts%20for%20iOS%20From%20the%20Command%20Line'&amp;url=http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Tweet This Post</a></p>
-
-<p>I am very much a newbie at bash scripting in Terminal, but I felt tempted to replicate the tool I built at <a href="http://taskpusher.net">TaskPusher</a> for the command line: namely to send text and an optional action to <a href="http://agiletortoise.com/drafts/">Drafts</a> from a Mac OS computer.</p>
-
-<p>TaskPusher is a PHP web application that sends an url-encoded string to <a href="http://pushover.net">Pushover</a>, a notifications app for iOS. Pushover already provided the <a href="https://pushover.net/faq#library-shell">code to send notifications from the Unix command line</a> so I only had to make a few modifications to send a message to Drafts.</p>
-
-<p>Before we begin, I need to qualify that I literally have only started bash scripting this week, so please bear with me if there are any inefficiencies or errors. The script <em>works</em>, but if you have any suggestions please comment below in the Disqus widget or send me a <a href="https://twitter.com/kishner">tweet</a>.</p>
-
-<p>The first challenge is that all the text after the Drafts URL scheme <code>drafts:///create?text=</code> needs to be url-encoded. I found a basic sed find/replace script <a href="http://gimi.name/snippets/urlencode-and-urldecode-for-bash-scripting-using-sed/">here</a> and I copied the <a href="http://gimi.name/snippets/uploads/urlencode.sed">code snippet</a> into this gist:</p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/2fccb24640a27c2d7ac9.js"></script>
-
-<p>&nbsp;</p>
-
-<p>Just add this in a text file somewhere in your directory and call it <code>urlencode.sed</code>. I haven't gotten to move new scripts into /usr/local/bin (or what-have-you) so in the pushover script below you will have to precede <code>urlencode.sed</code> with the directory path. In my working script I replace it with <code>~/j/scripts/urlencode.sed</code>.</p>
-
-<p>I named the following script <code>pushover</code> but you can call it whatever you want:</p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/3eac98227693bff57f9f.js"></script>
-
-<p>&nbsp;</p>
-
-<h3>How to Run the Script</h3>
-
-<p>If you haven't already, <a href="https://itunes.apple.com/us/app/pushover-notifications/id506088175?mt=8">purchase Pushover in the app store</a>, create an account and get your user key. Then <a href="https://pushover.net/apps/build">create an app in Pushover</a> and save the API token. Where it says $APP_TOKEN and $USER_KEY enter yours in the script.</p>
-
-<p>Now go to Terminal. You need to set one or two variables to send to Drafts: the message and the action. The message is the actual text of your draft. The action is the <em>exact wording</em> of any of the actions in the <a href="https://agiletortoise.zendesk.com/hc/en-us/articles/200689654-Action-Management">Action Directory</a>. For example, I may want to send text to <a href="http://www.dueapp.com/">Due</a>: <em>6pm pick up prescription</em>. In Drafts, the action is called Send to Due. So on the command line, I type the following:</p>
-
-<pre><code>export message="6pm pick up prescription"
-
-export action="Send to Due"
-
-pushover
-</code></pre>
-
-<p>(In my case, I type <code>~/j/scripts/pushover</code>. If Terminal says you don't have permission to run the script, type <code>chmod 700 pushover</code>.)</p>
-
-<p>Your notification will be sent to Pushover, and you'll get a status response on the command line. When you get your notification, just swipe to open it, and tap on the URL string. In the example above, it would look like</p>
-
-<pre><code>drafts:///create?text=6pm%20pick%20up%20prescription&amp;action=Send%20to%Due
-</code></pre>
-
-<p>When you tap on the URL, it will send the text to Drafts and tell Drafts to send that text to Due.</p>
-
-<p>If you just want to send text to Drafts and not immediately act on it, just leave the action variable null. To clear the action variable from a previous notification, type <code>unset action</code>.</p>
-
-<p>There are additional variables you can add to the script (as defined in <a href="https://pushover.net/api">Pushover's API</a>) if you want to send your notification to a specific device or customize the sound. Just add an additional line in the script, like <code>-F "sound=cashregister" \</code>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">05/23/14; 08:47:30 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html"><i class="fa fa-star"></i></a></div>
+				<p><a name="a1400769502"></a>I then expand the headline to see all the feeds it includes:<span class="spPermalink"><a href="/2014/05/22/#a1400769502">#</a></span></p>
+				<p><a name="a1400769637"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/22/#a1400769637">#</a></span></p>
+				<p><a name="a1400769639"></a>![](https://dl.dropbox.com/s/qmq9z16y893n5cf/Screen%20Shot%202014-05-22%20at%2010.38.42%20AM.png)<span class="spPermalink"><a href="/2014/05/22/#a1400769639">#</a></span></p>
+				<p><a name="a1400769644"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/22/#a1400769644">#</a></span></p>
+				<p><a name="a1400769647"></a>and then use the "View Feed" script (outlined in my previous blog post) to read one of the feeds:<span class="spPermalink"><a href="/2014/05/22/#a1400769647">#</a></span></p>
+				<p><a name="a1400769674"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/22/#a1400769674">#</a></span></p>
+				<p><a name="a1400769750"></a>![](https://dl.dropbox.com/s/fvjzpe0ewz9pq8o/Screen%20Shot%202014-05-22%20at%2010.41.29%20AM.png)<span class="spPermalink"><a href="/2014/05/22/#a1400769750">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="22/subscribeToOpmlListsInFargo.html">"Subscribe" to OPML Lists in Fargo</a></div>
-		<p><a href="https://twitter.com/share?text=%22Subscribe%22%20to%20OPML%20Lists%20in%20Fargo&amp;url=http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">Tweet This Post</a></p>
-
-<p>I recently showed how you can <a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html">read RSS feeds in Fargo</a>. Did you know that you can "subscribe" to complete OPML lists in Fargo as well? <a href="http://feedshare.net/">Feedshare.net</a> is a place where people share their feed reading lists. If you want to see what <a href="http://inessential.com/">Brent Simmons</a> reads, go to <a href="http://feedshare.net/inessential/">his share page</a> and grab his <a href="http://ranchero.com/downloads/BrentSubscriptions.opml">OPML link</a>. Then go into Fargo and add this link as an <em>include</em>. </p>
-
-<p>I just typed "Brent Simmons - Inessential" on a new headline and added the following attributes to the headline:</p>
-
-<ul>
-<li><p>type="include"</p></li>
-<li><p>url="http://ranchero.com/downloads/BrentSubscriptions.opml"</p></li>
-</ul>
-
-<p>I then expand the headline to see all the feeds it includes:</p>
-
-<p>&nbsp;</p>
-
-<p><img src="https://dl.dropbox.com/s/qmq9z16y893n5cf/Screen%20Shot%202014-05-22%20at%2010.38.42%20AM.png" alt="" title="" /></p>
-
-<p>&nbsp;</p>
-
-<p>and then use the "View Feed" script (outlined in my previous blog post) to read one of the feeds:</p>
-
-<p>&nbsp;</p>
-
-<p><img src="https://dl.dropbox.com/s/fvjzpe0ewz9pq8o/Screen%20Shot%202014-05-22%20at%2010.41.29%20AM.png" alt="" title="" /></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">05/22/14; 09:32:41 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="22/subscribeToOpmlListsInFargo.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/05/19/">Monday, May 19<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1400531180"></a><a class="aStreamTextLink" onclick="ecStream (3)">Using Fargo as a Feed Reader</a><span class="spPermalink"><a href="/2014/05/19/#a1400531180">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel3">
+				<p><a name="a1400533677"></a><a href="https://twitter.com/share?text=Using%20Fargo%20as%20a%20Feed%20Reader&url=http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/05/19/#a1400533677">#</a></span></p>
+				<p><a name="a1400531193"></a>[Eric Davis](https://github.com/edavis) has written a script to enable a user to read RSS feeds in [Fargo](http://fargo.io). The script does not beautifully render the contents of the description tag, but if you want a quick-and-dirty solution, this will work. For example, if you're compiling research in an outline and only plan to check a related RSS feed when you're working in that tab, you can just update the feed there.<span class="spPermalink"><a href="/2014/05/19/#a1400531193">#</a></span></p>
+				<p><a name="a1400531683"></a>At bare minimum, [you need a menubar.opml file](http://docs.fargo.io/fargoScripting). Add the following script to that outline: <span class="spPermalink"><a href="/2014/05/19/#a1400531683">#</a></span></p>
+				<p><a name="a1400531808"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400531808">#</a></span></p>
+				<p><a name="a1400531811"></a><script src="https://gist.github.com/jkishner/61eb3becd4e507355b1b.js"></script><span class="spPermalink"><a href="/2014/05/19/#a1400531811">#</a></span></p>
+				<p><a name="a1400531914"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400531914">#</a></span></p>
+				<p><a name="a1400531916"></a>This script calls a [longer script](https://github.com/edavis/fargo-js/blob/master/rssReader.js). I suggest you copy [this entire page](https://cdn.rawgit.com/edavis/fargo-js/master/rssReader.js) to your clipboard, paste it into a new text file, title it `rssReader.js`, and save it somewhere in your Dropbox. Then make that file shareable and replace `DOMAIN.COM/rssReader.js` in the first script with that Dropbox URL. (Mine looks like `https://dl.dropboxusercontent.com/s/.../rssReader.js`.) <span class="spPermalink"><a href="/2014/05/19/#a1400531916">#</a></span></p>
+				<p><a name="a1400532119"></a>###How to Use the Script##<span class="spPermalink"><a href="/2014/05/19/#a1400532119">#</a></span></p>
+				<p><a name="a1400532154"></a>In any outline, type the name of a blog on a headline. Then all you need to do is add the RSS feed as the value of the `xmlUrl` attribute. You can use this script to easily add a feed:<span class="spPermalink"><a href="/2014/05/19/#a1400532154">#</a></span></p>
+				<p><a name="a1400532255"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400532255">#</a></span></p>
+				<p><a name="a1400532257"></a><script src="https://gist.github.com/jkishner/6afee7457be49c8fb6ea.js"></script><span class="spPermalink"><a href="/2014/05/19/#a1400532257">#</a></span></p>
+				<p><a name="a1400532258"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400532258">#</a></span></p>
+				<p><a name="a1400532260"></a>_You do not need to add the `type="rss"` attribute to this headline to make it work._<span class="spPermalink"><a href="/2014/05/19/#a1400532260">#</a></span></p>
+				<p><a name="a1400532411"></a>Then go to your scripts menubar, choose View Feed, and the items will show below the headline. If you open the headline of a title, you will see the description content for that feed. (If a publisher chooses to include the entire content of a post within the description tag, it will all be formatted as one long headline, so it is not ideal for reading, but rather for getting a sense of whether you want to read the full post at the publisher's site.)<span class="spPermalink"><a href="/2014/05/19/#a1400532411">#</a></span></p>
+				<p><a name="a1400532705"></a>###Reading the Full Post<span class="spPermalink"><a href="/2014/05/19/#a1400532705">#</a></span></p>
+				<p><a name="a1400532709"></a>If I want to read the full post, I make sure the cursor is on the headline of the post title, and I view it in Instapaper without saving it, or save it to Instapaper: <span class="spPermalink"><a href="/2014/05/19/#a1400532709">#</a></span></p>
+				<p><a name="a1400532802"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400532802">#</a></span></p>
+				<p><a name="a1400532857"></a><script src="https://gist.github.com/jkishner/28525eda7491ce3ec206.js"></script><span class="spPermalink"><a href="/2014/05/19/#a1400532857">#</a></span></p>
+				<p><a name="a1400532858"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400532858">#</a></span></p>
+				<p><a name="a1400532860"></a>Or I can just read the post in a new window:<span class="spPermalink"><a href="/2014/05/19/#a1400532860">#</a></span></p>
+				<p><a name="a1400533048"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400533048">#</a></span></p>
+				<p><a name="a1400533050"></a><script src="https://gist.github.com/jkishner/a9d8ec63f4ba06b03d11.js"></script><span class="spPermalink"><a href="/2014/05/19/#a1400533050">#</a></span></p>
+				<p><a name="a1400533051"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400533051">#</a></span></p>
+				<p><a name="a1400533055"></a>###A Keyboard Shortcut<span class="spPermalink"><a href="/2014/05/19/#a1400533055">#</a></span></p>
+				<p><a name="a1400533075"></a>I use a keyboard shortcut to trigger the View Feed script. If I could remember who wrote what I would provide credit, but unfortunately I don't remember -- I grabbed these ideas from one of the Fargo google groups and/or the community feed that existed when Fargo was first launched.<span class="spPermalink"><a href="/2014/05/19/#a1400533075">#</a></span></p>
+				<p><a name="a1400533170"></a>First, create a text file called `myVerbs.js` and put it in your /Apps/Fargo folder.<span class="spPermalink"><a href="/2014/05/19/#a1400533170">#</a></span></p>
+				<p><a name="a1400533211"></a>Put the following code in it:<span class="spPermalink"><a href="/2014/05/19/#a1400533211">#</a></span></p>
+				<p><a name="a1400533219"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400533219">#</a></span></p>
+				<p><a name="a1400533411"></a><script src="https://gist.github.com/jkishner/b3b632daed80afa28733.js"></script><span class="spPermalink"><a href="/2014/05/19/#a1400533411">#</a></span></p>
+				<p><a name="a1400533412"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400533412">#</a></span></p>
+				<p><a name="a1400533414"></a>(You can change `jeffVerbs` to `daveVerbs` or whatever you want as long as you use the name consistently. And make sure to replace domain.com with your shareable Dropbox URL.)<span class="spPermalink"><a href="/2014/05/19/#a1400533414">#</a></span></p>
+				<p><a name="a1400533436"></a>Then, in Fargo, click on your name at the top right, then choose Settings and go to the Code tab. Put this in the Startup field and hit Save:<span class="spPermalink"><a href="/2014/05/19/#a1400533436">#</a></span></p>
+				<p><a name="a1400533509"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400533509">#</a></span></p>
+				<p><a name="a1400533543"></a><script src="https://gist.github.com/jkishner/6725d16d9073935c8b27.js"></script><span class="spPermalink"><a href="/2014/05/19/#a1400533543">#</a></span></p>
+				<p><a name="a1400533545"></a>&nbsp;<span class="spPermalink"><a href="/2014/05/19/#a1400533545">#</a></span></p>
+				<p><a name="a1400533547"></a>After you reload Fargo, you should be able to have your cursor on a headline that has a feed and hit Control-E to trigger the View Feed script. (Note that this totally depends on whether there is a conflicting mapping on your computer. I use Chrome for Mac and it works for me.)<span class="spPermalink"><a href="/2014/05/19/#a1400533547">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="19/usingFargoAsAFeedReader.html">Using Fargo as a Feed Reader</a></div>
-		<p><a href="https://twitter.com/share?text=Using%20Fargo%20as%20a%20Feed%20Reader&amp;url=http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Tweet This Post</a></p>
-
-<p><a href="https://github.com/edavis">Eric Davis</a> has written a script to enable a user to read RSS feeds in <a href="http://fargo.io">Fargo</a>. The script does not beautifully render the contents of the description tag, but if you want a quick-and-dirty solution, this will work. For example, if you're compiling research in an outline and only plan to check a related RSS feed when you're working in that tab, you can just update the feed there.</p>
-
-<p>At bare minimum, <a href="http://docs.fargo.io/fargoScripting">you need a menubar.opml file</a>. Add the following script to that outline: </p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/61eb3becd4e507355b1b.js"></script>
-
-<p>&nbsp;</p>
-
-<p>This script calls a <a href="https://github.com/edavis/fargo-js/blob/master/rssReader.js">longer script</a>. I suggest you copy <a href="https://cdn.rawgit.com/edavis/fargo-js/master/rssReader.js">this entire page</a> to your clipboard, paste it into a new text file, title it <code>rssReader.js</code>, and save it somewhere in your Dropbox. Then make that file shareable and replace <code>DOMAIN.COM/rssReader.js</code> in the first script with that Dropbox URL. (Mine looks like <code>https://dl.dropboxusercontent.com/s/.../rssReader.js</code>.) </p>
-
-<h3>How to Use the Script</h3>
-
-<p>In any outline, type the name of a blog on a headline. Then all you need to do is add the RSS feed as the value of the <code>xmlUrl</code> attribute. You can use this script to easily add a feed:</p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/6afee7457be49c8fb6ea.js"></script>
-
-<p>&nbsp;</p>
-
-<p><em>You do not need to add the <code>type="rss"</code> attribute to this headline to make it work.</em></p>
-
-<p>Then go to your scripts menubar, choose View Feed, and the items will show below the headline. If you open the headline of a title, you will see the description content for that feed. (If a publisher chooses to include the entire content of a post within the description tag, it will all be formatted as one long headline, so it is not ideal for reading, but rather for getting a sense of whether you want to read the full post at the publisher's site.)</p>
-
-<h3>Reading the Full Post</h3>
-
-<p>If I want to read the full post, I make sure the cursor is on the headline of the post title, and I view it in Instapaper without saving it, or save it to Instapaper: </p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/28525eda7491ce3ec206.js"></script>
-
-<p>&nbsp;</p>
-
-<p>Or I can just read the post in a new window:</p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/a9d8ec63f4ba06b03d11.js"></script>
-
-<p>&nbsp;</p>
-
-<h3>A Keyboard Shortcut</h3>
-
-<p>I use a keyboard shortcut to trigger the View Feed script. If I could remember who wrote what I would provide credit, but unfortunately I don't remember -- I grabbed these ideas from one of the Fargo google groups and/or the community feed that existed when Fargo was first launched.</p>
-
-<p>First, create a text file called <code>myVerbs.js</code> and put it in your /Apps/Fargo folder.</p>
-
-<p>Put the following code in it:</p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/b3b632daed80afa28733.js"></script>
-
-<p>&nbsp;</p>
-
-<p>(You can change <code>jeffVerbs</code> to <code>daveVerbs</code> or whatever you want as long as you use the name consistently. And make sure to replace domain.com with your shareable Dropbox URL.)</p>
-
-<p>Then, in Fargo, click on your name at the top right, then choose Settings and go to the Code tab. Put this in the Startup field and hit Save:</p>
-
-<p>&nbsp;</p>
-
-<script src="https://gist.github.com/jkishner/6725d16d9073935c8b27.js"></script>
-
-<p>&nbsp;</p>
-
-<p>After you reload Fargo, you should be able to have your cursor on a headline that has a feed and hit Control-E to trigger the View Feed script. (Note that this totally depends on whether there is a conflicting mapping on your computer. I use Chrome for Mac and it works for me.)</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">05/19/14; 03:26:20 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="19/usingFargoAsAFeedReader.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/05/16/">Friday, May 16<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1400249404"></a><a class="aStreamTextLink" onclick="ecStream (4)">The Get Down @ Cielo</a><span class="spPermalink"><a href="/2014/05/16/#a1400249404">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel4">
+				<p><a name="a1400252639"></a><a href="https://twitter.com/share?text=The%20Get%20Down%20%40%20Cielo&url=http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/05/16/#a1400252639">#</a></span></p>
+				<p><a name="a1400250462"></a><iframe src="http://instagram.com/p/oBLEl3JNEJ/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe><span class="spPermalink"><a href="/2014/05/16/#a1400250462">#</a></span></p>
+				<p><a name="a1400249561"></a>I haven't "clubbed" for a long time -- I don't like stay up super-late (even on weekends) and dance clubs are not really my scene. Mostly I stay within my [5Rhythms][1] cocoon, regularly attending Tuesday and Friday classes in Manhattan. <span class="spPermalink"><a href="/2014/05/16/#a1400249561">#</a></span></p>
+				<p><a name="a1400249694"></a>However, I have followed [Tasha Blank][2] for years as she's DJ'd at more holistic spaces in the city. She started with _Get Your Dance On_ first at [Brooklyn Bowl][3] and then at various yoga studios, and over the last year she has been DJing at _The Get Down_ at [Cielo][4]. <span class="spPermalink"><a href="/2014/05/16/#a1400249694">#</a></span></p>
+				<p><a name="a1400249719"></a>Cielo is an EDM dance club in the meatpacking district, where the doors don't even open until 10pm. But _The Get Down_ starts at 7, so that you can enjoy the clubbing experience and still get a decent night of sleep before going to your 9-5 job (if that's your lifestyle). But unlike the yoga studio dance experience, at Cielo you can drink (in fact you need to be at least 21 to enter) and you have to wear shoes.<span class="spPermalink"><a href="/2014/05/16/#a1400249719">#</a></span></p>
+				<p><a name="a1400250173"></a>I showed up shortly before 7 as the 1/2-hour pre-dance meditation was wrapping up. I felt in my comfort zone because a great number of people at the event were familiar faces from 5Rhythms classes or other dances hosted by Tasha. The music was great -- other DJs were Soultek and Sascha Lewis, and they were accompanied by live violinist [Jourdan Brandt](https://www.facebook.com/jourdan.brandt) and vocalists (for lack of a better word) Akil and [Elana Meta][5].<span class="spPermalink"><a href="/2014/05/16/#a1400250173">#</a></span></p>
+				<p><a name="a1400250779"></a>The floor got more progressively packed as time passed (it's not terribly large to begin with) so I danced at a peripheral location for a while and then edged myself back in. And then the vibe shifted. There were people on the dance floor holding drinks in glasses. (Maybe I just haven't been to a dance club in ages, but who brings glass onto a dance floor?) One glass broke and a few people helped pick up shards. And then more and more "civilians" started entering the space. <span class="spPermalink"><a href="/2014/05/16/#a1400250779">#</a></span></p>
+				<p><a name="a1400250957"></a>I know I am probably just being judgmental, but it seems to me that there are Dancers and then there are Muggles. Anyone who regularly goes to 5R is _to me_ a dancer. He is not dependent on alcohol to allow himself to move freely. She doesn't just stand in a circle on the dance floor with her friends. As more and more "normals" joined the floor, I felt less and less comfortable. (To begin with, I don't feel terribly safe around the combination of "traditional males" and alcohol consumption.)<span class="spPermalink"><a href="/2014/05/16/#a1400250957">#</a></span></p>
+				<p><a name="a1400251565"></a>Another element of the evening that had its pluses and minuses was when the same subset of people would take turns dancing in the middle of a circle, usually doing B-boy or hip hop moves. I'm all for spectacle, but after a while it just seems like a form of grandstanding, not to mention disruptive when there's not much space on the dance floor to begin with.<span class="spPermalink"><a href="/2014/05/16/#a1400251565">#</a></span></p>
+				<p><a name="a1400251804"></a>All in all, I danced for a good 2 1/2 hours to excellent music around many people from my dance community, so it was overall a positive experience. My assessment is that if it were not in a real dance club, most of the negatives described above would not have been present. But I can see how _The Get Down_ reaches that "happy place" for dancers who miss the clubbing experience but don't want to be up until 3am to do it.<span class="spPermalink"><a href="/2014/05/16/#a1400251804">#</a></span></p>
+				<p><a name="a1400249650"></a>[1]: http://www.5rhythms.com/<span class="spPermalink"><a href="/2014/05/16/#a1400249650">#</a></span></p>
+				<p><a name="a1400249721"></a>[2]: http://www.tashablank.com/<span class="spPermalink"><a href="/2014/05/16/#a1400249721">#</a></span></p>
+				<p><a name="a1400252046"></a>[3]: http://www.brooklynbowl.com/<span class="spPermalink"><a href="/2014/05/16/#a1400252046">#</a></span></p>
+				<p><a name="a1400252022"></a>[4]: http://www.cieloclub.com/<span class="spPermalink"><a href="/2014/05/16/#a1400252022">#</a></span></p>
+				<p><a name="a1400250713"></a>[5]: http://elanameta.com/<span class="spPermalink"><a href="/2014/05/16/#a1400250713">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="16/theGetDownCielo.html">The Get Down @ Cielo</a></div>
-		<p><a href="https://twitter.com/share?text=The%20Get%20Down%20%40%20Cielo&amp;url=http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">Tweet This Post</a></p>
-
-<iframe src="http://instagram.com/p/oBLEl3JNEJ/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-
-<p>I haven't "clubbed" for a long time -- I don't like stay up super-late (even on weekends) and dance clubs are not really my scene. Mostly I stay within my <a href="http://www.5rhythms.com/">5Rhythms</a> cocoon, regularly attending Tuesday and Friday classes in Manhattan. </p>
-
-<p>However, I have followed <a href="http://www.tashablank.com/">Tasha Blank</a> for years as she's DJ'd at more holistic spaces in the city. She started with <em>Get Your Dance On</em> first at <a href="http://www.brooklynbowl.com/">Brooklyn Bowl</a> and then at various yoga studios, and over the last year she has been DJing at <em>The Get Down</em> at <a href="http://www.cieloclub.com/">Cielo</a>. </p>
-
-<p>Cielo is an EDM dance club in the meatpacking district, where the doors don't even open until 10pm. But <em>The Get Down</em> starts at 7, so that you can enjoy the clubbing experience and still get a decent night of sleep before going to your 9-5 job (if that's your lifestyle). But unlike the yoga studio dance experience, at Cielo you can drink (in fact you need to be at least 21 to enter) and you have to wear shoes.</p>
-
-<p>I showed up shortly before 7 as the 1/2-hour pre-dance meditation was wrapping up. I felt in my comfort zone because a great number of people at the event were familiar faces from 5Rhythms classes or other dances hosted by Tasha. The music was great -- other DJs were Soultek and Sascha Lewis, and they were accompanied by live violinist <a href="https://www.facebook.com/jourdan.brandt">Jourdan Brandt</a> and vocalists (for lack of a better word) Akil and <a href="http://elanameta.com/">Elana Meta</a>.</p>
-
-<p>The floor got more progressively packed as time passed (it's not terribly large to begin with) so I danced at a peripheral location for a while and then edged myself back in. And then the vibe shifted. There were people on the dance floor holding drinks in glasses. (Maybe I just haven't been to a dance club in ages, but who brings glass onto a dance floor?) One glass broke and a few people helped pick up shards. And then more and more "civilians" started entering the space. </p>
-
-<p>I know I am probably just being judgmental, but it seems to me that there are Dancers and then there are Muggles. Anyone who regularly goes to 5R is <em>to me</em> a dancer. He is not dependent on alcohol to allow himself to move freely. She doesn't just stand in a circle on the dance floor with her friends. As more and more "normals" joined the floor, I felt less and less comfortable. (To begin with, I don't feel terribly safe around the combination of "traditional males" and alcohol consumption.)</p>
-
-<p>Another element of the evening that had its pluses and minuses was when the same subset of people would take turns dancing in the middle of a circle, usually doing B-boy or hip hop moves. I'm all for spectacle, but after a while it just seems like a form of grandstanding, not to mention disruptive when there's not much space on the dance floor to begin with.</p>
-
-<p>All in all, I danced for a good 2 1/2 hours to excellent music around many people from my dance community, so it was overall a positive experience. My assessment is that if it were not in a real dance club, most of the negatives described above would not have been present. But I can see how <em>The Get Down</em> reaches that "happy place" for dancers who miss the clubbing experience but don't want to be up until 3am to do it.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">05/16/14; 09:10:04 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="16/theGetDownCielo.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/05/14/">Wednesday, May 14<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1400074303"></a><a class="aStreamTextLink" onclick="ecStream (5)">Homelessness and the NYC Subway</a><span class="spPermalink"><a href="/2014/05/14/#a1400074303">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel5">
+				<p><a name="a1400075033"></a>![](https://dl.dropboxusercontent.com/s/g51w27k5rhoqykq/4418277687_e2de481794_z.jpg)<span class="spPermalink"><a href="/2014/05/14/#a1400075033">#</a></span></p>
+				<p><a name="a1400074850"></a>_Photo credit: [Antonio Rosario](https://www.flickr.com/photos/amrosario/) via [Creative Commons license](https://creativecommons.org/licenses/by-nc-sa/2.0/)_<span class="spPermalink"><a href="/2014/05/14/#a1400074850">#</a></span></p>
+				<p><a name="a1400074314"></a>I live in Brooklyn and don't own a car. I like that I can travel throughout the city without one, and I feel good that my carbon footprint is smaller than that of a car owner. However, the subway can be an unpleasant experience.<span class="spPermalink"><a href="/2014/05/14/#a1400074314">#</a></span></p>
+				<p><a name="a1400074389"></a>Last night, someone was pissing right on the subway platform (at a column), in front of anyone who happened to be around. And this morning the smell of the subway car I entered was so offensive (a homeless person was sitting at one end) that I debated whether to change cars at the next stop even though this leg of my commute was only two stops.<span class="spPermalink"><a href="/2014/05/14/#a1400074389">#</a></span></p>
+				<p><a name="a1400074505"></a>I know Mayor de Blasio has a grand plan for affordable housing, and I understand that -- for a homeless person -- being "underground" is probably much safer than being on the streets. But when many people are sharing a small space, the actions (or scent) of a single person can mar everyone else's experience. <span class="spPermalink"><a href="/2014/05/14/#a1400074505">#</a></span></p>
+				<p><a name="a1400074630"></a>I know I have it much better than the people about which I am complaining, but I wish the city would do something about it.<span class="spPermalink"><a href="/2014/05/14/#a1400074630">#</a></span></p>
+				<p><a name="a1400074658"></a>End rant. <span class="spPermalink"><a href="/2014/05/14/#a1400074658">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="14/homelessnessAndTheNycSubway.html">Homelessness and the NYC Subway</a></div>
-		<p><img src="https://dl.dropboxusercontent.com/s/g51w27k5rhoqykq/4418277687_e2de481794_z.jpg" alt="" title="" /></p>
-
-<p><em>Photo credit: <a href="https://www.flickr.com/photos/amrosario/">Antonio Rosario</a> via <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons license</a></em></p>
-
-<p>I live in Brooklyn and don't own a car. I like that I can travel throughout the city without one, and I feel good that my carbon footprint is smaller than that of a car owner. However, the subway can be an unpleasant experience.</p>
-
-<p>Last night, someone was pissing right on the subway platform (at a column), in front of anyone who happened to be around. And this morning the smell of the subway car I entered was so offensive (a homeless person was sitting at one end) that I debated whether to change cars at the next stop even though this leg of my commute was only two stops.</p>
-
-<p>I know Mayor de Blasio has a grand plan for affordable housing, and I understand that -- for a homeless person -- being "underground" is probably much safer than being on the streets. But when many people are sharing a small space, the actions (or scent) of a single person can mar everyone else's experience. </p>
-
-<p>I know I have it much better than the people about which I am complaining, but I wish the city would do something about it.</p>
-
-<p>End rant. </p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">05/14/14; 08:31:43 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="14/homelessnessAndTheNycSubway.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/05/09/">Friday, May  9<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1399492182"></a><a class="aStreamTextLink" onclick="ecStream (6)">Morning Gloryville NYC</a><span class="spPermalink"><a href="/2014/05/09/#a1399492182">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel6">
+				<p><a name="a1399492186"></a>![](https://dl.dropbox.com/s/vwkj1wq72824fyc/10292525_1418109595126932_8232074187052726871_n.jpg)<span class="spPermalink"><a href="/2014/05/09/#a1399492186">#</a></span></p>
+				<p><a name="a1399493865"></a>This is me dancing there in the back (wearing the elbow compression band) at an event called [Morning Gloryville NYC](https://www.facebook.com/morninggloryvillenyc). It's like clubbing, but from 6:30-10:30 am, and without alcohol. <span class="spPermalink"><a href="/2014/05/09/#a1399493865">#</a></span></p>
+				<p><a name="a1399574518"></a>[Here's a video on Instagram](http://instagram.com/p/nssgogRsiA/) and the [mp4](https://dl.dropbox.com/s/cul7b2g1g1kv6kg/10353858_502674779834031_105571347_n.mp4) or just view it below:<span class="spPermalink"><a href="/2014/05/09/#a1399574518">#</a></span></p>
+				<p><a name="a1400161350"></a><iframe src="http://instagram.com/p/nssgogRsiA/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe><span class="spPermalink"><a href="/2014/05/09/#a1400161350">#</a></span></p>
+				<p><a name="a1399574737"></a>###Media Coverage<span class="spPermalink"><a href="/2014/05/09/#a1399574737">#</a></span></p>
+				<p><a name="a1399574741"></a>[The Daily Beast](http://www.thedailybeast.com/articles/2014/05/08/the-drug-free-breakfast-rave-is-new-york-s-latest-exercise-trend.html)<span class="spPermalink"><a href="/2014/05/09/#a1399574741">#</a></span></p>
+				<p><a name="a1399574773"></a>[Metro](http://www.metro.us/newyork/news/local/2014/05/07/dancers-morning-gloryville-sober-rave-williamsburg-high-life/)<span class="spPermalink"><a href="/2014/05/09/#a1399574773">#</a></span></p>
+				<p><a name="a1399902569"></a>[Shape](http://www.shape.com/blogs/shape-your-life/morning-gloryville-rave-your-way-day)<span class="spPermalink"><a href="/2014/05/09/#a1399902569">#</a></span></p>
+				<p><a name="a1400507215"></a>[Wall Street Journal](http://online.wsj.com/news/articles/SB10001424052702303627504579557751834704592?mg=reno64-wsj&url=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424052702303627504579557751834704592.html)<span class="spPermalink"><a href="/2014/05/09/#a1400507215">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="09/morningGloryNyc.html">Morning Gloryville NYC</a></div>
-		<p><img src="https://dl.dropbox.com/s/vwkj1wq72824fyc/10292525_1418109595126932_8232074187052726871_n.jpg" alt="" title="" /></p>
-
-<p>This is me dancing there in the back (wearing the elbow compression band) at an event called <a href="https://www.facebook.com/morninggloryvillenyc">Morning Gloryville NYC</a>. It's like clubbing, but from 6:30-10:30 am, and without alcohol. </p>
-
-<p><a href="http://instagram.com/p/nssgogRsiA/">Here's a video on Instagram</a> and the <a href="https://dl.dropbox.com/s/cul7b2g1g1kv6kg/10353858_502674779834031_105571347_n.mp4">mp4</a> or just view it below:</p>
-
-<iframe src="http://instagram.com/p/nssgogRsiA/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-
-<h3>Media Coverage</h3>
-
-<p><a href="http://www.thedailybeast.com/articles/2014/05/08/the-drug-free-breakfast-rave-is-new-york-s-latest-exercise-trend.html">The Daily Beast</a></p>
-
-<p><a href="http://www.metro.us/newyork/news/local/2014/05/07/dancers-morning-gloryville-sober-rave-williamsburg-high-life/">Metro</a></p>
-
-<p><a href="http://www.shape.com/blogs/shape-your-life/morning-gloryville-rave-your-way-day">Shape</a></p>
-
-<p><a href="http://online.wsj.com/news/articles/SB10001424052702303627504579557751834704592?mg=reno64-wsj&amp;url=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424052702303627504579557751834704592.html">Wall Street Journal</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">05/07/14; 02:49:42 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="09/morningGloryNyc.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/05/08/">Thursday, May  8<span class="spDateYearPart">, 2014</span></a></div>
 			</div>
 		</div>
+	</div>
 
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Tue, Jul  8, 2014 at 11:17 AM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlWed, 07 May 2014 19:49:42 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Wednesday, May  7, 2014 at  2:49 PM</span>.</div>
-					</div>
+				</div>
+			<div class="divFargoStreamFooter">
+				<div>&copy; 2014 Jeffrey Kishner.</div>
+				<div>Last update: Thu, Sep 25, 2014 at  2:40 PM.</div>
+				<div><i></i></div>
+				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 				</div>
 			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

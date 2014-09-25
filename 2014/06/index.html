@@ -2,26 +2,25 @@
 <html>
 	<head>
 		<title>June 2014</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Tue, 08 Jul 2014 16:17:01 GMT",
-    "opmlExpansionState": "1,2,3,23",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:40:26 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,18,30,31,32,52,53,54,66",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,14 +35,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "Only steal from the best.",
+    "type": "stream",
+    "slogan": "Ask not what the Internet can do for you...",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,6 +66,8 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "June 2014",
     "created": "Mon, 16 Jun 2014 14:21:52 GMT",
     "description": "",
@@ -88,75 +90,612 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Jul 08 2014 12:17:03 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:40:38 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/06.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
+		
+		
+		<meta property="og:url" content="http://blog.jeffreykishner.com/2014/06.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="June 2014" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="Jeffrey Kishner" />
+		
+		<meta name="twitter:card" value="summary">
+		<meta name="twitter:title" content="June 2014" />
+		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2014/06.html" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content=""/>
+		<meta name="twitter:site" value="kishner">
+		
 		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageContainer {
+				}
+			.navbar {
+				font-size: 17px;
+				line-height: 140%;
+				}
+			.navbar-inner {
+				min-height: 60px;
+				}
+			.navbar .nav > li > a {
+				padding-top: 17px;
+				}
+			.navbar .brand {
+				padding-top: 13px;
+				padding-left: 25px;
+				}
+			.navbar-container {
+				width: 1000px !important;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divStreamDayText {
+				font-family: 'Vollkorn', serif;
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divMapCanvas {
+				height: 100%; 
+				width: 100%; 
+				position: absolute; 
+				right: 0; 
+				z-index: -10;
+				}
+			.divTextInFrontOfImage {
+				background-color: whitesmoke; 
+				opacity: .98;
+				padding: 1.5em;
+				border:2px solid gainsboro;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				font-family: Ubuntu;
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: 'Ubuntu', sans-serif;
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divFargoStreamComments {
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				margin-top: 10px;
+				}
+			.divDisqusComments { 
+				margin-top: 5px !important;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.divPageContainer {
+					}
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divTextContainer {
+					margin-top: -40px;
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
+					}
+				.divPictureViewer .modal {
+					left: auto;
+					width: auto;
+					margin-left: auto;
+					margin-right: auto;
+					}
+				.divLevel {
+					margin-left: 0;
 					}
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<style>
-	.divFargoIndex .aDocTitleOnIndexPage {
-		font-size: 33.75px !important;
-		line-height: 42px !important;
-		color: #0088cc !important;
-		}
-	.divTitleDescription { display: none; }
-	.icon-star:before { content: "\f0c1"; }
-	.greenText {
-		color: green !important;
-		font-weight: bold !important;
-		}
-	ul {
-		list-style-type: none;
-		}
-	.divByline {
-		visibility: hidden;
-		height: 0px;
-		}
-	</style>
-<script>
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				.divPageContainer {
+					}
+				.navbar .nav > li > a {
+					padding-right: 7px;
+					}
+				}
+			</style>
+		
+		<script>
+			var flSetupDisqusThread = false;
+			
+			var colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function closeDisqusThread () {
+				$("#idDisqusDialog").modal ("hide");
+				}
+			function openDisqusThread () {
+				function getCommentHtml () {
+					var id = "", hidingCode  = "", visibleStyle = "";
+					if (pagetable.opmlUrl != undefined) {
+						id += pagetable.opmlUrl;
+						}
+					if (pagetable.created != undefined) {
+						id += pagetable.created;
+						}
+					if (id.length > 0) {
+						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
+						}
+					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
+					return (code.replace (/&lt;/g,'<'));
+					}
+				if (!flSetupDisqusThread) {
+					var s = 
+						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
+					$("body").prepend (s)
+					flSetupDisqusThread = true;
+					}
+				$("#idDisqusCode").html (getCommentHtml ());
+				$("#idDisqusDialog").modal ("show");
+				}
+			
+			
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
+				var mapCanvas = document.getElementById (idmap);
+				if (mapCanvas != null) {
+					var mapOptions = {
+						center: new google.maps.LatLng (maplat, maplong),
+						zoom: Number (mapzoom),
+						panControl: false,
+						zoomControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl :false,
+						overviewMapControl: false,
+						rotateControl: false,
+						mapTypeId: maptype
+						};
+					var map = new google.maps.Map (mapCanvas, mapOptions);
+					}
+				}
+			
+			function turnOffImages () { //5/18/14 by DW
+				$(".divStreamDayImage").css ("background-image", "");
+				localStorage.flTurnImagesOff = "true";
+				}
+			function turnOffImagesCommand () {
+				confirmDialog ("Turn off images?", function () {
+					localStorage.flTurnImagesOff = "true";
+					location.reload (true);
+					});
+				}
+			function turnOnImagesCommand () {
+				confirmDialog ("Turn images on?", function () {
+					localStorage.flTurnImagesOff = "false"; 
+					location.reload (true);
+					});
+				}
+			
+			function startup () {
+				var streamVersion = 1; //5/20/14 by DW
+				var flPlainOutline; //5/20/14 by DW
+				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
+				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
+				
+				//set streamVersion -- 5/20/14 by DW
+					if (pagetable.streamVersion != undefined) {
+						var x = parseInt (pagetable.streamVersion);
+						if (!isNaN (x)) {
+							streamVersion = x;
+							}
+						}
+				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
+					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
+						localStorage.removeItem ("flImagesOff")
+						}
+					if (localStorage.flTurnImagesOff == undefined) {
+						if (streamVersion > 1) {
+							localStorage.flTurnImagesOff = "false";
+							}
+						}
+					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
+				//every day gets a background color, image, map or -- ??
+					if (!flPlainOutline) {
+						var ixcolorarray = 0, ctmaps = 0;
+						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
+							var flSetColor = true;
+							
+							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
+								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
+								flSetColor = false;
+								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
+								
+								//set up map parameters
+									maplat = $(this).data ("maplatitude");
+									if (maplat == undefined) {
+										maplat = pagetable.mapLatitude;
+										}
+									maplong = $(this).data ("maplongitude");
+									if (maplong == undefined) {
+										maplong = pagetable.mapLongitude;
+										}
+									maptype = $(this).data ("maptype");
+									if (maptype == undefined) {
+										maptype = pagetable.mapType;
+										}
+									mapzoom = $(this).data ("mapzoom");
+									if (mapzoom == undefined) {
+										mapzoom = pagetable.mapZoom;
+										}
+								
+								initMap (idmap, maplat, maplong, maptype, mapzoom);
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayImage") {
+										flSetColor = false;
+										}
+									});
+								}
+							
+							if (flSetColor) {
+								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayText") {
+										var flset = false;
+										$(this).children ("div").each (function () {
+											if (!flset) {
+												this.className = "divTextInFrontOfImage"; //set classname of first child element
+												}
+											flset = true;
+											});
+										}
+									});
+								}
+							});
+						}
+				//highlight and expand the #hashed element, if present
+					var hash = window.location.hash;
+					if (hash.length > 0) {
+						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
+							$(this).children ("a").each (function () { //look at first-level children that are anchors
+								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
+									$(this).parents ("div").css ("display", "block"); //make all parents visible
+									$(this).parents ("p").css ("background-color", hightlightcolor);
+									
+									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
+									
+									
+									var flexpand = true;
+									$(this).parents ("div").each (function () {
+										if (flexpand) {
+											$(this).children ("a").each (function () {
+												$(this).css ("background-color", hightlightcolor);
+												
+												$(this).prev ().find ("i").each (function () {
+													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
+														$(this).attr ("class", "fa fa-caret-down");
+														}
+													});
+												
+												});
+											$(this).next ("div").css ("display", "block"); //the divLevel item
+											flexpand = false;
+											}
+										});
+									}
+								});
+							});
+						}
+				//handle fixed menu
+					if (getBoolean (pagetable.flFixedMenu)) {
+						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
+						if (flhavenav) {
+							document.body.style.paddingTop = "60px";
+							if (hash.length > 0) {
+								$(document).one ("scroll", function () {
+									var $el = $(this), top = $el.scrollTop ();
+									$el.scrollTop (top - 125);
+									});
+								}
+							}
+						}
+				//set the site title -- 3/23/14 by DW
+					if (pagetable.menuTitle != undefined) {
+						var pagename;
+						
+						if (highlightedtitle != undefined) { //5/11/14 by DW
+							pagename = highlightedtitle;
+							}
+						else {
+							if (pagetable.path.length == 0) {
+								pagename = "Home";
+								}
+							else {
+								pagename = pagetable.text;
+								}
+							}
+						
+						document.title = pagetable.menuTitle + ": [" + pagename + "]";
+						}
+				//set the color of each text frame -- 5/11/14 by DW
+					$(".divTextInFrontOfImage").each (function () {
+						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
+						});
+				
+				//turn on images for v2 or greater -- 5/20/14 by DW
+					if (streamVersion > 1) { 
+						if (flPlainOutline) {
+							$(".aStreamDayLink").each (function () {
+								$(this).css ("font-size", "28px");
+								});
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								$(this).css ("margin-top", "70px");
+								});
+							$(".divStreamDayText").each (function () {
+								$(this).css ("padding", "0");
+								});
+							$(".divTextContainer").each (function () {
+								$(this).css ("margin-bottom", "125px");
+								});
+							}
+						else {
+							$(".divStreamDay").each (function () {
+								var url = $(this).data ("backgroundimage");
+								if (url != undefined) {
+									$(this).css ("background-image", "url('" + url + "')");
+									}
+								
+								$(this).children (".divStreamDayText").children ().each (function () {
+									this.className = "divTextInFrontOfImage"; 
+									});
+								
+								});
+							}
+						}
+				
+				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
+					if (streamVersion == 1) { 
+						if (flPlainOutline) {
+							turnOffImages ();
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								});
+							}
+						}
+				}
+			</script>
+		
+		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -167,20 +706,20 @@
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-		
+		<div class="divPageContainer">
+			
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
+						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
+						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
 						<li><a href="/2014/05/" target="_blank">May 2014</a></li>
 						<li><a href="/2014/04/" target="_blank">Apr 2014</a></li>
@@ -196,31 +735,31 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/14/homelessnessAndTheNycSubway.html" target="_blank">Homelessness and the NYC Subway</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/09/morningGloryNyc.html" target="_blank">Morning Gloryville NYC</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/25/whiteGuysAndAlterBridge.html" target="_blank">White Guys and Alter Bridge </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -230,299 +769,209 @@
 			</div>
 		</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">June 2014</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></div>
-		<p><a href="https://twitter.com/share?text=Desktop%20Bookmarklet%20to%20Send%20Email%20via%20Fastmail%20With%20Document%20Title%20and%20URL&amp;url=http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Tweet This Post</a></p>
-
-<p>If you're a <a href="http://fastmail.fm">Fastmail.fm</a> user, you can use this bookmarklet to automatically compose an email to your favorite person in Fastmail's web interface. The subject line is the title of the web page, and the body includes the link. Then just hit Cmd-Return to send.</p>
-
-<pre><code>javascript:window.location='https://www.fastmail.fm/action/compose/?to=username@domain.com&amp;subject='+encodeURIComponent(document.title)+'&amp;body='+encodeURIComponent(location.href)
-</code></pre>
-
-<p>(Make sure to replace <code>username@domain.com</code> with a working email address.)</p>
-
-<p><strong>Reference:</strong> <a href="http://fastmail.wikia.com/wiki/Mailto_url">Fastmail Wiki</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/30/14; 11:15:07 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html"><i class="fa fa-star"></i></a></div>
+			<div class="divTextContainer" id="idTextContainer">
+				<div class="divStreamDay" >
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/06/30/">Monday, June 30<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1404144907"></a><a class="aStreamTextLink" onclick="ecStream (0)">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a><span class="spPermalink"><a href="/2014/06/30/#a1404144907">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel0">
+				<p><a name="a1404145157"></a><a href="https://twitter.com/share?text=Desktop%20Bookmarklet%20to%20Send%20Email%20via%20Fastmail%20With%20Document%20Title%20and%20URL&url=http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/30/#a1404145157">#</a></span></p>
+				<p><a name="a1404144969"></a>If you're a [Fastmail.fm](http://fastmail.fm) user, you can use this bookmarklet to automatically compose an email to your favorite person in Fastmail's web interface. The subject line is the title of the web page, and the body includes the link. Then just hit Cmd-Return to send.<span class="spPermalink"><a href="/2014/06/30/#a1404144969">#</a></span></p>
+				<p><a name="a1404144942"></a>    javascript:window.location='https://www.fastmail.fm/action/compose/?to=username@domain.com&subject='+encodeURIComponent(document.title)+'&body='+encodeURIComponent(location.href)<span class="spPermalink"><a href="/2014/06/30/#a1404144942">#</a></span></p>
+				<p><a name="a1404145171"></a>(Make sure to replace `username@domain.com` with a working email address.)<span class="spPermalink"><a href="/2014/06/30/#a1404145171">#</a></span></p>
+				<p><a name="a1404145124"></a>**Reference:** [Fastmail Wiki](http://fastmail.wikia.com/wiki/Mailto_url)<span class="spPermalink"><a href="/2014/06/30/#a1404145124">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1404137022"></a><a class="aStreamTextLink" onclick="ecStream (1)">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a><span class="spPermalink"><a href="/2014/06/30/#a1404137022">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel1">
+				<p><a name="a1404138844"></a><a href="https://twitter.com/share?text=Automate%20a%20YouTube%20Embed%20Code%20on%20Your%20iOS%20Device%20With%20Drafts%2C%20TextTool%2C%20and%20Launch%20Center%20Pro&url=http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/30/#a1404138844">#</a></span></p>
+				<p><a name="a1404137154"></a>Over the weekend I wanted to embed a video on my blog while on my iPad. The mobile YouTube site did not appear to offer an embed code, so I created a few actions to automate the process.<span class="spPermalink"><a href="/2014/06/30/#a1404137154">#</a></span></p>
+				<p><a name="a1404138287"></a>As an example, here is the starting URL `https://m.youtube.com/watch?v=38lY-3g6mn8`.<span class="spPermalink"><a href="/2014/06/30/#a1404138287">#</a></span></p>
+				<p><a name="a1404137207"></a>This browser bookmarklet -- I call it "TextTool Split" -- imports the URL into <a href="http://agiletortoise.com/drafts/">Drafts</a> and triggers the "split" action:<span class="spPermalink"><a href="/2014/06/30/#a1404137207">#</a></span></p>
+				<p><a name="a1404137328"></a>    javascript:window.location='drafts://x-callback-url/create?action=split&text='+encodeURIComponent(location.href)<span class="spPermalink"><a href="/2014/06/30/#a1404137328">#</a></span></p>
+				<p><a name="a1404137334"></a>The "split" URL action sends the URL to <a href="http://blackfoggames.com/TextTool/">TextTool</a> and splits the URL at the `=`. <span class="spPermalink"><a href="/2014/06/30/#a1404137334">#</a></span></p>
+				<p><a name="a1404137467"></a>    texttool://x-callback-url/transform?method=split&delimiter=%3D&text=[[draft]]&x-success={{drafts://x-callback-url/create?text=[[output]]&action=line2-youtube}}<span class="spPermalink"><a href="/2014/06/30/#a1404137467">#</a></span></p>
+				<p><a name="a1404137440"></a>Import it [here](drafts://x-callback-url/import_action?type=URL&name=split&url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Fmethod%3Dsplit%26delimiter%3D%253D%26text%3D%5B%5Bdraft%5D%5D%26x-success%3D%7B%7Bdrafts%3A%2F%2Fx-callback-url%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dline2-youtube%7D%7D) into Drafts.<span class="spPermalink"><a href="/2014/06/30/#a1404137440">#</a></span></p>
+				<p><a name="a1404138533"></a>The above action takes the original URL and creates a new draft:<span class="spPermalink"><a href="/2014/06/30/#a1404138533">#</a></span></p>
+				<p><a name="a1404138571"></a>    https://m.youtube.com/watch?v<span class="spPermalink"><a href="/2014/06/30/#a1404138571">#</a></span></p>
+				<p><a name="a1404138577"></a>    38lY-3g6mn8<span class="spPermalink"><a href="/2014/06/30/#a1404138577">#</a></span></p>
+				<p><a name="a1404138580"></a>It then triggers the `line2-youtube` action, which takes `line 2`, sticks it in the YouTube embed code, and saves all of that to the clipboard with the help of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>:<span class="spPermalink"><a href="/2014/06/30/#a1404138580">#</a></span></p>
+				<p><a name="a1404138765"></a>    launch://clipboard?text={{<iframe width="560" height="315" src="//www.youtube.com/embed/[[line|2]]" frameborder="0" allowfullscreen></iframe>}}<span class="spPermalink"><a href="/2014/06/30/#a1404138765">#</a></span></p>
+				<p><a name="a1404138735"></a>Import it [here](drafts://x-callback-url/import_action?type=URL&name=line2-youtube&url=launch%3A%2F%2Fclipboard%3Ftext%3D%7B%7B%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22%2F%2Fwww.youtube.com%2Fembed%2F%5B%5Bline%7C2%5D%5D%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%7D%7D) into Drafts.<span class="spPermalink"><a href="/2014/06/30/#a1404138735">#</a></span></p>
+				<p><a name="a1404138789"></a>The result will be that the following is added to your clipboard, and you can paste it into your blog CMS:<span class="spPermalink"><a href="/2014/06/30/#a1404138789">#</a></span></p>
+				<p><a name="a1404138808"></a>    <iframe width="560" height="315" src="//www.youtube.com/embed/38lY-3g6mn8" frameborder="0" allowfullscreen></iframe><span class="spPermalink"><a href="/2014/06/30/#a1404138808">#</a></span></p>
+				<p><a name="a1404138469"></a> This action presumes that there are no additional paramaters in the URL. If your URL has something like `&list=` after the video ID, you will either have to manually remove that string or create an extra Drafts/TextTool action to split the results of `line 2` at the `&` and to take `line 1` of _that_ output.<span class="spPermalink"><a href="/2014/06/30/#a1404138469">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></div>
-		<p><a href="https://twitter.com/share?text=Automate%20a%20YouTube%20Embed%20Code%20on%20Your%20iOS%20Device%20With%20Drafts%2C%20TextTool%2C%20and%20Launch%20Center%20Pro&amp;url=http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Tweet This Post</a></p>
-
-<p>Over the weekend I wanted to embed a video on my blog while on my iPad. The mobile YouTube site did not appear to offer an embed code, so I created a few actions to automate the process.</p>
-
-<p>As an example, here is the starting URL <code>https://m.youtube.com/watch?v=38lY-3g6mn8</code>.</p>
-
-<p>This browser bookmarklet -- I call it "TextTool Split" -- imports the URL into <a href="http://agiletortoise.com/drafts/">Drafts</a> and triggers the "split" action:</p>
-
-<pre><code>javascript:window.location='drafts://x-callback-url/create?action=split&amp;text='+encodeURIComponent(location.href)
-</code></pre>
-
-<p>The "split" URL action sends the URL to <a href="http://blackfoggames.com/TextTool/">TextTool</a> and splits the URL at the <code>=</code>. </p>
-
-<pre><code>texttool://x-callback-url/transform?method=split&amp;delimiter=%3D&amp;text=[[draft]]&amp;x-success={{drafts://x-callback-url/create?text=[[output]]&amp;action=line2-youtube}}
-</code></pre>
-
-<p>Import it <a href="drafts://x-callback-url/import_action?type=URL&amp;name=split&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Fmethod%3Dsplit%26delimiter%3D%253D%26text%3D%5B%5Bdraft%5D%5D%26x-success%3D%7B%7Bdrafts%3A%2F%2Fx-callback-url%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dline2-youtube%7D%7D">here</a> into Drafts.</p>
-
-<p>The above action takes the original URL and creates a new draft:</p>
-
-<pre><code>https://m.youtube.com/watch?v
-
-38lY-3g6mn8
-</code></pre>
-
-<p>It then triggers the <code>line2-youtube</code> action, which takes <code>line 2</code>, sticks it in the YouTube embed code, and saves all of that to the clipboard with the help of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>:</p>
-
-<pre><code>launch://clipboard?text={{&lt;iframe width="560" height="315" src="//www.youtube.com/embed/[[line|2]]" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;}}
-</code></pre>
-
-<p>Import it <a href="drafts://x-callback-url/import_action?type=URL&amp;name=line2-youtube&amp;url=launch%3A%2F%2Fclipboard%3Ftext%3D%7B%7B%3Ciframe%20width%3D%22560%22%20height%3D%22315%22%20src%3D%22%2F%2Fwww.youtube.com%2Fembed%2F%5B%5Bline%7C2%5D%5D%22%20frameborder%3D%220%22%20allowfullscreen%3E%3C%2Fiframe%3E%7D%7D">here</a> into Drafts.</p>
-
-<p>The result will be that the following is added to your clipboard, and you can paste it into your blog CMS:</p>
-
-<pre><code>&lt;iframe width="560" height="315" src="//www.youtube.com/embed/38lY-3g6mn8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-</code></pre>
-
-<p>This action presumes that there are no additional paramaters in the URL. If your URL has something like <code>&amp;list=</code> after the video ID, you will either have to manually remove that string or create an extra Drafts/TextTool action to split the results of <code>line 2</code> at the <code>&amp;</code> and to take <code>line 1</code> of <em>that</em> output.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/30/14; 09:03:42 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/06/29/">Sunday, June 29<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1404068696"></a><a class="aStreamTextLink" onclick="ecStream (2)">You're My Gay Best Friend (Video)</a><span class="spPermalink"><a href="/2014/06/29/#a1404068696">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel2">
+				<p><a name="a1404068921"></a><a href="https://twitter.com/share?text=You're%20My%20Gay%20Best%20Friend%20(Video)&url=http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/29/#a1404068921">#</a></span></p>
+				<p><a name="a1404068749"></a>If you're a fan of _Frozen_, you may find this lol funny:<span class="spPermalink"><a href="/2014/06/29/#a1404068749">#</a></span></p>
+				<p><a name="a1404068894"></a><iframe width="560" height="315" src="//www.youtube.com/embed/38lY-3g6mn8" frameborder="0" allowfullscreen></iframe><span class="spPermalink"><a href="/2014/06/29/#a1404068894">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="29/youreMyGayBestFriendVideo.html">You're My Gay Best Friend (Video)</a></div>
-		<p><a href="https://twitter.com/share?text=You're%20My%20Gay%20Best%20Friend%20(Video)&amp;url=http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">Tweet This Post</a></p>
-
-<p>If you're a fan of <em>Frozen</em>, you may find this lol funny:</p>
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/38lY-3g6mn8" frameborder="0" allowfullscreen></iframe>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/29/14; 02:04:56 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="29/youreMyGayBestFriendVideo.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/06/27/">Friday, June 27<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1403888795"></a><a class="aStreamTextLink" onclick="ecStream (3)">Embedding Happy Friends Tweets in Fargo</a><span class="spPermalink"><a href="/2014/06/27/#a1403888795">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel3">
+				<p><a name="a1403889072"></a><a href="https://twitter.com/share?text=Embedding%20Happy%20Friends%20Tweets%20in%20Fargo&url=http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/27/#a1403889072">#</a></span></p>
+				<p><a name="a1403888813"></a>[Happy Friends](http://happy.smallpict.com/2014/06/27/happyFriends042.html) and [Fargo](http://fargo.io/blog/2014/06/27/fargo162/) are now working together.  <span class="spPermalink"><a href="/2014/06/27/#a1403888813">#</a></span></p>
+				<p><a name="a1403888886"></a>The tweet below is just a headline copied from my "watched" Happy Friends tab in Fargo. It has the following attributes associated with it:<span class="spPermalink"><a href="/2014/06/27/#a1403888886">#</a></span></p>
+				<p><a name="a1403888935"></a>![](https://dl.dropboxusercontent.com/s/8fg5hj5wsosefzt/Screenshot%202014-06-27%2015.59.48.png)<span class="spPermalink"><a href="/2014/06/27/#a1403888935">#</a></span></p>
+				<p><a name="a1403888704"></a><blockquote class="twitter-tweet"><p>Happy Friends 0.42 has the ability to publish your outline of tweets. A feature picked up in the new Fargo. <a href="http://t.co/8bXP3DnCNv">http://t.co/8bXP3DnCNv</a></p>&mdash; Dave Winer ☮ (@davewiner) <a href="https://twitter.com/davewiner/status/482570320197349376">June 27, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/06/27/#a1403888704">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="27/embeddingHappyFriendsTweetsInFargo.html">Embedding Happy Friends Tweets in Fargo</a></div>
-		<p><a href="https://twitter.com/share?text=Embedding%20Happy%20Friends%20Tweets%20in%20Fargo&amp;url=http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Tweet This Post</a></p>
-
-<p><a href="http://happy.smallpict.com/2014/06/27/happyFriends042.html">Happy Friends</a> and <a href="http://fargo.io/blog/2014/06/27/fargo162/">Fargo</a> are now working together.  </p>
-
-<p>The tweet below is just a headline copied from my "watched" Happy Friends tab in Fargo. It has the following attributes associated with it:</p>
-
-<p><img src="https://dl.dropboxusercontent.com/s/8fg5hj5wsosefzt/Screenshot%202014-06-27%2015.59.48.png" alt="" title="" /></p>
-
-<blockquote class="twitter-tweet"><p>Happy Friends 0.42 has the ability to publish your outline of tweets. A feature picked up in the new Fargo. <a href="http://t.co/8bXP3DnCNv">http://t.co/8bXP3DnCNv</a></p>&mdash; Dave Winer ☮ (@davewiner) <a href="https://twitter.com/davewiner/statuses/482570320197349376">June 27, 2014</a></blockquote>
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/27/14; 12:06:35 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="27/embeddingHappyFriendsTweetsInFargo.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/06/26/">Thursday, June 26<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1403814568"></a><a class="aStreamTextLink" onclick="ecStream (4)">This Blog Is Now Hosted at Github Pages</a><span class="spPermalink"><a href="/2014/06/26/#a1403814568">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel4">
+				<p><a name="a1403814579"></a>[Fargo](http://fargo.io) -- the CMS outliner I use to publish this site -- has the ability to [publish to GitHub Pages](http://fargo.io/docs/contentManagement/usingGithub.html). I have long wanted to do this. I don't want a *.smallpict.com blog, I want to publish to blog.jeffreykishner.com. I could do this back when Fargo was using Trex (its original CMS), but Dave Winer did a complete rewrite, and mapping a CNAME to a smallpict blog no longer worked. [FargoPublisher](https://github.com/scripting/fargoPublisher) is too complicated for me to set up, and I know _just enough_ GitHub to push commits to a repository from a subdirectory in Dropbox, so I chose the latter route.<span class="spPermalink"><a href="/2014/06/26/#a1403814579">#</a></span></p>
+				<p><a name="a1403876866"></a>The problem I've encountered for months: I don't blog at home, and I cannot sync Dropbox at the computer where I _do_ blog. Hence, I cannot push commits from `/Dropbox/Apps/smallPicture/jkishner.github.io` (where Fargo renders the HTML of my blog) to GitHub locally. I tried -- and failed -- to configure my AirPort Extreme at home to have a stable IP address so that I could SSH into my MacMini at home from another computer. That way I could sync Dropbox on my MacMini, and then push commits remotely to GitHub. <span class="spPermalink"><a href="/2014/06/26/#a1403876866">#</a></span></p>
+				<p><a name="a1403877042"></a>Only a few days ago, I realized that I have a "box" where I can do all this: the VPS that I rent from [WiredTree](http://wiredtree.com). Over the past few days, I have installed GitHub, Dropbox, and the Dropbox CLI (command line interface) into the root of my VPS. It was complicated -- WiredTree had to install a parallel version of Python so that `dropbox.py` could work, and a sysadmin there also changed a key file to allow Dropbox to monitor all the folders in my account -- but I got it to work. Now I can blog on Fargo, ssh into my root, make sure Dropbox has synced my jkishner.github.io folder, and add/commit/push changes. I set up a CNAME redirect so that jkishner.github.io will be viewable at blog.jeffreykishner.com, and it all _works_.<span class="spPermalink"><a href="/2014/06/26/#a1403877042">#</a></span></p>
+				<p><a name="a1403877338"></a>I used to use a web service called [Mover](http://mover.io) that allowed me to FTP all the files in a specific Dropbox folder to the /blog directory on jeffreykishner.com, but the GitHub solution is faster because only the updated files are uploaded -- not my entire blog -- when I want to publish.<span class="spPermalink"><a href="/2014/06/26/#a1403877338">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="26/thisBlogIsNowHostedAtGithubPages.html">This Blog Is Now Hosted at Github Pages</a></div>
-		<p><a href="http://fargo.io">Fargo</a> -- the CMS outliner I use to publish this site -- has the ability to <a href="http://fargo.io/docs/contentManagement/usingGithub.html">publish to GitHub Pages</a>. I have long wanted to do this. I don't want a *.smallpict.com blog, I want to publish to blog.jeffreykishner.com. I could do this back when Fargo was using Trex (its original CMS), but Dave Winer did a complete rewrite, and mapping a CNAME to a smallpict blog no longer worked. <a href="https://github.com/scripting/fargoPublisher">FargoPublisher</a> is too complicated for me to set up, and I know <em>just enough</em> GitHub to push commits to a repository from a subdirectory in Dropbox, so I chose the latter route.</p>
-
-<p>The problem I've encountered for months: I don't blog at home, and I cannot sync Dropbox at the computer where I <em>do</em> blog. Hence, I cannot push commits from <code>/Dropbox/Apps/smallPicture/jkishner.github.io</code> (where Fargo renders the HTML of my blog) to GitHub locally. I tried -- and failed -- to configure my AirPort Extreme at home to have a stable IP address so that I could SSH into my MacMini at home from another computer. That way I could sync Dropbox on my MacMini, and then push commits remotely to GitHub. </p>
-
-<p>Only a few days ago, I realized that I have a "box" where I can do all this: the VPS that I rent from <a href="http://wiredtree.com">WiredTree</a>. Over the past few days, I have installed GitHub, Dropbox, and the Dropbox CLI (command line interface) into the root of my VPS. It was complicated -- WiredTree had to install a parallel version of Python so that <code>dropbox.py</code> could work, and a sysadmin there also changed a key file to allow Dropbox to monitor all the folders in my account -- but I got it to work. Now I can blog on Fargo, ssh into my root, make sure Dropbox has synced my jkishner.github.io folder, and add/commit/push changes. I set up a CNAME redirect so that jkishner.github.io will be viewable at blog.jeffreykishner.com, and it all <em>works</em>.</p>
-
-<p>I used to use a web service called <a href="http://mover.io">Mover</a> that allowed me to FTP all the files in a specific Dropbox folder to the /blog directory on jeffreykishner.com, but the GitHub solution is faster because only the updated files are uploaded -- not my entire blog -- when I want to publish.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/26/14; 03:29:28 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="26/thisBlogIsNowHostedAtGithubPages.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/06/19/">Thursday, June 19<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1403210131"></a><a class="aStreamTextLink" onclick="ecStream (5)">iOS Bookmarklet to Open a Spotify Share URL into the App</a><span class="spPermalink"><a href="/2014/06/19/#a1403210131">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel5">
+				<p><a name="a1403210398"></a><a href="https://twitter.com/share?text=iOS%20Bookmarklet%20to%20Open%20a%20Spotify%20Share%20URL%20into%20the%20App&url=http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/19/#a1403210398">#</a></span></p>
+				<p><a name="a1403210157"></a>If you get a Spotify share URL like `http://open.spotify.com/album/3eAA4fvTVttgUlE43vRVMq` and open it in Safari for iOS, use this bookmarklet to jump directly to that artist/album/track in the app:<span class="spPermalink"><a href="/2014/06/19/#a1403210157">#</a></span></p>
+				<p><a name="a1403210206"></a>    javascript:window.location='spotify:'+(window.location.href);<span class="spPermalink"><a href="/2014/06/19/#a1403210206">#</a></span></p>
+				<p><a name="a1403210210"></a>To install, you can either set it as a bookmarklet in Safari for Mac and sync with iCloud, or do the following:<span class="spPermalink"><a href="/2014/06/19/#a1403210210">#</a></span></p>
+				<p><a name="a1403210243"></a>1. Bookmark any page in Safari for iOS and call it Spotify.<span class="spPermalink"><a href="/2014/06/19/#a1403210243">#</a></span></p>
+				<p><a name="a1403210263"></a>2. Go to edit bookmarks, and replace the URL of that bookmark with the javascript above.<span class="spPermalink"><a href="/2014/06/19/#a1403210263">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1403195706"></a><a class="aStreamTextLink" onclick="ecStream (6)">Draft a Text Message for Later with Launch Center Pro 2.3</a><span class="spPermalink"><a href="/2014/06/19/#a1403195706">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel6">
+				<p><a name="a1403197176"></a><a href="https://twitter.com/share?text=Draft%20a%20Text%20Message%20for%20Later%20with%20Launch%20Center%20Pro%202.3&url=http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/19/#a1403197176">#</a></span></p>
+				<p><a name="a1403195722"></a>I've written a [previous post](http://blog.jeffreykishner.com/2014/01/10/schedule-a-text-x-minutes-from-now-with-due-and-launch-center-pro.html) on how to schedule a text message for later with <a href="http://www.dueapp.com/">Due</a> and <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. However, now that LCP's encoding grammar has simplified, I'd like to revisit the topic. First off, an action to save a text in <a href="http://agiletortoise.com/drafts/">Drafts</a>:<span class="spPermalink"><a href="/2014/06/19/#a1403195722">#</a></span></p>
+				<p><a name="a1403195724"></a>    drafts://x-callback-url/create?text={{launch://messaging?to=8005551212&body=[prompt]}}<span class="spPermalink"><a href="/2014/06/19/#a1403195724">#</a></span></p>
+				<p><a name="a1403195894"></a>Click on [this link](launch://import?url=drafts%3A%2F%2Fx-callback-url%2Fcreate%3Ftext%3D%7B%7Blaunch%3A%2F%2Fmessaging%3Fto%3D8005551212%26body%3D%5Bprompt%5D%7D%7D&title=Draft%20SMS) to import it onto your iOS device.<span class="spPermalink"><a href="/2014/06/19/#a1403195894">#</a></span></p>
+				<p><a name="a1403196002"></a>Tap on the action, enter your text message, and an encoded `launch://messaging` URL scheme is saved in Drafts. When you are ready to send the text message, just make links clickable and tap on the URL scheme. It will open the text message in Messages to the designated recipient (change 8005551212 to his or her cell number).<span class="spPermalink"><a href="/2014/06/19/#a1403196002">#</a></span></p>
+				<p><a name="a1403196091"></a>###The Contact Picker<span class="spPermalink"><a href="/2014/06/19/#a1403196091">#</a></span></p>
+				<p><a name="a1403196108"></a>LCP now has a contact picker -- [contact] -- that will allow you to choose a contact when you start the action. I tried creating the action above by substituting the phone number with [contact] -- the action can be imported  [here](https://launchcenterpro.com/z84h43) -- but it does not work.<span class="spPermalink"><a href="/2014/06/19/#a1403196108">#</a></span></p>
+				<p><a name="a1403196095"></a>    drafts://x-callback-url/create?text={{launch://messaging?to=[contact]&body=[prompt]}}<span class="spPermalink"><a href="/2014/06/19/#a1403196095">#</a></span></p>
+				<p><a name="a1403196372"></a>The problem is that the body text is not encoded, so you get something like this:<span class="spPermalink"><a href="/2014/06/19/#a1403196372">#</a></span></p>
+				<p><a name="a1403196526"></a>&nbsp;<span class="spPermalink"><a href="/2014/06/19/#a1403196526">#</a></span></p>
+				<p><a name="a1403196493"></a>![](https://dl.dropbox.com/s/k8163te96f3kbk5/jk2dy.png)<span class="spPermalink"><a href="/2014/06/19/#a1403196493">#</a></span></p>
+				<p><a name="a1403196497"></a>_Screenshot by @tahewett_<span class="spPermalink"><a href="/2014/06/19/#a1403196497">#</a></span></p>
+				<p><a name="a1403196520"></a>&nbsp;<span class="spPermalink"><a href="/2014/06/19/#a1403196520">#</a></span></p>
+				<p><a name="a1403196531"></a>I could not figure out how to fix this, so I wrote a pretty complicated action that _does_ do the job. (Import it [here](https://launchcenterpro.com/f11cgt)).<span class="spPermalink"><a href="/2014/06/19/#a1403196531">#</a></span></p>
+				<p><a name="a1403196555"></a>    launch://x-callback-url/clipboard?text=[contact]&x-success={{texttool://x-callback-url/transform?text=[prompt:your message]&method=encode&clipboard=0&x-success={{drafts:///create?text={{launch://messaging?to=||clipboard||&body=[[output]]}}}}}}<span class="spPermalink"><a href="/2014/06/19/#a1403196555">#</a></span></p>
+				<p><a name="a1403196597"></a>####How It Works<span class="spPermalink"><a href="/2014/06/19/#a1403196597">#</a></span></p>
+				<p><a name="a1403196813"></a>First, the action asks you to pick a contact, and the number you choose is saved to the clipboard. <span class="spPermalink"><a href="/2014/06/19/#a1403196813">#</a></span></p>
+				<p><a name="a1403196843"></a>Then the action prompts you to enter your message. <a href="http://blackfoggames.com/TextTool/">TextTool</a> url-encodes your message, but does not save it to the clipboard (because we need the clipboard for the contact's number).<span class="spPermalink"><a href="/2014/06/19/#a1403196843">#</a></span></p>
+				<p><a name="a1403196905"></a>Then the action tells Drafts to create a new draft, the `launch://messaging` action. The body of the message is the [output] value carried from TextTool, and the `to` field is the clipboard contents, which -- because it has carried over two different x-successes -- needs to use `||clipboard||` to work, as explained [here](http://agiletortoise.com/blog/2014/02/13/updates-drafts/):<span class="spPermalink"><a href="/2014/06/19/#a1403196905">#</a></span></p>
+				<p><a name="a1403196772"></a>> /create URL scheme now supports a special “||clipboard||” tag within the text parameter, which will substitute the contents of the clipboard at the time the “create” URL is opened. This can be used in an x-success callback URL to allow capture of a clipboard value that changed before returning to Drafts. Note the pipe characters, not brackets. This tag is not evaluated other time, only on /create URLs when processed by Drafts.<span class="spPermalink"><a href="/2014/06/19/#a1403196772">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html">iOS Bookmarklet to Open a Spotify Share URL into the App</a></div>
-		<p><a href="https://twitter.com/share?text=iOS%20Bookmarklet%20to%20Open%20a%20Spotify%20Share%20URL%20into%20the%20App&amp;url=http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">Tweet This Post</a></p>
-
-<p>If you get a Spotify share URL like <code>http://open.spotify.com/album/3eAA4fvTVttgUlE43vRVMq</code> and open it in Safari for iOS, use this bookmarklet to jump directly to that artist/album/track in the app:</p>
-
-<pre><code>javascript:window.location='spotify:'+(window.location.href);
-</code></pre>
-
-<p>To install, you can either set it as a bookmarklet in Safari for Mac and sync with iCloud, or do the following:</p>
-
-<ol>
-<li><p>Bookmark any page in Safari for iOS and call it Spotify.</p></li>
-<li><p>Go to edit bookmarks, and replace the URL of that bookmark with the javascript above.</p></li>
-</ol>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/19/14; 03:35:31 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/06/18/">Wednesday, June 18<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1403120803"></a><a class="aStreamTextLink" onclick="ecStream (7)">How to Create an RSS Feed for an Instagram Profile</a><span class="spPermalink"><a href="/2014/06/18/#a1403120803">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel7">
+				<p><a name="a1403121947"></a><a href="https://twitter.com/share?text=How%20to%20Create%20an%20RSS%20Feed%20for%20an%20Instagram%20Profile&url=http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/18/#a1403121947">#</a></span></p>
+				<p><a name="a1403121008"></a>[Here](http://jeffreykishner.com/simplepie/demo/?feed=https%3A%2F%2Ffeeds.pinboard.in%2Frss%2Fu%3Akishner%2Ft%3Anewyorkcity_instagram) is an example of an RSS feed for [@newyorkcity](http://instagram.com/newyorkcity). If you click on a link, you get to see the raw image. How I did it:<span class="spPermalink"><a href="/2014/06/18/#a1403121008">#</a></span></p>
+				<p><a name="a1403121075"></a>###1. Use this IFTTT Recipe<span class="spPermalink"><a href="/2014/06/18/#a1403121075">#</a></span></p>
+				<p><a name="a1403121088"></a>Customize [this IFTTT recipe](https://ifttt.com/recipes/183648-tag-new-instagram-photos-in-pinboard) with the Instagram profile you want to use, as well as the tag(s) you want. (Note: this recipe requires a [Pinboard](http://pinboard.in) account, which requires a one-time fee.)<span class="spPermalink"><a href="/2014/06/18/#a1403121088">#</a></span></p>
+				<p><a name="a1403121755"></a>###2. Wait Until the Recipe Has Been Triggered <span class="spPermalink"><a href="/2014/06/18/#a1403121755">#</a></span></p>
+				<p><a name="a1403121788"></a>[Here](https://pinboard.in/u:kishner/t:newyorkcity_instagram) is the `newyorkcity_instagram` tag for my Pinboard account. To get the RSS feed, I follow [these instructions](https://pinboard.in/howto/#rss) to get the following:<span class="spPermalink"><a href="/2014/06/18/#a1403121788">#</a></span></p>
+				<p><a name="a1403121866"></a>    https://feeds.pinboard.in/rss/u:kishner/t:newyorkcity_instagram<span class="spPermalink"><a href="/2014/06/18/#a1403121866">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="19/draftsATextMessageForLaterWithLaunchCenterPro23.html">Draft a Text Message for Later with Launch Center Pro 2.3</a></div>
-		<p><a href="https://twitter.com/share?text=Draft%20a%20Text%20Message%20for%20Later%20with%20Launch%20Center%20Pro%202.3&amp;url=http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Tweet This Post</a></p>
-
-<p>I've written a <a href="http://blog.jeffreykishner.com/2014/01/10/schedule-a-text-x-minutes-from-now-with-due-and-launch-center-pro.html">previous post</a> on how to schedule a text message for later with <a href="http://www.dueapp.com/">Due</a> and <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. However, now that LCP's encoding grammar has simplified, I'd like to revisit the topic. First off, an action to save a text in <a href="http://agiletortoise.com/drafts/">Drafts</a>:</p>
-
-<pre><code>drafts://x-callback-url/create?text={{launch://messaging?to=8005551212&amp;body=[prompt]}}
-</code></pre>
-
-<p>Click on <a href="launch://import?url=drafts%3A%2F%2Fx-callback-url%2Fcreate%3Ftext%3D%7B%7Blaunch%3A%2F%2Fmessaging%3Fto%3D8005551212%26body%3D%5Bprompt%5D%7D%7D&amp;title=Draft%20SMS">this link</a> to import it onto your iOS device.</p>
-
-<p>Tap on the action, enter your text message, and an encoded <code>launch://messaging</code> URL scheme is saved in Drafts. When you are ready to send the text message, just make links clickable and tap on the URL scheme. It will open the text message in Messages to the designated recipient (change 8005551212 to his or her cell number).</p>
-
-<h3>The Contact Picker</h3>
-
-<p>LCP now has a contact picker -- [contact] -- that will allow you to choose a contact when you start the action. I tried creating the action above by substituting the phone number with [contact] -- the action can be imported  <a href="https://launchcenterpro.com/z84h43">here</a> -- but it does not work.</p>
-
-<pre><code>drafts://x-callback-url/create?text={{launch://messaging?to=[contact]&amp;body=[prompt]}}
-</code></pre>
-
-<p>The problem is that the body text is not encoded, so you get something like this:</p>
-
-<p>&nbsp;</p>
-
-<p><img src="https://dl.dropbox.com/s/k8163te96f3kbk5/jk2dy.png" alt="" title="" /></p>
-
-<p><em>Screenshot by @tahewett</em></p>
-
-<p>&nbsp;</p>
-
-<p>I could not figure out how to fix this, so I wrote a pretty complicated action that <em>does</em> do the job. (Import it <a href="https://launchcenterpro.com/f11cgt">here</a>).</p>
-
-<pre><code>launch://x-callback-url/clipboard?text=[contact]&amp;x-success={{texttool://x-callback-url/transform?text=[prompt:your message]&amp;method=encode&amp;clipboard=0&amp;x-success={{drafts:///create?text={{launch://messaging?to=||clipboard||&amp;body=[[output]]}}}}}}
-</code></pre>
-
-<h4>How It Works</h4>
-
-<p>First, the action asks you to pick a contact, and the number you choose is saved to the clipboard. </p>
-
-<p>Then the action prompts you to enter your message. <a href="http://blackfoggames.com/TextTool/">TextTool</a> url-encodes your message, but does not save it to the clipboard (because we need the clipboard for the contact's number).</p>
-
-<p>Then the action tells Drafts to create a new draft, the <code>launch://messaging</code> action. The body of the message is the [output] value carried from TextTool, and the <code>to</code> field is the clipboard contents, which -- because it has carried over two different x-successes -- needs to use <code>||clipboard||</code> to work, as explained <a href="http://agiletortoise.com/blog/2014/02/13/updates-drafts/">here</a>:</p>
-
-<blockquote>
-  <p>/create URL scheme now supports a special “||clipboard||” tag within the text parameter, which will substitute the contents of the clipboard at the time the “create” URL is opened. This can be used in an x-success callback URL to allow capture of a clipboard value that changed before returning to Drafts. Note the pipe characters, not brackets. This tag is not evaluated other time, only on /create URLs when processed by Drafts.</p>
-</blockquote>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/19/14; 11:35:06 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="19/draftsATextMessageForLaterWithLaunchCenterPro23.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/06/16/">Monday, June 16<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1402937827"></a><a class="aStreamTextLink" onclick="ecStream (8)">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a><span class="spPermalink"><a href="/2014/06/16/#a1402937827">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel8">
+				<p><a name="a1402938153"></a><a href="https://twitter.com/share?text=Use%20Nested%20Lists%20in%20Launch%20Center%20Pro%202.3%20to%20Open%20Albums%20by%20Artist%20in%20Spotify%20and%20Ecoute%20for%20iOS%0A&url=http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/16/#a1402938153">#</a></span></p>
+				<p><a name="a1402937843"></a>The latest update to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> has made it easier to create nested lists. Previously one had to use `launch://?url=` but now that is no longer necessary. Here is an abridged version of my LCP action to open albums in Ecoute:<span class="spPermalink"><a href="/2014/06/16/#a1402937843">#</a></span></p>
+				<p><a name="a1402938020"></a>    ecoute://play?terms=[[list:Artist|Eminem=[list:Album|Marshall Mathers|Recovery]|Foo Fighters=[list:Albums|The Colour and the Shape|There Is Nothing Left to Lose]|Pharrell Williams={{Pharrell Williams}}|Search=[prompt:Search]]]<span class="spPermalink"><a href="/2014/06/16/#a1402938020">#</a></span></p>
+				<p><a name="a1402938020"></a>When I tap on this action, it presents a list of artists (Eminem, Foo Fighters, Pharrell Williams, and "Search"). If I tap on either of the first two, I am presented with a list of albums, and when I tap on the album name, that album auto-plays in Ecoute. If I tap on Pharrell Williams, _G I R L_ automatically plays because I only have one album by him in my library. And if I tap on Search I am presented with a prompt, and if my query matches something in my music library, then it starts playing. (Thanks to Eric Pramono @epramono for help encoding this last part.)<span class="spPermalink"><a href="/2014/06/16/#a1402938020">#</a></span></p>
+				<p><a name="a1402938020"></a>The key to this nested list is that the first list is surrounded by double brackets and the embedded lists are only surrounded by single brackets. Two brackets means _don't encode this_. Because the first list is not encoded, I have to encode Pharrell Williams in double curly brackets since his name does not included an embedded list. And the search prompt only needs single brackets because they encode the prompt text.<span class="spPermalink"><a href="/2014/06/16/#a1402938020">#</a></span></p>
+				<p><a name="a1402938020"></a>The Spotify URL scheme is a bit more complicated. Here is an abridged version of my Spotify action:<span class="spPermalink"><a href="/2014/06/16/#a1402938020">#</a></span></p>
+				<p><a name="a1402938020"></a>    spotify:[[list:Pick a List|Ali Farka Touré={{http://open.spotify.com/artist/3mNygoyrEKLgo6sx0MzwOL}}|King's X=[list:|Xv=http://open.spotify.com/album/792TsZibmmEiOCL2rEoJvm|Please Come Home....Mr. Bulbous=http://open.spotify.com/album/2ZyMISUxP7MLzxZCZLHEHJ]|Yes=[list:|Fragile=http://open.spotify.com/album/4X6gq5bgpGXcHINlFWzriM|Relayer=http://open.spotify.com/album/6MK9yp7hFeOLeR7F1hsBp6]]]<span class="spPermalink"><a href="/2014/06/16/#a1402938020">#</a></span></p>
+				<p><a name="a1402938020"></a>When I click on this action I would be presented with Ali Farka Touré, King's X, and Yes. Following the pattern above, if I don't have an embedded list for an artist, I just encode that value with double curly brackets. Otherwise I just use single brackets around the embedded list.<span class="spPermalink"><a href="/2014/06/16/#a1402938020">#</a></span></p>
+				<p><a name="a1402938021"></a>The URL scheme for Spotify is spotify:SPOTIFY_URL. You can get the Spotify URL from the app (in the share settings) or via a google search. I've even written a search tool using their API [here](http://javascript.jeffreykishner.com/spotify.html).<span class="spPermalink"><a href="/2014/06/16/#a1402938021">#</a></span></p>
+				<p><a name="a1402938021"></a>## How to Manage These Actions<span class="spPermalink"><a href="/2014/06/16/#a1402938021">#</a></span></p>
+				<p><a name="a1402938021"></a>One of the major downsides of LCP is that it's difficult to edit very long actions in the app's editor. However, there is a way around this. Import [this action](https://launchcenterpro.com/py6vdl) or just create a new action called Import and enter this string:<span class="spPermalink"><a href="/2014/06/16/#a1402938021">#</a></span></p>
+				<p><a name="a1402938021"></a>    launch://import?url=[dropbox-text:ACTION.txt]<span class="spPermalink"><a href="/2014/06/16/#a1402938021">#</a></span></p>
+				<p><a name="a1402938021"></a>Then keep your music actions in their own text files in Dropbox. For example, I currently have my unabridged Spotify action as a text file called `spotify.txt` in the root of my Dropbox folder. I then just use the following action to import it:<span class="spPermalink"><a href="/2014/06/16/#a1402938021">#</a></span></p>
+				<p><a name="a1402938021"></a>     launch://import?url=[dropbox-text:spotify.txt]<span class="spPermalink"><a href="/2014/06/16/#a1402938021">#</a></span></p>
+				<p><a name="a1402938021"></a>LCP will import that text file, and ask you if you want to add it, just like if you were to use one of the importable actions at launchcenterpro.com. This way, you can make your edits in any Dropbox text editor instead of within the app itself. <span class="spPermalink"><a href="/2014/06/16/#a1402938021">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1402928512"></a><a class="aStreamTextLink" onclick="ecStream (9)">How to Quickly Jump to Lists in Tweetbot for iOS</a><span class="spPermalink"><a href="/2014/06/16/#a1402928512">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel9">
+				<p><a name="a1402929292"></a><a href="https://twitter.com/share?text=How%20to%20Quickly%20Jump%20to%20Lists%20in%20Tweetbot%20for%20iOS&url=http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/06/16/#a1402929292">#</a></span></p>
+				<p><a name="a1402928543"></a>Tweetbot has a list of [URL schemes](http://tapbots.com/blog/development/tweetbot-url-scheme), the most recent of which is one to jump immediately to a Twitter list. I have never used it until now because I never knew how to find a list's ID. But now that I've figured it out, I'd like to share it with you.<span class="spPermalink"><a href="/2014/06/16/#a1402928543">#</a></span></p>
+				<p><a name="a1402928653"></a>The full scheme is <span class="spPermalink"><a href="/2014/06/16/#a1402928653">#</a></span></p>
+				<p><a name="a1402928656"></a>    tweetbot://<screenname>/list/<list_id>?callback_url=<url> <span class="spPermalink"><a href="/2014/06/16/#a1402928656">#</a></span></p>
+				<p><a name="a1402928660"></a>but you don't need to include the `?` parameter unless you want to go somewhere other than your most recent timeline view in the app.<span class="spPermalink"><a href="/2014/06/16/#a1402928660">#</a></span></p>
+				<p><a name="a1402928722"></a>Let's say I want to view my [ios Twitter list](https://twitter.com/kishner/lists/ios). To get the list ID, I view the source of the web page and search for `data-list-id`. In this example, the source code includes `data-list-id="79393622"`. I take that value and put it in the URL scheme:<span class="spPermalink"><a href="/2014/06/16/#a1402928722">#</a></span></p>
+				<p><a name="a1402928839"></a>    tweetbot://kishner/list/79393622<span class="spPermalink"><a href="/2014/06/16/#a1402928839">#</a></span></p>
+				<p><a name="a1402928860"></a>If I include this as an action in <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>, then clicking on it will bring me right to that list. <span class="spPermalink"><a href="/2014/06/16/#a1402928860">#</a></span></p>
+				<p><a name="a1402928953"></a>If I have a preferred app I want to go to after I click the Cancel button, I can include the `callback_url` parameter, which is an encoded URL. If I want to go to Launch Center Pro:<span class="spPermalink"><a href="/2014/06/16/#a1402928953">#</a></span></p>
+				<p><a name="a1402929029"></a>    tweetbot://kishner/list/79393622?callback_url=launch://<span class="spPermalink"><a href="/2014/06/16/#a1402929029">#</a></span></p>
+				<p><a name="a1402929170"></a>If I want to go to an actual website like google.com instead:<span class="spPermalink"><a href="/2014/06/16/#a1402929170">#</a></span></p>
+				<p><a name="a1402929185"></a>    tweetbot://kishner/list/79393622?callback_url=http%3A%2F%2Fgoogle.com<span class="spPermalink"><a href="/2014/06/16/#a1402929185">#</a></span></p>
+				<p><a name="a1402929281"></a>Enjoy!<span class="spPermalink"><a href="/2014/06/16/#a1402929281">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="18/howToCreateAnRssFeedForAnInstagramProfile.html">How to Create an RSS Feed for an Instagram Profile</a></div>
-		<p><a href="https://twitter.com/share?text=How%20to%20Create%20an%20RSS%20Feed%20for%20an%20Instagram%20Profile&amp;url=http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">Tweet This Post</a></p>
+	</div>
 
-<p><a href="http://jeffreykishner.com/simplepie/demo/?feed=https%3A%2F%2Ffeeds.pinboard.in%2Frss%2Fu%3Akishner%2Ft%3Anewyorkcity_instagram">Here</a> is an example of an RSS feed for <a href="http://instagram.com/newyorkcity">@newyorkcity</a>. If you click on a link, you get to see the raw image. How I did it:</p>
-
-<h3>1. Use this IFTTT Recipe</h3>
-
-<p>Customize <a href="https://ifttt.com/recipes/183648-tag-new-instagram-photos-in-pinboard">this IFTTT recipe</a> with the Instagram profile you want to use, as well as the tag(s) you want. (Note: this recipe requires a <a href="http://pinboard.in">Pinboard</a> account, which requires a one-time fee.)</p>
-
-<h3>2. Wait Until the Recipe Has Been Triggered</h3>
-
-<p><a href="https://pinboard.in/u%3akishner/t%3anewyorkcity_instagram">Here</a> is the <code>newyorkcity_instagram</code> tag for my Pinboard account. To get the RSS feed, I follow <a href="https://pinboard.in/howto/#rss">these instructions</a> to get the following:</p>
-
-<pre><code>https://feeds.pinboard.in/rss/u:kishner/t:newyorkcity_instagram
-</code></pre>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/18/14; 02:46:43 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="18/howToCreateAnRssFeedForAnInstagramProfile.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></div>
-		<p><a href="https://twitter.com/share?text=Use%20Nested%20Lists%20in%20Launch%20Center%20Pro%202.3%20to%20Open%20Albums%20by%20Artist%20in%20Spotify%20and%20Ecoute%20for%20iOS%0A&amp;url=http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Tweet This Post</a></p>
-
-<p>The latest update to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> has made it easier to create nested lists. Previously one had to use <code>launch://?url=</code> but now that is no longer necessary. Here is an abridged version of my LCP action to open albums in Ecoute:</p>
-
-<pre><code>ecoute://play?terms=[[list:Artist|Eminem=[list:Album|Marshall Mathers|Recovery]|Foo Fighters=[list:Albums|The Colour and the Shape|There Is Nothing Left to Lose]|Pharrell Williams={{Pharrell Williams}}|Search=[prompt:Search]]]
-</code></pre>
-
-<p>When I tap on this action, it presents a list of artists (Eminem, Foo Fighters, Pharrell Williams, and "Search"). If I tap on either of the first two, I am presented with a list of albums, and when I tap on the album name, that album auto-plays in Ecoute. If I tap on Pharrell Williams, <em>G I R L</em> automatically plays because I only have one album by him in my library. And if I tap on Search I am presented with a prompt, and if my query matches something in my music library, then it starts playing. (Thanks to Eric Pramono @epramono for help encoding this last part.)</p>
-
-<p>The key to this nested list is that the first list is surrounded by double brackets and the embedded lists are only surrounded by single brackets. Two brackets means <em>don't encode this</em>. Because the first list is not encoded, I have to encode Pharrell Williams in double curly brackets since his name does not included an embedded list. And the search prompt only needs single brackets because they encode the prompt text.</p>
-
-<p>The Spotify URL scheme is a bit more complicated. Here is an abridged version of my Spotify action:</p>
-
-<pre><code>spotify:[[list:Pick a List|Ali Farka Touré={{http://open.spotify.com/artist/3mNygoyrEKLgo6sx0MzwOL}}|King's X=[list:|Xv=http://open.spotify.com/album/792TsZibmmEiOCL2rEoJvm|Please Come Home....Mr. Bulbous=http://open.spotify.com/album/2ZyMISUxP7MLzxZCZLHEHJ]|Yes=[list:|Fragile=http://open.spotify.com/album/4X6gq5bgpGXcHINlFWzriM|Relayer=http://open.spotify.com/album/6MK9yp7hFeOLeR7F1hsBp6]]]
-</code></pre>
-
-<p>When I click on this action I would be presented with Ali Farka Touré, King's X, and Yes. Following the pattern above, if I don't have an embedded list for an artist, I just encode that value with double curly brackets. Otherwise I just use single brackets around the embedded list.</p>
-
-<p>The URL scheme for Spotify is spotify:SPOTIFY_URL. You can get the Spotify URL from the app (in the share settings) or via a google search. I've even written a search tool using their API <a href="http://javascript.jeffreykishner.com/spotify.html">here</a>.</p>
-
-<h2>How to Manage These Actions</h2>
-
-<p>One of the major downsides of LCP is that it's difficult to edit very long actions in the app's editor. However, there is a way around this. Import <a href="https://launchcenterpro.com/py6vdl">this action</a> or just create a new action called Import and enter this string:</p>
-
-<pre><code>launch://import?url=[dropbox-text:ACTION.txt]
-</code></pre>
-
-<p>Then keep your music actions in their own text files in Dropbox. For example, I currently have my unabridged Spotify action as a text file called <code>spotify.txt</code> in the root of my Dropbox folder. I then just use the following action to import it:</p>
-
-<pre><code> launch://import?url=[dropbox-text:spotify.txt]
-</code></pre>
-
-<p>LCP will import that text file, and ask you if you want to add it, just like if you were to use one of the importable actions at launchcenterpro.com. This way, you can make your edits in any Dropbox text editor instead of within the app itself. </p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/16/14; 11:57:07 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="16/howToQuicklyJumpToListsInTweetbotForIos.html">How to Quickly Jump to Lists in Tweetbot for iOS</a></div>
-		<p><a href="https://twitter.com/share?text=How%20to%20Quickly%20Jump%20to%20Lists%20in%20Tweetbot%20for%20iOS&amp;url=http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">Tweet This Post</a></p>
-
-<p>Tweetbot has a list of <a href="http://tapbots.com/blog/development/tweetbot-url-scheme">URL schemes</a>, the most recent of which is one to jump immediately to a Twitter list. I have never used it until now because I never knew how to find a list's ID. But now that I've figured it out, I'd like to share it with you.</p>
-
-<p>The full scheme is </p>
-
-<pre><code>tweetbot://&lt;screenname&gt;/list/&lt;list_id&gt;?callback_url=&lt;url&gt; 
-</code></pre>
-
-<p>but you don't need to include the <code>?</code> parameter unless you want to go somewhere other than your most recent timeline view in the app.</p>
-
-<p>Let's say I want to view my <a href="https://twitter.com/kishner/lists/ios">ios Twitter list</a>. To get the list ID, I view the source of the web page and search for <code>data-list-id</code>. In this example, the source code includes <code>data-list-id="79393622"</code>. I take that value and put it in the URL scheme:</p>
-
-<pre><code>tweetbot://kishner/list/79393622
-</code></pre>
-
-<p>If I include this as an action in <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>, then clicking on it will bring me right to that list. </p>
-
-<p>If I have a preferred app I want to go to after I click the Cancel button, I can include the <code>callback_url</code> parameter, which is an encoded URL. If I want to go to Launch Center Pro:</p>
-
-<pre><code>tweetbot://kishner/list/79393622?callback_url=launch://
-</code></pre>
-
-<p>If I want to go to an actual website like google.com instead:</p>
-
-<pre><code>tweetbot://kishner/list/79393622?callback_url=http%3A%2F%2Fgoogle.com
-</code></pre>
-
-<p>Enjoy!</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">06/16/14; 09:21:52 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="16/howToQuicklyJumpToListsInTweetbotForIos.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Tue, Jul  8, 2014 at 11:17 AM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlMon, 16 Jun 2014 14:21:52 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, June 16, 2014 at  9:21 AM</span>.</div>
-					</div>
+				</div>
+			<div class="divFargoStreamFooter">
+				<div>&copy; 2014 Jeffrey Kishner.</div>
+				<div>Last update: Thu, Sep 25, 2014 at  2:40 PM.</div>
+				<div><i></i></div>
+				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 				</div>
 			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

@@ -2,26 +2,25 @@
 <html>
 	<head>
 		<title>August 2013</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Tue, 08 Jul 2014 16:17:01 GMT",
-    "opmlExpansionState": "1,2,3,23",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:04:09 GMT",
+    "opmlExpansionState": "6,7,8,16,18,26,29,34,46",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,14 +35,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlLastCursor": "6",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "Greetings, citizen of Planet Earth. We are your overlords. :-)",
+    "type": "stream",
+    "slogan": "Reallll soooon now...",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,6 +66,8 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "August 2013",
     "created": "Thu, 01 Aug 2013 14:25:40 GMT",
     "description": "",
@@ -88,54 +90,618 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Jul 08 2014 12:17:18 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:04:46 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2013/08.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
+		
+		
+		<meta property="og:url" content="http://blog.jeffreykishner.com/2013/08.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="August 2013" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="Jeffrey Kishner" />
+		
+		<meta name="twitter:card" value="summary">
+		<meta name="twitter:title" content="August 2013" />
+		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2013/08.html" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content=""/>
+		<meta name="twitter:site" value="kishner">
+		
 		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageContainer {
+				}
+			.navbar {
+				font-size: 17px;
+				line-height: 140%;
+				}
+			.navbar-inner {
+				min-height: 60px;
+				}
+			.navbar .nav > li > a {
+				padding-top: 17px;
+				}
+			.navbar .brand {
+				padding-top: 13px;
+				padding-left: 25px;
+				}
+			.navbar-container {
+				width: 1000px !important;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divStreamDayText {
+				font-family: 'Vollkorn', serif;
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divMapCanvas {
+				height: 100%; 
+				width: 100%; 
+				position: absolute; 
+				right: 0; 
+				z-index: -10;
+				}
+			.divTextInFrontOfImage {
+				background-color: whitesmoke; 
+				opacity: .98;
+				padding: 1.5em;
+				border:2px solid gainsboro;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				font-family: Ubuntu;
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: 'Ubuntu', sans-serif;
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divFargoStreamComments {
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				margin-top: 10px;
+				}
+			.divDisqusComments { 
+				margin-top: 5px !important;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.divPageContainer {
+					}
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divTextContainer {
+					margin-top: -40px;
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
+					}
+				.divPictureViewer .modal {
+					left: auto;
+					width: auto;
+					margin-left: auto;
+					margin-right: auto;
+					}
+				.divLevel {
+					margin-left: 0;
 					}
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				.divPageContainer {
+					}
+				.navbar .nav > li > a {
+					padding-right: 7px;
+					}
+				}
+			</style>
+		
+		<script>
+			var flSetupDisqusThread = false;
+			
+			var colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function closeDisqusThread () {
+				$("#idDisqusDialog").modal ("hide");
+				}
+			function openDisqusThread () {
+				function getCommentHtml () {
+					var id = "", hidingCode  = "", visibleStyle = "";
+					if (pagetable.opmlUrl != undefined) {
+						id += pagetable.opmlUrl;
+						}
+					if (pagetable.created != undefined) {
+						id += pagetable.created;
+						}
+					if (id.length > 0) {
+						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
+						}
+					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
+					return (code.replace (/&lt;/g,'<'));
+					}
+				if (!flSetupDisqusThread) {
+					var s = 
+						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
+					$("body").prepend (s)
+					flSetupDisqusThread = true;
+					}
+				$("#idDisqusCode").html (getCommentHtml ());
+				$("#idDisqusDialog").modal ("show");
+				}
+			
+			
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
+				var mapCanvas = document.getElementById (idmap);
+				if (mapCanvas != null) {
+					var mapOptions = {
+						center: new google.maps.LatLng (maplat, maplong),
+						zoom: Number (mapzoom),
+						panControl: false,
+						zoomControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl :false,
+						overviewMapControl: false,
+						rotateControl: false,
+						mapTypeId: maptype
+						};
+					var map = new google.maps.Map (mapCanvas, mapOptions);
+					}
+				}
+			
+			function turnOffImages () { //5/18/14 by DW
+				$(".divStreamDayImage").css ("background-image", "");
+				localStorage.flTurnImagesOff = "true";
+				}
+			function turnOffImagesCommand () {
+				confirmDialog ("Turn off images?", function () {
+					localStorage.flTurnImagesOff = "true";
+					location.reload (true);
+					});
+				}
+			function turnOnImagesCommand () {
+				confirmDialog ("Turn images on?", function () {
+					localStorage.flTurnImagesOff = "false"; 
+					location.reload (true);
+					});
+				}
+			
+			function startup () {
+				var streamVersion = 1; //5/20/14 by DW
+				var flPlainOutline; //5/20/14 by DW
+				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
+				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
+				
+				//set streamVersion -- 5/20/14 by DW
+					if (pagetable.streamVersion != undefined) {
+						var x = parseInt (pagetable.streamVersion);
+						if (!isNaN (x)) {
+							streamVersion = x;
+							}
+						}
+				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
+					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
+						localStorage.removeItem ("flImagesOff")
+						}
+					if (localStorage.flTurnImagesOff == undefined) {
+						if (streamVersion > 1) {
+							localStorage.flTurnImagesOff = "false";
+							}
+						}
+					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
+				//every day gets a background color, image, map or -- ??
+					if (!flPlainOutline) {
+						var ixcolorarray = 0, ctmaps = 0;
+						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
+							var flSetColor = true;
+							
+							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
+								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
+								flSetColor = false;
+								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
+								
+								//set up map parameters
+									maplat = $(this).data ("maplatitude");
+									if (maplat == undefined) {
+										maplat = pagetable.mapLatitude;
+										}
+									maplong = $(this).data ("maplongitude");
+									if (maplong == undefined) {
+										maplong = pagetable.mapLongitude;
+										}
+									maptype = $(this).data ("maptype");
+									if (maptype == undefined) {
+										maptype = pagetable.mapType;
+										}
+									mapzoom = $(this).data ("mapzoom");
+									if (mapzoom == undefined) {
+										mapzoom = pagetable.mapZoom;
+										}
+								
+								initMap (idmap, maplat, maplong, maptype, mapzoom);
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayImage") {
+										flSetColor = false;
+										}
+									});
+								}
+							
+							if (flSetColor) {
+								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayText") {
+										var flset = false;
+										$(this).children ("div").each (function () {
+											if (!flset) {
+												this.className = "divTextInFrontOfImage"; //set classname of first child element
+												}
+											flset = true;
+											});
+										}
+									});
+								}
+							});
+						}
+				//highlight and expand the #hashed element, if present
+					var hash = window.location.hash;
+					if (hash.length > 0) {
+						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
+							$(this).children ("a").each (function () { //look at first-level children that are anchors
+								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
+									$(this).parents ("div").css ("display", "block"); //make all parents visible
+									$(this).parents ("p").css ("background-color", hightlightcolor);
+									
+									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
+									
+									
+									var flexpand = true;
+									$(this).parents ("div").each (function () {
+										if (flexpand) {
+											$(this).children ("a").each (function () {
+												$(this).css ("background-color", hightlightcolor);
+												
+												$(this).prev ().find ("i").each (function () {
+													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
+														$(this).attr ("class", "fa fa-caret-down");
+														}
+													});
+												
+												});
+											$(this).next ("div").css ("display", "block"); //the divLevel item
+											flexpand = false;
+											}
+										});
+									}
+								});
+							});
+						}
+				//handle fixed menu
+					if (getBoolean (pagetable.flFixedMenu)) {
+						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
+						if (flhavenav) {
+							document.body.style.paddingTop = "60px";
+							if (hash.length > 0) {
+								$(document).one ("scroll", function () {
+									var $el = $(this), top = $el.scrollTop ();
+									$el.scrollTop (top - 125);
+									});
+								}
+							}
+						}
+				//set the site title -- 3/23/14 by DW
+					if (pagetable.menuTitle != undefined) {
+						var pagename;
+						
+						if (highlightedtitle != undefined) { //5/11/14 by DW
+							pagename = highlightedtitle;
+							}
+						else {
+							if (pagetable.path.length == 0) {
+								pagename = "Home";
+								}
+							else {
+								pagename = pagetable.text;
+								}
+							}
+						
+						document.title = pagetable.menuTitle + ": [" + pagename + "]";
+						}
+				//set the color of each text frame -- 5/11/14 by DW
+					$(".divTextInFrontOfImage").each (function () {
+						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
+						});
+				
+				//turn on images for v2 or greater -- 5/20/14 by DW
+					if (streamVersion > 1) { 
+						if (flPlainOutline) {
+							$(".aStreamDayLink").each (function () {
+								$(this).css ("font-size", "28px");
+								});
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								$(this).css ("margin-top", "70px");
+								});
+							$(".divStreamDayText").each (function () {
+								$(this).css ("padding", "0");
+								});
+							$(".divTextContainer").each (function () {
+								$(this).css ("margin-bottom", "125px");
+								});
+							}
+						else {
+							$(".divStreamDay").each (function () {
+								var url = $(this).data ("backgroundimage");
+								if (url != undefined) {
+									$(this).css ("background-image", "url('" + url + "')");
+									}
+								
+								$(this).children (".divStreamDayText").children ().each (function () {
+									this.className = "divTextInFrontOfImage"; 
+									});
+								
+								});
+							}
+						}
+				
+				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
+					if (streamVersion == 1) { 
+						if (flPlainOutline) {
+							turnOffImages ();
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								});
+							}
+						}
+				}
+			</script>
+		
+		<style>
+	body {
+	font-family: Georgia;
+	font-size: 18px;
+	line-height: 140%;
+	}
+	</style>
 <style>
 	.divFargoIndex .aDocTitleOnIndexPage {
 		font-size: 33.75px !important;
@@ -167,20 +733,20 @@
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-		
+		<div class="divPageContainer">
+			
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
+						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
+						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
 						<li><a href="/2014/05/" target="_blank">May 2014</a></li>
 						<li><a href="/2014/04/" target="_blank">Apr 2014</a></li>
@@ -196,31 +762,31 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/14/homelessnessAndTheNycSubway.html" target="_blank">Homelessness and the NYC Subway</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/09/morningGloryNyc.html" target="_blank">Morning Gloryville NYC</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/25/whiteGuysAndAlterBridge.html" target="_blank">White Guys and Alter Bridge </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/10/theMeaningOfFavoritingATweet.html" target="_blank">The Meaning of Favoriting a Tweet</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -230,372 +796,341 @@
 			</div>
 		</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013">2013</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">August 2013</h2>
+			<div class="divTextContainer" id="idTextContainer">
+				<div class="divStreamDay" >
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/22/">Thursday, August 22<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1377186835"></a><a class="aStreamTextLink" onclick="ecStream (0)">Speaking of Dependence on Google...</a><span class="spPermalink"><a href="/2013/08/22/#a1377186835">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel0">
+				<p><a name="a1377186847"></a>The traffic to my <a href="http://sasstrology.com">astrology blog</a> has dropped precipitously in the last three days. Drilling down into my analytics, it appears that I am getting less than half the Google search traffic I was getting just this past weekend.<span class="spPermalink"><a href="/2013/08/22/#a1377186847">#</a></span></p>
+				<p><a name="a1377187108"></a>Yes, I am worried. The blog brings in money. But it is also seven years old. It has over 5k fans on FB, over 2.5k followers on Twitter. I have a sizable email list (that I haven't been using since I ditched Mailchimp) that I can contact if I need to. Also, I have diversified my income streams such that I am not solely dependent on pageviews (i.e., ad impressions).<span class="spPermalink"><a href="/2013/08/22/#a1377187108">#</a></span></p>
+				<p><a name="a1377187361"></a>Nonetheless, I feel I need to keep bringing in "new eyeballs," because only a fraction of new visitors become fans. I feel helpless, and I don't want to try to <i>divine</i> Google's algorithmic intentions. ("What am I doing wrong, Google? Why hast thou forsaken me?") When I feel this way, I feel more determined to reduce my dependence on search traffic, yet Google is by far the biggest referrer to my site.<span class="spPermalink"><a href="/2013/08/22/#a1377187361">#</a></span></p>
+				<p><a name="a1377187669"></a>If <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Font Awesome</a> had an unhappy face icon, I'd insert it here.  <span class="spPermalink"><a href="/2013/08/22/#a1377187669">#</a></span></p>
+				<p><a name="a1377187710"></a>:(<span class="spPermalink"><a href="/2013/08/22/#a1377187710">#</a></span></p>
+				<p><a name="a1377187975"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=google">google</a><span class="spPermalink"><a href="/2013/08/22/#a1377187975">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1377178889"></a><a class="aStreamTextLink" onclick="ecStream (1)">Another Person Moving to Fastmail.fm</a><span class="spPermalink"><a href="/2013/08/22/#a1377178889">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel1">
+				<p><a name="a1377178900"></a>I just set up my own domain with <a href="http://fastmail.fm">Fastmail.fm</a> and am going to start offering jk@jeffreykishner.com as my primary email address instead of jeffreykishner@gmail.com. It took opening tickets with both my host and Fastmail to correctly set up my MX records and my email alias, but now it is working. <span class="spPermalink"><a href="/2013/08/22/#a1377178900">#</a></span></p>
+				<p><a name="a1377179022"></a>The "straw that broke the camel's back" was <a href="http://www.groklaw.net/article.php?story=20130818120421175">this post on Groklaw</a> about the author's choice to shut down the site (who knows how long this link will be active?) in light of recent disclosures about our current surveillance state, as well as numerous posts by Marco Arment about reducing his dependence on Google (particularly <a href="http://www.marco.org/2011/04/05/let-us-pay-for-this-service-so-it-wont-go-down">this one</a>). <span class="spPermalink"><a href="/2013/08/22/#a1377179022">#</a></span></p>
+				<p><a name="a1377179254"></a>I have no illusions that Fastmail wouldn't make their servers available to the NSA upon a court order (although honestly I haven't read their ToS and Privacy Policy closely to even find out). But I feel they'd put up more of a fight than Google (and yes, my "feeling" may not be justified by any facts). <span class="spPermalink"><a href="/2013/08/22/#a1377179254">#</a></span></p>
+				<p><a name="a1377179421"></a>But privacy concerns aside, I would rather be a customer than a product. To Google, I am a product and the advertiser is the customer. The advertiser is paying for my attention. By choosing to pay Fastmail (by the time my 60-day trial ends) I am choosing to be the customer. They are serving <i>me</i>, not an advertiser. No software is reading my emails for the purpose of determining the most contextually appropriate ads to serve me.<span class="spPermalink"><a href="/2013/08/22/#a1377179421">#</a></span></p>
+				<p><a name="a1377179524"></a>I still rely on Google. I do searches while logged in. I use Maps; Calendar for my business; Drive to store some docs and spreadsheets that I frequently edit; and probably other services that are not coming to mind right now. I do not think Google is Evil, but I also don't feel that they have my best interests in mind. I don't want to just contribute to some Big Dataset in the Cloud.<span class="spPermalink"><a href="/2013/08/22/#a1377179524">#</a></span></p>
+				<p><a name="a1377179678"></a>I <i>love</i> the keyboard shortcuts and ease-of-use of Gmail, but Fastmail has IMAP, webmail, keyboard shortcuts, and other features. At this moment, I am willing to forego some convenience. I hope I stick with it.<span class="spPermalink"><a href="/2013/08/22/#a1377179678">#</a></span></p>
+				<p><a name="a1377179852"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=privacy">privacy</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=email">email</a><span class="spPermalink"><a href="/2013/08/22/#a1377179852">#</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/20/">Tuesday, August 20<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1377009945"></a><a class="aStreamTextLink" onclick="ecStream (2)">Violence Against Women in Video Games</a><span class="spPermalink"><a href="/2013/08/20/#a1377009945">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel2">
+				<p><a name="a1377009953"></a><div align="center"><iframe width="560" height="315" src="//www.youtube.com/embed/toa_vH6xGqs" frameborder="0" allowfullscreen></iframe></div><span class="spPermalink"><a href="/2013/08/20/#a1377009953">#</a></span></p>
+				<p><a name="a1377012492"></a>&nbsp;<span class="spPermalink"><a href="/2013/08/20/#a1377012492">#</a></span></p>
+				<p><a name="a1377009955"></a>I learned about about this <i>Damsels in Distress </i>series via Wired magazine, in which the creator explores misogynist tropes in video games. <a href="http://www.youtube.com/watch?v=X6p5AZp7r_Q">Here's the first in the series</a>; I've embedded the second video above.<span class="spPermalink"><a href="/2013/08/20/#a1377009955">#</a></span></p>
+				<p><a name="a1377010081"></a>I'm not a gamer, and although the use of the "damsel in distress" archetype in video games didn't surprise me, the second video was disturbing. <i>I did not know that so many games require the gamer to kill a woman to proceed to the next level, and that in many cases she is literally "asking for it," i.e., asking the protagonist to kill her (usually because she has been transformed into a "beast" and needs to return to her "pure state").</i><span class="spPermalink"><a href="/2013/08/20/#a1377010081">#</a></span></p>
+				<p><a name="a1377010284"></a>Also upsetting: that the series creator received so much misogynistic social media hate for this project. <span class="spPermalink"><a href="/2013/08/20/#a1377010284">#</a></span></p>
+				<p><a name="a1377011296"></a>I'm a semi-conscious male. I've been aware of concepts like Patriarchy and Male Privilege for at least the last twenty years of my life, and although I'm aware that I indulge in the male gaze and objectification, I make conscious attempts not to take advantage of the inherent power I have as a man. And fortunately, my wife calls me on it when I revert to old behaviors. Having asserted that I am on occasion "part of the problem," I'm a father of a teenage girl, and I don't want her to grow up in a culture in which the tropes explored in these videos go about unquestioned by her peers. I encourage any parent to watch this series with their children (once they're old enough to understand the concepts and are mature enough to view some disturbing imagery).<span class="spPermalink"><a href="/2013/08/20/#a1377011296">#</a></span></p>
+				<p><a name="a1377010734"></a>I appreciate <a href="http://www.feministfrequency.com/about/">Anita Sarkeesian</a>'s courage and intelligence in putting herself and this message out there.<span class="spPermalink"><a href="/2013/08/20/#a1377010734">#</a></span></p>
+				<p><a name="a1377035221"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=video">video</a><span class="spPermalink"><a href="/2013/08/20/#a1377035221">#</a></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/14/">Wednesday, August 14<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1376517096"></a><a class="aStreamTextLink" onclick="ecStream (3)">Include OPML in a WordPress Post or Page</a><span class="spPermalink"><a href="/2013/08/14/#a1376517096">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel3">
+				<p><a name="a1376517120"></a>I wrote a WordPress plugin that enables you to post an outline as an unordered list within a post or page. You can grab the code (and see attribution to Betsy Kimak, upon whose code this plugin is based) <a href="https://gist.github.com/jkishner/6236023">here</a>. I just wrote it today so expect further development.<span class="spPermalink"><a href="/2013/08/14/#a1376517120">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1376575200"></a><a class="aStreamTextLink" onclick="ecStream (4)"><h3>How to Install</h3></a><span class="spPermalink"><a href="/2013/08/14/#a1376575200">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel4">
+					<p><a name="a1376575229"></a>Copy the gist into a text file.<span class="spPermalink"><a href="/2013/08/14/#a1376575229">#</a></span></p>
+					<p><a name="a1376575283"></a>Title it fargo2opml.php<span class="spPermalink"><a href="/2013/08/14/#a1376575283">#</a></span></p>
+					<p><a name="a1376575325"></a>Create a folder called fargo2opml<span class="spPermalink"><a href="/2013/08/14/#a1376575325">#</a></span></p>
+					<p><a name="a1376575353"></a>Drag the file into the folder<span class="spPermalink"><a href="/2013/08/14/#a1376575353">#</a></span></p>
+					<p><a name="a1376575370"></a>Compress folder as zip file<span class="spPermalink"><a href="/2013/08/14/#a1376575370">#</a></span></p>
+					<p><a name="a1376575382"></a>Install it into a self-hosted WordPress site<span class="spPermalink"><a href="/2013/08/14/#a1376575382">#</a></span></p>
+					<p><a name="a1376575407"></a>Activate the plugin<span class="spPermalink"><a href="/2013/08/14/#a1376575407">#</a></span></p>
 					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="22/speakingOfDependenceOnGoogle.html">Speaking of Dependence on Google...</a></div>
-		<p>The traffic to my <a href="http://sasstrology.com">astrology blog</a> has dropped precipitously in the last three days. Drilling down into my analytics, it appears that I am getting less than half the Google search traffic I was getting just this past weekend.</p>
-
-<p>Yes, I am worried. The blog brings in money. But it is also seven years old. It has over 5k fans on FB, over 2.5k followers on Twitter. I have a sizable email list (that I haven't been using since I ditched Mailchimp) that I can contact if I need to. Also, I have diversified my income streams such that I am not solely dependent on pageviews (i.e., ad impressions).</p>
-
-<p>Nonetheless, I feel I need to keep bringing in "new eyeballs," because only a fraction of new visitors become fans. I feel helpless, and I don't want to try to <i>divine</i> Google's algorithmic intentions. ("What am I doing wrong, Google? Why hast thou forsaken me?") When I feel this way, I feel more determined to reduce my dependence on search traffic, yet Google is by far the biggest referrer to my site.</p>
-
-<p>If <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Font Awesome</a> had an unhappy face icon, I'd insert it here.  </p>
-
-<p>:(</p>
-
-<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=google">google</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/22/13; 10:53:55 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="22/speakingOfDependenceOnGoogle.html"><i class="fa fa-star"></i></a></div>
+				<p><a name="a1376517202"></a>Or remove the opening and closing php tags and drop it in your functions.php file.<span class="spPermalink"><a href="/2013/08/14/#a1376517202">#</a></span></p>
+				<p><a name="a1376575539"></a><h3>How to Use</h3><span class="spPermalink"><a href="/2013/08/14/#a1376575539">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1376517259"></a><a class="aStreamTextLink" onclick="ecStream (5)">In the content area of your WordPress post or page, just use this shortcode: </a><span class="spPermalink"><a href="/2013/08/14/#a1376517259">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel5">
+					<p><a name="a1376517282"></a><code>[opml url="OPML_URL"]</code><span class="spPermalink"><a href="/2013/08/14/#a1376517282">#</a></span></p>
+					</div>
+				<p><a name="a1376517700"></a>(Obviously, paste the URL of the OPML file between the quotes.)<span class="spPermalink"><a href="/2013/08/14/#a1376517700">#</a></span></p>
+				<p><a name="a1376517298"></a>I've tested this in a few blog installations, and for some the padding before the <code>ul</code> is absent, so all headlines are "flat," i.e., not nested. But it works in both posts and pages in the default 2013 theme.<span class="spPermalink"><a href="/2013/08/14/#a1376517298">#</a></span></p>
+				<p><a name="a1376575568"></a>Also if a public URL starting with <code>https://dl.dropbox.com</code> leads to parsing errors, paste the URL into the address bar, hit return, and use the updated URL that includes "dropboxusercontent" in the URL. <span class="spPermalink"><a href="/2013/08/14/#a1376575568">#</a></span></p>
+				<p><a name="a1377031957"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=opml">opml</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=wordpress">wordpress</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=plugin">plugin</a><span class="spPermalink"><a href="/2013/08/14/#a1377031957">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="22/anotherPersonMovingToFastmailfm.html">Another Person Moving to Fastmail.fm</a></div>
-		<p>I just set up my own domain with <a href="http://fastmail.fm">Fastmail.fm</a> and am going to start offering jk@jeffreykishner.com as my primary email address instead of jeffreykishner@gmail.com. It took opening tickets with both my host and Fastmail to correctly set up my MX records and my email alias, but now it is working. </p>
-
-<p>The "straw that broke the camel's back" was <a href="http://www.groklaw.net/article.php?story=20130818120421175">this post on Groklaw</a> about the author's choice to shut down the site (who knows how long this link will be active?) in light of recent disclosures about our current surveillance state, as well as numerous posts by Marco Arment about reducing his dependence on Google (particularly <a href="http://www.marco.org/2011/04/05/let-us-pay-for-this-service-so-it-wont-go-down">this one</a>). </p>
-
-<p>I have no illusions that Fastmail wouldn't make their servers available to the NSA upon a court order (although honestly I haven't read their ToS and Privacy Policy closely to even find out). But I feel they'd put up more of a fight than Google (and yes, my "feeling" may not be justified by any facts). </p>
-
-<p>But privacy concerns aside, I would rather be a customer than a product. To Google, I am a product and the advertiser is the customer. The advertiser is paying for my attention. By choosing to pay Fastmail (by the time my 60-day trial ends) I am choosing to be the customer. They are serving <i>me</i>, not an advertiser. No software is reading my emails for the purpose of determining the most contextually appropriate ads to serve me.</p>
-
-<p>I still rely on Google. I do searches while logged in. I use Maps; Calendar for my business; Drive to store some docs and spreadsheets that I frequently edit; and probably other services that are not coming to mind right now. I do not think Google is Evil, but I also don't feel that they have my best interests in mind. I don't want to just contribute to some Big Dataset in the Cloud.</p>
-
-<p>I <i>love</i> the keyboard shortcuts and ease-of-use of Gmail, but Fastmail has IMAP, webmail, keyboard shortcuts, and other features. At this moment, I am willing to forego some convenience. I hope I stick with it.</p>
-
-<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=privacy">privacy</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=email">email</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/22/13; 08:41:29 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="22/anotherPersonMovingToFastmailfm.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/13/">Tuesday, August 13<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1376422081"></a><a class="aStreamTextLink" onclick="ecStream (6)">Alter Bridge: "Addicted to Pain"</a><span class="spPermalink"><a href="/2013/08/13/#a1376422081">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel6">
+				<p><a name="a1376422098"></a>My fave band's new single. The album drops October 8.<span class="spPermalink"><a href="/2013/08/13/#a1376422098">#</a></span></p>
+				<p><a name="a1376422137"></a><iframe width="560" height="315" src="//www.youtube.com/embed/nh_NOkycLCw" frameborder="0" allowfullscreen></iframe><span class="spPermalink"><a href="/2013/08/13/#a1376422137">#</a></span></p>
+				<p><a name="a1377032201"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=video">video</a><span class="spPermalink"><a href="/2013/08/13/#a1377032201">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="20/violenceAgainstWomenInVideoGames.html">Violence Against Women in Video Games</a></div>
-		<div align="center"><iframe width="560" height="315" src="//www.youtube.com/embed/toa_vH6xGqs" frameborder="0" allowfullscreen></iframe></div>
-
-<p>&nbsp;</p>
-
-<p>I learned about about this <i>Damsels in Distress </i>series via Wired magazine, in which the creator explores misogynist tropes in video games. <a href="http://www.youtube.com/watch?v=X6p5AZp7r_Q">Here's the first in the series</a>; I've embedded the second video above.</p>
-
-<p>I'm not a gamer, and although the use of the "damsel in distress" archetype in video games didn't surprise me, the second video was disturbing. <i>I did not know that so many games require the gamer to kill a woman to proceed to the next level, and that in many cases she is literally "asking for it," i.e., asking the protagonist to kill her (usually because she has been transformed into a "beast" and needs to return to her "pure state").</i></p>
-
-<p>Also upsetting: that the series creator received so much misogynistic social media hate for this project. </p>
-
-<p>I'm a semi-conscious male. I've been aware of concepts like Patriarchy and Male Privilege for at least the last twenty years of my life, and although I'm aware that I indulge in the male gaze and objectification, I make conscious attempts not to take advantage of the inherent power I have as a man. And fortunately, my wife calls me on it when I revert to old behaviors. Having asserted that I am on occasion "part of the problem," I'm a father of a teenage girl, and I don't want her to grow up in a culture in which the tropes explored in these videos go about unquestioned by her peers. I encourage any parent to watch this series with their children (once they're old enough to understand the concepts and are mature enough to view some disturbing imagery).</p>
-
-<p>I appreciate <a href="http://www.feministfrequency.com/about/">Anita Sarkeesian</a>'s courage and intelligence in putting herself and this message out there.</p>
-
-<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=video">video</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/20/13; 09:45:45 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="20/violenceAgainstWomenInVideoGames.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/12/">Monday, August 12<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1376338518"></a><a class="aStreamTextLink" onclick="ecStream (7)">A Fargo Loop Script to Act on Every Headline in Your Outline</a><span class="spPermalink"><a href="/2013/08/12/#a1376338518">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel7">
+				<p><a name="a1376338566"></a>I'm so proud of myself. Can't tell you how much obsession and trial-and-error it took to get <a href="http://blog.jeffreykishner.com/scripts/fargoLoop.html">this</a> to work. <span class="spPermalink"><a href="/2013/08/12/#a1376338566">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="14/includeOpmlInAWordpressPostOrPage.html">Include OPML in a WordPress Post or Page</a></div>
-		<p>I wrote a WordPress plugin that enables you to post an outline as an unordered list within a post or page. You can grab the code (and see attribution to Betsy Kimak, upon whose code this plugin is based) <a href="https://gist.github.com/jkishner/6236023">here</a>. I just wrote it today so expect further development.</p>
-
-<h3>How to Install</h3>
-
-<ul>
-<li><p>Copy the gist into a text file.</p></li>
-<li><p>Title it fargo2opml.php</p></li>
-<li><p>Create a folder called fargo2opml</p></li>
-<li><p>Drag the file into the folder</p></li>
-<li><p>Compress folder as zip file</p></li>
-<li><p>Install it into a self-hosted WordPress site</p></li>
-<li><p>Activate the plugin</p></li>
-</ul>
-
-<p>Or remove the opening and closing php tags and drop it in your functions.php file.</p>
-
-<h3>How to Use</h3>
-
-<p>In the content area of your WordPress post or page, just use this shortcode: </p>
-
-<ul>
-<li><code>[opml url="OPML_URL"]</code></li>
-</ul>
-
-<p>(Obviously, paste the URL of the OPML file between the quotes.)</p>
-
-<p>I've tested this in a few blog installations, and for some the padding before the <code>ul</code> is absent, so all headlines are "flat," i.e., not nested. But it works in both posts and pages in the default 2013 theme.</p>
-
-<p>Also if a public URL starting with <code>https://dl.dropbox.com</code> leads to parsing errors, paste the URL into the address bar, hit return, and use the updated URL that includes "dropboxusercontent" in the URL. </p>
-
-<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=opml">opml</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=wordpress">wordpress</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=plugin">plugin</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/14/13; 04:51:36 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="14/includeOpmlInAWordpressPostOrPage.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/10/">Saturday, August 10<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1376172180"></a><a class="aStreamTextLink" onclick="ecStream (8)">Elysium Review</a><span class="spPermalink"><a href="/2013/08/10/#a1376172180">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel8">
+				<p><a name="a1376172190"></a>No plot summary here, just reporting that I maintain a "positive sentiment" about this movie 24 hours after viewing. <span class="spPermalink"><a href="/2013/08/10/#a1376172190">#</a></span></p>
+				<p><a name="a1376172253"></a>It wasn't <i>too</i> thrilling or creepy or funny or touching, but had enough of all these elements in just the right combination that I felt good coming out of the theater.  <span class="spPermalink"><a href="/2013/08/10/#a1376172253">#</a></span></p>
+				<p><a name="a1376172377"></a>I've seen just about every sci-fi or comic book movie (except for <i>Man of Steel</i>) this summer. <i>Iron Man</i> left me feeling empty, <i>Wolverine</i> was too confusing. The highlight was <i>Star Trek</i>, and <i>Elysium</i> comes in second. I actually want to see it again, even though there were no box-in-a-box plot twists. A straightforward "fight to reach the goal" or "find what you are made of" film can be good -- it's all in the execution.  <span class="spPermalink"><a href="/2013/08/10/#a1376172377">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="13/alterBridgeAddictedToPain.html">Alter Bridge: "Addicted to Pain"</a></div>
-		<p>My fave band's new single. The album drops October 8.</p>
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/nh_NOkycLCw" frameborder="0" allowfullscreen></iframe>
-
-<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=video">video</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/13/13; 02:28:01 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="13/alterBridgeAddictedToPain.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/09/">Friday, August  9<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1376068972"></a><a class="aStreamTextLink" onclick="ecStream (9)">A One-Line Fargo Script to Add Blockquote Tags to a Headline</a><span class="spPermalink"><a href="/2013/08/09/#a1376068972">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel9">
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1376069008"></a><a class="aStreamTextLink" onclick="ecStream (10)">If you're writing a post that you're publishing to WordPress (or as type=html from a named outline) and want to wrap blockquotes around the complete text of a headline, add this to your Scripts menu:</a><span class="spPermalink"><a href="/2013/08/09/#a1376069008">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel10">
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1376069101"></a><a class="aStreamTextLink" onclick="ecStream (11)">blockquote</a><span class="spPermalink"><a href="/2013/08/09/#a1376069101">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel11">
+						<p><a name="a1376069105"></a><code>op.setLineText ("&lt;blockquote&gt;" + op.getLineText () + "&lt;/blockquote&gt;");</code><span class="spPermalink"><a href="/2013/08/09/#a1376069105">#</a></span></p>
+						</div>
+					</div>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1376069289"></a><a class="aStreamTextLink" onclick="ecStream (12)">This script will transform</a><span class="spPermalink"><a href="/2013/08/09/#a1376069289">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel12">
+					<p><a name="a1376069299"></a><i class="fa fa-caret-right"></i> A person who never made a mistake never tried anything new.<span class="spPermalink"><a href="/2013/08/09/#a1376069299">#</a></span></p>
+					</div>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (13)" ><i class="fa fa-caret-right" id="idStreamWedge13"></i></a></span><a name="a1376069371"></a><a class="aStreamTextLink" onclick="ecStream (13)">to</a><span class="spPermalink"><a href="/2013/08/09/#a1376069371">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel13">
+					<p><a name="a1376069388"></a><i class="fa fa-caret-right"></i> &lt;blockquote&gt;A person who never made a mistake never tried anything new.&lt;/blockquote&gt;<span class="spPermalink"><a href="/2013/08/09/#a1376069388">#</a></span></p>
+					</div>
+				<p><a name="a1376069495"></a>Just put your cursor on the headline and choose the script. Highlighting a portion of the text won't do anything -- the entire headline is always surrounded by the tags.<span class="spPermalink"><a href="/2013/08/09/#a1376069495">#</a></span></p>
+				<p><a name="a1376069243"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/08/09/#a1376069243">#</a></span></p>
+				<p><a name="a1376069194"></a><small>In response to <a href="http://frank-notes.smallpict.com/2013/08/07/addingHtmlTagsToNodes">Frank McPherson</a>.</small><span class="spPermalink"><a href="/2013/08/09/#a1376069194">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="12/aFargoLoopScriptToActOnEveryHeadlineInYourOutlineLink.html">A Fargo Loop Script to Act on Every Headline in Your Outline</a></div>
-		<p>I'm so proud of myself. Can't tell you how much obsession and trial-and-error it took to get <a href="http://blog.jeffreykishner.com/scripts/fargoLoop.html">this</a> to work. </p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/12/13; 03:15:18 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="12/aFargoLoopScriptToActOnEveryHeadlineInYourOutlineLink.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/07/">Wednesday, August  7<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (14)" ><i class="fa fa-caret-right" id="idStreamWedge14"></i></a></span><a name="a1375884628"></a><a class="aStreamTextLink" onclick="ecStream (14)">Updated To-Do Script for Fargo</a><span class="spPermalink"><a href="/2013/08/07/#a1375884628">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel14">
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (15)" ><i class="fa fa-caret-right" id="idStreamWedge15"></i></a></span><a name="a1375884862"></a><a class="aStreamTextLink" onclick="ecStream (15)">This script builds on the one I offered <a href="http://blog.jeffreykishner.com/2013/08/06/aTodoScriptForFargo.html">yesterday</a>. Click on the wedge to see changes, or read the full description below.</a><span class="spPermalink"><a href="/2013/08/07/#a1375884862">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel15">
+					<p><a name="a1375884938"></a>Creates an Archive headline at the bottom of an outline if it does not already exist. <span class="spPermalink"><a href="/2013/08/07/#a1375884938">#</a></span></p>
+					<p><a name="a1375884992"></a>You can apply this script to any headline no matter how nested it is, which means that you can apply it to actions within a project or sub-project. When you archive it, all its children are carried over with it.<span class="spPermalink"><a href="/2013/08/07/#a1375884992">#</a></span></p>
+					<p><a name="a1375885047"></a>When you mark a headline complete, an attribute called "completed" is added with the current date and time. You will not see this information in the headline, but you can see it by clicking on the <i class="fa fa-suitcase"></i> in the left rail of Fargo.<span class="spPermalink"><a href="/2013/08/07/#a1375885047">#</a></span></p>
+					</div>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (16)" ><i class="fa fa-caret-right" id="idStreamWedge16"></i></a></span><a name="a1375885141"></a><a class="aStreamTextLink" onclick="ecStream (16)">If you have an outline with to-do items (no matter how nested they are within higher-order headlines), this script does the following:</a><span class="spPermalink"><a href="/2013/08/07/#a1375885141">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel16">
+					<p><a name="a1375801748"></a>Choose "todoArchive" from your <i>Scripts</i> menu to add an empty checkbox <i class="fa fa-check-empty"></i> when you first enter the action item.<span class="spPermalink"><a href="/2013/08/07/#a1375801748">#</a></span></p>
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (17)" ><i class="fa fa-caret-right" id="idStreamWedge17"></i></a></span><a name="a1375801837"></a><a class="aStreamTextLink" onclick="ecStream (17)">When you've completed the item, choose "todoArchive" to add a checkmark <i class="fa fa-check"></i> to the headline.</a><span class="spPermalink"><a href="/2013/08/07/#a1375801837">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel17">
+						<p><a name="a1375885277"></a>When you mark a headline complete, an attribute called "completed" is added with the current date and time. You will not see this information in the headline, but you can see it by clicking on the <i class="fa fa-suitcase"></i> in the left rail of Fargo.<span class="spPermalink"><a href="/2013/08/07/#a1375885277">#</a></span></p>
+						</div>
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (18)" ><i class="fa fa-caret-right" id="idStreamWedge18"></i></a></span><a name="a1375801864"></a><a class="aStreamTextLink" onclick="ecStream (18)">If you don't want to see the completed item anymore, choose "todoArchive" to archive it.</a><span class="spPermalink"><a href="/2013/08/07/#a1375801864">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel18">
+						<p><a name="a1375885378"></a>If the final first-order headline in your outline is called "Archive," the completed item will become a child of this headline.<span class="spPermalink"><a href="/2013/08/07/#a1375885378">#</a></span></p>
+						<p><a name="a1375885413"></a>If the final first-order headline in your outline is <i>not</i> called "Archive," one will be created, and the completed item will become a child of this headline.<span class="spPermalink"><a href="/2013/08/07/#a1375885413">#</a></span></p>
+						<p><a name="a1375885446"></a>When the item is archived, the "Archive" headline will automatically collapse. You will need to expand it if you want to see all your archived items.<span class="spPermalink"><a href="/2013/08/07/#a1375885446">#</a></span></p>
+						</div>
+					<p><a name="a1375801925"></a>If your headline has any other icon value associated with it (e.g., <i class="fa fa-star-empty"></i>), "todoArchive" will do absolutely nothing to it.<span class="spPermalink"><a href="/2013/08/07/#a1375801925">#</a></span></p>
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (19)" ><i class="fa fa-caret-right" id="idStreamWedge19"></i></a></span><a name="a1375802146"></a><a class="aStreamTextLink" onclick="ecStream (19)">Your outline would look something like this:</a><span class="spPermalink"><a href="/2013/08/07/#a1375802146">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel19">
+						<p><a name="a1375802241"></a><i class="fa fa-check-empty"></i> incomplete to-do item<span class="spPermalink"><a href="/2013/08/07/#a1375802241">#</a></span></p>
+						<p><a name="a1375802259"></a><i class="fa fa-check"></i> completed to-do item<span class="spPermalink"><a href="/2013/08/07/#a1375802259">#</a></span></p>
+						<p><a name="a1375802156"></a><b><i class="fa fa-caret-right"></i> Archive</b><span class="spPermalink"><a href="/2013/08/07/#a1375802156">#</a></span></p>
+						</div>
+					</div>
+				<p><a name="a1386627086"></a>You can view the OPML <a href="http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/xv93tfa9v2wjarn/todoarchivescript.opml">here</a>.)<span class="spPermalink"><a href="/2013/08/07/#a1386627086">#</a></span></p>
+				<p><a name="a1375885541"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/08/07/#a1375885541">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="10/elysiumReview.html">Elysium Review</a></div>
-		<p>No plot summary here, just reporting that I maintain a "positive sentiment" about this movie 24 hours after viewing. </p>
-
-<p>It wasn't <i>too</i> thrilling or creepy or funny or touching, but had enough of all these elements in just the right combination that I felt good coming out of the theater.  </p>
-
-<p>I've seen just about every sci-fi or comic book movie (except for <i>Man of Steel</i>) this summer. <i>Iron Man</i> left me feeling empty, <i>Wolverine</i> was too confusing. The highlight was <i>Star Trek</i>, and <i>Elysium</i> comes in second. I actually want to see it again, even though there were no box-in-a-box plot twists. A straightforward "fight to reach the goal" or "find what you are made of" film can be good -- it's all in the execution.  </p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/10/13; 05:03:00 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="10/elysiumReview.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/06/">Tuesday, August  6<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (20)" ><i class="fa fa-caret-right" id="idStreamWedge20"></i></a></span><a name="a1375801672"></a><a class="aStreamTextLink" onclick="ecStream (20)">A To-Do Script for Fargo</a><span class="spPermalink"><a href="/2013/08/06/#a1375801672">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel20">
+				<p><a name="a1375885678"></a><i>An updated version of this script with more bells and whistles can be found <a href="http://blog.jeffreykishner.com/2013/08/07/updatedTodoScriptForFargo.html">here</a>.</i><span class="spPermalink"><a href="/2013/08/06/#a1375885678">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (21)" ><i class="fa fa-caret-right" id="idStreamWedge21"></i></a></span><a name="a1375801685"></a><a class="aStreamTextLink" onclick="ecStream (21)">If you have an outline with <i>only</i> a simple list of single action to-do items (i.e, no headlines with child nodes) and an Archive headline at the very end of your outline, this script does the following:</a><span class="spPermalink"><a href="/2013/08/06/#a1375801685">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel21">
+					<p><a name="a1375801748"></a>Choose "todo" from your <i>Scripts</i> menu to add an empty checkbox <i class="fa fa-check-empty"></i> when you first enter the action item.<span class="spPermalink"><a href="/2013/08/06/#a1375801748">#</a></span></p>
+					<p><a name="a1375801837"></a>When you've completed the item, choose "todo" to add a checkmark <i class="fa fa-check"></i> to the headline.<span class="spPermalink"><a href="/2013/08/06/#a1375801837">#</a></span></p>
+					<p><a name="a1375801864"></a>If you don't want to see the completed item anymore, choose "todo" to make the headline a child of the Archive headline.<span class="spPermalink"><a href="/2013/08/06/#a1375801864">#</a></span></p>
+					<p><a name="a1375801925"></a>If your headline has any other icon value associated with it (e.g., <i class="fa fa-star-empty"></i>), "todo" will do absolutely nothing to it.<span class="spPermalink"><a href="/2013/08/06/#a1375801925">#</a></span></p>
+					</div>
+				<p><a name="a1375801983"></a><script src="https://gist.github.com/jkishner/6165299.js"></script><span class="spPermalink"><a href="/2013/08/06/#a1375801983">#</a></span></p>
+				<p><a name="a1375801986"></a>(If you do not see a github embed above, please refresh this page or get the raw code <a href="https://gist.github.com/jkishner/6165299/raw/215a255fa8c34df5cae52368e69ce6530a43333b/todo">here</a>.)<span class="spPermalink"><a href="/2013/08/06/#a1375801986">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (22)" ><i class="fa fa-caret-right" id="idStreamWedge22"></i></a></span><a name="a1375802146"></a><a class="aStreamTextLink" onclick="ecStream (22)">Your outline would look something like this:</a><span class="spPermalink"><a href="/2013/08/06/#a1375802146">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel22">
+					<p><a name="a1375802241"></a><i class="fa fa-check-empty"></i> incomplete to-do item<span class="spPermalink"><a href="/2013/08/06/#a1375802241">#</a></span></p>
+					<p><a name="a1375802259"></a><i class="fa fa-check"></i> completed to-do item<span class="spPermalink"><a href="/2013/08/06/#a1375802259">#</a></span></p>
+					<p><a name="a1375802156"></a><b><i class="fa fa-caret-right"></i> Archive</b><span class="spPermalink"><a href="/2013/08/06/#a1375802156">#</a></span></p>
+					</div>
+				<p><a name="a1375802414"></a>If you expand the Archive headline, you will see your completed items.<span class="spPermalink"><a href="/2013/08/06/#a1375802414">#</a></span></p>
+				<p><a name="a1375802036"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/08/06/#a1375802036">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="09/aOnelineFargoScriptToAddBlockquoteTagsToAHeadline.html">A One-Line Fargo Script to Add Blockquote Tags to a Headline</a></div>
-		<p>If you're writing a post that you're publishing to WordPress (or as type=html from a named outline) and want to wrap blockquotes around the complete text of a headline, add this to your Scripts menu:</p>
-
-<ul>
-<li><p>blockquote</p>
-
-<ul><li><code>op.setLineText ("&lt;blockquote&gt;" + op.getLineText () + "&lt;/blockquote&gt;");</code></li></ul></li>
-</ul>
-
-<p>This script will transform</p>
-
-<ul>
-<li><i class="fa fa-caret-right"></i> A person who never made a mistake never tried anything new.</li>
-</ul>
-
-<p>to</p>
-
-<ul>
-<li><i class="fa fa-caret-right"></i> &lt;blockquote&gt;A person who never made a mistake never tried anything new.&lt;/blockquote&gt;</li>
-</ul>
-
-<p>Just put your cursor on the headline and choose the script. Highlighting a portion of the text won't do anything -- the entire headline is always surrounded by the tags.</p>
-
-<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
-
-<p><small>In response to <a href="http://frank-notes.smallpict.com/2013/08/07/addingHtmlTagsToNodes">Frank McPherson</a>.</small></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/09/13; 12:22:52 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="09/aOnelineFargoScriptToAddBlockquoteTagsToAHeadline.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/05/">Monday, August  5<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (23)" ><i class="fa fa-caret-right" id="idStreamWedge23"></i></a></span><a name="a1375731504"></a><a class="aStreamTextLink" onclick="ecStream (23)">On Programming as a Hobby</a><span class="spPermalink"><a href="/2013/08/05/#a1375731504">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel23">
+				<p><a name="a1375731510"></a>I've been seriously geeking out on the internet since about 2001, when I built my first web page. Since then, I've learned enough HTML, CSS and PHP to "get by" as someone who runs a popular blog on WordPress. I pretty much only pick things up when I <i>have to</i>, i.e., when I want to add some look or functionality to my site but don't want to pay someone else to do it for me. <span class="spPermalink"><a href="/2013/08/05/#a1375731510">#</a></span></p>
+				<p><a name="a1375731680"></a>A year ago, I downloaded a free PHP manual onto my Kindle, and finally developed a simple <a href="http://taskpusher.net">web app</a> using a <a href="https://pushover.net/faq#technical-php">CURL module</a>. I learned what I needed to by looking stuff up online to solve my own problem.<span class="spPermalink"><a href="/2013/08/05/#a1375731680">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (24)" ><i class="fa fa-caret-right" id="idStreamWedge24"></i></a></span><a name="a1375731848"></a><a class="aStreamTextLink" onclick="ecStream (24)">Now that I'm playing around with <a href="http://outliner.smallpicture.com/fargoVerbs.js">Fargo verbs</a> and writing my own scripts, I'm finding it not too challenging. With some basic PHP knowledge under my belt, I've just had to look up minor syntactical differences in javascript. </a><span class="spPermalink"><a href="/2013/08/05/#a1375731848">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel24">
+					<p><a name="a1375732024"></a>Because I already know about concepts like <i>string replace</i> and <i>if-else</i>, I know what's possible and just have to look at how it's done in a different language.<span class="spPermalink"><a href="/2013/08/05/#a1375732024">#</a></span></p>
+					</div>
+				<p><a name="a1375732091"></a>However, when I look at scripts written by <i>real programmers</i>, I am at a loss. I feel like someone who has taken a semester of French and gone abroad, only to understand 5-10% of what anyone is talking about.<span class="spPermalink"><a href="/2013/08/05/#a1375732091">#</a></span></p>
+				<p><a name="a1375732156"></a>When this happens, I hit a roadblock. I don't <i>really</i> want to sit down and formally read a manual on javascript. I have written what I've written for Fargo <i>because it's fun</i>. The moment it stops being fun, when it starts to feel like homework, I resist. It's one thing to go overcome a lack of knowledge because I feel inspired enough to search for a solution to a legitimate problem (or am just plain curious). It's another to study a language methodically because I feel I need to "catch up" with some Ideal Level of Competency.<span class="spPermalink"><a href="/2013/08/05/#a1375732156">#</a></span></p>
+				<p><a name="a1375732436"></a><h3>Producer vs. Developer</h3><span class="spPermalink"><a href="/2013/08/05/#a1375732436">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (25)" ><i class="fa fa-caret-right" id="idStreamWedge25"></i></a></span><a name="a1375732465"></a><a class="aStreamTextLink" onclick="ecStream (25)">I've been working in digital since 2006, mostly doing editing and web production. I love dabbling in programming, but I don't know if I'll ever make the transition to programmer or developer. It seems like a quantum leap is required to move from hobbyist to professional, and I don't know if I have the mind or the desire to make that jump. </a><span class="spPermalink"><a href="/2013/08/05/#a1375732465">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel25">
+					<p><a name="a1375732553"></a>Maybe out of economic necessity: if I am ever "made redundant" via technology or outsourcing, I would have to do what it takes to become more <i>marketable</i> in the <i>workplace</i>. As much as I'd love to earn a higher salary now, I feel too complacent to develop professional programming skills while I currently have a job.<span class="spPermalink"><a href="/2013/08/05/#a1375732553">#</a></span></p>
+					</div>
+				<p><a name="a1375732776"></a><b>Comment below:</b> If you're a programmer, how did you "make the leap" or were you <i>always</i> doing this? And if you're a dabbler, how do you feel about coding-as-hobby?<span class="spPermalink"><a href="/2013/08/05/#a1375732776">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="07/updatedTodoScriptForFargo.html">Updated To-Do Script for Fargo</a></div>
-		<p>This script builds on the one I offered <a href="http://blog.jeffreykishner.com/2013/08/06/aTodoScriptForFargo.html">yesterday</a>. Click on the wedge to see changes, or read the full description below.</p>
-
-<ul>
-<li><p>Creates an Archive headline at the bottom of an outline if it does not already exist. </p></li>
-<li><p>You can apply this script to any headline no matter how nested it is, which means that you can apply it to actions within a project or sub-project. When you archive it, all its children are carried over with it.</p></li>
-<li><p>When you mark a headline complete, an attribute called "completed" is added with the current date and time. You will not see this information in the headline, but you can see it by clicking on the <i class="fa fa-suitcase"></i> in the left rail of Fargo.</p></li>
-</ul>
-
-<p>If you have an outline with to-do items (no matter how nested they are within higher-order headlines), this script does the following:</p>
-
-<ul>
-<li><p>Choose "todoArchive" from your <i>Scripts</i> menu to add an empty checkbox <i class="fa fa-check-empty"></i> when you first enter the action item.</p></li>
-<li><p>When you've completed the item, choose "todoArchive" to add a checkmark <i class="fa fa-check"></i> to the headline.</p>
-
-<ul><li>When you mark a headline complete, an attribute called "completed" is added with the current date and time. You will not see this information in the headline, but you can see it by clicking on the <i class="fa fa-suitcase"></i> in the left rail of Fargo.</li></ul></li>
-<li><p>If you don't want to see the completed item anymore, choose "todoArchive" to archive it.</p>
-
-<ul><li><p>If the final first-order headline in your outline is called "Archive," the completed item will become a child of this headline.</p></li>
-<li><p>If the final first-order headline in your outline is <i>not</i> called "Archive," one will be created, and the completed item will become a child of this headline.</p></li>
-<li><p>When the item is archived, the "Archive" headline will automatically collapse. You will need to expand it if you want to see all your archived items.</p></li></ul></li>
-<li><p>If your headline has any other icon value associated with it (e.g., <i class="fa fa-star-empty"></i>), "todoArchive" will do absolutely nothing to it.</p></li>
-<li><p>Your outline would look something like this:</p>
-
-<ul><li><p><i class="fa fa-check-empty"></i> incomplete to-do item</p></li>
-<li><p><i class="fa fa-check"></i> completed to-do item</p></li>
-<li><p><b><i class="fa fa-caret-right"></i> Archive</b></p></li></ul></li>
-</ul>
-
-<p>You can view the OPML <a href="http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/xv93tfa9v2wjarn/todoarchivescript.opml">here</a>.)</p>
-
-<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/07/13; 09:10:28 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="07/updatedTodoScriptForFargo.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/02/">Friday, August  2<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (26)" ><i class="fa fa-caret-right" id="idStreamWedge26"></i></a></span><a name="a1375451389"></a><a class="aStreamTextLink" onclick="ecStream (26)">Fargo Script to Collapse Parent Node</a><span class="spPermalink"><a href="/2013/08/02/#a1375451389">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel26">
+				<p><a name="a1375451397"></a>When I'm moving a node around with the keyboard shortcuts and "move right" to make it a child of a collapsed headline, that headline expands and the node ends up at the bottom of the list. To collapse the parent headline, I need to either mouse up to it and click on it, or use the arrow keys to navigate to the parent. And if I'm in structure mode (where the headlines are highlighted), then I need to arrow left once I've reached the first child of the parent node. This script allows you to collapse the parent node just by choosing <i>Collapse Parent</i> from your scripts menu.<span class="spPermalink"><a href="/2013/08/02/#a1375451397">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (27)" ><i class="fa fa-caret-right" id="idStreamWedge27"></i></a></span><a name="a1375452826"></a><a class="aStreamTextLink" onclick="ecStream (27)">You can also append these three lines to another script if you've used the op.reorg verb to do something like <a href="http://blog.jeffreykishner.com/2013/08/01/fargoScriptMoveChildNodeToTheNextParentsHouse">move a child node to the next parent's house</a>. </a><span class="spPermalink"><a href="/2013/08/02/#a1375452826">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel27">
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (28)" ><i class="fa fa-caret-right" id="idStreamWedge28"></i></a></span><a name="a1375451216"></a><a class="aStreamTextLink" onclick="ecStream (28)">Collapse Parent</a><span class="spPermalink"><a href="/2013/08/02/#a1375451216">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel28">
+						<p><a name="a1375451260"></a>op.go (left, 1);<span class="spPermalink"><a href="/2013/08/02/#a1375451260">#</a></span></p>
+						<p><a name="a1375451230"></a>op.collapse ();<span class="spPermalink"><a href="/2013/08/02/#a1375451230">#</a></span></p>
+						</div>
+					</div>
+				<p><a name="a1375452509"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/08/02/#a1375452509">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="06/aTodoScriptForFargo.html">A To-Do Script for Fargo</a></div>
-		<p><i>An updated version of this script with more bells and whistles can be found <a href="http://blog.jeffreykishner.com/2013/08/07/updatedTodoScriptForFargo.html">here</a>.</i></p>
-
-<p>If you have an outline with <i>only</i> a simple list of single action to-do items (i.e, no headlines with child nodes) and an Archive headline at the very end of your outline, this script does the following:</p>
-
-<ul>
-<li><p>Choose "todo" from your <i>Scripts</i> menu to add an empty checkbox <i class="fa fa-check-empty"></i> when you first enter the action item.</p></li>
-<li><p>When you've completed the item, choose "todo" to add a checkmark <i class="fa fa-check"></i> to the headline.</p></li>
-<li><p>If you don't want to see the completed item anymore, choose "todo" to make the headline a child of the Archive headline.</p></li>
-<li><p>If your headline has any other icon value associated with it (e.g., <i class="fa fa-star-empty"></i>), "todo" will do absolutely nothing to it.</p></li>
-</ul>
-
-<script src="https://gist.github.com/jkishner/6165299.js"></script>
-
-<p>(If you do not see a github embed above, please refresh this page or get the raw code <a href="https://gist.github.com/jkishner/6165299/raw/215a255fa8c34df5cae52368e69ce6530a43333b/todo">here</a>.)</p>
-
-<p>Your outline would look something like this:</p>
-
-<ul>
-<li><p><i class="fa fa-check-empty"></i> incomplete to-do item</p></li>
-<li><p><i class="fa fa-check"></i> completed to-do item</p></li>
-<li><p><b><i class="fa fa-caret-right"></i> Archive</b></p></li>
-</ul>
-
-<p>If you expand the Archive headline, you will see your completed items.</p>
-
-<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/06/13; 10:07:52 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="06/aTodoScriptForFargo.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="05/onProgrammingAsAHobby.html">On Programming as a Hobby</a></div>
-		<p>I've been seriously geeking out on the internet since about 2001, when I built my first web page. Since then, I've learned enough HTML, CSS and PHP to "get by" as someone who runs a popular blog on WordPress. I pretty much only pick things up when I <i>have to</i>, i.e., when I want to add some look or functionality to my site but don't want to pay someone else to do it for me. </p>
-
-<p>A year ago, I downloaded a free PHP manual onto my Kindle, and finally developed a simple <a href="http://taskpusher.net">web app</a> using a <a href="https://pushover.net/faq#technical-php">CURL module</a>. I learned what I needed to by looking stuff up online to solve my own problem.</p>
-
-<p>Now that I'm playing around with <a href="http://outliner.smallpicture.com/fargoVerbs.js">Fargo verbs</a> and writing my own scripts, I'm finding it not too challenging. With some basic PHP knowledge under my belt, I've just had to look up minor syntactical differences in javascript. </p>
-
-<ul>
-<li>Because I already know about concepts like <i>string replace</i> and <i>if-else</i>, I know what's possible and just have to look at how it's done in a different language.</li>
-</ul>
-
-<p>However, when I look at scripts written by <i>real programmers</i>, I am at a loss. I feel like someone who has taken a semester of French and gone abroad, only to understand 5-10% of what anyone is talking about.</p>
-
-<p>When this happens, I hit a roadblock. I don't <i>really</i> want to sit down and formally read a manual on javascript. I have written what I've written for Fargo <i>because it's fun</i>. The moment it stops being fun, when it starts to feel like homework, I resist. It's one thing to go overcome a lack of knowledge because I feel inspired enough to search for a solution to a legitimate problem (or am just plain curious). It's another to study a language methodically because I feel I need to "catch up" with some Ideal Level of Competency.</p>
-
-<h3>Producer vs. Developer</h3>
-
-<p>I've been working in digital since 2006, mostly doing editing and web production. I love dabbling in programming, but I don't know if I'll ever make the transition to programmer or developer. It seems like a quantum leap is required to move from hobbyist to professional, and I don't know if I have the mind or the desire to make that jump. </p>
-
-<ul>
-<li>Maybe out of economic necessity: if I am ever "made redundant" via technology or outsourcing, I would have to do what it takes to become more <i>marketable</i> in the <i>workplace</i>. As much as I'd love to earn a higher salary now, I feel too complacent to develop professional programming skills while I currently have a job.</li>
-</ul>
-
-<p><b>Comment below:</b> If you're a programmer, how did you "make the leap" or were you <i>always</i> doing this? And if you're a dabbler, how do you feel about coding-as-hobby?</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/05/13; 02:38:24 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="05/onProgrammingAsAHobby.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="02/fargoScriptToCollapseParentNode.html">Fargo Script to Collapse Parent Node</a></div>
-		<p>When I'm moving a node around with the keyboard shortcuts and "move right" to make it a child of a collapsed headline, that headline expands and the node ends up at the bottom of the list. To collapse the parent headline, I need to either mouse up to it and click on it, or use the arrow keys to navigate to the parent. And if I'm in structure mode (where the headlines are highlighted), then I need to arrow left once I've reached the first child of the parent node. This script allows you to collapse the parent node just by choosing <i>Collapse Parent</i> from your scripts menu.</p>
-
-<p>You can also append these three lines to another script if you've used the op.reorg verb to do something like <a href="http://blog.jeffreykishner.com/2013/08/01/fargoScriptMoveChildNodeToTheNextParentsHouse">move a child node to the next parent's house</a>. </p>
-
-<ul>
-<li><p>Collapse Parent</p>
-
-<ul><li><p>op.go (left, 1);</p></li>
-<li><p>op.collapse ();</p></li></ul></li>
-</ul>
-
-<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/02/13; 08:49:49 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="02/fargoScriptToCollapseParentNode.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="01/fargoScriptMoveChildNodeToTheNextParentsHouse.html">Fargo Script: Move Child Node to the Next Parent's House</a></div>
-		<p>This simple script takes a child node and moves it to the next "immediate parent" headline.</p>
-
-<p>Before:</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%2012.59.19%20PM.png"></p>
-
-<p>After:</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%2012.59.32%20PM.png"></p>
-
-<p>Before:</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%201.04.03%20PM.png"></p>
-
-<p>After:</p>
-
-<p><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%201.04.15%20PM.png"></p>
-
-<p>What it's useful for:</p>
-
-<ul>
-<li>If you have a first-order headline called "Bills Due" and a first-order headline called "Bills Paid" below it, once you've paid a bill (designated as a <i>child</i> of the "Bills Due" headline), you can move it directly to the bottom of the list of "Bills Paid" without using navigation keys.</li>
-</ul>
-
-<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
-
-<script src="https://gist.github.com/jkishner/6132766.js"></script>
-
-<p>(There should be a github embed above this line. If not, please reload this page or get the raw code <a href="https://gist.github.com/jkishner/6132766/raw/b9d2d7b5dcdf74b965ea48a6aedfa815e2139cfe/Move+Child+to+Next+Parent">here</a>.)</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/01/13; 11:03:31 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="01/fargoScriptMoveChildNodeToTheNextParentsHouse.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="01/aLinkblogScriptThatTweetsAndAddsADate.html">A LinkBlog Script That Tweets and Adds a Date</a></div>
-		<p>This script does the following:</p>
-
-<ul>
-<li><p><rules>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/01/">Thursday, August  1<span class="spDateYearPart">, 2013</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (29)" ><i class="fa fa-caret-right" id="idStreamWedge29"></i></a></span><a name="a1375373011"></a><a class="aStreamTextLink" onclick="ecStream (29)">Fargo Script: Move Child Node to the Next Parent's House</a><span class="spPermalink"><a href="/2013/08/01/#a1375373011">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel29">
+				<p><a name="a1375376543"></a>This simple script takes a child node and moves it to the next "immediate parent" headline.<span class="spPermalink"><a href="/2013/08/01/#a1375376543">#</a></span></p>
+				<p><a name="a1375376781"></a>Before:<span class="spPermalink"><a href="/2013/08/01/#a1375376781">#</a></span></p>
+				<p><a name="a1375376475"></a><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%2012.59.19%20PM.png"><span class="spPermalink"><a href="/2013/08/01/#a1375376475">#</a></span></p>
+				<p><a name="a1375376787"></a>After:<span class="spPermalink"><a href="/2013/08/01/#a1375376787">#</a></span></p>
+				<p><a name="a1375376488"></a><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%2012.59.32%20PM.png"><span class="spPermalink"><a href="/2013/08/01/#a1375376488">#</a></span></p>
+				<p><a name="a1375376791"></a>Before:<span class="spPermalink"><a href="/2013/08/01/#a1375376791">#</a></span></p>
+				<p><a name="a1375376697"></a><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%201.04.03%20PM.png"><span class="spPermalink"><a href="/2013/08/01/#a1375376697">#</a></span></p>
+				<p><a name="a1375376793"></a>After:<span class="spPermalink"><a href="/2013/08/01/#a1375376793">#</a></span></p>
+				<p><a name="a1375376707"></a><img src="https://dl.dropboxusercontent.com/u/14977279/fargoBlog/Screen%20shot%202013-08-01%20at%201.04.15%20PM.png"><span class="spPermalink"><a href="/2013/08/01/#a1375376707">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (30)" ><i class="fa fa-caret-right" id="idStreamWedge30"></i></a></span><a name="a1375376839"></a><a class="aStreamTextLink" onclick="ecStream (30)">What it's useful for:</a><span class="spPermalink"><a href="/2013/08/01/#a1375376839">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel30">
+					<p><a name="a1375376844"></a>If you have a first-order headline called "Bills Due" and a first-order headline called "Bills Paid" below it, once you've paid a bill (designated as a <i>child</i> of the "Bills Due" headline), you can move it directly to the bottom of the list of "Bills Paid" without using navigation keys.<span class="spPermalink"><a href="/2013/08/01/#a1375376844">#</a></span></p>
+					</div>
+				<p><a name="a1375376547"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/08/01/#a1375376547">#</a></span></p>
+				<p><a name="a1375373028"></a><script src="https://gist.github.com/jkishner/6132766.js"></script><span class="spPermalink"><a href="/2013/08/01/#a1375373028">#</a></span></p>
+				<p><a name="a1375378346"></a>(There should be a github embed above this line. If not, please reload this page or get the raw code <a href="https://gist.github.com/jkishner/6132766/raw/b9d2d7b5dcdf74b965ea48a6aedfa815e2139cfe/Move+Child+to+Next+Parent">here</a>.)<span class="spPermalink"><a href="/2013/08/01/#a1375378346">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (31)" ><i class="fa fa-caret-right" id="idStreamWedge31"></i></a></span><a name="a1375368023"></a><a class="aStreamTextLink" onclick="ecStream (31)">A LinkBlog Script That Tweets and Adds a Date</a><span class="spPermalink"><a href="/2013/08/01/#a1375368023">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel31">
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (32)" ><i class="fa fa-caret-right" id="idStreamWedge32"></i></a></span><a name="a1375367276"></a><a class="aStreamTextLink" onclick="ecStream (32)">This script does the following:</a><span class="spPermalink"><a href="/2013/08/01/#a1375367276">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel32">
+					<p><a name="a1375367291"></a><rules>
 	<rule level="1" to="1">
 		<numbering>decimal</numbering>
 		</rule>
-	</rules></p></li>
-<li><p>On a dedicated page in an outline (it doesn't have to be "named"), create a headline, like the title of an article. (I'm doing it <a href="http://blog.jeffreykishner.com/tweets">here</a>.)</p></li>
-<li><p>With the cursor on that headline, choose <i>TweetBlog</i> from the <i>Scripts</i> menu.</p></li>
-<li><p>A dialog box asks for an URL. Enter the link and hit OK.</p></li>
-<li><p>The script adds a type=link attribute to your headline and adds the link to the url attribute. It opens a new window with the headline text and the URL pre-populated in a tweet (you have to hit the <a href="https://twitter.com/share?text=<%encTitle%">&url=http://<%httpHost%><%httpPath%>>tweet me</a> button to send).</p></li>
-<li><p>The script inserts the date above the headline ("Posted: Thu Aug 01 2013"), adds a Twitter icon to it, then goes back to the headline and indents it.</p></li>
-</ul>
-
-<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
-
-<script src="https://gist.github.com/jkishner/6131858.js"></script>
-
-<p>(There should be a github embed above this line. If not, please reload this page or get the raw code <a href="https://gist.github.com/jkishner/6131858/raw/2211158edfa1dbb28e8d4b8021683e773b410de8/TweetBlog">here</a>.)</p>
-
-<p>If you don't want to tweet the link, just remove the line that starts with <code>window.open</code>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">08/01/13; 09:40:23 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="01/aLinkblogScriptThatTweetsAndAddsADate.html"><i class="fa fa-star"></i></a></div>
+	</rules><span class="spPermalink"><a href="/2013/08/01/#a1375367291">#</a></span></p>
+					<p><a name="a1375367287"></a>On a dedicated page in an outline (it doesn't have to be "named"), create a headline, like the title of an article. (I'm doing it <a href="http://blog.jeffreykishner.com/tweets">here</a>.)<span class="spPermalink"><a href="/2013/08/01/#a1375367287">#</a></span></p>
+					<p><a name="a1375367191"></a>With the cursor on that headline, choose <i>TweetBlog</i> from the <i>Scripts</i> menu.<span class="spPermalink"><a href="/2013/08/01/#a1375367191">#</a></span></p>
+					<p><a name="a1375367396"></a>A dialog box asks for an URL. Enter the link and hit OK.<span class="spPermalink"><a href="/2013/08/01/#a1375367396">#</a></span></p>
+					<p><a name="a1375367411"></a>The script adds a type=link attribute to your headline and adds the link to the url attribute. It opens a new window with the headline text and the URL pre-populated in a tweet (you have to hit the <a href="https://twitter.com/share?text=<%encTitle%">&url=http://<%httpHost%><%httpPath%>>tweet me</a> button to send).<span class="spPermalink"><a href="/2013/08/01/#a1375367411">#</a></span></p>
+					<p><a name="a1375367480"></a>The script inserts the date above the headline ("Posted: Thu Aug 01 2013"), adds a Twitter icon to it, then goes back to the headline and indents it.<span class="spPermalink"><a href="/2013/08/01/#a1375367480">#</a></span></p>
+					</div>
+				<p><a name="a1375367703"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/08/01/#a1375367703">#</a></span></p>
+				<p><a name="a1375367171"></a><script src="https://gist.github.com/jkishner/6131858.js"></script><span class="spPermalink"><a href="/2013/08/01/#a1375367171">#</a></span></p>
+				<p><a name="a1375379699"></a>(There should be a github embed above this line. If not, please reload this page or get the raw code <a href="https://gist.github.com/jkishner/6131858/raw/2211158edfa1dbb28e8d4b8021683e773b410de8/TweetBlog">here</a>.)<span class="spPermalink"><a href="/2013/08/01/#a1375379699">#</a></span></p>
+				<p><a name="a1375367779"></a>If you don't want to tweet the link, just remove the line that starts with <code>window.open</code>.<span class="spPermalink"><a href="/2013/08/01/#a1375367779">#</a></span></p>
+				</div>
 			</div>
 		</div>
+	</div>
 
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Tue, Jul  8, 2014 at 11:17 AM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlThu, 01 Aug 2013 14:25:40 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Thursday, August  1, 2013 at  9:25 AM</span>.</div>
-					</div>
+				</div>
+			<div class="divFargoStreamFooter">
+				<div>&copy; 2014 Jeffrey Kishner.</div>
+				<div>Last update: Thu, Sep 25, 2014 at  2:04 PM.</div>
+				<div><i></i></div>
+				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 				</div>
 			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

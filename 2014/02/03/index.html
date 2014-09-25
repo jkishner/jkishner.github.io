@@ -2,26 +2,25 @@
 <html>
 	<head>
 		<title>February 3</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
 	<link href="http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css" rel="stylesheet" />
 	<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
 	<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.0.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/4.1.0/css/font-awesome.min.css">
 		<!-- useSmallPictStyles -->
 	<link href="http://fargo.io/cms/platform.css?v=0.48" rel="stylesheet">
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Tue, 08 Jul 2014 16:17:01 GMT",
-    "opmlExpansionState": "1,2,3,23",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:40:26 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,18,30,31,32,52,53,54,66",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,14 +35,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "Only steal from the best.",
+    "type": "stream",
+    "slogan": "What a long strange trip it's been.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -66,6 +66,8 @@
     "flPgfPermaLinks": false,
     "flFixedMenu": "false",
     "maxStreamDays": "14",
+    "flMarkdown": true,
+    "leftIndent": 0,
     "text": "February 3",
     "created": "Mon, 03 Feb 2014 15:33:23 GMT",
     "description": "",
@@ -88,75 +90,612 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Jul 08 2014 12:17:09 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:40:50 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/02/03.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
+		
+		
+		<meta property="og:url" content="http://blog.jeffreykishner.com/2014/02/03.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="February 3" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="Jeffrey Kishner" />
+		
+		<meta name="twitter:card" value="summary">
+		<meta name="twitter:title" content="February 3" />
+		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2014/02/03.html" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content=""/>
+		<meta name="twitter:site" value="kishner">
+		
 		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageContainer {
+				}
+			.navbar {
+				font-size: 17px;
+				line-height: 140%;
+				}
+			.navbar-inner {
+				min-height: 60px;
+				}
+			.navbar .nav > li > a {
+				padding-top: 17px;
+				}
+			.navbar .brand {
+				padding-top: 13px;
+				padding-left: 25px;
+				}
+			.navbar-container {
+				width: 1000px !important;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divStreamDayText {
+				font-family: 'Vollkorn', serif;
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divMapCanvas {
+				height: 100%; 
+				width: 100%; 
+				position: absolute; 
+				right: 0; 
+				z-index: -10;
+				}
+			.divTextInFrontOfImage {
+				background-color: whitesmoke; 
+				opacity: .98;
+				padding: 1.5em;
+				border:2px solid gainsboro;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				font-family: Ubuntu;
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: 'Ubuntu', sans-serif;
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divFargoStreamComments {
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				margin-top: 10px;
+				}
+			.divDisqusComments { 
+				margin-top: 5px !important;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.divPageContainer {
+					}
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divTextContainer {
+					margin-top: -40px;
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
+					}
+				.divPictureViewer .modal {
+					left: auto;
+					width: auto;
+					margin-left: auto;
+					margin-right: auto;
+					}
+				.divLevel {
+					margin-left: 0;
 					}
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<style>
-	.divFargoIndex .aDocTitleOnIndexPage {
-		font-size: 33.75px !important;
-		line-height: 42px !important;
-		color: #0088cc !important;
-		}
-	.divTitleDescription { display: none; }
-	.icon-star:before { content: "\f0c1"; }
-	.greenText {
-		color: green !important;
-		font-weight: bold !important;
-		}
-	ul {
-		list-style-type: none;
-		}
-	.divByline {
-		visibility: hidden;
-		height: 0px;
-		}
-	</style>
-<script>
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				.divPageContainer {
+					}
+				.navbar .nav > li > a {
+					padding-right: 7px;
+					}
+				}
+			</style>
+		
+		<script>
+			var flSetupDisqusThread = false;
+			
+			var colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function closeDisqusThread () {
+				$("#idDisqusDialog").modal ("hide");
+				}
+			function openDisqusThread () {
+				function getCommentHtml () {
+					var id = "", hidingCode  = "", visibleStyle = "";
+					if (pagetable.opmlUrl != undefined) {
+						id += pagetable.opmlUrl;
+						}
+					if (pagetable.created != undefined) {
+						id += pagetable.created;
+						}
+					if (id.length > 0) {
+						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
+						}
+					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
+					return (code.replace (/&lt;/g,'<'));
+					}
+				if (!flSetupDisqusThread) {
+					var s = 
+						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
+					$("body").prepend (s)
+					flSetupDisqusThread = true;
+					}
+				$("#idDisqusCode").html (getCommentHtml ());
+				$("#idDisqusDialog").modal ("show");
+				}
+			
+			
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
+				var mapCanvas = document.getElementById (idmap);
+				if (mapCanvas != null) {
+					var mapOptions = {
+						center: new google.maps.LatLng (maplat, maplong),
+						zoom: Number (mapzoom),
+						panControl: false,
+						zoomControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl :false,
+						overviewMapControl: false,
+						rotateControl: false,
+						mapTypeId: maptype
+						};
+					var map = new google.maps.Map (mapCanvas, mapOptions);
+					}
+				}
+			
+			function turnOffImages () { //5/18/14 by DW
+				$(".divStreamDayImage").css ("background-image", "");
+				localStorage.flTurnImagesOff = "true";
+				}
+			function turnOffImagesCommand () {
+				confirmDialog ("Turn off images?", function () {
+					localStorage.flTurnImagesOff = "true";
+					location.reload (true);
+					});
+				}
+			function turnOnImagesCommand () {
+				confirmDialog ("Turn images on?", function () {
+					localStorage.flTurnImagesOff = "false"; 
+					location.reload (true);
+					});
+				}
+			
+			function startup () {
+				var streamVersion = 1; //5/20/14 by DW
+				var flPlainOutline; //5/20/14 by DW
+				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
+				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
+				
+				//set streamVersion -- 5/20/14 by DW
+					if (pagetable.streamVersion != undefined) {
+						var x = parseInt (pagetable.streamVersion);
+						if (!isNaN (x)) {
+							streamVersion = x;
+							}
+						}
+				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
+					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
+						localStorage.removeItem ("flImagesOff")
+						}
+					if (localStorage.flTurnImagesOff == undefined) {
+						if (streamVersion > 1) {
+							localStorage.flTurnImagesOff = "false";
+							}
+						}
+					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
+				//every day gets a background color, image, map or -- ??
+					if (!flPlainOutline) {
+						var ixcolorarray = 0, ctmaps = 0;
+						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
+							var flSetColor = true;
+							
+							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
+								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
+								flSetColor = false;
+								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
+								
+								//set up map parameters
+									maplat = $(this).data ("maplatitude");
+									if (maplat == undefined) {
+										maplat = pagetable.mapLatitude;
+										}
+									maplong = $(this).data ("maplongitude");
+									if (maplong == undefined) {
+										maplong = pagetable.mapLongitude;
+										}
+									maptype = $(this).data ("maptype");
+									if (maptype == undefined) {
+										maptype = pagetable.mapType;
+										}
+									mapzoom = $(this).data ("mapzoom");
+									if (mapzoom == undefined) {
+										mapzoom = pagetable.mapZoom;
+										}
+								
+								initMap (idmap, maplat, maplong, maptype, mapzoom);
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayImage") {
+										flSetColor = false;
+										}
+									});
+								}
+							
+							if (flSetColor) {
+								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayText") {
+										var flset = false;
+										$(this).children ("div").each (function () {
+											if (!flset) {
+												this.className = "divTextInFrontOfImage"; //set classname of first child element
+												}
+											flset = true;
+											});
+										}
+									});
+								}
+							});
+						}
+				//highlight and expand the #hashed element, if present
+					var hash = window.location.hash;
+					if (hash.length > 0) {
+						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
+							$(this).children ("a").each (function () { //look at first-level children that are anchors
+								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
+									$(this).parents ("div").css ("display", "block"); //make all parents visible
+									$(this).parents ("p").css ("background-color", hightlightcolor);
+									
+									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
+									
+									
+									var flexpand = true;
+									$(this).parents ("div").each (function () {
+										if (flexpand) {
+											$(this).children ("a").each (function () {
+												$(this).css ("background-color", hightlightcolor);
+												
+												$(this).prev ().find ("i").each (function () {
+													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
+														$(this).attr ("class", "fa fa-caret-down");
+														}
+													});
+												
+												});
+											$(this).next ("div").css ("display", "block"); //the divLevel item
+											flexpand = false;
+											}
+										});
+									}
+								});
+							});
+						}
+				//handle fixed menu
+					if (getBoolean (pagetable.flFixedMenu)) {
+						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
+						if (flhavenav) {
+							document.body.style.paddingTop = "60px";
+							if (hash.length > 0) {
+								$(document).one ("scroll", function () {
+									var $el = $(this), top = $el.scrollTop ();
+									$el.scrollTop (top - 125);
+									});
+								}
+							}
+						}
+				//set the site title -- 3/23/14 by DW
+					if (pagetable.menuTitle != undefined) {
+						var pagename;
+						
+						if (highlightedtitle != undefined) { //5/11/14 by DW
+							pagename = highlightedtitle;
+							}
+						else {
+							if (pagetable.path.length == 0) {
+								pagename = "Home";
+								}
+							else {
+								pagename = pagetable.text;
+								}
+							}
+						
+						document.title = pagetable.menuTitle + ": [" + pagename + "]";
+						}
+				//set the color of each text frame -- 5/11/14 by DW
+					$(".divTextInFrontOfImage").each (function () {
+						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
+						});
+				
+				//turn on images for v2 or greater -- 5/20/14 by DW
+					if (streamVersion > 1) { 
+						if (flPlainOutline) {
+							$(".aStreamDayLink").each (function () {
+								$(this).css ("font-size", "28px");
+								});
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								$(this).css ("margin-top", "70px");
+								});
+							$(".divStreamDayText").each (function () {
+								$(this).css ("padding", "0");
+								});
+							$(".divTextContainer").each (function () {
+								$(this).css ("margin-bottom", "125px");
+								});
+							}
+						else {
+							$(".divStreamDay").each (function () {
+								var url = $(this).data ("backgroundimage");
+								if (url != undefined) {
+									$(this).css ("background-image", "url('" + url + "')");
+									}
+								
+								$(this).children (".divStreamDayText").children ().each (function () {
+									this.className = "divTextInFrontOfImage"; 
+									});
+								
+								});
+							}
+						}
+				
+				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
+					if (streamVersion == 1) { 
+						if (flPlainOutline) {
+							turnOffImages ();
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								});
+							}
+						}
+				}
+			</script>
+		
+		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -167,20 +706,20 @@
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-		
+		<div class="divPageContainer">
+			
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
+						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
+						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
 						<li><a href="/2014/05/" target="_blank">May 2014</a></li>
 						<li><a href="/2014/04/" target="_blank">Apr 2014</a></li>
@@ -196,31 +735,31 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/desktopBookmarkletToSendEmailViaFastmailWithDocumentTitleAndUrl.html" target="_blank">Desktop Bookmarklet to Send Email via Fastmail With Document Title and URL</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/30/automateAYoutubeEmbedCodeOnYourIosDeviceWithDraftsTexttoolAndLaunchCenterPro.html" target="_blank">Automate a YouTube Embed Code on Your iOS Device With Drafts, TextTool, and Launch Center Pro</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/29/youreMyGayBestFriendVideo.html" target="_blank">You're My Gay Best Friend (Video)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/27/embeddingHappyFriendsTweetsInFargo.html" target="_blank">Embedding Happy Friends Tweets in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/26/thisBlogIsNowHostedAtGithubPages.html" target="_blank">This Blog Is Now Hosted at Github Pages</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/iosBookmarkletToOpenASpotifyShareUrlIntoTheApp.html" target="_blank">iOS Bookmarklet to Open a Spotify Share URL into the App</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/19/draftsATextMessageForLaterWithLaunchCenterPro23.html" target="_blank">Draft a Text Message for Later with Launch Center Pro 2.3</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/18/howToCreateAnRssFeedForAnInstagramProfile.html" target="_blank">How to Create an RSS Feed for an Instagram Profile</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/useNestedListsInLaunchCenterPro23ToOpenAlbumsByArtistInSpotifyAndEcouteForIos.html" target="_blank">Use Nested Lists in Launch Center Pro 2.3 to Open Albums by Artist in Spotify and Ecoute for iOS </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/06/16/howToQuicklyJumpToListsInTweetbotForIos.html" target="_blank">How to Quickly Jump to Lists in Tweetbot for iOS</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html" target="_blank">Send Text and an Action to Drafts for iOS From the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/22/subscribeToOpmlListsInFargo.html" target="_blank">"Subscribe" to OPML Lists in Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/19/usingFargoAsAFeedReader.html" target="_blank">Using Fargo as a Feed Reader</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/16/theGetDownCielo.html" target="_blank">The Get Down @ Cielo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/14/homelessnessAndTheNycSubway.html" target="_blank">Homelessness and the NYC Subway</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/05/09/morningGloryNyc.html" target="_blank">Morning Gloryville NYC</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/25/whiteGuysAndAlterBridge.html" target="_blank">White Guys and Alter Bridge </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/04/01/useNestedListsInLaunchCenterProToPlayAlbumsInEcoute.html" target="_blank">Use Nested Lists in Launch Center Pro to Play Albums in Ecoute</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/03/28/fargoScriptToInsertAGoogleMapAsBackgroundImageInNoteblog.html" target="_blank">Fargo Script to Insert a Google Map as Background Image in Noteblog</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -230,131 +769,77 @@
 			</div>
 		</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/02">February 2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">February 3</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="chaining-three-texttool-transformations-together-with-x-callback-url.html">Chaining Three TextTool Transformations Together with X-Callback-URL</a></div>
-		<p><a href="https://twitter.com/share?text=Chaining%20Three%20TextTool%20Transformations%20Together%20with%20X-Callback-URL&amp;url=http://blog.jeffreykishner.com/2014/02/03/chaining-three-texttool-transformations-together-with-x-callback-url.html" target="_blank">Tweet This Post</a></p>
-
-<blockquote class="twitter-tweet" lang="en"><p>sort a <a href="https://twitter.com/LaunchCenterPro">@LaunchCenterPro</a> list using <a href="https://twitter.com/TextToolApp">@TextToolApp</a> (turns A|C|B into A|B|C) <a href="http://t.co/CxvFW0e5ws">http://t.co/CxvFW0e5ws</a></p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/statuses/429730075576373248">February 1, 2014</a></blockquote>
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>I wrote the above <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> action over the weekend. I thought it would take 15 minutes, but it took 45, because the encoding was such a challenge.</p>
-
-<h3>The Problem I Wanted to Solve</h3>
-
-<p>When I add new list items to an LCP action using the <a href="https://contrasthelp.zendesk.com/hc/en-us/articles/201050507-2-1-Release-Notes">list tag</a>, I sometimes just randomly add an item after the first pipe (|) I can find. Then I notice that the order of my list items has no rhyme or reason to it, so I want to alphabetize it. This is not an easy task, cut-and-pasting in a small text area on an iPhone screen. So I decided to use <a href="http://blackfoggames.com/TextTool/">TextTool</a> to automate the process for me.</p>
-
-<ol>
-<li><p>Remove the pipes in a sequence like <code>Apples|Pears|Bananas</code> using the <em>split</em> method.</p></li>
-<li><p>Use the <em>sort</em> method to alphabetize the list</p></li>
-<li><p>Add the pipes again between each item, using the <em>join</em> method.</p></li>
-</ol>
-
-<p>Here is the full LCP action (click on the link in the Twitter embed above to install):</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=%7C&amp;x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dsort%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%25255B%25255Boutput%25255D%25255D%2526method%253Djoin%2526delimiter%253D%25257C
-</code></pre>
-
-<p>The sort transformation, URL-decoded:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[output]]&amp;method=sort
-</code></pre>
-
-<p>The join transformation, URL-decoded twice:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=%5B%5Boutput%5D%5D&amp;method=join&amp;delimiter=%7C
-</code></pre>
-
-<p>Notice how, even though this action was URL-encoded twice after the second x-success parameter, the [[output]] had to be encoded <em>yet again</em> before the entire action was URL-encoded twice. I had to add an extra %25 before each double-encoded bracket to make the complete action work.</p>
-
-<p><strong>Related:</strong> <a href="http://jeffreykishner.com/2013/12/04/take-a-photo-get-a-markdown-image-link-with-launch-center-pro-clean-links-and-texttool/">Take a Photo, Get a Markdown Image Link with Launch Center Pro, Clean Links, and TextTool</a> </p>
-
-<p><strong>Resources:</strong> <a href="http://blackfoggames.com/TextTool/callback.html">TextTool x-callback-url Support page</a></p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">02/03/14; 10:33:23 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="chaining-three-texttool-transformations-together-with-x-callback-url.html"><i class="fa fa-star"></i></a></div>
+			<div class="divTextContainer" id="idTextContainer">
+				<div class="divStreamDay" >
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/02/03/">Monday, February  3<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1391441603"></a><a class="aStreamTextLink" onclick="ecStream (0)">Chaining Three TextTool Transformations Together with X-Callback-URL</a><span class="spPermalink"><a href="/2014/02/03/#a1391441603">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel0">
+				<p><a name="a1391461359"></a><a href="https://twitter.com/share?text=Chaining%20Three%20TextTool%20Transformations%20Together%20with%20X-Callback-URL&url=http://blog.jeffreykishner.com/2014/02/03/chaining-three-texttool-transformations-together-with-x-callback-url.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/02/03/#a1391461359">#</a></span></p>
+				<p><a name="a1411674050.783"></a><blockquote class="twitter-tweet" lang="en"><p>sort a <a href="https://twitter.com/LaunchCenterPro">@LaunchCenterPro</a> list using <a href="https://twitter.com/TextToolApp">@TextToolApp</a> (turns A|C|B into A|B|C) <a href="http://t.co/CxvFW0e5ws">http://t.co/CxvFW0e5ws</a></p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/statuses/429730075576373248">February 1, 2014</a></blockquote><span class="spPermalink"><a href="/2014/02/03/#a1411674050.783">#</a></span></p>
+				<p><a name="a1411674050.783"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/02/03/#a1411674050.783">#</a></span></p>
+				<p><a name="a1391441714"></a>I wrote the above <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> action over the weekend. I thought it would take 15 minutes, but it took 45, because the encoding was such a challenge.<span class="spPermalink"><a href="/2014/02/03/#a1391441714">#</a></span></p>
+				<p><a name="a1391442422"></a>###The Problem I Wanted to Solve<span class="spPermalink"><a href="/2014/02/03/#a1391442422">#</a></span></p>
+				<p><a name="a1391442431"></a>When I add new list items to an LCP action using the [list tag](https://contrasthelp.zendesk.com/hc/en-us/articles/201050507-2-1-Release-Notes), I sometimes just randomly add an item after the first pipe (|) I can find. Then I notice that the order of my list items has no rhyme or reason to it, so I want to alphabetize it. This is not an easy task, cut-and-pasting in a small text area on an iPhone screen. So I decided to use <a href="http://blackfoggames.com/TextTool/">TextTool</a> to automate the process for me.<span class="spPermalink"><a href="/2014/02/03/#a1391442431">#</a></span></p>
+				<p><a name="a1391442686"></a>1. Remove the pipes in a sequence like `Apples|Pears|Bananas` using the _split_ method.<span class="spPermalink"><a href="/2014/02/03/#a1391442686">#</a></span></p>
+				<p><a name="a1391442732"></a>2. Use the _sort_ method to alphabetize the list<span class="spPermalink"><a href="/2014/02/03/#a1391442732">#</a></span></p>
+				<p><a name="a1391442740"></a>3. Add the pipes again between each item, using the _join_ method.<span class="spPermalink"><a href="/2014/02/03/#a1391442740">#</a></span></p>
+				<p><a name="a1391461182"></a>Here is the full LCP action (click on the link in the Twitter embed above to install):<span class="spPermalink"><a href="/2014/02/03/#a1391461182">#</a></span></p>
+				<p><a name="a1391442419"></a>    texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=%7C&x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dsort%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%25255B%25255Boutput%25255D%25255D%2526method%253Djoin%2526delimiter%253D%25257C<span class="spPermalink"><a href="/2014/02/03/#a1391442419">#</a></span></p>
+				<p><a name="a1391443300"></a>The sort transformation, URL-decoded:<span class="spPermalink"><a href="/2014/02/03/#a1391443300">#</a></span></p>
+				<p><a name="a1391443312"></a>    texttool://x-callback-url/transform?text=[[output]]&method=sort<span class="spPermalink"><a href="/2014/02/03/#a1391443312">#</a></span></p>
+				<p><a name="a1391443377"></a>The join transformation, URL-decoded twice:<span class="spPermalink"><a href="/2014/02/03/#a1391443377">#</a></span></p>
+				<p><a name="a1391443389"></a>    texttool://x-callback-url/transform?text=%5B%5Boutput%5D%5D&method=join&delimiter=%7C<span class="spPermalink"><a href="/2014/02/03/#a1391443389">#</a></span></p>
+				<p><a name="a1391443434"></a>Notice how, even though this action was URL-encoded twice after the second x-success parameter, the [[output]] had to be encoded _yet again_ before the entire action was URL-encoded twice. I had to add an extra %25 before each double-encoded bracket to make the complete action work.<span class="spPermalink"><a href="/2014/02/03/#a1391443434">#</a></span></p>
+				<p><a name="a1391442274"></a>**Related:** [Take a Photo, Get a Markdown Image Link with Launch Center Pro, Clean Links, and TextTool](http://jeffreykishner.com/2013/12/04/take-a-photo-get-a-markdown-image-link-with-launch-center-pro-clean-links-and-texttool/) <span class="spPermalink"><a href="/2014/02/03/#a1391442274">#</a></span></p>
+				<p><a name="a1391442870"></a>**Resources:** [TextTool x-callback-url Support page](http://blackfoggames.com/TextTool/callback.html)<span class="spPermalink"><a href="/2014/02/03/#a1391442870">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1391449621"></a><a class="aStreamTextLink" onclick="ecStream (1)">Extract Text from an XML File Using Launch Center Pro, Drafts, and TextTool</a><span class="spPermalink"><a href="/2014/02/03/#a1391449621">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel1">
+				<p><a name="a1391451331"></a><a href="https://twitter.com/share?text=Extract%20Text%20from%20an%20XML%20File%20Using%20Launch%20Center%20Pro%2C%20Drafts%2C%20and%20TextTool&url=http://blog.jeffreykishner.com/2014/02/03/extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/02/03/#a1391451331">#</a></span></p>
+				<p><a name="a1391450300"></a>[Paperless](http://www.crushapps.com/paperless/) is an iOS lists app that stores its data in XML files in Dropbox (if you choose to sync). What follows is an attempt to procure the first item in a list and send it to <a href="http://www.dueapp.com/">Due</a> without having to copy and paste.<span class="spPermalink"><a href="/2014/02/03/#a1391450300">#</a></span></p>
+				<p><a name="a1391450402"></a>The first list item in any Paperless list appears to occur on line 12 of the list's XML file. It looks like this:<span class="spPermalink"><a href="/2014/02/03/#a1391450402">#</a></span></p>
+				<p><a name="a1391450434"></a>    <itemName>LIST ITEM</itemName><span class="spPermalink"><a href="/2014/02/03/#a1391450434">#</a></span></p>
+				<p><a name="a1391450446"></a><a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>'s [dropbox tag](https://contrasthelp.zendesk.com/hc/en-us/articles/200436178-The-dropbox-Tag) lets you get the contents of a text file, so I figured I could grab the entire contents of an XML file and push it to <a href="http://agiletortoise.com/drafts/">Drafts</a>. Tap on [this link](http://launchcenterpro.com/f080nd) to import into LCP, or copy the action below and adapt for your purposes:<span class="spPermalink"><a href="/2014/02/03/#a1391450446">#</a></span></p>
+				<p><a name="a1391449762"></a>    drafts://x-callback-url/create?text=[dropbox-text:Paperless/Errands.xml]&action=line12<span class="spPermalink"><a href="/2014/02/03/#a1391449762">#</a></span></p>
+				<p><a name="a1391450588"></a>What this does is grab the full text from the Errands list in Paperless, send it to Drafts, and then activate the _line12_ custom URL action.<span class="spPermalink"><a href="/2014/02/03/#a1391450588">#</a></span></p>
+				<p><a name="a1391450655"></a>_line12_ uses a Drafts tag `[[line|12]]` to send line 12 of the XML file to <a href="http://blackfoggames.com/TextTool/">TextTool</a> and then use the _regex_ method to replace `<itemName>` and `</itemName>` with blank spaces. I know next to nothing about regex, but I found [here](http://c2.com/cgi/wiki?RegularExpressionExamples) that I could easily create a regex expression to match both `<itemName>` and `</itemName>`: <span class="spPermalink"><a href="/2014/02/03/#a1391450655">#</a></span></p>
+				<p><a name="a1391449733"></a>    <(/|)itemName><span class="spPermalink"><a href="/2014/02/03/#a1391449733">#</a></span></p>
+				<p><a name="a1391450844"></a>So the _search_ parameter in TextTool is the above URL-encoded, and the _replace_ parameter is a single space, URL-encoded:<span class="spPermalink"><a href="/2014/02/03/#a1391450844">#</a></span></p>
+				<p><a name="a1391449670"></a>    texttool://x-callback-url/transform?text=[[line|12]]&method=regex&search=%3C(%2F%7C)itemName%3E&replace=%20&x-success=due%3A%2F%2Fx-callback-url%2Fadd%3Ftitle%3D%5B%5Boutput%5D%5D<span class="spPermalink"><a href="/2014/02/03/#a1391449670">#</a></span></p>
+				<p><a name="a1391449688"></a>(Tap on [this link](drafts://x-callback-url/import_action?type=URL&name=line12&url=texttool://x-callback-url/transform?text=[[line|12]]&method=regex&search=%3C(%2F%7C)itemName%3E&replace=%20&x-success=due%3A%2F%2Fx-callback-url%2Fadd%3Ftitle%3D%5B%5Boutput%5D%5D) to import into Drafts.)<span class="spPermalink"><a href="/2014/02/03/#a1391449688">#</a></span></p>
+				<p><a name="a1391450941"></a>The _x-success_ parameter above tells TextTool to take the [[output]] of that transformation and send it to Due. Here is that action URL-decoded:<span class="spPermalink"><a href="/2014/02/03/#a1391450941">#</a></span></p>
+				<p><a name="a1391449741"></a>    due://x-callback-url/add?title=[[output]]<span class="spPermalink"><a href="/2014/02/03/#a1391449741">#</a></span></p>
+				<p><a name="a1391449753"></a>The final result... I tap on the LCP action, and it adds the first list item from my Errands list and sends it to Due. There are spaces preceding the text, but the XML is extracted.<span class="spPermalink"><a href="/2014/02/03/#a1391449753">#</a></span></p>
+				<p><a name="a1391451667"></a>Although the automation required to perform the above is a bit excessive (in contrast to just copying an item from Paperless and then pasting it into Due) it demonstrates the ability of the included iOS apps to accomplish pretty remarkable tasks.<span class="spPermalink"><a href="/2014/02/03/#a1391451667">#</a></span></p>
+				<p><a name="a1391531902"></a><a name="addendum">&nbsp;</a><span class="spPermalink"><a href="/2014/02/03/#a1391531902">#</a></span></p>
+				<p><a name="a1391531554"></a>###Addendum (2014-02-04)<span class="spPermalink"><a href="/2014/02/03/#a1391531554">#</a></span></p>
+				<p><a name="a1391531565"></a>[Here is an importable _line12_ Drafts action](drafts://x-callback-url/import_action?type=URL&name=line12&url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C12%5D%5D%26method%3Dregex%26search%3D%253C%28%252F%257C%29itemName%253E%26replace%3D%2520%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%255B%255Boutput%255D%255D%2526method%253Dtrim%2526x-success%253Ddue%25253A%25252F%25252Fx-callback-url%25252Fadd%25253Ftitle%25253D%2525255B%2525255Boutput%2525255D%2525255D) that trims the TextTool regex output before it sends the list item to Due. And here is the URL action itself:<span class="spPermalink"><a href="/2014/02/03/#a1391531565">#</a></span></p>
+				<p><a name="a1391531661"></a>    texttool://x-callback-url/transform?text=[[line|12]]&method=regex&search=%3C(%2F%7C)itemName%3E&replace=%20&x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dtrim%26x-success%3Ddue%253A%252F%252Fx-callback-url%252Fadd%253Ftitle%253D%25255B%25255Boutput%25255D%25255D<span class="spPermalink"><a href="/2014/02/03/#a1391531661">#</a></span></p>
+				<p><a name="a1391542551"></a><a name="addendum2">&nbsp;</a><span class="spPermalink"><a href="/2014/02/03/#a1391542551">#</a></span></p>
+				<p><a name="a1391542722"></a>###Addendum 2 (2014-02-04)<span class="spPermalink"><a href="/2014/02/03/#a1391542722">#</a></span></p>
+				<p><a name="a1391542566"></a>[Here is an importable _line12_ Drafts action](drafts://x-callback-url/import_action?type=URL&name=line12&url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C12%5D%5D%26method%3Dregex%26search%3D%253C%28%252F%257C%29itemName%253E%26replace%3D%2520%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%255B%255Boutput%255D%255D%2526method%253Dtrim%2526x-success%253Ddue%25253A%25252F%25252Fx-callback-url%25252Fadd%25253Ftitle%25253D%2525255B%2525255Boutput%2525255D%2525255D%2525250Apaperless%2525253A%2525252F%2525252FviewList%2525253FlistName%2525253DErrands) that will include a link to the Errands list in Paperless within the Due text, so that when you complete the task, you can visit the list and check off the item there. (Thanks to [@epramono](https://twitter.com/epramono) for inspiring this.) And here is the URL action itself:<span class="spPermalink"><a href="/2014/02/03/#a1391542566">#</a></span></p>
+				<p><a name="a1391542659"></a>    texttool://x-callback-url/transform?text=[[line|12]]&method=regex&search=%3C(%2F%7C)itemName%3E&replace=%20&x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dtrim%26x-success%3Ddue%253A%252F%252Fx-callback-url%252Fadd%253Ftitle%253D%25255B%25255Boutput%25255D%25255D%25250Apaperless%25253A%25252F%25252FviewList%25253FlistName%25253DErrands<span class="spPermalink"><a href="/2014/02/03/#a1391542659">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html">Extract Text from an XML File Using Launch Center Pro, Drafts, and TextTool</a></div>
-		<p><a href="https://twitter.com/share?text=Extract%20Text%20from%20an%20XML%20File%20Using%20Launch%20Center%20Pro%2C%20Drafts%2C%20and%20TextTool&amp;url=http://blog.jeffreykishner.com/2014/02/03/extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html" target="_blank">Tweet This Post</a></p>
+	</div>
 
-<p><a href="http://www.crushapps.com/paperless/">Paperless</a> is an iOS lists app that stores its data in XML files in Dropbox (if you choose to sync). What follows is an attempt to procure the first item in a list and send it to <a href="http://www.dueapp.com/">Due</a> without having to copy and paste.</p>
-
-<p>The first list item in any Paperless list appears to occur on line 12 of the list's XML file. It looks like this:</p>
-
-<pre><code>&lt;itemName&gt;LIST ITEM&lt;/itemName&gt;
-</code></pre>
-
-<p><a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>'s <a href="https://contrasthelp.zendesk.com/hc/en-us/articles/200436178-The-dropbox-Tag">dropbox tag</a> lets you get the contents of a text file, so I figured I could grab the entire contents of an XML file and push it to <a href="http://agiletortoise.com/drafts/">Drafts</a>. Tap on <a href="http://launchcenterpro.com/f080nd">this link</a> to import into LCP, or copy the action below and adapt for your purposes:</p>
-
-<pre><code>drafts://x-callback-url/create?text=[dropbox-text:Paperless/Errands.xml]&amp;action=line12
-</code></pre>
-
-<p>What this does is grab the full text from the Errands list in Paperless, send it to Drafts, and then activate the <em>line12</em> custom URL action.</p>
-
-<p><em>line12</em> uses a Drafts tag <code>[[line|12]]</code> to send line 12 of the XML file to <a href="http://blackfoggames.com/TextTool/">TextTool</a> and then use the <em>regex</em> method to replace <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code> with blank spaces. I know next to nothing about regex, but I found <a href="http://c2.com/cgi/wiki?RegularExpressionExamples">here</a> that I could easily create a regex expression to match both <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code>: </p>
-
-<pre><code>&lt;(/|)itemName&gt;
-</code></pre>
-
-<p>So the <em>search</em> parameter in TextTool is the above URL-encoded, and the <em>replace</em> parameter is a single space, URL-encoded:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|12]]&amp;method=regex&amp;search=%3C(%2F%7C)itemName%3E&amp;replace=%20&amp;x-success=due%3A%2F%2Fx-callback-url%2Fadd%3Ftitle%3D%5B%5Boutput%5D%5D
-</code></pre>
-
-<p>(Tap on <a href="drafts://x-callback-url/import_action?type=URL&amp;name=line12&amp;url=texttool://x-callback-url/transform?text=%5b%5bline|12%5d%5d&amp;method=regex&amp;search=%3C%28%2F%7C%29itemName%3E&amp;replace=%20&amp;x-success=due%3A%2F%2Fx-callback-url%2Fadd%3Ftitle%3D%5B%5Boutput%5D%5D">this link</a> to import into Drafts.)</p>
-
-<p>The <em>x-success</em> parameter above tells TextTool to take the [[output]] of that transformation and send it to Due. Here is that action URL-decoded:</p>
-
-<pre><code>due://x-callback-url/add?title=[[output]]
-</code></pre>
-
-<p>The final result... I tap on the LCP action, and it adds the first list item from my Errands list and sends it to Due. There are spaces preceding the text, but the XML is extracted.</p>
-
-<p>Although the automation required to perform the above is a bit excessive (in contrast to just copying an item from Paperless and then pasting it into Due) it demonstrates the ability of the included iOS apps to accomplish pretty remarkable tasks.</p>
-
-<p><a name="addendum">&nbsp;</a></p>
-
-<h3>Addendum (2014-02-04)</h3>
-
-<p><a href="drafts://x-callback-url/import_action?type=URL&amp;name=line12&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C12%5D%5D%26method%3Dregex%26search%3D%253C%28%252F%257C%29itemName%253E%26replace%3D%2520%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%255B%255Boutput%255D%255D%2526method%253Dtrim%2526x-success%253Ddue%25253A%25252F%25252Fx-callback-url%25252Fadd%25253Ftitle%25253D%2525255B%2525255Boutput%2525255D%2525255D">Here is an importable <em>line12</em> Drafts action</a> that trims the TextTool regex output before it sends the list item to Due. And here is the URL action itself:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|12]]&amp;method=regex&amp;search=%3C(%2F%7C)itemName%3E&amp;replace=%20&amp;x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dtrim%26x-success%3Ddue%253A%252F%252Fx-callback-url%252Fadd%253Ftitle%253D%25255B%25255Boutput%25255D%25255D
-</code></pre>
-
-<p><a name="addendum2">&nbsp;</a></p>
-
-<h3>Addendum 2 (2014-02-04)</h3>
-
-<p><a href="drafts://x-callback-url/import_action?type=URL&amp;name=line12&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C12%5D%5D%26method%3Dregex%26search%3D%253C%28%252F%257C%29itemName%253E%26replace%3D%2520%26x-success%3Dtexttool%253A%252F%252Fx-callback-url%252Ftransform%253Ftext%253D%255B%255Boutput%255D%255D%2526method%253Dtrim%2526x-success%253Ddue%25253A%25252F%25252Fx-callback-url%25252Fadd%25253Ftitle%25253D%2525255B%2525255Boutput%2525255D%2525255D%2525250Apaperless%2525253A%2525252F%2525252FviewList%2525253FlistName%2525253DErrands">Here is an importable <em>line12</em> Drafts action</a> that will include a link to the Errands list in Paperless within the Due text, so that when you complete the task, you can visit the list and check off the item there. (Thanks to <a href="https://twitter.com/epramono">@epramono</a> for inspiring this.) And here is the URL action itself:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|12]]&amp;method=regex&amp;search=%3C(%2F%7C)itemName%3E&amp;replace=%20&amp;x-success=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Boutput%5D%5D%26method%3Dtrim%26x-success%3Ddue%253A%252F%252Fx-callback-url%252Fadd%253Ftitle%253D%25255B%25255Boutput%25255D%25255D%25250Apaperless%25253A%25252F%25252FviewList%25253FlistName%25253DErrands
-</code></pre>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">02/03/14; 12:47:01 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="extract-text-from-an-xml-file-using-launch-center-pro-drafts-and-texttool.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Tue, Jul  8, 2014 at 11:17 AM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opmlMon, 03 Feb 2014 15:33:23 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, February  3, 2014 at 10:33 AM</span>.</div>
-					</div>
+				</div>
+			<div class="divFargoStreamFooter">
+				<div>&copy; 2014 Jeffrey Kishner.</div>
+				<div>Last update: Thu, Sep 25, 2014 at  2:40 PM.</div>
+				<div><i></i></div>
+				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 				</div>
 			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

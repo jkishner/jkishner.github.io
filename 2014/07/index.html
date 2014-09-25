@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<title>July 2014</title>
-		<meta charset='utf-8'> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
@@ -20,8 +19,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 11 Sep 2014 14:35:52 GMT",
-    "opmlExpansionState": "1,2,3,4,29,30,40,57,58,62,63,66,79,80,88,90,91,102,107,108,130,132,138,144,154",
+    "opmlDateModified": "Thu, 25 Sep 2014 19:40:26 GMT",
+    "opmlExpansionState": "1,2,3,4,11,12,18,30,31,32,52,53,54,66",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,15 +35,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "108",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "spacelab",
-    "type": "bloghome",
-    "slogan": "Welcome back my friends to the show that never ends.",
+    "type": "stream",
+    "slogan": "Good for the environment.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -91,75 +90,612 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/spacelab/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Sep 11 2014 10:35:53 GMT-0400 (EDT)",
+    "now": "Thu Sep 25 2014 15:40:33 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/07.html"
 }; //12/12/13 by DW
 		</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
+		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
+		
+		
+		<meta property="og:url" content="http://blog.jeffreykishner.com/2014/07.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="July 2014" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="Jeffrey Kishner" />
+		
+		<meta name="twitter:card" value="summary">
+		<meta name="twitter:title" content="July 2014" />
+		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2014/07.html" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image" content=""/>
+		<meta name="twitter:site" value="kishner">
+		
 		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageContainer {
+				}
+			.navbar {
+				font-size: 17px;
+				line-height: 140%;
+				}
+			.navbar-inner {
+				min-height: 60px;
+				}
+			.navbar .nav > li > a {
+				padding-top: 17px;
+				}
+			.navbar .brand {
+				padding-top: 13px;
+				padding-left: 25px;
+				}
+			.navbar-container {
+				width: 1000px !important;
+				}
+			.divFargoStreamBody {
+				}
+			.divBodyText {
+				}
+			.divStreamTopSpacer {
+				}
+			.divStreamDay {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				margin-left: 0;
+				margin-top: 0;
+				border-top: 1px solid silver;
+				z-index: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				}
+			.divStreamDayText {
+				font-family: 'Vollkorn', serif;
+				font-size: 24px;
+				line-height: 145%;
+				padding-top: 5%;
+				padding-bottom: 10%;
+				
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				
+				vertical-align: top;
+				height: 100%;
+				margin-top: 30px;
+				}
+			.divStreamDayHead {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				margin-top: .1em;
+				-webkit-margin-after: .75em;
+				}
+			.divStreamDayImage {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				right: 0;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+				z-index: -1;
+				opacity: 1;
+				}
+			.divMapCanvas {
+				height: 100%; 
+				width: 100%; 
+				position: absolute; 
+				right: 0; 
+				z-index: -10;
+				}
+			.divTextInFrontOfImage {
+				background-color: whitesmoke; 
+				opacity: .98;
+				padding: 1.5em;
+				border:2px solid gainsboro;
+				}
+			.spStreamArrows {
+				font-size: .8em;
+				color: silver;
+				margin-right: 15px;
+				}
+			.divStreamDay p {
+				margin-bottom: .3em;
+				}
+			.divTextContainer {
+				padding: 0;
+				}
+			.divBanner {
+				margin-bottom: -1px;
+				}
+			.divLevel {
+				margin-left: 20px;
+				display: none;
+				}
+			h4 {
+				font-family: "Georgia";
+				font-size: 18px;
+				-webkit-margin-after: 5px;
+				}
+			.divStreamSectionHead {
+				font-family: Ubuntu;
+				margin-top: 5px;
+				font-weight: bold;
+				-webkit-margin-after: 5px;
+				}
+			.spPermalink {
+				margin-left: 3px;
+				}
+			.spPermalink a {
+				text-decoration: none;
+				color: purple;
+				font-size: 13px;
+				font-weight: none !important;
+				}
+			.divDaySeparator {
+				height: 0;
+				}
+			.aStreamWedgeLink {
+				color: black;
+				}
+			.aStreamWedgeLink i {
+				font-size: .85em;
+				color: black;
+				cursor: pointer;
+				}
+			.aStreamDayLink {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.aStreamDayLink a:link, .aStreamDayLink a:visited {
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divStreamIcon {
+				float: left;
+				width: 20px;
+				margin-left: -20px;
+				margin-right: 0;
+				}
+			.spStreamArrows {
+				float: left;
+				width: 36px;
+				margin-left: -36px;
+				margin-right: 0;
+				display: none;
+				}
+			.aStreamArrowsLink {
+				font-size: .75em;
+				color: black !important;
+				cursor: pointer;
+				text-decoration: none;
+				}
+			.divFargoStreamFooter {
+				font-family: 'Ubuntu', sans-serif;
+				line-height: 200%;
+				height: 400px;
+				background-color: whitesmoke;
+				border-top: 1px solid silver;
+				text-align: center;
+				padding-top: 15px;
+				}
+			.divFargoSocialMediaLinks {
+				position: fixed;
+				z-index: 1;
+				}
+			.divNavSocialMediaLinks {
+				margin-top: 17px;
+				margin-left: 1em;
+				font-size: .9em;
+				}
+			.divNavSocialMediaLinks .nav>li>a {
+				display: inline;
+				}
+			.divNavSocialMediaLinks .aSocialMediaLink {
+				letter-spacing: 14px;
+				}
+			.aStreamTextLink {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
+				cursor: pointer;
+				color: black;
+				text-decoration: none;
+				}
+			.divFargoStreamComments {
+				width: 700px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				margin-top: 10px;
+				}
+			.divDisqusComments { 
+				margin-top: 5px !important;
+				}
+			</style>
+		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.navbar .nav>li {
+				.divPageContainer {
+					}
+				.navbar {
 					display: none;
-					height: 0;
+					}
+				.divBodyText {
+					}
+				.divTextContainer {
+					margin-top: -40px;
+					}
+				.divStreamTopSpacer {
+					display: none;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.container {
-					margin-top: 10px;
-					width: 90%;
+				.divStreamDayHead {
+					font-size: 22px;
 					}
-				.divFargoMarkdown p {
+				.divStreamSectionHead {
+					margin-top: 8px;
+					-webkit-margin-after: 8px;
+					}
+				.divStreamDayText {
 					font-size: 17px;
-					line-height: 140%;
+					padding-left: 8%;
+					padding-right: 7%;
+					width: 85%;
 					}
-				h2 {
-					font-size: 24px;
-					line-height: 140%;
+				.aStreamWedgeLink i {
+					font-size: 1.1em;
 					}
-				.divHeadlineUnit {
-					margin-bottom: 5px;
+				.divStreamIcon {
+					width: 14px;
+					margin-left: -14px;
 					}
-				.divPrevNext {
-					float: none;
-					}
-				.divBreadcrumbs {
+				.spPermalink {
 					display: none;
+					}
+				.divFargoStreamFooter {
 					font-size: 15px;
+					line-height: 170%;
 					}
-				.breadcrumb>li>.divider {
-					padding: 0;
-					padding-left: 1px;
+				.divTextInFrontOfImage {
+					width: 80% !important;
+					margin-left: auto;
+					margin-right: auto;
 					}
-				.spSlogan {
+				.spDateYearPart {
 					display: none;
+					}
+				.divPictureViewer .modal {
+					left: auto;
+					width: auto;
+					margin-left: auto;
+					margin-right: auto;
+					}
+				.divLevel {
+					margin-left: 0;
 					}
 				}
 			</style>
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
-<style>
-	.divFargoIndex .aDocTitleOnIndexPage {
-		font-size: 33.75px !important;
-		line-height: 42px !important;
-		color: #0088cc !important;
-		}
-	.divTitleDescription { display: none; }
-	.icon-star:before { content: "\f0c1"; }
-	.greenText {
-		color: green !important;
-		font-weight: bold !important;
-		}
-	ul {
-		list-style-type: none;
-		}
-	.divByline {
-		visibility: hidden;
-		height: 0px;
-		}
-	</style>
-<script>
+		<style> /* styles for tablet */
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+				.divPageContainer {
+					}
+				.navbar .nav > li > a {
+					padding-right: 7px;
+					}
+				}
+			</style>
+		
+		<script>
+			var flSetupDisqusThread = false;
+			
+			var colorsArray = [
+				"white",
+				"whitesmoke",
+				"ghostwhite",
+				"gainsboro" 
+				];
+			function closeDisqusThread () {
+				$("#idDisqusDialog").modal ("hide");
+				}
+			function openDisqusThread () {
+				function getCommentHtml () {
+					var id = "", hidingCode  = "", visibleStyle = "";
+					if (pagetable.opmlUrl != undefined) {
+						id += pagetable.opmlUrl;
+						}
+					if (pagetable.created != undefined) {
+						id += pagetable.created;
+						}
+					if (id.length > 0) {
+						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
+						}
+					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
+					return (code.replace (/&lt;/g,'<'));
+					}
+				if (!flSetupDisqusThread) {
+					var s = 
+						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
+					$("body").prepend (s)
+					flSetupDisqusThread = true;
+					}
+				$("#idDisqusCode").html (getCommentHtml ());
+				$("#idDisqusDialog").modal ("show");
+				}
+			
+			
+			function getdaynum (theDate) {
+				var year = theDate.getFullYear ();
+				var onejan = new Date (year, 0, 1);
+				return (Math.ceil ((theDate - onejan) / 86400000));
+				}
+			function ecStream (idnum) {
+				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
+				if (c.className == "fa fa-caret-down") {
+					c.className = "fa fa-caret-right";
+					$(idUL).slideUp (75);
+					}
+				else {
+					c.className = "fa fa-caret-down";
+					$(idUL).slideDown (75);
+					}
+				}
+			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
+				var mapCanvas = document.getElementById (idmap);
+				if (mapCanvas != null) {
+					var mapOptions = {
+						center: new google.maps.LatLng (maplat, maplong),
+						zoom: Number (mapzoom),
+						panControl: false,
+						zoomControl: false,
+						mapTypeControl: false,
+						scaleControl: false,
+						streetViewControl :false,
+						overviewMapControl: false,
+						rotateControl: false,
+						mapTypeId: maptype
+						};
+					var map = new google.maps.Map (mapCanvas, mapOptions);
+					}
+				}
+			
+			function turnOffImages () { //5/18/14 by DW
+				$(".divStreamDayImage").css ("background-image", "");
+				localStorage.flTurnImagesOff = "true";
+				}
+			function turnOffImagesCommand () {
+				confirmDialog ("Turn off images?", function () {
+					localStorage.flTurnImagesOff = "true";
+					location.reload (true);
+					});
+				}
+			function turnOnImagesCommand () {
+				confirmDialog ("Turn images on?", function () {
+					localStorage.flTurnImagesOff = "false"; 
+					location.reload (true);
+					});
+				}
+			
+			function startup () {
+				var streamVersion = 1; //5/20/14 by DW
+				var flPlainOutline; //5/20/14 by DW
+				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
+				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
+				
+				//set streamVersion -- 5/20/14 by DW
+					if (pagetable.streamVersion != undefined) {
+						var x = parseInt (pagetable.streamVersion);
+						if (!isNaN (x)) {
+							streamVersion = x;
+							}
+						}
+				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
+					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
+						localStorage.removeItem ("flImagesOff")
+						}
+					if (localStorage.flTurnImagesOff == undefined) {
+						if (streamVersion > 1) {
+							localStorage.flTurnImagesOff = "false";
+							}
+						}
+					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
+				//every day gets a background color, image, map or -- ??
+					if (!flPlainOutline) {
+						var ixcolorarray = 0, ctmaps = 0;
+						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
+							var flSetColor = true;
+							
+							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
+								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
+								flSetColor = false;
+								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
+								
+								//set up map parameters
+									maplat = $(this).data ("maplatitude");
+									if (maplat == undefined) {
+										maplat = pagetable.mapLatitude;
+										}
+									maplong = $(this).data ("maplongitude");
+									if (maplong == undefined) {
+										maplong = pagetable.mapLongitude;
+										}
+									maptype = $(this).data ("maptype");
+									if (maptype == undefined) {
+										maptype = pagetable.mapType;
+										}
+									mapzoom = $(this).data ("mapzoom");
+									if (mapzoom == undefined) {
+										mapzoom = pagetable.mapZoom;
+										}
+								
+								initMap (idmap, maplat, maplong, maptype, mapzoom);
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayImage") {
+										flSetColor = false;
+										}
+									});
+								}
+							
+							if (flSetColor) {
+								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
+								}
+							else {
+								$(this).children ("div").each (function () {
+									if (this.className == "divStreamDayText") {
+										var flset = false;
+										$(this).children ("div").each (function () {
+											if (!flset) {
+												this.className = "divTextInFrontOfImage"; //set classname of first child element
+												}
+											flset = true;
+											});
+										}
+									});
+								}
+							});
+						}
+				//highlight and expand the #hashed element, if present
+					var hash = window.location.hash;
+					if (hash.length > 0) {
+						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
+							$(this).children ("a").each (function () { //look at first-level children that are anchors
+								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
+									$(this).parents ("div").css ("display", "block"); //make all parents visible
+									$(this).parents ("p").css ("background-color", hightlightcolor);
+									
+									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
+									
+									
+									var flexpand = true;
+									$(this).parents ("div").each (function () {
+										if (flexpand) {
+											$(this).children ("a").each (function () {
+												$(this).css ("background-color", hightlightcolor);
+												
+												$(this).prev ().find ("i").each (function () {
+													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
+														$(this).attr ("class", "fa fa-caret-down");
+														}
+													});
+												
+												});
+											$(this).next ("div").css ("display", "block"); //the divLevel item
+											flexpand = false;
+											}
+										});
+									}
+								});
+							});
+						}
+				//handle fixed menu
+					if (getBoolean (pagetable.flFixedMenu)) {
+						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
+						if (flhavenav) {
+							document.body.style.paddingTop = "60px";
+							if (hash.length > 0) {
+								$(document).one ("scroll", function () {
+									var $el = $(this), top = $el.scrollTop ();
+									$el.scrollTop (top - 125);
+									});
+								}
+							}
+						}
+				//set the site title -- 3/23/14 by DW
+					if (pagetable.menuTitle != undefined) {
+						var pagename;
+						
+						if (highlightedtitle != undefined) { //5/11/14 by DW
+							pagename = highlightedtitle;
+							}
+						else {
+							if (pagetable.path.length == 0) {
+								pagename = "Home";
+								}
+							else {
+								pagename = pagetable.text;
+								}
+							}
+						
+						document.title = pagetable.menuTitle + ": [" + pagename + "]";
+						}
+				//set the color of each text frame -- 5/11/14 by DW
+					$(".divTextInFrontOfImage").each (function () {
+						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
+						});
+				
+				//turn on images for v2 or greater -- 5/20/14 by DW
+					if (streamVersion > 1) { 
+						if (flPlainOutline) {
+							$(".aStreamDayLink").each (function () {
+								$(this).css ("font-size", "28px");
+								});
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								$(this).css ("margin-top", "70px");
+								});
+							$(".divStreamDayText").each (function () {
+								$(this).css ("padding", "0");
+								});
+							$(".divTextContainer").each (function () {
+								$(this).css ("margin-bottom", "125px");
+								});
+							}
+						else {
+							$(".divStreamDay").each (function () {
+								var url = $(this).data ("backgroundimage");
+								if (url != undefined) {
+									$(this).css ("background-image", "url('" + url + "')");
+									}
+								
+								$(this).children (".divStreamDayText").children ().each (function () {
+									this.className = "divTextInFrontOfImage"; 
+									});
+								
+								});
+							}
+						}
+				
+				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
+					if (streamVersion == 1) { 
+						if (flPlainOutline) {
+							turnOffImages ();
+							$(".divStreamDay").each (function () {
+								$(this).css ("border-top", "0");
+								});
+							}
+						}
+				}
+			</script>
+		
+		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -170,20 +706,18 @@
 		
 		</head>
 	<body>
-		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
-		
+		<div class="divPageContainer">
+			
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
+				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
 						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
 						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
 						<li><a href="/2014/06/" target="_blank">June 2014</a></li>
@@ -201,6 +735,16 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
@@ -216,16 +760,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/10/theMeaningOfFavoritingATweet.html" target="_blank">The Meaning of Favoriting a Tweet</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/10/2ndUpdateToMyLcpTodotxtActionNowWithPriorities.html" target="_blank">2nd Update to My LCP Todo.txt Action: Now With Priorities</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html" target="_blank">Update to Launch Center Pro Action to Todo.txt: Multiple Contexts and Projects</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html" target="_blank">A Launch Center Pro Action for Todo.txt</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html" target="_blank">How to Get the SoundCloud URL Schemes for Users and Tracks</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html" target="_blank">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/07/commandLineScriptForPaperlessListsChecklists.html" target="_blank">Command Line Script for "Paperless: Lists + Checklists"</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html" target="_blank">Cloud Services and Social Networking on the Linux Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/02/updateToMyOpmltowordpressPlugin.html" target="_blank">Update to My OPML-to-WordPress Plugin</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/01/getADirectLinkToAnyNoteInEvernoteForIos.html" target="_blank">Get a Direct Link to Any Note in Evernote for iOS</a></li>
 	</ul>
 
 					<li><a href="http://blog.jeffreykishner.com/scripts/" target="_blank">Scripts</a></li>
@@ -235,682 +769,427 @@
 			</div>
 		</div>
 
-		<div class="divFargoOutlineBody">
-			<div id="idOutlineContainer" class="container">
-				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
-					<div class="divBreadcrumbs" id="idBreadcrumbs">
-						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a></li></ul>
-						</div>
-					<h2 id="idBlogHomePageTitle">July 2014</h2>
-					</div>
-				<div class="divFargoBlogHome">
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="24/commandLineScriptToMakeYourIphoneDialANumber.html">Command Line Script to Make Your iPhone Dial a Number</a></div>
-		<p>This is a bash script that only requires a single command in Terminal and a single swipe on your iPhone to make a phone call. It is an adaptation of my <a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html">command line Pushover script</a>, so please review that before proceeding below.</p>
-
-<p>Create a file called <code>callhome</code> at /usr/local/bin with the following contents:</p>
-
-<pre><code>#! /bin/bash
-
-message="tel:8005551212"
-
-action="Call Home"
-
-url_title="Make the Call"
-
-curl -s \
-
-  -F "token=$APP_TOKEN" \
-
-  -F "user=$USER_KEY" \
-
-  -F "title=$action" \
-
-  -F "message=$message" \
-
-  -F "url_title=$url_title" \
-
-  -F "url=tel:8005551212" \
-
-  https://api.pushover.net/1/messages.json
-</code></pre>
-
-<p>Replace the two instances of <code>8005551212</code> with a phone number, and $APP_TOKEN and $USER_KEY with your app token and user key.</p>
-
-<p>Make the script executable: <code>chmod +x callhome</code>.</p>
-
-<p>Now all you have to do is type <code>callhome</code> from the command line. When you get a notification on your iPhone, swipe it. Pushover will open the supplementary URL, which will dial the number.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/24/14; 01:32:12 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="24/commandLineScriptToMakeYourIphoneDialANumber.html"><i class="fa fa-star"></i></a></div>
+			<div class="divTextContainer" id="idTextContainer">
+				<div class="divStreamDay" >
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/24/">Thursday, July 24<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1406226732"></a><a class="aStreamTextLink" onclick="ecStream (0)">Command Line Script to Make Your iPhone Dial a Number</a><span class="spPermalink"><a href="/2014/07/24/#a1406226732">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel0">
+				<p><a name="a1406226753"></a>This is a bash script that only requires a single command in Terminal and a single swipe on your iPhone to make a phone call. It is an adaptation of my [command line Pushover script](http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html), so please review that before proceeding below.<span class="spPermalink"><a href="/2014/07/24/#a1406226753">#</a></span></p>
+				<p><a name="a1406226997"></a>Create a file called `callhome` at /usr/local/bin with the following contents:<span class="spPermalink"><a href="/2014/07/24/#a1406226997">#</a></span></p>
+				<p><a name="a1411674033.387"></a>    #! /bin/bash<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>    message="tel:8005551212"<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>    action="Call Home"<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>    url_title="Make the Call"<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>    curl -s \<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>      -F "token=$APP_TOKEN" \<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>      -F "user=$USER_KEY" \<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>      -F "title=$action" \<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>      -F "message=$message" \<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>      -F "url_title=$url_title" \<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>      -F "url=tel:8005551212" \<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1411674033.387"></a>      https://api.pushover.net/1/messages.json<span class="spPermalink"><a href="/2014/07/24/#a1411674033.387">#</a></span></p>
+				<p><a name="a1406227043"></a>Replace the two instances of `8005551212` with a phone number, and $APP_TOKEN and $USER_KEY with your app token and user key.<span class="spPermalink"><a href="/2014/07/24/#a1406227043">#</a></span></p>
+				<p><a name="a1406226991"></a>Make the script executable: `chmod +x callhome`.<span class="spPermalink"><a href="/2014/07/24/#a1406226991">#</a></span></p>
+				<p><a name="a1406227174"></a>Now all you have to do is type `callhome` from the command line. When you get a notification on your iPhone, swipe it. Pushover will open the supplementary URL, which will dial the number.<span class="spPermalink"><a href="/2014/07/24/#a1406227174">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="23/opmlwordpressPluginNowSupportsEmoji.html">OPML-WordPress Plugin Now Supports Emoji</a></div>
-		<p>If you include emoji in your Fargo blog (using the <a href="http://www.emoji-cheat-sheet.com/">Emoji Cheat Sheet</a> format), they will render on your WordPress page in the latest update to my <a href="http://jeffreykishner.com/wordpress-plugins/post-opml-to-wordpress/">plugin</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/23/14; 02:58:38 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="23/opmlwordpressPluginNowSupportsEmoji.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/23/">Wednesday, July 23<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1406145518"></a><a class="aStreamTextLink" onclick="ecStream (1)">OPML-WordPress Plugin Now Supports Emoji</a><span class="spPermalink"><a href="/2014/07/23/#a1406145518">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel1">
+				<p><a name="a1406145535"></a>If you include emoji in your Fargo blog (using the [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/) format), they will render on your WordPress page in the latest update to my [plugin](http://jeffreykishner.com/wordpress-plugins/post-opml-to-wordpress/).<span class="spPermalink"><a href="/2014/07/23/#a1406145535">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="18/wordCrimes.html">Word Crimes</a></div>
-		<p>Of all the Weird Al videos that have been released so far over his 8-day streak, this one is my favorite. It's clever and well-animated. </p>
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/8Gv0H-vPoDc" frameborder="0" allowfullscreen></iframe>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/18/14; 08:41:18 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="18/wordCrimes.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/18/">Friday, July 18<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1405690878"></a><a class="aStreamTextLink" onclick="ecStream (2)">Word Crimes</a><span class="spPermalink"><a href="/2014/07/18/#a1405690878">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel2">
+				<p><a name="a1405690882"></a>Of all the Weird Al videos that have been released so far over his 8-day streak, this one is my favorite. It's clever and well-animated. <span class="spPermalink"><a href="/2014/07/18/#a1405690882">#</a></span></p>
+				<p><a name="a1405690993"></a><iframe width="560" height="315" src="//www.youtube.com/embed/8Gv0H-vPoDc" frameborder="0" allowfullscreen></iframe><span class="spPermalink"><a href="/2014/07/18/#a1405690993">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></div>
-		<p><a href="https://www.pushbullet.com/#">Pushbullet</a> is the best service I've seen so far that will allow me to push info from my phone to my work computer and vice versa. (I cannot install <a href="http://danilo.to/command-c">Command-C</a> at the office.) I installed the Chrome extension and the iPhone app. From the Chrome extension, I can push a note or a list to the iOS app. This in itself is unremarkable -- I use <a href="https://pushover.net/">Pushover</a> all the time for that. But the killer feature is that I can send a link to my phone, and the moment I swipe the notification, that URL will open in the Chrome browser. And if I send an address to my iPhone, after I swipe the notification Google Maps will open to that location.  </p>
-
-<p>Also, I can quickly send the clipboard contents on my iPhone to the desktop extension. This is a lot faster than emailing text to myself or uploading it to Dropbox via <a href="http://agiletortoise.com/drafts/">Drafts</a> or <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.</p>
-
-<h4>IFTTT</h4>
-
-<p>There's an <a href="https://ifttt.com/pushbullet">IFTTT channel</a> that allows you to push a note, link, file or address to your iPhone. I haven't played around with this, but there are many shared recipes for the channel, and I imagine you can create a recipe to automatically send images from a feed to your device.</p>
-
-<h4>URL Schemes</h4>
-
-<p>Pushbullet has <a href="http://docs.pushbullet.com/iphone/">URL schemes</a>. <a href="http://www.bachyaproductions.com/ios-url-actions-the-up-to-date-guide/">Bachya</a> wrote this bookmarklet to send the current page in your iOS web browser to the Pushbullet app:</p>
-
-<pre><code>javascript:window.location='pushbullet://compose?type=link&amp;title=' + encodeURIComponent(document.title) + '&amp;url=' + encodeURIComponent(window.location)
-</code></pre>
-
-<h3>The Only Downside: Google</h3>
-
-<p>I've been working to become less reliant on Google -- for example, <a href="http://blog.jeffreykishner.com/2013/08/22/anotherPersonMovingToFastmailfm.html">moving to Fastmail.fm</a>. With Pushbullet, you can only sign in with Google, and you have no choice but to open links and addresses in Google Chrome and Google Maps. Granted, their iOS maps app is my default, and I use Chrome for Mac at work, but I still would prefer to have a <em>choice</em>.</p>
-
-<h3>Pushbullet vs. Pushover</h3>
-
-<p>I have been using my <a href="http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html">Pushover command line script</a> to send text to my phone, and after a recent release, now a swipe of a <a href="https://pushover.net/">Pushover</a> notification will open a supplementary URL (if available). This is great, because I can execute Drafts actions with a swipe of a notification. For example I can make my message an URL and the Drafts action "launch url" (which is just <code>launch://?url=[[draft]]</code>). This will open a link in Safari for iOS with a single swipe. However, it is definitely less work for me to just open the Pushbullet extension and send a link to my phone that way.  </p>
-
-<p>I will continue to use my Pushover script to execute actions in Drafts, but Pushbullet is more convenient if I just want to quickly send text or a link to my phone.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/11/14; 12:21:20 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/11/">Friday, July 11<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1405099280"></a><a class="aStreamTextLink" onclick="ecStream (3)">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a><span class="spPermalink"><a href="/2014/07/11/#a1405099280">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel3">
+				<p><a name="a1405099329"></a>[Pushbullet](https://www.pushbullet.com/#) is the best service I've seen so far that will allow me to push info from my phone to my work computer and vice versa. (I cannot install [Command-C](http://danilo.to/command-c) at the office.) I installed the Chrome extension and the iPhone app. From the Chrome extension, I can push a note or a list to the iOS app. This in itself is unremarkable -- I use <a href="https://pushover.net/">Pushover</a> all the time for that. But the killer feature is that I can send a link to my phone, and the moment I swipe the notification, that URL will open in the Chrome browser. And if I send an address to my iPhone, after I swipe the notification Google Maps will open to that location.  <span class="spPermalink"><a href="/2014/07/11/#a1405099329">#</a></span></p>
+				<p><a name="a1405099673"></a>Also, I can quickly send the clipboard contents on my iPhone to the desktop extension. This is a lot faster than emailing text to myself or uploading it to Dropbox via <a href="http://agiletortoise.com/drafts/">Drafts</a> or <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.<span class="spPermalink"><a href="/2014/07/11/#a1405099673">#</a></span></p>
+				<p><a name="a1405530177"></a>#### IFTTT<span class="spPermalink"><a href="/2014/07/11/#a1405530177">#</a></span></p>
+				<p><a name="a1405099673"></a>There's an [IFTTT channel](https://ifttt.com/pushbullet) that allows you to push a note, link, file or address to your iPhone. I haven't played around with this, but there are many shared recipes for the channel, and I imagine you can create a recipe to automatically send images from a feed to your device.<span class="spPermalink"><a href="/2014/07/11/#a1405099673">#</a></span></p>
+				<p><a name="a1405530201"></a>#### URL Schemes<span class="spPermalink"><a href="/2014/07/11/#a1405530201">#</a></span></p>
+				<p><a name="a1405434602"></a>Pushbullet has [URL schemes](http://docs.pushbullet.com/iphone/). [Bachya](http://www.bachyaproductions.com/ios-url-actions-the-up-to-date-guide/) wrote this bookmarklet to send the current page in your iOS web browser to the Pushbullet app:<span class="spPermalink"><a href="/2014/07/11/#a1405434602">#</a></span></p>
+				<p><a name="a1405434699"></a>    javascript:window.location='pushbullet://compose?type=link&title=' + encodeURIComponent(document.title) + '&url=' + encodeURIComponent(window.location)<span class="spPermalink"><a href="/2014/07/11/#a1405434699">#</a></span></p>
+				<p><a name="a1405530232"></a>### The Only Downside: Google<span class="spPermalink"><a href="/2014/07/11/#a1405530232">#</a></span></p>
+				<p><a name="a1405099673"></a>I've been working to become less reliant on Google -- for example, [moving to Fastmail.fm](http://blog.jeffreykishner.com/2013/08/22/anotherPersonMovingToFastmailfm.html). With Pushbullet, you can only sign in with Google, and you have no choice but to open links and addresses in Google Chrome and Google Maps. Granted, their iOS maps app is my default, and I use Chrome for Mac at work, but I still would prefer to have a _choice_.<span class="spPermalink"><a href="/2014/07/11/#a1405099673">#</a></span></p>
+				<p><a name="a1405530297"></a>### Pushbullet vs. Pushover<span class="spPermalink"><a href="/2014/07/11/#a1405530297">#</a></span></p>
+				<p><a name="a1405100365"></a>I have been using my [Pushover command line script](http://blog.jeffreykishner.com/2014/05/23/sendTextAndAnActionToDraftsForIosFromTheCommandLine.html) to send text to my phone, and after a recent release, now a swipe of a <a href="https://pushover.net/">Pushover</a> notification will open a supplementary URL (if available). This is great, because I can execute Drafts actions with a swipe of a notification. For example I can make my message an URL and the Drafts action "launch url" (which is just `launch://?url=[[draft]]`). This will open a link in Safari for iOS with a single swipe. However, it is definitely less work for me to just open the Pushbullet extension and send a link to my phone that way.  <span class="spPermalink"><a href="/2014/07/11/#a1405100365">#</a></span></p>
+				<p><a name="a1405530382"></a>I will continue to use my Pushover script to execute actions in Drafts, but Pushbullet is more convenient if I just want to quickly send text or a link to my phone.<span class="spPermalink"><a href="/2014/07/11/#a1405530382">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1405090757"></a><a class="aStreamTextLink" onclick="ecStream (4)">Three Types of Lists</a><span class="spPermalink"><a href="/2014/07/11/#a1405090757">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel4">
+				<p><a name="a1405090761"></a>I am constantly fidgeting with my productivity apps and system. I was engaged to <a href="http://www.crushapps.com/paperless/">Paperless</a> for many months, but now I am playing with <a href="http://todotxt.com/">Todo.txt</a> on the command line and on iOS. As a result, I've been thinking about types of lists and the most appropriate apps for each type of list. <span class="spPermalink"><a href="/2014/07/11/#a1405090761">#</a></span></p>
+				<p><a name="a1405090909"></a>### 1. Actionable Tasks<span class="spPermalink"><a href="/2014/07/11/#a1405090909">#</a></span></p>
+				<p><a name="a1405090923"></a>These lists include only tasks that require a physical (measurable/observable) action to mark as complete. This is what the GTD system is all about. Over the years I have used Omnifocus, TaskPaper, Paperless, and now Todo.txt. I have found that -- for me -- text-file-based apps are the best (TaskPaper, Todo.txt). They both support tags/contexts (the @ sign) and projects (the + sign in Todo.txt; a string followed by a : for TaskPaper). I can open them in any text editor, or I can manipulate the text in supported apps. (Jesse Grosjean removed his <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> app from the iOS App Store, but fortunately Ole Zorn created an excellent TaskPaper module for <a href="http://omz-software.com/editorial/">Editorial</a>.)<span class="spPermalink"><a href="/2014/07/11/#a1405090923">#</a></span></p>
+				<p><a name="a1405434273"></a>#### 1a. Actionable Tasks With "Hard" Due Dates<span class="spPermalink"><a href="/2014/07/11/#a1405434273">#</a></span></p>
+				<p><a name="a1405434305"></a>Some actionable tasks need to be done at a very specific time, or _by_ a very specific time. "Mail the DVD at 8:30am" or "Go to Trader Joe's at 6pm." These I put in <a href="http://www.dueapp.com/">Due</a> or Fantastical/iOS Reminders. <span class="spPermalink"><a href="/2014/07/11/#a1405434305">#</a></span></p>
+				<p><a name="a1405092041"></a>### 2. "Consumption" Lists<span class="spPermalink"><a href="/2014/07/11/#a1405092041">#</a></span></p>
+				<p><a name="a1405092059"></a>These are items that I want to consume: books, movies, music tracks, groceries. None of this is urgent (well, except for food). These items do require checkboxes, because once I've rented/downloaded/borrowed/purchased the item, I don't need to do it again (... except for food).  I am still using Paperless for this, because the app provides a note field where I can include all the meta info I need (URLs, for example, or who suggested a particular book). And in Paperless, I can uncheck a grocery item to re-add it to my shopping list.<span class="spPermalink"><a href="/2014/07/11/#a1405092059">#</a></span></p>
+				<p><a name="a1405092205"></a>### 3. Ideas Lists<span class="spPermalink"><a href="/2014/07/11/#a1405092205">#</a></span></p>
+				<p><a name="a1405092214"></a>I have a list that is more-or-less called, "Things I Need to Remember to Do at Home to Avoid the Wrath of My Wife." Another is "Lunch Ideas." These items should not have checkboxes, because they are reference materials, not one-time (or even recurring) tasks. Right now I have these lists in <a href="http://listaryapp.com/">Listary</a> which pulls notes with a specific tag from <a href="http://simplenote.com/">Simplenote</a>. You can toggle a setting for a list in Paperless to remove checkboxes and just use the list as a reference. I have also used [Carbonfin Outliner](http://carbonfin.com/) with the checkboxes toggled off for these types of lists.<span class="spPermalink"><a href="/2014/07/11/#a1405092214">#</a></span></p>
+				<p><a name="a1405097138"></a>***<span class="spPermalink"><a href="/2014/07/11/#a1405097138">#</a></span></p>
+				<p><a name="a1405097168"></a>Of course, one can store _all_ these lists in simple text files and store them in a single directory. [nvAlt](http://brettterpstra.com/projects/nvalt/) fans do this. But am I either in front of my phone or a work computer, and I cannot sync Dropbox at work. (One can sync an nvAlt folder with Dropbox.) Although I feel too spread out with my various list apps, I do believe that the ultimate test is whether my system supports both "brain dump" and "information access." Can I quickly note down an idea or todo? And can I easily find it later? Part of my problem is that I don't always recall where I put a todo. With this three-part categorical division, I hope I can better recall a todo's location. If it's actionable, it's in Todo.txt or iOS Reminders; if it's about something I want to buy, it's in Paperless; if it's an evergreen list, it's in Listary. We'll see how it goes.<span class="spPermalink"><a href="/2014/07/11/#a1405097168">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1405086535"></a><a class="aStreamTextLink" onclick="ecStream (5)">Podcast About URL Schemes</a><span class="spPermalink"><a href="/2014/07/11/#a1405086535">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel5">
+				<p><a name="a1405086547"></a>If you're trying to wrap your head around url schemes, encoding and x-callback-url, listen to this [excellent podcast](http://www.pocketsizedpodcast.com/2014/04/psp152/) in which the hosts of Pocket Sized Podcast interview Alex Guyot.<span class="spPermalink"><a href="/2014/07/11/#a1405086547">#</a></span></p>
+				<p><a name="a1405086551"></a>Here's [the link to the .m4a file](http://www.pocketsizedpodcast.com/podcast/psp/PSP-152.m4a).<span class="spPermalink"><a href="/2014/07/11/#a1405086551">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="11/threeTypesOfLists.html">Three Types of Lists</a></div>
-		<p>I am constantly fidgeting with my productivity apps and system. I was engaged to <a href="http://www.crushapps.com/paperless/">Paperless</a> for many months, but now I am playing with <a href="http://todotxt.com/">Todo.txt</a> on the command line and on iOS. As a result, I've been thinking about types of lists and the most appropriate apps for each type of list. </p>
-
-<h3>1. Actionable Tasks</h3>
-
-<p>These lists include only tasks that require a physical (measurable/observable) action to mark as complete. This is what the GTD system is all about. Over the years I have used Omnifocus, TaskPaper, Paperless, and now Todo.txt. I have found that -- for me -- text-file-based apps are the best (TaskPaper, Todo.txt). They both support tags/contexts (the @ sign) and projects (the + sign in Todo.txt; a string followed by a : for TaskPaper). I can open them in any text editor, or I can manipulate the text in supported apps. (Jesse Grosjean removed his <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> app from the iOS App Store, but fortunately Ole Zorn created an excellent TaskPaper module for <a href="http://omz-software.com/editorial/">Editorial</a>.)</p>
-
-<h4>1a. Actionable Tasks With "Hard" Due Dates</h4>
-
-<p>Some actionable tasks need to be done at a very specific time, or <em>by</em> a very specific time. "Mail the DVD at 8:30am" or "Go to Trader Joe's at 6pm." These I put in <a href="http://www.dueapp.com/">Due</a> or Fantastical/iOS Reminders. </p>
-
-<h3>2. "Consumption" Lists</h3>
-
-<p>These are items that I want to consume: books, movies, music tracks, groceries. None of this is urgent (well, except for food). These items do require checkboxes, because once I've rented/downloaded/borrowed/purchased the item, I don't need to do it again (... except for food).  I am still using Paperless for this, because the app provides a note field where I can include all the meta info I need (URLs, for example, or who suggested a particular book). And in Paperless, I can uncheck a grocery item to re-add it to my shopping list.</p>
-
-<h3>3. Ideas Lists</h3>
-
-<p>I have a list that is more-or-less called, "Things I Need to Remember to Do at Home to Avoid the Wrath of My Wife." Another is "Lunch Ideas." These items should not have checkboxes, because they are reference materials, not one-time (or even recurring) tasks. Right now I have these lists in <a href="http://listaryapp.com/">Listary</a> which pulls notes with a specific tag from <a href="http://simplenote.com/">Simplenote</a>. You can toggle a setting for a list in Paperless to remove checkboxes and just use the list as a reference. I have also used <a href="http://carbonfin.com/">Carbonfin Outliner</a> with the checkboxes toggled off for these types of lists.</p>
-
-<hr />
-
-<p>Of course, one can store <em>all</em> these lists in simple text files and store them in a single directory. <a href="http://brettterpstra.com/projects/nvalt/">nvAlt</a> fans do this. But am I either in front of my phone or a work computer, and I cannot sync Dropbox at work. (One can sync an nvAlt folder with Dropbox.) Although I feel too spread out with my various list apps, I do believe that the ultimate test is whether my system supports both "brain dump" and "information access." Can I quickly note down an idea or todo? And can I easily find it later? Part of my problem is that I don't always recall where I put a todo. With this three-part categorical division, I hope I can better recall a todo's location. If it's actionable, it's in Todo.txt or iOS Reminders; if it's about something I want to buy, it's in Paperless; if it's an evergreen list, it's in Listary. We'll see how it goes.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/11/14; 09:59:17 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="11/threeTypesOfLists.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/10/">Thursday, July 10<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1405026159"></a><a class="aStreamTextLink" onclick="ecStream (6)">The Meaning of Favoriting a Tweet</a><span class="spPermalink"><a href="/2014/07/10/#a1405026159">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel6">
+				<p><a name="a1405026165"></a>I recently created an [IFTTT](http://ifttt.com) recipe to add the first url mentioned in a tweet to Instapaper if I favorite the tweet. Now I am concerned that someone will interpret my favorite as condoning the content of a tweet, whereas all it means is that I want to "read it later." A favorite is not the equivalent of a <i class="fa fa-thumbs-o-up"></i> on Facebook.<span class="spPermalink"><a href="/2014/07/10/#a1405026165">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1405016671"></a><a class="aStreamTextLink" onclick="ecStream (7)">2nd Update to My LCP Todo.txt Action: Now With Priorities</a><span class="spPermalink"><a href="/2014/07/10/#a1405016671">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel7">
+				<p><a name="a1404956748"></a><blockquote class="twitter-tweet"><p><a href="https://twitter.com/kishner">@kishner</a> <a href="https://twitter.com/LaunchCenterPro">@LaunchCenterPro</a> i also use prioritet: (A) for today, (B) for thisweek, (C) for someday and add promp for LCP</p>&mdash; Zaur (@zaurww) <a href="https://twitter.com/zaurww/status/487050018424365056">July 10, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/07/10/#a1404956748">#</a></span></p>
+				<p><a name="a1405016872"></a>The newest version of my action ([import it into LCP](https://t.co/1qrvQzVHUp)) includes priorities A-C.<span class="spPermalink"><a href="/2014/07/10/#a1405016872">#</a></span></p>
+				<p><a name="a1405016947"></a>    texttool://x-callback-url/transform?text=[list|clipboard=[clipboard]|prompt=[prompt-return:tasks]]&method=affix&prefix=[-list:priorities|A=%28A%29%20|B=%28B%29%20|C=%28C%29%20|none={{}}][textexpander:ddate]%20&suffix=[-list|no context={{}}|@online=%20%40online|contexts=%20%40[prompt-list( @)]][-list|no project={{}}|+Bills=%20%2BBills|projects=%20%2B[prompt-list( +)]]&scope=lines&x-success={{drafts:///create?text=[[output]]&action=todotxt}}<span class="spPermalink"><a href="/2014/07/10/#a1405016947">#</a></span></p>
+				<p><a name="a1405016958"></a>So now you can send something like the following to Drafts:<span class="spPermalink"><a href="/2014/07/10/#a1405016958">#</a></span></p>
+				<p><a name="a1405016967"></a>    (A) 2014-07-10 complete task @context +project<span class="spPermalink"><a href="/2014/07/10/#a1405016967">#</a></span></p>
+				<p><a name="a1405016996"></a>This works with the [Todo.txt](http://todotxt.com) command line interface and the iPhone app. <span class="spPermalink"><a href="/2014/07/10/#a1405016996">#</a></span></p>
+				<p><a name="a1405017040"></a>Visit the [first post in this series](http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html) to get the Drafts Dropbox action, and [the second one](http://blog.jeffreykishner.com/2014/07/09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html) for more about the contexts and projects.<span class="spPermalink"><a href="/2014/07/10/#a1405017040">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="11/podcastAboutUrlSchemes.html">Podcast About URL Schemes</a></div>
-		<p>If you're trying to wrap your head around url schemes, encoding and x-callback-url, listen to this <a href="http://www.pocketsizedpodcast.com/2014/04/psp152/">excellent podcast</a> in which the hosts of Pocket Sized Podcast interview Alex Guyot.</p>
-
-<p>Here's <a href="http://www.pocketsizedpodcast.com/podcast/psp/PSP-152.m4a">the link to the .m4a file</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/11/14; 08:48:55 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="11/podcastAboutUrlSchemes.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/09/">Wednesday, July  9<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1404931533"></a><a class="aStreamTextLink" onclick="ecStream (8)">Update to Launch Center Pro Action to Todo.txt: Multiple Contexts and Projects</a><span class="spPermalink"><a href="/2014/07/09/#a1404931533">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel8">
+				<p><a name="a1404931604"></a>[Yesterday](http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html) I posted a <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> action to prepend the date and append a single tag to all the items in a list, and then append that text to a file in Dropbox. Since then, I have been using the [todo.txt command line tool](https://github.com/ginatrapani/todo.txt-cli) and decided to upgrade the action.<span class="spPermalink"><a href="/2014/07/09/#a1404931604">#</a></span></p>
+				<p><a name="a1404931718"></a>This action lets you enter a task and then enter either (a) no tag (I prefer that to "context"); (b) a tag called `@online`; (c) any number of tags; followed by (d) no project; (e) a project called `+bills`; (f) any number of projects. To enter multiple tags or projects you need to hit Return after each, and then Next only when you're done.<span class="spPermalink"><a href="/2014/07/09/#a1404931718">#</a></span></p>
+				<p><a name="a1404931566"></a>[Import the new action](https://launchcenterpro.com/z14cdz). Or enter the following in the action composer:<span class="spPermalink"><a href="/2014/07/09/#a1404931566">#</a></span></p>
+				<p><a name="a1404931585"></a>    texttool://x-callback-url/transform?text=[prompt-return:tasks]&method=affix&prefix=[textexpander:ddate]%20&suffix=[-list|no tag={{}}|@online=%20%40online|tag=%20%40[prompt-list( @)]][-list|no project={{}}|+Bills=%20%2BBills|project=%20%2B[prompt-list( +)]]&scope=lines&x-success={{drafts:///create?text=[[output]]&action=todotxt}}<span class="spPermalink"><a href="/2014/07/09/#a1404931585">#</a></span></p>
+				<p><a name="a1404932128"></a>If you can decipher this action then you ought to be able to customize it, e.g., add `+work` in the projects list.<span class="spPermalink"><a href="/2014/07/09/#a1404932128">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="10/theMeaningOfFavoritingATweet.html">The Meaning of Favoriting a Tweet</a></div>
-		<p>I recently created an <a href="http://ifttt.com">IFTTT</a> recipe to add the first url mentioned in a tweet to Instapaper if I favorite the tweet. Now I am concerned that someone will interpret my favorite as condoning the content of a tweet, whereas all it means is that I want to "read it later." A favorite is not the equivalent of a <i class="fa fa-thumbs-o-up"></i> on Facebook.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/10/14; 04:02:39 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="10/theMeaningOfFavoritingATweet.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/08/">Tuesday, July  8<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1404838260"></a><a class="aStreamTextLink" onclick="ecStream (9)">A Launch Center Pro Action for Todo.txt</a><span class="spPermalink"><a href="/2014/07/08/#a1404838260">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel9">
+				<p><a name="a1404838270"></a>A blog reader emailed the following question:<span class="spPermalink"><a href="/2014/07/08/#a1404838270">#</a></span></p>
+				<p><a name="a1411674033.412"></a>> I have texttool, draft and LCP apps on my iphone.<span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>> Please help me this issue. <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>> I have todo.txt file in directory dropbox/todo/todo.txt <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>> I write in draft app one note with multiline line:<span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>>     Task1<span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>>     Task2 <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>>     Task3 <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>> I want to add this list to shown todo.txt (each line separate) in this format: <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>>     [current date] task1 @grocery <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>>     [current date] task2 @grocery <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>>     [current date] task3 @grocery <span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>> @grocery tag optional and may be replaced with other tag.<span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1411674033.412"></a>> How to do this?<span class="spPermalink"><a href="/2014/07/08/#a1411674033.412">#</a></span></p>
+				<p><a name="a1404838418"></a>Here is a solution that adds the current date before each list item and the single tag of your choice after each list item.<span class="spPermalink"><a href="/2014/07/08/#a1404838418">#</a></span></p>
+				<p><a name="a1404838350"></a>[Import the LCP action](https://launchcenterpro.com/zlv5l6) or enter the following in the action composer:<span class="spPermalink"><a href="/2014/07/08/#a1404838350">#</a></span></p>
+				<p><a name="a1404838415"></a>    texttool://x-callback-url/transform?text=[prompt-return:tasks]&method=affix&prefix=[textexpander:ddate]%20&suffix=%20%40[prompt:tag]&scope=lines<span class="spPermalink"><a href="/2014/07/08/#a1404838415">#</a></span></p>
+				<p><a name="a1404838470"></a>When I tap on this action, I enter each list item on a new line (hitting Return after each item except the last) and when I'm done I hit "Next".<span class="spPermalink"><a href="/2014/07/08/#a1404838470">#</a></span></p>
+				<p><a name="a1404838536"></a>    apple<span class="spPermalink"><a href="/2014/07/08/#a1404838536">#</a></span></p>
+				<p><a name="a1404838541"></a>    orange<span class="spPermalink"><a href="/2014/07/08/#a1404838541">#</a></span></p>
+				<p><a name="a1404838544"></a>    banana<span class="spPermalink"><a href="/2014/07/08/#a1404838544">#</a></span></p>
+				<p><a name="a1404838547"></a>Then the next prompt asks me to enter a tag:<span class="spPermalink"><a href="/2014/07/08/#a1404838547">#</a></span></p>
+				<p><a name="a1404838562"></a>    groceries<span class="spPermalink"><a href="/2014/07/08/#a1404838562">#</a></span></p>
+				<p><a name="a1404838584"></a>The action outputs the following in <a href="http://blackfoggames.com/TextTool/">TextTool</a>:<span class="spPermalink"><a href="/2014/07/08/#a1404838584">#</a></span></p>
+				<p><a name="a1404838597"></a>    2014-07-08 apple @groceries<span class="spPermalink"><a href="/2014/07/08/#a1404838597">#</a></span></p>
+				<p><a name="a1404838607"></a>    2014-07-08 orange @groceries<span class="spPermalink"><a href="/2014/07/08/#a1404838607">#</a></span></p>
+				<p><a name="a1404838608"></a>    2014-07-08 banana @groceries<span class="spPermalink"><a href="/2014/07/08/#a1404838608">#</a></span></p>
+				<p><a name="a1404838616"></a>The above action requires that I have a <a href="http://smilesoftware.com/apps/">TextExpander</a> snippet called _ddate_ in the following format: %Y-%m-%d, and that I have imported snippets into <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. <span class="spPermalink"><a href="/2014/07/08/#a1404838616">#</a></span></p>
+				<p><a name="a1404838703"></a>###Prepending the Output to the todo.txt File<span class="spPermalink"><a href="/2014/07/08/#a1404838703">#</a></span></p>
+				<p><a name="a1404839042"></a>[Import this action](https://launchcenterpro.com/99t4yt) to prepend the output from TextTool to your _todo.txt_ file, or enter the following into the LCP action composer:<span class="spPermalink"><a href="/2014/07/08/#a1404839042">#</a></span></p>
+				<p><a name="a1404839216"></a>    texttool://x-callback-url/transform?text=[prompt-return:tasks]&method=affix&prefix=[textexpander:ddate]%20&suffix=%20%40[prompt:tag]&scope=lines&x-success={{drafts:///create?text=[[output]]&action=todotxt}}<span class="spPermalink"><a href="/2014/07/08/#a1404839216">#</a></span></p>
+				<p><a name="a1404839218"></a>The above action requires that you [import this Dropbox action](drafts://x-callback-url/import_action?type=dropbox&name=todotxt&path=%2Ftodo%2F&filenametype=2&filename=todo&ext=txt&writetype=1&template=%5B%5Bdraft%5D%5D) into <a href="http://agiletortoise.com/drafts/">Drafts</a>. Or enter the following as a Dropbox action:<span class="spPermalink"><a href="/2014/07/08/#a1404839218">#</a></span></p>
+				<p><a name="a1404839302"></a>    Name: todotxt<span class="spPermalink"><a href="/2014/07/08/#a1404839302">#</a></span></p>
+				<p><a name="a1404839306"></a>    Path: /todo/<span class="spPermalink"><a href="/2014/07/08/#a1404839306">#</a></span></p>
+				<p><a name="a1404839312"></a>    File (predefined): todo<span class="spPermalink"><a href="/2014/07/08/#a1404839312">#</a></span></p>
+				<p><a name="a1404839325"></a>    Ext: txt<span class="spPermalink"><a href="/2014/07/08/#a1404839325">#</a></span></p>
+				<p><a name="a1404839329"></a>    Write: Prepend<span class="spPermalink"><a href="/2014/07/08/#a1404839329">#</a></span></p>
+				<p><a name="a1404839334"></a>    Template: [[draft]]<span class="spPermalink"><a href="/2014/07/08/#a1404839334">#</a></span></p>
+				<p><a name="a1404839485"></a>It is possible to accomplish the above without LCP. [Import this URL action](drafts://x-callback-url/import_action?type=URL&name=date-list-tag&url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bbody%5D%5D%26method%3Daffix%26prefix%3Dddate%2520%26suffix%3D%2520%2540%5B%5Btitle%5D%5D%26scope%3Dlines%26x-success%3D%7B%7Bdrafts%3A%2F%2F%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dtodotxt%7D%7D) into Drafts, or enter the following as an URL action:<span class="spPermalink"><a href="/2014/07/08/#a1404839485">#</a></span></p>
+				<p><a name="a1404839790"></a>    texttool://x-callback-url/transform?text=[[body]]&method=affix&prefix=ddate%20&suffix=%20%40[[title]]&scope=lines&x-success={{drafts:///create?text=[[output]]&action=todotxt}}<span class="spPermalink"><a href="/2014/07/08/#a1404839790">#</a></span></p>
+				<p><a name="a1404839794"></a>The only difference is that you need to enter the tag name on the first line:<span class="spPermalink"><a href="/2014/07/08/#a1404839794">#</a></span></p>
+				<p><a name="a1404839809"></a>    groceries<span class="spPermalink"><a href="/2014/07/08/#a1404839809">#</a></span></p>
+				<p><a name="a1404839816"></a>    apple<span class="spPermalink"><a href="/2014/07/08/#a1404839816">#</a></span></p>
+				<p><a name="a1404839820"></a>    orange<span class="spPermalink"><a href="/2014/07/08/#a1404839820">#</a></span></p>
+				<p><a name="a1404839822"></a>    banana<span class="spPermalink"><a href="/2014/07/08/#a1404839822">#</a></span></p>
+				<p><a name="a1404839826"></a>Everything else works exactly the same. (You still need to install the Dropbox action and to import TextExpander snippets.)<span class="spPermalink"><a href="/2014/07/08/#a1404839826">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1404831906"></a><a class="aStreamTextLink" onclick="ecStream (10)">How to Get the SoundCloud URL Schemes for Users and Tracks</a><span class="spPermalink"><a href="/2014/07/08/#a1404831906">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel10">
+				<p><a name="a1404832936"></a>SoundCloud has url schemes to jump to a user or a specific track in the iOS app. I have cobbled the following together after reading a few threads on Stack Overflow.<span class="spPermalink"><a href="/2014/07/08/#a1404832936">#</a></span></p>
+				<p><a name="a1404833035"></a>###How to Create a User URL Scheme<span class="spPermalink"><a href="/2014/07/08/#a1404833035">#</a></span></p>
+				<p><a name="a1404833050"></a>Let's get the url scheme for [Tasha Blank](https://soundcloud.com/tashablank). Click on the share icon <i class="fa fa-external-link"></i> then choose the Embed tab and then copy the embed code into a text editor. <span class="spPermalink"><a href="/2014/07/08/#a1404833050">#</a></span></p>
+				<p><a name="a1411674033.413"></a>    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/325143&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><span class="spPermalink"><a href="/2014/07/08/#a1411674033.413">#</a></span></p>
+				<p><a name="a1404833050"></a>Look for `api.soundcloud.com/users/`. Copy the numerical string immediately after that, up until the `&`. Put that string after `soundcloud://users/` and you'll get [soundcloud://users/325143](soundcloud://users/325143). If you click on this link on your iOS device, it will bring you to her page. And you can add it to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> in an action or list.<span class="spPermalink"><a href="/2014/07/08/#a1404833050">#</a></span></p>
+				<p><a name="a1404831934"></a>###How to Create a Track URL Scheme<span class="spPermalink"><a href="/2014/07/08/#a1404831934">#</a></span></p>
+				<p><a name="a1411674033.413"></a>Let's get the url scheme for [one of Tasha's recent tracks](https://soundcloud.com/tashablank/live-the-get-down-62614). Click on the share icon <i class="fa fa-external-link"></i> then choose the Embed tab and then copy the embed code into a text editor.<span class="spPermalink"><a href="/2014/07/08/#a1411674033.413">#</a></span></p>
+				<p><a name="a1411674033.413"></a>    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/156299506&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><span class="spPermalink"><a href="/2014/07/08/#a1411674033.413">#</a></span></p>
+				<p><a name="a1411674033.413"></a>Look for `api.soundcloud.com/tracks/`. Copy the numerical string immediately after that, up until the `&`. Put that string after `soundcloud://tracks/` and you'll get [soundcloud://tracks:156299506](soundcloud://tracks:156299506). If you click on this link on your iOS device, it will bring you to that track and start to auto-play. And you can add it to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> in an action or list.<span class="spPermalink"><a href="/2014/07/08/#a1411674033.413">#</a></span></p>
+				<p><a name="a1404833498"></a>&nbsp;<span class="spPermalink"><a href="/2014/07/08/#a1404833498">#</a></span></p>
+				<p><a name="a1404833502"></a>I don't know how else to get track and user IDs without signing up for a developer account, but if you find a solution, please let me know in the comments or on [Twitter](https://twitter.com/kishner).<span class="spPermalink"><a href="/2014/07/08/#a1404833502">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="10/2ndUpdateToMyLcpTodotxtActionNowWithPriorities.html">2nd Update to My LCP Todo.txt Action: Now With Priorities</a></div>
-		<blockquote class="twitter-tweet"><p><a href="https://twitter.com/kishner">@kishner</a> <a href="https://twitter.com/LaunchCenterPro">@LaunchCenterPro</a> i also use prioritet: (A) for today, (B) for thisweek, (C) for someday and add promp for LCP</p>&mdash; Zaur (@zaurww) <a href="https://twitter.com/zaurww/status/487050018424365056">July 10, 2014</a></blockquote>
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<p>The newest version of my action (<a href="https://t.co/1qrvQzVHUp">import it into LCP</a>) includes priorities A-C.</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[list|clipboard=[clipboard]|prompt=[prompt-return:tasks]]&amp;method=affix&amp;prefix=[-list:priorities|A=%28A%29%20|B=%28B%29%20|C=%28C%29%20|none={{}}][textexpander:ddate]%20&amp;suffix=[-list|no context={{}}|@online=%20%40online|contexts=%20%40[prompt-list( @)]][-list|no project={{}}|+Bills=%20%2BBills|projects=%20%2B[prompt-list( +)]]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>So now you can send something like the following to Drafts:</p>
-
-<pre><code>(A) 2014-07-10 complete task @context +project
-</code></pre>
-
-<p>This works with the <a href="http://todotxt.com">Todo.txt</a> command line interface and the iPhone app. </p>
-
-<p>Visit the <a href="http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html">first post in this series</a> to get the Drafts Dropbox action, and <a href="http://blog.jeffreykishner.com/2014/07/09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html">the second one</a> for more about the contexts and projects.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/10/14; 01:24:31 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="10/2ndUpdateToMyLcpTodotxtActionNowWithPriorities.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/07/">Monday, July  7<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1404758329"></a><a class="aStreamTextLink" onclick="ecStream (11)">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a><span class="spPermalink"><a href="/2014/07/07/#a1404758329">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel11">
+				<p><a name="a1404758351"></a>If you're browsing the Tumblr or Instagram apps on your iOS device and want to get the share URL, they are formatted as follows:<span class="spPermalink"><a href="/2014/07/07/#a1404758351">#</a></span></p>
+				<p><a name="a1404758387"></a>    http://NAME.tumblr.com/post/POST_ID/SLUG<span class="spPermalink"><a href="/2014/07/07/#a1404758387">#</a></span></p>
+				<p><a name="a1404758475"></a>    http://instagram.com/p/POST_ID<span class="spPermalink"><a href="/2014/07/07/#a1404758475">#</a></span></p>
+				<p><a name="a1404758855"></a>Unfortunately, these are web links. What if you want a link that will bring you right to that post ID in the _app_? I have written a couple of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> actions to automate these processes.<span class="spPermalink"><a href="/2014/07/07/#a1404758855">#</a></span></p>
+				<p><a name="a1404758906"></a>###Tumblr<span class="spPermalink"><a href="/2014/07/07/#a1404758906">#</a></span></p>
+				<p><a name="a1404758928"></a>The URL scheme for a Tumblr post (as per [GitHub](https://github.com/tumblr/TMTumblrSDK#url-schemes)) is as follows:<span class="spPermalink"><a href="/2014/07/07/#a1404758928">#</a></span></p>
+				<p><a name="a1404758441"></a>    tumblr://x-callback-url/blog?blogName=NAME&postID=POST_ID<span class="spPermalink"><a href="/2014/07/07/#a1404758441">#</a></span></p>
+				<p><a name="a1404758960"></a>All the information you need is in the web link, but you need to rearrange it all to make it work.<span class="spPermalink"><a href="/2014/07/07/#a1404758960">#</a></span></p>
+				<p><a name="a1404758960"></a>[Import the Tumblr action](https://launchcenterpro.com/759n6q) or enter the following into LCP:<span class="spPermalink"><a href="/2014/07/07/#a1404758960">#</a></span></p>
+				<p><a name="a1404759399"></a>    texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=%2F&lc-icon=tumblr&x-success={{texttool://x-callback-url/transform?text=[[output]]&method=split&delimiter=.&x-success={{drafts:///create?text=[[output]]&action=tumblr-id}}}}<span class="spPermalink"><a href="/2014/07/07/#a1404759399">#</a></span></p>
+				<p><a name="a1404759404"></a>To make this action work, you will also need <a href="http://blackfoggames.com/TextTool/">TextTool</a> and <a href="http://agiletortoise.com/drafts/">Drafts</a>. And you will need to [import this URL action into Drafts](drafts://x-callback-url/import_action?type=URL&name=tumblr-id&url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Btumblr%3A%2F%2Fx-callback-url%2Fblog%3FblogName%3D%5B%5Bline%7C3%5D%5D%26postID%3D%5B%5Bline%7C7%5D%5D%7D%7D).<span class="spPermalink"><a href="/2014/07/07/#a1404759404">#</a></span></p>
+				<p><a name="a1404759464"></a>Let's work with a random Tumblr post to see how this works:<span class="spPermalink"><a href="/2014/07/07/#a1404759464">#</a></span></p>
+				<p><a name="a1404759546"></a>    http://yahoo.tumblr.com/post/90564142294/furthering-our-focus<span class="spPermalink"><a href="/2014/07/07/#a1404759546">#</a></span></p>
+				<p><a name="a1404759549"></a>Copy this URL to your iOS clipboard, and then tap on the Tumblr action in LCP. LCP sends this string to TextTool, which splits the string at the `/`:<span class="spPermalink"><a href="/2014/07/07/#a1404759549">#</a></span></p>
+				<p><a name="a1404759655"></a>    http:<span class="spPermalink"><a href="/2014/07/07/#a1404759655">#</a></span></p>
+				<p><a name="a1404760089"></a><span class="spPermalink"><a href="/2014/07/07/#a1404760089">#</a></span></p>
+				<p><a name="a1404759825"></a>    yahoo.tumblr.com<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    post<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    90564142294<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    furthering-our-focus<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759596"></a>It then takes that output and sends it back to TextTool to split at the `.`:<span class="spPermalink"><a href="/2014/07/07/#a1404759596">#</a></span></p>
+				<p><a name="a1404759655"></a>    http:<span class="spPermalink"><a href="/2014/07/07/#a1404759655">#</a></span></p>
+				<p><a name="a1404760091"></a><span class="spPermalink"><a href="/2014/07/07/#a1404760091">#</a></span></p>
+				<p><a name="a1404759825"></a>    yahoo<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759971"></a>    tumblr<span class="spPermalink"><a href="/2014/07/07/#a1404759971">#</a></span></p>
+				<p><a name="a1404759971"></a>    com<span class="spPermalink"><a href="/2014/07/07/#a1404759971">#</a></span></p>
+				<p><a name="a1404759825"></a>    post<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    90564142294<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759825"></a>    furthering-our-focus<span class="spPermalink"><a href="/2014/07/07/#a1404759825">#</a></span></p>
+				<p><a name="a1404759978"></a>It then sends that output to Drafts and triggers the _tumblr-id_ URL action:<span class="spPermalink"><a href="/2014/07/07/#a1404759978">#</a></span></p>
+				<p><a name="a1404760053"></a>    drafts:///create?text={{tumblr://x-callback-url/blog?blogName=[[line|3]]&postID=[[line|7]]}}<span class="spPermalink"><a href="/2014/07/07/#a1404760053">#</a></span></p>
+				<p><a name="a1404760276"></a>This action inputs lines 3 and 7 of the draft into the relevant points of the url scheme, and creates a new draft with the final result:<span class="spPermalink"><a href="/2014/07/07/#a1404760276">#</a></span></p>
+				<p><a name="a1404760376"></a>    tumblr://x-callback-url/blog?blogName=yahoo&postID=90564142294<span class="spPermalink"><a href="/2014/07/07/#a1404760376">#</a></span></p>
+				<p><a name="a1404760378"></a>And just to make the action icon look nice, I added `lc-icon=tumblr`.<span class="spPermalink"><a href="/2014/07/07/#a1404760378">#</a></span></p>
+				<p><a name="a1404760409"></a>###Instagram<span class="spPermalink"><a href="/2014/07/07/#a1404760409">#</a></span></p>
+				<p><a name="a1404760415"></a>The Instagram action is more complicated. It requires <a href="http://blackfoggames.com/TextTool/">TextTool</a>, <a href="http://agiletortoise.com/drafts/">Drafts</a>, and <a href="http://www.textasticapp.com/">Textastic</a>. [Import the LCP action](https://launchcenterpro.com/w4z9z9) or enter this into a new action:<span class="spPermalink"><a href="/2014/07/07/#a1404760415">#</a></span></p>
+				<p><a name="a1404760678"></a>    textastic://api.instagram.com/oembed?url=[clipboard]&lc-icon=instagram&lc-callback=[list|url=texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=%22&x-success={{drafts:///create?text=[[output]]&action=insta-api}}|image=texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=%22&x-success={{drafts:///create?text=[[output]]&action=insta-api-url}}]<span class="spPermalink"><a href="/2014/07/07/#a1404760678">#</a></span></p>
+				<p><a name="a1404761169"></a>Instagram's url scheme for a post is as follows (as per its [iPhone Hooks page](http://instagram.com/developer/iphone-hooks/)):<span class="spPermalink"><a href="/2014/07/07/#a1404761169">#</a></span></p>
+				<p><a name="a1404758591"></a>    instagram://media?id=MEDIA_ID<span class="spPermalink"><a href="/2014/07/07/#a1404758591">#</a></span></p>
+				<p><a name="a1404761227"></a>The media ID is not part of the web URL. But we can get that info from Instagrams's [Embed API](http://instagram.com/developer/embedding/). Let's use an example post (`http://instagram.com/p/qJu0a-OHMC`) and add it after the `url=`: <span class="spPermalink"><a href="/2014/07/07/#a1404761227">#</a></span></p>
+				<p><a name="a1404758678"></a>    http://api.instagram.com/oembed?url=http://instagram.com/p/qJu0a-OHMC<span class="spPermalink"><a href="/2014/07/07/#a1404758678">#</a></span></p>
+				<p><a name="a1404761488"></a>This API returns JSON:<span class="spPermalink"><a href="/2014/07/07/#a1404761488">#</a></span></p>
+				<p><a name="a1404758728"></a>     {"provider_url":"http:\/\/instagram.com\/","media_id":"759343924702114562_1483611","title":"Another beautiful day in the city! \ud83d\ude0d","url":"http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg","author_name":"newyorkcity","height":640,"width":640,"version":"1.0","author_url":"http:\/\/instagram.com\/newyorkcity","author_id":1483611,"type":"photo","provider_name":"Instagram"} <span class="spPermalink"><a href="/2014/07/07/#a1404758728">#</a></span></p>
+				<p><a name="a1404758742"></a>We can see that the media_id is 759343924702114562_1483611. `instagram://media?id=759343924702114562_1483611` would bring us right to that post in the app, but we need the LCP action to automate the process.<span class="spPermalink"><a href="/2014/07/07/#a1404758742">#</a></span></p>
+				<p><a name="a1404761675"></a>We first need an easy way to grab the HTML of the API results. Textastic has an [url scheme](http://www.textasticapp.com/v4/manual/x-callback-url.html) that lets you download a file and open the HTML in the editor by replacing `http://` with `textastic://`. The first part of the LCP action does just that. However, even though Textastic supports x-callback-url, it doesn't for this particular action. So we need to tap on the share <i class="fa fa-external-link"></i> button at top right of the screen after the HTML has downloaded, and choose "Copy All." Then we take advantage of a new feature introduced in LCP: lc-callback. For apps that do not support x-callback-url, this is the next best thing. We define the callback action, but instead of it triggering automatically after the first action, we double-tap on the home button (to get the app launcher) and choose LCP. Once we tap on LCP, the next action gets triggered. <span class="spPermalink"><a href="/2014/07/07/#a1404761675">#</a></span></p>
+				<p><a name="a1404761767"></a>Because the embed API also provides the raw image URL for the Instagram post, the lc-callback starts with a list. We can get the iOS url scheme ("url") or the raw image URL ("image"). Let's see what happens when you choose "url":<span class="spPermalink"><a href="/2014/07/07/#a1404761767">#</a></span></p>
+				<p><a name="a1404762160"></a>The entire HTML is sent to TextTool, which splits the string at `"`:<span class="spPermalink"><a href="/2014/07/07/#a1404762160">#</a></span></p>
+				<p><a name="a1411674033.414"></a>    {<span class="spPermalink"><a href="/2014/07/07/#a1411674033.414">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    provider_url<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    http:\/\/instagram.com\/<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    media_id<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    759343924702114562_1483611<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    title<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    Another beautiful day in the city! \ud83d\ude0d<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    url<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    author_name<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    newyorkcity<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    height<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :640,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    width<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :640,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    version<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    1.0<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    author_url<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    http:\/\/instagram.com\/newyorkcity<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    author_id<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :1483611,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    type<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    photo<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    ,<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    provider_name<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    :<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    Instagram<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1411674033.415"></a>    }<span class="spPermalink"><a href="/2014/07/07/#a1411674033.415">#</a></span></p>
+				<p><a name="a1404762563"></a>This entire string is then sent to Drafts, and the _insta-api_ action is triggered. [Import it into Drafts](drafts://x-callback-url/import_action?type=URL&name=insta-api&url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Binstagram%3A%2F%2Fmedia%3Fid%3D%5B%5Bline%7C8%5D%5D%7D%7D) or enter the following as an URL action:<span class="spPermalink"><a href="/2014/07/07/#a1404762563">#</a></span></p>
+				<p><a name="a1404762617"></a>    drafts:///create?text={{instagram://media?id=[[line|8]]}}<span class="spPermalink"><a href="/2014/07/07/#a1404762617">#</a></span></p>
+				<p><a name="a1404762669"></a>It simply takes line 8 -- which contains the media_ID -- and inserts into into the URL scheme.<span class="spPermalink"><a href="/2014/07/07/#a1404762669">#</a></span></p>
+				<p><a name="a1404762693"></a>Now, if we would rather get the raw image URL, we choose "image" after the lc-callback. It also performs a `"` split and sends that output to Drafts, but it instead triggers the _insta-api-url_ action. [Import it into Drafts](drafts://x-callback-url/import_action?type=URL&name=insta-api-url&url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C16%5D%5D%26method%3Dunescape) or enter the following URL action:<span class="spPermalink"><a href="/2014/07/07/#a1404762693">#</a></span></p>
+				<p><a name="a1404762894"></a>    texttool://x-callback-url/transform?text=[[line|16]]&method=unescape<span class="spPermalink"><a href="/2014/07/07/#a1404762894">#</a></span></p>
+				<p><a name="a1404762896"></a>Line 16 -- the raw image URL -- is sent to TextTool. Why? All the forward slashes in the URL are "escaped" <span class="spPermalink"><a href="/2014/07/07/#a1404762896">#</a></span></p>
+				<p><a name="a1404762955"></a>       http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg<span class="spPermalink"><a href="/2014/07/07/#a1404762955">#</a></span></p>
+				<p><a name="a1404762975"></a>so we have to unescape them:<span class="spPermalink"><a href="/2014/07/07/#a1404762975">#</a></span></p>
+				<p><a name="a1404762980"></a>       http://photos-d.ak.instagram.com/hphotos-ak-xfp1/10537269_595401073912091_331298792_n.jpg<span class="spPermalink"><a href="/2014/07/07/#a1404762980">#</a></span></p>
+				<p><a name="a1404762999"></a>This action stops at TextTool. It has sharing features, so you can do what you like with URL: e.g., download the image.<span class="spPermalink"><a href="/2014/07/07/#a1404762999">#</a></span></p>
+				<p><a name="a1404763688"></a>To make the action icon look nice, I added `lc-icon=instagram`.<span class="spPermalink"><a href="/2014/07/07/#a1404763688">#</a></span></p>
+				<p><a name="a1404763049"></a>Granted, this LCP action is not fluid. I think it would possible to perform the conversion without the "Copy All" and lc-callback using the JSON parser in Pythonista, but I'm not proficient enough to accomplish that as of this writing. If you write an action that accomplishes the conversion with fewer steps, I would love to hear from you in the comments section or on Twitter.<span class="spPermalink"><a href="/2014/07/07/#a1404763049">#</a></span></p>
+				<p><a name="a1404763711"></a>**Thanks** to @epramono and @youens on Twitter for helping me to understand LCP 2.3.x at a deeper level.<span class="spPermalink"><a href="/2014/07/07/#a1404763711">#</a></span></p>
+				</div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1404750632"></a><a class="aStreamTextLink" onclick="ecStream (12)">Command Line Script for "Paperless: Lists + Checklists"</a><span class="spPermalink"><a href="/2014/07/07/#a1404750632">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel12">
+				<p><a name="a1404750672"></a>I use <a href="http://www.crushapps.com/paperless/">Paperless</a> for the majority of my list-making on my iOS devices. I've already written [how to mark an item as complete without using the app](http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html) and [how to view your lists on the web](http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html). Today, I am going to share a unix command line bash script to "print" incomplete items from a list. <span class="spPermalink"><a href="/2014/07/07/#a1404750672">#</a></span></p>
+				<p><a name="a1404750837"></a>I created a text file called "prl" and put it in /usr/local/bin/:<span class="spPermalink"><a href="/2014/07/07/#a1404750837">#</a></span></p>
+				<p><a name="a1411674033.416"></a>    #! /bin/bash<span class="spPermalink"><a href="/2014/07/07/#a1411674033.416">#</a></span></p>
+				<p><a name="a1404749674"></a>    list=$1<span class="spPermalink"><a href="/2014/07/07/#a1404749674">#</a></span></p>
+				<p><a name="a1411674033.416"></a>    grep -A 1 \<dateCompleted\>\<\/dateCompleted\> ~/Dropbox/Paperless/$list.xml | sed -n 's:.*<itemName>\(.*\)</itemName>.*:\1:p'<span class="spPermalink"><a href="/2014/07/07/#a1411674033.416">#</a></span></p>
+				<p><a name="a1404750994"></a>I made it executable while in that directory: `chmod +x prl`<span class="spPermalink"><a href="/2014/07/07/#a1404750994">#</a></span></p>
+				<p><a name="a1404751017"></a>Now, to view the incomplete items in any list, I just type `prl` followed by the list name. If I have a list named Bills, I just type `prl Bills` and the script will output all bills that are due. (This script does not output the notes field.)<span class="spPermalink"><a href="/2014/07/07/#a1404751017">#</a></span></p>
+				<p><a name="a1404751089"></a>###How It Works<span class="spPermalink"><a href="/2014/07/07/#a1404751089">#</a></span></p>
+				<p><a name="a1404751093"></a>All your Paperless lists are stored as XML files. I use _grep_ to look for all items for which there is no completion date: `<dateCompleted></dateCompleted>` with _-A 1_ to also print out the lines immediately after each match (which are the list items themselves). Those results are piped into a _sed_ which extracts any string sandwiched between `<itemName>` and `</itemName>`.<span class="spPermalink"><a href="/2014/07/07/#a1404751093">#</a></span></p>
+				<p><a name="a1404751462"></a>If I need to see a note, I can do a quick _grep_: `grep -A 1 verizon ~/Dropbox/Paperless/Bills.xml`. This will output all lines matching _verizon_ plus the lines immediately following, including the XML tags. It's not pretty but it will get me the info I need (e.g., the due date).<span class="spPermalink"><a href="/2014/07/07/#a1404751462">#</a></span></p>
+				<p><a name="a1411674033.416"></a>    <itemName>Verizon $100.00</itemName><span class="spPermalink"><a href="/2014/07/07/#a1411674033.416">#</a></span></p>
+				<p><a name="a1411674033.416"></a>    <itemNote>7/7</itemNote><span class="spPermalink"><a href="/2014/07/07/#a1411674033.416">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html">Update to Launch Center Pro Action to Todo.txt: Multiple Contexts and Projects</a></div>
-		<p><a href="http://blog.jeffreykishner.com/2014/07/08/aLaunchCenterProActionForTodotxt.html">Yesterday</a> I posted a <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> action to prepend the date and append a single tag to all the items in a list, and then append that text to a file in Dropbox. Since then, I have been using the <a href="https://github.com/ginatrapani/todo.txt-cli">todo.txt command line tool</a> and decided to upgrade the action.</p>
-
-<p>This action lets you enter a task and then enter either (a) no tag (I prefer that to "context"); (b) a tag called <code>@online</code>; (c) any number of tags; followed by (d) no project; (e) a project called <code>+bills</code>; (f) any number of projects. To enter multiple tags or projects you need to hit Return after each, and then Next only when you're done.</p>
-
-<p><a href="https://launchcenterpro.com/z14cdz">Import the new action</a>. Or enter the following in the action composer:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[prompt-return:tasks]&amp;method=affix&amp;prefix=[textexpander:ddate]%20&amp;suffix=[-list|no tag={{}}|@online=%20%40online|tag=%20%40[prompt-list( @)]][-list|no project={{}}|+Bills=%20%2BBills|project=%20%2B[prompt-list( +)]]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>If you can decipher this action then you ought to be able to customize it, e.g., add <code>+work</code> in the projects list.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/09/14; 01:45:33 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="09/updateToLaunchCenterProActionToTodotxtMultipleContextsAndProjects.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/03/">Thursday, July  3<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (13)" ><i class="fa fa-caret-right" id="idStreamWedge13"></i></a></span><a name="a1404406399"></a><a class="aStreamTextLink" onclick="ecStream (13)">Cloud Services and Social Networking on the Linux Command Line</a><span class="spPermalink"><a href="/2014/07/03/#a1404406399">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel13">
+				<p><a name="a1404406422"></a>I'm amazed at all the stuff that's available:<span class="spPermalink"><a href="/2014/07/03/#a1404406422">#</a></span></p>
+				<p><a name="a1404406446"></a><i class="fa fa-chevron-circle-right"></i> [Dropbox](https://www.dropbox.com/install?os=lnx)<span class="spPermalink"><a href="/2014/07/03/#a1404406446">#</a></span></p>
+				<p><a name="a1404406479"></a><i class="fa fa-chevron-circle-right"></i> [An Evernote Client](http://www.geeknote.me/)<span class="spPermalink"><a href="/2014/07/03/#a1404406479">#</a></span></p>
+				<p><a name="a1404406502"></a><i class="fa fa-chevron-circle-right"></i> [A Twitter Client](http://www.floodgap.com/software/ttytter/)<span class="spPermalink"><a href="/2014/07/03/#a1404406502">#</a></span></p>
+				<p><a name="a1404406551"></a>I am a keyboard-shortcut fanatic; adding a note to Evernote with syntax like<span class="spPermalink"><a href="/2014/07/03/#a1404406551">#</a></span></p>
+				<p><a name="a1404406595"></a>    geeknote create --title "A Title" --content "Some content." --tags "tag1"<span class="spPermalink"><a href="/2014/07/03/#a1404406595">#</a></span></p>
+				<p><a name="a1404406640"></a>beats the evernote.com web interface hands down.<span class="spPermalink"><a href="/2014/07/03/#a1404406640">#</a></span></p>
+				<p><a name="a1404406800"></a>Granted, the cli doesn't support images, and since I'm ssh-ing into a VPS I can't open media from the command line, but for quick data input/output, nothing beats it. (I'm faster at typing on a physical keyboard than on an iPhone.)<span class="spPermalink"><a href="/2014/07/03/#a1404406800">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="08/aLaunchCenterProActionForTodotxt.html">A Launch Center Pro Action for Todo.txt</a></div>
-		<p>A blog reader emailed the following question:</p>
-
-<blockquote>
-  <p>I have texttool, draft and LCP apps on my iphone.</p>
-  
-  <p>Please help me this issue. </p>
-  
-  <p>I have todo.txt file in directory dropbox/todo/todo.txt </p>
-  
-  <p>I write in draft app one note with multiline line:</p>
-
-<pre><code>Task1
-
-Task2 
-
-Task3 
-</code></pre>
-  
-  <p>I want to add this list to shown todo.txt (each line separate) in this format: </p>
-
-<pre><code>[current date] task1 @grocery 
-
-[current date] task2 @grocery 
-
-[current date] task3 @grocery 
-</code></pre>
-  
-  <p>@grocery tag optional and may be replaced with other tag.</p>
-  
-  <p>How to do this?</p>
-</blockquote>
-
-<p>Here is a solution that adds the current date before each list item and the single tag of your choice after each list item.</p>
-
-<p><a href="https://launchcenterpro.com/zlv5l6">Import the LCP action</a> or enter the following in the action composer:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[prompt-return:tasks]&amp;method=affix&amp;prefix=[textexpander:ddate]%20&amp;suffix=%20%40[prompt:tag]&amp;scope=lines
-</code></pre>
-
-<p>When I tap on this action, I enter each list item on a new line (hitting Return after each item except the last) and when I'm done I hit "Next".</p>
-
-<pre><code>apple
-
-orange
-
-banana
-</code></pre>
-
-<p>Then the next prompt asks me to enter a tag:</p>
-
-<pre><code>groceries
-</code></pre>
-
-<p>The action outputs the following in <a href="http://blackfoggames.com/TextTool/">TextTool</a>:</p>
-
-<pre><code>2014-07-08 apple @groceries
-
-2014-07-08 orange @groceries
-
-2014-07-08 banana @groceries
-</code></pre>
-
-<p>The above action requires that I have a <a href="http://smilesoftware.com/apps/">TextExpander</a> snippet called <em>ddate</em> in the following format: %Y-%m-%d, and that I have imported snippets into <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. </p>
-
-<h3>Prepending the Output to the todo.txt File</h3>
-
-<p><a href="https://launchcenterpro.com/99t4yt">Import this action</a> to prepend the output from TextTool to your <em>todo.txt</em> file, or enter the following into the LCP action composer:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[prompt-return:tasks]&amp;method=affix&amp;prefix=[textexpander:ddate]%20&amp;suffix=%20%40[prompt:tag]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>The above action requires that you <a href="drafts://x-callback-url/import_action?type=dropbox&amp;name=todotxt&amp;path=%2Ftodo%2F&amp;filenametype=2&amp;filename=todo&amp;ext=txt&amp;writetype=1&amp;template=%5B%5Bdraft%5D%5D">import this Dropbox action</a> into <a href="http://agiletortoise.com/drafts/">Drafts</a>. Or enter the following as a Dropbox action:</p>
-
-<pre><code>Name: todotxt
-
-Path: /todo/
-
-File (predefined): todo
-
-Ext: txt
-
-Write: Prepend
-
-Template: [[draft]]
-</code></pre>
-
-<p>It is possible to accomplish the above without LCP. <a href="drafts://x-callback-url/import_action?type=URL&amp;name=date-list-tag&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bbody%5D%5D%26method%3Daffix%26prefix%3Dddate%2520%26suffix%3D%2520%2540%5B%5Btitle%5D%5D%26scope%3Dlines%26x-success%3D%7B%7Bdrafts%3A%2F%2F%2Fcreate%3Ftext%3D%5B%5Boutput%5D%5D%26action%3Dtodotxt%7D%7D">Import this URL action</a> into Drafts, or enter the following as an URL action:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[body]]&amp;method=affix&amp;prefix=ddate%20&amp;suffix=%20%40[[title]]&amp;scope=lines&amp;x-success={{drafts:///create?text=[[output]]&amp;action=todotxt}}
-</code></pre>
-
-<p>The only difference is that you need to enter the tag name on the first line:</p>
-
-<pre><code>groceries
-
-apple
-
-orange
-
-banana
-</code></pre>
-
-<p>Everything else works exactly the same. (You still need to install the Dropbox action and to import TextExpander snippets.)</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/08/14; 11:51:00 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="08/aLaunchCenterProActionForTodotxt.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/02/">Wednesday, July  2<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (14)" ><i class="fa fa-caret-right" id="idStreamWedge14"></i></a></span><a name="a1404315761"></a><a class="aStreamTextLink" onclick="ecStream (14)">Update to My OPML-to-WordPress Plugin</a><span class="spPermalink"><a href="/2014/07/02/#a1404315761">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel14">
+				<p><a name="a1404315779"></a>Today I have released v 2.0 of my plugin, which renders a Fargo OPML file on a WordPress page or blog post using a simple shortcode. The updated version supports the link-blog format (type="idea"). <span class="spPermalink"><a href="/2014/07/02/#a1404315779">#</a></span></p>
+				<p><a name="a1404315889"></a>View the update and download the zip file [here](http://jeffreykishner.com/wordpress-plugins/post-opml-to-wordpress/).<span class="spPermalink"><a href="/2014/07/02/#a1404315889">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html">How to Get the SoundCloud URL Schemes for Users and Tracks</a></div>
-		<p>SoundCloud has url schemes to jump to a user or a specific track in the iOS app. I have cobbled the following together after reading a few threads on Stack Overflow.</p>
-
-<h3>How to Create a User URL Scheme</h3>
-
-<p>Let's get the url scheme for <a href="https://soundcloud.com/tashablank">Tasha Blank</a>. Click on the share icon <i class="fa fa-external-link"></i> then choose the Embed tab and then copy the embed code into a text editor. </p>
-
-<pre><code>&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/325143&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
-</code></pre>
-
-<p>Look for <code>api.soundcloud.com/users/</code>. Copy the numerical string immediately after that, up until the <code>&amp;</code>. Put that string after <code>soundcloud://users/</code> and you'll get <a href="soundcloud://users/325143">soundcloud://users/325143</a>. If you click on this link on your iOS device, it will bring you to her page. And you can add it to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> in an action or list.</p>
-
-<h3>How to Create a Track URL Scheme</h3>
-
-<p>Let's get the url scheme for <a href="https://soundcloud.com/tashablank/live-the-get-down-62614">one of Tasha's recent tracks</a>. Click on the share icon <i class="fa fa-external-link"></i> then choose the Embed tab and then copy the embed code into a text editor.</p>
-
-<pre><code>&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/156299506&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
-</code></pre>
-
-<p>Look for <code>api.soundcloud.com/tracks/</code>. Copy the numerical string immediately after that, up until the <code>&amp;</code>. Put that string after <code>soundcloud://tracks/</code> and you'll get <a href="soundcloud://tracks:156299506">soundcloud://tracks:156299506</a>. If you click on this link on your iOS device, it will bring you to that track and start to auto-play. And you can add it to <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> in an action or list.</p>
-
-<p>&nbsp;</p>
-
-<p>I don't know how else to get track and user IDs without signing up for a developer account, but if you find a solution, please let me know in the comments or on <a href="https://twitter.com/kishner">Twitter</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/08/14; 10:05:06 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html"><i class="fa fa-star"></i></a></div>
+	</div>
+<div class="divStreamDay" >
+	<div class="divDaySeparator"></div>
+	
+	<div class="divStreamDayText">
+		<div>
+			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/07/01/">Tuesday, July  1<span class="spDateYearPart">, 2014</span></a></div>
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (15)" ><i class="fa fa-caret-right" id="idStreamWedge15"></i></a></span><a name="a1404221843"></a><a class="aStreamTextLink" onclick="ecStream (15)">Get a Direct Link to Any Note in Evernote for iOS</a><span class="spPermalink"><a href="/2014/07/01/#a1404221843">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel15">
+				<p><a name="a1404222270"></a>_I take credit for none of the following (other than a few personal tweaks) -- just wanting to share [this solution](https://discussion.evernote.com/topic/39792-cant-create-note-links-in-en-ios-clients/) by [Stephen May](https://plus.google.com/108788174443222624607/posts) because it's so cool._<span class="spPermalink"><a href="/2014/07/01/#a1404222270">#</a></span></p>
+				<p><a name="a1404222294"></a>Evernote does not have much of an url scheme beyond `evernote://` which is not terrible useful for productivity nerds. This solution creates a link that will bring you directly to the note of your choice. It requires <a href="http://omz-software.com/pythonista/">Pythonista</a>, <a href="http://agiletortoise.com/drafts/">Drafts</a>, and <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.<span class="spPermalink"><a href="/2014/07/01/#a1404222294">#</a></span></p>
+				<p><a name="a1404222689"></a>First, you will need to grab some personal information about your Evernote account, and the only way I know how to find it is via the Mac OS X app. In the left sidebar, [right-click on any note and get the note's link](http://blog.evernote.com/blog/2013/08/02/quick-tip-how-to-use-note-links/). At the beginning of the link, there will be a six digit string and another digit or two following an `s`. You will need this information for a future step. <span class="spPermalink"><a href="/2014/07/01/#a1404222689">#</a></span></p>
+				<p><a name="a1404222875"></a>Add the following to Pythonista. You can title it `Evernote Link` or whatever you like. Where it says `evernote:///view/123456/s4/` you will replace the six digit string and the `s4` with the information from the note link you copied from the desktop app. Where it says `https://www.evernote.com/shard/s4/sh/` replace the `s4` with the `s..` from your original note link.<span class="spPermalink"><a href="/2014/07/01/#a1404222875">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    import clipboard<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    import sys<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    import webbrowser<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    import console<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    import urllib<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    mytext = (sys.argv[1])<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    head, sep, tail = mytext.rpartition('/')<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    parttwo = head.replace('https://www.evernote.com/shard/s4/sh/', '')<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    evernoteurl = ('evernote:///view/123456/s4/' + parttwo + '/' + parttwo + '/')<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1411674033.44"></a>    webbrowser.open('drafts://x-callback-url/create?text=' + evernoteurl + '&action=Copy%20to%20Clipboard&afterSuccess=Nothing')<span class="spPermalink"><a href="/2014/07/01/#a1411674033.44">#</a></span></p>
+				<p><a name="a1404223027"></a>Then add the following action in LCP:<span class="spPermalink"><a href="/2014/07/01/#a1404223027">#</a></span></p>
+				<p><a name="a1404223035"></a>    pythonista://EvernoteLink?action=run&argv=[clipboard]<span class="spPermalink"><a href="/2014/07/01/#a1404223035">#</a></span></p>
+				<p><a name="a1404223087"></a>### How to Get Your Link<span class="spPermalink"><a href="/2014/07/01/#a1404223087">#</a></span></p>
+				<p><a name="a1404223100"></a>Go to the Evernote app and tap on any note. Choose "Share <i class="fa fa-external-link"></i>" and then "Copy link." Then tap on the LCP action. After the script runs, the direct Evernote link will be in a new draft in Drafts, and also copied to the clipboard. If you make links clickable in Drafts and tap on the link, it will bring you right to that note in Evernote. <span class="spPermalink"><a href="/2014/07/01/#a1404223100">#</a></span></p>
+				<p><a name="a1404223322"></a>If you care about the privacy of your note, then tap on "Share <i class="fa fa-external-link"></i>" again and choose "Stop sharing." Your direct link will still work.<span class="spPermalink"><a href="/2014/07/01/#a1404223322">#</a></span></p>
+				</div>
 			</div>
 		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html">Convert Tumblr and Instagram Post Web Links to iOS URL Schemes With These Launch Center Pro Actions</a></div>
-		<p>If you're browsing the Tumblr or Instagram apps on your iOS device and want to get the share URL, they are formatted as follows:</p>
-
-<pre><code>http://NAME.tumblr.com/post/POST_ID/SLUG
-
-http://instagram.com/p/POST_ID
-</code></pre>
-
-<p>Unfortunately, these are web links. What if you want a link that will bring you right to that post ID in the <em>app</em>? I have written a couple of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> actions to automate these processes.</p>
-
-<h3>Tumblr</h3>
-
-<p>The URL scheme for a Tumblr post (as per <a href="https://github.com/tumblr/TMTumblrSDK#url-schemes">GitHub</a>) is as follows:</p>
-
-<pre><code>tumblr://x-callback-url/blog?blogName=NAME&amp;postID=POST_ID
-</code></pre>
-
-<p>All the information you need is in the web link, but you need to rearrange it all to make it work.</p>
-
-<p><a href="https://launchcenterpro.com/759n6q">Import the Tumblr action</a> or enter the following into LCP:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=%2F&amp;lc-icon=tumblr&amp;x-success={{texttool://x-callback-url/transform?text=[[output]]&amp;method=split&amp;delimiter=.&amp;x-success={{drafts:///create?text=[[output]]&amp;action=tumblr-id}}}}
-</code></pre>
-
-<p>To make this action work, you will also need <a href="http://blackfoggames.com/TextTool/">TextTool</a> and <a href="http://agiletortoise.com/drafts/">Drafts</a>. And you will need to <a href="drafts://x-callback-url/import_action?type=URL&amp;name=tumblr-id&amp;url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Btumblr%3A%2F%2Fx-callback-url%2Fblog%3FblogName%3D%5B%5Bline%7C3%5D%5D%26postID%3D%5B%5Bline%7C7%5D%5D%7D%7D">import this URL action into Drafts</a>.</p>
-
-<p>Let's work with a random Tumblr post to see how this works:</p>
-
-<pre><code>http://yahoo.tumblr.com/post/90564142294/furthering-our-focus
-</code></pre>
-
-<p>Copy this URL to your iOS clipboard, and then tap on the Tumblr action in LCP. LCP sends this string to TextTool, which splits the string at the <code>/</code>:</p>
-
-<pre><code>http:
-
-
-
-yahoo.tumblr.com
-
-post
-
-90564142294
-
-furthering-our-focus
-</code></pre>
-
-<p>It then takes that output and sends it back to TextTool to split at the <code>.</code>:</p>
-
-<pre><code>http:
-
-
-
-yahoo
-
-tumblr
-
-com
-
-post
-
-90564142294
-
-furthering-our-focus
-</code></pre>
-
-<p>It then sends that output to Drafts and triggers the <em>tumblr-id</em> URL action:</p>
-
-<pre><code>drafts:///create?text={{tumblr://x-callback-url/blog?blogName=[[line|3]]&amp;postID=[[line|7]]}}
-</code></pre>
-
-<p>This action inputs lines 3 and 7 of the draft into the relevant points of the url scheme, and creates a new draft with the final result:</p>
-
-<pre><code>tumblr://x-callback-url/blog?blogName=yahoo&amp;postID=90564142294
-</code></pre>
-
-<p>And just to make the action icon look nice, I added <code>lc-icon=tumblr</code>.</p>
-
-<h3>Instagram</h3>
-
-<p>The Instagram action is more complicated. It requires <a href="http://blackfoggames.com/TextTool/">TextTool</a>, <a href="http://agiletortoise.com/drafts/">Drafts</a>, and <a href="http://www.textasticapp.com/">Textastic</a>. <a href="https://launchcenterpro.com/w4z9z9">Import the LCP action</a> or enter this into a new action:</p>
-
-<pre><code>textastic://api.instagram.com/oembed?url=[clipboard]&amp;lc-icon=instagram&amp;lc-callback=[list|url=texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=%22&amp;x-success={{drafts:///create?text=[[output]]&amp;action=insta-api}}|image=texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=%22&amp;x-success={{drafts:///create?text=[[output]]&amp;action=insta-api-url}}]
-</code></pre>
-
-<p>Instagram's url scheme for a post is as follows (as per its <a href="http://instagram.com/developer/iphone-hooks/">iPhone Hooks page</a>):</p>
-
-<pre><code>instagram://media?id=MEDIA_ID
-</code></pre>
-
-<p>The media ID is not part of the web URL. But we can get that info from Instagrams's <a href="http://instagram.com/developer/embedding/">Embed API</a>. Let's use an example post (<code>http://instagram.com/p/qJu0a-OHMC</code>) and add it after the <code>url=</code>: </p>
-
-<pre><code>http://api.instagram.com/oembed?url=http://instagram.com/p/qJu0a-OHMC
-</code></pre>
-
-<p>This API returns JSON:</p>
-
-<pre><code> {"provider_url":"http:\/\/instagram.com\/","media_id":"759343924702114562_1483611","title":"Another beautiful day in the city! \ud83d\ude0d","url":"http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg","author_name":"newyorkcity","height":640,"width":640,"version":"1.0","author_url":"http:\/\/instagram.com\/newyorkcity","author_id":1483611,"type":"photo","provider_name":"Instagram"} 
-</code></pre>
-
-<p>We can see that the media_id is 759343924702114562_1483611. <code>instagram://media?id=759343924702114562_1483611</code> would bring us right to that post in the app, but we need the LCP action to automate the process.</p>
-
-<p>We first need an easy way to grab the HTML of the API results. Textastic has an <a href="http://www.textasticapp.com/v4/manual/x-callback-url.html">url scheme</a> that lets you download a file and open the HTML in the editor by replacing <code>http://</code> with <code>textastic://</code>. The first part of the LCP action does just that. However, even though Textastic supports x-callback-url, it doesn't for this particular action. So we need to tap on the share <i class="fa fa-external-link"></i> button at top right of the screen after the HTML has downloaded, and choose "Copy All." Then we take advantage of a new feature introduced in LCP: lc-callback. For apps that do not support x-callback-url, this is the next best thing. We define the callback action, but instead of it triggering automatically after the first action, we double-tap on the home button (to get the app launcher) and choose LCP. Once we tap on LCP, the next action gets triggered. </p>
-
-<p>Because the embed API also provides the raw image URL for the Instagram post, the lc-callback starts with a list. We can get the iOS url scheme ("url") or the raw image URL ("image"). Let's see what happens when you choose "url":</p>
-
-<p>The entire HTML is sent to TextTool, which splits the string at <code>"</code>:</p>
-
-<pre><code>{
-
-provider_url
-
-:
-
-http:\/\/instagram.com\/
-
-,
-
-media_id
-
-:
-
-759343924702114562_1483611
-
-,
-
-title
-
-:
-
-Another beautiful day in the city! \ud83d\ude0d
-
-,
-
-url
-
-:
-
-http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg
-
-,
-
-author_name
-
-:
-
-newyorkcity
-
-,
-
-height
-
-:640,
-
-width
-
-:640,
-
-version
-
-:
-
-1.0
-
-,
-
-author_url
-
-:
-
-http:\/\/instagram.com\/newyorkcity
-
-,
-
-author_id
-
-:1483611,
-
-type
-
-:
-
-photo
-
-,
-
-provider_name
-
-:
-
-Instagram
-
-}
-</code></pre>
-
-<p>This entire string is then sent to Drafts, and the <em>insta-api</em> action is triggered. <a href="drafts://x-callback-url/import_action?type=URL&amp;name=insta-api&amp;url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7Binstagram%3A%2F%2Fmedia%3Fid%3D%5B%5Bline%7C8%5D%5D%7D%7D">Import it into Drafts</a> or enter the following as an URL action:</p>
-
-<pre><code>drafts:///create?text={{instagram://media?id=[[line|8]]}}
-</code></pre>
-
-<p>It simply takes line 8 -- which contains the media_ID -- and inserts into into the URL scheme.</p>
-
-<p>Now, if we would rather get the raw image URL, we choose "image" after the lc-callback. It also performs a <code>"</code> split and sends that output to Drafts, but it instead triggers the <em>insta-api-url</em> action. <a href="drafts://x-callback-url/import_action?type=URL&amp;name=insta-api-url&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bline%7C16%5D%5D%26method%3Dunescape">Import it into Drafts</a> or enter the following URL action:</p>
-
-<pre><code>texttool://x-callback-url/transform?text=[[line|16]]&amp;method=unescape
-</code></pre>
-
-<p>Line 16 -- the raw image URL -- is sent to TextTool. Why? All the forward slashes in the URL are "escaped" </p>
-
-<pre><code>   http:\/\/photos-d.ak.instagram.com\/hphotos-ak-xfp1\/10537269_595401073912091_331298792_n.jpg
-</code></pre>
-
-<p>so we have to unescape them:</p>
-
-<pre><code>   http://photos-d.ak.instagram.com/hphotos-ak-xfp1/10537269_595401073912091_331298792_n.jpg
-</code></pre>
-
-<p>This action stops at TextTool. It has sharing features, so you can do what you like with URL: e.g., download the image.</p>
-
-<p>To make the action icon look nice, I added <code>lc-icon=instagram</code>.</p>
-
-<p>Granted, this LCP action is not fluid. I think it would possible to perform the conversion without the "Copy All" and lc-callback using the JSON parser in Pythonista, but I'm not proficient enough to accomplish that as of this writing. If you write an action that accomplishes the conversion with fewer steps, I would love to hear from you in the comments section or on Twitter.</p>
-
-<p><strong>Thanks</strong> to @epramono and @youens on Twitter for helping me to understand LCP 2.3.x at a deeper level.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/07/14; 01:38:49 PM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="07/convertTumblrAndInstagramPostWebLinksToIosUrlSchemesWithTheseLaunchCenterProActions.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="07/commandLineScriptForPaperlessListsChecklists.html">Command Line Script for "Paperless: Lists + Checklists"</a></div>
-		<p>I use <a href="http://www.crushapps.com/paperless/">Paperless</a> for the majority of my list-making on my iOS devices. I've already written <a href="http://blog.jeffreykishner.com/2014/02/06/how-to-mark-a-paperless-item-as-complete-without-touching-your-ios-device.html">how to mark an item as complete without using the app</a> and <a href="http://blog.jeffreykishner.com/2014/01/31/view-your-paperless-lists-on-the-web.html">how to view your lists on the web</a>. Today, I am going to share a unix command line bash script to "print" incomplete items from a list. </p>
-
-<p>I created a text file called "prl" and put it in /usr/local/bin/:</p>
-
-<pre><code>#! /bin/bash
-
-list=$1
-
-grep -A 1 \&lt;dateCompleted\&gt;\&lt;\/dateCompleted\&gt; ~/Dropbox/Paperless/$list.xml | sed -n 's:.*&lt;itemName&gt;\(.*\)&lt;/itemName&gt;.*:\1:p'
-</code></pre>
-
-<p>I made it executable while in that directory: <code>chmod +x prl</code></p>
-
-<p>Now, to view the incomplete items in any list, I just type <code>prl</code> followed by the list name. If I have a list named Bills, I just type <code>prl Bills</code> and the script will output all bills that are due. (This script does not output the notes field.)</p>
-
-<h3>How It Works</h3>
-
-<p>All your Paperless lists are stored as XML files. I use <em>grep</em> to look for all items for which there is no completion date: <code>&lt;dateCompleted&gt;&lt;/dateCompleted&gt;</code> with <em>-A 1</em> to also print out the lines immediately after each match (which are the list items themselves). Those results are piped into a <em>sed</em> which extracts any string sandwiched between <code>&lt;itemName&gt;</code> and <code>&lt;/itemName&gt;</code>.</p>
-
-<p>If I need to see a note, I can do a quick <em>grep</em>: <code>grep -A 1 verizon ~/Dropbox/Paperless/Bills.xml</code>. This will output all lines matching <em>verizon</em> plus the lines immediately following, including the XML tags. It's not pretty but it will get me the info I need (e.g., the due date).</p>
-
-<pre><code>&lt;itemName&gt;Verizon $100.00&lt;/itemName&gt;
-
-&lt;itemNote&gt;7/7&lt;/itemNote&gt;
-</code></pre>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/07/14; 11:30:32 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="07/commandLineScriptForPaperlessListsChecklists.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html">Cloud Services and Social Networking on the Linux Command Line</a></div>
-		<p>I'm amazed at all the stuff that's available:</p>
-
-<p><i class="fa fa-chevron-circle-right"></i> <a href="https://www.dropbox.com/install?os=lnx">Dropbox</a></p>
-
-<p><i class="fa fa-chevron-circle-right"></i> <a href="http://www.geeknote.me/">An Evernote Client</a></p>
-
-<p><i class="fa fa-chevron-circle-right"></i> <a href="http://www.floodgap.com/software/ttytter/">A Twitter Client</a></p>
-
-<p>I am a keyboard-shortcut fanatic; adding a note to Evernote with syntax like</p>
-
-<pre><code>geeknote create --title "A Title" --content "Some content." --tags "tag1"
-</code></pre>
-
-<p>beats the evernote.com web interface hands down.</p>
-
-<p>Granted, the cli doesn't support images, and since I'm ssh-ing into a VPS I can't open media from the command line, but for quick data input/output, nothing beats it. (I'm faster at typing on a physical keyboard than on an iPhone.)</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/03/14; 11:53:19 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="03/cloudServicesAndSocialNetworkingOnTheLinuxCommandLine.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="02/updateToMyOpmltowordpressPlugin.html">Update to My OPML-to-WordPress Plugin</a></div>
-		<p>Today I have released v 2.0 of my plugin, which renders a Fargo OPML file on a WordPress page or blog post using a simple shortcode. The updated version supports the link-blog format (type="idea"). </p>
-
-<p>View the update and download the zip file <a href="http://jeffreykishner.com/wordpress-plugins/post-opml-to-wordpress/">here</a>.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/02/14; 10:42:41 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="02/updateToMyOpmltowordpressPlugin.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-	<div class="divBlogHomeItem">
-		<div class="divBlogHomeItemTitle"><a href="01/getADirectLinkToAnyNoteInEvernoteForIos.html">Get a Direct Link to Any Note in Evernote for iOS</a></div>
-		<p><em>I take credit for none of the following (other than a few personal tweaks) -- just wanting to share <a href="https://discussion.evernote.com/topic/39792-cant-create-note-links-in-en-ios-clients/">this solution</a> by <a href="https://plus.google.com/108788174443222624607/posts">Stephen May</a> because it's so cool.</em></p>
-
-<p>Evernote does not have much of an url scheme beyond <code>evernote://</code> which is not terrible useful for productivity nerds. This solution creates a link that will bring you directly to the note of your choice. It requires <a href="http://omz-software.com/pythonista/">Pythonista</a>, <a href="http://agiletortoise.com/drafts/">Drafts</a>, and <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>.</p>
-
-<p>First, you will need to grab some personal information about your Evernote account, and the only way I know how to find it is via the Mac OS X app. In the left sidebar, <a href="http://blog.evernote.com/blog/2013/08/02/quick-tip-how-to-use-note-links/">right-click on any note and get the note's link</a>. At the beginning of the link, there will be a six digit string and another digit or two following an <code>s</code>. You will need this information for a future step. </p>
-
-<p>Add the following to Pythonista. You can title it <code>Evernote Link</code> or whatever you like. Where it says <code>evernote:///view/123456/s4/</code> you will replace the six digit string and the <code>s4</code> with the information from the note link you copied from the desktop app. Where it says <code>https://www.evernote.com/shard/s4/sh/</code> replace the <code>s4</code> with the <code>s..</code> from your original note link.</p>
-
-<pre><code>import clipboard
-
-import sys
-
-import webbrowser
-
-import console
-
-import urllib
-
-mytext = (sys.argv[1])
-
-head, sep, tail = mytext.rpartition('/')
-
-parttwo = head.replace('https://www.evernote.com/shard/s4/sh/', '')
-
-evernoteurl = ('evernote:///view/123456/s4/' + parttwo + '/' + parttwo + '/')
-
-webbrowser.open('drafts://x-callback-url/create?text=' + evernoteurl + '&amp;action=Copy%20to%20Clipboard&amp;afterSuccess=Nothing')
-</code></pre>
-
-<p>Then add the following action in LCP:</p>
-
-<pre><code>pythonista://EvernoteLink?action=run&amp;argv=[clipboard]
-</code></pre>
-
-<h3>How to Get Your Link</h3>
-
-<p>Go to the Evernote app and tap on any note. Choose "Share <i class="fa fa-external-link"></i>" and then "Copy link." Then tap on the LCP action. After the script runs, the direct Evernote link will be in a new draft in Drafts, and also copied to the clipboard. If you make links clickable in Drafts and tap on the link, it will bring you right to that note in Evernote. </p>
-
-<p>If you care about the privacy of your note, then tap on "Share <i class="fa fa-external-link"></i>" again and choose "Stop sharing." Your direct link will still work.</p>
-		<div class="divBlogHomeStoryDate">
-			<span class="spFargoStoryDate">07/01/14; 08:37:23 AM</span>
-			<div class="divFargoStoryLink" style="float: left;"><a href="01/getADirectLinkToAnyNoteInEvernoteForIos.html"><i class="fa fa-star"></i></a></div>
-			</div>
-		</div>
-
-				<div class="divFooterText">
-					<hr>
-					<p style="float: right;">Last built: Thu, Sep 11, 2014 at  9:35 AM</p>
-					<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Tue, 01 Jul 2014 13:37:23 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, July  1, 2014 at  8:37 AM</span>.</div>
-					</div>
+	</div>
+
+				</div>
+			<div class="divFargoStreamFooter">
+				<div>&copy; 2014 Jeffrey Kishner.</div>
+				<div>Last update: Thu, Sep 25, 2014 at  2:40 PM.</div>
+				<div><i></i></div>
+				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
 				</div>
 			</div>
 		<script>
+			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>
