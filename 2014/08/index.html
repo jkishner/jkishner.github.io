@@ -19,8 +19,8 @@
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Sat, 04 Oct 2014 16:01:49 GMT",
-    "opmlExpansionState": "1,2,3,4,7,8,14,15,18,19,21,24,34,35,41,54,56,57,76,77,78,80,94,95,97,98,106",
+    "opmlDateModified": "Sat, 04 Oct 2014 16:09:54 GMT",
+    "opmlExpansionState": "1,2,3,4,7,8,14,15,18,19,21,24,34,35,41,54,56,57,67,68,69,70,83,84,85,87,101,102,104,105,113",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -35,7 +35,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "62",
+    "opmlLastCursor": "63",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -90,7 +90,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Sat Oct 04 2014 12:01:50 GMT-0400 (EDT)",
+    "now": "Sat Oct 04 2014 12:09:54 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/08.html"
 }; //12/12/13 by DW
@@ -800,10 +800,10 @@
 					<div class="divLevel" id="idStreamLevel4">
 						<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1383838135"></a><a class="aStreamTextLink" onclick="ecStream (5)">add opml in dialog box (workflowy)</a><span class="spPermalink"><a href="/2014/08/18/#a1383838135">#</a></span></p>
 						<div class="divLevel" id="idStreamLevel5">
-							<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1412438510.077"></a><a class="aStreamTextLink" onclick="ecStream (6)">dialog.ask ("paste raw opml here", "", "", function (data) {</a><span class="spPermalink"><a href="/2014/08/18/#a1412438510.077">#</a></span></p>
+							<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1412438994.533"></a><a class="aStreamTextLink" onclick="ecStream (6)">dialog.ask ("paste raw opml here", "", "", function (data) {</a><span class="spPermalink"><a href="/2014/08/18/#a1412438994.533">#</a></span></p>
 							<div class="divLevel" id="idStreamLevel6">
 								<p><a name="a1375277786"></a>op.insertOpml (data, down);<span class="spPermalink"><a href="/2014/08/18/#a1375277786">#</a></span></p>
-								<p><a name="a1412438510.082"></a>});<span class="spPermalink"><a href="/2014/08/18/#a1412438510.082">#</a></span></p>
+								<p><a name="a1412438994.538"></a>});<span class="spPermalink"><a href="/2014/08/18/#a1412438994.538">#</a></span></p>
 								</div>
 							</div>
 						<p><a name="a1408393421"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2014/08/18/#a1408393421">#</a></span></p>
@@ -828,10 +828,37 @@
 				<p><a name="a1408026484"></a><img src="https://dl.dropbox.com/s/xz7r7cly19nemun/Screen%20Shot%202014-08-14%20at%2010.26.23%20AM.png"><span class="spPermalink"><a href="/2014/08/14/#a1408026484">#</a></span></p>
 				<p><a name="a1412437654"></a><h3>How to Add This to Your River</h3><span class="spPermalink"><a href="/2014/08/14/#a1412437654">#</a></span></p>
 				<p><a name="a1408026521"></a>After you've installed River4 (available on <a href="https://github.com/scripting/river4">GitHub</a>), you will need to grab the HTML of the _index.html_ file in your Amazon S3 bucket. Open it in a text file, and add these two lines of code immediately after <code>&lt;class=&quot;actions&quot;&gt;</code>:<span class="spPermalink"><a href="/2014/08/14/#a1408026521">#</a></span></p>
-				<p><a name="a1408026644"></a><code>&lt;li&gt;&lt;a href="{{if item.permaLink}}${'http://instapaper.com/edit?url='+item.permaLink}{{else}}${'http://instapaper.com/edit?url='+item.link}{{/if}}" rel="external" target="_blank">Send to Instapaper</a></li></code><span class="spPermalink"><a href="/2014/08/14/#a1408026644">#</a></span></p>
-				<p><a name="a1408026658"></a><code>&lt;li><a href="{{if item.permaLink}}${'http://www.instapaper.com/text?u='+item.permaLink}{{else}}${'http://www.instapaper.com/text?u='+item.link}{{/if}}" rel="external" target="_blank">Instapaper Text</a></li></code><span class="spPermalink"><a href="/2014/08/14/#a1408026658">#</a></span></p>
+				<p><a name="a1408026644"></a><pre><code>&lt;li&gt;&lt;a href="{{if item.permaLink}}${'http://instapaper.com/edit?url='+item.permaLink}{{else}}${'http://instapaper.com/edit?url='+item.link}{{/if}}" rel="external" target="_blank"&gt;Send to Instapaper&lt;/a&gt;&lt;li&gt;</code></pre><span class="spPermalink"><a href="/2014/08/14/#a1408026644">#</a></span></p>
+				<p><a name="a1408026658"></a><pre><code>&lt;li&gt;&lt;a href="{{if item.permaLink}}${'http://www.instapaper.com/text?u='+item.permaLink}{{else}}${'http://www.instapaper.com/text?u='+item.link}{{/if}}" rel="external" target="_blank"&gt;Instapaper Text&lt;/a&gt;&lt;/li&gt;</code></pre><span class="spPermalink"><a href="/2014/08/14/#a1408026658">#</a></span></p>
 				<p><a name="a1408026661"></a>Then save as <i>index.html</i>, upload to the root of your bucket, and make sure to grant "Everyone" permission to open/download (in Properties).<span class="spPermalink"><a href="/2014/08/14/#a1408026661">#</a></span></p>
 				<p><a name="a1412437787"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper">http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper</a></i></small><span class="spPermalink"><a href="/2014/08/14/#a1412437787">#</a></span></p>
+				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1412438883"></a><a class="aStreamTextLink" onclick="ecStream (8)">#glossary</a><span class="spPermalink"><a href="/2014/08/14/#a1412438883">#</a></span></p>
+				<div class="divLevel" id="idStreamLevel8">
+					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1412438886"></a><a class="aStreamTextLink" onclick="ecStream (9)"><script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
+	ga('send', 'pageview');
+	</script>
+<style>
+	.divByline {
+		display: none !important;
+		}
+	</style></a><span class="spPermalink"><a href="/2014/08/14/#a1412438886">#</a></span></p>
+					<div class="divLevel" id="idStreamLevel9">
+						<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1412438894"></a><a class="aStreamTextLink" onclick="ecStream (10)"><style></a><span class="spPermalink"><a href="/2014/08/14/#a1412438894">#</a></span></p>
+						<div class="divLevel" id="idStreamLevel10">
+							<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1412438994.55"></a><a class="aStreamTextLink" onclick="ecStream (11)">pre {</a><span class="spPermalink"><a href="/2014/08/14/#a1412438994.55">#</a></span></p>
+							<div class="divLevel" id="idStreamLevel11">
+								<p><a name="a1412438994.551"></a>white-space: pre-line;<span class="spPermalink"><a href="/2014/08/14/#a1412438994.551">#</a></span></p>
+								</div>
+							<p><a name="a1412438994.551"></a>}<span class="spPermalink"><a href="/2014/08/14/#a1412438994.551">#</a></span></p>
+							<p><a name="a1412438904"></a></style><span class="spPermalink"><a href="/2014/08/14/#a1412438904">#</a></span></p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -842,8 +869,8 @@
 	<div class="divStreamDayText">
 		<div>
 			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/08/05/">Tuesday, August  5<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1407271630"></a><a class="aStreamTextLink" onclick="ecStream (8)">River 4</a><span class="spPermalink"><a href="/2014/08/05/#a1407271630">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel8">
+			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1407271630"></a><a class="aStreamTextLink" onclick="ecStream (12)">River 4</a><span class="spPermalink"><a href="/2014/08/05/#a1407271630">#</a></span></div>
+			<div class="divLevel" id="idStreamLevel12">
 				<p><a name="a1407271647"></a>I got Dave Winer's [River 4](https://github.com/scripting/river4) to work on my Linux VPS. You can see it [here](http://river.jeffreykishner.com). <span class="spPermalink"><a href="/2014/08/05/#a1407271647">#</a></span></p>
 				<p><a name="a1407271707"></a>I know next to nothing about node.js; I managed to install it, as well as _npm_ and an app called _forever_ that will run river.js in the background. (Thanks to [Chris Dadswell](http://scriven.chrisdadswell.co.uk/articles/howToSetupAFargoRiverOfNews.html) and [Andrew Shell](http://blog.andrewshell.org/running-river4-with-forever/) for their blog posts about this.)<span class="spPermalink"><a href="/2014/08/05/#a1407271707">#</a></span></p>
 				<p><a name="a1407271934"></a>If you know enough to install apps in Linux, grab the above, clone river 4 via git, and run `node river.js` from within the river4 folder. If everything works, you can run `forever start river.js` in the background.<span class="spPermalink"><a href="/2014/08/05/#a1407271934">#</a></span></p>
@@ -858,7 +885,7 @@
 				</div>
 			<div class="divFargoStreamFooter">
 				<div>&copy; 2014 Jeffrey Kishner.</div>
-				<div>Last update: Sat, Oct  4, 2014 at 11:01 AM.</div>
+				<div>Last update: Sat, Oct  4, 2014 at 11:09 AM.</div>
 				<div><i></i></div>
 				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
 <a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
