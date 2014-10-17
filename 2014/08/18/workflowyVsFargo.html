@@ -16,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 25 Sep 2014 21:01:49 GMT",
-    "opmlExpansionState": "6,7,14,20",
+    "opmlDateModified": "Thu, 16 Oct 2014 19:47:27 GMT",
+    "opmlExpansionState": "1,2,3,7,8,10,18,19,26,27,36,37,43,45,46,51,52,59,61,66,69,70,77,78,89,90,96,99,103,104,111,119,120,127,128,131,132,138,139,142,143,145,148,158,159,165,178,180,181,191,192,193,194,197,210,211,212,214,228,229,230,238,248",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -36,7 +36,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "20",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -44,7 +44,7 @@
     "domain": "",
     "bootstrapTheme": "readable",
     "type": "outline",
-    "slogan": "Good for the environment.",
+    "slogan": "You should never argue with a crazy man.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -93,7 +93,7 @@
     "isComment": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Sep 25 2014 17:01:57 GMT-0400 (EDT)",
+    "now": "Thu Oct 16 2014 15:47:37 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html",
     "headlineHtmlElement": "h4",
@@ -242,8 +242,18 @@
 	ga('send', 'pageview');
 	</script>
 <style>
-	.divByline, .divFooterText {
-		display: none;
+	.divByline {
+		display: none !important;
+		}
+	.divStreamDay p {
+		margin-bottom: 1em;
+		}
+	code {
+		white-space: pre-line;
+		color: black;
+		}
+	pre {
+		white-space: pre-line;
 		}
 	</style>
 		
@@ -286,9 +296,9 @@
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
-				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/10/" target="_blank">Oct 2014</a></li>
 						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
 						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
 						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
@@ -307,40 +317,33 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/16/newBlogPostOnRadio3TheDaveWinerCmsFightRadio3VsFargo.html" target="_blank">New blog post on Radio3: [The Dave Winer CMS Fight: Radio3 vs. Fargo.]</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkWhatResearchSaysAboutCatsTheyreSelfishUnfeelingEnvironmentallyHarmfulCreaturesVox.html" target="_blank">|link| What research says about cats: [they're selfish, unfeeling, environmentally harmful creatures] (Vox)|comment| I like 'em anyway.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkDearWhitePeopleAboutRacialHypocrisyAtACollegecommentRarelyHaveIReadSuchAPositiveReviewByAoScott.html" target="_blank">|link| ‘[Dear White People],’ About Racial Hypocrisy at a College.|comment| Rarely have I read such a positive review by A.O. Scott.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/15/importASingleDraftFromDrafts3IntoDrafts4.html" target="_blank">Import a Single Draft from Drafts 3 Into Drafts 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX.html" target="_blank">How to Open Links in a Non-Default Browser from TTYtter Running on Mac OS X</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/15/imSoGladThatV4OfDraftsRunsAsASeparateAppThanV3AndThatTheyUseDistinctUrlSchemesICanUseV3OnMyIpadToSyncViaSimperiumWithMyIphoneWhichIHaveNotUpgradeToIos8AndStillBeAbleToPlayWithTheNewVersionOnMyIpad.html" target="_blank">I'm so glad that v4 of "Drafts" runs as a separate app than v3, and that they use distinct URL schemes. I can use v3 on my iPad to sync via Simperium with my iPhone (which I have not upgraded to iOS8) and still be able to play with the new iOS8-only version on my iPad.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl.html" target="_blank">How to Permanently Set a Link to Open in Lynx in TTYtter for PERL</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/13/iBroughtABananaToWorkInsteadOfEatingItIBoughtAPackageOfChocolateChocolatechipCookiesAndAte12TheBag.html" target="_blank">I brought a banana to work. Instead of eating it, I bought a package of chocolate chocolate-chip cookies and ate 1/2 the bag. </a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/10/subscribeToLotsAndLotsOfFargoioBlogs.html" target="_blank">Subscribe to Lots and Lots of Fargo.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/10/linkHomelessOutreachInVolumesBooksByBikeForOutsidePeopleInOregon.html" target="_blank">|link| Homeless Outreach in Volumes: [Books by Bike for ‘Outside’ People] in Oregon.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/09/linkWhatIfYouJustHateMakingDinnercommentGoodReadingFromVirginiaHeffernan.html" target="_blank">|link| [What if You Just Hate Making Dinner?]|comment| Good reading from Virginia Heffernan.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTroubleAtTheKoolaidPointSeriousPony.html" target="_blank">|link| [Trouble at the Koolaid Point] — Serious Pony.|comment| a woman should be able to feel safe to express herself w/o harassment</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkCopsPepperSprayBlackTeenInHisOwnLivingRoomAfterMistakingHimForBurglar.html" target="_blank">|link| [Cops Pepper Spray Black Teen In His Own Living Room] After Mistaking Him For Burglar.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTerrifyinglyBrilliantSpiderCreatesStunninglyAdvancedWeb.html" target="_blank">|link| Terrifyingly Brilliant Spider Creates [Stunningly Advanced Web].</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkToRaiseLoveAndLoseABlackChildTheAtlantic.html" target="_blank">|link| [To Raise, Love, and Lose a Black Child] (The Atlantic)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/aGoodUseForTheTimeAndPushbulletChannelsOnIfttt.html" target="_blank">A Good Use for the Time and Pushbullet Channels on IFTTT</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/07/thankYouDave.html" target="_blank">Thank You, Dave </a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/dammitIHaveAHeadcold.html" target="_blank">Dammit I have a headcold.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/thisEssayOnPaulaDeenWasAnEntertainingInformativeReadItWasPublishedInTheOnlineMagazineMatterOnMediumIKnowThatMediumHasVentureCapitalButIDontUnderstandHowTheyCanContinueToFundQualityLongformJournalismWithoutEitherAdsOrASubscriptionModel.html" target="_blank"><a href="https://medium.com/matter/strike-paula-deen-down-and-she-shall-become-more-powerful-than-you-can-possibly-imagine-6c6fbda4bde4">This essay on Paula Deen</a> was an entertaining, informative read. It was published in the online magazine <a href="https://medium.com/matter/">Matter</a> on Medium. I know that Medium has venture capital, but I don't understand how they can continue to fund quality, long-form journalism without either ads or a subscription model.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/iGuessIDontNeedANewIphoneAfterAll.html" target="_blank">I Guess I Don't Need a New iPhone After All</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/linkTheStunningWeirdnessOfAynRandWhyHerNewfoundPopularityMakesNoSenseSaloncom.html" target="_blank">|link| The [stunning weirdness of Ayn Rand]: Why her newfound popularity makes no sense (Salon.com)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/whereToLinkblog.html" target="_blank">Where to Linkblog?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/roxaneGayAndLenaDunhamOnOnlineCriticismLinkVulture.html" target="_blank">|link| Roxane Gay and [Lena Dunham] on Online Criticism (Vulture)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/03/howImReadingFeedsTheseDays.html" target="_blank">How I'm Reading Feeds These Days</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/02/myOwnEyes.html" target="_blank">"My Own Eyes"</a></li>
 	</ul>
 
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Follow Me&nbsp;<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://blog.jeffreykishner.com/rss.xml" target="_blank">RSS</a></li>
-							<li><a href="http://twitter.com/kishner" target="_blank">Twitter</a></li>
-							<li><a href="http://radio3.io/users/kishner/rss.xml" target="_blank">Radio3 Linkblog RSS</a></li>
-							</ul>
-						</li>
 					<li><a href="mailto:jk@jeffreykishner.com" target="_blank"><i class="fa fa-envelope-o" title="Email Me"></i></a></li>
 					</ul>
 				</div>
@@ -361,52 +364,52 @@
 							<h2>Workflowy vs. Fargo</h2>
 							</div>
 						
-<div class="divOutlineNoMarkdown" data-type="outline" data-isfeeditem="true" data-iscomment="false" data-flmarkdown="false" data-leftindent="30" >
-	<ul class="ulOutlineList" id="idOutlineLevel0">
-		<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>I've been occasionally using <a href="http://workflowy.com">Workflowy</a> simply because <a href="http://fargo.io">Fargo</a> does not have a native iOS app, and its web app is barely serviceable: I need to close most tabs to increase responsiveness, and even with the arrow pad, writing and editing on the iPad or iPhone in Fargo is frustrating. Only Workflowy has an iOS app, and it works well.</p></li>
-		<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (1)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge1"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (1)">Fargo is far-and-away a superior product on the desktop. Just a few of the things I can do in Fargo that I can't in Workflowy:</a></h4>
-			<ul class="ulOutlineList" id="idOutlineLevel1">
-				<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Publish a blog.</p></li>
-				<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Add attributes other than <i>_note</i>.</p></li>
-				<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Run scripts.</p></li>
-				</ul>
-			</li>
-		<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (2)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge2"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (2)">Sharing an outline is possible from both apps.</a></h4>
-			<ul class="ulOutlineList" id="idOutlineLevel2">
-				<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>In Fargo, I can share the public Dropbox URL of an outline, and a reader can import that into Fargo or view it in something like <a href="http://reader.smallpicture.com/">Small Picture Reader</a>.</p></li>
-				<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>In Workflowy, I can share any outline via a secret link, and even make it editable.</p></li>
-				</ul>
-			</li>
-		<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Both have pretty good keyboard shortcuts.</p></li>
-		<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (3)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge3"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (3)">Importing and Exporting OPML</a></h4>
-			<ul class="ulOutlineList" id="idOutlineLevel3">
-				<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>I can copy the full text from an OPML file in my Dropbox account (where Fargo stores outlines) and paste it into Workflowy, and Workflowy will respect the hierarchy (although not import unsupported attributes). I can also export any outline in Workflow as OPML.</p></li>
-				<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (4)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge4"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (4)">This Fargo script allows me to import OPML into an outline:</a></h4>
-					<ul class="ulOutlineList" id="idOutlineLevel4">
-						<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (5)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge5"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (5)">add opml in dialog box (workflowy)</a></h4>
-							<ul class="ulOutlineList" id="idOutlineLevel5">
-								<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (6)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge6"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (6)">dialog.ask ("paste raw opml here", "", "", function (data) {</a></h4>
-									<ul class="ulOutlineList" id="idOutlineLevel6">
-										<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>op.insertOpml (data, down);</p></li>
-										<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>});</p></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p></li>
-						<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Just paste the OPML from Workflowy into the dialog box, hit Enter, and the outline will import into your current tab in Fargo.</p></li>
-						</ul>
-					</li>
-				<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>You can also just import plain text into Fargo, because the app recognizes hard tabs as child nodes.</p></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+	<div class="divOutlineNoMarkdown" data-type="outline" data-isfeeditem="true" data-iscomment="false" data-flmarkdown="false" data-leftindent="30" >
+		<ul class="ulOutlineList" id="idOutlineLevel0">
+			<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>I've been occasionally using <a href="http://workflowy.com">Workflowy</a> simply because <a href="http://fargo.io">Fargo</a> does not have a native iOS app, and its web app is barely serviceable: I need to close most tabs to increase responsiveness, and even with the arrow pad, writing and editing on the iPad or iPhone in Fargo is frustrating. Only Workflowy has an iOS app, and it works well.</p></li>
+			<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (1)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge1"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (1)">Fargo is far-and-away a superior product on the desktop. Just a few of the things I can do in Fargo that I can't in Workflowy:</a></h4>
+				<ul class="ulOutlineList" id="idOutlineLevel1">
+					<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Publish a blog.</p></li>
+					<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Add attributes other than <i>_note</i>.</p></li>
+					<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Run scripts.</p></li>
+					</ul>
+				</li>
+			<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (2)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge2"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (2)">Sharing an outline is possible from both apps.</a></h4>
+				<ul class="ulOutlineList" id="idOutlineLevel2">
+					<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>In Fargo, I can share the public Dropbox URL of an outline, and a reader can import that into Fargo or view it in something like <a href="http://reader.smallpicture.com/">Small Picture Reader</a>.</p></li>
+					<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>In Workflowy, I can share any outline via a secret link, and even make it editable.</p></li>
+					</ul>
+				</li>
+			<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Both have pretty good keyboard shortcuts.</p></li>
+			<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (3)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge3"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (3)">Importing and Exporting OPML</a></h4>
+				<ul class="ulOutlineList" id="idOutlineLevel3">
+					<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>I can copy the full text from an OPML file in my Dropbox account (where Fargo stores outlines) and paste it into Workflowy, and Workflowy will respect the hierarchy (although not import unsupported attributes). I can also export any outline in Workflow as OPML.</p></li>
+					<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (4)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge4"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (4)">This Fargo script allows me to import OPML into an outline:</a></h4>
+						<ul class="ulOutlineList" id="idOutlineLevel4">
+							<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (5)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge5"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (5)">add opml in dialog box (workflowy)</a></h4>
+								<ul class="ulOutlineList" id="idOutlineLevel5">
+									<li class="liOutline liHasSubs" style="margin-left: 30px;" ><h4><span class="spOutlineIcon"><a class="aOutlineWedgeLink" onclick="ecOutline (6)" ><i class="fa fa-caret-down" style="color: silver;" id="idOutlineWedge6"></i></a></span><a class="aOutlineTextLink" onclick="ecOutline (6)">dialog.ask ("paste raw opml here", "", "", function (data) {</a></h4>
+										<ul class="ulOutlineList" id="idOutlineLevel6">
+											<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>op.insertOpml (data, down);</p></li>
+											<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>});</p></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p></li>
+							<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>Just paste the OPML from Workflowy into the dialog box, hit Enter, and the outline will import into your current tab in Fargo.</p></li>
+							</ul>
+						</li>
+					<li class="liOutline liNoSubs" style="margin-left: 30px;" ><p>You can also just import plain text into Fargo, because the app recognizes hard tabs as child nodes.</p></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 
 						<div class="divFooterText">
 							<hr>
-							<p style="float: right;">Last built: Thu, Sep 25, 2014 at  4:01 PM</p>
-							<script>var disqus_identifier = "Mon, 18 Aug 2014 20:01:19 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+							<p style="float: right;">Last built: Thu, Oct 16, 2014 at  2:47 PM</p>
+							<script>var disqus_identifier = "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0Mon, 18 Aug 2014 20:01:19 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
 							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Monday, August 18, 2014 at  3:01 PM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
 							</div>
 						</div>

@@ -15,12 +15,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "",
+    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 25 Sep 2014 21:01:49 GMT",
-    "opmlExpansionState": "6,7,14,20",
+    "opmlDateModified": "Thu, 16 Oct 2014 19:47:27 GMT",
+    "opmlExpansionState": "1,2,3,7,8,10,18,19,26,27,36,37,43,45,46,51,52,59,61,66,69,70,77,78,89,90,96,99,103,104,111,119,120,127,128,131,132,138,139,142,143,145,148,158,159,165,178,180,181,191,192,193,194,197,210,211,212,214,228,229,230,238,248",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -35,7 +35,7 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "20",
+    "opmlLastCursor": "3",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
@@ -43,7 +43,7 @@
     "domain": "",
     "bootstrapTheme": "readable",
     "type": "stream",
-    "slogan": "It's even worse than it appears.",
+    "slogan": "We don't need no stinkin rock stars.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -90,7 +90,7 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Sep 25 2014 17:02:18 GMT-0400 (EDT)",
+    "now": "Thu Oct 16 2014 15:47:58 GMT-0400 (EDT)",
     "copyright": "&copy; 2014 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/01.html"
 }; //12/12/13 by DW
@@ -704,8 +704,18 @@
 	ga('send', 'pageview');
 	</script>
 <style>
-	.divByline, .divFooterText {
-		display: none;
+	.divByline {
+		display: none !important;
+		}
+	.divStreamDay p {
+		margin-bottom: 1em;
+		}
+	code {
+		white-space: pre-line;
+		color: black;
+		}
+	pre {
+		white-space: pre-line;
 		}
 	</style>
 		
@@ -719,9 +729,9 @@
 			<a class="brand" href="http://blog.jeffreykishner.com/">Jeffrey Kishner</a>
 			<ul class="nav">
 				<li><a href="http://blog.jeffreykishner.com/about.html" target="_blank">About Me</a></li>
-				<li><a href="http://radio3.io/users/kishner/" target="_blank">Link Blog</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Archives&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li><a href="/2014/10/" target="_blank">Oct 2014</a></li>
 						<li><a href="/2014/09/" target="_blank">Sept 2014</a></li>
 						<li><a href="/2014/08/" target="_blank">Aug 2014</a></li>
 						<li><a href="/2014/07/" target="_blank">July 2014</a></li>
@@ -740,40 +750,33 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" target="_blank">Switching This Fargo Blog from blogHome to Stream Template</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" target="_blank">Subscribe to Me in the Radio3 River Browser</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/24/theWeekNeedsABetterCopyEditor.html" target="_blank"><i>The Week</i> Needs a Better Copy Editor</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" target="_blank">Lev Grossman's Magicians Trilogy</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" target="_blank">Tweets from September 18, 2014</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" target="_blank">CloudKit Dammit!</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" target="_blank">How to Add Twitter Card Support to Farg.io Blogs</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html" target="_blank">Test-Driving iOS 8 Before I Upgrade My iPhone</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html" target="_blank">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html" target="_blank">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt.html" target="_blank">But Do I <i>Need</i> It?</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/10/whoNeedsAPodcastingApp.html" target="_blank">Who Needs a Podcasting App?</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/09/timeToUpgrade.html" target="_blank">Time to Upgrade</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html" target="_blank">The Cost of River4</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html" target="_blank">Posting Multiple Sites with fargoPublisher on Heroku</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/08/18/workflowyVsFargo.html" target="_blank">Workflowy vs. Fargo</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/08/14/customizeYourRiver4HomePageToSendLinksToInstapaper.html" target="_blank">Customize Your River4 Home Page to Send Links to Instapaper</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/08/05/river4.html" target="_blank">River 4</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/24/commandLineScriptToMakeYourIphoneDialANumber.html" target="_blank">Command Line Script to Make Your iPhone Dial a Number</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/23/opmlwordpressPluginNowSupportsEmoji.html" target="_blank">OPML-WordPress Plugin Now Supports Emoji</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/18/wordCrimes.html" target="_blank">Word Crimes</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/11/pushbulletCommunicateBetweenYourPhoneAndYourComputerAsLongAsYouLiveInGoogleland.html" target="_blank">Pushbullet: Communicate Between Your Phone and Your Computer (As Long as You Live in GoogleLand)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/11/threeTypesOfLists.html" target="_blank">Three Types of Lists</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/07/11/podcastAboutUrlSchemes.html" target="_blank">Podcast About URL Schemes</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/16/newBlogPostOnRadio3TheDaveWinerCmsFightRadio3VsFargo.html" target="_blank">New blog post on Radio3: [The Dave Winer CMS Fight: Radio3 vs. Fargo.]</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkWhatResearchSaysAboutCatsTheyreSelfishUnfeelingEnvironmentallyHarmfulCreaturesVox.html" target="_blank">|link| What research says about cats: [they're selfish, unfeeling, environmentally harmful creatures] (Vox)|comment| I like 'em anyway.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkDearWhitePeopleAboutRacialHypocrisyAtACollegecommentRarelyHaveIReadSuchAPositiveReviewByAoScott.html" target="_blank">|link| ‘[Dear White People],’ About Racial Hypocrisy at a College.|comment| Rarely have I read such a positive review by A.O. Scott.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/15/importASingleDraftFromDrafts3IntoDrafts4.html" target="_blank">Import a Single Draft from Drafts 3 Into Drafts 4</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX.html" target="_blank">How to Open Links in a Non-Default Browser from TTYtter Running on Mac OS X</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/15/imSoGladThatV4OfDraftsRunsAsASeparateAppThanV3AndThatTheyUseDistinctUrlSchemesICanUseV3OnMyIpadToSyncViaSimperiumWithMyIphoneWhichIHaveNotUpgradeToIos8AndStillBeAbleToPlayWithTheNewVersionOnMyIpad.html" target="_blank">I'm so glad that v4 of "Drafts" runs as a separate app than v3, and that they use distinct URL schemes. I can use v3 on my iPad to sync via Simperium with my iPhone (which I have not upgraded to iOS8) and still be able to play with the new iOS8-only version on my iPad.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl.html" target="_blank">How to Permanently Set a Link to Open in Lynx in TTYtter for PERL</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/13/iBroughtABananaToWorkInsteadOfEatingItIBoughtAPackageOfChocolateChocolatechipCookiesAndAte12TheBag.html" target="_blank">I brought a banana to work. Instead of eating it, I bought a package of chocolate chocolate-chip cookies and ate 1/2 the bag. </a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/10/subscribeToLotsAndLotsOfFargoioBlogs.html" target="_blank">Subscribe to Lots and Lots of Fargo.io Blogs</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/10/linkHomelessOutreachInVolumesBooksByBikeForOutsidePeopleInOregon.html" target="_blank">|link| Homeless Outreach in Volumes: [Books by Bike for ‘Outside’ People] in Oregon.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/09/linkWhatIfYouJustHateMakingDinnercommentGoodReadingFromVirginiaHeffernan.html" target="_blank">|link| [What if You Just Hate Making Dinner?]|comment| Good reading from Virginia Heffernan.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTroubleAtTheKoolaidPointSeriousPony.html" target="_blank">|link| [Trouble at the Koolaid Point] — Serious Pony.|comment| a woman should be able to feel safe to express herself w/o harassment</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkCopsPepperSprayBlackTeenInHisOwnLivingRoomAfterMistakingHimForBurglar.html" target="_blank">|link| [Cops Pepper Spray Black Teen In His Own Living Room] After Mistaking Him For Burglar.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTerrifyinglyBrilliantSpiderCreatesStunninglyAdvancedWeb.html" target="_blank">|link| Terrifyingly Brilliant Spider Creates [Stunningly Advanced Web].</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkToRaiseLoveAndLoseABlackChildTheAtlantic.html" target="_blank">|link| [To Raise, Love, and Lose a Black Child] (The Atlantic)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/08/aGoodUseForTheTimeAndPushbulletChannelsOnIfttt.html" target="_blank">A Good Use for the Time and Pushbullet Channels on IFTTT</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/07/thankYouDave.html" target="_blank">Thank You, Dave </a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/dammitIHaveAHeadcold.html" target="_blank">Dammit I have a headcold.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/thisEssayOnPaulaDeenWasAnEntertainingInformativeReadItWasPublishedInTheOnlineMagazineMatterOnMediumIKnowThatMediumHasVentureCapitalButIDontUnderstandHowTheyCanContinueToFundQualityLongformJournalismWithoutEitherAdsOrASubscriptionModel.html" target="_blank"><a href="https://medium.com/matter/strike-paula-deen-down-and-she-shall-become-more-powerful-than-you-can-possibly-imagine-6c6fbda4bde4">This essay on Paula Deen</a> was an entertaining, informative read. It was published in the online magazine <a href="https://medium.com/matter/">Matter</a> on Medium. I know that Medium has venture capital, but I don't understand how they can continue to fund quality, long-form journalism without either ads or a subscription model.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/iGuessIDontNeedANewIphoneAfterAll.html" target="_blank">I Guess I Don't Need a New iPhone After All</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/linkTheStunningWeirdnessOfAynRandWhyHerNewfoundPopularityMakesNoSenseSaloncom.html" target="_blank">|link| The [stunning weirdness of Ayn Rand]: Why her newfound popularity makes no sense (Salon.com)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/whereToLinkblog.html" target="_blank">Where to Linkblog?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/06/roxaneGayAndLenaDunhamOnOnlineCriticismLinkVulture.html" target="_blank">|link| Roxane Gay and [Lena Dunham] on Online Criticism (Vulture)</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/03/howImReadingFeedsTheseDays.html" target="_blank">How I'm Reading Feeds These Days</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/02/myOwnEyes.html" target="_blank">"My Own Eyes"</a></li>
 	</ul>
 
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Follow Me&nbsp;<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://blog.jeffreykishner.com/rss.xml" target="_blank">RSS</a></li>
-							<li><a href="http://twitter.com/kishner" target="_blank">Twitter</a></li>
-							<li><a href="http://radio3.io/users/kishner/rss.xml" target="_blank">Radio3 Linkblog RSS</a></li>
-							</ul>
-						</li>
 					<li><a href="mailto:jk@jeffreykishner.com" target="_blank"><i class="fa fa-envelope-o" title="Email Me"></i></a></li>
 					</ul>
 				</div>
@@ -867,12 +870,12 @@
 				<p><a name="a1390588694"></a>###Fargo (OPML)<span class="spPermalink"><a href="/2014/01/24/#a1390588694">#</a></span></p>
 				<p><a name="a1390588703"></a>If I want to put that info into Fargo, it's a bit more complicated. <span class="spPermalink"><a href="/2014/01/24/#a1390588703">#</a></span></p>
 				<p><a name="a1390588718"></a>First I add the following in my bookmark manager and title it "opml".<span class="spPermalink"><a href="/2014/01/24/#a1390588718">#</a></span></p>
-				<p><a name="a1411678938.255"></a><script src="https://gist.github.com/jkishner/8603792.js"></script><span class="spPermalink"><a href="/2014/01/24/#a1411678938.255">#</a></span></p>
+				<p><a name="a1413488878.433"></a><script src="https://gist.github.com/jkishner/8603792.js"></script><span class="spPermalink"><a href="/2014/01/24/#a1413488878.433">#</a></span></p>
 				<p><a name="a1390587895"></a>Then I add the following to my menubar.opml file:<span class="spPermalink"><a href="/2014/01/24/#a1390587895">#</a></span></p>
 				<p><a name="a1383838135"></a><pre><code>add opml in dialog box<span class="spPermalink"><a href="/2014/01/24/#a1383838135">#</a></span></p>
-				<p><a name="a1411678938.255"></a>     dialog.ask ("paste raw opml here", "", "", function (data) {<span class="spPermalink"><a href="/2014/01/24/#a1411678938.255">#</a></span></p>
+				<p><a name="a1413488878.433"></a>     dialog.ask ("paste raw opml here", "", "", function (data) {<span class="spPermalink"><a href="/2014/01/24/#a1413488878.433">#</a></span></p>
 				<p><a name="a1375277786"></a>          op.insertOpml (data, down);<span class="spPermalink"><a href="/2014/01/24/#a1375277786">#</a></span></p>
-				<p><a name="a1411678938.255"></a>          });</code></pre><span class="spPermalink"><a href="/2014/01/24/#a1411678938.255">#</a></span></p>
+				<p><a name="a1413488878.434"></a>          });</code></pre><span class="spPermalink"><a href="/2014/01/24/#a1413488878.434">#</a></span></p>
 				<p><a name="a1390587908"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2014/01/24/#a1390587908">#</a></span></p>
 				<p><a name="a1390588778"></a>I click on the bookmarklet and see the following alert:<span class="spPermalink"><a href="/2014/01/24/#a1390588778">#</a></span></p>
 				<p><a name="a1390589043"></a>&nbsp;<span class="spPermalink"><a href="/2014/01/24/#a1390589043">#</a></span></p>
@@ -940,10 +943,10 @@
 				<p><a name="a1389976152"></a>Where it says "field value," type in a date. For sorting purposes, I like to use the format YYYY-MM-DD, so today would be 2014-01-17.<span class="spPermalink"><a href="/2014/01/17/#a1389976152">#</a></span></p>
 				<p><a name="a1389976092"></a>![](https://dl.dropboxusercontent.com/s/oei8zk2tqbk4ezd/Screen%20shot%202014-01-17%20at%2011.28.24%20AM.png)<span class="spPermalink"><a href="/2014/01/17/#a1389976092">#</a></span></p>
 				<p><a name="a1389976201"></a>In a separate Tiddler -- I use one called To Do -- enter the following filter:<span class="spPermalink"><a href="/2014/01/17/#a1389976201">#</a></span></p>
-				<p><a name="a1411678938.273"></a>    ! Due <span class="spPermalink"><a href="/2014/01/17/#a1411678938.273">#</a></span></p>
-				<p><a name="a1411678938.273"></a>    <$list filter="[has[due]!tag[done]sort[due]]"><span class="spPermalink"><a href="/2014/01/17/#a1411678938.273">#</a></span></p>
-				<p><a name="a1411678938.273"></a>    <$link to={{!!title}}><$view field="title"/> | <$view field="due"/></$link><span class="spPermalink"><a href="/2014/01/17/#a1411678938.273">#</a></span></p>
-				<p><a name="a1411678938.273"></a>    </$list><span class="spPermalink"><a href="/2014/01/17/#a1411678938.273">#</a></span></p>
+				<p><a name="a1413488878.449"></a>    ! Due <span class="spPermalink"><a href="/2014/01/17/#a1413488878.449">#</a></span></p>
+				<p><a name="a1413488878.449"></a>    <$list filter="[has[due]!tag[done]sort[due]]"><span class="spPermalink"><a href="/2014/01/17/#a1413488878.449">#</a></span></p>
+				<p><a name="a1413488878.449"></a>    <$link to={{!!title}}><$view field="title"/> | <$view field="due"/></$link><span class="spPermalink"><a href="/2014/01/17/#a1413488878.449">#</a></span></p>
+				<p><a name="a1413488878.449"></a>    </$list><span class="spPermalink"><a href="/2014/01/17/#a1413488878.449">#</a></span></p>
 				<p><a name="a1389976241"></a>In screenshot below, I show the output of this filter, provided that I have only one task that both _has a field called "due"_ and is _not tagged "done"_. In this case, the Tiddler is called "performance review" and the value of the _due_ field is 2014-01-31. The generated anchor text is the Tiddler title and the value of the due field, separate by a pipe `|`. It links to the Tiddler.<span class="spPermalink"><a href="/2014/01/17/#a1389976241">#</a></span></p>
 				<p><a name="a1389975803"></a>![](https://dl.dropboxusercontent.com/s/5rrc8q0phqu0ur1/Screen%20shot%202014-01-17%20at%2011.21.13%20AM.png)<span class="spPermalink"><a href="/2014/01/17/#a1389975803">#</a></span></p>
 				<p><a name="a1389976349"></a>When a task is complete, just add the "done" tag, and it will no longer show up in this list.<span class="spPermalink"><a href="/2014/01/17/#a1389976349">#</a></span></p>
@@ -962,24 +965,24 @@
 			<div class="divLevel" id="idStreamLevel6">
 				<p><a name="a1389889845"></a><a href="https://twitter.com/share?text=Tracking%20Dependencies%20in%20TiddlyWiki&url=http://blog.jeffreykishner.com/2014/01/16/tracking-dependencies-in-tiddlywiki.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2014/01/16/#a1389889845">#</a></span></p>
 				<p><a name="a1389889034"></a>I've playing around with [TiddlyWiki](http://tiddlywiki.com), a single html file run on javascript that can contain an entire wiki. You don't have to upload it to a server, it works directly in the browser. TiddlyWiki5 beta includes a script for Task Management -- I'm including the full content of that "tiddler" below:<span class="spPermalink"><a href="/2014/01/16/#a1389889034">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    TiddlyWiki5 can be used as a simple task management system without further customisation. The idea is that tasks be tagged `task`, with those that are completed also tagged `done`. In this way it is straightforward to generate task lists.<span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    ! Outstanding tasks<span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    <$list filter="[!has[draft.of]tag[task]!tag[done]sort[created]]"><span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    <$checkbox tag="done"> <$link to={{!!title}}><$view field="title"/></$link></$checkbox><span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    </$list><span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    ! Completed tasks<span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    <$list filter="[!has[draft.of]tag[task]tag[done]sort[created]]"><span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    <$checkbox tag="done"> ~~<$link to={{!!title}}><$view field="title"/></$link>~~</$checkbox><span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
-				<p><a name="a1411678938.282"></a>    </$list><span class="spPermalink"><a href="/2014/01/16/#a1411678938.282">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    TiddlyWiki5 can be used as a simple task management system without further customisation. The idea is that tasks be tagged `task`, with those that are completed also tagged `done`. In this way it is straightforward to generate task lists.<span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    ! Outstanding tasks<span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    <$list filter="[!has[draft.of]tag[task]!tag[done]sort[created]]"><span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    <$checkbox tag="done"> <$link to={{!!title}}><$view field="title"/></$link></$checkbox><span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    </$list><span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    ! Completed tasks<span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    <$list filter="[!has[draft.of]tag[task]tag[done]sort[created]]"><span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    <$checkbox tag="done"> ~~<$link to={{!!title}}><$view field="title"/></$link>~~</$checkbox><span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    </$list><span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
 				<p><a name="a1389889395"></a>That tiddler looks like this:<span class="spPermalink"><a href="/2014/01/16/#a1389889395">#</a></span></p>
 				<p><a name="a1389889401"></a>![](https://dl.dropboxusercontent.com/s/y4l4wzwjlcjogjk/Screen%20shot%202014-01-16%20at%2011.22.14%20AM.png)<span class="spPermalink"><a href="/2014/01/16/#a1389889401">#</a></span></p>
 				<p><a name="a1389889482"></a>If you click on the checkbox, it automatically tags the tiddler for that task as _done_.<span class="spPermalink"><a href="/2014/01/16/#a1389889482">#</a></span></p>
 				<p><a name="a1389889533"></a>###Tracking Dependencies<span class="spPermalink"><a href="/2014/01/16/#a1389889533">#</a></span></p>
 				<p><a name="a1389889540"></a>If am am waiting for someone else to complete a task before I can complete _my_ task, it is helpful to keep track of that in the Task Management tiddler. For example, if for Task A I am waiting for Mike to do something, I'll tag Task A with _waiting:Mike_.<span class="spPermalink"><a href="/2014/01/16/#a1389889540">#</a></span></p>
 				<p><a name="a1389889661"></a>In the script above, I've included the following:<span class="spPermalink"><a href="/2014/01/16/#a1389889661">#</a></span></p>
-				<p><a name="a1411678938.283"></a>    ! Waiting<span class="spPermalink"><a href="/2014/01/16/#a1411678938.283">#</a></span></p>
-				<p><a name="a1411678938.283"></a>    ''Mike''<span class="spPermalink"><a href="/2014/01/16/#a1411678938.283">#</a></span></p>
-				<p><a name="a1411678938.283"></a>    <$list filter="[tag[waiting:Mike]!tag[done]]"></$list><span class="spPermalink"><a href="/2014/01/16/#a1411678938.283">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    ! Waiting<span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    ''Mike''<span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
+				<p><a name="a1413488878.456"></a>    <$list filter="[tag[waiting:Mike]!tag[done]]"></$list><span class="spPermalink"><a href="/2014/01/16/#a1413488878.456">#</a></span></p>
 				<p><a name="a1389889727"></a>The above list filter logic says, "Generate a list of tiddlers that are tagged _waiting:Mike_ but that are NOT tagged _done_." Once Mike has done his part and I've completed the task and marked it as _done_, that tiddler will no longer be in the Waiting for Mike list.<span class="spPermalink"><a href="/2014/01/16/#a1389889727">#</a></span></p>
 				<p><a name="a1389889935"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=tiddlywiki">tiddlywiki</a><span class="spPermalink"><a href="/2014/01/16/#a1389889935">#</a></span></p>
 				</div>
@@ -1124,7 +1127,7 @@
 				</div>
 			<div class="divFargoStreamFooter">
 				<div>&copy; 2014 Jeffrey Kishner.</div>
-				<div>Last update: Thu, Sep 25, 2014 at  4:02 PM.</div>
+				<div>Last update: Thu, Oct 16, 2014 at  2:47 PM.</div>
 				<div><i></i></div>
 				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
 <a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
