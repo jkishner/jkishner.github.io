@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>Jeffrey Kishner's Fargo Blog</title>
-		<meta charset="utf-8"> 
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
@@ -15,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
+    "opmlUrl": "",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Mon, 08 Dec 2014 15:13:48 GMT",
-    "opmlExpansionState": "1,2,3,4,6,7,8,20,21,27,29,30,32,33,43,44,66,67,68,76,86,95,97,98,108,110,113,114,130,131",
+    "opmlDateModified": "Tue, 31 Mar 2015 19:04:50 GMT",
+    "opmlExpansionState": "1,2,3,4,6,7,8,20,21,27,29,30,32,33,43,44,65,66,67,75,85,94,96,97,107,109,112,113,129,130",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -35,15 +36,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "4",
+    "opmlLastCursor": "63",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "readable",
-    "type": "stream",
-    "slogan": "What a long strange trip it's been.",
+    "type": "bloghome",
+    "slogan": "Welcome back my friends to the show that never ends.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -69,7 +70,7 @@
     "flMarkdown": true,
     "leftIndent": 0,
     "text": "Jeffrey Kishner's Fargo Blog",
-    "created": "Mon, 08 Dec 2014 15:13:48 GMT",
+    "created": "Tue, 31 Mar 2015 19:04:50 GMT",
     "description": "",
     "path": "",
     "subheadColor": "white",
@@ -88,611 +89,53 @@
     "authorGithubAccount": "jkishner",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Mon Dec 08 2014 10:13:49 GMT-0500 (EST)",
-    "copyright": "&copy; 2014 Jeffrey Kishner.",
+    "now": "Tue Mar 31 2015 15:04:50 GMT-0400 (EDT)",
+    "copyright": "&copy; 2015 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/.html"
 }; //12/12/13 by DW
 		</script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
-		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
-		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
-		
-		
-		<meta property="og:url" content="http://blog.jeffreykishner.com/.html" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Jeffrey Kishner's Fargo Blog" />
-		<meta property="og:description" content="" />
-		<meta property="og:image" content="" />
-		<meta property="og:site_name" content="Jeffrey Kishner" />
-		
-		<meta name="twitter:card" value="summary">
-		<meta name="twitter:title" content="Jeffrey Kishner's Fargo Blog" />
-		<meta name="twitter:url" content="http://blog.jeffreykishner.com/.html" />
-		<meta name="twitter:description" content="" />
-		<meta name="twitter:image" content=""/>
-		<meta name="twitter:site" value="kishner">
-		
 		<style>
-			body {
-				background-color: whitesmoke;
-				}
-			.divPageContainer {
-				}
-			.navbar {
-				font-size: 17px;
-				line-height: 140%;
-				}
-			.navbar-inner {
-				min-height: 60px;
-				}
-			.navbar .nav > li > a {
-				padding-top: 17px;
-				}
-			.navbar .brand {
-				padding-top: 13px;
-				padding-left: 25px;
-				}
-			.navbar-container {
-				width: 1000px !important;
-				}
-			.divFargoStreamBody {
-				}
-			.divBodyText {
-				}
-			.divStreamTopSpacer {
-				}
-			.divStreamDay {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				margin-left: 0;
-				margin-top: 0;
-				border-top: 1px solid silver;
-				z-index: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				}
-			.divStreamDayText {
-				font-family: 'Vollkorn', serif;
-				font-size: 24px;
-				line-height: 145%;
-				padding-top: 5%;
-				padding-bottom: 10%;
-				
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				
-				vertical-align: top;
-				height: 100%;
-				margin-top: 30px;
-				}
-			.divStreamDayHead {
-				font-family: 'Ubuntu', sans-serif;
-				font-size: 36px;
-				font-weight: bold;
-				margin-top: .1em;
-				-webkit-margin-after: .75em;
-				}
-			.divStreamDayImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divMapCanvas {
-				height: 100%; 
-				width: 100%; 
-				position: absolute; 
-				right: 0; 
-				z-index: -10;
-				}
-			.divTextInFrontOfImage {
-				background-color: whitesmoke; 
-				opacity: .98;
-				padding: 1.5em;
-				border:2px solid gainsboro;
-				}
-			.spStreamArrows {
-				font-size: .8em;
-				color: silver;
-				margin-right: 15px;
-				}
-			.divStreamDay p {
-				margin-bottom: .3em;
-				}
-			.divTextContainer {
-				padding: 0;
-				}
-			.divBanner {
-				margin-bottom: -1px;
-				}
-			.divLevel {
-				margin-left: 20px;
-				display: none;
-				}
-			h4 {
-				font-family: "Georgia";
-				font-size: 18px;
-				-webkit-margin-after: 5px;
-				}
-			.divStreamSectionHead {
-				font-family: Ubuntu;
-				margin-top: 5px;
-				font-weight: bold;
-				-webkit-margin-after: 5px;
-				}
-			.spPermalink {
-				margin-left: 3px;
-				}
-			.spPermalink a {
-				text-decoration: none;
-				color: purple;
-				font-size: 13px;
-				font-weight: none !important;
-				}
-			.divDaySeparator {
-				height: 0;
-				}
-			.aStreamWedgeLink {
-				color: black;
-				}
-			.aStreamWedgeLink i {
-				font-size: .85em;
-				color: black;
-				cursor: pointer;
-				}
-			.aStreamDayLink {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.aStreamDayLink a:link, .aStreamDayLink a:visited {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divStreamIcon {
-				float: left;
-				width: 20px;
-				margin-left: -20px;
-				margin-right: 0;
-				}
-			.spStreamArrows {
-				float: left;
-				width: 36px;
-				margin-left: -36px;
-				margin-right: 0;
-				display: none;
-				}
-			.aStreamArrowsLink {
-				font-size: .75em;
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divFargoStreamFooter {
-				font-family: 'Ubuntu', sans-serif;
-				line-height: 200%;
-				height: 400px;
-				background-color: whitesmoke;
-				border-top: 1px solid silver;
-				text-align: center;
-				padding-top: 15px;
-				}
-			.divFargoSocialMediaLinks {
-				position: fixed;
-				z-index: 1;
-				}
-			.divNavSocialMediaLinks {
-				margin-top: 17px;
-				margin-left: 1em;
-				font-size: .9em;
-				}
-			.divNavSocialMediaLinks .nav>li>a {
-				display: inline;
-				}
-			.divNavSocialMediaLinks .aSocialMediaLink {
-				letter-spacing: 14px;
-				}
-			.aStreamTextLink {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.divFargoStreamComments {
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				margin-bottom: 400px;
-				margin-top: 10px;
-				}
-			.divDisqusComments { 
-				margin-top: 5px !important;
-				}
-			</style>
-		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.divPageContainer {
-					}
-				.navbar {
+				.navbar .nav>li {
 					display: none;
-					}
-				.divBodyText {
-					}
-				.divTextContainer {
-					margin-top: -40px;
-					}
-				.divStreamTopSpacer {
-					display: none;
+					height: 0;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.divStreamDayHead {
-					font-size: 22px;
+				.container {
+					margin-top: 10px;
+					width: 90%;
 					}
-				.divStreamSectionHead {
-					margin-top: 8px;
-					-webkit-margin-after: 8px;
-					}
-				.divStreamDayText {
+				.divFargoMarkdown p {
 					font-size: 17px;
-					padding-left: 8%;
-					padding-right: 7%;
-					width: 85%;
+					line-height: 140%;
 					}
-				.aStreamWedgeLink i {
-					font-size: 1.1em;
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
 					}
-				.divStreamIcon {
-					width: 14px;
-					margin-left: -14px;
+				.divHeadlineUnit {
+					margin-bottom: 5px;
 					}
-				.spPermalink {
+				.divPrevNext {
+					float: none;
+					}
+				.divBreadcrumbs {
 					display: none;
-					}
-				.divFargoStreamFooter {
 					font-size: 15px;
-					line-height: 170%;
 					}
-				.divTextInFrontOfImage {
-					width: 80% !important;
-					margin-left: auto;
-					margin-right: auto;
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
 					}
-				.spDateYearPart {
+				.spSlogan {
 					display: none;
 					}
-				.divPictureViewer .modal {
-					left: auto;
-					width: auto;
-					margin-left: auto;
-					margin-right: auto;
-					}
-				.divLevel {
-					margin-left: 0;
-					}
 				}
 			</style>
-		<style> /* styles for tablet */
-			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-				.divPageContainer {
-					}
-				.navbar .nav > li > a {
-					padding-right: 7px;
-					}
-				}
-			</style>
-		
-		<script>
-			var flSetupDisqusThread = false;
-			
-			var colorsArray = [
-				"white",
-				"whitesmoke",
-				"ghostwhite",
-				"gainsboro" 
-				];
-			function closeDisqusThread () {
-				$("#idDisqusDialog").modal ("hide");
-				}
-			function openDisqusThread () {
-				function getCommentHtml () {
-					var id = "", hidingCode  = "", visibleStyle = "";
-					if (pagetable.opmlUrl != undefined) {
-						id += pagetable.opmlUrl;
-						}
-					if (pagetable.created != undefined) {
-						id += pagetable.created;
-						}
-					if (id.length > 0) {
-						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
-						}
-					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
-					return (code.replace (/&lt;/g,'<'));
-					}
-				if (!flSetupDisqusThread) {
-					var s = 
-						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
-					$("body").prepend (s)
-					flSetupDisqusThread = true;
-					}
-				$("#idDisqusCode").html (getCommentHtml ());
-				$("#idDisqusDialog").modal ("show");
-				}
-			
-			
-			function getdaynum (theDate) {
-				var year = theDate.getFullYear ();
-				var onejan = new Date (year, 0, 1);
-				return (Math.ceil ((theDate - onejan) / 86400000));
-				}
-			function ecStream (idnum) {
-				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
-				if (c.className == "fa fa-caret-down") {
-					c.className = "fa fa-caret-right";
-					$(idUL).slideUp (75);
-					}
-				else {
-					c.className = "fa fa-caret-down";
-					$(idUL).slideDown (75);
-					}
-				}
-			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
-				var mapCanvas = document.getElementById (idmap);
-				if (mapCanvas != null) {
-					var mapOptions = {
-						center: new google.maps.LatLng (maplat, maplong),
-						zoom: Number (mapzoom),
-						panControl: false,
-						zoomControl: false,
-						mapTypeControl: false,
-						scaleControl: false,
-						streetViewControl :false,
-						overviewMapControl: false,
-						rotateControl: false,
-						mapTypeId: maptype
-						};
-					var map = new google.maps.Map (mapCanvas, mapOptions);
-					}
-				}
-			
-			function turnOffImages () { //5/18/14 by DW
-				$(".divStreamDayImage").css ("background-image", "");
-				localStorage.flTurnImagesOff = "true";
-				}
-			function turnOffImagesCommand () {
-				confirmDialog ("Turn off images?", function () {
-					localStorage.flTurnImagesOff = "true";
-					location.reload (true);
-					});
-				}
-			function turnOnImagesCommand () {
-				confirmDialog ("Turn images on?", function () {
-					localStorage.flTurnImagesOff = "false"; 
-					location.reload (true);
-					});
-				}
-			
-			function startup () {
-				var streamVersion = 1; //5/20/14 by DW
-				var flPlainOutline; //5/20/14 by DW
-				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
-				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
-				
-				//set streamVersion -- 5/20/14 by DW
-					if (pagetable.streamVersion != undefined) {
-						var x = parseInt (pagetable.streamVersion);
-						if (!isNaN (x)) {
-							streamVersion = x;
-							}
-						}
-				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
-					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
-						localStorage.removeItem ("flImagesOff")
-						}
-					if (localStorage.flTurnImagesOff == undefined) {
-						if (streamVersion > 1) {
-							localStorage.flTurnImagesOff = "false";
-							}
-						}
-					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
-				//every day gets a background color, image, map or -- ??
-					if (!flPlainOutline) {
-						var ixcolorarray = 0, ctmaps = 0;
-						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
-							var flSetColor = true;
-							
-							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
-								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
-								flSetColor = false;
-								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
-								
-								//set up map parameters
-									maplat = $(this).data ("maplatitude");
-									if (maplat == undefined) {
-										maplat = pagetable.mapLatitude;
-										}
-									maplong = $(this).data ("maplongitude");
-									if (maplong == undefined) {
-										maplong = pagetable.mapLongitude;
-										}
-									maptype = $(this).data ("maptype");
-									if (maptype == undefined) {
-										maptype = pagetable.mapType;
-										}
-									mapzoom = $(this).data ("mapzoom");
-									if (mapzoom == undefined) {
-										mapzoom = pagetable.mapZoom;
-										}
-								
-								initMap (idmap, maplat, maplong, maptype, mapzoom);
-								}
-							else {
-								$(this).children ("div").each (function () {
-									if (this.className == "divStreamDayImage") {
-										flSetColor = false;
-										}
-									});
-								}
-							
-							if (flSetColor) {
-								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
-								}
-							else {
-								$(this).children ("div").each (function () {
-									if (this.className == "divStreamDayText") {
-										var flset = false;
-										$(this).children ("div").each (function () {
-											if (!flset) {
-												this.className = "divTextInFrontOfImage"; //set classname of first child element
-												}
-											flset = true;
-											});
-										}
-									});
-								}
-							});
-						}
-				//highlight and expand the #hashed element, if present
-					var hash = window.location.hash;
-					if (hash.length > 0) {
-						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
-							$(this).children ("a").each (function () { //look at first-level children that are anchors
-								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
-									$(this).parents ("div").css ("display", "block"); //make all parents visible
-									$(this).parents ("p").css ("background-color", hightlightcolor);
-									
-									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
-									
-									
-									var flexpand = true;
-									$(this).parents ("div").each (function () {
-										if (flexpand) {
-											$(this).children ("a").each (function () {
-												$(this).css ("background-color", hightlightcolor);
-												
-												$(this).prev ().find ("i").each (function () {
-													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
-														$(this).attr ("class", "fa fa-caret-down");
-														}
-													});
-												
-												});
-											$(this).next ("div").css ("display", "block"); //the divLevel item
-											flexpand = false;
-											}
-										});
-									}
-								});
-							});
-						}
-				//handle fixed menu
-					if (getBoolean (pagetable.flFixedMenu)) {
-						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
-						if (flhavenav) {
-							document.body.style.paddingTop = "60px";
-							if (hash.length > 0) {
-								$(document).one ("scroll", function () {
-									var $el = $(this), top = $el.scrollTop ();
-									$el.scrollTop (top - 125);
-									});
-								}
-							}
-						}
-				//set the site title -- 3/23/14 by DW
-					if (pagetable.menuTitle != undefined) {
-						var pagename;
-						
-						if (highlightedtitle != undefined) { //5/11/14 by DW
-							pagename = highlightedtitle;
-							}
-						else {
-							if (pagetable.path.length == 0) {
-								pagename = "Home";
-								}
-							else {
-								pagename = pagetable.text;
-								}
-							}
-						
-						document.title = pagetable.menuTitle + ": [" + pagename + "]";
-						}
-				//set the color of each text frame -- 5/11/14 by DW
-					$(".divTextInFrontOfImage").each (function () {
-						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
-						});
-				
-				//turn on images for v2 or greater -- 5/20/14 by DW
-					if (streamVersion > 1) { 
-						if (flPlainOutline) {
-							$(".aStreamDayLink").each (function () {
-								$(this).css ("font-size", "28px");
-								});
-							$(".divStreamDay").each (function () {
-								$(this).css ("border-top", "0");
-								$(this).css ("margin-top", "70px");
-								});
-							$(".divStreamDayText").each (function () {
-								$(this).css ("padding", "0");
-								});
-							$(".divTextContainer").each (function () {
-								$(this).css ("margin-bottom", "125px");
-								});
-							}
-						else {
-							$(".divStreamDay").each (function () {
-								var url = $(this).data ("backgroundimage");
-								if (url != undefined) {
-									$(this).css ("background-image", "url('" + url + "')");
-									}
-								
-								$(this).children (".divStreamDayText").children ().each (function () {
-									this.className = "divTextInFrontOfImage"; 
-									});
-								
-								});
-							}
-						}
-				
-				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
-					if (streamVersion == 1) { 
-						if (flPlainOutline) {
-							turnOffImages ();
-							$(".divStreamDay").each (function () {
-								$(this).css ("border-top", "0");
-								});
-							}
-						}
-				}
-			</script>
-		
 		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -719,8 +162,12 @@
 		
 		</head>
 	<body>
-		<div class="divPageContainer">
-			
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
+		
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
@@ -781,477 +228,302 @@
 			</div>
 		</div>
 
-			<div class="divTextContainer" id="idTextContainer">
-				<div class="divStreamDay" >
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/12/08/">Monday, December  8<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1418051394"></a><a class="aStreamTextLink" onclick="ecStream (0)">Trying Another CMS,  Subscribe to My New RSS Feed</a><span class="spPermalink"><a href="/2014/12/08/#a1418051394">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel0">
-				<p><a name="a1418051450"></a>I'm trying out <a href="http://postach.io">Postach.io</a>, which is a blogging platform that uses Evernote as the CMS. Check out my <a href="http://thoughts.jeffreykishner.com">new blog</a> and subscribe to my <a href="http://thoughts.jeffreykishner.com/feed.xml">new RSS feed</a>.<span class="spPermalink"><a href="/2014/12/08/#a1418051450">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/11/21/">Friday, November 21<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1416601327"></a><a class="aStreamTextLink" onclick="ecStream (1)">Convert an Instagram Profile URL to an Instagram URL Scheme with Drafts, Launch Center Pro, and TextTool</a><span class="spPermalink"><a href="/2014/11/21/#a1416601327">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel1">
-				<p><a name="a1416601726"></a>If you have a profile that you frequently like to visit on Instagram on your iPhone, the quickest way to get there is via an URL scheme. The IG profile for Beyonce is <code>http://instagram.com/beyonce</code>, but if you tap on the following URL, it will bring you straight to her profile in the app: <code>instagram://user?username=beyonce</code>.<span class="spPermalink"><a href="/2014/11/21/#a1416601726">#</a></span></p>
-				<p><a name="a1416601550"></a>I keep a list of favorite IG profiles in <a href="http://agiletortoise.com/drafts/">Drafts</a> but you can also put these links in a launcher like <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. <span class="spPermalink"><a href="/2014/11/21/#a1416601550">#</a></span></p>
-				<p><a name="a1416601698"></a>To automate the conversion of the profile URL to the URL scheme, I have written two URL actions. To make this work, you will need Drafts, Launch Center Pro, and <a href="http://blackfoggames.com/TextTool/">TextTool</a>. (By the way, I am currently using Drafts 3. If you are using Drafts 4, then please <a href="https://agiletortoise.zendesk.com/hc/en-us/articles/202771400-Drafts-URL-Schemes">adjust the URL action accordingly</a> -- put a <code>4</code> after <code>drafts</code>.)<span class="spPermalink"><a href="/2014/11/21/#a1416601698">#</a></span></p>
-				<p><a name="a1416602086"></a>The LCP action is as follows. (You can install it <a href="https://launchcenterpro.com/m0z2nb">here</a>.)<span class="spPermalink"><a href="/2014/11/21/#a1416602086">#</a></span></p>
-				<p><a name="a1416601420"></a><code>texttool://x-callback-url/transform?text=[clipboard]&method=split&delimiter=/&x-success={{drafts:///create?text=[[output]]&action=ig-clipboard}}</code><span class="spPermalink"><a href="/2014/11/21/#a1416601420">#</a></span></p>
-				<p><a name="a1416602154"></a>This action splits the profile URL at the <code>/</code> in TextTool, so that the username ends up on the 4th line. Then the output is sent to Drafts. You can install <a href="drafts://x-callback-url/import_action?type=URL&name=ig-clipboard&url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7B%28instagram%3A%2F%2Fuser%3Fusername%3D%5B%5Bline%7C4%5D%5D%29%7D%7D">this action</a> or create an URL action called <i>ig-clipboard</i>:<span class="spPermalink"><a href="/2014/11/21/#a1416602154">#</a></span></p>
-				<p><a name="a1416601547"></a><code>drafts:///create?text={{(instagram://user?username=[[line|4]])}}</code><span class="spPermalink"><a href="/2014/11/21/#a1416601547">#</a></span></p>
-				<p><a name="a1416602294"></a>This wraps line 4 of the draft in the IG URL scheme. I surround it by parens in case I want to precede it with square brackets to make it a Markdown link.<span class="spPermalink"><a href="/2014/11/21/#a1416602294">#</a></span></p>
-				<p><a name="a1416602631"></a><h3>How to Make It Work</h3><span class="spPermalink"><a href="/2014/11/21/#a1416602631">#</a></span></p>
-				<p><a name="a1416602638"></a>After you install these two actions, just copy an IG user profile to your clipboard, and tap on the <i>IG-clipboard</i> action in LCP. The conversion happens automatically, and you'll end up with the URL scheme in Drafts.<span class="spPermalink"><a href="/2014/11/21/#a1416602638">#</a></span></p>
-				<p><a name="a1416602469"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool">http://blog.jeffreykishner.com/2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool</a></i></small><span class="spPermalink"><a href="/2014/11/21/#a1416602469">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1416602440"></a><a class="aStreamTextLink" onclick="ecStream (2)">#glossary</a><span class="spPermalink"><a href="/2014/11/21/#a1416602440">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel2">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1416602441"></a><a class="aStreamTextLink" onclick="ecStream (3)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/11/21/#a1416602441">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel3">
-						<p><a name="a1416602441"></a><meta property="og:title" content="Convert an Instagram Profile URL to an Instagram URL Scheme with Drafts, Launch Center Pro, and TextTool" /><span class="spPermalink"><a href="/2014/11/21/#a1416602441">#</a></span></p>
-						<p><a name="a1416602441"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool.html" /><span class="spPermalink"><a href="/2014/11/21/#a1416602441">#</a></span></p>
-						<p><a name="a1416602441"></a><meta property="og:description" content="If you have a profile that you frequently like to visit on Instagram on your iPhone, the quickest way to get there is via an URL scheme. " /><span class="spPermalink"><a href="/2014/11/21/#a1416602441">#</a></span></p>
-						<p><a name="a1416602441"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/11/21/#a1416602441">#</a></span></p>
-						<p><a name="a1416602442"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/11/21/#a1416602442">#</a></span></p>
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"></ul>
 						</div>
+					<h2 id="idBlogHomePageTitle">Jeffrey Kishner's Fargo Blog</h2>
 					</div>
-				</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/12/08/tryingAnotherCmsSubscribeToMyNewRssFeed.html">Trying Another CMS,  Subscribe to My New RSS Feed</a></div>
+		<p>I'm trying out <a href="http://postach.io">Postach.io</a>, which is a blogging platform that uses Evernote as the CMS. Check out my <a href="http://thoughts.jeffreykishner.com">new blog</a> and subscribe to my <a href="http://thoughts.jeffreykishner.com/feed.xml">new RSS feed</a>.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">12/08/14; 10:09:54 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/12/08/tryingAnotherCmsSubscribeToMyNewRssFeed.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/11/18/">Tuesday, November 18<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1416328893"></a><img src="https://dl.dropboxusercontent.com/s/wtlsby926lukw28/2014-11-18-1140AM.jpg?dl=0"><span class="spPermalink"><a href="/2014/11/18/#a1416328893">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/11/13/">Thursday, November 13<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1415896185"></a><a class="aStreamTextLink" onclick="ecStream (4)">Is Dave Grohl Bored of the Foo Fighters?</a><span class="spPermalink"><a href="/2014/11/13/#a1415896185">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel4">
-				<p><a name="a1415896188"></a>Foo Fighters is one of my favorite rock bands. I have been listening to <i>Sonic Highways</i> this week, and it just feels uninspired to me. The best hooks seem to be lifted from The Beatles or Jethro Tull. I suspect that Dave Grohl couldn't even bring himself to record another Foo Fighters album unless he built it around a documentary (which I haven't seen, because I don't have cable). I hope I am proven wrong after future listens, but I suspect that the Foo Fighters have lost their edge.<span class="spPermalink"><a href="/2014/11/13/#a1415896188">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/11/07/">Friday, November  7<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1415371058"></a><a class="aStreamTextLink" onclick="ecStream (5)">i99repair.com Review: ★★☆☆☆</a><span class="spPermalink"><a href="/2014/11/07/#a1415371058">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel5">
-				<p><img style="float: right; margin-left: 25px; margin-top: 15px; margin-right: 15px; margin-bottom: 15px;" src="https://dl.dropboxusercontent.com/s/48jqa2utavb7bpv/Photo%20Oct%2021%2C%202%2032%2052%20PM.jpg?dl=0">
-<a name="a1418051629.486"></a>A couple of weeks ago I dropped my iPad mini and the screen cracked. I work in Manhattan, and although there are many local services that will repair screens, I was looking for an affordable solution -- over $150 seems like a of money to spend to replace a screen, given that I can get an entire Amazon Fire tablet for that price. <span class="spPermalink"><a href="/2014/11/07/#a1418051629.486">#</a></span></p>
-				<p><a name="a1418051629.486"></a>I eventually went with i99repair.com, because their price was only $110, and I found a $5 discount code on their <a href="https://www.facebook.com/pages/IMaster-Repair/278546205501907">Facebook business page</a>. (In fact, I only felt comfortable enough to mail my iPad to Iowa because the Facebook comments assuaged my anxiety that i99repair might have been a scam.)<span class="spPermalink"><a href="/2014/11/07/#a1418051629.486">#</a></span></p>
-				<p><a name="a1418051629.486"></a>After I paid, the email receipt stated that I would be notified once they received my iPad. I shipped it First Class (with tracking code) for under $15. i99repair received it on a Saturday, but I did not hear from them. I left a voicemail in the middle of the following week, and having not received a reply, I emailed them. They replied that they received it and were almost done with it. That Friday, I received an automated email with a USPS tracking code for the shipped, repaired iPad. I received it the following Tuesday.<span class="spPermalink"><a href="/2014/11/07/#a1418051629.486">#</a></span></p>
-				<p><a name="a1418051629.486"></a>Excited, I opened my package, only to find that the Home button did not work. (The square on the Home button is even slightly askew.) I emailed i99repair about this, and they wrote, <i>Ok send it back.</i> (I have since replied, asking if they would pay for shipping, and as of this writing have not received a response.)<span class="spPermalink"><a href="/2014/11/07/#a1418051629.486">#</a></span></p>
-				<p><a name="a1415372143"></a>The screen replacement is fine, although there is a small speck <i>underneath</i> it which I know wasn't there before. <span class="spPermalink"><a href="/2014/11/07/#a1415372143">#</a></span></p>
-				<p><a name="a1418051629.486"></a>Needless to say, I was upset. I did some googling and found that there is a virtual button that can be activated via Assistive Touch, which can be found in Accessibility under the Settings > General. It is a persistent icon that overlays the screen, and that can be dragged just about anywhere. When I tap on it, I can tap on Home or activate Siri or access Control Center or Notification Center.<span class="spPermalink"><a href="/2014/11/07/#a1418051629.486">#</a></span></p>
-				<p><a name="a1418051629.486"></a>One thing I learned being without my iPad mini for 1.5 weeks is that <i>I really love my iPad</i>. I didn't particularly like reading The New Yorker on my iPhone while on the subway. So I had to decide: re-ship my still-broken iPad to Iowa and be without it for <i>another</i> 1.5 weeks, or just use it with Assistive Touch. For the past few days, I have been using the virtual button, and have been OK with it. I do the four finger upward swipe to switch between frequently-used apps, so I rarely have to go Home to open an app. And I rarely use Siri on my iPad anyway. <span class="spPermalink"><a href="/2014/11/07/#a1418051629.486">#</a></span></p>
-				<p><a name="a1418051629.486"></a>All in all, I regret having sent my iPad to i99repair.com, and I would not recommend them. Their reply to my complaint was rude, and they shouldn't have even sent my iPad back to me with a non-functioning Home button in the first place. If they had replied with something to the effect of, "I am so sorry that we made a mistake. Please mail it back (we will compensate you for shipping) and we will make it a priority to fix the problem," I would have felt much better about the situation.<span class="spPermalink"><a href="/2014/11/07/#a1418051629.486">#</a></span></p>
-				<p><a name="a1415371496"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/11/07/i99repaircomReview">http://blog.jeffreykishner.com/2014/11/07/i99repaircomReview</a></i></small><span class="spPermalink"><a href="/2014/11/07/#a1415371496">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1415371479"></a><a class="aStreamTextLink" onclick="ecStream (6)">#glossary</a><span class="spPermalink"><a href="/2014/11/07/#a1415371479">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel6">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1415371480"></a><a class="aStreamTextLink" onclick="ecStream (7)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/11/07/#a1415371480">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel7">
-						<p><a name="a1415371480"></a><meta property="og:title" content="i99repair.com Review: ★★☆☆☆" /><span class="spPermalink"><a href="/2014/11/07/#a1415371480">#</a></span></p>
-						<p><a name="a1415371480"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/11/07/i99repaircomReview.html" /><span class="spPermalink"><a href="/2014/11/07/#a1415371480">#</a></span></p>
-						<p><a name="a1415371480"></a><meta property="og:description" content="A couple of weeks ago I dropped my iPad mini and the screen cracked. I work in Manhattan, and although there are many local services that will repair screens, I was looking for an affordable solution -- over $150 seems like a of money to spend to replace a screen, given that I can get an entire Amazon Fire tablet for that price. " /><span class="spPermalink"><a href="/2014/11/07/#a1415371480">#</a></span></p>
-						<p><a name="a1415371480"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/11/07/#a1415371480">#</a></span></p>
-						<p><a name="a1415371480"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/11/07/#a1415371480">#</a></span></p>
-						<p><a name="a1415371662"></a><meta name="og:image" content="https://dl.dropboxusercontent.com/s/48jqa2utavb7bpv/Photo%20Oct%2021%2C%202%2032%2052%20PM.jpg?dl=0"><span class="spPermalink"><a href="/2014/11/07/#a1415371662">#</a></span></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/28/">Tuesday, October 28<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1414524582"></a><a href="https://medium.com/matter/the-uber-of-gentleman-companions-4416b25f6491" target="_blank">The Uber of Gentleman Companions</a> — Matter — Medium.<br><i class="fa fa-comment-o"></i>  This essay by @BoobsRadley is very funny.<span class="spPermalink"><a href="/2014/10/28/#a1414524582">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/24/">Friday, October 24<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1414176677"></a><a class="aStreamTextLink" onclick="ecStream (8)">Get the URL Scheme for a SoundCloud Track With This Script</a><span class="spPermalink"><a href="/2014/10/24/#a1414176677">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel8">
-				<p><a name="a1414176745"></a>In July, I showed how you can <a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html">get the URL scheme for a SoundCloud user or track from an embed code</a> so that you can open right into that track or user in the SoundCloud iOS app from a launcher like <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. Today I decided to automate the process for a track URL.<span class="spPermalink"><a href="/2014/10/24/#a1414176745">#</a></span></p>
-				<p><a name="a1414176698"></a>You can use the script <a href="http://javascript.jeffreykishner.com/soundcloudTrack.html">here</a>.<span class="spPermalink"><a href="/2014/10/24/#a1414176698">#</a></span></p>
-				<p><a name="a1414176850"></a>To get the embed code, go to a track on the desktop site (make sure it's not a playlist); click on the Share button; click on the Embed tab; and copy the code within the Code & Preview box and copy it to your clipboard. Paste it into the text area in my script, click the button, and get the URL scheme.<span class="spPermalink"><a href="/2014/10/24/#a1414176850">#</a></span></p>
-				<p><a name="a1414176966"></a>I have not done many test cases; I am assuming all track IDs are the same length. If this script doesn't work for you, please report in the comments section.<span class="spPermalink"><a href="/2014/10/24/#a1414176966">#</a></span></p>
-				<p><a name="a1414177058"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript">http://blog.jeffreykishner.com/2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript</a></i></small><span class="spPermalink"><a href="/2014/10/24/#a1414177058">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1414177044"></a><a class="aStreamTextLink" onclick="ecStream (9)">#glossary</a><span class="spPermalink"><a href="/2014/10/24/#a1414177044">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel9">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1414177044"></a><a class="aStreamTextLink" onclick="ecStream (10)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/10/24/#a1414177044">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel10">
-						<p><a name="a1414177044"></a><meta property="og:title" content="Get the URL Scheme for a SoundCloud Track With This Script" /><span class="spPermalink"><a href="/2014/10/24/#a1414177044">#</a></span></p>
-						<p><a name="a1414177044"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript.html" /><span class="spPermalink"><a href="/2014/10/24/#a1414177044">#</a></span></p>
-						<p><a name="a1414177044"></a><meta property="og:description" content="In July, I showed how you can get the URL scheme for a SoundCloud track from an embed code so that you can open right into that track in the SoundCloud iOS app from a launcher like Launch Center Pro. Today I decided to automate the process for a track URL." /><span class="spPermalink"><a href="/2014/10/24/#a1414177044">#</a></span></p>
-						<p><a name="a1414177044"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/10/24/#a1414177044">#</a></span></p>
-						<p><a name="a1414177044"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/10/24/#a1414177044">#</a></span></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/21/">Tuesday, October 21<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1413899273"></a><i class="fa fa-fa fa-external-link"></i> <a href="http://existentialcomics.com/comic/51" target="_blank">Philosophy Tech Support</a> - Existential Comics. <img title=':smirk:' alt=':smirk:' class='emoji' src='http://fargo.io/code/emojify/images/emoji/smirk.png' align='absmiddle' /><span class="spPermalink"><a href="/2014/10/21/#a1413899273">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/20/">Monday, October 20<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1413828017"></a><i class="fa fa-fa fa-external-link"></i> "Douchebag": The <a href="http://gawker.com/douchebag-the-white-racial-slur-we-ve-all-been-waiti-1647954231?utm_source=recirculation&utm_medium=recirculation&utm_campaign=mondayAM" target="_blank">White Racial Slur</a> We’ve All Been Waiting For.<span class="spPermalink"><a href="/2014/10/20/#a1413828017">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/18/">Saturday, October 18<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1413655080"></a><i class="fa fa-fa fa-external-link"></i> The <a href="http://grantland.com/hollywood-prospectus/shonda-rhimes-scandal-abc/" target="_blank">Shonda Rhimes Revolution</a>: Finishing What ‘The Sopranos’ Started<br><i class="fa fa-comment-o"></i>  Insightful essay by Mark Harris.<span class="spPermalink"><a href="/2014/10/18/#a1413655080">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/17/">Friday, October 17<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1413576703"></a><i class="fa fa-fa fa-external-link"></i> Anita Sarkeesian on GamerGate: <a href="http://www.rollingstone.com/culture/features/anita-sarkeesian-gamergate-interview-20141017" target="_blank">'We're Going to Fix This'</a>.<br><i class="fa fa-quote-left"></i>  When I was in Portland for my talk at the XOXO Festival, this little boy came up to me and said, “Hi, I’m a feminist gamer.” How do you stop doing this work after that?<span class="spPermalink"><a href="/2014/10/17/#a1413576703">#</a></span></p>
-			<p><a name="a1413573052"></a><i class="fa fa-fa fa-external-link"></i> <a href="http://jezebel.com/how-to-get-ahead-by-sounding-less-feminine-1646769934?utm_source=recirculation&utm_medium=recirculation&utm_campaign=thursdayPM" target="_blank">How to Get Ahead By Sounding Less Feminine.</a><span class="spPermalink"><a href="/2014/10/17/#a1413573052">#</a></span></p>
-			<p><a name="a1413560718"></a><i class="fa fa-fa fa-external-link"></i> IT HAPPENED TO ME: I've Been Forced Out Of My Home And Am Living In Constant Fear Because Of <a href="http://www.xojane.com/it-happened-to-me/brianna-wu-gamergate" target="_blank">Relentless Death Threats From Gamergate</a> (by @spacekatgal)<span class="spPermalink"><a href="/2014/10/17/#a1413560718">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/16/">Thursday, October 16<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1413481638"></a><i class="fa fa-fa fa-external-link"></i> What research says about cats: <a href="http://www.vox.com/2014/10/16/6982177/the-case-against-owning-cats" target="_blank">they're selfish, unfeeling, environmentally harmful creatures</a> (Vox)<br><i class="fa fa-comment-o"></i>  I like 'em anyway.<span class="spPermalink"><a href="/2014/10/16/#a1413481638">#</a></span></p>
-			<p><a name="a1413473375"></a><i class="fa fa-fa fa-external-link"></i> ‘<a href="http://www.nytimes.com/2014/10/17/movies/dear-white-people-about-racial-hypocrisy-at-a-college.html?_r=0" target="_blank">Dear White People</a>,’ About Racial Hypocrisy at a College.<br><i class="fa fa-comment-o"></i>  Rarely have I read such a positive review by A.O. Scott.<span class="spPermalink"><a href="/2014/10/16/#a1413473375">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/15/">Wednesday, October 15<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1413394532"></a><a class="aStreamTextLink" onclick="ecStream (11)">Import a Single Draft from Drafts 3 Into Drafts 4</a><span class="spPermalink"><a href="/2014/10/15/#a1413394532">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel11">
-				<p><a name="a1413394547"></a>Just create this URL action, title it something like <i>Send to Drafts 4</i>: <code>drafts4:///create?text=[[draft]]</code><span class="spPermalink"><a href="/2014/10/15/#a1413394547">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1413387043"></a><a class="aStreamTextLink" onclick="ecStream (12)">How to Open Links in a Non-Default Browser from TTYtter Running on Mac OS X</a><span class="spPermalink"><a href="/2014/10/15/#a1413387043">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel12">
-				<p><a name="a1413387188"></a><a href="http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl">Yesterday</a> I blogged about opening links from TTYtter for PERL in Lynx while running the app over SSH. This morning I decided to just run the app locally on my work computer. Due to IT restrictions, I don't have access to .profile, so I just <a href="http://www.floodgap.com/software/ttytter/dl.html">downloaded the text file</a> to a local directory, changed the name of the file to <i>twitter</i>, made it executable by typing <code>chmod +x twitter</code>, and went through the OAuth process. Now while in that directory I can just type <code>./twitter</code> to run the app. <span class="spPermalink"><a href="/2014/10/15/#a1413387188">#</a></span></p>
-				<p><a name="a1413387483"></a>A benefit of running the app on my local machine is that I can open URLs in a GUI web browser. The developer suggests that MAC OS X users can <code>/set</code> the <code>urlopen</code> parameter to <code>open %U</code>. For work reasons, my default browser is not the browser I use for personal browsing, so I went into the text file, and changed<span class="spPermalink"><a href="/2014/10/15/#a1413387483">#</a></span></p>
-				<p><a name="a1413387619"></a><code>$urlopen ||= 'echo %U';</code><span class="spPermalink"><a href="/2014/10/15/#a1413387619">#</a></span></p>
-				<p><a name="a1413387626"></a>to<span class="spPermalink"><a href="/2014/10/15/#a1413387626">#</a></span></p>
-				<p><a name="a1413387106"></a><code>$urlopen ||= 'open -a "Google Chrome" %U';</code><span class="spPermalink"><a href="/2014/10/15/#a1413387106">#</a></span></p>
-				<p><a name="a1413387642"></a>Now I can just type <code>/url</code> followed by the thread ID, and the first link in the tweet will open in Chrome.<span class="spPermalink"><a href="/2014/10/15/#a1413387642">#</a></span></p>
-				<p><a name="a1413387760"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX">http://blog.jeffreykishner.com/2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX</a></i></small><span class="spPermalink"><a href="/2014/10/15/#a1413387760">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (13)" ><i class="fa fa-caret-right" id="idStreamWedge13"></i></a></span><a name="a1413387766"></a><a class="aStreamTextLink" onclick="ecStream (13)">#glossary</a><span class="spPermalink"><a href="/2014/10/15/#a1413387766">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel13">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (14)" ><i class="fa fa-caret-right" id="idStreamWedge14"></i></a></span><a name="a1413387766"></a><a class="aStreamTextLink" onclick="ecStream (14)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/10/15/#a1413387766">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel14">
-						<p><a name="a1413387766"></a><meta property="og:title" content="How to Open Links in a Non-Default Browser from TTYtter Running on Mac OS X" /><span class="spPermalink"><a href="/2014/10/15/#a1413387766">#</a></span></p>
-						<p><a name="a1413387766"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX.html" /><span class="spPermalink"><a href="/2014/10/15/#a1413387766">#</a></span></p>
-						<p><a name="a1413387767"></a><meta property="og:description" content="I decided to install TTYtter for PERL locally, so that I can open links in Google Chrome." /><span class="spPermalink"><a href="/2014/10/15/#a1413387767">#</a></span></p>
-						<p><a name="a1413387767"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/10/15/#a1413387767">#</a></span></p>
-						<p><a name="a1413387767"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/10/15/#a1413387767">#</a></span></p>
-						</div>
-					</div>
-				</div>
-			<p><a name="a1413384903"></a>I'm so glad that v4 of <a href="http://agiletortoise.com/drafts/">Drafts</a> runs as a separate app than v3, and that they use distinct URL schemes. I can use v3 on my iPad to sync via Simperium with my iPhone (which I have not upgraded to iOS8) and still be able to play with the new iOS8-only version on my iPad.<span class="spPermalink"><a href="/2014/10/15/#a1413384903">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/10/14/">Tuesday, October 14<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (15)" ><i class="fa fa-caret-right" id="idStreamWedge15"></i></a></span><a name="a1413308314"></a><a class="aStreamTextLink" onclick="ecStream (15)">How to Permanently Set a Link to Open in Lynx in TTYtter for PERL</a><span class="spPermalink"><a href="/2014/10/14/#a1413308314">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel15">
-				<p><a name="a1413308532"></a><a href="http://www.floodgap.com/software/ttytter/">TTYtter</a> is a Linux command-line app for Twitter. I use it over SSH while at the office, so (as far as I can tell) I cannot open links into a GUI browser from within the app. <span class="spPermalink"><a href="/2014/10/14/#a1413308532">#</a></span></p>
-				<p><a name="a1413308704"></a>In TTYtter, one types <code>/url</code> followed by an alphanumeric string to open the first link mentioned in a tweet. By default, <code>/url</code> is set to <code>echo %U</code> which just "prints" the URL out in the terminal. This is not very useful. One can set the value by typing <code>/set urlopen</code> followed by the app in which one wants to view the URL. I have been typing <code>/set urlopen lynx --accept-all-cookies %U</code> at the beginning of every session, but this gets tiresome.<span class="spPermalink"><a href="/2014/10/14/#a1413308704">#</a></span></p>
-				<p><a name="a1413308867"></a>I know nothing of PERL, but I know that this app is just one big executable text file. So I just opened it in a text editor, searched for <code>urlopen</code> and changed<span class="spPermalink"><a href="/2014/10/14/#a1413308867">#</a></span></p>
-				<p><a name="a1413308350"></a><code>$urlopen ||= 'echo %U';</code><span class="spPermalink"><a href="/2014/10/14/#a1413308350">#</a></span></p>
-				<p><a name="a1413308966"></a>to<span class="spPermalink"><a href="/2014/10/14/#a1413308966">#</a></span></p>
-				<p><a name="a1413308346"></a><code>$urlopen ||= 'lynx --accept-all-cookies %U';</code><span class="spPermalink"><a href="/2014/10/14/#a1413308346">#</a></span></p>
-				<p><a name="a1413309086"></a>Now I can view the link in the Lynx browser (and without having to accept cookies each and every time) without having to set the variable again.<span class="spPermalink"><a href="/2014/10/14/#a1413309086">#</a></span></p>
-				<p><a name="a1413309251"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl">http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl</a></i></small><span class="spPermalink"><a href="/2014/10/14/#a1413309251">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (16)" ><i class="fa fa-caret-right" id="idStreamWedge16"></i></a></span><a name="a1413309260"></a><a class="aStreamTextLink" onclick="ecStream (16)">#glossary</a><span class="spPermalink"><a href="/2014/10/14/#a1413309260">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel16">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (17)" ><i class="fa fa-caret-right" id="idStreamWedge17"></i></a></span><a name="a1413309260"></a><a class="aStreamTextLink" onclick="ecStream (17)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/10/14/#a1413309260">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel17">
-						<p><a name="a1413309260"></a><meta property="og:title" content="How to Permanently Set Link to Open in Lynx in TTYtter for PERL" /><span class="spPermalink"><a href="/2014/10/14/#a1413309260">#</a></span></p>
-						<p><a name="a1413309260"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl.html" /><span class="spPermalink"><a href="/2014/10/14/#a1413309260">#</a></span></p>
-						<p><a name="a1413309260"></a><meta property="og:description" content="TTYtter is a Linux command-line app for Twitter. I use it over SSH while at the office, so (as far as I can tell) I cannot open links into a GUI browser from within the app. " /><span class="spPermalink"><a href="/2014/10/14/#a1413309260">#</a></span></p>
-						<p><a name="a1413309260"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/10/14/#a1413309260">#</a></span></p>
-						<p><a name="a1413309260"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/10/14/#a1413309260">#</a></span></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/12/29/">Sunday, December 29<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (18)" ><i class="fa fa-caret-right" id="idStreamWedge18"></i></a></span><a name="a1388360625"></a><a class="aStreamTextLink" onclick="ecStream (18)">Using Launch Center Pro to Use TextExpander Snippets in TaskPaper for iOS</a><span class="spPermalink"><a href="/2013/12/29/#a1388360625">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel18">
-				<p><a name="a1388362262"></a><a href="https://twitter.com/share?text=Using%20Launch%20Center%20Pro%20to%20Use%20TextExpander%20Snippets%20in%20TaskPaper%20for%20iOS&url=http://blog.jeffreykishner.com/2013/12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/12/29/#a1388362262">#</a></span></p>
-				<p><a name="a1388360820"></a><a href="http://smilesoftware.com/apps/">TextExpander</a> for iOS recently had to change how it works in iOS 7, and currently <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> does not support snippets. [According to the Google group](https://groups.google.com/forum/#!searchin/taskpaper/textexpander/taskpaper/R1KqfUh9saU/znxS0IKaLmMJ), the team is working on it but the text editing apps (like WriteRoom) are higher priority.<span class="spPermalink"><a href="/2013/12/29/#a1388360820">#</a></span></p>
-				<p><a name="a1388361132"></a>I've come up with a workaround using <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. You can adapt this to your own needs. This action expands a TextExpander snippet within a TaskPaper search query, copies it to the clipboard, and opens my `todo` list in TaskPaper. If you're on your iOS device, you can tap on [this link](http://launchcenterpro.com/wgw2hr) to install it.  <span class="spPermalink"><a href="/2013/12/29/#a1388361132">#</a></span></p>
-				<p><a name="a1388361441"></a>Here is the URL of the action:<span class="spPermalink"><a href="/2013/12/29/#a1388361441">#</a></span></p>
-				<p><a name="a1388361457"></a>    launch://x-callback-url/clipboard?text=%40due%20%3C%20<ddue3>&x-success=taskpaper%3A%2F%2Fopen%2Ftodo.taskpaper<span class="spPermalink"><a href="/2013/12/29/#a1388361457">#</a></span></p>
-				<p><a name="a1388361460"></a>In TextExpander, I have a snippet called `ddue3` that uses the following TextExpander math: `%@+3D%Y-%m-%d`. This expands into YYYY-MM-DD three days from today. If today is 2013-12-29, the search query is `@due < 2014-01-01`. <span class="spPermalink"><a href="/2013/12/29/#a1388361460">#</a></span></p>
-				<p><a name="a1388361664"></a>TaskPaper uses a similar URL scheme to that of Writeroom's, so to open the app to my todo list, I use the x-success parameter from x-callback-url to go to `taskpaper://open/todo.taskpaper`. Then I just click on the search icon <i class="icon-search"></i> and paste the clipboard contents to see any tasks that are due before New Year's Day.<span class="spPermalink"><a href="/2013/12/29/#a1388361664">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/NaN/NaN/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/NaN/NaN/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" data-type="link" data-url="http://blog.jeffreykishner.com/2014/01/29/how-to-put-a-google-calendar-into-the-tiddlywiki5-sidebar.html" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/NaN/NaN/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/NaN/NaN/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
-			<p><a name="a1376425647"></a><expanded>false</expanded><span class="spPermalink"><a href="/NaN/NaN/NaN/#a1376425647">#</a></span></p>
-			<p><a name="a1376425652"></a></rule><span class="spPermalink"><a href="/NaN/NaN/NaN/#a1376425652">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/NaN/NaN/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/NaN/NaN/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
-			<p><a name="a1373916531"></a><no-icons>false</no-icons><span class="spPermalink"><a href="/NaN/NaN/NaN/#a1373916531">#</a></span></p>
-			<p><a name="a1373916538"></a></rule><span class="spPermalink"><a href="/NaN/NaN/NaN/#a1373916538">#</a></span></p>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/NaN/NaN/NaN/">undefined, undefined NaN<span class="spDateYearPart">, NaN</span></a></div>
-			</div>
-		</div>
-	</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool.html">Convert an Instagram Profile URL to an Instagram URL Scheme with Drafts, Launch Center Pro, and TextTool</a></div>
+		<p>If you have a profile that you frequently like to visit on Instagram on your iPhone, the quickest way to get there is via an URL scheme. The IG profile for Beyonce is <code>http://instagram.com/beyonce</code>, but if you tap on the following URL, it will bring you straight to her profile in the app: <code>instagram://user?username=beyonce</code>.</p>
 
-				</div>
-			<div class="divFargoStreamFooter">
-				<div>&copy; 2014 Jeffrey Kishner.</div>
-				<div>Last update: Mon, Dec  8, 2014 at 10:13 AM.</div>
-				<div><i></i></div>
-				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
+<p>I keep a list of favorite IG profiles in <a href="http://agiletortoise.com/drafts/">Drafts</a> but you can also put these links in a launcher like <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. </p>
+
+<p>To automate the conversion of the profile URL to the URL scheme, I have written two URL actions. To make this work, you will need Drafts, Launch Center Pro, and <a href="http://blackfoggames.com/TextTool/">TextTool</a>. (By the way, I am currently using Drafts 3. If you are using Drafts 4, then please <a href="https://agiletortoise.zendesk.com/hc/en-us/articles/202771400-Drafts-URL-Schemes">adjust the URL action accordingly</a> -- put a <code>4</code> after <code>drafts</code>.)</p>
+
+<p>The LCP action is as follows. (You can install it <a href="https://launchcenterpro.com/m0z2nb">here</a>.)</p>
+
+<p><code>texttool://x-callback-url/transform?text=[clipboard]&amp;method=split&amp;delimiter=/&amp;x-success={{drafts:///create?text=[[output]]&amp;action=ig-clipboard}}</code></p>
+
+<p>This action splits the profile URL at the <code>/</code> in TextTool, so that the username ends up on the 4th line. Then the output is sent to Drafts. You can install <a href="drafts://x-callback-url/import_action?type=URL&amp;name=ig-clipboard&amp;url=drafts%3A%2F%2F%2Fcreate%3Ftext%3D%7B%7B%28instagram%3A%2F%2Fuser%3Fusername%3D%5B%5Bline%7C4%5D%5D%29%7D%7D">this action</a> or create an URL action called <i>ig-clipboard</i>:</p>
+
+<p><code>drafts:///create?text={{(instagram://user?username=[[line|4]])}}</code></p>
+
+<p>This wraps line 4 of the draft in the IG URL scheme. I surround it by parens in case I want to precede it with square brackets to make it a Markdown link.</p>
+
+<h3>How to Make It Work</h3>
+
+<p>After you install these two actions, just copy an IG user profile to your clipboard, and tap on the <i>IG-clipboard</i> action in LCP. The conversion happens automatically, and you'll end up with the URL scheme in Drafts.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool">http://blog.jeffreykishner.com/2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">11/21/14; 03:22:07 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/11/18/.html"><img src="https://dl.dropboxusercontent.com/s/wtlsby926lukw28/2014-11-18-1140AM.jpg?dl=0"></a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">11/18/14; 11:41:33 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/11/18/.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/11/13/isDaveGrohlBoredOfTheFooFighters.html">Is Dave Grohl Bored of the Foo Fighters?</a></div>
+		<p>Foo Fighters is one of my favorite rock bands. I have been listening to <i>Sonic Highways</i> this week, and it just feels uninspired to me. The best hooks seem to be lifted from The Beatles or Jethro Tull. I suspect that Dave Grohl couldn't even bring himself to record another Foo Fighters album unless he built it around a documentary (which I haven't seen, because I don't have cable). I hope I am proven wrong after future listens, but I suspect that the Foo Fighters have lost their edge.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">11/13/14; 11:29:45 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/11/13/isDaveGrohlBoredOfTheFooFighters.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/11/07/i99repaircomReview.html">i99repair.com Review: ★★☆☆☆</a></div>
+		<p><img style="float: right; margin-left: 25px; margin-top: 15px; margin-right: 15px; margin-bottom: 15px;" src="https://dl.dropboxusercontent.com/s/48jqa2utavb7bpv/Photo%20Oct%2021%2C%202%2032%2052%20PM.jpg?dl=0">
+A couple of weeks ago I dropped my iPad mini and the screen cracked. I work in Manhattan, and although there are many local services that will repair screens, I was looking for an affordable solution -- over $150 seems like a of money to spend to replace a screen, given that I can get an entire Amazon Fire tablet for that price. </p>
+
+<p>I eventually went with i99repair.com, because their price was only $110, and I found a $5 discount code on their <a href="https://www.facebook.com/pages/IMaster-Repair/278546205501907">Facebook business page</a>. (In fact, I only felt comfortable enough to mail my iPad to Iowa because the Facebook comments assuaged my anxiety that i99repair might have been a scam.)</p>
+
+<p>After I paid, the email receipt stated that I would be notified once they received my iPad. I shipped it First Class (with tracking code) for under $15. i99repair received it on a Saturday, but I did not hear from them. I left a voicemail in the middle of the following week, and having not received a reply, I emailed them. They replied that they received it and were almost done with it. That Friday, I received an automated email with a USPS tracking code for the shipped, repaired iPad. I received it the following Tuesday.</p>
+
+<p>Excited, I opened my package, only to find that the Home button did not work. (The square on the Home button is even slightly askew.) I emailed i99repair about this, and they wrote, <i>Ok send it back.</i> (I have since replied, asking if they would pay for shipping, and as of this writing have not received a response.)</p>
+
+<p>The screen replacement is fine, although there is a small speck <i>underneath</i> it which I know wasn't there before. </p>
+
+<p>Needless to say, I was upset. I did some googling and found that there is a virtual button that can be activated via Assistive Touch, which can be found in Accessibility under the Settings > General. It is a persistent icon that overlays the screen, and that can be dragged just about anywhere. When I tap on it, I can tap on Home or activate Siri or access Control Center or Notification Center.</p>
+
+<p>One thing I learned being without my iPad mini for 1.5 weeks is that <i>I really love my iPad</i>. I didn't particularly like reading The New Yorker on my iPhone while on the subway. So I had to decide: re-ship my still-broken iPad to Iowa and be without it for <i>another</i> 1.5 weeks, or just use it with Assistive Touch. For the past few days, I have been using the virtual button, and have been OK with it. I do the four finger upward swipe to switch between frequently-used apps, so I rarely have to go Home to open an app. And I rarely use Siri on my iPad anyway. </p>
+
+<p>All in all, I regret having sent my iPad to i99repair.com, and I would not recommend them. Their reply to my complaint was rude, and they shouldn't have even sent my iPad back to me with a non-functioning Home button in the first place. If they had replied with something to the effect of, "I am so sorry that we made a mistake. Please mail it back (we will compensate you for shipping) and we will make it a priority to fix the problem," I would have felt much better about the situation.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/11/07/i99repaircomReview">http://blog.jeffreykishner.com/2014/11/07/i99repaircomReview</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">11/07/14; 09:37:38 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/11/07/i99repaircomReview.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/28/theUberOfGentlemanCompanionsMatterMediumcommentThisEssayByBoobsradleyIsVeryFunny.html">[The Uber of Gentleman Companions] — Matter — Medium.<br><i class="fa fa-comment-o"></i>  This essay by @BoobsRadley is very funny.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/28/14; 02:29:42 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/28/theUberOfGentlemanCompanionsMatterMediumcommentThisEssayByBoobsradleyIsVeryFunny.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript.html">Get the URL Scheme for a SoundCloud Track With This Script</a></div>
+		<p>In July, I showed how you can <a href="http://blog.jeffreykishner.com/2014/07/08/howToGetTheSoundcloudUrlSchemesForUsersAndTracks.html">get the URL scheme for a SoundCloud user or track from an embed code</a> so that you can open right into that track or user in the SoundCloud iOS app from a launcher like <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. Today I decided to automate the process for a track URL.</p>
+
+<p>You can use the script <a href="http://javascript.jeffreykishner.com/soundcloudTrack.html">here</a>.</p>
+
+<p>To get the embed code, go to a track on the desktop site (make sure it's not a playlist); click on the Share button; click on the Embed tab; and copy the code within the Code &amp; Preview box and copy it to your clipboard. Paste it into the text area in my script, click the button, and get the URL scheme.</p>
+
+<p>I have not done many test cases; I am assuming all track IDs are the same length. If this script doesn't work for you, please report in the comments section.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript">http://blog.jeffreykishner.com/2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/24/14; 01:51:17 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/21/linkPhilosophyTechSupportExistentialComicsSmirk.html"><i class="fa fa-fa fa-external-link"></i> [Philosophy Tech Support] - Existential Comics. <img title=':smirk:' alt=':smirk:' class='emoji' src='http://fargo.io/code/emojify/images/emoji/smirk.png' align='absmiddle' /></a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/21/14; 08:47:53 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/21/linkPhilosophyTechSupportExistentialComicsSmirk.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/20/linkDouchebagTheWhiteRacialSlurWeveAllBeenWaitingFor.html"><i class="fa fa-fa fa-external-link"></i> "Douchebag": The [White Racial Slur] We’ve All Been Waiting For.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/20/14; 01:00:17 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/20/linkDouchebagTheWhiteRacialSlurWeveAllBeenWaitingFor.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/18/linkTheShondaRhimesRevolutionFinishingWhatTheSopranosStartedcommentInsightfulEssayByMarkHarris.html"><i class="fa fa-fa fa-external-link"></i> The [Shonda Rhimes Revolution]: Finishing What ‘The Sopranos’ Started<br><i class="fa fa-comment-o"></i>  Insightful essay by Mark Harris.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/18/14; 12:58:00 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/18/linkTheShondaRhimesRevolutionFinishingWhatTheSopranosStartedcommentInsightfulEssayByMarkHarris.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/17/linkAnitaSarkeesianOnGamergateWereGoingToFixThisquoteWhenIWasInPortlandForMyTalkAtTheXoxoFestivalThisLittleBoyCameUpToMeAndSaidHiImAFeministGamerHowDoYouStopDoingThisWorkAfterThat.html"><i class="fa fa-fa fa-external-link"></i> Anita Sarkeesian on GamerGate: ['We're Going to Fix This'].<br><i class="fa fa-quote-left"></i>  When I was in Portland for my talk at the XOXO Festival, this little boy came up to me and said, “Hi, I’m a feminist gamer.” How do you stop doing this work after that?</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/17/14; 03:11:43 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/17/linkAnitaSarkeesianOnGamergateWereGoingToFixThisquoteWhenIWasInPortlandForMyTalkAtTheXoxoFestivalThisLittleBoyCameUpToMeAndSaidHiImAFeministGamerHowDoYouStopDoingThisWorkAfterThat.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/17/linkHowToGetAheadBySoundingLessFeminine.html"><i class="fa fa-fa fa-external-link"></i> [How to Get Ahead By Sounding Less Feminine.]</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/17/14; 02:10:52 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/17/linkHowToGetAheadBySoundingLessFeminine.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/17/linkItHappenedToMeIveBeenForcedOutOfMyHomeAndAmLivingInConstantFearBecauseOfRelentlessDeathThreatsFromGamergateBySpacekatgal.html"><i class="fa fa-fa fa-external-link"></i> IT HAPPENED TO ME: I've Been Forced Out Of My Home And Am Living In Constant Fear Because Of [Relentless Death Threats From Gamergate] (by @spacekatgal)</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/17/14; 10:45:18 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/17/linkItHappenedToMeIveBeenForcedOutOfMyHomeAndAmLivingInConstantFearBecauseOfRelentlessDeathThreatsFromGamergateBySpacekatgal.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/16/linkWhatResearchSaysAboutCatsTheyreSelfishUnfeelingEnvironmentallyHarmfulCreaturesVox.html"><i class="fa fa-fa fa-external-link"></i> What research says about cats: [they're selfish, unfeeling, environmentally harmful creatures] (Vox)<br><i class="fa fa-comment-o"></i>  I like 'em anyway.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/16/14; 12:47:18 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/16/linkWhatResearchSaysAboutCatsTheyreSelfishUnfeelingEnvironmentallyHarmfulCreaturesVox.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/16/linkDearWhitePeopleAboutRacialHypocrisyAtACollegecommentRarelyHaveIReadSuchAPositiveReviewByAoScott.html"><i class="fa fa-fa fa-external-link"></i> ‘[Dear White People],’ About Racial Hypocrisy at a College.<br><i class="fa fa-comment-o"></i>  Rarely have I read such a positive review by A.O. Scott.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/16/14; 10:29:35 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/16/linkDearWhitePeopleAboutRacialHypocrisyAtACollegecommentRarelyHaveIReadSuchAPositiveReviewByAoScott.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/15/importASingleDraftFromDrafts3IntoDrafts4.html">Import a Single Draft from Drafts 3 Into Drafts 4</a></div>
+		<p>Just create this URL action, title it something like <i>Send to Drafts 4</i>: <code>drafts4:///create?text=[[draft]]</code></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/15/14; 12:35:32 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/15/importASingleDraftFromDrafts3IntoDrafts4.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX.html">How to Open Links in a Non-Default Browser from TTYtter Running on Mac OS X</a></div>
+		<p><a href="http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl">Yesterday</a> I blogged about opening links from TTYtter for PERL in Lynx while running the app over SSH. This morning I decided to just run the app locally on my work computer. Due to IT restrictions, I don't have access to .profile, so I just <a href="http://www.floodgap.com/software/ttytter/dl.html">downloaded the text file</a> to a local directory, changed the name of the file to <i>twitter</i>, made it executable by typing <code>chmod +x twitter</code>, and went through the OAuth process. Now while in that directory I can just type <code>./twitter</code> to run the app. </p>
+
+<p>A benefit of running the app on my local machine is that I can open URLs in a GUI web browser. The developer suggests that MAC OS X users can <code>/set</code> the <code>urlopen</code> parameter to <code>open %U</code>. For work reasons, my default browser is not the browser I use for personal browsing, so I went into the text file, and changed</p>
+
+<p><code>$urlopen ||= 'echo %U';</code></p>
+
+<p>to</p>
+
+<p><code>$urlopen ||= 'open -a "Google Chrome" %U';</code></p>
+
+<p>Now I can just type <code>/url</code> followed by the thread ID, and the first link in the tweet will open in Chrome.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX">http://blog.jeffreykishner.com/2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/15/14; 10:30:43 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/15/howToOpenLinksInANondefaultBrowserFromTtytterRunningOnMacOsX.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/15/imSoGladThatV4OfDraftsRunsAsASeparateAppThanV3AndThatTheyUseDistinctUrlSchemesICanUseV3OnMyIpadToSyncViaSimperiumWithMyIphoneWhichIHaveNotUpgradeToIos8AndStillBeAbleToPlayWithTheNewVersionOnMyIpad.html">I'm so glad that v4 of <a href="http://agiletortoise.com/drafts/">Drafts</a> runs as a separate app than v3, and that they use distinct URL schemes. I can use v3 on my iPad to sync via Simperium with my iPhone (which I have not upgraded to iOS8) and still be able to play with the new iOS8-only version on my iPad.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/15/14; 09:55:03 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/15/imSoGladThatV4OfDraftsRunsAsASeparateAppThanV3AndThatTheyUseDistinctUrlSchemesICanUseV3OnMyIpadToSyncViaSimperiumWithMyIphoneWhichIHaveNotUpgradeToIos8AndStillBeAbleToPlayWithTheNewVersionOnMyIpad.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl.html">How to Permanently Set a Link to Open in Lynx in TTYtter for PERL</a></div>
+		<p><a href="http://www.floodgap.com/software/ttytter/">TTYtter</a> is a Linux command-line app for Twitter. I use it over SSH while at the office, so (as far as I can tell) I cannot open links into a GUI browser from within the app. </p>
+
+<p>In TTYtter, one types <code>/url</code> followed by an alphanumeric string to open the first link mentioned in a tweet. By default, <code>/url</code> is set to <code>echo %U</code> which just "prints" the URL out in the terminal. This is not very useful. One can set the value by typing <code>/set urlopen</code> followed by the app in which one wants to view the URL. I have been typing <code>/set urlopen lynx --accept-all-cookies %U</code> at the beginning of every session, but this gets tiresome.</p>
+
+<p>I know nothing of PERL, but I know that this app is just one big executable text file. So I just opened it in a text editor, searched for <code>urlopen</code> and changed</p>
+
+<p><code>$urlopen ||= 'echo %U';</code></p>
+
+<p>to</p>
+
+<p><code>$urlopen ||= 'lynx --accept-all-cookies %U';</code></p>
+
+<p>Now I can view the link in the Lynx browser (and without having to accept cookies each and every time) without having to set the variable again.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl">http://blog.jeffreykishner.com/2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/14/14; 12:38:34 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/14/howToPermanentlySetLinkToOpenInLynxInTtytterForPerl.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/13/iBroughtABananaToWorkInsteadOfEatingItIBoughtAPackageOfChocolateChocolatechipCookiesAndAte12TheBag.html">I brought a banana to work. Instead of eating it, I bought a package of chocolate chocolate-chip cookies and ate 1/2 the bag. </a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/13/14; 04:22:38 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/13/iBroughtABananaToWorkInsteadOfEatingItIBoughtAPackageOfChocolateChocolatechipCookiesAndAte12TheBag.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/10/subscribeToLotsAndLotsOfFargoioBlogs.html">Subscribe to Lots and Lots of Fargo.io Blogs</a></div>
+		<p>I've compiled an OPML file including the RSS feeds of any blog generated by the Fargo.io CMS that I could find.</p>
+
+<p>You can view it at <a href="https://dl.dropboxusercontent.com/s/1zmfdb2txm9j04p/feedfargobloggers.opml?dl=0">https://dl.dropboxusercontent.com/s/1zmfdb2txm9j04p/feedfargobloggers.opml?dl=0</a>.</p>
+
+<p>You may use this for any purpose you like. If you're a Fargo blogger and would like to be included in this OPML file, please email me.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/10/10/subscribeToLotsAndLotsOfFargoioBlogs">http://blog.jeffreykishner.com/2014/10/10/subscribeToLotsAndLotsOfFargoioBlogs</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/10/14; 04:48:03 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/10/subscribeToLotsAndLotsOfFargoioBlogs.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/10/linkHomelessOutreachInVolumesBooksByBikeForOutsidePeopleInOregon.html"><i class="fa fa-fa fa-external-link"></i> Homeless Outreach in Volumes: [Books by Bike for ‘Outside’ People] in Oregon.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/10/14; 01:36:57 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/10/linkHomelessOutreachInVolumesBooksByBikeForOutsidePeopleInOregon.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/09/linkWhatIfYouJustHateMakingDinnercommentGoodReadingFromVirginiaHeffernan.html"><i class="fa fa-fa fa-external-link"></i> [What if You Just Hate Making Dinner?]<br><i class="fa fa-comment-o"></i>  Good reading from Virginia Heffernan.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/09/14; 02:44:21 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/09/linkWhatIfYouJustHateMakingDinnercommentGoodReadingFromVirginiaHeffernan.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/08/linkTroubleAtTheKoolaidPointSeriousPony.html"><i class="fa fa-fa fa-external-link"></i> [Trouble at the Koolaid Point] — Serious Pony.<br><i class="fa fa-comment-o"></i>  a woman should be able to feel safe to express herself w/o harassment</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/08/14; 03:02:46 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/08/linkTroubleAtTheKoolaidPointSeriousPony.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="2014/10/08/linkCopsPepperSprayBlackTeenInHisOwnLivingRoomAfterMistakingHimForBurglar.html"><i class="fa fa-fa fa-external-link"></i> [Cops Pepper Spray Black Teen In His Own Living Room] After Mistaking Him For Burglar.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">10/08/14; 01:32:27 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="2014/10/08/linkCopsPepperSprayBlackTeenInHisOwnLivingRoomAfterMistakingHimForBurglar.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Tue, Mar 31, 2015 at  2:04 PM</p>
+					
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, March 31, 2015 at  2:04 PM</span>.</div>
+					</div>
 				</div>
 			</div>
 		<script>
-			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>
