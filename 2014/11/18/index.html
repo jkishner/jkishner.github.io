@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Using Launch Center Pro to Use TextExpander Snippets in TaskPaper for iOS</title>
+		<title>November 18</title>
 		<meta charset='utf-8'> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
@@ -43,8 +43,8 @@
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "readable",
-    "type": "outline",
-    "slogan": "When in doubt, blog.",
+    "type": "bloghome",
+    "slogan": "Pay no attention to the man behind the curtain.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -69,10 +69,10 @@
     "maxStreamDays": "14",
     "flMarkdown": true,
     "leftIndent": 0,
-    "text": "Using Launch Center Pro to Use TextExpander Snippets in TaskPaper for iOS",
-    "created": "Sun, 29 Dec 2013 23:43:45 GMT",
+    "text": "November 18",
+    "created": "Tue, 18 Nov 2014 16:41:33 GMT",
     "description": "",
-    "path": "2013/12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos",
+    "path": "2014/11/18",
     "subheadColor": "white",
     "flMapHeader": "false",
     "mapLatitude": "40.774295",
@@ -87,15 +87,13 @@
     "streamVersion": "2",
     "flEmojify": "true",
     "authorGithubAccount": "jkishner",
-    "name": "usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos",
+    "name": "18",
     "icon": "calendar",
-    "isFeedItem": "true",
-    "isComment": "false",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Tue Mar 31 2015 13:50:34 GMT-0400 (EDT)",
+    "now": "Tue Mar 31 2015 13:50:04 GMT-0400 (EDT)",
     "copyright": "&copy; 2015 Jeffrey Kishner.",
-    "url": "http://blog.jeffreykishner.com/2013/12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos.html"
+    "url": "http://blog.jeffreykishner.com/2014/11/18.html"
 }; //12/12/13 by DW
 		</script>
 		<style>
@@ -125,7 +123,7 @@
 					margin-bottom: 5px;
 					}
 				.divPrevNext {
-					font-size: 1.2em;
+					float: none;
 					}
 				.divBreadcrumbs {
 					display: none;
@@ -138,95 +136,6 @@
 				.spSlogan {
 					display: none;
 					}
-				}
-			</style>
-		<style>
-			.divOutlineImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divTextInFrontOfImage {
-				background-color: white; 
-				opacity: .90;
-				padding: 1.5em;
-				border:2px solid whitesmoke;
-				}
-			.spSlogan {
-				display: none;
-				}
-			</style>
-		<style>
-			.divOutlineNoMarkdown {
-				font-size: 20px;
-				line-height: 150%;
-				}
-			.divOutlineNoMarkdown li {
-				line-height: 150%;
-				}
-			.divOutlineNoMarkdown li {
-				}
-			.divOutlineNoMarkdown .ulOutlineList {
-				padding: 0;
-				margin: 0;
-				}
-			.divOutlineNoMarkdown .liOutline {
-				list-style-type: none;
-				margin-bottom: .5em;
-				}
-			.divOutlineNoMarkdown .divOutlineHead {
-				font-weight: bold;
-				margin-top: 13px;
-				margin-bottom: 13px;
-				}
-			.divOutlineNoMarkdown .liHasSubs ul {
-				}
-			.divOutlineNoMarkdown .liNoSubs {
-				}
-			.divOutlineNoMarkdown .spOutlineIcon {
-				margin-right: -11px;
-				}
-			.divOutlineNoMarkdown .aOutlineWedgeLink {
-				color: black;
-				}
-			.divOutlineNoMarkdown .aOutlineWedgeLink i {
-				color: black;
-				cursor: pointer;
-				position: relative;
-				width: .5em;
-				left: -1em;
-				}
-			.divOutlineNoMarkdown .aOutlineTextLink {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.divOutlineNoMarkdown .spPermalink {
-				}
-			.divOutlineNoMarkdown .spPermalink a {
-				text-decoration: none;
-				color: purple;
-				font-size: 10px;
-				font-weight: normal;
-				vertical-align: top;
-				margin-left: 3px;
-				}
-			.divOutlineNoMarkdown code {
-				display: inline;
-				border: none;
-				color: black;
-				font-size: .85em;
 				}
 			</style>
 		<script>
@@ -253,31 +162,6 @@
 		}
 	</style>
 		
-		<script>
-			function ecOutline (idnum) { //7/12/14 by DW
-				var c = document.getElementById ("idOutlineWedge" + idnum), idUL = "#idOutlineLevel" + idnum;
-				if (c.className == "fa fa-caret-down") {
-					c.className = "fa fa-caret-right";
-					c.style.color = "black";
-					$(idUL).slideUp (75);
-					}
-				else {
-					c.className = "fa fa-caret-down";
-					c.style.color = "silver";
-					$(idUL).slideDown (75);
-					}
-				}
-			function startupOutlineTemplate () {
-				if ((pagetable.backgroundImage != undefined) && (pagetable.backgroundImage.length > 0)) {
-					var textInFront = document.getElementById ("idTextInFrontOfImage"); 
-					textInFront.className = "divTextInFrontOfImage";
-					
-					var outlineImage = document.getElementById ("idOutlineImage"); 
-					outlineImage.className = "divOutlineImage";
-					outlineImage.style.backgroundImage = "url(\"" + pagetable.backgroundImage + "\")";
-					}
-				}
-			</script>
 		</head>
 	<body>
 		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
@@ -347,45 +231,33 @@
 		</div>
 
 		<div class="divFargoOutlineBody">
-			<div id="idOutlineImage">
-				<div id="idOutlineContainer" class="container">
-					<div id="idTextInFrontOfImage">
-						<div class="divHeadlineUnit" id="idHeadlineUnit">
-							<div class="divPrevNext">
-								<div class="divPrevNextLinks"><a href="http://blog.jeffreykishner.com/2014/01/03/working-with-markdown-in-taskpaperwebkitendfullscreen.html" title="Working with Markdown in TaskPaper" ><i class="fa fa-arrow-left" style="color: black"></i></a>&nbsp;&nbsp;<a href="http://blog.jeffreykishner.com/2013/12/26/open-a-taskpaper-url-in-safari-using-launch-center-pro-and-texttoolwebkitendfullscreen.html" title="Open a TaskPaper URL in Safari Using Launch Center Pro and TextTool" ><i class="fa fa-arrow-right" style="color: black"></i></a></div>
-								</div>
-							<div class="divBreadcrumbs" id="idBreadcrumbs">
-								<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013">2013</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013/12">December 2013</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2013/12/29">December 29</a></li></ul>
-								</div>
-							<h2>Using Launch Center Pro to Use TextExpander Snippets in TaskPaper for iOS</h2>
-							</div>
-						<div class="divFargoMarkdown" id="idFargoMarkdown"><p><a href="https://twitter.com/share?text=Using%20Launch%20Center%20Pro%20to%20Use%20TextExpander%20Snippets%20in%20TaskPaper%20for%20iOS&amp;url=http://blog.jeffreykishner.com/2013/12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos.html" target="_blank">Tweet This Post</a></p>
-
-<p><a href="http://smilesoftware.com/apps/">TextExpander</a> for iOS recently had to change how it works in iOS 7, and currently <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> does not support snippets. <a href="https://groups.google.com/forum/#!searchin/taskpaper/textexpander/taskpaper/R1KqfUh9saU/znxS0IKaLmMJ">According to the Google group</a>, the team is working on it but the text editing apps (like WriteRoom) are higher priority.</p>
-
-<p>I've come up with a workaround using <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. You can adapt this to your own needs. This action expands a TextExpander snippet within a TaskPaper search query, copies it to the clipboard, and opens my <code>todo</code> list in TaskPaper. If you're on your iOS device, you can tap on <a href="http://launchcenterpro.com/wgw2hr">this link</a> to install it.  </p>
-
-<p>Here is the URL of the action:</p>
-
-<pre><code>launch://x-callback-url/clipboard?text=%40due%20%3C%20&lt;ddue3&gt;&amp;x-success=taskpaper%3A%2F%2Fopen%2Ftodo.taskpaper
-</code></pre>
-
-<p>In TextExpander, I have a snippet called <code>ddue3</code> that uses the following TextExpander math: <code>%@+3D%Y-%m-%d</code>. This expands into YYYY-MM-DD three days from today. If today is 2013-12-29, the search query is <code>@due &lt; 2014-01-01</code>. </p>
-
-<p>TaskPaper uses a similar URL scheme to that of Writeroom's, so to open the app to my todo list, I use the x-success parameter from x-callback-url to go to <code>taskpaper://open/todo.taskpaper</code>. Then I just click on the search icon <i class="icon-search"></i> and paste the clipboard contents to see any tasks that are due before New Year's Day.</p></div>
-						<div class="divFooterText">
-							<hr>
-							<p style="float: right;">Last built: Tue, Mar 31, 2015 at 12:50 PM</p>
-							<script>var disqus_identifier = "Sun, 29 Dec 2013 23:43:45 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
-							<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Sunday, December 29, 2013 at  6:43 PM</span>.  <span class="spSlogan" style="float: right;"><i></i></span></div>
-							</div>
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014/11">November 2014</a></li></ul>
 						</div>
-						</div>
+					<h2 id="idBlogHomePageTitle">November 18</h2>
+					</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href=".html"><img src="https://dl.dropboxusercontent.com/s/wtlsby926lukw28/2014-11-18-1140AM.jpg?dl=0"></a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">11/18/14; 11:41:33 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href=".html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Tue, Mar 31, 2015 at 12:50 PM</p>
+					<script>var disqus_identifier = "Tue, 18 Nov 2014 16:41:33 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, November 18, 2014 at 11:41 AM</span>.</div>
+					</div>
 				</div>
 			</div>
 		<script>
 			startupFargoPlatform ();
-			startupOutlineTemplate ();
 			</script>
 		</body>
 	</html>

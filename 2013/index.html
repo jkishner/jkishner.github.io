@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>2013</title>
-		<meta charset="utf-8"> 
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
@@ -15,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
+    "opmlUrl": "",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 16 Oct 2014 19:47:27 GMT",
-    "opmlExpansionState": "1,2,3,7,8,10,18,19,26,27,36,37,43,45,46,51,52,59,61,66,69,70,77,78,89,90,96,99,103,104,111,119,120,127,128,131,132,138,139,142,143,145,148,158,159,165,178,180,181,191,192,193,194,197,210,211,212,214,228,229,230,238,248",
+    "opmlDateModified": "Tue, 31 Mar 2015 17:50:02 GMT",
+    "opmlExpansionState": "1,2,3,4,6,7,8,20,21,27,29,30,32,33,43,44,65,66,67,75,85,94,96,97,107,109,112,113,129,130",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -35,15 +36,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "3",
+    "opmlLastCursor": "63",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "readable",
-    "type": "stream",
-    "slogan": "Reallll soooon now...",
+    "type": "bloghome",
+    "slogan": "Ask not what the Internet can do for you...",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -69,7 +70,7 @@
     "flMarkdown": true,
     "leftIndent": 0,
     "text": "2013",
-    "created": "Thu, 16 Oct 2014 19:47:27 GMT",
+    "created": "Tue, 31 Mar 2015 17:50:02 GMT",
     "description": "",
     "path": "2013",
     "subheadColor": "white",
@@ -90,611 +91,53 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Oct 16 2014 15:48:05 GMT-0400 (EDT)",
-    "copyright": "&copy; 2014 Jeffrey Kishner.",
+    "now": "Tue Mar 31 2015 13:50:33 GMT-0400 (EDT)",
+    "copyright": "&copy; 2015 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2013.html"
 }; //12/12/13 by DW
 		</script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
-		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
-		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
-		
-		
-		<meta property="og:url" content="http://blog.jeffreykishner.com/2013.html" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="2013" />
-		<meta property="og:description" content="" />
-		<meta property="og:image" content="" />
-		<meta property="og:site_name" content="Jeffrey Kishner" />
-		
-		<meta name="twitter:card" value="summary">
-		<meta name="twitter:title" content="2013" />
-		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2013.html" />
-		<meta name="twitter:description" content="" />
-		<meta name="twitter:image" content=""/>
-		<meta name="twitter:site" value="kishner">
-		
 		<style>
-			body {
-				background-color: whitesmoke;
-				}
-			.divPageContainer {
-				}
-			.navbar {
-				font-size: 17px;
-				line-height: 140%;
-				}
-			.navbar-inner {
-				min-height: 60px;
-				}
-			.navbar .nav > li > a {
-				padding-top: 17px;
-				}
-			.navbar .brand {
-				padding-top: 13px;
-				padding-left: 25px;
-				}
-			.navbar-container {
-				width: 1000px !important;
-				}
-			.divFargoStreamBody {
-				}
-			.divBodyText {
-				}
-			.divStreamTopSpacer {
-				}
-			.divStreamDay {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				margin-left: 0;
-				margin-top: 0;
-				border-top: 1px solid silver;
-				z-index: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				}
-			.divStreamDayText {
-				font-family: 'Vollkorn', serif;
-				font-size: 24px;
-				line-height: 145%;
-				padding-top: 5%;
-				padding-bottom: 10%;
-				
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				
-				vertical-align: top;
-				height: 100%;
-				margin-top: 30px;
-				}
-			.divStreamDayHead {
-				font-family: 'Ubuntu', sans-serif;
-				font-size: 36px;
-				font-weight: bold;
-				margin-top: .1em;
-				-webkit-margin-after: .75em;
-				}
-			.divStreamDayImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divMapCanvas {
-				height: 100%; 
-				width: 100%; 
-				position: absolute; 
-				right: 0; 
-				z-index: -10;
-				}
-			.divTextInFrontOfImage {
-				background-color: whitesmoke; 
-				opacity: .98;
-				padding: 1.5em;
-				border:2px solid gainsboro;
-				}
-			.spStreamArrows {
-				font-size: .8em;
-				color: silver;
-				margin-right: 15px;
-				}
-			.divStreamDay p {
-				margin-bottom: .3em;
-				}
-			.divTextContainer {
-				padding: 0;
-				}
-			.divBanner {
-				margin-bottom: -1px;
-				}
-			.divLevel {
-				margin-left: 20px;
-				display: none;
-				}
-			h4 {
-				font-family: "Georgia";
-				font-size: 18px;
-				-webkit-margin-after: 5px;
-				}
-			.divStreamSectionHead {
-				font-family: Ubuntu;
-				margin-top: 5px;
-				font-weight: bold;
-				-webkit-margin-after: 5px;
-				}
-			.spPermalink {
-				margin-left: 3px;
-				}
-			.spPermalink a {
-				text-decoration: none;
-				color: purple;
-				font-size: 13px;
-				font-weight: none !important;
-				}
-			.divDaySeparator {
-				height: 0;
-				}
-			.aStreamWedgeLink {
-				color: black;
-				}
-			.aStreamWedgeLink i {
-				font-size: .85em;
-				color: black;
-				cursor: pointer;
-				}
-			.aStreamDayLink {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.aStreamDayLink a:link, .aStreamDayLink a:visited {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divStreamIcon {
-				float: left;
-				width: 20px;
-				margin-left: -20px;
-				margin-right: 0;
-				}
-			.spStreamArrows {
-				float: left;
-				width: 36px;
-				margin-left: -36px;
-				margin-right: 0;
-				display: none;
-				}
-			.aStreamArrowsLink {
-				font-size: .75em;
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divFargoStreamFooter {
-				font-family: 'Ubuntu', sans-serif;
-				line-height: 200%;
-				height: 400px;
-				background-color: whitesmoke;
-				border-top: 1px solid silver;
-				text-align: center;
-				padding-top: 15px;
-				}
-			.divFargoSocialMediaLinks {
-				position: fixed;
-				z-index: 1;
-				}
-			.divNavSocialMediaLinks {
-				margin-top: 17px;
-				margin-left: 1em;
-				font-size: .9em;
-				}
-			.divNavSocialMediaLinks .nav>li>a {
-				display: inline;
-				}
-			.divNavSocialMediaLinks .aSocialMediaLink {
-				letter-spacing: 14px;
-				}
-			.aStreamTextLink {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.divFargoStreamComments {
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				margin-bottom: 400px;
-				margin-top: 10px;
-				}
-			.divDisqusComments { 
-				margin-top: 5px !important;
-				}
-			</style>
-		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.divPageContainer {
-					}
-				.navbar {
+				.navbar .nav>li {
 					display: none;
-					}
-				.divBodyText {
-					}
-				.divTextContainer {
-					margin-top: -40px;
-					}
-				.divStreamTopSpacer {
-					display: none;
+					height: 0;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.divStreamDayHead {
-					font-size: 22px;
+				.container {
+					margin-top: 10px;
+					width: 90%;
 					}
-				.divStreamSectionHead {
-					margin-top: 8px;
-					-webkit-margin-after: 8px;
-					}
-				.divStreamDayText {
+				.divFargoMarkdown p {
 					font-size: 17px;
-					padding-left: 8%;
-					padding-right: 7%;
-					width: 85%;
+					line-height: 140%;
 					}
-				.aStreamWedgeLink i {
-					font-size: 1.1em;
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
 					}
-				.divStreamIcon {
-					width: 14px;
-					margin-left: -14px;
+				.divHeadlineUnit {
+					margin-bottom: 5px;
 					}
-				.spPermalink {
+				.divPrevNext {
+					float: none;
+					}
+				.divBreadcrumbs {
 					display: none;
-					}
-				.divFargoStreamFooter {
 					font-size: 15px;
-					line-height: 170%;
 					}
-				.divTextInFrontOfImage {
-					width: 80% !important;
-					margin-left: auto;
-					margin-right: auto;
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
 					}
-				.spDateYearPart {
+				.spSlogan {
 					display: none;
 					}
-				.divPictureViewer .modal {
-					left: auto;
-					width: auto;
-					margin-left: auto;
-					margin-right: auto;
-					}
-				.divLevel {
-					margin-left: 0;
-					}
 				}
 			</style>
-		<style> /* styles for tablet */
-			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-				.divPageContainer {
-					}
-				.navbar .nav > li > a {
-					padding-right: 7px;
-					}
-				}
-			</style>
-		
-		<script>
-			var flSetupDisqusThread = false;
-			
-			var colorsArray = [
-				"white",
-				"whitesmoke",
-				"ghostwhite",
-				"gainsboro" 
-				];
-			function closeDisqusThread () {
-				$("#idDisqusDialog").modal ("hide");
-				}
-			function openDisqusThread () {
-				function getCommentHtml () {
-					var id = "", hidingCode  = "", visibleStyle = "";
-					if (pagetable.opmlUrl != undefined) {
-						id += pagetable.opmlUrl;
-						}
-					if (pagetable.created != undefined) {
-						id += pagetable.created;
-						}
-					if (id.length > 0) {
-						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
-						}
-					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
-					return (code.replace (/&lt;/g,'<'));
-					}
-				if (!flSetupDisqusThread) {
-					var s = 
-						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
-					$("body").prepend (s)
-					flSetupDisqusThread = true;
-					}
-				$("#idDisqusCode").html (getCommentHtml ());
-				$("#idDisqusDialog").modal ("show");
-				}
-			
-			
-			function getdaynum (theDate) {
-				var year = theDate.getFullYear ();
-				var onejan = new Date (year, 0, 1);
-				return (Math.ceil ((theDate - onejan) / 86400000));
-				}
-			function ecStream (idnum) {
-				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
-				if (c.className == "fa fa-caret-down") {
-					c.className = "fa fa-caret-right";
-					$(idUL).slideUp (75);
-					}
-				else {
-					c.className = "fa fa-caret-down";
-					$(idUL).slideDown (75);
-					}
-				}
-			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
-				var mapCanvas = document.getElementById (idmap);
-				if (mapCanvas != null) {
-					var mapOptions = {
-						center: new google.maps.LatLng (maplat, maplong),
-						zoom: Number (mapzoom),
-						panControl: false,
-						zoomControl: false,
-						mapTypeControl: false,
-						scaleControl: false,
-						streetViewControl :false,
-						overviewMapControl: false,
-						rotateControl: false,
-						mapTypeId: maptype
-						};
-					var map = new google.maps.Map (mapCanvas, mapOptions);
-					}
-				}
-			
-			function turnOffImages () { //5/18/14 by DW
-				$(".divStreamDayImage").css ("background-image", "");
-				localStorage.flTurnImagesOff = "true";
-				}
-			function turnOffImagesCommand () {
-				confirmDialog ("Turn off images?", function () {
-					localStorage.flTurnImagesOff = "true";
-					location.reload (true);
-					});
-				}
-			function turnOnImagesCommand () {
-				confirmDialog ("Turn images on?", function () {
-					localStorage.flTurnImagesOff = "false"; 
-					location.reload (true);
-					});
-				}
-			
-			function startup () {
-				var streamVersion = 1; //5/20/14 by DW
-				var flPlainOutline; //5/20/14 by DW
-				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
-				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
-				
-				//set streamVersion -- 5/20/14 by DW
-					if (pagetable.streamVersion != undefined) {
-						var x = parseInt (pagetable.streamVersion);
-						if (!isNaN (x)) {
-							streamVersion = x;
-							}
-						}
-				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
-					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
-						localStorage.removeItem ("flImagesOff")
-						}
-					if (localStorage.flTurnImagesOff == undefined) {
-						if (streamVersion > 1) {
-							localStorage.flTurnImagesOff = "false";
-							}
-						}
-					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
-				//every day gets a background color, image, map or -- ??
-					if (!flPlainOutline) {
-						var ixcolorarray = 0, ctmaps = 0;
-						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
-							var flSetColor = true;
-							
-							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
-								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
-								flSetColor = false;
-								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
-								
-								//set up map parameters
-									maplat = $(this).data ("maplatitude");
-									if (maplat == undefined) {
-										maplat = pagetable.mapLatitude;
-										}
-									maplong = $(this).data ("maplongitude");
-									if (maplong == undefined) {
-										maplong = pagetable.mapLongitude;
-										}
-									maptype = $(this).data ("maptype");
-									if (maptype == undefined) {
-										maptype = pagetable.mapType;
-										}
-									mapzoom = $(this).data ("mapzoom");
-									if (mapzoom == undefined) {
-										mapzoom = pagetable.mapZoom;
-										}
-								
-								initMap (idmap, maplat, maplong, maptype, mapzoom);
-								}
-							else {
-								$(this).children ("div").each (function () {
-									if (this.className == "divStreamDayImage") {
-										flSetColor = false;
-										}
-									});
-								}
-							
-							if (flSetColor) {
-								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
-								}
-							else {
-								$(this).children ("div").each (function () {
-									if (this.className == "divStreamDayText") {
-										var flset = false;
-										$(this).children ("div").each (function () {
-											if (!flset) {
-												this.className = "divTextInFrontOfImage"; //set classname of first child element
-												}
-											flset = true;
-											});
-										}
-									});
-								}
-							});
-						}
-				//highlight and expand the #hashed element, if present
-					var hash = window.location.hash;
-					if (hash.length > 0) {
-						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
-							$(this).children ("a").each (function () { //look at first-level children that are anchors
-								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
-									$(this).parents ("div").css ("display", "block"); //make all parents visible
-									$(this).parents ("p").css ("background-color", hightlightcolor);
-									
-									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
-									
-									
-									var flexpand = true;
-									$(this).parents ("div").each (function () {
-										if (flexpand) {
-											$(this).children ("a").each (function () {
-												$(this).css ("background-color", hightlightcolor);
-												
-												$(this).prev ().find ("i").each (function () {
-													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
-														$(this).attr ("class", "fa fa-caret-down");
-														}
-													});
-												
-												});
-											$(this).next ("div").css ("display", "block"); //the divLevel item
-											flexpand = false;
-											}
-										});
-									}
-								});
-							});
-						}
-				//handle fixed menu
-					if (getBoolean (pagetable.flFixedMenu)) {
-						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
-						if (flhavenav) {
-							document.body.style.paddingTop = "60px";
-							if (hash.length > 0) {
-								$(document).one ("scroll", function () {
-									var $el = $(this), top = $el.scrollTop ();
-									$el.scrollTop (top - 125);
-									});
-								}
-							}
-						}
-				//set the site title -- 3/23/14 by DW
-					if (pagetable.menuTitle != undefined) {
-						var pagename;
-						
-						if (highlightedtitle != undefined) { //5/11/14 by DW
-							pagename = highlightedtitle;
-							}
-						else {
-							if (pagetable.path.length == 0) {
-								pagename = "Home";
-								}
-							else {
-								pagename = pagetable.text;
-								}
-							}
-						
-						document.title = pagetable.menuTitle + ": [" + pagename + "]";
-						}
-				//set the color of each text frame -- 5/11/14 by DW
-					$(".divTextInFrontOfImage").each (function () {
-						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
-						});
-				
-				//turn on images for v2 or greater -- 5/20/14 by DW
-					if (streamVersion > 1) { 
-						if (flPlainOutline) {
-							$(".aStreamDayLink").each (function () {
-								$(this).css ("font-size", "28px");
-								});
-							$(".divStreamDay").each (function () {
-								$(this).css ("border-top", "0");
-								$(this).css ("margin-top", "70px");
-								});
-							$(".divStreamDayText").each (function () {
-								$(this).css ("padding", "0");
-								});
-							$(".divTextContainer").each (function () {
-								$(this).css ("margin-bottom", "125px");
-								});
-							}
-						else {
-							$(".divStreamDay").each (function () {
-								var url = $(this).data ("backgroundimage");
-								if (url != undefined) {
-									$(this).css ("background-image", "url('" + url + "')");
-									}
-								
-								$(this).children (".divStreamDayText").children ().each (function () {
-									this.className = "divTextInFrontOfImage"; 
-									});
-								
-								});
-							}
-						}
-				
-				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
-					if (streamVersion == 1) { 
-						if (flPlainOutline) {
-							turnOffImages ();
-							$(".divStreamDay").each (function () {
-								$(this).css ("border-top", "0");
-								});
-							}
-						}
-				}
-			</script>
-		
 		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -721,8 +164,12 @@
 		
 		</head>
 	<body>
-		<div class="divPageContainer">
-			
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
+		
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
@@ -750,7 +197,19 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/10/16/newBlogPostOnRadio3TheDaveWinerCmsFightRadio3VsFargo.html" target="_blank">New blog post on Radio3: [The Dave Winer CMS Fight: Radio3 vs. Fargo.]</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/12/08/tryingAnotherCmsSubscribeToMyNewRssFeed.html" target="_blank">Trying Another CMS,  Subscribe to My New RSS Feed</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool.html" target="_blank">Convert an Instagram Profile URL to an Instagram URL Scheme with Drafts, Launch Center Pro, and TextTool</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/18/.html" target="_blank"><img src="https://dl.dropboxusercontent.com/s/wtlsby926lukw28/2014-11-18-1140AM.jpg?dl=0"></a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/13/isDaveGrohlBoredOfTheFooFighters.html" target="_blank">Is Dave Grohl Bored of the Foo Fighters?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/07/i99repaircomReview.html" target="_blank">i99repair.com Review: ★★☆☆☆</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/28/theUberOfGentlemanCompanionsMatterMediumcommentThisEssayByBoobsradleyIsVeryFunny.html" target="_blank">[The Uber of Gentleman Companions] — Matter — Medium.|comment| This essay by @BoobsRadley is very funny.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript.html" target="_blank">Get the URL Scheme for a SoundCloud Track With This Script</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/21/linkPhilosophyTechSupportExistentialComicsSmirk.html" target="_blank">|link| [Philosophy Tech Support] - Existential Comics. :smirk:</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/20/linkDouchebagTheWhiteRacialSlurWeveAllBeenWaitingFor.html" target="_blank">|link| "Douchebag": The [White Racial Slur] We’ve All Been Waiting For.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/18/linkTheShondaRhimesRevolutionFinishingWhatTheSopranosStartedcommentInsightfulEssayByMarkHarris.html" target="_blank">|link| The [Shonda Rhimes Revolution]: Finishing What ‘The Sopranos’ Started|comment| Insightful essay by Mark Harris.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/17/linkAnitaSarkeesianOnGamergateWereGoingToFixThisquoteWhenIWasInPortlandForMyTalkAtTheXoxoFestivalThisLittleBoyCameUpToMeAndSaidHiImAFeministGamerHowDoYouStopDoingThisWorkAfterThat.html" target="_blank">|link| Anita Sarkeesian on GamerGate: ['We're Going to Fix This'].|quote| When I was in Portland for my talk at the XOXO Festival, this little boy came up to me and said, “Hi, I’m a feminist gamer.” How do you stop doing this work after that?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/17/linkHowToGetAheadBySoundingLessFeminine.html" target="_blank">|link| [How to Get Ahead By Sounding Less Feminine.]</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/17/linkItHappenedToMeIveBeenForcedOutOfMyHomeAndAmLivingInConstantFearBecauseOfRelentlessDeathThreatsFromGamergateBySpacekatgal.html" target="_blank">|link| IT HAPPENED TO ME: I've Been Forced Out Of My Home And Am Living In Constant Fear Because Of [Relentless Death Threats From Gamergate] (by @spacekatgal)</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkWhatResearchSaysAboutCatsTheyreSelfishUnfeelingEnvironmentallyHarmfulCreaturesVox.html" target="_blank">|link| What research says about cats: [they're selfish, unfeeling, environmentally harmful creatures] (Vox)|comment| I like 'em anyway.</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkDearWhitePeopleAboutRacialHypocrisyAtACollegecommentRarelyHaveIReadSuchAPositiveReviewByAoScott.html" target="_blank">|link| ‘[Dear White People],’ About Racial Hypocrisy at a College.|comment| Rarely have I read such a positive review by A.O. Scott.</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/15/importASingleDraftFromDrafts3IntoDrafts4.html" target="_blank">Import a Single Draft from Drafts 3 Into Drafts 4</a></li>
@@ -763,18 +222,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/10/09/linkWhatIfYouJustHateMakingDinnercommentGoodReadingFromVirginiaHeffernan.html" target="_blank">|link| [What if You Just Hate Making Dinner?]|comment| Good reading from Virginia Heffernan.</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTroubleAtTheKoolaidPointSeriousPony.html" target="_blank">|link| [Trouble at the Koolaid Point] — Serious Pony.|comment| a woman should be able to feel safe to express herself w/o harassment</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkCopsPepperSprayBlackTeenInHisOwnLivingRoomAfterMistakingHimForBurglar.html" target="_blank">|link| [Cops Pepper Spray Black Teen In His Own Living Room] After Mistaking Him For Burglar.</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTerrifyinglyBrilliantSpiderCreatesStunninglyAdvancedWeb.html" target="_blank">|link| Terrifyingly Brilliant Spider Creates [Stunningly Advanced Web].</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkToRaiseLoveAndLoseABlackChildTheAtlantic.html" target="_blank">|link| [To Raise, Love, and Lose a Black Child] (The Atlantic)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/08/aGoodUseForTheTimeAndPushbulletChannelsOnIfttt.html" target="_blank">A Good Use for the Time and Pushbullet Channels on IFTTT</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/07/thankYouDave.html" target="_blank">Thank You, Dave </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/dammitIHaveAHeadcold.html" target="_blank">Dammit I have a headcold.</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/thisEssayOnPaulaDeenWasAnEntertainingInformativeReadItWasPublishedInTheOnlineMagazineMatterOnMediumIKnowThatMediumHasVentureCapitalButIDontUnderstandHowTheyCanContinueToFundQualityLongformJournalismWithoutEitherAdsOrASubscriptionModel.html" target="_blank"><a href="https://medium.com/matter/strike-paula-deen-down-and-she-shall-become-more-powerful-than-you-can-possibly-imagine-6c6fbda4bde4">This essay on Paula Deen</a> was an entertaining, informative read. It was published in the online magazine <a href="https://medium.com/matter/">Matter</a> on Medium. I know that Medium has venture capital, but I don't understand how they can continue to fund quality, long-form journalism without either ads or a subscription model.</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/iGuessIDontNeedANewIphoneAfterAll.html" target="_blank">I Guess I Don't Need a New iPhone After All</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/linkTheStunningWeirdnessOfAynRandWhyHerNewfoundPopularityMakesNoSenseSaloncom.html" target="_blank">|link| The [stunning weirdness of Ayn Rand]: Why her newfound popularity makes no sense (Salon.com)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/whereToLinkblog.html" target="_blank">Where to Linkblog?</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/roxaneGayAndLenaDunhamOnOnlineCriticismLinkVulture.html" target="_blank">|link| Roxane Gay and [Lena Dunham] on Online Criticism (Vulture)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/03/howImReadingFeedsTheseDays.html" target="_blank">How I'm Reading Feeds These Days</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/02/myOwnEyes.html" target="_blank">"My Own Eyes"</a></li>
 	</ul>
 
 					<li><a href="mailto:jk@jeffreykishner.com" target="_blank"><i class="fa fa-envelope-o" title="Email Me"></i></a></li>
@@ -783,362 +230,625 @@
 			</div>
 		</div>
 
-			<div class="divTextContainer" id="idTextContainer">
-				<div class="divStreamDay" >
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/12/29/">Sunday, December 29<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1388360625"></a><a class="aStreamTextLink" onclick="ecStream (0)">Using Launch Center Pro to Use TextExpander Snippets in TaskPaper for iOS</a><span class="spPermalink"><a href="/2013/12/29/#a1388360625">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel0">
-				<p><a name="a1388362262"></a><a href="https://twitter.com/share?text=Using%20Launch%20Center%20Pro%20to%20Use%20TextExpander%20Snippets%20in%20TaskPaper%20for%20iOS&url=http://blog.jeffreykishner.com/2013/12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/12/29/#a1388362262">#</a></span></p>
-				<p><a name="a1388360820"></a><a href="http://smilesoftware.com/apps/">TextExpander</a> for iOS recently had to change how it works in iOS 7, and currently <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> does not support snippets. [According to the Google group](https://groups.google.com/forum/#!searchin/taskpaper/textexpander/taskpaper/R1KqfUh9saU/znxS0IKaLmMJ), the team is working on it but the text editing apps (like WriteRoom) are higher priority.<span class="spPermalink"><a href="/2013/12/29/#a1388360820">#</a></span></p>
-				<p><a name="a1388361132"></a>I've come up with a workaround using <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. You can adapt this to your own needs. This action expands a TextExpander snippet within a TaskPaper search query, copies it to the clipboard, and opens my `todo` list in TaskPaper. If you're on your iOS device, you can tap on [this link](http://launchcenterpro.com/wgw2hr) to install it.  <span class="spPermalink"><a href="/2013/12/29/#a1388361132">#</a></span></p>
-				<p><a name="a1388361441"></a>Here is the URL of the action:<span class="spPermalink"><a href="/2013/12/29/#a1388361441">#</a></span></p>
-				<p><a name="a1388361457"></a>    launch://x-callback-url/clipboard?text=%40due%20%3C%20<ddue3>&x-success=taskpaper%3A%2F%2Fopen%2Ftodo.taskpaper<span class="spPermalink"><a href="/2013/12/29/#a1388361457">#</a></span></p>
-				<p><a name="a1388361460"></a>In TextExpander, I have a snippet called `ddue3` that uses the following TextExpander math: `%@+3D%Y-%m-%d`. This expands into YYYY-MM-DD three days from today. If today is 2013-12-29, the search query is `@due < 2014-01-01`. <span class="spPermalink"><a href="/2013/12/29/#a1388361460">#</a></span></p>
-				<p><a name="a1388361664"></a>TaskPaper uses a similar URL scheme to that of Writeroom's, so to open the app to my todo list, I use the x-success parameter from x-callback-url to go to `taskpaper://open/todo.taskpaper`. Then I just click on the search icon <i class="icon-search"></i> and paste the clipboard contents to see any tasks that are due before New Year's Day.<span class="spPermalink"><a href="/2013/12/29/#a1388361664">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/12/26/">Thursday, December 26<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1388095160"></a><a class="aStreamTextLink" onclick="ecStream (1)">Open a TaskPaper URL in Safari Using Launch Center Pro and TextTool</a><span class="spPermalink"><a href="/2013/12/26/#a1388095160">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel1">
-				<p><a name="a1388095828"></a><a href="https://twitter.com/share?text=Open%20a%20TaskPaper%20URL%20in%20Safari%20Using%20Launch%20Center%20Pro%20and%20TextTool&url=http://blog.jeffreykishner.com/2013/12/26/open-a-taskpaper-url-in-safari-using-launch-center-pro-and-texttool.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/12/26/#a1388095828">#</a></span></p>
-				<p><a name="a1388095201"></a>I've been slowly migrating back to [TaskPaper for iOS](http://www.hogbaysoftware.com/products/taskpaper) to manage my to-do list. One major gripe I have with this app is that links are not clickable. However, I've created a [Launch Center Pro](http://contrast.co/launch-center-pro/) action involving [TextTool](http://blackfoggames.com/TextTool/) that makes opening a link entered into TaskPaper manageable. <span class="spPermalink"><a href="/2013/12/26/#a1388095201">#</a></span></p>
-				<p><a name="a1388095463"></a>###The Problem<span class="spPermalink"><a href="/2013/12/26/#a1388095463">#</a></span></p>
-				<p><a name="a1388095488"></a>When you enter a task in TP, it is preceded by dash and then a space. If a task is an URL, when you select it and use the copy function, it will look like this:<span class="spPermalink"><a href="/2013/12/26/#a1388095488">#</a></span></p>
-				<p><a name="a1388095562"></a>    - http://website.com<span class="spPermalink"><a href="/2013/12/26/#a1388095562">#</a></span></p>
-				<p><a name="a1388095571"></a>Pasting this into Safari (or any iOS web browser) will result in an error.<span class="spPermalink"><a href="/2013/12/26/#a1388095571">#</a></span></p>
-				<p><a name="a1388095589"></a>###The Solution<span class="spPermalink"><a href="/2013/12/26/#a1388095589">#</a></span></p>
-				<p><a name="a1388095594"></a>After copying the task, tap on the [Open TaskPaper URL](http://launchcenterpro.com/900l1p) action in Launch Center Pro (tap on that link while on your iOS device to install) .<span class="spPermalink"><a href="/2013/12/26/#a1388095594">#</a></span></p>
-				<p><a name="a1388095668"></a>LCP will send the string to TextTool, which will use the `delist` method to remove the dash and space. <span class="spPermalink"><a href="/2013/12/26/#a1388095668">#</a></span></p>
-				<p><a name="a1388095725"></a>TextTool will take that output and send it back to LCP to open the URL in Safari.<span class="spPermalink"><a href="/2013/12/26/#a1388095725">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/12/16/">Monday, December 16<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1387230768"></a><a class="aStreamTextLink" onclick="ecStream (2)">Fargo Script to Make a Headline Accord With AP Style Guide</a><span class="spPermalink"><a href="/2013/12/16/#a1387230768">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel2">
-				<p><a name="a1387302451"></a><a href="https://twitter.com/share?text=Fargo%20Script%20to%20Make%20a%20Headline%20Accord%20With%20AP%20Style%20Guide&url=http://blog.jeffreykishner.com/2013/12/16/fargoScriptToMakeAHeadlineAccordWithApStyleGuide.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/12/16/#a1387302451">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1387230876"></a><a class="aStreamTextLink" onclick="ecStream (3)">I've written a script that will transform any headline into one that follows these rules:</a><span class="spPermalink"><a href="/2013/12/16/#a1387230876">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel3">
-					<p><a name="a1387231002"></a><i class="icon-quote-left"></i> Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech. <span class="spPermalink"><a href="/2013/12/16/#a1387231002">#</a></span></p>
-					</div>
-				<p><a name="a1387231071"></a>The script isn't perfect: it won't keep acronyms upcapped (e.g., NSA will turn into Nsa). But it will lowercase the following words:<span class="spPermalink"><a href="/2013/12/16/#a1387231071">#</a></span></p>
-				<p><a name="a1413488885.36"></a>    a, an, and, at, but, by, for, in, nor, of, off, on, or, out, so, the, to, up, yet<span class="spPermalink"><a href="/2013/12/16/#a1413488885.36">#</a></span></p>
-				<p><a name="a1387230786"></a>View the outline [here](http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/xnaiyo5g2cwjhw3/e5f83c04346fde32bdf95820df40ea6d.opml). If you copy the headline to your clipboard, you can paste it into your menubar.<span class="spPermalink"><a href="/2013/12/16/#a1387230786">#</a></span></p>
-				<p><a name="a1387230833"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/12/16/#a1387230833">#</a></span></p>
-				<p><a name="a1387231221"></a>I've also published a regular javascript version of the script [here](http://jeffreykishner.com/javascript/apstyleheadline.html).<span class="spPermalink"><a href="/2013/12/16/#a1387231221">#</a></span></p>
-				<p><a name="a1387391211"></a>###Update (December 18)<span class="spPermalink"><a href="/2013/12/16/#a1387391211">#</a></span></p>
-				<p><a name="a1387391228"></a>I've rewritten the script to compare each word in the headline to an array of words to keep lowercase using a for loop within a for loop. You can view that version [here](http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/g7fn4g309v7u59j/8f06a8b71e155bccad0f0c896b892dda.opml).<span class="spPermalink"><a href="/2013/12/16/#a1387391228">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/12/12/">Thursday, December 12<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1386868945"></a><a class="aStreamTextLink" onclick="ecStream (4)">Use Launch Center Pro 2.1 to Open Instagram for iOS to Your Favorite Profiles</a><span class="spPermalink"><a href="/2013/12/12/#a1386868945">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel4">
-				<p><a name="a1386869523"></a><a href="https://twitter.com/share?text=Use%20Launch%20Center%20Pro%202.1%20to%20Open%20Instagram%20for%20iOS%20to%20Your%20Favorite%20Profiles&url=http://blog.jeffreykishner.com/2013/12/12/use-launch-center-pro-21-to-open-instagram-for-ios-to-your-favorite-profiles.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/12/12/#a1386869523">#</a></span></p>
-				<p><a name="a1386869027"></a>The latest release of [Launch Center Pro](http://contrast.co/launch-center-pro/) supports lists. You can read the [release notes](http://help.contrast.co/hc/en-us/articles/201050507-2-1-Release-Notes) or Federico Viticci's [extensive post on MacStories](http://www.macstories.net/reviews/launch-center-pro-2-1-fleksy-keyboard-lists-photo-attachments-and-share-sheets/) for details. The gist is that if you find yourself entering the same terms over and over again within a prompt, you can instead choose these terms from a list.<span class="spPermalink"><a href="/2013/12/12/#a1386869027">#</a></span></p>
-				<p><a name="a1386868980"></a>I've written an Instagram action that lets you jump to one of your favorite profile pages in the Instagram iOS app. Just tap on [this link](http://launchcenterpro.com/rdl36x) while you're on your iOS device to install the action. It looks like this:<span class="spPermalink"><a href="/2013/12/12/#a1386868980">#</a></span></p>
-				<p><a name="a1386869325"></a>    instagram://user?username=[list:|username1|username2]<span class="spPermalink"><a href="/2013/12/12/#a1386869325">#</a></span></p>
-				<p><a name="a1386868990"></a>Every username is separated by a pipe (|). Just substitute `username1` with your favorite profile username, `username2` with another, and so on.<span class="spPermalink"><a href="/2013/12/12/#a1386868990">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1386860672"></a><a class="aStreamTextLink" onclick="ecStream (5)">How Much to Spend on Music?</a><span class="spPermalink"><a href="/2013/12/12/#a1386860672">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel5">
-				<p><a name="a1386864191"></a><a href="https://twitter.com/share?text=How%20Much%20to%20Spend%20on%20Music%3F&url=http://blog.jeffreykishner.com/2013/12/12/howMuchToSpendOnMusic.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/12/12/#a1386864191">#</a></span></p>
-				<p><a name="a1386860680"></a>Spotify now lets users play any song on demand on tablets (like the iPad) for free, and will let smartphone users play shuffle on the songs by any single artist, or from a playlist.<span class="spPermalink"><a href="/2013/12/12/#a1386860680">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1386860780"></a><a class="aStreamTextLink" onclick="ecStream (6)">I am currently paying Mog $10/month so that I can play any song on demand and download songs to my iPhone. Because I commute close to two hours per day via the subway in NYC, it's important to me to have access to music when I'm underground. </a><span class="spPermalink"><a href="/2013/12/12/#a1386860780">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel6">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1386861041"></a><a class="aStreamTextLink" onclick="ecStream (7)">Although I have a large iTunes collection, there are times I don't want to spend the money to buy a song even if I have downloaded it in my Mog app for listening while I don't have an internet connection.</a><span class="spPermalink"><a href="/2013/12/12/#a1386861041">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel7">
-						<p><a name="a1386862080"></a>(Some songs don't last the test of time.)<span class="spPermalink"><a href="/2013/12/12/#a1386862080">#</a></span></p>
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a></li></ul>
 						</div>
+					<h2 id="idBlogHomePageTitle">2013</h2>
 					</div>
-				<p><a name="a1386861428"></a>With this Spotify news, I am thinking of ending my monthly Mog subscription, listening to Spotify on my iPad when I have wifi, listening to artists or playlists on shuffle on my iPhone when I have 3G, and drawing from my iTunes collection.<span class="spPermalink"><a href="/2013/12/12/#a1386861428">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1386861507"></a><a class="aStreamTextLink" onclick="ecStream (8)">I need to determine if this will save me money. There are Mog downloads I listen to so much that I would feel compelled to buy the tracks or albums on iTunes for on-demand listening. Would I buy $120 worth of music if I dropped my subscription?</a><span class="spPermalink"><a href="/2013/12/12/#a1386861507">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel8">
-					<p><a name="a1386861728"></a>I figure if I buy less than one album per month, I will have saved money over the course of a year. The major inconvenience I anticipate is not being able to listen to any song on-demand on my iPhone while I walk from the subway to my office.<span class="spPermalink"><a href="/2013/12/12/#a1386861728">#</a></span></p>
-					</div>
-				<p><a name="a1386862158"></a>###What About the Artists?<span class="spPermalink"><a href="/2013/12/12/#a1386862158">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1386862203"></a><a class="aStreamTextLink" onclick="ecStream (9)">Apparently Spotify had to negotiate hard with the major labels to get this deal, to allow so much free ad-supported streaming. I have no idea how this will affect the artists. I have certainly read how paltry the dividends some musicians and songwriters have received from the steaming services. I also don't know if I care. I am willing to spend money on concert tickets to see Alter Bridge, and I am sure I will download *Fortress* via iTunes if I quit Mog, because it's a great album. </a><span class="spPermalink"><a href="/2013/12/12/#a1386862203">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel9">
-					<p><a name="a1386862405"></a>Basically, I am willing to spend money on artists if I *love them* but not if I *like* them.<span class="spPermalink"><a href="/2013/12/12/#a1386862405">#</a></span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/12/11/">Wednesday, December 11<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1413488885.368"></a><a class="aStreamTextLink" onclick="ecStream (10)">Save a Markdown Link that Opens in iCab Mobile</a><span class="spPermalink"><a href="/2013/12/11/#a1413488885.368">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel10">
-				<p><a name="a1386788151"></a><a href="https://twitter.com/share?text=Save%20a%20Markdown%20Link%20that%20Opens%20in%20iCab%20Mobile&url=http://blog.jeffreykishner.com/2013/12/11/save-a-markdown-link-that-opens-in-icab-mobile.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/12/11/#a1386788151">#</a></span></p>
-				<p><a name="a1413488885.374"></a>On my [I Miss My Mac](http://imissmymac.com) blog, I offered a [JavaScript bookmarklet](http://imissmymac.com/bookmarklet-to-save-a-link-and-title-in-markdown-format-and-copy-to-clipboard/) that saves the current page in an iOS web browser as a markdown link and sends it to [Drafts](http://agiletortoise.com/drafts). <span class="spPermalink"><a href="/2013/12/11/#a1413488885.374">#</a></span></p>
-				<p><a name="a1413488885.374"></a>I have been using [iCab mobile](http://www.icab.de/mobile.html) frequently, and often put markdown links in a text editor like Byword to use as a bookmark manager; here is an alternative bookmarklet/Drafts URL action that opens the markdown link in iCab. <span class="spPermalink"><a href="/2013/12/11/#a1413488885.374">#</a></span></p>
-				<p><a name="a1413488885.374"></a>    javascript:window.location='drafts://x-callback-url/create?text=%5B'+encodeURIComponent(document.title)+'%5D('+encodeURIComponent(location.href)+')&action=texttool-icab';<span class="spPermalink"><a href="/2013/12/11/#a1413488885.374">#</a></span></p>
-				<p><a name="a1386787028"></a>(The semi-colon at the end seems to be necessary for iCab but not other iOS browsers -- feel free to experiment.)<span class="spPermalink"><a href="/2013/12/11/#a1386787028">#</a></span></p>
-				<p><a name="a1386787062"></a>##Install the Bookmarklet<span class="spPermalink"><a href="/2013/12/11/#a1386787062">#</a></span></p>
-				<p><a name="a1386787082"></a>1. In your iOS browser of choice, save any page as a bookmark and retitle it (e.g., "iCab-MD").<span class="spPermalink"><a href="/2013/12/11/#a1386787082">#</a></span></p>
-				<p><a name="a1386787113"></a>2. Open Edit Bookmarks, tap on that bookmark, and replace the former URL with the javascript above.<span class="spPermalink"><a href="/2013/12/11/#a1386787113">#</a></span></p>
-				<p><a name="a1386787182"></a>##Install the Drafts Action<span class="spPermalink"><a href="/2013/12/11/#a1386787182">#</a></span></p>
-				<p><a name="a1413488885.375"></a>The javascript tells Drafts to implement the `texttool-icab` action. Tap on [this link](drafts://x-callback-url/import_action?type=URL&name=texttool-icab&url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bdraft%5D%5D%26method%3Dreplace%26find%3Dhttp%26replace%3Dweb%26x-success%3Dbyword%3A) while you're on your iOS device to install it. (You must own a copy of both Drafts and [TextTool](http://blackfoggames.com/TextTool/) to make this action work. However, you don't have to set up TextTool to do anything.)<span class="spPermalink"><a href="/2013/12/11/#a1413488885.375">#</a></span></p>
-				<p><a name="a1386787472"></a>Here is the URL Action:<span class="spPermalink"><a href="/2013/12/11/#a1386787472">#</a></span></p>
-				<p><a name="a1386787480"></a>    texttool://x-callback-url/transform?text=[[draft]]&method=replace&find=http&replace=web&x-success=byword:<span class="spPermalink"><a href="/2013/12/11/#a1386787480">#</a></span></p>
-				<p><a name="a1386787388"></a>##How It Works<span class="spPermalink"><a href="/2013/12/11/#a1386787388">#</a></span></p>
-				<p><a name="a1386787393"></a>1. The bookmarklet sends the page's title and URL in markdown link format to Drafts.<span class="spPermalink"><a href="/2013/12/11/#a1386787393">#</a></span></p>
-				<p><a name="a1386787417"></a>2. Drafts sends the draft to TextTool, which replaces `http` with `web` (which is the URL scheme to open a web page in iCab).<span class="spPermalink"><a href="/2013/12/11/#a1386787417">#</a></span></p>
-				<p><a name="a1386787465"></a>3. TextTool copies the results to the clipboard, then sends the user to Byword. (If you want it to send you to a different text editor, just add its URL scheme after the `x-success=` parameter.)<span class="spPermalink"><a href="/2013/12/11/#a1386787465">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/12/10/">Tuesday, December 10<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1386692773"></a><a class="aStreamTextLink" onclick="ecStream (11)">A Fargo Script I Wrote for My Day Job</a><span class="spPermalink"><a href="/2013/12/10/#a1386692773">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel11">
-				<p><a name="a1386692820"></a>Part of my day job as a web producer involves resyndicating recipe content. I basically take a whole recipe from the original site, re-render it in HTML in a slightly different format, and post the HTML in a different CMS.<span class="spPermalink"><a href="/2013/12/10/#a1386692820">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1386692945"></a><a class="aStreamTextLink" onclick="ecStream (12)">The format of a recipe step on the original site looks like this:</a><span class="spPermalink"><a href="/2013/12/10/#a1386692945">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel12">
-					<p><a name="a1386692993"></a>STEP 1<span class="spPermalink"><a href="/2013/12/10/#a1386692993">#</a></span></p>
-					<p><a name="a1386692996"></a>Whisk the eggs, sugar and flour.<span class="spPermalink"><a href="/2013/12/10/#a1386692996">#</a></span></p>
-					</div>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (13)" ><i class="fa fa-caret-right" id="idStreamWedge13"></i></a></span><a name="a1386693009"></a><a class="aStreamTextLink" onclick="ecStream (13)">I want it to look like this in the resyndicated format:</a><span class="spPermalink"><a href="/2013/12/10/#a1386693009">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel13">
-					<p><a name="a1386693023"></a><b>1.</b> Whisk the eggs, sugar and flour.<span class="spPermalink"><a href="/2013/12/10/#a1386693023">#</a></span></p>
-					</div>
-				<p><a name="a1386693035"></a>I've written a Fargo script to accomplish this, you can view the code <a href="http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/xtlqkk7tnqtirst/2ae676afb1f51ed2b1d939eb0bb3b374.opml">here</a>. If you select the top headline and copy it to your clipboard, you can paste the OPML straight into Fargo.<span class="spPermalink"><a href="/2013/12/10/#a1386693035">#</a></span></p>
-				<p><a name="a1386693078"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2013/12/10/#a1386693078">#</a></span></p>
-				<p><a name="a1386693299"></a>To make it work, I just copy the text from the original site and paste it into Fargo. "STEP X" is its own headline, the instructions are the headline below it. I run the script on the first headline. If the first four characters are "STEP" I remove all the characters before the number, add a period after the number and bold these two characters, then grab the instructions, append them after the step number, and remove the instructions line.<span class="spPermalink"><a href="/2013/12/10/#a1386693299">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/09/25/">Wednesday, September 25<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (14)" ><i class="fa fa-caret-right" id="idStreamWedge14"></i></a></span><a name="a1380142183"></a><a class="aStreamTextLink" onclick="ecStream (14)">Revisiting Simplenote</a><span class="spPermalink"><a href="/2013/09/25/#a1380142183">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel14">
-				<p><a name="a1386612257"></a><a href="https://twitter.com/share?text=Revisiting%20Simplenote&url=http://blog.jeffreykishner.com/2013/09/25/revisitingSimplenote.html" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/09/25/#a1386612257">#</a></span></p>
-				<p><a name="a1380142190"></a>I'm debating a return to <a href="http://simplenote.com/">Simplenote</a>. I used this service a few years ago until they lost a whole bunch of my notes. Since then I've been using a combination of Dropbox iOS text editors (notably Nebulous Notes, Notesy and Byword) and <a href="http://agiletortoise.com/drafts">Drafts</a>.<span class="spPermalink"><a href="/2013/09/25/#a1380142190">#</a></span></p>
-				<p><a name="a1380142368"></a>Drafts uses Simperium as its sync service, and Simperium is produced by Simplenote. I have found Simperium to be reliable. I use Drafts on an iPhone and an iPad and have never lost a note. Now that Simplenote has been acquired by Automattic, I have been looking at the product again. I trust WordPress, and I trust Matt Mullenweg.<span class="spPermalink"><a href="/2013/09/25/#a1380142368">#</a></span></p>
-				<p><a name="a1380142474"></a>Of course, trust means many things. I trust the <i>ethos</i> of Automattic, I trust the stability of their cloud (I pay them for VaultPress to backup my <a href="http://sasstrology.com">Sasstrology</a> blog), I don't know if I trust them in the "create a backdoor for the NSA" sense, although I would like to believe that they are the kinds of people who would put up a fight.<span class="spPermalink"><a href="/2013/09/25/#a1380142474">#</a></span></p>
-				<p><a name="a1380142660"></a>I am not keen on using a notes service in which I do not control my data. With a self-hosted WordPress solution, my blog contents sits in a database on my own webhost. With <a href="http://fargo.io">Fargo</a>, my OPML files are stored in a Dropbox folder on my hard drive. Same for the Dropbox iOS text editors. And I only store stuff on iCloud that I am not too attached to.<span class="spPermalink"><a href="/2013/09/25/#a1380142660">#</a></span></p>
-				<p><a name="a1380142944"></a>Simplenote does have various export options, but that's not the same as having the data stored on something that I own (or rent, in the case of web hosting). Although Simplenote uses the same sync service as Drafts, the latter is meant as a temporary holding bay for ideas that will be sent to other applications, whereas Simplenote is for archiving text notes.<span class="spPermalink"><a href="/2013/09/25/#a1380142944">#</a></span></p>
-				<p><a name="a1380143132"></a>I suppose my decision may come down to the user experience. I've read that Simplenote is blazing fast. Is it better than any of the Dropbox iOS text editors that I use? <span class="spPermalink"><a href="/2013/09/25/#a1380143132">#</a></span></p>
-				<p><a name="a1380143198"></a>I will report back when I have an answer.<span class="spPermalink"><a href="/2013/09/25/#a1380143198">#</a></span></p>
-				<p><a name="a1380143543"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=text">text</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=sync">sync</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=apps">apps</a><span class="spPermalink"><a href="/2013/09/25/#a1380143543">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (15)" ><i class="fa fa-caret-right" id="idStreamWedge15"></i></a></span><a name="a1380141279"></a><a class="aStreamTextLink" onclick="ecStream (15)">The Worst Part of Being Sick</a><span class="spPermalink"><a href="/2013/09/25/#a1380141279">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel15">
-				<p><a name="a1380141392"></a><a href="https://twitter.com/share?text=The%20Worst%20Part%20of%20Being%20Sick&url=http://jeffrey.smallpict.com/2013/09/25/theWorstPartOfBeingSick" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/09/25/#a1380141392">#</a></span></p>
-				<p><a name="a1380141287"></a>is not being able to dance.<span class="spPermalink"><a href="/2013/09/25/#a1380141287">#</a></span></p>
-				<p><a name="a1380141294"></a>I've had a cold since last Monday, and already took two sick days. I usually dance two times per week, and unfortunately I barely have enough energy just to put in my 8-hour workday and do family-time and house cleanup.<span class="spPermalink"><a href="/2013/09/25/#a1380141294">#</a></span></p>
-				<p><a name="a1380141377"></a>Life feels incomplete without the boogie.<span class="spPermalink"><a href="/2013/09/25/#a1380141377">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (16)" ><i class="fa fa-caret-right" id="idStreamWedge16"></i></a></span><a name="a1380132296"></a><a class="aStreamTextLink" onclick="ecStream (16)">"It's Your Fault" Video</a><span class="spPermalink"><a href="/2013/09/25/#a1380132296">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel16">
-				<p><a name="a1380132327"></a><iframe width="420" height="315" src="//www.youtube.com/embed/8hC0Ng_ajpY" frameborder="0" allowfullscreen></iframe><span class="spPermalink"><a href="/2013/09/25/#a1380132327">#</a></span></p>
-				<p><a name="a1380132330"></a>I found this satirical video about rape culture hard to watch. It's troubling how much women are blamed for men's actions. And this is such a universal issue -- nearly every culture is patriarchal. <span class="spPermalink"><a href="/2013/09/25/#a1380132330">#</a></span></p>
-				<p><a name="a1380132569"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=rape">rape</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=feminism">feminism</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=patriarchy">patriarchy</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=video">video</a><span class="spPermalink"><a href="/2013/09/25/#a1380132569">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/09/20/">Friday, September 20<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (17)" ><i class="fa fa-caret-right" id="idStreamWedge17"></i></a></span><a name="a1379688236"></a><a class="aStreamTextLink" onclick="ecStream (17)">I Am a Failed Blogtrepreneur</a><span class="spPermalink"><a href="/2013/09/20/#a1379688236">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel17">
-				<p><a name="a1379691235"></a><a href="https://twitter.com/share?text=I%20Am%20a%20Failed%20Blogtrepreneur&url=http://jeffrey.smallpict.com/2013/09/20/iAmAFailedBlogtrepreneur" target="_blank">Tweet This Post</a><span class="spPermalink"><a href="/2013/09/20/#a1379691235">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (18)" ><i class="fa fa-caret-right" id="idStreamWedge18"></i></a></span><a name="a1379688248"></a><a class="aStreamTextLink" onclick="ecStream (18)">After I was laid off from my first full-time job in digital, I decided to focus completely on my <a href="http://sasstrology.com">blog</a>. I had a nice sponsorship from a psychic company plus some Adsense income and rev-share from selling a dating ebook. The money I was taking in was not nearly enough to support my family, but I reasoned that just putting the rest of my expenses on credit cards until my blog was more profitable was worth it.</a><span class="spPermalink"><a href="/2013/09/20/#a1379688248">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel18">
-					<p><a name="a1379690298"></a>In retrospect, I was suffering from the delusion that I could earn an income comparable to that which I earned as a full-time employee. Instead, I just racked up debt.<span class="spPermalink"><a href="/2013/09/20/#a1379690298">#</a></span></p>
-					</div>
-				<p><a name="a1379688436"></a>I enjoyed working from home. I had company (my wife) and if I absolutely needed to get out of the basement office I could bring my laptop to the library or local cafe. I didn't have to commute or get dressed, I got to snack on food not created for consumption by Corporate America, and I had my own schedule. <span class="spPermalink"><a href="/2013/09/20/#a1379688436">#</a></span></p>
-				<p><a name="a1379688539"></a>Unfortunately, the psychic company eventually realized they were not getting enough bang for their buck, and pulled out, and I had to re-enter the workforce. Now I'm a full-time digital worker bee, publishing/editing my blog in my spare time.<span class="spPermalink"><a href="/2013/09/20/#a1379688539">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (19)" ><i class="fa fa-caret-right" id="idStreamWedge19"></i></a></span><a name="a1379688612"></a><a class="aStreamTextLink" onclick="ecStream (19)">I've reorganized my priorities on the blog such that I only do stuff that I enjoy.</a><span class="spPermalink"><a href="/2013/09/20/#a1379688612">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel19">
-					<p><a name="a1379688664"></a>I only work with really good writers.<span class="spPermalink"><a href="/2013/09/20/#a1379688664">#</a></span></p>
-					<p><a name="a1379688675"></a>I focus on the technical and business aspects of the blog, <a href="http://blog.jeffreykishner.com/2013/09/10/dontAskMeForAstrologyAdvice">not the astrology</a>.<span class="spPermalink"><a href="/2013/09/20/#a1379688675">#</a></span></p>
-					</div>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (20)" ><i class="fa fa-caret-right" id="idStreamWedge20"></i></a></span><a name="a1379690476"></a><a class="aStreamTextLink" onclick="ecStream (20)">Knowing What I'm Not</a><span class="spPermalink"><a href="/2013/09/20/#a1379690476">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel20">
-					<p><a name="a1379688776"></a>Although I read <i>Fast Company</i> and <i>Inc.</i>, I don't think I will ever start a real business. I blog for self-expression or to share something geeky I wrote (an iOS URL scheme, an action in <a href="http://agiletortoise.com/drafts">Drafts</a>, a snippet of javascript or PHP).<span class="spPermalink"><a href="/2013/09/20/#a1379688776">#</a></span></p>
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (21)" ><i class="fa fa-caret-right" id="idStreamWedge21"></i></a></span><a name="a1379688992"></a><a class="aStreamTextLink" onclick="ecStream (21)">I do not feel gung-ho about working full-time in Corporate America until I retire (if I'm lucky enough to work in digital that long), but I'm not sure I see what other options I have. I've done freelance work before (building WordPress sites); I've "consulted" (astrology readings); I was a psychotherapist working at fee-for-service clinics for a few years. I don't want to go back to counseling, and although I would not mind building WordPress sites for a living, I'm neither a designer nor an experienced coder, and I don't think I can truly stand out in the professional WP marketplace if I don't design themes or work on the backend (e.g., plugin development).</a><span class="spPermalink"><a href="/2013/09/20/#a1379688992">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel21">
-						<p><a name="a1379692609"></a>Don't get me wrong -- I'm grateful to have a job with benefits. I can pay my mortgage, feed my family, and pay for my daughter's braces. <span class="spPermalink"><a href="/2013/09/20/#a1379692609">#</a></span></p>
-						</div>
-					<p><a name="a1379689942"></a>Also, I'm not very good at hustling for clients, which limits my ability to thrive as a solopreneur<span class="spPermalink"><a href="/2013/09/20/#a1379689942">#</a></span></p>
-					</div>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (22)" ><i class="fa fa-caret-right" id="idStreamWedge22"></i></a></span><a name="a1379690610"></a><a class="aStreamTextLink" onclick="ecStream (22)">Knowing What I Am</a><span class="spPermalink"><a href="/2013/09/20/#a1379690610">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel22">
-					<p><a name="a1379689986"></a>I'm more of a jack-of-all-trades than a specialist. I can write, edit, tinker with CSS and PHP, crop and resize images, work the FTP. Basically, I can run a big blog without anybody's help.  <span class="spPermalink"><a href="/2013/09/20/#a1379689986">#</a></span></p>
-					<p><a name="a1379690113"></a>If only the blog had five times the traffic, I could still work at home in my sweats.<span class="spPermalink"><a href="/2013/09/20/#a1379690113">#</a></span></p>
-					</div>
-				<p><a name="a1379691213"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=career">career</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=wordpress">wordpress</a><span class="spPermalink"><a href="/2013/09/20/#a1379691213">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/09/18/">Wednesday, September 18<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (23)" ><i class="fa fa-caret-right" id="idStreamWedge23"></i></a></span><a name="a1379526829"></a><a class="aStreamTextLink" onclick="ecStream (23)">Bring Concord Right Into WordPress</a><span class="spPermalink"><a href="/2013/09/18/#a1379526829">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel23">
-				<p><a name="a1379526856"></a><a href="https://github.com/scripting/concord">The outliner part of Fargo has been open-sourced.</a> Although Fargo gives users the ability to post a headline and all of its sub-content to WordPress, it would be cool if you could outline right within WordPress. You know how there are already "Visual" and "HTML" tabs in the editor? A plugin could add an "Outline" tab, where Concord lives. Outline your blog post right there and hit Publish. <span class="spPermalink"><a href="/2013/09/18/#a1379526856">#</a></span></p>
-				<p><a name="a1379527057"></a>The downside is that your outline lives in some mysql database instead of an OPML file in Dropbox. But the upside is that the source of your content is in the same place where you publish it.<span class="spPermalink"><a href="/2013/09/18/#a1379527057">#</a></span></p>
-				<p><a name="a1379527107"></a>I don't have the PHP skills to create this, but I invite developers to run with the idea.<span class="spPermalink"><a href="/2013/09/18/#a1379527107">#</a></span></p>
-				<p><a name="a1379527142"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=wordpress">wordpress</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=concord">concord</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=opml">opml</a><span class="spPermalink"><a href="/2013/09/18/#a1379527142">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/09/16/">Monday, September 16<span class="spDateYearPart">, 2013</span></a></div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/09/10/">Tuesday, September 10<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (24)" ><i class="fa fa-caret-right" id="idStreamWedge24"></i></a></span><a name="a1378842027"></a><a class="aStreamTextLink" onclick="ecStream (24)">Don't Ask Me for Astrology Advice</a><span class="spPermalink"><a href="/2013/09/10/#a1378842027">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel24">
-				<p><a name="a1378842033"></a>For much of the first decade of the new millenium, I identified on the internet as an astrologer. I blogged about astrology for about a decade, and I still publish a <a href="http://sasstrology.com">popular astrology blog</a>. I also "did readings" -- I stopped astrology consulting a few years ago as well. <span class="spPermalink"><a href="/2013/09/10/#a1378842033">#</a></span></p>
-				<p><a name="a1378842227"></a>It is not the case that I no longer believe in astrology, it's just that I don't want to identify as a Career Astrologer. I still get email inquiries asking for <i>free advice</i>, and I occasionally get referrals from colleagues. All I can do now is politely decline inquiries, or just not respond at all.<span class="spPermalink"><a href="/2013/09/10/#a1378842227">#</a></span></p>
-				<p><a name="a1378842332"></a>Astrology does not factor into my consciousness like it used to. I don't keep track of lunar cycles or where a particular planet is. If I'm curious about an incident or inner experience, I may look up my transits (the angles that current planetary positions make to the planetary positions at the moment of my birth). I don't think I will ever <i>forget</i> the knowledge I have acquired as a consultant and writer, even if I stop editing posts for my blog. And I don't think I will have a "crisis of faith" and one day decide that astrology is bogus. I just am not very invested in it.<span class="spPermalink"><a href="/2013/09/10/#a1378842332">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (25)" ><i class="fa fa-caret-right" id="idStreamWedge25"></i></a></span><a name="a1378842580"></a><a class="aStreamTextLink" onclick="ecStream (25)">I wish there were an easy way to make this known all over the internet. I don't think I need <i>reputation management</i> -- I don't believe that my association with astrology harms my current career trajectory. I just wish people wouldn't email me about it. It's over and done with. A past life.</a><span class="spPermalink"><a href="/2013/09/10/#a1378842580">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel25">
-					<p><a name="a1378843202"></a>I still care about my astrologer colleagues, because I have cultivated some of these relationships for close to a decade. I just don't want any <i>new</i> astrology colleagues (or clients) unless the association benefits my blog. (Totally utilitarian.)<span class="spPermalink"><a href="/2013/09/10/#a1378843202">#</a></span></p>
-					</div>
-				<p><a name="a1378843105"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=astrology">astrology</a><span class="spPermalink"><a href="/2013/09/10/#a1378843105">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/09/06/">Friday, September  6<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (26)" ><i class="fa fa-caret-right" id="idStreamWedge26"></i></a></span><a name="a1378486735"></a><a class="aStreamTextLink" onclick="ecStream (26)">Is Paying for an Amazon EC2 Instance to Run River 2 & 3 Worth It?</a><span class="spPermalink"><a href="/2013/09/06/#a1378486735">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel26">
-				<p><a name="a1378486767"></a>I've been paying Amazon about $20 per month to host a remote instance of Windows Server running the OPML Editor, which "polls" OPML files on a regular basis to produce Rivers of News (for <a href="http://jeffreykishner.com/tabbedRivers.html">me</a> and my <a href="http://sasstrology.com/blogs">astrology blog</a>).<span class="spPermalink"><a href="/2013/09/06/#a1378486767">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (27)" ><i class="fa fa-caret-right" id="idStreamWedge27"></i></a></span><a name="a1378486947"></a><a class="aStreamTextLink" onclick="ecStream (27)">Not sure if this is worth the money. I paid a one-time licensing fee of $35 to host <a href="http://feedafever.com">Fever</a> on my VPS. It isn't costing me extra to run the software (i.e., the added bandwidth falls within my current hosting plan). </a><span class="spPermalink"><a href="/2013/09/06/#a1378486947">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel27">
-					<p><a name="a1378487511"></a>The astrology river garnered less than 1000 pageviews over the past month and yielded one penny in Adsense income.<span class="spPermalink"><a href="/2013/09/06/#a1378487511">#</a></span></p>
-					<p><a name="a1378487544"></a>I mostly look at my tabbed rivers to see what Dave Winer has posted, but I can just as easily add all his feeds to Fever.<span class="spPermalink"><a href="/2013/09/06/#a1378487544">#</a></span></p>
-					</div>
-				<p><a name="a1378496627"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=rss">rss</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=opml">opml</a><span class="spPermalink"><a href="/2013/09/06/#a1378496627">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/22/">Thursday, August 22<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (28)" ><i class="fa fa-caret-right" id="idStreamWedge28"></i></a></span><a name="a1377186835"></a><a class="aStreamTextLink" onclick="ecStream (28)">Speaking of Dependence on Google...</a><span class="spPermalink"><a href="/2013/08/22/#a1377186835">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel28">
-				<p><a name="a1377186847"></a>The traffic to my <a href="http://sasstrology.com">astrology blog</a> has dropped precipitously in the last three days. Drilling down into my analytics, it appears that I am getting less than half the Google search traffic I was getting just this past weekend.<span class="spPermalink"><a href="/2013/08/22/#a1377186847">#</a></span></p>
-				<p><a name="a1377187108"></a>Yes, I am worried. The blog brings in money. But it is also seven years old. It has over 5k fans on FB, over 2.5k followers on Twitter. I have a sizable email list (that I haven't been using since I ditched Mailchimp) that I can contact if I need to. Also, I have diversified my income streams such that I am not solely dependent on pageviews (i.e., ad impressions).<span class="spPermalink"><a href="/2013/08/22/#a1377187108">#</a></span></p>
-				<p><a name="a1377187361"></a>Nonetheless, I feel I need to keep bringing in "new eyeballs," because only a fraction of new visitors become fans. I feel helpless, and I don't want to try to <i>divine</i> Google's algorithmic intentions. ("What am I doing wrong, Google? Why hast thou forsaken me?") When I feel this way, I feel more determined to reduce my dependence on search traffic, yet Google is by far the biggest referrer to my site.<span class="spPermalink"><a href="/2013/08/22/#a1377187361">#</a></span></p>
-				<p><a name="a1377187669"></a>If <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Font Awesome</a> had an unhappy face icon, I'd insert it here.  <span class="spPermalink"><a href="/2013/08/22/#a1377187669">#</a></span></p>
-				<p><a name="a1377187710"></a>:(<span class="spPermalink"><a href="/2013/08/22/#a1377187710">#</a></span></p>
-				<p><a name="a1377187975"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=google">google</a><span class="spPermalink"><a href="/2013/08/22/#a1377187975">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (29)" ><i class="fa fa-caret-right" id="idStreamWedge29"></i></a></span><a name="a1377178889"></a><a class="aStreamTextLink" onclick="ecStream (29)">Another Person Moving to Fastmail.fm</a><span class="spPermalink"><a href="/2013/08/22/#a1377178889">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel29">
-				<p><a name="a1377178900"></a>I just set up my own domain with <a href="http://fastmail.fm">Fastmail.fm</a> and am going to start offering jk@jeffreykishner.com as my primary email address instead of jeffreykishner@gmail.com. It took opening tickets with both my host and Fastmail to correctly set up my MX records and my email alias, but now it is working. <span class="spPermalink"><a href="/2013/08/22/#a1377178900">#</a></span></p>
-				<p><a name="a1377179022"></a>The "straw that broke the camel's back" was <a href="http://www.groklaw.net/article.php?story=20130818120421175">this post on Groklaw</a> about the author's choice to shut down the site (who knows how long this link will be active?) in light of recent disclosures about our current surveillance state, as well as numerous posts by Marco Arment about reducing his dependence on Google (particularly <a href="http://www.marco.org/2011/04/05/let-us-pay-for-this-service-so-it-wont-go-down">this one</a>). <span class="spPermalink"><a href="/2013/08/22/#a1377179022">#</a></span></p>
-				<p><a name="a1377179254"></a>I have no illusions that Fastmail wouldn't make their servers available to the NSA upon a court order (although honestly I haven't read their ToS and Privacy Policy closely to even find out). But I feel they'd put up more of a fight than Google (and yes, my "feeling" may not be justified by any facts). <span class="spPermalink"><a href="/2013/08/22/#a1377179254">#</a></span></p>
-				<p><a name="a1377179421"></a>But privacy concerns aside, I would rather be a customer than a product. To Google, I am a product and the advertiser is the customer. The advertiser is paying for my attention. By choosing to pay Fastmail (by the time my 60-day trial ends) I am choosing to be the customer. They are serving <i>me</i>, not an advertiser. No software is reading my emails for the purpose of determining the most contextually appropriate ads to serve me.<span class="spPermalink"><a href="/2013/08/22/#a1377179421">#</a></span></p>
-				<p><a name="a1377179524"></a>I still rely on Google. I do searches while logged in. I use Maps; Calendar for my business; Drive to store some docs and spreadsheets that I frequently edit; and probably other services that are not coming to mind right now. I do not think Google is Evil, but I also don't feel that they have my best interests in mind. I don't want to just contribute to some Big Dataset in the Cloud.<span class="spPermalink"><a href="/2013/08/22/#a1377179524">#</a></span></p>
-				<p><a name="a1377179678"></a>I <i>love</i> the keyboard shortcuts and ease-of-use of Gmail, but Fastmail has IMAP, webmail, keyboard shortcuts, and other features. At this moment, I am willing to forego some convenience. I hope I stick with it.<span class="spPermalink"><a href="/2013/08/22/#a1377179678">#</a></span></p>
-				<p><a name="a1377179852"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=privacy">privacy</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=email">email</a><span class="spPermalink"><a href="/2013/08/22/#a1377179852">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2013/08/20/">Tuesday, August 20<span class="spDateYearPart">, 2013</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (30)" ><i class="fa fa-caret-right" id="idStreamWedge30"></i></a></span><a name="a1377009945"></a><a class="aStreamTextLink" onclick="ecStream (30)">Violence Against Women in Video Games</a><span class="spPermalink"><a href="/2013/08/20/#a1377009945">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel30">
-				<p><a name="a1377009953"></a><div align="center"><iframe width="560" height="315" src="//www.youtube.com/embed/toa_vH6xGqs" frameborder="0" allowfullscreen></iframe></div><span class="spPermalink"><a href="/2013/08/20/#a1377009953">#</a></span></p>
-				<p><a name="a1377012492"></a>&nbsp;<span class="spPermalink"><a href="/2013/08/20/#a1377012492">#</a></span></p>
-				<p><a name="a1377009955"></a>I learned about about this <i>Damsels in Distress </i>series via Wired magazine, in which the creator explores misogynist tropes in video games. <a href="http://www.youtube.com/watch?v=X6p5AZp7r_Q">Here's the first in the series</a>; I've embedded the second video above.<span class="spPermalink"><a href="/2013/08/20/#a1377009955">#</a></span></p>
-				<p><a name="a1377010081"></a>I'm not a gamer, and although the use of the "damsel in distress" archetype in video games didn't surprise me, the second video was disturbing. <i>I did not know that so many games require the gamer to kill a woman to proceed to the next level, and that in many cases she is literally "asking for it," i.e., asking the protagonist to kill her (usually because she has been transformed into a "beast" and needs to return to her "pure state").</i><span class="spPermalink"><a href="/2013/08/20/#a1377010081">#</a></span></p>
-				<p><a name="a1377010284"></a>Also upsetting: that the series creator received so much misogynistic social media hate for this project. <span class="spPermalink"><a href="/2013/08/20/#a1377010284">#</a></span></p>
-				<p><a name="a1377011296"></a>I'm a semi-conscious male. I've been aware of concepts like Patriarchy and Male Privilege for at least the last twenty years of my life, and although I'm aware that I indulge in the male gaze and objectification, I make conscious attempts not to take advantage of the inherent power I have as a man. And fortunately, my wife calls me on it when I revert to old behaviors. Having asserted that I am on occasion "part of the problem," I'm a father of a teenage girl, and I don't want her to grow up in a culture in which the tropes explored in these videos go about unquestioned by her peers. I encourage any parent to watch this series with their children (once they're old enough to understand the concepts and are mature enough to view some disturbing imagery).<span class="spPermalink"><a href="/2013/08/20/#a1377011296">#</a></span></p>
-				<p><a name="a1377010734"></a>I appreciate <a href="http://www.feministfrequency.com/about/">Anita Sarkeesian</a>'s courage and intelligence in putting herself and this message out there.<span class="spPermalink"><a href="/2013/08/20/#a1377010734">#</a></span></p>
-				<p><a name="a1377035221"></a>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&q=video">video</a><span class="spPermalink"><a href="/2013/08/20/#a1377035221">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos.html">Using Launch Center Pro to Use TextExpander Snippets in TaskPaper for iOS</a></div>
+		<p><a href="https://twitter.com/share?text=Using%20Launch%20Center%20Pro%20to%20Use%20TextExpander%20Snippets%20in%20TaskPaper%20for%20iOS&amp;url=http://blog.jeffreykishner.com/2013/12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos.html" target="_blank">Tweet This Post</a></p>
 
-				</div>
-			<div class="divFargoStreamFooter">
-				<div>&copy; 2014 Jeffrey Kishner.</div>
-				<div>Last update: Thu, Oct 16, 2014 at  2:48 PM.</div>
-				<div><i></i></div>
-				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
+<p><a href="http://smilesoftware.com/apps/">TextExpander</a> for iOS recently had to change how it works in iOS 7, and currently <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper</a> does not support snippets. <a href="https://groups.google.com/forum/#!searchin/taskpaper/textexpander/taskpaper/R1KqfUh9saU/znxS0IKaLmMJ">According to the Google group</a>, the team is working on it but the text editing apps (like WriteRoom) are higher priority.</p>
+
+<p>I've come up with a workaround using <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a>. You can adapt this to your own needs. This action expands a TextExpander snippet within a TaskPaper search query, copies it to the clipboard, and opens my <code>todo</code> list in TaskPaper. If you're on your iOS device, you can tap on <a href="http://launchcenterpro.com/wgw2hr">this link</a> to install it.  </p>
+
+<p>Here is the URL of the action:</p>
+
+<pre><code>launch://x-callback-url/clipboard?text=%40due%20%3C%20&lt;ddue3&gt;&amp;x-success=taskpaper%3A%2F%2Fopen%2Ftodo.taskpaper
+</code></pre>
+
+<p>In TextExpander, I have a snippet called <code>ddue3</code> that uses the following TextExpander math: <code>%@+3D%Y-%m-%d</code>. This expands into YYYY-MM-DD three days from today. If today is 2013-12-29, the search query is <code>@due &lt; 2014-01-01</code>. </p>
+
+<p>TaskPaper uses a similar URL scheme to that of Writeroom's, so to open the app to my todo list, I use the x-success parameter from x-callback-url to go to <code>taskpaper://open/todo.taskpaper</code>. Then I just click on the search icon <i class="icon-search"></i> and paste the clipboard contents to see any tasks that are due before New Year's Day.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">12/29/13; 06:43:45 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="12/29/usingLaunchCenterProToUseTextexpanderSnippetsInTaskpaperForIos.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/26/open-a-taskpaper-url-in-safari-using-launch-center-pro-and-texttool.html">Open a TaskPaper URL in Safari Using Launch Center Pro and TextTool</a></div>
+		<p><a href="https://twitter.com/share?text=Open%20a%20TaskPaper%20URL%20in%20Safari%20Using%20Launch%20Center%20Pro%20and%20TextTool&amp;url=http://blog.jeffreykishner.com/2013/12/26/open-a-taskpaper-url-in-safari-using-launch-center-pro-and-texttool.html" target="_blank">Tweet This Post</a></p>
+
+<p>I've been slowly migrating back to <a href="http://www.hogbaysoftware.com/products/taskpaper">TaskPaper for iOS</a> to manage my to-do list. One major gripe I have with this app is that links are not clickable. However, I've created a <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> action involving <a href="http://blackfoggames.com/TextTool/">TextTool</a> that makes opening a link entered into TaskPaper manageable. </p>
+
+<h3>The Problem</h3>
+
+<p>When you enter a task in TP, it is preceded by dash and then a space. If a task is an URL, when you select it and use the copy function, it will look like this:</p>
+
+<pre><code>- http://website.com
+</code></pre>
+
+<p>Pasting this into Safari (or any iOS web browser) will result in an error.</p>
+
+<h3>The Solution</h3>
+
+<p>After copying the task, tap on the <a href="http://launchcenterpro.com/900l1p">Open TaskPaper URL</a> action in Launch Center Pro (tap on that link while on your iOS device to install) .</p>
+
+<p>LCP will send the string to TextTool, which will use the <code>delist</code> method to remove the dash and space. </p>
+
+<p>TextTool will take that output and send it back to LCP to open the URL in Safari.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">12/26/13; 04:59:20 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="12/26/open-a-taskpaper-url-in-safari-using-launch-center-pro-and-texttool.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/16/fargoScriptToMakeAHeadlineAccordWithApStyleGuide.html">Fargo Script to Make a Headline Accord With AP Style Guide</a></div>
+		<p><a href="https://twitter.com/share?text=Fargo%20Script%20to%20Make%20a%20Headline%20Accord%20With%20AP%20Style%20Guide&amp;url=http://blog.jeffreykishner.com/2013/12/16/fargoScriptToMakeAHeadlineAccordWithApStyleGuide.html" target="_blank">Tweet This Post</a></p>
+
+<p>I've written a script that will transform any headline into one that follows these rules:</p>
+
+<ul>
+<li><i class="icon-quote-left"></i> Capitalize the first word of every letter except articles, coordinating conjunctions, and prepositions of three letters or fewer. There’s one exception: Any word that is the first word in the headline or the last word should be capitalized, regardless of its part of speech. </li>
+</ul>
+
+<p>The script isn't perfect: it won't keep acronyms upcapped (e.g., NSA will turn into Nsa). But it will lowercase the following words:</p>
+
+<pre><code>a, an, and, at, but, by, for, in, nor, of, off, on, or, out, so, the, to, up, yet
+</code></pre>
+
+<p>View the outline <a href="http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/xnaiyo5g2cwjhw3/e5f83c04346fde32bdf95820df40ea6d.opml">here</a>. If you copy the headline to your clipboard, you can paste it into your menubar.</p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p>I've also published a regular javascript version of the script <a href="http://jeffreykishner.com/javascript/apstyleheadline.html">here</a>.</p>
+
+<h3>Update (December 18)</h3>
+
+<p>I've rewritten the script to compare each word in the headline to an array of words to keep lowercase using a for loop within a for loop. You can view that version <a href="http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/g7fn4g309v7u59j/8f06a8b71e155bccad0f0c896b892dda.opml">here</a>.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">12/16/13; 04:52:48 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="12/16/fargoScriptToMakeAHeadlineAccordWithApStyleGuide.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/12/use-launch-center-pro-21-to-open-instagram-for-ios-to-your-favorite-profiles.html">Use Launch Center Pro 2.1 to Open Instagram for iOS to Your Favorite Profiles</a></div>
+		<p><a href="https://twitter.com/share?text=Use%20Launch%20Center%20Pro%202.1%20to%20Open%20Instagram%20for%20iOS%20to%20Your%20Favorite%20Profiles&amp;url=http://blog.jeffreykishner.com/2013/12/12/use-launch-center-pro-21-to-open-instagram-for-ios-to-your-favorite-profiles.html" target="_blank">Tweet This Post</a></p>
+
+<p>The latest release of <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> supports lists. You can read the <a href="http://help.contrast.co/hc/en-us/articles/201050507-2-1-Release-Notes">release notes</a> or Federico Viticci's <a href="http://www.macstories.net/reviews/launch-center-pro-2-1-fleksy-keyboard-lists-photo-attachments-and-share-sheets/">extensive post on MacStories</a> for details. The gist is that if you find yourself entering the same terms over and over again within a prompt, you can instead choose these terms from a list.</p>
+
+<p>I've written an Instagram action that lets you jump to one of your favorite profile pages in the Instagram iOS app. Just tap on <a href="http://launchcenterpro.com/rdl36x">this link</a> while you're on your iOS device to install the action. It looks like this:</p>
+
+<pre><code>instagram://user?username=[list:|username1|username2]
+</code></pre>
+
+<p>Every username is separated by a pipe (|). Just substitute <code>username1</code> with your favorite profile username, <code>username2</code> with another, and so on.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">12/12/13; 12:22:25 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="12/12/use-launch-center-pro-21-to-open-instagram-for-ios-to-your-favorite-profiles.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/12/howMuchToSpendOnMusic.html">How Much to Spend on Music?</a></div>
+		<p><a href="https://twitter.com/share?text=How%20Much%20to%20Spend%20on%20Music%3F&amp;url=http://blog.jeffreykishner.com/2013/12/12/howMuchToSpendOnMusic.html" target="_blank">Tweet This Post</a></p>
+
+<p>Spotify now lets users play any song on demand on tablets (like the iPad) for free, and will let smartphone users play shuffle on the songs by any single artist, or from a playlist.</p>
+
+<p>I am currently paying Mog $10/month so that I can play any song on demand and download songs to my iPhone. Because I commute close to two hours per day via the subway in NYC, it's important to me to have access to music when I'm underground. </p>
+
+<ul>
+<li><p>Although I have a large iTunes collection, there are times I don't want to spend the money to buy a song even if I have downloaded it in my Mog app for listening while I don't have an internet connection.</p>
+
+<ul><li>(Some songs don't last the test of time.)</li></ul></li>
+</ul>
+
+<p>With this Spotify news, I am thinking of ending my monthly Mog subscription, listening to Spotify on my iPad when I have wifi, listening to artists or playlists on shuffle on my iPhone when I have 3G, and drawing from my iTunes collection.</p>
+
+<p>I need to determine if this will save me money. There are Mog downloads I listen to so much that I would feel compelled to buy the tracks or albums on iTunes for on-demand listening. Would I buy $120 worth of music if I dropped my subscription?</p>
+
+<ul>
+<li>I figure if I buy less than one album per month, I will have saved money over the course of a year. The major inconvenience I anticipate is not being able to listen to any song on-demand on my iPhone while I walk from the subway to my office.</li>
+</ul>
+
+<h3>What About the Artists?</h3>
+
+<p>Apparently Spotify had to negotiate hard with the major labels to get this deal, to allow so much free ad-supported streaming. I have no idea how this will affect the artists. I have certainly read how paltry the dividends some musicians and songwriters have received from the steaming services. I also don't know if I care. I am willing to spend money on concert tickets to see Alter Bridge, and I am sure I will download <em>Fortress</em> via iTunes if I quit Mog, because it's a great album. </p>
+
+<ul>
+<li>Basically, I am willing to spend money on artists if I <em>love them</em> but not if I <em>like</em> them.</li>
+</ul>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">12/12/13; 10:04:32 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="12/12/howMuchToSpendOnMusic.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/11/save-a-markdown-link-that-opens-in-icab-mobile.html">Save a Markdown Link that Opens in iCab Mobile</a></div>
+		<p><a href="https://twitter.com/share?text=Save%20a%20Markdown%20Link%20that%20Opens%20in%20iCab%20Mobile&amp;url=http://blog.jeffreykishner.com/2013/12/11/save-a-markdown-link-that-opens-in-icab-mobile.html" target="_blank">Tweet This Post</a></p>
+
+<p>On my <a href="http://imissmymac.com">I Miss My Mac</a> blog, I offered a <a href="http://imissmymac.com/bookmarklet-to-save-a-link-and-title-in-markdown-format-and-copy-to-clipboard/">JavaScript bookmarklet</a> that saves the current page in an iOS web browser as a markdown link and sends it to <a href="http://agiletortoise.com/drafts">Drafts</a>. </p>
+
+<p>I have been using <a href="http://www.icab.de/mobile.html">iCab mobile</a> frequently, and often put markdown links in a text editor like Byword to use as a bookmark manager; here is an alternative bookmarklet/Drafts URL action that opens the markdown link in iCab. </p>
+
+<pre><code>javascript:window.location='drafts://x-callback-url/create?text=%5B'+encodeURIComponent(document.title)+'%5D('+encodeURIComponent(location.href)+')&amp;action=texttool-icab';
+</code></pre>
+
+<p>(The semi-colon at the end seems to be necessary for iCab but not other iOS browsers -- feel free to experiment.)</p>
+
+<h2>Install the Bookmarklet</h2>
+
+<ol>
+<li><p>In your iOS browser of choice, save any page as a bookmark and retitle it (e.g., "iCab-MD").</p></li>
+<li><p>Open Edit Bookmarks, tap on that bookmark, and replace the former URL with the javascript above.</p></li>
+</ol>
+
+<h2>Install the Drafts Action</h2>
+
+<p>The javascript tells Drafts to implement the <code>texttool-icab</code> action. Tap on <a href="drafts://x-callback-url/import_action?type=URL&amp;name=texttool-icab&amp;url=texttool%3A%2F%2Fx-callback-url%2Ftransform%3Ftext%3D%5B%5Bdraft%5D%5D%26method%3Dreplace%26find%3Dhttp%26replace%3Dweb%26x-success%3Dbyword%3A">this link</a> while you're on your iOS device to install it. (You must own a copy of both Drafts and <a href="http://blackfoggames.com/TextTool/">TextTool</a> to make this action work. However, you don't have to set up TextTool to do anything.)</p>
+
+<p>Here is the URL Action:</p>
+
+<pre><code>texttool://x-callback-url/transform?text=[[draft]]&amp;method=replace&amp;find=http&amp;replace=web&amp;x-success=byword:
+</code></pre>
+
+<h2>How It Works</h2>
+
+<ol>
+<li><p>The bookmarklet sends the page's title and URL in markdown link format to Drafts.</p></li>
+<li><p>Drafts sends the draft to TextTool, which replaces <code>http</code> with <code>web</code> (which is the URL scheme to open a web page in iCab).</p></li>
+<li><p>TextTool copies the results to the clipboard, then sends the user to Byword. (If you want it to send you to a different text editor, just add its URL scheme after the <code>x-success=</code> parameter.)</p></li>
+</ol>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/10/a-fargo-script-i-wrote-for-my-day-job.html">A Fargo Script I Wrote for My Day Job</a></div>
+		<p>Part of my day job as a web producer involves resyndicating recipe content. I basically take a whole recipe from the original site, re-render it in HTML in a slightly different format, and post the HTML in a different CMS.</p>
+
+<p>The format of a recipe step on the original site looks like this:</p>
+
+<ul>
+<li><p>STEP 1</p></li>
+<li><p>Whisk the eggs, sugar and flour.</p></li>
+</ul>
+
+<p>I want it to look like this in the resyndicated format:</p>
+
+<ul>
+<li><b>1.</b> Whisk the eggs, sugar and flour.</li>
+</ul>
+
+<p>I've written a Fargo script to accomplish this, you can view the code <a href="http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/xtlqkk7tnqtirst/2ae676afb1f51ed2b1d939eb0bb3b374.opml">here</a>. If you select the top headline and copy it to your clipboard, you can paste the OPML straight into Fargo.</p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p>To make it work, I just copy the text from the original site and paste it into Fargo. "STEP X" is its own headline, the instructions are the headline below it. I run the script on the first headline. If the first four characters are "STEP" I remove all the characters before the number, add a period after the number and bold these two characters, then grab the instructions, append them after the step number, and remove the instructions line.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">12/10/13; 11:26:13 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="12/10/a-fargo-script-i-wrote-for-my-day-job.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/25/revisitingSimplenote.html">Revisiting Simplenote</a></div>
+		<p><a href="https://twitter.com/share?text=Revisiting%20Simplenote&amp;url=http://blog.jeffreykishner.com/2013/09/25/revisitingSimplenote.html" target="_blank">Tweet This Post</a></p>
+
+<p>I'm debating a return to <a href="http://simplenote.com/">Simplenote</a>. I used this service a few years ago until they lost a whole bunch of my notes. Since then I've been using a combination of Dropbox iOS text editors (notably Nebulous Notes, Notesy and Byword) and <a href="http://agiletortoise.com/drafts">Drafts</a>.</p>
+
+<p>Drafts uses Simperium as its sync service, and Simperium is produced by Simplenote. I have found Simperium to be reliable. I use Drafts on an iPhone and an iPad and have never lost a note. Now that Simplenote has been acquired by Automattic, I have been looking at the product again. I trust WordPress, and I trust Matt Mullenweg.</p>
+
+<p>Of course, trust means many things. I trust the <i>ethos</i> of Automattic, I trust the stability of their cloud (I pay them for VaultPress to backup my <a href="http://sasstrology.com">Sasstrology</a> blog), I don't know if I trust them in the "create a backdoor for the NSA" sense, although I would like to believe that they are the kinds of people who would put up a fight.</p>
+
+<p>I am not keen on using a notes service in which I do not control my data. With a self-hosted WordPress solution, my blog contents sits in a database on my own webhost. With <a href="http://fargo.io">Fargo</a>, my OPML files are stored in a Dropbox folder on my hard drive. Same for the Dropbox iOS text editors. And I only store stuff on iCloud that I am not too attached to.</p>
+
+<p>Simplenote does have various export options, but that's not the same as having the data stored on something that I own (or rent, in the case of web hosting). Although Simplenote uses the same sync service as Drafts, the latter is meant as a temporary holding bay for ideas that will be sent to other applications, whereas Simplenote is for archiving text notes.</p>
+
+<p>I suppose my decision may come down to the user experience. I've read that Simplenote is blazing fast. Is it better than any of the Dropbox iOS text editors that I use? </p>
+
+<p>I will report back when I have an answer.</p>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=text">text</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=sync">sync</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=apps">apps</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/25/13; 03:49:43 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/25/revisitingSimplenote.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/25/theWorstPartOfBeingSick.html">The Worst Part of Being Sick</a></div>
+		<p><a href="https://twitter.com/share?text=The%20Worst%20Part%20of%20Being%20Sick&amp;url=http://jeffrey.smallpict.com/2013/09/25/theWorstPartOfBeingSick" target="_blank">Tweet This Post</a></p>
+
+<p>is not being able to dance.</p>
+
+<p>I've had a cold since last Monday, and already took two sick days. I usually dance two times per week, and unfortunately I barely have enough energy just to put in my 8-hour workday and do family-time and house cleanup.</p>
+
+<p>Life feels incomplete without the boogie.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/25/13; 03:34:39 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/25/theWorstPartOfBeingSick.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/25/rapeYoureToBlameVideo.html">"It's Your Fault" Video</a></div>
+		<iframe width="420" height="315" src="//www.youtube.com/embed/8hC0Ng_ajpY" frameborder="0" allowfullscreen></iframe>
+
+<p>I found this satirical video about rape culture hard to watch. It's troubling how much women are blamed for men's actions. And this is such a universal issue -- nearly every culture is patriarchal. </p>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=rape">rape</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=feminism">feminism</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=patriarchy">patriarchy</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=video">video</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/25/13; 01:04:56 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/25/rapeYoureToBlameVideo.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/20/iAmAFailedBlogtrepreneur.html">I Am a Failed Blogtrepreneur</a></div>
+		<p><a href="https://twitter.com/share?text=I%20Am%20a%20Failed%20Blogtrepreneur&amp;url=http://jeffrey.smallpict.com/2013/09/20/iAmAFailedBlogtrepreneur" target="_blank">Tweet This Post</a></p>
+
+<p>After I was laid off from my first full-time job in digital, I decided to focus completely on my <a href="http://sasstrology.com">blog</a>. I had a nice sponsorship from a psychic company plus some Adsense income and rev-share from selling a dating ebook. The money I was taking in was not nearly enough to support my family, but I reasoned that just putting the rest of my expenses on credit cards until my blog was more profitable was worth it.</p>
+
+<ul>
+<li>In retrospect, I was suffering from the delusion that I could earn an income comparable to that which I earned as a full-time employee. Instead, I just racked up debt.</li>
+</ul>
+
+<p>I enjoyed working from home. I had company (my wife) and if I absolutely needed to get out of the basement office I could bring my laptop to the library or local cafe. I didn't have to commute or get dressed, I got to snack on food not created for consumption by Corporate America, and I had my own schedule. </p>
+
+<p>Unfortunately, the psychic company eventually realized they were not getting enough bang for their buck, and pulled out, and I had to re-enter the workforce. Now I'm a full-time digital worker bee, publishing/editing my blog in my spare time.</p>
+
+<p>I've reorganized my priorities on the blog such that I only do stuff that I enjoy.</p>
+
+<ul>
+<li><p>I only work with really good writers.</p></li>
+<li><p>I focus on the technical and business aspects of the blog, <a href="http://blog.jeffreykishner.com/2013/09/10/dontAskMeForAstrologyAdvice">not the astrology</a>.</p></li>
+</ul>
+
+<p>Knowing What I'm Not</p>
+
+<ul>
+<li><p>Although I read <i>Fast Company</i> and <i>Inc.</i>, I don't think I will ever start a real business. I blog for self-expression or to share something geeky I wrote (an iOS URL scheme, an action in <a href="http://agiletortoise.com/drafts">Drafts</a>, a snippet of javascript or PHP).</p></li>
+<li><p>I do not feel gung-ho about working full-time in Corporate America until I retire (if I'm lucky enough to work in digital that long), but I'm not sure I see what other options I have. I've done freelance work before (building WordPress sites); I've "consulted" (astrology readings); I was a psychotherapist working at fee-for-service clinics for a few years. I don't want to go back to counseling, and although I would not mind building WordPress sites for a living, I'm neither a designer nor an experienced coder, and I don't think I can truly stand out in the professional WP marketplace if I don't design themes or work on the backend (e.g., plugin development).</p>
+
+<ul><li>Don't get me wrong -- I'm grateful to have a job with benefits. I can pay my mortgage, feed my family, and pay for my daughter's braces. </li></ul></li>
+<li><p>Also, I'm not very good at hustling for clients, which limits my ability to thrive as a solopreneur</p></li>
+</ul>
+
+<p>Knowing What I Am</p>
+
+<ul>
+<li><p>I'm more of a jack-of-all-trades than a specialist. I can write, edit, tinker with CSS and PHP, crop and resize images, work the FTP. Basically, I can run a big blog without anybody's help.  </p></li>
+<li><p>If only the blog had five times the traffic, I could still work at home in my sweats.</p></li>
+</ul>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=career">career</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=wordpress">wordpress</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/20/13; 09:43:56 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/20/iAmAFailedBlogtrepreneur.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/18/bringConcordRightIntoWordpress.html">Bring Concord Right Into WordPress</a></div>
+		<p><a href="https://github.com/scripting/concord">The outliner part of Fargo has been open-sourced.</a> Although Fargo gives users the ability to post a headline and all of its sub-content to WordPress, it would be cool if you could outline right within WordPress. You know how there are already "Visual" and "HTML" tabs in the editor? A plugin could add an "Outline" tab, where Concord lives. Outline your blog post right there and hit Publish. </p>
+
+<p>The downside is that your outline lives in some mysql database instead of an OPML file in Dropbox. But the upside is that the source of your content is in the same place where you publish it.</p>
+
+<p>I don't have the PHP skills to create this, but I invite developers to run with the idea.</p>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=wordpress">wordpress</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=concord">concord</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=opml">opml</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/18/13; 12:53:49 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/18/bringConcordRightIntoWordpress.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/10/dontAskMeForAstrologyAdvice.html">Don't Ask Me for Astrology Advice</a></div>
+		<p>For much of the first decade of the new millenium, I identified on the internet as an astrologer. I blogged about astrology for about a decade, and I still publish a <a href="http://sasstrology.com">popular astrology blog</a>. I also "did readings" -- I stopped astrology consulting a few years ago as well. </p>
+
+<p>It is not the case that I no longer believe in astrology, it's just that I don't want to identify as a Career Astrologer. I still get email inquiries asking for <i>free advice</i>, and I occasionally get referrals from colleagues. All I can do now is politely decline inquiries, or just not respond at all.</p>
+
+<p>Astrology does not factor into my consciousness like it used to. I don't keep track of lunar cycles or where a particular planet is. If I'm curious about an incident or inner experience, I may look up my transits (the angles that current planetary positions make to the planetary positions at the moment of my birth). I don't think I will ever <i>forget</i> the knowledge I have acquired as a consultant and writer, even if I stop editing posts for my blog. And I don't think I will have a "crisis of faith" and one day decide that astrology is bogus. I just am not very invested in it.</p>
+
+<p>I wish there were an easy way to make this known all over the internet. I don't think I need <i>reputation management</i> -- I don't believe that my association with astrology harms my current career trajectory. I just wish people wouldn't email me about it. It's over and done with. A past life.</p>
+
+<ul>
+<li>I still care about my astrologer colleagues, because I have cultivated some of these relationships for close to a decade. I just don't want any <i>new</i> astrology colleagues (or clients) unless the association benefits my blog. (Totally utilitarian.)</li>
+</ul>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=astrology">astrology</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/10/13; 02:40:27 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/10/dontAskMeForAstrologyAdvice.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/06/isPayingForAnAmazonEc2InstanceToRunRiver23WorthIt.html">Is Paying for an Amazon EC2 Instance to Run River 2 & 3 Worth It?</a></div>
+		<p>I've been paying Amazon about $20 per month to host a remote instance of Windows Server running the OPML Editor, which "polls" OPML files on a regular basis to produce Rivers of News (for <a href="http://jeffreykishner.com/tabbedRivers.html">me</a> and my <a href="http://sasstrology.com/blogs">astrology blog</a>).</p>
+
+<p>Not sure if this is worth the money. I paid a one-time licensing fee of $35 to host <a href="http://feedafever.com">Fever</a> on my VPS. It isn't costing me extra to run the software (i.e., the added bandwidth falls within my current hosting plan). </p>
+
+<ul>
+<li><p>The astrology river garnered less than 1000 pageviews over the past month and yielded one penny in Adsense income.</p></li>
+<li><p>I mostly look at my tabbed rivers to see what Dave Winer has posted, but I can just as easily add all his feeds to Fever.</p></li>
+</ul>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=rss">rss</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=opml">opml</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/06/13; 11:58:55 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/06/isPayingForAnAmazonEc2InstanceToRunRiver23WorthIt.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/22/speakingOfDependenceOnGoogle.html">Speaking of Dependence on Google...</a></div>
+		<p>The traffic to my <a href="http://sasstrology.com">astrology blog</a> has dropped precipitously in the last three days. Drilling down into my analytics, it appears that I am getting less than half the Google search traffic I was getting just this past weekend.</p>
+
+<p>Yes, I am worried. The blog brings in money. But it is also seven years old. It has over 5k fans on FB, over 2.5k followers on Twitter. I have a sizable email list (that I haven't been using since I ditched Mailchimp) that I can contact if I need to. Also, I have diversified my income streams such that I am not solely dependent on pageviews (i.e., ad impressions).</p>
+
+<p>Nonetheless, I feel I need to keep bringing in "new eyeballs," because only a fraction of new visitors become fans. I feel helpless, and I don't want to try to <i>divine</i> Google's algorithmic intentions. ("What am I doing wrong, Google? Why hast thou forsaken me?") When I feel this way, I feel more determined to reduce my dependence on search traffic, yet Google is by far the biggest referrer to my site.</p>
+
+<p>If <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/">Font Awesome</a> had an unhappy face icon, I'd insert it here.  </p>
+
+<p>:(</p>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=google">google</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/22/13; 10:53:55 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/22/speakingOfDependenceOnGoogle.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/22/anotherPersonMovingToFastmailfm.html">Another Person Moving to Fastmail.fm</a></div>
+		<p>I just set up my own domain with <a href="http://fastmail.fm">Fastmail.fm</a> and am going to start offering jk@jeffreykishner.com as my primary email address instead of jeffreykishner@gmail.com. It took opening tickets with both my host and Fastmail to correctly set up my MX records and my email alias, but now it is working. </p>
+
+<p>The "straw that broke the camel's back" was <a href="http://www.groklaw.net/article.php?story=20130818120421175">this post on Groklaw</a> about the author's choice to shut down the site (who knows how long this link will be active?) in light of recent disclosures about our current surveillance state, as well as numerous posts by Marco Arment about reducing his dependence on Google (particularly <a href="http://www.marco.org/2011/04/05/let-us-pay-for-this-service-so-it-wont-go-down">this one</a>). </p>
+
+<p>I have no illusions that Fastmail wouldn't make their servers available to the NSA upon a court order (although honestly I haven't read their ToS and Privacy Policy closely to even find out). But I feel they'd put up more of a fight than Google (and yes, my "feeling" may not be justified by any facts). </p>
+
+<p>But privacy concerns aside, I would rather be a customer than a product. To Google, I am a product and the advertiser is the customer. The advertiser is paying for my attention. By choosing to pay Fastmail (by the time my 60-day trial ends) I am choosing to be the customer. They are serving <i>me</i>, not an advertiser. No software is reading my emails for the purpose of determining the most contextually appropriate ads to serve me.</p>
+
+<p>I still rely on Google. I do searches while logged in. I use Maps; Calendar for my business; Drive to store some docs and spreadsheets that I frequently edit; and probably other services that are not coming to mind right now. I do not think Google is Evil, but I also don't feel that they have my best interests in mind. I don't want to just contribute to some Big Dataset in the Cloud.</p>
+
+<p>I <i>love</i> the keyboard shortcuts and ease-of-use of Gmail, but Fastmail has IMAP, webmail, keyboard shortcuts, and other features. At this moment, I am willing to forego some convenience. I hope I stick with it.</p>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=privacy">privacy</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=email">email</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/22/13; 08:41:29 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/22/anotherPersonMovingToFastmailfm.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/20/violenceAgainstWomenInVideoGames.html">Violence Against Women in Video Games</a></div>
+		<div align="center"><iframe width="560" height="315" src="//www.youtube.com/embed/toa_vH6xGqs" frameborder="0" allowfullscreen></iframe></div>
+
+<p>&nbsp;</p>
+
+<p>I learned about about this <i>Damsels in Distress </i>series via Wired magazine, in which the creator explores misogynist tropes in video games. <a href="http://www.youtube.com/watch?v=X6p5AZp7r_Q">Here's the first in the series</a>; I've embedded the second video above.</p>
+
+<p>I'm not a gamer, and although the use of the "damsel in distress" archetype in video games didn't surprise me, the second video was disturbing. <i>I did not know that so many games require the gamer to kill a woman to proceed to the next level, and that in many cases she is literally "asking for it," i.e., asking the protagonist to kill her (usually because she has been transformed into a "beast" and needs to return to her "pure state").</i></p>
+
+<p>Also upsetting: that the series creator received so much misogynistic social media hate for this project. </p>
+
+<p>I'm a semi-conscious male. I've been aware of concepts like Patriarchy and Male Privilege for at least the last twenty years of my life, and although I'm aware that I indulge in the male gaze and objectification, I make conscious attempts not to take advantage of the inherent power I have as a man. And fortunately, my wife calls me on it when I revert to old behaviors. Having asserted that I am on occasion "part of the problem," I'm a father of a teenage girl, and I don't want her to grow up in a culture in which the tropes explored in these videos go about unquestioned by her peers. I encourage any parent to watch this series with their children (once they're old enough to understand the concepts and are mature enough to view some disturbing imagery).</p>
+
+<p>I appreciate <a href="http://www.feministfrequency.com/about/">Anita Sarkeesian</a>'s courage and intelligence in putting herself and this message out there.</p>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=video">video</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/20/13; 09:45:45 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/20/violenceAgainstWomenInVideoGames.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/14/includeOpmlInAWordpressPostOrPage.html">Include OPML in a WordPress Post or Page</a></div>
+		<p>I wrote a WordPress plugin that enables you to post an outline as an unordered list within a post or page. You can grab the code (and see attribution to Betsy Kimak, upon whose code this plugin is based) <a href="https://gist.github.com/jkishner/6236023">here</a>. I just wrote it today so expect further development.</p>
+
+<h3>How to Install</h3>
+
+<ul>
+<li><p>Copy the gist into a text file.</p></li>
+<li><p>Title it fargo2opml.php</p></li>
+<li><p>Create a folder called fargo2opml</p></li>
+<li><p>Drag the file into the folder</p></li>
+<li><p>Compress folder as zip file</p></li>
+<li><p>Install it into a self-hosted WordPress site</p></li>
+<li><p>Activate the plugin</p></li>
+</ul>
+
+<p>Or remove the opening and closing php tags and drop it in your functions.php file.</p>
+
+<h3>How to Use</h3>
+
+<p>In the content area of your WordPress post or page, just use this shortcode: </p>
+
+<ul>
+<li><code>[opml url="OPML_URL"]</code></li>
+</ul>
+
+<p>(Obviously, paste the URL of the OPML file between the quotes.)</p>
+
+<p>I've tested this in a few blog installations, and for some the padding before the <code>ul</code> is absent, so all headlines are "flat," i.e., not nested. But it works in both posts and pages in the default 2013 theme.</p>
+
+<p>Also if a public URL starting with <code>https://dl.dropbox.com</code> leads to parsing errors, paste the URL into the address bar, hit return, and use the updated URL that includes "dropboxusercontent" in the URL. </p>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=opml">opml</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=wordpress">wordpress</a>, <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=plugin">plugin</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/14/13; 04:51:36 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/14/includeOpmlInAWordpressPostOrPage.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/13/alterBridgeAddictedToPain.html">Alter Bridge: "Addicted to Pain"</a></div>
+		<p>My fave band's new single. The album drops October 8.</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/nh_NOkycLCw" frameborder="0" allowfullscreen></iframe>
+
+<p>Tags: <a href="https://www.google.com/search?sitesearch=blog.jeffreykishner.com&amp;q=video">video</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/13/13; 02:28:01 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/13/alterBridgeAddictedToPain.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/12/aFargoLoopScriptToActOnEveryHeadlineInYourOutlineLink.html">A Fargo Loop Script to Act on Every Headline in Your Outline</a></div>
+		<p>I'm so proud of myself. Can't tell you how much obsession and trial-and-error it took to get <a href="http://blog.jeffreykishner.com/scripts/fargoLoop.html">this</a> to work. </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/12/13; 03:15:18 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/12/aFargoLoopScriptToActOnEveryHeadlineInYourOutlineLink.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/10/elysiumReview.html">Elysium Review</a></div>
+		<p>No plot summary here, just reporting that I maintain a "positive sentiment" about this movie 24 hours after viewing. </p>
+
+<p>It wasn't <i>too</i> thrilling or creepy or funny or touching, but had enough of all these elements in just the right combination that I felt good coming out of the theater.  </p>
+
+<p>I've seen just about every sci-fi or comic book movie (except for <i>Man of Steel</i>) this summer. <i>Iron Man</i> left me feeling empty, <i>Wolverine</i> was too confusing. The highlight was <i>Star Trek</i>, and <i>Elysium</i> comes in second. I actually want to see it again, even though there were no box-in-a-box plot twists. A straightforward "fight to reach the goal" or "find what you are made of" film can be good -- it's all in the execution.  </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/10/13; 05:03:00 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/10/elysiumReview.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/09/aOnelineFargoScriptToAddBlockquoteTagsToAHeadline.html">A One-Line Fargo Script to Add Blockquote Tags to a Headline</a></div>
+		<p>If you're writing a post that you're publishing to WordPress (or as type=html from a named outline) and want to wrap blockquotes around the complete text of a headline, add this to your Scripts menu:</p>
+
+<ul>
+<li><p>blockquote</p>
+
+<ul><li><code>op.setLineText ("&lt;blockquote&gt;" + op.getLineText () + "&lt;/blockquote&gt;");</code></li></ul></li>
+</ul>
+
+<p>This script will transform</p>
+
+<ul>
+<li><i class="fa fa-caret-right"></i> A person who never made a mistake never tried anything new.</li>
+</ul>
+
+<p>to</p>
+
+<ul>
+<li><i class="fa fa-caret-right"></i> &lt;blockquote&gt;A person who never made a mistake never tried anything new.&lt;/blockquote&gt;</li>
+</ul>
+
+<p>Just put your cursor on the headline and choose the script. Highlighting a portion of the text won't do anything -- the entire headline is always surrounded by the tags.</p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p><small>In response to <a href="http://frank-notes.smallpict.com/2013/08/07/addingHtmlTagsToNodes">Frank McPherson</a>.</small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/09/13; 12:22:52 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/09/aOnelineFargoScriptToAddBlockquoteTagsToAHeadline.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/07/updatedTodoScriptForFargo.html">Updated To-Do Script for Fargo</a></div>
+		<p>This script builds on the one I offered <a href="http://blog.jeffreykishner.com/2013/08/06/aTodoScriptForFargo.html">yesterday</a>. Click on the wedge to see changes, or read the full description below.</p>
+
+<ul>
+<li><p>Creates an Archive headline at the bottom of an outline if it does not already exist. </p></li>
+<li><p>You can apply this script to any headline no matter how nested it is, which means that you can apply it to actions within a project or sub-project. When you archive it, all its children are carried over with it.</p></li>
+<li><p>When you mark a headline complete, an attribute called "completed" is added with the current date and time. You will not see this information in the headline, but you can see it by clicking on the <i class="fa fa-suitcase"></i> in the left rail of Fargo.</p></li>
+</ul>
+
+<p>If you have an outline with to-do items (no matter how nested they are within higher-order headlines), this script does the following:</p>
+
+<ul>
+<li><p>Choose "todoArchive" from your <i>Scripts</i> menu to add an empty checkbox <i class="fa fa-check-empty"></i> when you first enter the action item.</p></li>
+<li><p>When you've completed the item, choose "todoArchive" to add a checkmark <i class="fa fa-check"></i> to the headline.</p>
+
+<ul><li>When you mark a headline complete, an attribute called "completed" is added with the current date and time. You will not see this information in the headline, but you can see it by clicking on the <i class="fa fa-suitcase"></i> in the left rail of Fargo.</li></ul></li>
+<li><p>If you don't want to see the completed item anymore, choose "todoArchive" to archive it.</p>
+
+<ul><li><p>If the final first-order headline in your outline is called "Archive," the completed item will become a child of this headline.</p></li>
+<li><p>If the final first-order headline in your outline is <i>not</i> called "Archive," one will be created, and the completed item will become a child of this headline.</p></li>
+<li><p>When the item is archived, the "Archive" headline will automatically collapse. You will need to expand it if you want to see all your archived items.</p></li></ul></li>
+<li><p>If your headline has any other icon value associated with it (e.g., <i class="fa fa-star-empty"></i>), "todoArchive" will do absolutely nothing to it.</p></li>
+<li><p>Your outline would look something like this:</p>
+
+<ul><li><p><i class="fa fa-check-empty"></i> incomplete to-do item</p></li>
+<li><p><i class="fa fa-check"></i> completed to-do item</p></li>
+<li><p><b><i class="fa fa-caret-right"></i> Archive</b></p></li></ul></li>
+</ul>
+
+<p>You can view the OPML <a href="http://reader.jeffreykishner.com/?opmlurl=https://dl.dropbox.com/s/xv93tfa9v2wjarn/todoarchivescript.opml">here</a>.)</p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/07/13; 09:10:28 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/07/updatedTodoScriptForFargo.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/06/aTodoScriptForFargo.html">A To-Do Script for Fargo</a></div>
+		<p><i>An updated version of this script with more bells and whistles can be found <a href="http://blog.jeffreykishner.com/2013/08/07/updatedTodoScriptForFargo.html">here</a>.</i></p>
+
+<p>If you have an outline with <i>only</i> a simple list of single action to-do items (i.e, no headlines with child nodes) and an Archive headline at the very end of your outline, this script does the following:</p>
+
+<ul>
+<li><p>Choose "todo" from your <i>Scripts</i> menu to add an empty checkbox <i class="fa fa-check-empty"></i> when you first enter the action item.</p></li>
+<li><p>When you've completed the item, choose "todo" to add a checkmark <i class="fa fa-check"></i> to the headline.</p></li>
+<li><p>If you don't want to see the completed item anymore, choose "todo" to make the headline a child of the Archive headline.</p></li>
+<li><p>If your headline has any other icon value associated with it (e.g., <i class="fa fa-star-empty"></i>), "todo" will do absolutely nothing to it.</p></li>
+</ul>
+
+<script src="https://gist.github.com/jkishner/6165299.js"></script>
+
+<p>(If you do not see a github embed above, please refresh this page or get the raw code <a href="https://gist.github.com/jkishner/6165299/raw/215a255fa8c34df5cae52368e69ce6530a43333b/todo">here</a>.)</p>
+
+<p>Your outline would look something like this:</p>
+
+<ul>
+<li><p><i class="fa fa-check-empty"></i> incomplete to-do item</p></li>
+<li><p><i class="fa fa-check"></i> completed to-do item</p></li>
+<li><p><b><i class="fa fa-caret-right"></i> Archive</b></p></li>
+</ul>
+
+<p>If you expand the Archive headline, you will see your completed items.</p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/06/13; 10:07:52 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/06/aTodoScriptForFargo.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="08/05/onProgrammingAsAHobby.html">On Programming as a Hobby</a></div>
+		<p>I've been seriously geeking out on the internet since about 2001, when I built my first web page. Since then, I've learned enough HTML, CSS and PHP to "get by" as someone who runs a popular blog on WordPress. I pretty much only pick things up when I <i>have to</i>, i.e., when I want to add some look or functionality to my site but don't want to pay someone else to do it for me. </p>
+
+<p>A year ago, I downloaded a free PHP manual onto my Kindle, and finally developed a simple <a href="http://taskpusher.net">web app</a> using a <a href="https://pushover.net/faq#technical-php">CURL module</a>. I learned what I needed to by looking stuff up online to solve my own problem.</p>
+
+<p>Now that I'm playing around with <a href="http://outliner.smallpicture.com/fargoVerbs.js">Fargo verbs</a> and writing my own scripts, I'm finding it not too challenging. With some basic PHP knowledge under my belt, I've just had to look up minor syntactical differences in javascript. </p>
+
+<ul>
+<li>Because I already know about concepts like <i>string replace</i> and <i>if-else</i>, I know what's possible and just have to look at how it's done in a different language.</li>
+</ul>
+
+<p>However, when I look at scripts written by <i>real programmers</i>, I am at a loss. I feel like someone who has taken a semester of French and gone abroad, only to understand 5-10% of what anyone is talking about.</p>
+
+<p>When this happens, I hit a roadblock. I don't <i>really</i> want to sit down and formally read a manual on javascript. I have written what I've written for Fargo <i>because it's fun</i>. The moment it stops being fun, when it starts to feel like homework, I resist. It's one thing to go overcome a lack of knowledge because I feel inspired enough to search for a solution to a legitimate problem (or am just plain curious). It's another to study a language methodically because I feel I need to "catch up" with some Ideal Level of Competency.</p>
+
+<h3>Producer vs. Developer</h3>
+
+<p>I've been working in digital since 2006, mostly doing editing and web production. I love dabbling in programming, but I don't know if I'll ever make the transition to programmer or developer. It seems like a quantum leap is required to move from hobbyist to professional, and I don't know if I have the mind or the desire to make that jump. </p>
+
+<ul>
+<li>Maybe out of economic necessity: if I am ever "made redundant" via technology or outsourcing, I would have to do what it takes to become more <i>marketable</i> in the <i>workplace</i>. As much as I'd love to earn a higher salary now, I feel too complacent to develop professional programming skills while I currently have a job.</li>
+</ul>
+
+<p><b>Comment below:</b> If you're a programmer, how did you "make the leap" or were you <i>always</i> doing this? And if you're a dabbler, how do you feel about coding-as-hobby?</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">08/05/13; 02:38:24 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="08/05/onProgrammingAsAHobby.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Tue, Mar 31, 2015 at 12:50 PM</p>
+					<script>var disqus_identifier = "Tue, 31 Mar 2015 17:50:02 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, March 31, 2015 at 12:50 PM</span>.</div>
+					</div>
 				</div>
 			</div>
 		<script>
-			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>

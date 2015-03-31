@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>September 2014</title>
-		<meta charset="utf-8"> 
+		<meta charset='utf-8'> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.jeffreykishner.com/rss.xml" />
 		
 		<!-- useBootstrap -->
@@ -15,12 +16,12 @@
 	<script src="http://fargo.io/cms/platform.js?v=0.48"></script>
 	<script>
 		var pagetable = {
-    "opmlUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml?dl=0",
+    "opmlUrl": "",
     "opmlTitle": "jeffrey",
     "opmlOwnerName": "Jeffrey Kishner",
     "opmlOwnerEmail": "jk@jeffreykishner.com",
-    "opmlDateModified": "Thu, 16 Oct 2014 19:47:27 GMT",
-    "opmlExpansionState": "1,2,3,7,8,10,18,19,26,27,36,37,43,45,46,51,52,59,61,66,69,70,77,78,89,90,96,99,103,104,111,119,120,127,128,131,132,138,139,142,143,145,148,158,159,165,178,180,181,191,192,193,194,197,210,211,212,214,228,229,230,238,248",
+    "opmlDateModified": "Tue, 31 Mar 2015 17:50:02 GMT",
+    "opmlExpansionState": "1,2,3,4,6,7,8,20,21,27,29,30,32,33,43,44,65,66,67,75,85,94,96,97,107,109,112,113,129,130",
     "opmlLink": "http://blog.jeffreykishner.com/",
     "opmlFeed": "http://blog.jeffreykishner.com/rss.xml",
     "opmlOwnerProfile": "http://jeffreykishner.com/",
@@ -35,15 +36,15 @@
     "opmlLinkHosting": "https://dl.dropbox.com/s/0vnsj1qc2zq31bi/jeffrey.pack",
     "opmlTypeInsertedNode": "",
     "opmlLinkPublicUrl": "https://dl.dropbox.com/s/8lpmfklfk5w559i/jeffrey.opml",
-    "opmlLastCursor": "3",
+    "opmlLastCursor": "63",
     "opmlDateCreated": "",
     "opmlOwnerId": "",
     "menuname": "jeffmenu",
     "googleAnalyticsID": "",
     "domain": "",
     "bootstrapTheme": "readable",
-    "type": "stream",
-    "slogan": "Ask not what the Internet can do for you.",
+    "type": "bloghome",
+    "slogan": "Don't slam the door on the way out.",
     "disqusGroupName": "jeffreykishner",
     "siteTimeZone": "-5",
     "dateFormat": "%A, %B %e, %Y at %l:%M %p",
@@ -90,611 +91,53 @@
     "icon": "calendar",
     "cssUrl": "http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css",
     "menuTitle": "Jeffrey Kishner",
-    "now": "Thu Oct 16 2014 15:47:31 GMT-0400 (EDT)",
-    "copyright": "&copy; 2014 Jeffrey Kishner.",
+    "now": "Tue Mar 31 2015 13:50:07 GMT-0400 (EDT)",
+    "copyright": "&copy; 2015 Jeffrey Kishner.",
     "url": "http://blog.jeffreykishner.com/2014/09.html"
 }; //12/12/13 by DW
 		</script>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link href="http://fargo.io/code/ubuntuFont.css" rel="stylesheet" type="text/css">
-		<link href="http://fargo.io/code/vollkornFont.css" rel="stylesheet" type="text/css">
-		<link href="http://fargo.io/code/ranchoFont.css" rel="stylesheet" type="text/css">
-		
-		
-		<meta property="og:url" content="http://blog.jeffreykishner.com/2014/09.html" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="September 2014" />
-		<meta property="og:description" content="" />
-		<meta property="og:image" content="" />
-		<meta property="og:site_name" content="Jeffrey Kishner" />
-		
-		<meta name="twitter:card" value="summary">
-		<meta name="twitter:title" content="September 2014" />
-		<meta name="twitter:url" content="http://blog.jeffreykishner.com/2014/09.html" />
-		<meta name="twitter:description" content="" />
-		<meta name="twitter:image" content=""/>
-		<meta name="twitter:site" value="kishner">
-		
 		<style>
-			body {
-				background-color: whitesmoke;
-				}
-			.divPageContainer {
-				}
-			.navbar {
-				font-size: 17px;
-				line-height: 140%;
-				}
-			.navbar-inner {
-				min-height: 60px;
-				}
-			.navbar .nav > li > a {
-				padding-top: 17px;
-				}
-			.navbar .brand {
-				padding-top: 13px;
-				padding-left: 25px;
-				}
-			.navbar-container {
-				width: 1000px !important;
-				}
-			.divFargoStreamBody {
-				}
-			.divBodyText {
-				}
-			.divStreamTopSpacer {
-				}
-			.divStreamDay {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				margin-left: 0;
-				margin-top: 0;
-				border-top: 1px solid silver;
-				z-index: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				}
-			.divStreamDayText {
-				font-family: 'Vollkorn', serif;
-				font-size: 24px;
-				line-height: 145%;
-				padding-top: 5%;
-				padding-bottom: 10%;
-				
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				
-				vertical-align: top;
-				height: 100%;
-				margin-top: 30px;
-				}
-			.divStreamDayHead {
-				font-family: 'Ubuntu', sans-serif;
-				font-size: 36px;
-				font-weight: bold;
-				margin-top: .1em;
-				-webkit-margin-after: .75em;
-				}
-			.divStreamDayImage {
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				right: 0;
-				
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				
-				z-index: -1;
-				opacity: 1;
-				}
-			.divMapCanvas {
-				height: 100%; 
-				width: 100%; 
-				position: absolute; 
-				right: 0; 
-				z-index: -10;
-				}
-			.divTextInFrontOfImage {
-				background-color: whitesmoke; 
-				opacity: .98;
-				padding: 1.5em;
-				border:2px solid gainsboro;
-				}
-			.spStreamArrows {
-				font-size: .8em;
-				color: silver;
-				margin-right: 15px;
-				}
-			.divStreamDay p {
-				margin-bottom: .3em;
-				}
-			.divTextContainer {
-				padding: 0;
-				}
-			.divBanner {
-				margin-bottom: -1px;
-				}
-			.divLevel {
-				margin-left: 20px;
-				display: none;
-				}
-			h4 {
-				font-family: "Georgia";
-				font-size: 18px;
-				-webkit-margin-after: 5px;
-				}
-			.divStreamSectionHead {
-				font-family: Ubuntu;
-				margin-top: 5px;
-				font-weight: bold;
-				-webkit-margin-after: 5px;
-				}
-			.spPermalink {
-				margin-left: 3px;
-				}
-			.spPermalink a {
-				text-decoration: none;
-				color: purple;
-				font-size: 13px;
-				font-weight: none !important;
-				}
-			.divDaySeparator {
-				height: 0;
-				}
-			.aStreamWedgeLink {
-				color: black;
-				}
-			.aStreamWedgeLink i {
-				font-size: .85em;
-				color: black;
-				cursor: pointer;
-				}
-			.aStreamDayLink {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.aStreamDayLink a:link, .aStreamDayLink a:visited {
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divStreamIcon {
-				float: left;
-				width: 20px;
-				margin-left: -20px;
-				margin-right: 0;
-				}
-			.spStreamArrows {
-				float: left;
-				width: 36px;
-				margin-left: -36px;
-				margin-right: 0;
-				display: none;
-				}
-			.aStreamArrowsLink {
-				font-size: .75em;
-				color: black !important;
-				cursor: pointer;
-				text-decoration: none;
-				}
-			.divFargoStreamFooter {
-				font-family: 'Ubuntu', sans-serif;
-				line-height: 200%;
-				height: 400px;
-				background-color: whitesmoke;
-				border-top: 1px solid silver;
-				text-align: center;
-				padding-top: 15px;
-				}
-			.divFargoSocialMediaLinks {
-				position: fixed;
-				z-index: 1;
-				}
-			.divNavSocialMediaLinks {
-				margin-top: 17px;
-				margin-left: 1em;
-				font-size: .9em;
-				}
-			.divNavSocialMediaLinks .nav>li>a {
-				display: inline;
-				}
-			.divNavSocialMediaLinks .aSocialMediaLink {
-				letter-spacing: 14px;
-				}
-			.aStreamTextLink {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.aStreamTextLink a:link, .aStreamTextLink a:visited, .aStreamTextLink a:hover, .aStreamTextLink a:active {
-				cursor: pointer;
-				color: black;
-				text-decoration: none;
-				}
-			.divFargoStreamComments {
-				width: 700px;
-				margin-left: auto;
-				margin-right: auto;
-				margin-bottom: 400px;
-				margin-top: 10px;
-				}
-			.divDisqusComments { 
-				margin-top: 5px !important;
-				}
-			</style>
-		<style> /* styles for phone */
 			@media only screen 
 			and (min-device-width : 320px) 
 			and (max-device-width : 480px) {
-				.divPageContainer {
-					}
-				.navbar {
+				.navbar .nav>li {
 					display: none;
-					}
-				.divBodyText {
-					}
-				.divTextContainer {
-					margin-top: -40px;
-					}
-				.divStreamTopSpacer {
-					display: none;
+					height: 0;
 					}
 				.divFargoSocialMediaLinks {
 					display: none;
 					}
-				.divStreamDayHead {
-					font-size: 22px;
+				.container {
+					margin-top: 10px;
+					width: 90%;
 					}
-				.divStreamSectionHead {
-					margin-top: 8px;
-					-webkit-margin-after: 8px;
-					}
-				.divStreamDayText {
+				.divFargoMarkdown p {
 					font-size: 17px;
-					padding-left: 8%;
-					padding-right: 7%;
-					width: 85%;
+					line-height: 140%;
 					}
-				.aStreamWedgeLink i {
-					font-size: 1.1em;
+				h2 {
+					font-size: 24px;
+					line-height: 140%;
 					}
-				.divStreamIcon {
-					width: 14px;
-					margin-left: -14px;
+				.divHeadlineUnit {
+					margin-bottom: 5px;
 					}
-				.spPermalink {
+				.divPrevNext {
+					float: none;
+					}
+				.divBreadcrumbs {
 					display: none;
-					}
-				.divFargoStreamFooter {
 					font-size: 15px;
-					line-height: 170%;
 					}
-				.divTextInFrontOfImage {
-					width: 80% !important;
-					margin-left: auto;
-					margin-right: auto;
+				.breadcrumb>li>.divider {
+					padding: 0;
+					padding-left: 1px;
 					}
-				.spDateYearPart {
+				.spSlogan {
 					display: none;
 					}
-				.divPictureViewer .modal {
-					left: auto;
-					width: auto;
-					margin-left: auto;
-					margin-right: auto;
-					}
-				.divLevel {
-					margin-left: 0;
-					}
 				}
 			</style>
-		<style> /* styles for tablet */
-			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-				.divPageContainer {
-					}
-				.navbar .nav > li > a {
-					padding-right: 7px;
-					}
-				}
-			</style>
-		
-		<script>
-			var flSetupDisqusThread = false;
-			
-			var colorsArray = [
-				"white",
-				"whitesmoke",
-				"ghostwhite",
-				"gainsboro" 
-				];
-			function closeDisqusThread () {
-				$("#idDisqusDialog").modal ("hide");
-				}
-			function openDisqusThread () {
-				function getCommentHtml () {
-					var id = "", hidingCode  = "", visibleStyle = "";
-					if (pagetable.opmlUrl != undefined) {
-						id += pagetable.opmlUrl;
-						}
-					if (pagetable.created != undefined) {
-						id += pagetable.created;
-						}
-					if (id.length > 0) {
-						id = "&lt;script>var disqus_identifier = \"" + id + "\";&lt;/script>";
-						}
-					var code = id + hidingCode + "&lt;div class=\"divDisqusComments\" id=\"idDisqusComments\"" + visibleStyle + ">&lt;div id=\"disqus_thread\">&lt;/div>&lt;/div>&lt;script type=\"text/javascript\" src=\"http://disqus.com/forums/" + pagetable.disqusGroupName + "/embed.js\">&lt;/script>&lt;/div>";
-					return (code.replace (/&lt;/g,'<'));
-					}
-				if (!flSetupDisqusThread) {
-					var s = 
-						"<div id=\"idDisqusDialog\" class=\"modal hide fade\"><div class=\"modal-body\"><div class=\"divDisqusBodyText\"><div id=\"idDisqusCode\"></div></div></div><div class=\"modal-footer\"><a href=\"#\" class=\"btn btn-primary\" style=\"width: 70px;\" onclick=\"closeDisqusThread ();\">Close</a></div></div>"
-					$("body").prepend (s)
-					flSetupDisqusThread = true;
-					}
-				$("#idDisqusCode").html (getCommentHtml ());
-				$("#idDisqusDialog").modal ("show");
-				}
-			
-			
-			function getdaynum (theDate) {
-				var year = theDate.getFullYear ();
-				var onejan = new Date (year, 0, 1);
-				return (Math.ceil ((theDate - onejan) / 86400000));
-				}
-			function ecStream (idnum) {
-				var c = document.getElementById ("idStreamWedge" + idnum), idUL = "#idStreamLevel" + idnum;
-				if (c.className == "fa fa-caret-down") {
-					c.className = "fa fa-caret-right";
-					$(idUL).slideUp (75);
-					}
-				else {
-					c.className = "fa fa-caret-down";
-					$(idUL).slideDown (75);
-					}
-				}
-			function initMap (idmap, maplat, maplong, maptype, mapzoom) { 
-				var mapCanvas = document.getElementById (idmap);
-				if (mapCanvas != null) {
-					var mapOptions = {
-						center: new google.maps.LatLng (maplat, maplong),
-						zoom: Number (mapzoom),
-						panControl: false,
-						zoomControl: false,
-						mapTypeControl: false,
-						scaleControl: false,
-						streetViewControl :false,
-						overviewMapControl: false,
-						rotateControl: false,
-						mapTypeId: maptype
-						};
-					var map = new google.maps.Map (mapCanvas, mapOptions);
-					}
-				}
-			
-			function turnOffImages () { //5/18/14 by DW
-				$(".divStreamDayImage").css ("background-image", "");
-				localStorage.flTurnImagesOff = "true";
-				}
-			function turnOffImagesCommand () {
-				confirmDialog ("Turn off images?", function () {
-					localStorage.flTurnImagesOff = "true";
-					location.reload (true);
-					});
-				}
-			function turnOnImagesCommand () {
-				confirmDialog ("Turn images on?", function () {
-					localStorage.flTurnImagesOff = "false"; 
-					location.reload (true);
-					});
-				}
-			
-			function startup () {
-				var streamVersion = 1; //5/20/14 by DW
-				var flPlainOutline; //5/20/14 by DW
-				var hightlightcolor = pagetable.streamHighlightColor; //5/4/14 by DW
-				var highlightedtitle = undefined; //5/11/14 by DW -- if this gets defined, use it as the title of the page
-				
-				//set streamVersion -- 5/20/14 by DW
-					if (pagetable.streamVersion != undefined) {
-						var x = parseInt (pagetable.streamVersion);
-						if (!isNaN (x)) {
-							streamVersion = x;
-							}
-						}
-				//set flPlainOutline, initialize localStorage.flTurnImagesOff -- 5/20/14 by DW
-					if (localStorage.flImagesOff != undefined) { //6/2/14 by DW
-						localStorage.removeItem ("flImagesOff")
-						}
-					if (localStorage.flTurnImagesOff == undefined) {
-						if (streamVersion > 1) {
-							localStorage.flTurnImagesOff = "false";
-							}
-						}
-					flPlainOutline = getBoolean (localStorage.flTurnImagesOff);
-				//every day gets a background color, image, map or -- ??
-					if (!flPlainOutline) {
-						var ixcolorarray = 0, ctmaps = 0;
-						$("#idTextContainer").children ("div").each (function () { //look at each divStreamDay
-							var flSetColor = true;
-							
-							if (getBoolean ($(this).data ("flmapbackground"))) { //it's a map!
-								var idmap = "idFargoMap" + ctmaps++, maplat, maplong, maptype, mapzoom;
-								flSetColor = false;
-								$(this).prepend ("<div class=\"divMapCanvas\" id=\"" + idmap + "\"></div>");
-								
-								//set up map parameters
-									maplat = $(this).data ("maplatitude");
-									if (maplat == undefined) {
-										maplat = pagetable.mapLatitude;
-										}
-									maplong = $(this).data ("maplongitude");
-									if (maplong == undefined) {
-										maplong = pagetable.mapLongitude;
-										}
-									maptype = $(this).data ("maptype");
-									if (maptype == undefined) {
-										maptype = pagetable.mapType;
-										}
-									mapzoom = $(this).data ("mapzoom");
-									if (mapzoom == undefined) {
-										mapzoom = pagetable.mapZoom;
-										}
-								
-								initMap (idmap, maplat, maplong, maptype, mapzoom);
-								}
-							else {
-								$(this).children ("div").each (function () {
-									if (this.className == "divStreamDayImage") {
-										flSetColor = false;
-										}
-									});
-								}
-							
-							if (flSetColor) {
-								this.style.backgroundColor = colorsArray [ixcolorarray++ % colorsArray.length];
-								}
-							else {
-								$(this).children ("div").each (function () {
-									if (this.className == "divStreamDayText") {
-										var flset = false;
-										$(this).children ("div").each (function () {
-											if (!flset) {
-												this.className = "divTextInFrontOfImage"; //set classname of first child element
-												}
-											flset = true;
-											});
-										}
-									});
-								}
-							});
-						}
-				//highlight and expand the #hashed element, if present
-					var hash = window.location.hash;
-					if (hash.length > 0) {
-						$("#idTextContainer").find ("span").each (function () { //look at every span at every level in textcontainer
-							$(this).children ("a").each (function () { //look at first-level children that are anchors
-								if (string.endsWith (this.href, window.location.hash)) { //it points to something that ends with this hash 
-									$(this).parents ("div").css ("display", "block"); //make all parents visible
-									$(this).parents ("p").css ("background-color", hightlightcolor);
-									
-									highlightedtitle = $(this).parent ().parent ().find (".aStreamTextLink").text (); //5/11/14 by DW -- a section of the page is highlighted, use this in the title
-									
-									
-									var flexpand = true;
-									$(this).parents ("div").each (function () {
-										if (flexpand) {
-											$(this).children ("a").each (function () {
-												$(this).css ("background-color", hightlightcolor);
-												
-												$(this).prev ().find ("i").each (function () {
-													if ($(this).attr ("class") == "fa fa-caret-right") { //3/20/14 by DW
-														$(this).attr ("class", "fa fa-caret-down");
-														}
-													});
-												
-												});
-											$(this).next ("div").css ("display", "block"); //the divLevel item
-											flexpand = false;
-											}
-										});
-									}
-								});
-							});
-						}
-				//handle fixed menu
-					if (getBoolean (pagetable.flFixedMenu)) {
-						var flhavenav = $("#idFargoNavbar").css ("display") == "block";
-						if (flhavenav) {
-							document.body.style.paddingTop = "60px";
-							if (hash.length > 0) {
-								$(document).one ("scroll", function () {
-									var $el = $(this), top = $el.scrollTop ();
-									$el.scrollTop (top - 125);
-									});
-								}
-							}
-						}
-				//set the site title -- 3/23/14 by DW
-					if (pagetable.menuTitle != undefined) {
-						var pagename;
-						
-						if (highlightedtitle != undefined) { //5/11/14 by DW
-							pagename = highlightedtitle;
-							}
-						else {
-							if (pagetable.path.length == 0) {
-								pagename = "Home";
-								}
-							else {
-								pagename = pagetable.text;
-								}
-							}
-						
-						document.title = pagetable.menuTitle + ": [" + pagename + "]";
-						}
-				//set the color of each text frame -- 5/11/14 by DW
-					$(".divTextInFrontOfImage").each (function () {
-						$(this).css ("border", "2px solid " + pagetable.streamTextFrameColor); 
-						});
-				
-				//turn on images for v2 or greater -- 5/20/14 by DW
-					if (streamVersion > 1) { 
-						if (flPlainOutline) {
-							$(".aStreamDayLink").each (function () {
-								$(this).css ("font-size", "28px");
-								});
-							$(".divStreamDay").each (function () {
-								$(this).css ("border-top", "0");
-								$(this).css ("margin-top", "70px");
-								});
-							$(".divStreamDayText").each (function () {
-								$(this).css ("padding", "0");
-								});
-							$(".divTextContainer").each (function () {
-								$(this).css ("margin-bottom", "125px");
-								});
-							}
-						else {
-							$(".divStreamDay").each (function () {
-								var url = $(this).data ("backgroundimage");
-								if (url != undefined) {
-									$(this).css ("background-image", "url('" + url + "')");
-									}
-								
-								$(this).children (".divStreamDayText").children ().each (function () {
-									this.className = "divTextInFrontOfImage"; 
-									});
-								
-								});
-							}
-						}
-				
-				//version 1, turn off images if indicated by flPlainOutline -- 5/18/14 by DW
-					if (streamVersion == 1) { 
-						if (flPlainOutline) {
-							turnOffImages ();
-							$(".divStreamDay").each (function () {
-								$(this).css ("border-top", "0");
-								});
-							}
-						}
-				}
-			</script>
-		
 		<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -721,8 +164,12 @@
 		
 		</head>
 	<body>
-		<div class="divPageContainer">
-			
+		<div class="divFargoSocialMediaLinks"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
+<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
+</div>
+		
 <div class="navbar navbar-static-top" id="idFargoNavbar">
 	<div class="navbar-inner">
 		<div class="navbar-container">
@@ -750,7 +197,19 @@
 					</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recent Posts&nbsp;<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-	<li><a href="http://blog.jeffreykishner.com/2014/10/16/newBlogPostOnRadio3TheDaveWinerCmsFightRadio3VsFargo.html" target="_blank">New blog post on Radio3: [The Dave Winer CMS Fight: Radio3 vs. Fargo.]</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/12/08/tryingAnotherCmsSubscribeToMyNewRssFeed.html" target="_blank">Trying Another CMS,  Subscribe to My New RSS Feed</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/21/convertAnInstagramProfileUrlToAnInstagramUrlSchemeWithDraftsLaunchCenterProAndTexttool.html" target="_blank">Convert an Instagram Profile URL to an Instagram URL Scheme with Drafts, Launch Center Pro, and TextTool</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/18/.html" target="_blank"><img src="https://dl.dropboxusercontent.com/s/wtlsby926lukw28/2014-11-18-1140AM.jpg?dl=0"></a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/13/isDaveGrohlBoredOfTheFooFighters.html" target="_blank">Is Dave Grohl Bored of the Foo Fighters?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/11/07/i99repaircomReview.html" target="_blank">i99repair.com Review: ★★☆☆☆</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/28/theUberOfGentlemanCompanionsMatterMediumcommentThisEssayByBoobsradleyIsVeryFunny.html" target="_blank">[The Uber of Gentleman Companions] — Matter — Medium.|comment| This essay by @BoobsRadley is very funny.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/24/getTheUrlSchemeForASoundcloudTrackWithThisScript.html" target="_blank">Get the URL Scheme for a SoundCloud Track With This Script</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/21/linkPhilosophyTechSupportExistentialComicsSmirk.html" target="_blank">|link| [Philosophy Tech Support] - Existential Comics. :smirk:</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/20/linkDouchebagTheWhiteRacialSlurWeveAllBeenWaitingFor.html" target="_blank">|link| "Douchebag": The [White Racial Slur] We’ve All Been Waiting For.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/18/linkTheShondaRhimesRevolutionFinishingWhatTheSopranosStartedcommentInsightfulEssayByMarkHarris.html" target="_blank">|link| The [Shonda Rhimes Revolution]: Finishing What ‘The Sopranos’ Started|comment| Insightful essay by Mark Harris.</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/17/linkAnitaSarkeesianOnGamergateWereGoingToFixThisquoteWhenIWasInPortlandForMyTalkAtTheXoxoFestivalThisLittleBoyCameUpToMeAndSaidHiImAFeministGamerHowDoYouStopDoingThisWorkAfterThat.html" target="_blank">|link| Anita Sarkeesian on GamerGate: ['We're Going to Fix This'].|quote| When I was in Portland for my talk at the XOXO Festival, this little boy came up to me and said, “Hi, I’m a feminist gamer.” How do you stop doing this work after that?</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/17/linkHowToGetAheadBySoundingLessFeminine.html" target="_blank">|link| [How to Get Ahead By Sounding Less Feminine.]</a></li>
+	<li><a href="http://blog.jeffreykishner.com/2014/10/17/linkItHappenedToMeIveBeenForcedOutOfMyHomeAndAmLivingInConstantFearBecauseOfRelentlessDeathThreatsFromGamergateBySpacekatgal.html" target="_blank">|link| IT HAPPENED TO ME: I've Been Forced Out Of My Home And Am Living In Constant Fear Because Of [Relentless Death Threats From Gamergate] (by @spacekatgal)</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkWhatResearchSaysAboutCatsTheyreSelfishUnfeelingEnvironmentallyHarmfulCreaturesVox.html" target="_blank">|link| What research says about cats: [they're selfish, unfeeling, environmentally harmful creatures] (Vox)|comment| I like 'em anyway.</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/16/linkDearWhitePeopleAboutRacialHypocrisyAtACollegecommentRarelyHaveIReadSuchAPositiveReviewByAoScott.html" target="_blank">|link| ‘[Dear White People],’ About Racial Hypocrisy at a College.|comment| Rarely have I read such a positive review by A.O. Scott.</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/15/importASingleDraftFromDrafts3IntoDrafts4.html" target="_blank">Import a Single Draft from Drafts 3 Into Drafts 4</a></li>
@@ -763,18 +222,6 @@
 	<li><a href="http://blog.jeffreykishner.com/2014/10/09/linkWhatIfYouJustHateMakingDinnercommentGoodReadingFromVirginiaHeffernan.html" target="_blank">|link| [What if You Just Hate Making Dinner?]|comment| Good reading from Virginia Heffernan.</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTroubleAtTheKoolaidPointSeriousPony.html" target="_blank">|link| [Trouble at the Koolaid Point] — Serious Pony.|comment| a woman should be able to feel safe to express herself w/o harassment</a></li>
 	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkCopsPepperSprayBlackTeenInHisOwnLivingRoomAfterMistakingHimForBurglar.html" target="_blank">|link| [Cops Pepper Spray Black Teen In His Own Living Room] After Mistaking Him For Burglar.</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkTerrifyinglyBrilliantSpiderCreatesStunninglyAdvancedWeb.html" target="_blank">|link| Terrifyingly Brilliant Spider Creates [Stunningly Advanced Web].</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/08/linkToRaiseLoveAndLoseABlackChildTheAtlantic.html" target="_blank">|link| [To Raise, Love, and Lose a Black Child] (The Atlantic)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/08/aGoodUseForTheTimeAndPushbulletChannelsOnIfttt.html" target="_blank">A Good Use for the Time and Pushbullet Channels on IFTTT</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/07/thankYouDave.html" target="_blank">Thank You, Dave </a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/dammitIHaveAHeadcold.html" target="_blank">Dammit I have a headcold.</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/thisEssayOnPaulaDeenWasAnEntertainingInformativeReadItWasPublishedInTheOnlineMagazineMatterOnMediumIKnowThatMediumHasVentureCapitalButIDontUnderstandHowTheyCanContinueToFundQualityLongformJournalismWithoutEitherAdsOrASubscriptionModel.html" target="_blank"><a href="https://medium.com/matter/strike-paula-deen-down-and-she-shall-become-more-powerful-than-you-can-possibly-imagine-6c6fbda4bde4">This essay on Paula Deen</a> was an entertaining, informative read. It was published in the online magazine <a href="https://medium.com/matter/">Matter</a> on Medium. I know that Medium has venture capital, but I don't understand how they can continue to fund quality, long-form journalism without either ads or a subscription model.</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/iGuessIDontNeedANewIphoneAfterAll.html" target="_blank">I Guess I Don't Need a New iPhone After All</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/linkTheStunningWeirdnessOfAynRandWhyHerNewfoundPopularityMakesNoSenseSaloncom.html" target="_blank">|link| The [stunning weirdness of Ayn Rand]: Why her newfound popularity makes no sense (Salon.com)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/whereToLinkblog.html" target="_blank">Where to Linkblog?</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/06/roxaneGayAndLenaDunhamOnOnlineCriticismLinkVulture.html" target="_blank">|link| Roxane Gay and [Lena Dunham] on Online Criticism (Vulture)</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/03/howImReadingFeedsTheseDays.html" target="_blank">How I'm Reading Feeds These Days</a></li>
-	<li><a href="http://blog.jeffreykishner.com/2014/10/02/myOwnEyes.html" target="_blank">"My Own Eyes"</a></li>
 	</ul>
 
 					<li><a href="mailto:jk@jeffreykishner.com" target="_blank"><i class="fa fa-envelope-o" title="Email Me"></i></a></li>
@@ -783,368 +230,181 @@
 			</div>
 		</div>
 
-			<div class="divTextContainer" id="idTextContainer">
-				<div class="divStreamDay" >
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/30/">Tuesday, September 30<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1412090464"></a>The worst part of visiting the dentist: Leaving with a light spray of baking soda all over my face.<span class="spPermalink"><a href="/2014/09/30/#a1412090464">#</a></span></p>
+		<div class="divFargoOutlineBody">
+			<div id="idOutlineContainer" class="container">
+				<div class="divHeadlineUnit" id="idHeadlineUnit" style="display: none;">
+					<div class="divBreadcrumbs" id="idBreadcrumbs">
+						<ul id="idBreadcrumbList" class="breadcrumb"><li><a href="http://blog.jeffreykishner.com">Home</a><span class="divider">/</span><li><a href="http://blog.jeffreykishner.com/2014">2014</a></li></ul>
+						</div>
+					<h2 id="idBlogHomePageTitle">September 2014</h2>
+					</div>
+				<div class="divFargoBlogHome">
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="30/theWorstPartOfVisitingTheDentistLeavingWithALightSprayOfBakingSodaAllOverMyFace.html">The worst part of visiting the dentist: Leaving with a light spray of baking soda all over my face.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/30/14; 10:21:04 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="30/theWorstPartOfVisitingTheDentistLeavingWithALightSprayOfBakingSodaAllOverMyFace.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/26/">Friday, September 26<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1411768078"></a>If you want to subscribe to my blog and linkblog in the <a href="http://radio3.io/rivers">Radio3 River</a>, here is the new JSON URL: <a href="https://dl.dropboxusercontent.com/s/ja805gz8v4lewhc/jeff.js?dl=0">https://dl.dropboxusercontent.com/s/ja805gz8v4lewhc/jeff.js?dl=0</a><span class="spPermalink"><a href="/2014/09/26/#a1411768078">#</a></span></p>
-			<p><a name="a1411763828"></a>One of the things that suck about being hard-of-hearing in one ear: Listening to <i>The Beatles</i> on the headphones, when Paul or John only sing on one channel.<span class="spPermalink"><a href="/2014/09/26/#a1411763828">#</a></span></p>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (0)" ><i class="fa fa-caret-right" id="idStreamWedge0"></i></a></span><a name="a1411751682"></a><a class="aStreamTextLink" onclick="ecStream (0)">Running River4 On the Cheap: Locally and with Dropbox </a><span class="spPermalink"><a href="/2014/09/26/#a1411751682">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel0">
-				<p><a name="a1411751726"></a><a href="http://river4.smallpict.com/2014/09/25/bareBonesRiver4Howto.html">The latest release of River4</a> allows a user to bypass Amazon S3 and instead write all data to the local machine. This is <i>big news</i> -- the cost of bandwidth and all of the reading/writing from the node.js installation to Amazon <a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html">is not cheap</a>. Although Dave Winer has said that the "river of news" is <i>not</i> a feed reader, they feel equivalent enough that I don't want to be paying $20 a month just to create JSON files and host a river, when competitive feed readers are much less expensive.<span class="spPermalink"><a href="/2014/09/26/#a1411751726">#</a></span></p>
-				<p><a name="a1411752032"></a>The initial problem with running River4 locally is that one would need to use the web server as a host, and not all web servers have that capability. For instance, I am running River4 on a VPS that does not have a fixed IP address. However, there is a workaround: Dropbox. One can't view the index.html file of the river on the web (even when made shareable) but one <i>can</i> make all of the JSON files shareable, and plug them in where they are referenced. <span class="spPermalink"><a href="/2014/09/26/#a1411752032">#</a></span></p>
-				<p><a name="a1411752366"></a>I created a <i>river4</i> subdirectory in Dropbox, put a <i>lists </i>folder in it, and added my OPML files. Because I have Dropbox installed on my Linux VPS, river.js can read/write to/from <i>that</i> subdirectory. All I had to do was go into .bashrc, put a <code>#</code> in front of my original s3path, and add the following line: <span class="spPermalink"><a href="/2014/09/26/#a1411752366">#</a></span></p>
-				<p><a name="a1411752482"></a><code>export fspath=/root/Dropbox/river4/</code><span class="spPermalink"><a href="/2014/09/26/#a1411752482">#</a></span></p>
-				<p><a name="a1411752507"></a>After <code>source ~/.bashrc</code> I stopped and restarted river.js, and the app started to write files to the Dropbox folder. I then had to make the JSON files shareable. For example, if I go to Dropbox/river4/rivers and make <i>daveWiner.js</i> shareable, I get <a href="https://www.dropbox.com/s/qb3vl228x7mc970/daveWiner.js?dl=0">https://www.dropbox.com/s/qb3vl228x7mc970/daveWiner.js?dl=0</a>. To show the raw code, I change <code>www</code> to <code>dl</code> and hit enter, and get <a href="https://dl.dropboxusercontent.com/s/qb3vl228x7mc970/daveWiner.js?dl=0">https://dl.dropboxusercontent.com/s/qb3vl228x7mc970/daveWiner.js?dl=0</a>. I can now plug this into the Settings at the <a href="http://radio3.io/rivers">Radio3 River Browser</a> or replace the URL in the <i>riversArray.json</i> file in the data folder (although you'll have to do that in a copy in a different folder, otherwise the app will just rewrite over it if you add a new OPML file to the <i>lists</i> folder). Then I go to (as of this writing) line 706 of the <i>index.html</i> file and change the following line <span class="spPermalink"><a href="/2014/09/26/#a1411752507">#</a></span></p>
-				<p><a name="a1411752888"></a><code>readHttpFile ("data/riversArray.json", function (jsontext) {</code> <span class="spPermalink"><a href="/2014/09/26/#a1411752888">#</a></span></p>
-				<p><a name="a1411752904"></a>such that the file that it reads points to where you are hosting the JSON file. This could be the shared Dropbox URL, if you change the URL to show the raw code.<span class="spPermalink"><a href="/2014/09/26/#a1411752904">#</a></span></p>
-				<p><a name="a1411753248"></a><b>Special thanks</b> to <a href="http://scriven.chrisdadswell.co.uk/">Chris Dadswell</a> for helping me think this through.<span class="spPermalink"><a href="/2014/09/26/#a1411753248">#</a></span></p>
-				<p><a name="a1411753170"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/09/26/runningRiver4OnTheCheapLocallyAndWithDropbox">http://blog.jeffreykishner.com/2014/09/26/runningRiver4OnTheCheapLocallyAndWithDropbox</a></i></small><span class="spPermalink"><a href="/2014/09/26/#a1411753170">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (1)" ><i class="fa fa-caret-right" id="idStreamWedge1"></i></a></span><a name="a1411753181"></a><a class="aStreamTextLink" onclick="ecStream (1)">#glossary</a><span class="spPermalink"><a href="/2014/09/26/#a1411753181">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel1">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (2)" ><i class="fa fa-caret-right" id="idStreamWedge2"></i></a></span><a name="a1411753181"></a><a class="aStreamTextLink" onclick="ecStream (2)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/26/#a1411753181">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel2">
-						<p><a name="a1411753181"></a><meta property="og:title" content="Running River4 On the Cheap: Locally and with Dropbox " /><span class="spPermalink"><a href="/2014/09/26/#a1411753181">#</a></span></p>
-						<p><a name="a1411753182"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/26/runningRiver4OnTheCheapLocallyAndWithDropbox.html" /><span class="spPermalink"><a href="/2014/09/26/#a1411753182">#</a></span></p>
-						<p><a name="a1411753182"></a><meta property="og:description" content="The latest release of River4 allows a user to bypass Amazon S3 and instead write all data to the local machine. This is big news -- the cost of bandwidth and all of the reading/writing from the node.js installation to Amazon is not cheap." /><span class="spPermalink"><a href="/2014/09/26/#a1411753182">#</a></span></p>
-						<p><a name="a1411753182"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/26/#a1411753182">#</a></span></p>
-						<p><a name="a1411753182"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/26/#a1411753182">#</a></span></p>
-						</div>
-					</div>
-				</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="26/ifYouWantToSubscribeToMyBlogAndLinkblogInTheRadio3RiverHereIsTheNewJsonUrlHttpsdldropboxusercontentcomsja805gz8v4lewhcjeffjsdl0.html">If you want to subscribe to my blog and linkblog in the <a href="http://radio3.io/rivers">Radio3 River</a>, here is the new JSON URL: <a href="https://dl.dropboxusercontent.com/s/ja805gz8v4lewhc/jeff.js?dl=0">https://dl.dropboxusercontent.com/s/ja805gz8v4lewhc/jeff.js?dl=0</a></a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/26/14; 04:47:58 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="26/ifYouWantToSubscribeToMyBlogAndLinkblogInTheRadio3RiverHereIsTheNewJsonUrlHttpsdldropboxusercontentcomsja805gz8v4lewhcjeffjsdl0.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/25/">Thursday, September 25<span class="spDateYearPart">, 2014</span></a></div>
-			<p><a name="a1411679792"></a>I'm redirecting jeffreykishner.com/index.html to my Fargo blog -- basically communicating that the <i>blog</i> subdomain is my home, even if all the other pages on my WordPress site are accessible.<span class="spPermalink"><a href="/2014/09/25/#a1411679792">#</a></span></p>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (3)" ><i class="fa fa-caret-right" id="idStreamWedge3"></i></a></span><a name="a1411672651"></a><a class="aStreamTextLink" onclick="ecStream (3)">Switching This Fargo Blog from blogHome to Stream Template</a><span class="spPermalink"><a href="/2014/09/25/#a1411672651">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel3">
-				<p><a name="a1411672839"></a>As an experiment I am converting this blog to the stream template (which is what Dave Winer is using at <a href="http://scripting.com">Scripting</a>). I was looking at <a href="http://scriven.chrisdadswell.co.uk/">Chris Dadswell's blog</a> (as well as his <a href="https://dl.dropboxusercontent.com/s/77dh8j4y3ql7zbe/scriven.opml?dl=0">OPML</a>) and realized that a stream blog can still contain <i>type="outline"</i> posts. For example, here is <a href="http://scriven.chrisdadswell.co.uk/2014/09/25/">the 9/25 stream</a> and here is <a href="http://scriven.chrisdadswell.co.uk/2014/09/25/riverOfNewsNowWithLocalStorageOption.html">one of his outline posts from 9/25</a>. The RSS feed points to the full posts so the stream template is not a disservice to readers.<span class="spPermalink"><a href="/2014/09/25/#a1411672839">#</a></span></p>
-				<p><a name="a1411673346"></a>All I've done as of this writing is change this blog from <i>blogHome</i> to <i>stream</i> and remove everything in my <i>&lt;%customStylesScripts%></i> in the #glossary other than my Google Analytics script.<span class="spPermalink"><a href="/2014/09/25/#a1411673346">#</a></span></p>
-				<p><a name="a1411673448"></a>The downside is that the stream template does not support Markdown -- which is what I've written virtually all of my outline posts in -- so many of my posts on the home page will be presented as written (i.e., not converted to HTML). If I stick to writing in HTML then this formatting error will pass over time.<span class="spPermalink"><a href="/2014/09/25/#a1411673448">#</a></span></p>
-				<p><a name="a1411673655"></a>I will also add a permalink at the end of each post, so that if you are reading it on the home page, you can click over to the post itself.<span class="spPermalink"><a href="/2014/09/25/#a1411673655">#</a></span></p>
-				<p><a name="a1411674521"></a><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate">http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate</a></i></small><span class="spPermalink"><a href="/2014/09/25/#a1411674521">#</a></span></p>
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (4)" ><i class="fa fa-caret-right" id="idStreamWedge4"></i></a></span><a name="a1411673629"></a><a class="aStreamTextLink" onclick="ecStream (4)">#glossary</a><span class="spPermalink"><a href="/2014/09/25/#a1411673629">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel4">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (5)" ><i class="fa fa-caret-right" id="idStreamWedge5"></i></a></span><a name="a1411673630"></a><a class="aStreamTextLink" onclick="ecStream (5)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/25/#a1411673630">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel5">
-						<p><a name="a1411673630"></a><meta property="og:title" content="Switching This Fargo Blog from blogHome to Stream Template" /><span class="spPermalink"><a href="/2014/09/25/#a1411673630">#</a></span></p>
-						<p><a name="a1411673630"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html" /><span class="spPermalink"><a href="/2014/09/25/#a1411673630">#</a></span></p>
-						<p><a name="a1411673630"></a><meta property="og:description" content="As an experiment I am converting this blog to the stream template (which is what Dave Winer is using at Scripting). " /><span class="spPermalink"><a href="/2014/09/25/#a1411673630">#</a></span></p>
-						<p><a name="a1411673630"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/25/#a1411673630">#</a></span></p>
-						<p><a name="a1411673630"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/25/#a1411673630">#</a></span></p>
-						</div>
-					</div>
-				</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="26/oneOfTheThingsThatSuckAboutBeingHardofhearingInOneEarListeningTo.html">One of the things that suck about being hard-of-hearing in one ear: Listening to <i>The Beatles</i> on the headphones, when Paul or John only sing on one channel.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/26/14; 03:37:08 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="26/oneOfTheThingsThatSuckAboutBeingHardofhearingInOneEarListeningTo.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/24/">Wednesday, September 24<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (6)" ><i class="fa fa-caret-right" id="idStreamWedge6"></i></a></span><a name="a1411591220"></a><a class="aStreamTextLink" onclick="ecStream (6)">Subscribe to Me in the Radio3 River Browser</a><span class="spPermalink"><a href="/2014/09/24/#a1411591220">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel6">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (7)" ><i class="fa fa-caret-right" id="idStreamWedge7"></i></a></span><a name="a1411591934"></a><a class="aStreamTextLink" onclick="ecStream (7)">#glossary</a><span class="spPermalink"><a href="/2014/09/24/#a1411591934">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel7">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (8)" ><i class="fa fa-caret-right" id="idStreamWedge8"></i></a></span><a name="a1411591934"></a><a class="aStreamTextLink" onclick="ecStream (8)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/24/#a1411591934">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel8">
-						<p><a name="a1411591934"></a><meta property="og:title" content="Subscribe to Me in the Radio3 River Browser" /><span class="spPermalink"><a href="/2014/09/24/#a1411591934">#</a></span></p>
-						<p><a name="a1411591934"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/24/subscribeToMeInTheRadio3RiverBrowser.html" /><span class="spPermalink"><a href="/2014/09/24/#a1411591934">#</a></span></p>
-						<p><a name="a1411591934"></a><meta property="og:description" content="Dave Winer recently released his most cutting-edge product, RiverBrowser. It is the river of news living at Radio3.io, which is his new linkblogging tool, where you can post a link simultaneously to Twitter, Facebook, a WordPress blog, and your Radio3 page. " /><span class="spPermalink"><a href="/2014/09/24/#a1411591934">#</a></span></p>
-						<p><a name="a1411591934"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/24/#a1411591934">#</a></span></p>
-						<p><a name="a1411591935"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/24/#a1411591935">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1411591245"></a>Dave Winer recently released his most cutting-edge product, RiverBrowser. It is the "river of news" living at Radio3.io, which is his new linkblogging tool, where you can post a link simultaneously to Twitter, Facebook, a WordPress blog, and your Radio3 page. <span class="spPermalink"><a href="/2014/09/24/#a1411591245">#</a></span></p>
-				<p><a name="a1411591743"></a>The RiverBrowser depends on River4 or earlier (e.g. River 3). River4 is software running on the node.js framework that converts OPML subscription lists (of RSS feeds) into a JSON file, that is then rendered as a river of news. Setting up River4 is pretty darn complicated if you are not comfortable with Unix and Amazon Web Services.<span class="spPermalink"><a href="/2014/09/24/#a1411591743">#</a></span></p>
-				<p><a name="a1411591472"></a>You can see the default RiverBrowser at [http://radio3.io/rivers/#](http://radio3.io/rivers/#), which contains Dave Winer's tabs. But you can follow my latest blog and linkblog posts by adding a JSON URL that I've generated in my own River4 installation.<span class="spPermalink"><a href="/2014/09/24/#a1411591472">#</a></span></p>
-				<p><a name="a1411591548"></a>When you're at the RiverBrowser page, sign on to Twitter. Then click on Rivers, and then My Rivers. Click the plus sign, and in the new row, enter `Jeff` on the left and `http://river.jeffreykishner.com/rivers/jeff.js` on the right. Save, and you'll see a new tab with any feeds that I've added to [my OPML file](https://dl.dropboxusercontent.com/s/7tti43z92f0egsw/jeffFeeds.opml?dl=0).<span class="spPermalink"><a href="/2014/09/24/#a1411591548">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (9)" ><i class="fa fa-caret-right" id="idStreamWedge9"></i></a></span><a name="a1411570171"></a><a class="aStreamTextLink" onclick="ecStream (9)"><i>The Week</i> Needs a Better Copy Editor</a><span class="spPermalink"><a href="/2014/09/24/#a1411570171">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel9">
-				<p><a name="a1411570182"></a>![](https://dl.dropbox.com/s/5izofoczshd6qmc/speedreads-alarmed-customers-find-out-the-iphone-6-plus-can-bend-in-your-pocket.jpg?dl=0)<span class="spPermalink"><a href="/2014/09/24/#a1411570182">#</a></span></p>
-				<p><a name="a1411570253"></a>[<i class="fa fa-fa fa-external-link"></i>](http://theweek.com/article/index/268682/speedreads-alarmed-customers-find-out-the-iphone-6-plus-can-bend-in-your-pocket)<span class="spPermalink"><a href="/2014/09/24/#a1411570253">#</a></span></p>
-				</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="26/runningRiver4OnTheCheapLocallyAndWithDropbox.html">Running River4 On the Cheap: Locally and with Dropbox </a></div>
+		<p><a href="http://river4.smallpict.com/2014/09/25/bareBonesRiver4Howto.html">The latest release of River4</a> allows a user to bypass Amazon S3 and instead write all data to the local machine. This is <i>big news</i> -- the cost of bandwidth and all of the reading/writing from the node.js installation to Amazon <a href="http://blog.jeffreykishner.com/2014/09/03/theCostOfRiver4.html">is not cheap</a>. Although Dave Winer has said that the "river of news" is <i>not</i> a feed reader, they feel equivalent enough that I don't want to be paying $20 a month just to create JSON files and host a river, when competitive feed readers are much less expensive.</p>
+
+<p>The initial problem with running River4 locally is that one would need to use the web server as a host, and not all web servers have that capability. For instance, I am running River4 on a VPS that does not have a fixed IP address. However, there is a workaround: Dropbox. One can't view the index.html file of the river on the web (even when made shareable) but one <i>can</i> make all of the JSON files shareable, and plug them in where they are referenced. </p>
+
+<p>I created a <i>river4</i> subdirectory in Dropbox, put a <i>lists </i>folder in it, and added my OPML files. Because I have Dropbox installed on my Linux VPS, river.js can read/write to/from <i>that</i> subdirectory. All I had to do was go into .bashrc, put a <code>#</code> in front of my original s3path, and add the following line: </p>
+
+<p><code>export fspath=/root/Dropbox/river4/</code></p>
+
+<p>After <code>source ~/.bashrc</code> I stopped and restarted river.js, and the app started to write files to the Dropbox folder. I then had to make the JSON files shareable. For example, if I go to Dropbox/river4/rivers and make <i>daveWiner.js</i> shareable, I get <a href="https://www.dropbox.com/s/qb3vl228x7mc970/daveWiner.js?dl=0">https://www.dropbox.com/s/qb3vl228x7mc970/daveWiner.js?dl=0</a>. To show the raw code, I change <code>www</code> to <code>dl</code> and hit enter, and get <a href="https://dl.dropboxusercontent.com/s/qb3vl228x7mc970/daveWiner.js?dl=0">https://dl.dropboxusercontent.com/s/qb3vl228x7mc970/daveWiner.js?dl=0</a>. I can now plug this into the Settings at the <a href="http://radio3.io/rivers">Radio3 River Browser</a> or replace the URL in the <i>riversArray.json</i> file in the data folder (although you'll have to do that in a copy in a different folder, otherwise the app will just rewrite over it if you add a new OPML file to the <i>lists</i> folder). Then I go to (as of this writing) line 706 of the <i>index.html</i> file and change the following line </p>
+
+<p><code>readHttpFile ("data/riversArray.json", function (jsontext) {</code> </p>
+
+<p>such that the file that it reads points to where you are hosting the JSON file. This could be the shared Dropbox URL, if you change the URL to show the raw code.</p>
+
+<p><b>Special thanks</b> to <a href="http://scriven.chrisdadswell.co.uk/">Chris Dadswell</a> for helping me think this through.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/09/26/runningRiver4OnTheCheapLocallyAndWithDropbox">http://blog.jeffreykishner.com/2014/09/26/runningRiver4OnTheCheapLocallyAndWithDropbox</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/26/14; 12:14:42 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="26/runningRiver4OnTheCheapLocallyAndWithDropbox.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/22/">Monday, September 22<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (10)" ><i class="fa fa-caret-right" id="idStreamWedge10"></i></a></span><a name="a1411405451"></a><a class="aStreamTextLink" onclick="ecStream (10)">Lev Grossman's Magicians Trilogy</a><span class="spPermalink"><a href="/2014/09/22/#a1411405451">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel10">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (11)" ><i class="fa fa-caret-right" id="idStreamWedge11"></i></a></span><a name="a1411406352"></a><a class="aStreamTextLink" onclick="ecStream (11)">#glossary</a><span class="spPermalink"><a href="/2014/09/22/#a1411406352">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel11">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (12)" ><i class="fa fa-caret-right" id="idStreamWedge12"></i></a></span><a name="a1411406352"></a><a class="aStreamTextLink" onclick="ecStream (12)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/22/#a1411406352">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel12">
-						<p><a name="a1411406352"></a><meta property="og:title" content="Lev Grossman's Magicians Trilogy" /><span class="spPermalink"><a href="/2014/09/22/#a1411406352">#</a></span></p>
-						<p><a name="a1411406352"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/22/levGrossmansMagiciansTrilogy.html" /><span class="spPermalink"><a href="/2014/09/22/#a1411406352">#</a></span></p>
-						<p><a name="a1411406353"></a><meta property="og:description" content="I just finished reading this series. There are few novels that I feel compelled to pick up outside of my subway commute, and these books belong to that category. I did not unequivocally love them, but they were all good reads. Think _Harry Potter_ but young American adults who curse and have sex; or a dark _The Lion, the Witch, and the Wardrobe_." /><span class="spPermalink"><a href="/2014/09/22/#a1411406353">#</a></span></p>
-						<p><a name="a1411406353"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/22/#a1411406353">#</a></span></p>
-						<p><a name="a1411406353"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/22/#a1411406353">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1411405463"></a>I just finished reading [this series](http://levgrossman.com/magicians-trilogy/). There are few novels that I feel compelled to pick up outside of my subway commute, and these books belong to that category. I did not unequivocally love them, but they were all good reads. Think _Harry Potter_ but young American adults who curse and have sex; or a dark _The Lion, the Witch, and the Wardrobe_.<span class="spPermalink"><a href="/2014/09/22/#a1411405463">#</a></span></p>
-				<p><a name="a1411405739"></a>While reading the first two books, I really wanted magic to be real. When I was in my late twenties or early thirties I tried some candle magick, and nothing came of it. It's possible that I just was not able to summon strong enough emotional energy and will it into a change in circumstances. But then we get into tricky territory, like "Be the change you want to happen" or all that _The Secret_ philosophy. Of course that's different than shooting light out of your fingers or flying, but essentially I think magic is about our emotions and our surroundings being One.<span class="spPermalink"><a href="/2014/09/22/#a1411405739">#</a></span></p>
-				<p><a name="a1411406047"></a>One takeaway from these books is that you have to know yourself and know what you want to create something new. There is no room for ambivalence in magic, or at least if you're ambivalent the results of magic could turn out grotesque or half-formed. As a Pisces -- which is a mutable sign -- I often swim in both directions at once, so don't have the strong _I have to go in THIS direction and abandon everything else_ that I associate with a zodiac sign more suited for magic, like Scorpio. So maybe if magic _is_ real, it's just not for me. I tend to be more suited towards changing consciousness than changing matter.<span class="spPermalink"><a href="/2014/09/22/#a1411406047">#</a></span></p>
-				</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="25/imRedirectingJeffreykishnercomindexhtmlToMyFargoBlogBasicallyCommunicatingThatTheBlogSubdomainIsMyHomeEvenIfAllTheOtherPagesOnMyWordpressSiteAreAccessible.html">I'm redirecting jeffreykishner.com/index.html to my Fargo blog -- basically communicating that the <i>blog</i> subdomain is my home, even if all the other pages on my WordPress site are accessible.</a></div>
+		
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/25/14; 04:16:32 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="25/imRedirectingJeffreykishnercomindexhtmlToMyFargoBlogBasicallyCommunicatingThatTheBlogSubdomainIsMyHomeEvenIfAllTheOtherPagesOnMyWordpressSiteAreAccessible.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/19/">Friday, September 19<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (13)" ><i class="fa fa-caret-right" id="idStreamWedge13"></i></a></span><a name="a1411136178"></a><a class="aStreamTextLink" onclick="ecStream (13)">Tweets from September 18, 2014</a><span class="spPermalink"><a href="/2014/09/19/#a1411136178">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel13">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (14)" ><i class="fa fa-caret-right" id="idStreamWedge14"></i></a></span><a name="a1411136463"></a><a class="aStreamTextLink" onclick="ecStream (14)">#glossary</a><span class="spPermalink"><a href="/2014/09/19/#a1411136463">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel14">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (15)" ><i class="fa fa-caret-right" id="idStreamWedge15"></i></a></span><a name="a1411136463"></a><a class="aStreamTextLink" onclick="ecStream (15)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/19/#a1411136463">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel15">
-						<p><a name="a1411136463"></a><meta property="og:title" content="Tweets from September 18, 2014" /><span class="spPermalink"><a href="/2014/09/19/#a1411136463">#</a></span></p>
-						<p><a name="a1411136463"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/19/tweetsFromSeptember182014.html" /><span class="spPermalink"><a href="/2014/09/19/#a1411136463">#</a></span></p>
-						<p><a name="a1411136463"></a><meta property="og:description" content="I don't think my tweets are anything special, but it occurred to me last night that I can use this blog as a repository of selected tweets so that more of my microblogging can be found in the same place. Dave Winer's Happy Friends makes it easy to copy and paste tweets into a Fargo.io blog, because it exports an opml file on the web that can be viewed as a tab in Fargo." /><span class="spPermalink"><a href="/2014/09/19/#a1411136463">#</a></span></p>
-						<p><a name="a1411136463"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/19/#a1411136463">#</a></span></p>
-						<p><a name="a1411136464"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/19/#a1411136464">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1411136200"></a>I don't think my tweets are anything special, but it occurred to me last night that I can use this blog as a repository of selected tweets so that more of my microblogging can be found in the same place. Dave Winer's [Happy Friends](http://happyfriends.camp) makes it easy to copy and paste tweets into a Fargo.io blog, because it exports an opml file on the web that can be viewed as a tab in Fargo.<span class="spPermalink"><a href="/2014/09/19/#a1411136200">#</a></span></p>
-				<p><a name="a1411136316"></a>So here are yesterday's tweets in which I am not communicating with someone specific or promoting my own blog posts:<span class="spPermalink"><a href="/2014/09/19/#a1411136316">#</a></span></p>
-				<p><a name="a1411058368"></a><blockquote class="twitter-tweet"><p>it is not the case that I will do anything for pastries</p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/status/512642067814555650">September 18, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/09/19/#a1411058368">#</a></span></p>
-				<p><a name="a1411054073"></a><blockquote class="twitter-tweet"><p>todo.txt nerds, I have a quicken question that won&#39;t fit in 140: <a href="https://t.co/ZjijRyHXGi">https://t.co/ZjijRyHXGi</a></p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/status/512624053778391040">September 18, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/09/19/#a1411054073">#</a></span></p>
-				<p><a name="a1411048175"></a><blockquote class="twitter-tweet"><p>my fav part of iOS8 extensions is that they obviate the need to install javascript bookmarklets</p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/status/512599318457778176">September 18, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/09/19/#a1411048175">#</a></span></p>
-				</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html">Switching This Fargo Blog from blogHome to Stream Template</a></div>
+		<p>As an experiment I am converting this blog to the stream template (which is what Dave Winer is using at <a href="http://scripting.com">Scripting</a>). I was looking at <a href="http://scriven.chrisdadswell.co.uk/">Chris Dadswell's blog</a> (as well as his <a href="https://dl.dropboxusercontent.com/s/77dh8j4y3ql7zbe/scriven.opml?dl=0">OPML</a>) and realized that a stream blog can still contain <i>type="outline"</i> posts. For example, here is <a href="http://scriven.chrisdadswell.co.uk/2014/09/25/">the 9/25 stream</a> and here is <a href="http://scriven.chrisdadswell.co.uk/2014/09/25/riverOfNewsNowWithLocalStorageOption.html">one of his outline posts from 9/25</a>. The RSS feed points to the full posts so the stream template is not a disservice to readers.</p>
+
+<p>All I've done as of this writing is change this blog from <i>blogHome</i> to <i>stream</i> and remove everything in my <i>&lt;%customStylesScripts%></i> in the #glossary other than my Google Analytics script.</p>
+
+<p>The downside is that the stream template does not support Markdown -- which is what I've written virtually all of my outline posts in -- so many of my posts on the home page will be presented as written (i.e., not converted to HTML). If I stick to writing in HTML then this formatting error will pass over time.</p>
+
+<p>I will also add a permalink at the end of each post, so that if you are reading it on the home page, you can click over to the post itself.</p>
+
+<p><hr><small><i>Want to comment? The permalink for this post is <a href="http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate">http://blog.jeffreykishner.com/2014/09/25/switchingThisFargoBlogFromBloghomeToStreamTemplate</a></i></small></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/25/14; 02:17:31 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="25/switchingThisFargoBlogFromBloghomeToStreamTemplate.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/18/">Thursday, September 18<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (16)" ><i class="fa fa-caret-right" id="idStreamWedge16"></i></a></span><a name="a1411075580"></a><a class="aStreamTextLink" onclick="ecStream (16)">CloudKit Dammit!</a><span class="spPermalink"><a href="/2014/09/18/#a1411075580">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel16">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (17)" ><i class="fa fa-caret-right" id="idStreamWedge17"></i></a></span><a name="a1411076109"></a><a class="aStreamTextLink" onclick="ecStream (17)">#glossary</a><span class="spPermalink"><a href="/2014/09/18/#a1411076109">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel17">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (18)" ><i class="fa fa-caret-right" id="idStreamWedge18"></i></a></span><a name="a1411076109"></a><a class="aStreamTextLink" onclick="ecStream (18)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/18/#a1411076109">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel18">
-						<p><a name="a1411076109"></a><meta property="og:title" content="CloudKit Dammit!" /><span class="spPermalink"><a href="/2014/09/18/#a1411076109">#</a></span></p>
-						<p><a name="a1411076109"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/18/cloudkitDammit.html" /><span class="spPermalink"><a href="/2014/09/18/#a1411076109">#</a></span></p>
-						<p><a name="a1411076109"></a><meta property="og:description" content="I just learned that the new version of Drafts will be using CloudKit and will drop Simperium sync. So if I choose not to upgrade my iPhone and want to try the iOS-8-only version of Drafts on my iPad, I will not be able to sync my drafts between the two devices." /><span class="spPermalink"><a href="/2014/09/18/#a1411076109">#</a></span></p>
-						<p><a name="a1411076110"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/18/#a1411076110">#</a></span></p>
-						<p><a name="a1411076110"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/18/#a1411076110">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1411075588"></a>I just learned that the new version of <a href="http://agiletortoise.com/drafts/">Drafts</a> will be using CloudKit and will drop Simperium sync. So [if I choose not to upgrade my iPhone](http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html) and want to try the [iOS-8-only version of Drafts](https://gist.github.com/agiletortoise/044d3f20b3f1a94aa2f7) on my iPad, I will not be able to sync my drafts between the two devices.<span class="spPermalink"><a href="/2014/09/18/#a1411075588">#</a></span></p>
-				<p><a name="a1411067288"></a><blockquote class="twitter-tweet"><p><a href="https://twitter.com/kishner">@kishner</a> Yes. Using CloudKit for sync.</p>&mdash; Greg Pierce (@agiletortoise) <a href="https://twitter.com/agiletortoise/status/512679481782185985">September 18, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/09/18/#a1411067288">#</a></span></p>
-				<p><a name="a1411067719"></a><blockquote class="twitter-tweet"><p><a href="https://twitter.com/kishner">@kishner</a> You will have to stay on the current version (which works fine on 8).</p>&mdash; Greg Pierce (@agiletortoise) <a href="https://twitter.com/agiletortoise/status/512681292115087360">September 18, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><span class="spPermalink"><a href="/2014/09/18/#a1411067719">#</a></span></p>
-				<p><a name="a1411075785"></a>I use Drafts pretty much daily, and I have written God knows how many Dropbox, Evernote and URL actions for it. Not only that, I keep it as a notes repository, storing snippets that I will never _act on_. Kind of like people use nvAlt.<span class="spPermalink"><a href="/2014/09/18/#a1411075785">#</a></span></p>
-				<p><a name="a1411075952"></a>I could choose to only use Drafts as a place to take actions on drafts, i.e., send text to other apps -- and use a Dropbox text editor for storing notes. The big changes that Greg Pierce (the developer) has in store look so enticing that it would be difficult for me _not_ to try it out on my iPad.<span class="spPermalink"><a href="/2014/09/18/#a1411075952">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (19)" ><i class="fa fa-caret-right" id="idStreamWedge19"></i></a></span><a name="a1411065910"></a><a class="aStreamTextLink" onclick="ecStream (19)">How to Add Twitter Card Support to Farg.io Blogs</a><span class="spPermalink"><a href="/2014/09/18/#a1411065910">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel19">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (20)" ><i class="fa fa-caret-right" id="idStreamWedge20"></i></a></span><a name="a1411066861"></a><a class="aStreamTextLink" onclick="ecStream (20)">#glossary</a><span class="spPermalink"><a href="/2014/09/18/#a1411066861">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel20">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (21)" ><i class="fa fa-caret-right" id="idStreamWedge21"></i></a></span><a name="a1411066862"></a><a class="aStreamTextLink" onclick="ecStream (21)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/18/#a1411066862">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel21">
-						<p><a name="a1411066862"></a><meta property="og:title" content="How to Add Twitter Card Support to Farg.io Blogs" /><span class="spPermalink"><a href="/2014/09/18/#a1411066862">#</a></span></p>
-						<p><a name="a1411066862"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/18/howToAddTwitterCardSupportToFargioBlogs.html" /><span class="spPermalink"><a href="/2014/09/18/#a1411066862">#</a></span></p>
-						<p><a name="a1411066862"></a><meta property="og:description" content="Twitter cards show additional information associated with a link. Twitter draws this information from meta tags on your page." /><span class="spPermalink"><a href="/2014/09/18/#a1411066862">#</a></span></p>
-						<p><a name="a1411066862"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/18/#a1411066862">#</a></span></p>
-						<p><a name="a1411066862"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/18/#a1411066862">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1411066209"></a>![](https://dl.dropbox.com/s/wdqtukqaz5fhzyn/Screen%20Shot%202014-09-18%20at%202.48.42%20PM.png?dl=0)<span class="spPermalink"><a href="/2014/09/18/#a1411066209">#</a></span></p>
-				<p><a name="a1411065938"></a>[Twitter cards](https://dev.twitter.com/cards/getting-started) show additional information associated with a link. Twitter draws this information from meta tags on your page. Twitter cards support the open graph protocol, so there are only two additional lines of code you would need to add to your site via my [meta open graph script](http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html) to support a basic summary card:<span class="spPermalink"><a href="/2014/09/18/#a1411065938">#</a></span></p>
-				<p><a name="a1411066078"></a>    <meta "twitter:card" type="summary" /><span class="spPermalink"><a href="/2014/09/18/#a1411066078">#</a></span></p>
-				<p><a name="a1411066092"></a>    <meta "twitter:site" type="@kishner" /> <span class="spPermalink"><a href="/2014/09/18/#a1411066092">#</a></span></p>
-				<p><a name="a1411067045"></a>If you want to incorporate the above meta tags, use the following updated `add meta og` script. <span class="spPermalink"><a href="/2014/09/18/#a1411067045">#</a></span></p>
-				<p><a name="a1411066413"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2014/09/18/#a1411066413">#</a></span></p>
-				<p><a name="a1411066116"></a><!-- outlineEmbedCode -- this version gets you a reader -->
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="24/subscribeToMeInTheRadio3RiverBrowser.html">Subscribe to Me in the Radio3 River Browser</a></div>
+		<p>Dave Winer recently released his most cutting-edge product, RiverBrowser. It is the "river of news" living at Radio3.io, which is his new linkblogging tool, where you can post a link simultaneously to Twitter, Facebook, a WordPress blog, and your Radio3 page. </p>
+
+<p>The RiverBrowser depends on River4 or earlier (e.g. River 3). River4 is software running on the node.js framework that converts OPML subscription lists (of RSS feeds) into a JSON file, that is then rendered as a river of news. Setting up River4 is pretty darn complicated if you are not comfortable with Unix and Amazon Web Services.</p>
+
+<p>You can see the default RiverBrowser at <a href="http://radio3.io/rivers/#">http://radio3.io/rivers/#</a>, which contains Dave Winer's tabs. But you can follow my latest blog and linkblog posts by adding a JSON URL that I've generated in my own River4 installation.</p>
+
+<p>When you're at the RiverBrowser page, sign on to Twitter. Then click on Rivers, and then My Rivers. Click the plus sign, and in the new row, enter <code>Jeff</code> on the left and <code>http://river.jeffreykishner.com/rivers/jeff.js</code> on the right. Save, and you'll see a new tab with any feeds that I've added to <a href="https://dl.dropboxusercontent.com/s/7tti43z92f0egsw/jeffFeeds.opml?dl=0">my OPML file</a>.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/24/14; 03:40:20 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="24/subscribeToMeInTheRadio3RiverBrowser.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="24/theWeekNeedsABetterCopyEditor.html"><i>The Week</i> Needs a Better Copy Editor</a></div>
+		<p><img src="https://dl.dropbox.com/s/5izofoczshd6qmc/speedreads-alarmed-customers-find-out-the-iphone-6-plus-can-bend-in-your-pocket.jpg?dl=0" alt="" title="" /></p>
+
+<p><a href="http://theweek.com/article/index/268682/speedreads-alarmed-customers-find-out-the-iphone-6-plus-can-bend-in-your-pocket"><i class="fa fa-fa fa-external-link"></i></a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/24/14; 09:49:31 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="24/theWeekNeedsABetterCopyEditor.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="22/levGrossmansMagiciansTrilogy.html">Lev Grossman's Magicians Trilogy</a></div>
+		<p>I just finished reading <a href="http://levgrossman.com/magicians-trilogy/">this series</a>. There are few novels that I feel compelled to pick up outside of my subway commute, and these books belong to that category. I did not unequivocally love them, but they were all good reads. Think <em>Harry Potter</em> but young American adults who curse and have sex; or a dark <em>The Lion, the Witch, and the Wardrobe</em>.</p>
+
+<p>While reading the first two books, I really wanted magic to be real. When I was in my late twenties or early thirties I tried some candle magick, and nothing came of it. It's possible that I just was not able to summon strong enough emotional energy and will it into a change in circumstances. But then we get into tricky territory, like "Be the change you want to happen" or all that <em>The Secret</em> philosophy. Of course that's different than shooting light out of your fingers or flying, but essentially I think magic is about our emotions and our surroundings being One.</p>
+
+<p>One takeaway from these books is that you have to know yourself and know what you want to create something new. There is no room for ambivalence in magic, or at least if you're ambivalent the results of magic could turn out grotesque or half-formed. As a Pisces -- which is a mutable sign -- I often swim in both directions at once, so don't have the strong <em>I have to go in THIS direction and abandon everything else</em> that I associate with a zodiac sign more suited for magic, like Scorpio. So maybe if magic <em>is</em> real, it's just not for me. I tend to be more suited towards changing consciousness than changing matter.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/22/14; 12:04:11 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="22/levGrossmansMagiciansTrilogy.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="19/tweetsFromSeptember182014.html">Tweets from September 18, 2014</a></div>
+		<p>I don't think my tweets are anything special, but it occurred to me last night that I can use this blog as a repository of selected tweets so that more of my microblogging can be found in the same place. Dave Winer's <a href="http://happyfriends.camp">Happy Friends</a> makes it easy to copy and paste tweets into a Fargo.io blog, because it exports an opml file on the web that can be viewed as a tab in Fargo.</p>
+
+<p>So here are yesterday's tweets in which I am not communicating with someone specific or promoting my own blog posts:</p>
+
+<blockquote class="twitter-tweet"><p>it is not the case that I will do anything for pastries</p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/status/512642067814555650">September 18, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p>todo.txt nerds, I have a quicken question that won&#39;t fit in 140: <a href="https://t.co/ZjijRyHXGi">https://t.co/ZjijRyHXGi</a></p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/status/512624053778391040">September 18, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p>my fav part of iOS8 extensions is that they obviate the need to install javascript bookmarklets</p>&mdash; Jeffrey Kishner (@kishner) <a href="https://twitter.com/kishner/status/512599318457778176">September 18, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/19/14; 09:16:18 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="19/tweetsFromSeptember182014.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="18/cloudkitDammit.html">CloudKit Dammit!</a></div>
+		<p>I just learned that the new version of <a href="http://agiletortoise.com/drafts/">Drafts</a> will be using CloudKit and will drop Simperium sync. So <a href="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone.html">if I choose not to upgrade my iPhone</a> and want to try the <a href="https://gist.github.com/agiletortoise/044d3f20b3f1a94aa2f7">iOS-8-only version of Drafts</a> on my iPad, I will not be able to sync my drafts between the two devices.</p>
+
+<blockquote class="twitter-tweet"><p><a href="https://twitter.com/kishner">@kishner</a> Yes. Using CloudKit for sync.</p>&mdash; Greg Pierce (@agiletortoise) <a href="https://twitter.com/agiletortoise/status/512679481782185985">September 18, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p><a href="https://twitter.com/kishner">@kishner</a> You will have to stay on the current version (which works fine on 8).</p>&mdash; Greg Pierce (@agiletortoise) <a href="https://twitter.com/agiletortoise/status/512681292115087360">September 18, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I use Drafts pretty much daily, and I have written God knows how many Dropbox, Evernote and URL actions for it. Not only that, I keep it as a notes repository, storing snippets that I will never <em>act on</em>. Kind of like people use nvAlt.</p>
+
+<p>I could choose to only use Drafts as a place to take actions on drafts, i.e., send text to other apps -- and use a Dropbox text editor for storing notes. The big changes that Greg Pierce (the developer) has in store look so enticing that it would be difficult for me <em>not</em> to try it out on my iPad.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/18/14; 04:26:20 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="18/cloudkitDammit.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="18/howToAddTwitterCardSupportToFargioBlogs.html">How to Add Twitter Card Support to Farg.io Blogs</a></div>
+		<p><img src="https://dl.dropbox.com/s/wdqtukqaz5fhzyn/Screen%20Shot%202014-09-18%20at%202.48.42%20PM.png?dl=0" alt="" title="" /></p>
+
+<p><a href="https://dev.twitter.com/cards/getting-started">Twitter cards</a> show additional information associated with a link. Twitter draws this information from meta tags on your page. Twitter cards support the open graph protocol, so there are only two additional lines of code you would need to add to your site via my <a href="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html">meta open graph script</a> to support a basic summary card:</p>
+
+<pre><code>&lt;meta "twitter:card" type="summary" /&gt;
+
+&lt;meta "twitter:site" type="@kishner" /&gt; 
+</code></pre>
+
+<p>If you want to incorporate the above meta tags, use the following updated <code>add meta og</code> script. </p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p><!-- outlineEmbedCode -- this version gets you a reader -->
 	<script src="http://fargo.io/code/concord.js" /></script>
 	<script src="http://fargo.io/code/utils.js"></script>
 	<style>
@@ -1262,100 +522,47 @@
 			setPrefs ();
 			getOutline (opmlUrl);
 			});
-		</script><span class="spPermalink"><a href="/2014/09/18/#a1411066116">#</a></span></p>
-				<p><a name="a1411066930"></a>Make sure you replace @kishner with your own Twitter handle.<span class="spPermalink"><a href="/2014/09/18/#a1411066930">#</a></span></p>
-				<p><a name="a1411066430"></a>In addition to having the meta tags on your page, you need to get your site whitelisted by Twitter. After you've published a post with the meta tags, enter your URL in the [Card Validator](https://cards-dev.twitter.com/validator). If the card is valid but your site has not been approved, then submit for review. After your site has been approved, your Twitter cards will show up.<span class="spPermalink"><a href="/2014/09/18/#a1411066430">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (22)" ><i class="fa fa-caret-right" id="idStreamWedge22"></i></a></span><a name="a1411054690"></a><a class="aStreamTextLink" onclick="ecStream (22)">Test-Driving iOS 8 Before I Upgrade My iPhone</a><span class="spPermalink"><a href="/2014/09/18/#a1411054690">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel22">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (23)" ><i class="fa fa-caret-right" id="idStreamWedge23"></i></a></span><a name="a1411061969"></a><a class="aStreamTextLink" onclick="ecStream (23)">#glossary</a><span class="spPermalink"><a href="/2014/09/18/#a1411061969">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel23">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (24)" ><i class="fa fa-caret-right" id="idStreamWedge24"></i></a></span><a name="a1411061969"></a><a class="aStreamTextLink" onclick="ecStream (24)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/18/#a1411061969">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel24">
-						<p><a name="a1411061969"></a><meta property="og:title" content="Test-Driving iOS 8 Before I Upgrade My iPhone" /><span class="spPermalink"><a href="/2014/09/18/#a1411061969">#</a></span></p>
-						<p><a name="a1411061969"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/18/testdrivingIos8BeforeIUpgradeMyIphone" /><span class="spPermalink"><a href="/2014/09/18/#a1411061969">#</a></span></p>
-						<p><a name="a1411061969"></a><meta property="og:description" content="I've been debating whether I _absolutely have to_ get a new phone. If I do, I'd get the year-old 5s. But for a 32gb model, that's $150 plus a $40 activation fee to renew my 2-yr contract on AT&T, unless I go with their Next plan." /><span class="spPermalink"><a href="/2014/09/18/#a1411061969">#</a></span></p>
-						<p><a name="a1411063067"></a><meta name="twitter:card" content="summary" /><span class="spPermalink"><a href="/2014/09/18/#a1411063067">#</a></span></p>
-						<p><a name="a1411063196"></a><meta name="twitter:site" content="@kishner" /><span class="spPermalink"><a href="/2014/09/18/#a1411063196">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1411054724"></a>I've been debating whether I _absolutely have to_ get a new iPhone. If I do, I'd get the year-old 5s. But for a 32gb model, that's $150 plus a $40 activation fee to renew my 2-yr contract on AT&T, unless I go with their Next plan. I haven't done the math, but it appears that [the Next plan is a ripoff](http://www.theverge.com/2013/7/16/4528404/att-next-phone-upgrade-plans-a-huge-ripoff), so I'd be paying close to $200 for a subsidized iPhone 5s. <span class="spPermalink"><a href="/2014/09/18/#a1411054724">#</a></span></p>
-				<p><a name="a1411054968"></a>Yesterday, when iOS 8 was released, I decided to install it on my iPad mini. Although the new OS can technically be installed on a 4s, I've read that the animations are choppy, and I already find the iOS 7 animations on my 4s to be slow. I am test-driving the new versions of my favorite productivity apps in iOS 8 to see if I can live without them on my iPhone. <span class="spPermalink"><a href="/2014/09/18/#a1411054968">#</a></span></p>
-				<p><a name="a1411055100"></a>So far, I've clipped an article in Safari to Evernote using the app's extension, and I've signed in to Pinner for Pinboard using the 1Password extension. The Evernote extension functionality is a big plus compared to using Everclip or a javascript bookmarklet or [this novel solution by Phillip Gruneich](http://philgr.com/blog/save-articles-from-the-web-on-evernote-from-ios). I haven't tested out the Instapaper extension yet, and I'm looking forward to trying the [new version of Drafts coming out in October](https://gist.github.com/agiletortoise/044d3f20b3f1a94aa2f7). <span class="spPermalink"><a href="/2014/09/18/#a1411055100">#</a></span></p>
-				<p><a name="a1411055371"></a>I do most of my "consumption" on the iPad anyway, so saving articles to Evernote or Instapaper would happen there. I use my iPhone mainly for task management and brain-dumping; <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> and Drafts are the killer apps for me there. <span class="spPermalink"><a href="/2014/09/18/#a1411055371">#</a></span></p>
-				<p><a name="a1411055496"></a>My conscience is telling me to use my iPhone 4s until it is pretty much nonfunctional. It seems wasteful otherwise. Yes, I can upgrade to a 5s and hand my old phone down as an iPod Touch to a family member, but I'm still spending good money for a new product. And any new product uses up resources and has a labor cost as well. <span class="spPermalink"><a href="/2014/09/18/#a1411055496">#</a></span></p>
-				</div>
+		</script></p>
+
+<p>Make sure you replace @kishner with your own Twitter handle.</p>
+
+<p>In addition to having the meta tags on your page, you need to get your site whitelisted by Twitter. After you've published a post with the meta tags, enter your URL in the <a href="https://cards-dev.twitter.com/validator">Card Validator</a>. If the card is valid but your site has not been approved, then submit for review. After your site has been approved, your Twitter cards will show up.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/18/14; 01:45:10 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="18/howToAddTwitterCardSupportToFargioBlogs.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/12/">Friday, September 12<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (25)" ><i class="fa fa-caret-right" id="idStreamWedge25"></i></a></span><a name="a1410549817"></a><a class="aStreamTextLink" onclick="ecStream (25)">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a><span class="spPermalink"><a href="/2014/09/12/#a1410549817">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel25">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (26)" ><i class="fa fa-caret-right" id="idStreamWedge26"></i></a></span><a name="a1410550759"></a><a class="aStreamTextLink" onclick="ecStream (26)">#glossary</a><span class="spPermalink"><a href="/2014/09/12/#a1410550759">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel26">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (27)" ><i class="fa fa-caret-right" id="idStreamWedge27"></i></a></span><a name="a1410550759"></a><a class="aStreamTextLink" onclick="ecStream (27)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/12/#a1410550759">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel27">
-						<p><a name="a1410550759"></a><meta property="og:title" content="Fargo Script to Add Open Graph Meta Tags to Your Blog Post" /><span class="spPermalink"><a href="/2014/09/12/#a1410550759">#</a></span></p>
-						<p><a name="a1410550760"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost" /><span class="spPermalink"><a href="/2014/09/12/#a1410550760">#</a></span></p>
-						<p><a name="a1410550760"></a><meta property="og:description" content="The following Fargo.io script will insert a &num;glossary directive followed by a customStylesScripts macro that includes open graph meta tags for title, url, and description. I have tested this in Google's [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets) and Facebook's [Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/) and it works. With these tags in place, you should be able to post a Fargo blog post to Facebook and have the open graph meta tags properly parsed." /><span class="spPermalink"><a href="/2014/09/12/#a1410550760">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1410549834"></a>The following Fargo.io script will insert a &num;glossary directive followed by a customStylesScripts macro that includes open graph meta tags for title, url, and description. I have tested this in Google's [Structured Data Testing Tool](http://www.google.com/webmasters/tools/richsnippets) and Facebook's [Open Graph Object Debugger](https://developers.facebook.com/tools/debug/og/object/) and it works. With these tags in place, you should be able to post a Fargo blog post to Facebook and have the open graph meta tags properly parsed.<span class="spPermalink"><a href="/2014/09/12/#a1410549834">#</a></span></p>
-				<p><a name="a1410550000"></a>To make this work, you need to add the script below to your menubar.opml file. Write your blog post, then put the cursor on the title of the post, and choose the _add meta og_ script. Everything you need will be automatically written. By default, the description tag pulls the first line of your blog post. You can edit it afterwards if you want.<span class="spPermalink"><a href="/2014/09/12/#a1410550000">#</a></span></p>
-				<p><a name="a1410550168"></a>&nbsp;<span class="spPermalink"><a href="/2014/09/12/#a1410550168">#</a></span></p>
-				<p><a name="a1410550170"></a>![](https://dl.dropbox.com/s/o97r8euba97i24g/Screen%20Shot%202014-09-12%20at%203.28.38%20PM.png?dl=0)<span class="spPermalink"><a href="/2014/09/12/#a1410550170">#</a></span></p>
-				<p><a name="a1410550174"></a>&nbsp;<span class="spPermalink"><a href="/2014/09/12/#a1410550174">#</a></span></p>
-				<p><a name="a1410549843"></a>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.<span class="spPermalink"><a href="/2014/09/12/#a1410549843">#</a></span></p>
-				<p><a name="a1410549830"></a><!-- outlineEmbedCode -- this version gets you a reader -->
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="18/testdrivingIos8BeforeIUpgradeMyIphone.html">Test-Driving iOS 8 Before I Upgrade My iPhone</a></div>
+		<p>I've been debating whether I <em>absolutely have to</em> get a new iPhone. If I do, I'd get the year-old 5s. But for a 32gb model, that's $150 plus a $40 activation fee to renew my 2-yr contract on AT&amp;T, unless I go with their Next plan. I haven't done the math, but it appears that <a href="http://www.theverge.com/2013/7/16/4528404/att-next-phone-upgrade-plans-a-huge-ripoff">the Next plan is a ripoff</a>, so I'd be paying close to $200 for a subsidized iPhone 5s. </p>
+
+<p>Yesterday, when iOS 8 was released, I decided to install it on my iPad mini. Although the new OS can technically be installed on a 4s, I've read that the animations are choppy, and I already find the iOS 7 animations on my 4s to be slow. I am test-driving the new versions of my favorite productivity apps in iOS 8 to see if I can live without them on my iPhone. </p>
+
+<p>So far, I've clipped an article in Safari to Evernote using the app's extension, and I've signed in to Pinner for Pinboard using the 1Password extension. The Evernote extension functionality is a big plus compared to using Everclip or a javascript bookmarklet or <a href="http://philgr.com/blog/save-articles-from-the-web-on-evernote-from-ios">this novel solution by Phillip Gruneich</a>. I haven't tested out the Instapaper extension yet, and I'm looking forward to trying the <a href="https://gist.github.com/agiletortoise/044d3f20b3f1a94aa2f7">new version of Drafts coming out in October</a>. </p>
+
+<p>I do most of my "consumption" on the iPad anyway, so saving articles to Evernote or Instapaper would happen there. I use my iPhone mainly for task management and brain-dumping; <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> and Drafts are the killer apps for me there. </p>
+
+<p>My conscience is telling me to use my iPhone 4s until it is pretty much nonfunctional. It seems wasteful otherwise. Yes, I can upgrade to a 5s and hand my old phone down as an iPod Touch to a family member, but I'm still spending good money for a new product. And any new product uses up resources and has a labor cost as well. </p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/18/14; 10:38:10 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="18/testdrivingIos8BeforeIUpgradeMyIphone.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html">Fargo Script to Add Open Graph Meta Tags to Your Blog Post</a></div>
+		<p>The following Fargo.io script will insert a &num;glossary directive followed by a customStylesScripts macro that includes open graph meta tags for title, url, and description. I have tested this in Google's <a href="http://www.google.com/webmasters/tools/richsnippets">Structured Data Testing Tool</a> and Facebook's <a href="https://developers.facebook.com/tools/debug/og/object/">Open Graph Object Debugger</a> and it works. With these tags in place, you should be able to post a Fargo blog post to Facebook and have the open graph meta tags properly parsed.</p>
+
+<p>To make this work, you need to add the script below to your menubar.opml file. Write your blog post, then put the cursor on the title of the post, and choose the <em>add meta og</em> script. Everything you need will be automatically written. By default, the description tag pulls the first line of your blog post. You can edit it afterwards if you want.</p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://dl.dropbox.com/s/o97r8euba97i24g/Screen%20Shot%202014-09-12%20at%203.28.38%20PM.png?dl=0" alt="" title="" /></p>
+
+<p>&nbsp;</p>
+
+<p>Visit the <a href="http://docs.fargo.io/fargoScripting">Fargo scripting page in the docs</a> to learn how to install this script, or <a href="http://www.youtube.com/watch?v=DG9vpDsTv4A">watch this video</a>.</p>
+
+<p><!-- outlineEmbedCode -- this version gets you a reader -->
 	<script src="http://fargo.io/code/concord.js" /></script>
 	<script src="http://fargo.io/code/utils.js"></script>
 	<style>
@@ -1473,212 +680,183 @@
 			setPrefs ();
 			getOutline (opmlUrl);
 			});
-		</script><span class="spPermalink"><a href="/2014/09/12/#a1410549830">#</a></span></p>
-				</div>
+		</script></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/12/14; 02:23:37 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="12/fargoScriptToAddOpenGraphMetaTagsToYourBlogPost.html"><i class="fa fa-star"></i></a></div>
 			</div>
 		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/11/">Thursday, September 11<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (28)" ><i class="fa fa-caret-right" id="idStreamWedge28"></i></a></span><a name="a1410445541"></a><a class="aStreamTextLink" onclick="ecStream (28)">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a><span class="spPermalink"><a href="/2014/09/11/#a1410445541">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel28">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (29)" ><i class="fa fa-caret-right" id="idStreamWedge29"></i></a></span><a name="a1410548368"></a><a class="aStreamTextLink" onclick="ecStream (29)">#glossary</a><span class="spPermalink"><a href="/2014/09/11/#a1410548368">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel29">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (30)" ><i class="fa fa-caret-right" id="idStreamWedge30"></i></a></span><a name="a1410548368"></a><a class="aStreamTextLink" onclick="ecStream (30)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/11/#a1410548368">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel30">
-						<p><a name="a1410548368"></a><meta property="og:title" content="Install Tiny Tiny RSS on Your Server Without Using the Command Line" /><span class="spPermalink"><a href="/2014/09/11/#a1410548368">#</a></span></p>
-						<p><a name="a1410548368"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine" /><span class="spPermalink"><a href="/2014/09/11/#a1410548368">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1410445564"></a>[Tiny Tiny RSS](http://tt-rss.org/redmine/projects/tt-rss/wiki) is a open-source RSS reader that you can install on any LAMP server (Linux/Apache/MySQL/PHP). I installed this yesterday and it wasn't too complicated. [Lifehacker](http://lifehacker.com/5992404/how-to-build-your-own-syncing-rss-reader-with-tiny-tiny-rss-and-kick-google-reader-to-the-curb) has a tutorial, but one doesn't need any Linux or command line experience to install this application. You _do_ need to be comfortable with cPanel and FTP software. <span class="spPermalink"><a href="/2014/09/11/#a1410445564">#</a></span></p>
-				<p><a name="a1410445955"></a>&nbsp;<span class="spPermalink"><a href="/2014/09/11/#a1410445955">#</a></span></p>
-				<p><a name="a1410381294"></a><i class="fa fa-chevron-right"></i> Download the [tar](https://github.com/gothfox/Tiny-Tiny-RSS/archive/1.13.tar.gz) to your hard drive and extract.<span class="spPermalink"><a href="/2014/09/11/#a1410381294">#</a></span></p>
-				<p><a name="a1410381647"></a><i class="fa fa-chevron-right"></i> Open the Web Host Manager for your server, and go to the cPanel for the domain onto which you are installing the application. Then go to the MySQL Database Wizard. You will need to create a new database, a new user for that database, and create a password. Then give the user all privileges. Make sure you note these all down, and then you can sign out of your Web Host Manager.<span class="spPermalink"><a href="/2014/09/11/#a1410381647">#</a></span></p>
-				<p><a name="a1410446994"></a><i class="fa fa-chevron-right"></i> Next, open FTP software (like [Filezilla](https://filezilla-project.org/)). Rename the folder that you extracted from the tar to _tt-rss_, and upload the folder (and all of its contents) to the public_html directory of your domain. <span class="spPermalink"><a href="/2014/09/11/#a1410446994">#</a></span></p>
-				<p><a name="a1410447248"></a><i class="fa fa-chevron-right"></i> After upload is complete, visit the install page at _http://YOUR-DOMAIN.com/tt-rss/install/_. Enter the database settings you created in the MySQL wizard, and hit the test button. If it was a success, initialize the database. The app will provide you the contents of a custom config.php file. Copy this text and paste it into a new file in a text editor. Search for SIMPLE_UPDATE_MODE in the file and change its value to _true_ so that the feeds will update every 1/2 hour while you're using the app. Save the file as config.php and upload into the _tt-rss_ directory.<span class="spPermalink"><a href="/2014/09/11/#a1410447248">#</a></span></p>
-				<p><a name="a1410447661"></a><i class="fa fa-chevron-right"></i> Now you can go visit /tt-rss/ and log in initially with `admin` and `password`. You can go into preferences to change the admin password, create users, and so on.<span class="spPermalink"><a href="/2014/09/11/#a1410447661">#</a></span></p>
-				<p><a name="a1410384688"></a><b>Resources</b><span class="spPermalink"><a href="/2014/09/11/#a1410384688">#</a></span></p>
-				<p><a name="a1410384718"></a><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki/InstallationNotes" target="_blank">Installation Notes</a><span class="spPermalink"><a href="/2014/09/11/#a1410384718">#</a></span></p>
-				<p><a name="a1410384728"></a><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki/UpdatingFeeds" target="_blank">Updating Feeds</a><span class="spPermalink"><a href="/2014/09/11/#a1410384728">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/10/">Wednesday, September 10<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (31)" ><i class="fa fa-caret-right" id="idStreamWedge31"></i></a></span><a name="a1410359382"></a><a class="aStreamTextLink" onclick="ecStream (31)">But Do I <i>Need</i> It?</a><span class="spPermalink"><a href="/2014/09/10/#a1410359382">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel31">
-				<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (32)" ><i class="fa fa-caret-right" id="idStreamWedge32"></i></a></span><a name="a1410549625"></a><a class="aStreamTextLink" onclick="ecStream (32)">#glossary</a><span class="spPermalink"><a href="/2014/09/10/#a1410549625">#</a></span></p>
-				<div class="divLevel" id="idStreamLevel32">
-					<p><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (33)" ><i class="fa fa-caret-right" id="idStreamWedge33"></i></a></span><a name="a1410549625"></a><a class="aStreamTextLink" onclick="ecStream (33)"><script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-42108157-1', 'jeffreykishner.com');
-	ga('send', 'pageview');
-	</script>
-<style>
-	.divByline {
-		display: none !important;
-		}
-	.divStreamDay p {
-		margin-bottom: 1em;
-		}
-	code {
-		white-space: pre-line;
-		color: black;
-		}
-	pre {
-		white-space: pre-line;
-		}
-	</style></a><span class="spPermalink"><a href="/2014/09/10/#a1410549625">#</a></span></p>
-					<div class="divLevel" id="idStreamLevel33">
-						<p><a name="a1410549625"></a><meta property="og:title" content="But Do I <i>Need</i> It?" /><span class="spPermalink"><a href="/2014/09/10/#a1410549625">#</a></span></p>
-						<p><a name="a1410549625"></a><meta property="og:url" content="http://blog.jeffreykishner.com/2014/09/10/butDoINeedIt" /><span class="spPermalink"><a href="/2014/09/10/#a1410549625">#</a></span></p>
-						<p><a name="a1410549625"></a><meta property="og:description" content="Had a talk with my wife last night about the Apple event. She does not follow Apple news. She uses one of my old iPhones as an iPod Touch to play Letterpress. " /><span class="spPermalink"><a href="/2014/09/10/#a1410549625">#</a></span></p>
-						</div>
-					</div>
-				<p><a name="a1410359390"></a>Had a talk with my wife last night about the Apple event. She does not follow Apple news. She uses one of my old iPhones as an iPod Touch to play Letterpress. <span class="spPermalink"><a href="/2014/09/10/#a1410359390">#</a></span></p>
-				<p><a name="a1410359515"></a>I told her I wanted to upgrade to the 5s (which is a year old), and she asked, "But do you <i>need</i> it?"<span class="spPermalink"><a href="/2014/09/10/#a1410359515">#</a></span></p>
-				<p><a name="a1410359623"></a>That fact is, I <i>don't</i>. My 4s works fine with iOS 7. The screen isn't cracked, I can make calls, the battery life is acceptable. I don't even want new hardware, I just want a phone that will work well with iOS 8, and I fear that my 4s won't cut it. Some of the iOS 7 animation effects are already kind of sluggish on my current phone, and god knows how many apps I'd have to delete just to be able to install iOS 8 on it, given that I am constantly getting "you have no more storage left" messages.<span class="spPermalink"><a href="/2014/09/10/#a1410359623">#</a></span></p>
-				<p><a name="a1410359885"></a>I told her I just like to play with productivity apps, it appeals to my geeky side. But is it worth it to spend even $150 just so I can perform actions in Notification Center, or use 1Password from within a supported app?<span class="spPermalink"><a href="/2014/09/10/#a1410359885">#</a></span></p>
-				<p><a name="a1410361397"></a>### The Next New Thing<span class="spPermalink"><a href="/2014/09/10/#a1410361397">#</a></span></p>
-				<p><a name="a1410361271"></a>I have a history of always buying The Next New Thing, debt be damned. After twenty years or so of adulthood, I am working on being less impetuous. My wife is from Germany, and she reminds me -- often -- that German companies make products to last, and that companies take their products back from consumers when they are no longer functioning. Here in the U.S., _planned obsolescence_ seems to be the rule rather than the exception. Also, there is something to be said for thinking about the environment. Apple's green record is improving, but if I upgrade my phone every two years even if it is working fine, in some sense I am needlessly supporting the extraction of more precious metals, and I am probably contributing to the Chinese factory worker problem.<span class="spPermalink"><a href="/2014/09/10/#a1410361271">#</a></span></p>
-				<p><a name="a1410361670"></a>This is not to say that I definitely won't upgrade this Fall, but the thought of doing so doesn't sit well with me. I may wait the release of iOS 8 out, and observe how much pain<sup>1</sup> I endure when my favorite apps integrate iOS 8-only features.<span class="spPermalink"><a href="/2014/09/10/#a1410361670">#</a></span></p>
-				<p><a name="a1410362057"></a>***<span class="spPermalink"><a href="/2014/09/10/#a1410362057">#</a></span></p>
-				<p><a name="a1410361855"></a><sup>1</sup> This is the Fear of Missing Out (FOMA) pain of a geek who enjoys using Drafts, Launch Center Pro, Pythonista, etc. How would I feel reading blogs and not being able to _do_ what the authors outline in their URL schemes/scripts/actions?<span class="spPermalink"><a href="/2014/09/10/#a1410361855">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (34)" ><i class="fa fa-caret-right" id="idStreamWedge34"></i></a></span><a name="a1410357483"></a><a class="aStreamTextLink" onclick="ecStream (34)">Who Needs a Podcasting App?</a><span class="spPermalink"><a href="/2014/09/10/#a1410357483">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel34">
-				<p><a name="a1410357491"></a>The problem I have with most podcasting apps is that they assume I want to always download the most recent episodes of podcasts to which I am subscribed. I would prefer to only download episodes to which I actually want to listen. After getting frustrated tweaking settings in apps like Instacast and Overcast, I've resorted to the following routine:<span class="spPermalink"><a href="/2014/09/10/#a1410357491">#</a></span></p>
-				<p><a name="a1410357655"></a>### Review the Podcasts Tab in River4<span class="spPermalink"><a href="/2014/09/10/#a1410357655">#</a></span></p>
-				<p><a name="a1410357705"></a>[River4](https://github.com/scripting/river4) shows podcast enclosures. I can quickly scan the podcasts in [my river](http://river.jeffreykishner.com/?panel=podcasts) and decide what I want to listen to.<span class="spPermalink"><a href="/2014/09/10/#a1410357705">#</a></span></p>
-				<p><a name="a1410357843"></a>&nbsp;<span class="spPermalink"><a href="/2014/09/10/#a1410357843">#</a></span></p>
-				<p><a name="a1410357845"></a>![](https://dl.dropbox.com/s/ugbukvz0g59t2j2/Screen%20Shot%202014-09-10%20at%2010.03.10%20AM.png?dl=0)<span class="spPermalink"><a href="/2014/09/10/#a1410357845">#</a></span></p>
-				<p><a name="a1410357850"></a>&nbsp;<span class="spPermalink"><a href="/2014/09/10/#a1410357850">#</a></span></p>
-				<p><a name="a1410357852"></a>I then right click on the mp3 link and copy the link location to my clipboard.<span class="spPermalink"><a href="/2014/09/10/#a1410357852">#</a></span></p>
-				<p><a name="a1410357871"></a>### Send the Link to My iPhone<span class="spPermalink"><a href="/2014/09/10/#a1410357871">#</a></span></p>
-				<p><a name="a1410357881"></a>Using the [Pushbullet](http://pushbullet.com) [Chrome extension](https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd?hl=en), I send the link to my iPhone. I just make sure to precede the link with a `g` (explanation below).<span class="spPermalink"><a href="/2014/09/10/#a1410357881">#</a></span></p>
-				<p><a name="a1410358025"></a>&nbsp;<span class="spPermalink"><a href="/2014/09/10/#a1410358025">#</a></span></p>
-				<p><a name="a1410358028"></a>![](https://dl.dropbox.com/s/i66est3qfzosbf7/Screen%20Shot%202014-09-10%20at%2010.06.11%20AM.png?dl=0)<span class="spPermalink"><a href="/2014/09/10/#a1410358028">#</a></span></p>
-				<p><a name="a1410358033"></a>&nbsp;<span class="spPermalink"><a href="/2014/09/10/#a1410358033">#</a></span></p>
-				<p><a name="a1410358036"></a>When I receive the push notification (the Pushbullet app on the iPhone is of course required), I swipe on it, and the link immediately opens to...<span class="spPermalink"><a href="/2014/09/10/#a1410358036">#</a></span></p>
-				<p><a name="a1410358086"></a>### Download in GoodReader<span class="spPermalink"><a href="/2014/09/10/#a1410358086">#</a></span></p>
-				<p><a name="a1410358092"></a>[GoodReader](http://www.goodiware.com/) is an excellent app for downloading just about any media: mp3s, movie files, images, html files, PDFs. When an URL is preceded by a `g`, it tells Safari to go to GoodReader, and then GoodReader downloads the file.<span class="spPermalink"><a href="/2014/09/10/#a1410358092">#</a></span></p>
-				<p><a name="a1410358211"></a>This app remembers where I leave off in the middle of listening to a podcast -- although I have to hit the "Stop" button after pausing the recording -- so I can easily resume the podcast just by tapping on the filename. When I'm done, I swipe to delete.<span class="spPermalink"><a href="/2014/09/10/#a1410358211">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/09/">Tuesday, September  9<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (35)" ><i class="fa fa-caret-right" id="idStreamWedge35"></i></a></span><a name="a1410298336"></a><a class="aStreamTextLink" onclick="ecStream (35)">Time to Upgrade</a><span class="spPermalink"><a href="/2014/09/09/#a1410298336">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel35">
-				<p><a name="a1410298349"></a>I have a 16 gb iPhone 4s. I am constantly hitting my memory limits, and I fear that the phone will run sluggishly if I install iOS 8. After following today's Apple event, I am thinking of just getting a 32 gb 5s for $149. As much as I'd love a 6, knowing that 16 gb is not enough I'd have to get a 64 gb model, which costs $299. (And that's with a renewed 2-year contract!) <span class="spPermalink"><a href="/2014/09/09/#a1410298349">#</a></span></p>
-				<p><a name="a1410298560"></a>Of course, I could choose to do nothing, but I really want iOS 8. I am, after all, a major iPhone geek, and I want Extensions and Handoff. <span class="spPermalink"><a href="/2014/09/09/#a1410298560">#</a></span></p>
-				<p><a name="a1410298770"></a>I'm much more interested in the latest software than the latest hardware, but I feel I have to invest in more recent hardware to get the best out of the latest iOS update, and I think the 5s will be fine for my needs.<span class="spPermalink"><a href="/2014/09/09/#a1410298770">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/03/">Wednesday, September  3<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (36)" ><i class="fa fa-caret-right" id="idStreamWedge36"></i></a></span><a name="a1409765958"></a><a class="aStreamTextLink" onclick="ecStream (36)">The Cost of River4</a><span class="spPermalink"><a href="/2014/09/03/#a1409765958">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel36">
-				<p><a name="a1409765968"></a>I just got my Amazon Web Services bill. It looks like the portion of it attributable to running River4 for August was a little over ten dollars. I know this is not backbreaking, but it's not free either. It's more expensive than a paid account at Newsblur or Feedly. And I'm already running [Fever](http://feedafever.com) on my VPS for no extra cost. Right now I'm _liking_ [my river](http://river.jeffreykishner.com) but the cost of the Amazon bandwidth and service requests are higher than I had anticipated. <span class="spPermalink"><a href="/2014/09/03/#a1409765968">#</a></span></p>
-				<p><a name="a1409766950"></a>I remember going through a similar experience when I was running [River2 and River3](http://blog.jeffreykishner.com/2013/09/06/isPayingForAnAmazonEc2InstanceToRunRiver23WorthIt.html). At that time, the big cost was running the EC2 instance 24/7. With River4, I'm running the software on my VPS, so it's not costing me anything extra. It's all Amazon.<span class="spPermalink"><a href="/2014/09/03/#a1409766950">#</a></span></p>
-				</div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (37)" ><i class="fa fa-caret-right" id="idStreamWedge37"></i></a></span><a name="a1409761346"></a><a class="aStreamTextLink" onclick="ecStream (37)">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a><span class="spPermalink"><a href="/2014/09/03/#a1409761346">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel37">
-				<p><a name="a1409761389"></a>[Yesterday](http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html) I blogged about fargoPublisher and Heroku but I got pretty much everything _wrong_. Thanks to clarification from Dave Winer on the Fargo2 Google group, I finally got fargoPublisher working as intended. <span class="spPermalink"><a href="/2014/09/03/#a1409761389">#</a></span></p>
-				<p><a name="a1409761470"></a>First, follow Dave's [Heroku for Poets tutorial](http://scripting.com/2014/02/06/herokuForPoetsBeta.html). I created a Heroku app, and put the domain name of that app in the CMS settings in Fargo (at the top right, where your name is), e.g., app.herokuapp.com (not the real app name).<span class="spPermalink"><a href="/2014/09/03/#a1409761470">#</a></span></p>
-				<p><a name="a1409761628"></a>I registered the domain myblogoutline.com. And created an Amazon S3 bucket called myblogoutline.com (although I think you can call the bucket whatever you want, it doesn't have to coincide with the domain name). At my domain registrar, I have a wildcard CNAME ("*") pointing to app.herokuapp.com.<span class="spPermalink"><a href="/2014/09/03/#a1409761628">#</a></span></p>
-				<p><a name="a1409761764"></a>On the Heroku dashboard for my app, under domains, it shows the name of my app. I added to it *.myoutlineblog.com. <span class="spPermalink"><a href="/2014/09/03/#a1409761764">#</a></span></p>
-				<p><a name="a1409761822"></a>I have the following set up as config variables on the same settings page (minus the Amazon secret keys):<span class="spPermalink"><a href="/2014/09/03/#a1409761822">#</a></span></p>
-				<p><a name="a1409761855"></a>    fpDataPath = /myblogoutline.com/data/<span class="spPermalink"><a href="/2014/09/03/#a1409761855">#</a></span></p>
-				<p><a name="a1409761884"></a>    fpDomain = myblogoutline.com<span class="spPermalink"><a href="/2014/09/03/#a1409761884">#</a></span></p>
-				<p><a name="a1409761890"></a>    fpHostingPath = /myblogoutline.com/users/<span class="spPermalink"><a href="/2014/09/03/#a1409761890">#</a></span></p>
-				<p><a name="a1409761908"></a>    fpRedirect = false<span class="spPermalink"><a href="/2014/09/03/#a1409761908">#</a></span></p>
-				<p><a name="a1409761916"></a>    fpServerPort = 80<span class="spPermalink"><a href="/2014/09/03/#a1409761916">#</a></span></p>
-				<p><a name="a1409761936"></a>I then created a new outline in Fargo, named it (File > Name Outline...) and added a few entries. When I put the cursor on a headline and clicked on the eye icon in the left rail, Fargo successfully opened the correct URL.<span class="spPermalink"><a href="/2014/09/03/#a1409761936">#</a></span></p>
-				<p><a name="a1409762074"></a>From what I understand from Dave, Heroku does all the serving of content, Amazon just _stores_ the data.<span class="spPermalink"><a href="/2014/09/03/#a1409762074">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
-<div class="divStreamDay" >
-	<div class="divDaySeparator"></div>
-	
-	<div class="divStreamDayText">
-		<div>
-			<div class="divStreamDayHead"><a class="aStreamDayLink" href="/2014/09/02/">Tuesday, September  2<span class="spDateYearPart">, 2014</span></a></div>
-			<div class="divStreamSectionHead"><span class="divStreamIcon"><a class="aStreamWedgeLink" onclick="ecStream (38)" ><i class="fa fa-caret-right" id="idStreamWedge38"></i></a></span><a name="a1409681338"></a><a class="aStreamTextLink" onclick="ecStream (38)">Posting Multiple Sites with fargoPublisher on Heroku</a><span class="spPermalink"><a href="/2014/09/02/#a1409681338">#</a></span></div>
-			<div class="divLevel" id="idStreamLevel38">
-				<p><a name="a1409764135"></a>_Please disregard the content below and go [here](http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html) instead._<span class="spPermalink"><a href="/2014/09/02/#a1409764135">#</a></span></p>
-				<p><a name="a1409681365"></a>I have managed to successfully deploy [fargoPublisher](https://github.com/scripting/fargoPublisher) on [Heroku](http://heroku.com) using [Dave Winer's instructions](http://scripting.com/2014/02/06/herokuForPoetsBeta.html). It was surprisingly easy. (The only snag was that I had to put ****.herokuapp.com in the CMS settings globally, not per individual outline.) The difficult part has been figuring out how to actually publish the sites. <span class="spPermalink"><a href="/2014/09/02/#a1409681365">#</a></span></p>
-				<p><a name="a1409681972"></a>fargoPublisher seems to essentially be the same software used to create subdomains on smallpict.com. If you want to publish one of your outlines on your own Amazon S3 bucket, you need to "name" it. As of this writing, my Heroku app is publishing to a bucket called myoutlineblog.com (same as a domain name I registered). Theoretically, if I name an outline "blog," it will publish at blog.myoutlineblog.com. However, there are two separate DNS components necessary to make this work. First I need to point myoutlineblog.com.s3-website-us-east-1.amazonaws.com (the "endpoint") to myoutlineblog.com via CNAME. And to the best of my knowledge, I need to point a wildcard A record to the IP address of the node where I am hosting fargoPublisher. This is where the users are redirected to their subdomains. Unfortunately, Heroku apps only have dynamic IP addresses, and I don't currently see a solution to this, so I can only access my example named site at myoutlineblog.com/users/blog/, not blog.myoutlineblog.com.<span class="spPermalink"><a href="/2014/09/02/#a1409681972">#</a></span></p>
-				<p><a name="a1409682420"></a>This is problematic because links in Fargo sites are relative, e.g, `"href=2014/09/01/blogpost.html"`, and named outlines have the blog.domain.com structure. One workaround is adding a few directives in the outline: `#opmlLink "http://myoutlineblog.com/users/blog/"` and `#opmlFeed "http://myoutlineblog.com/users/blog/rss.xml"`.<span class="spPermalink"><a href="/2014/09/02/#a1409682420">#</a></span></p>
-				<p><a name="a1409682623"></a>This appears to successfully replace blog.myoutlineblog.com with myoutlineblog.com/users/blog/ in the rendered HTML, so that if I click on a link to a post from an index.html page, I will be directed to the correct path. Unfortunately, this solution is not working for #type "stream" blogs (i.e., link or note blogs like scripting.com). I believe that since you can only click on a date, Fargo is expecting the base domain, no additional directories. <span class="spPermalink"><a href="/2014/09/02/#a1409682623">#</a></span></p>
-				<p><a name="a1409685260"></a>Another problem is that the RSS feed points to the blog.domain.com address, so unless I can figure out how to fix that, any feed subscribers clicking on a feed item will be directed to a 404 page.<span class="spPermalink"><a href="/2014/09/02/#a1409685260">#</a></span></p>
-				<p><a name="a1409685124"></a>As currently implemented, this solution is definitely better than not having fargoPublisher deployed at all. I can publish all the outlines I want to my own AWS account. I just have to tweak every outline a bit to make relative links work, and I guess stream blogs are out of the question until I can find a workaround.<span class="spPermalink"><a href="/2014/09/02/#a1409685124">#</a></span></p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html">Install Tiny Tiny RSS on Your Server Without Using the Command Line</a></div>
+		<p><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki">Tiny Tiny RSS</a> is a open-source RSS reader that you can install on any LAMP server (Linux/Apache/MySQL/PHP). I installed this yesterday and it wasn't too complicated. <a href="http://lifehacker.com/5992404/how-to-build-your-own-syncing-rss-reader-with-tiny-tiny-rss-and-kick-google-reader-to-the-curb">Lifehacker</a> has a tutorial, but one doesn't need any Linux or command line experience to install this application. You <em>do</em> need to be comfortable with cPanel and FTP software. </p>
 
-				</div>
-			<div class="divFargoStreamFooter">
-				<div>&copy; 2014 Jeffrey Kishner.</div>
-				<div>Last update: Thu, Oct 16, 2014 at  2:47 PM.</div>
-				<div><i></i></div>
-				<div style="letter-spacing: 12px; font-size: 1.2em; margin-top: 5px;"><a class="aSocialMediaLink" id="idTwitterLink" href="http://twitter.com/kishner" target="_blank"><i class="fa fa-twitter" style="color: #4099FF; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idFacebookLink" href="http://facebook.com/jeffreykishner" target="_blank"><i class="fa fa-facebook" style="color: #4C66A4; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idGithubLink" href="http://github.com/jkishner" target="_blank"><i class="fa fa-github" style="color: black; font-weight: bold;"></i></a>
-<a class="aSocialMediaLink" id="idRssLink" href="http://blog.jeffreykishner.com/rss.xml" target="_blank"><i class="fa fa-rss" style="color: orange; font-weight: bold;"></i></a>
-</div>
+<p>&nbsp;</p>
+
+<p><i class="fa fa-chevron-right"></i> Download the <a href="https://github.com/gothfox/Tiny-Tiny-RSS/archive/1.13.tar.gz">tar</a> to your hard drive and extract.</p>
+
+<p><i class="fa fa-chevron-right"></i> Open the Web Host Manager for your server, and go to the cPanel for the domain onto which you are installing the application. Then go to the MySQL Database Wizard. You will need to create a new database, a new user for that database, and create a password. Then give the user all privileges. Make sure you note these all down, and then you can sign out of your Web Host Manager.</p>
+
+<p><i class="fa fa-chevron-right"></i> Next, open FTP software (like <a href="https://filezilla-project.org/">Filezilla</a>). Rename the folder that you extracted from the tar to <em>tt-rss</em>, and upload the folder (and all of its contents) to the public_html directory of your domain. </p>
+
+<p><i class="fa fa-chevron-right"></i> After upload is complete, visit the install page at <em>http://YOUR-DOMAIN.com/tt-rss/install/</em>. Enter the database settings you created in the MySQL wizard, and hit the test button. If it was a success, initialize the database. The app will provide you the contents of a custom config.php file. Copy this text and paste it into a new file in a text editor. Search for SIMPLE_UPDATE_MODE in the file and change its value to <em>true</em> so that the feeds will update every 1/2 hour while you're using the app. Save the file as config.php and upload into the <em>tt-rss</em> directory.</p>
+
+<p><i class="fa fa-chevron-right"></i> Now you can go visit /tt-rss/ and log in initially with <code>admin</code> and <code>password</code>. You can go into preferences to change the admin password, create users, and so on.</p>
+
+<p><b>Resources</b></p>
+
+<p><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki/InstallationNotes" target="_blank">Installation Notes</a></p>
+
+<p><a href="http://tt-rss.org/redmine/projects/tt-rss/wiki/UpdatingFeeds" target="_blank">Updating Feeds</a></p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/11/14; 09:25:41 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="11/installTinyTinyRssOnYourServerWithoutUsingTheCommandLine.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="10/butDoINeedIt.html">But Do I <i>Need</i> It?</a></div>
+		<p>Had a talk with my wife last night about the Apple event. She does not follow Apple news. She uses one of my old iPhones as an iPod Touch to play Letterpress. </p>
+
+<p>I told her I wanted to upgrade to the 5s (which is a year old), and she asked, "But do you <i>need</i> it?"</p>
+
+<p>That fact is, I <i>don't</i>. My 4s works fine with iOS 7. The screen isn't cracked, I can make calls, the battery life is acceptable. I don't even want new hardware, I just want a phone that will work well with iOS 8, and I fear that my 4s won't cut it. Some of the iOS 7 animation effects are already kind of sluggish on my current phone, and god knows how many apps I'd have to delete just to be able to install iOS 8 on it, given that I am constantly getting "you have no more storage left" messages.</p>
+
+<p>I told her I just like to play with productivity apps, it appeals to my geeky side. But is it worth it to spend even $150 just so I can perform actions in Notification Center, or use 1Password from within a supported app?</p>
+
+<h3>The Next New Thing</h3>
+
+<p>I have a history of always buying The Next New Thing, debt be damned. After twenty years or so of adulthood, I am working on being less impetuous. My wife is from Germany, and she reminds me -- often -- that German companies make products to last, and that companies take their products back from consumers when they are no longer functioning. Here in the U.S., <em>planned obsolescence</em> seems to be the rule rather than the exception. Also, there is something to be said for thinking about the environment. Apple's green record is improving, but if I upgrade my phone every two years even if it is working fine, in some sense I am needlessly supporting the extraction of more precious metals, and I am probably contributing to the Chinese factory worker problem.</p>
+
+<p>This is not to say that I definitely won't upgrade this Fall, but the thought of doing so doesn't sit well with me. I may wait the release of iOS 8 out, and observe how much pain<sup>1</sup> I endure when my favorite apps integrate iOS 8-only features.</p>
+
+<hr />
+
+<p><sup>1</sup> This is the Fear of Missing Out (FOMA) pain of a geek who enjoys using Drafts, Launch Center Pro, Pythonista, etc. How would I feel reading blogs and not being able to <em>do</em> what the authors outline in their URL schemes/scripts/actions?</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/10/14; 09:29:42 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="10/butDoINeedIt.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="10/whoNeedsAPodcastingApp.html">Who Needs a Podcasting App?</a></div>
+		<p>The problem I have with most podcasting apps is that they assume I want to always download the most recent episodes of podcasts to which I am subscribed. I would prefer to only download episodes to which I actually want to listen. After getting frustrated tweaking settings in apps like Instacast and Overcast, I've resorted to the following routine:</p>
+
+<h3>Review the Podcasts Tab in River4</h3>
+
+<p><a href="https://github.com/scripting/river4">River4</a> shows podcast enclosures. I can quickly scan the podcasts in <a href="http://river.jeffreykishner.com/?panel=podcasts">my river</a> and decide what I want to listen to.</p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://dl.dropbox.com/s/ugbukvz0g59t2j2/Screen%20Shot%202014-09-10%20at%2010.03.10%20AM.png?dl=0" alt="" title="" /></p>
+
+<p>&nbsp;</p>
+
+<p>I then right click on the mp3 link and copy the link location to my clipboard.</p>
+
+<h3>Send the Link to My iPhone</h3>
+
+<p>Using the <a href="http://pushbullet.com">Pushbullet</a> <a href="https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd?hl=en">Chrome extension</a>, I send the link to my iPhone. I just make sure to precede the link with a <code>g</code> (explanation below).</p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://dl.dropbox.com/s/i66est3qfzosbf7/Screen%20Shot%202014-09-10%20at%2010.06.11%20AM.png?dl=0" alt="" title="" /></p>
+
+<p>&nbsp;</p>
+
+<p>When I receive the push notification (the Pushbullet app on the iPhone is of course required), I swipe on it, and the link immediately opens to...</p>
+
+<h3>Download in GoodReader</h3>
+
+<p><a href="http://www.goodiware.com/">GoodReader</a> is an excellent app for downloading just about any media: mp3s, movie files, images, html files, PDFs. When an URL is preceded by a <code>g</code>, it tells Safari to go to GoodReader, and then GoodReader downloads the file.</p>
+
+<p>This app remembers where I leave off in the middle of listening to a podcast -- although I have to hit the "Stop" button after pausing the recording -- so I can easily resume the podcast just by tapping on the filename. When I'm done, I swipe to delete.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/10/14; 08:58:03 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="10/whoNeedsAPodcastingApp.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="09/timeToUpgrade.html">Time to Upgrade</a></div>
+		<p>I have a 16 gb iPhone 4s. I am constantly hitting my memory limits, and I fear that the phone will run sluggishly if I install iOS 8. After following today's Apple event, I am thinking of just getting a 32 gb 5s for $149. As much as I'd love a 6, knowing that 16 gb is not enough I'd have to get a 64 gb model, which costs $299. (And that's with a renewed 2-year contract!) </p>
+
+<p>Of course, I could choose to do nothing, but I really want iOS 8. I am, after all, a major iPhone geek, and I want Extensions and Handoff. </p>
+
+<p>I'm much more interested in the latest software than the latest hardware, but I feel I have to invest in more recent hardware to get the best out of the latest iOS update, and I think the 5s will be fine for my needs.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/09/14; 04:32:16 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="09/timeToUpgrade.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="03/theCostOfRiver4.html">The Cost of River4</a></div>
+		<p>I just got my Amazon Web Services bill. It looks like the portion of it attributable to running River4 for August was a little over ten dollars. I know this is not backbreaking, but it's not free either. It's more expensive than a paid account at Newsblur or Feedly. And I'm already running <a href="http://feedafever.com">Fever</a> on my VPS for no extra cost. Right now I'm <em>liking</em> <a href="http://river.jeffreykishner.com">my river</a> but the cost of the Amazon bandwidth and service requests are higher than I had anticipated. </p>
+
+<p>I remember going through a similar experience when I was running <a href="http://blog.jeffreykishner.com/2013/09/06/isPayingForAnAmazonEc2InstanceToRunRiver23WorthIt.html">River2 and River3</a>. At that time, the big cost was running the EC2 instance 24/7. With River4, I'm running the software on my VPS, so it's not costing me anything extra. It's all Amazon.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/03/14; 12:39:18 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="03/theCostOfRiver4.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html">Posting Multiple Sites with fargoPublisher on Heroku REDUX</a></div>
+		<p><a href="http://blog.jeffreykishner.com/2014/09/02/postingMultipleSitesWithFargopublisherOnHeroku.html">Yesterday</a> I blogged about fargoPublisher and Heroku but I got pretty much everything <em>wrong</em>. Thanks to clarification from Dave Winer on the Fargo2 Google group, I finally got fargoPublisher working as intended. </p>
+
+<p>First, follow Dave's <a href="http://scripting.com/2014/02/06/herokuForPoetsBeta.html">Heroku for Poets tutorial</a>. I created a Heroku app, and put the domain name of that app in the CMS settings in Fargo (at the top right, where your name is), e.g., app.herokuapp.com (not the real app name).</p>
+
+<p>I registered the domain myblogoutline.com. And created an Amazon S3 bucket called myblogoutline.com (although I think you can call the bucket whatever you want, it doesn't have to coincide with the domain name). At my domain registrar, I have a wildcard CNAME ("*") pointing to app.herokuapp.com.</p>
+
+<p>On the Heroku dashboard for my app, under domains, it shows the name of my app. I added to it *.myoutlineblog.com. </p>
+
+<p>I have the following set up as config variables on the same settings page (minus the Amazon secret keys):</p>
+
+<pre><code>fpDataPath = /myblogoutline.com/data/
+
+fpDomain = myblogoutline.com
+
+fpHostingPath = /myblogoutline.com/users/
+
+fpRedirect = false
+
+fpServerPort = 80
+</code></pre>
+
+<p>I then created a new outline in Fargo, named it (File > Name Outline...) and added a few entries. When I put the cursor on a headline and clicked on the eye icon in the left rail, Fargo successfully opened the correct URL.</p>
+
+<p>From what I understand from Dave, Heroku does all the serving of content, Amazon just <em>stores</em> the data.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/03/14; 11:22:26 AM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+	<div class="divBlogHomeItem">
+		<div class="divBlogHomeItemTitle"><a href="02/postingMultipleSitesWithFargopublisherOnHeroku.html">Posting Multiple Sites with fargoPublisher on Heroku</a></div>
+		<p><em>Please disregard the content below and go <a href="http://blog.jeffreykishner.com/2014/09/03/postingMultipleSitesWithFargopublisherOnHerokuRedux.html">here</a> instead.</em></p>
+
+<p>I have managed to successfully deploy <a href="https://github.com/scripting/fargoPublisher">fargoPublisher</a> on <a href="http://heroku.com">Heroku</a> using <a href="http://scripting.com/2014/02/06/herokuForPoetsBeta.html">Dave Winer's instructions</a>. It was surprisingly easy. (The only snag was that I had to put <em>*</em>*.herokuapp.com in the CMS settings globally, not per individual outline.) The difficult part has been figuring out how to actually publish the sites. </p>
+
+<p>fargoPublisher seems to essentially be the same software used to create subdomains on smallpict.com. If you want to publish one of your outlines on your own Amazon S3 bucket, you need to "name" it. As of this writing, my Heroku app is publishing to a bucket called myoutlineblog.com (same as a domain name I registered). Theoretically, if I name an outline "blog," it will publish at blog.myoutlineblog.com. However, there are two separate DNS components necessary to make this work. First I need to point myoutlineblog.com.s3-website-us-east-1.amazonaws.com (the "endpoint") to myoutlineblog.com via CNAME. And to the best of my knowledge, I need to point a wildcard A record to the IP address of the node where I am hosting fargoPublisher. This is where the users are redirected to their subdomains. Unfortunately, Heroku apps only have dynamic IP addresses, and I don't currently see a solution to this, so I can only access my example named site at myoutlineblog.com/users/blog/, not blog.myoutlineblog.com.</p>
+
+<p>This is problematic because links in Fargo sites are relative, e.g, <code>"href=2014/09/01/blogpost.html"</code>, and named outlines have the blog.domain.com structure. One workaround is adding a few directives in the outline: <code>#opmlLink "http://myoutlineblog.com/users/blog/"</code> and <code>#opmlFeed "http://myoutlineblog.com/users/blog/rss.xml"</code>.</p>
+
+<p>This appears to successfully replace blog.myoutlineblog.com with myoutlineblog.com/users/blog/ in the rendered HTML, so that if I click on a link to a post from an index.html page, I will be directed to the correct path. Unfortunately, this solution is not working for #type "stream" blogs (i.e., link or note blogs like scripting.com). I believe that since you can only click on a date, Fargo is expecting the base domain, no additional directories. </p>
+
+<p>Another problem is that the RSS feed points to the blog.domain.com address, so unless I can figure out how to fix that, any feed subscribers clicking on a feed item will be directed to a 404 page.</p>
+
+<p>As currently implemented, this solution is definitely better than not having fargoPublisher deployed at all. I can publish all the outlines I want to my own AWS account. I just have to tweak every outline a bit to make relative links work, and I guess stream blogs are out of the question until I can find a workaround.</p>
+		<div class="divBlogHomeStoryDate">
+			<span class="spFargoStoryDate">09/02/14; 01:08:58 PM</span>
+			<div class="divFargoStoryLink" style="float: left;"><a href="02/postingMultipleSitesWithFargopublisherOnHeroku.html"><i class="fa fa-star"></i></a></div>
+			</div>
+		</div>
+
+				<div class="divFooterText">
+					<hr>
+					<p style="float: right;">Last built: Tue, Mar 31, 2015 at 12:50 PM</p>
+					<script>var disqus_identifier = "Tue, 02 Sep 2014 18:08:58 GMT";</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/jeffreykishner/embed.js"></script></div>
+					<div class="divByline" id="idByline">By <a href="http://jeffreykishner.com/" target="_blank">Jeffrey Kishner</a>, <span id="idWhenCreated">Tuesday, September  2, 2014 at  1:08 PM</span>.</div>
+					</div>
 				</div>
 			</div>
 		<script>
-			startup ();
 			startupFargoPlatform ();
 			</script>
 		</body>
